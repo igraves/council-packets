@@ -35,7 +35,25 @@ uv run pvc ask "What has the council decided about the community center?"
 uv run pvc stats
 ```
 
-An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`,
+### Voting records
+
+`pvc extract-votes` runs every minutes document through Claude with a JSON
+schema, producing `votes.json`: each formal motion, its mover/seconder,
+result, tally, and — where the minutes explicitly record them (roll calls,
+named dissents) — who voted yes/no/abstain. Individual votes are never
+inferred from attendance. Extraction is incremental; pass `--batch` to use
+the Message Batches API (50% cheaper) for large re-extractions.
+
+```sh
+uv run pvc extract-votes                  # extract new minutes (incremental)
+uv run pvc extract-votes --batch --force  # full re-extraction via Batches API
+
+uv run pvc votes --result failed --after 2024-01-01
+uv run pvc votes --member Reddell --side no
+uv run pvc votes --search "community center" --summary
+```
+
+An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `list_documents`, and `stats` as tools for MCP clients.
 
 ## Data

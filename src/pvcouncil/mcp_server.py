@@ -126,6 +126,49 @@ def list_documents(
 
 
 @mcp.tool()
+def votes(
+    member: str | None = None,
+    side: str | None = None,
+    result: str | None = None,
+    search: str | None = None,
+    date_from: str | None = None,
+    date_to: str | None = None,
+    max_results: int = 50,
+) -> str:
+    """Query extracted council voting records (who voted for/against what, and the outcome).
+
+    Args:
+        member: Only votes involving this member (name substring)
+        side: With member: restrict to how they voted — "yes", "no", or "abstain"
+        result: Filter by outcome: "passed", "failed", "tabled", "withdrawn", "unknown"
+        search: Substring match on what was voted on
+        date_from: Only meetings on or after this date (YYYY-MM-DD)
+        date_to: Only meetings on or before this date (YYYY-MM-DD)
+        max_results: Maximum records to return (default 50, most recent first)
+    """
+    from pvcouncil.votes import VOTES_PATH, query_votes
+
+    if not VOTES_PATH.exists():
+        return "No vote data extracted yet — run `pvc extract-votes` first."
+
+    records = query_votes(member=member, side=side, result=result,
+                          search=search, date_from=date_from, date_to=date_to)
+    if not records:
+        return "No matching votes."
+
+    shown = records[-max_results:]
+    lines = [f"{len(records)} votes matched (showing {len(shown)}, oldest first):\n"]
+    for v in shown:
+        tally = f" {v['tally']}" if v["tally"] else ""
+        lines.append(f"{v['meeting_date']}  {v['result'].upper()}{tally}  "
+                     f"[{v['motion_type']}] {v['item']}")
+        for key, label in (("no", "No"), ("abstain", "Abstain"), ("yes", "Yes")):
+            if v[key]:
+                lines.append(f"    {label}: {', '.join(v[key])}")
+    return "\n".join(lines)
+
+
+@mcp.tool()
 def stats() -> str:
     """Show index statistics: number of chunks, PDFs on disk, and storage location."""
     from pvcouncil.index import get_collection, discover_docs

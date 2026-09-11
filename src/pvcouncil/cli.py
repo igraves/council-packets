@@ -123,6 +123,87 @@ def ask(question, doc_type, date_from, date_to, n_chunks):
         click.echo(f"  {s['date']}  |  {s['doc_type']}  |  {s['file']}")
 
 
+@cli.command("extract-votes")
+@click.option("--force", is_flag=True, help="Re-extract all minutes")
+@click.option("--limit", type=int, help="Process at most N documents (for testing)")
+@click.option("--workers", default=4, help="Concurrent extraction requests")
+@click.option("--batch", "use_batch", is_flag=True,
+              help="Use the Message Batches API (50% cheaper, async — best for large re-extractions)")
+def extract_votes(force, limit, workers, use_batch):
+    """Extract voting records from council minutes (LLM extraction into votes.json)."""
+    from pvcouncil.votes import extract_all, extract_all_batch
+
+    if use_batch:
+        stats = extract_all_batch(force=force, limit=limit,
+                                  progress_fn=lambda msg: click.echo(f"  {msg}"))
+    else:
+        def progress(current, total, filename, status):
+            click.echo(f"  [{current}/{total}] {filename} — {status}")
+
+        stats = extract_all(force=force, limit=limit, workers=workers, progress_fn=progress)
+    click.echo(f"\nDone:")
+    click.echo(f"  Extracted: {stats['extracted']} documents")
+    click.echo(f"  Votes:     {stats['votes_found']}")
+    click.echo(f"  Skipped:   {stats['skipped']} (already extracted)")
+    click.echo(f"  Errors:    {stats['errors']}")
+
+
+@cli.command()
+@click.option("--member", help="Only votes involving this member (name substring)")
+@click.option("--side", type=click.Choice(["yes", "no", "abstain"]),
+              help="With --member: only votes where they voted this way")
+@click.option("--result", type=click.Choice(["passed", "failed", "tabled", "withdrawn", "unknown"]))
+@click.option("--search", help="Substring match on the vote item")
+@click.option("--after", "date_from", help="On or after date (YYYY-MM-DD)")
+@click.option("--before", "date_to", help="On or before date (YYYY-MM-DD)")
+@click.option("--summary", is_flag=True, help="Per-member summary instead of listing votes")
+@click.option("-n", "--num", default=50, help="Max votes to list (default 50; 0 = all)")
+def votes(member, side, result, search, date_from, date_to, summary, num):
+    """Query extracted council voting records."""
+    from collections import Counter
+
+    from pvcouncil.votes import VOTES_PATH, query_votes
+
+    if not VOTES_PATH.exists():
+        click.echo("No votes.json yet — run `pvc extract-votes` first.")
+        return
+
+    records = query_votes(member=member, side=side, result=result,
+                          search=search, date_from=date_from, date_to=date_to)
+    if not records:
+        click.echo("No matching votes.")
+        return
+
+    if summary:
+        yes_c, no_c, abstain_c = Counter(), Counter(), Counter()
+        for v in records:
+            yes_c.update(v["yes"])
+            no_c.update(v["no"])
+            abstain_c.update(v["abstain"])
+        click.echo(f"{len(records)} votes matched. Named-vote counts per member "
+                   f"(roll calls and recorded dissents only):\n")
+        members = sorted(set(yes_c) | set(no_c) | set(abstain_c))
+        width = max((len(m) for m in members), default=10)
+        click.echo(f"  {'member':<{width}}  {'yes':>5} {'no':>5} {'abstain':>8}")
+        for m in members:
+            click.echo(f"  {m:<{width}}  {yes_c[m]:>5} {no_c[m]:>5} {abstain_c[m]:>8}")
+        return
+
+    shown = records if num == 0 else records[-num:]
+    for v in shown:
+        flag = {"passed": "PASSED", "failed": "FAILED"}.get(v["result"], v["result"].upper())
+        tally = f" {v['tally']}" if v["tally"] else ""
+        click.echo(f"{v['meeting_date']}  {flag}{tally}  [{v['motion_type']}] {v['item']}")
+        if v["no"]:
+            click.echo(f"    No: {', '.join(v['no'])}")
+        if v["abstain"]:
+            click.echo(f"    Abstain: {', '.join(v['abstain'])}")
+        if v["yes"]:
+            click.echo(f"    Yes: {', '.join(v['yes'])}")
+    click.echo(f"\n{len(records)} votes matched"
+               + (f" (showing last {len(shown)})" if len(shown) < len(records) else ""))
+
+
 @cli.command()
 def stats():
     """Show index statistics."""

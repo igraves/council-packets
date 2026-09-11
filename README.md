@@ -51,7 +51,12 @@ uv run pvc extract-votes --batch --force  # full re-extraction via Batches API
 uv run pvc votes --result failed --after 2024-01-01
 uv run pvc votes --member Reddell --side no
 uv run pvc votes --search "community center" --summary
+uv run pvc votes --markdown council-votes.md   # regenerate the full report
 ```
+
+The full voting record is checked in as
+[council-votes.md](council-votes.md) — every recorded vote from April 2015
+onward, grouped by meeting.
 
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `list_documents`, and `stats` as tools for MCP clients.

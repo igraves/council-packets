@@ -292,6 +292,68 @@ def extract_all_batch(force: bool = False, limit: int | None = None,
     return stats
 
 
+def render_markdown(records: list[dict], title: str = "Prairie Village City Council — Voting Record") -> str:
+    """Render vote records (from query_votes) as a Markdown document.
+
+    Grouped by year and meeting; attendance shown per meeting when known.
+    """
+    from collections import Counter
+    from itertools import groupby
+
+    store = load_store()
+    lines = [f"# {title}", ""]
+
+    dates = [v["meeting_date"] for v in records]
+    passed = sum(1 for v in records if v["result"] == "passed")
+    failed = sum(1 for v in records if v["result"] == "failed")
+    lines.append(
+        f"{len(records)} recorded votes across "
+        f"{len(set(dates))} meetings, {min(dates)[:10]} to {max(dates)[:10]}. "
+        f"{passed} passed, {failed} failed, "
+        f"{len(records) - passed - failed} other (tabled/withdrawn/unknown)."
+    )
+    lines.append("")
+    lines.append(
+        "Individual positions are listed only where the minutes explicitly "
+        "record them (roll calls and named dissents); votes are never "
+        "inferred from attendance. Extracted from official minutes by an "
+        "LLM — verify against the source document before relying on any "
+        "single record."
+    )
+
+    no_counter = Counter()
+    for v in records:
+        no_counter.update(v["no"])
+    if no_counter:
+        lines += ["", "Most recorded dissents: " + ", ".join(
+            f"{name} ({count})" for name, count in no_counter.most_common(8))]
+
+    for year, year_votes in groupby(records, key=lambda v: v["meeting_date"][:4]):
+        lines += ["", f"## {year}", ""]
+        for date, meeting_votes in groupby(list(year_votes), key=lambda v: v["meeting_date"]):
+            meeting_votes = list(meeting_votes)
+            entry = store["files"].get(meeting_votes[0]["source_file"], {})
+            lines.append(f"### {date} — {meeting_votes[0]['source_file']}")
+            if entry.get("present"):
+                att = "Present: " + ", ".join(entry["present"])
+                if entry.get("absent"):
+                    att += " · Absent: " + ", ".join(entry["absent"])
+                lines.append(f"*{att}*")
+            lines.append("")
+            for v in meeting_votes:
+                tally = f" {v['tally']}" if v["tally"] else ""
+                mover = f" (moved {v['mover']}" + (f", seconded {v['seconder']})" if v["seconder"] else ")") \
+                    if v["mover"] else ""
+                lines.append(f"- **{v['result'].upper()}{tally}** [{v['motion_type']}] "
+                             f"{v['item']}{mover}")
+                for key, label in (("yes", "Yes"), ("no", "No"), ("abstain", "Abstain")):
+                    if v[key]:
+                        lines.append(f"  - {label}: {', '.join(v[key])}")
+            lines.append("")
+
+    return "\n".join(lines)
+
+
 def query_votes(member: str | None = None, side: str | None = None,
                 result: str | None = None, search: str | None = None,
                 date_from: str | None = None, date_to: str | None = None) -> list[dict]:

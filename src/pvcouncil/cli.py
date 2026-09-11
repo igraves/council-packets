@@ -157,12 +157,13 @@ def extract_votes(force, limit, workers, use_batch):
 @click.option("--after", "date_from", help="On or after date (YYYY-MM-DD)")
 @click.option("--before", "date_to", help="On or before date (YYYY-MM-DD)")
 @click.option("--summary", is_flag=True, help="Per-member summary instead of listing votes")
+@click.option("--markdown", "md_path", type=click.Path(), help="Write matched votes to a Markdown file")
 @click.option("-n", "--num", default=50, help="Max votes to list (default 50; 0 = all)")
-def votes(member, side, result, search, date_from, date_to, summary, num):
+def votes(member, side, result, search, date_from, date_to, summary, md_path, num):
     """Query extracted council voting records."""
     from collections import Counter
 
-    from pvcouncil.votes import VOTES_PATH, query_votes
+    from pvcouncil.votes import VOTES_PATH, query_votes, render_markdown
 
     if not VOTES_PATH.exists():
         click.echo("No votes.json yet — run `pvc extract-votes` first.")
@@ -172,6 +173,12 @@ def votes(member, side, result, search, date_from, date_to, summary, num):
                           search=search, date_from=date_from, date_to=date_to)
     if not records:
         click.echo("No matching votes.")
+        return
+
+    if md_path:
+        from pathlib import Path
+        Path(md_path).write_text(render_markdown(records))
+        click.echo(f"Wrote {len(records)} votes to {md_path}")
         return
 
     if summary:

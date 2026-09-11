@@ -1,5 +1,13 @@
 # pvcouncil — Prairie Village City Council document search
 
+As a sitting councilor, a group of questions would routinely come up during 
+meetings and discussions with constituents: "When did this item pass?" "Who voted for it?"
+"What were the discussions around it, if any?" 
+
+I made this tool to process and document council packets going back to 2015 (the earliest
+ones still available) so I could get some historical context into past council thought
+and decision-making processes. The technical bits follow.
+
 Semantic and keyword search, plus cited RAG Q&A, over Prairie Village, Kansas
 city council packets and minutes (2015–present). PDFs are chunked and embedded
 into a local [ChromaDB](https://www.trychroma.com/) index with

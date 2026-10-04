@@ -65,7 +65,8 @@ def ask(
         messages=[{"role": "user", "content": user_message}],
     )
 
-    answer_text = response.content[0].text
+    # The response may lead with thinking blocks; keep only the text.
+    answer_text = "".join(b.text for b in response.content if b.type == "text")
 
     # Deduplicate sources
     sources = []

@@ -4303,7 +4303,7 @@ Most recorded dissents: Runion (146), Gallagher (123), McFadden (98), Myers (94)
   - Yes: Robinson, O'Toole, Selders, Nelson, Bartelt, Vallette, Agniel, Reddell, Lawrence, Graves, Sellers
 - **PASSED 11-0** [contract_or_purchase] Approve consent agenda item #3, electrical proposal from Pro Circuit for installation of lights at Harmon Skate Park (BG390002) (moved Reddell, seconded Graves)
 - **PASSED 10-1** [appointment] Elect Cole Robinson as 2025 council president (moved Reddell)
-  - No: O'Toole
+  - No: Selders
 - **PASSED 11-0** [ordinance] Approve Ordinance #2514 authorizing and providing for the issuance of General Obligation Improvements Bonds, Series 2025A, in a maximum principal amount of $28,000,000 (moved Robinson, seconded Nelson)
   - Yes: Robinson, O'Toole, Selders, Nelson, Bartelt, Vallette, Agniel, Reddell, Lawrence, Graves, Sellers
 - **PASSED 11-0** [resolution] Approve Resolution #2025-10 prescribing the form and details of and authorizing and directing the sale and delivery of General Obligation Improvements Bonds, Series 2025A (moved Robinson, seconded Vallette)

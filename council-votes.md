@@ -1,6 +1,6 @@
 # Prairie Village City Council — Voting Record
 
-2285 recorded votes across 256 meetings, 2015-04-06 to 2026-08-17. 2119 passed, 132 failed, 34 other (tabled/withdrawn/unknown).
+2292 recorded votes across 257 meetings, 2015-04-06 to 2026-09-21. 2126 passed, 132 failed, 34 other (tabled/withdrawn/unknown).
 
 Individual positions are listed only where the minutes explicitly record them (roll calls and named dissents); votes are never inferred from attendance. Extracted from official minutes by an LLM — verify against the source document before relying on any single record.
 
@@ -4303,7 +4303,7 @@ Most recorded dissents: Runion (146), Gallagher (123), McFadden (98), Myers (94)
   - Yes: Robinson, O'Toole, Selders, Nelson, Bartelt, Vallette, Agniel, Reddell, Lawrence, Graves, Sellers
 - **PASSED 11-0** [contract_or_purchase] Approve consent agenda item #3, electrical proposal from Pro Circuit for installation of lights at Harmon Skate Park (BG390002) (moved Reddell, seconded Graves)
 - **PASSED 10-1** [appointment] Elect Cole Robinson as 2025 council president (moved Reddell)
-  - No: Selders
+  - No: O'Toole
 - **PASSED 11-0** [ordinance] Approve Ordinance #2514 authorizing and providing for the issuance of General Obligation Improvements Bonds, Series 2025A, in a maximum principal amount of $28,000,000 (moved Robinson, seconded Nelson)
   - Yes: Robinson, O'Toole, Selders, Nelson, Bartelt, Vallette, Agniel, Reddell, Lawrence, Graves, Sellers
 - **PASSED 11-0** [resolution] Approve Resolution #2025-10 prescribing the form and details of and authorizing and directing the sale and delivery of General Obligation Improvements Bonds, Series 2025A (moved Robinson, seconded Vallette)
@@ -4571,3 +4571,18 @@ Most recorded dissents: Runion (146), Gallagher (123), McFadden (98), Myers (94)
 - **PASSED unanimous** [procedural] Move to the council committee of the whole portion of the meeting (moved Vallette, seconded Agniel)
 - **PASSED unanimous** [procedural] End the council committee of the whole portion of the meeting (moved Sellers, seconded Agniel)
 - **PASSED unanimous** [procedural] Recess into an executive session for 20 minutes on the subject of consultations with the city attorney pursuant to K.S.A. 75-4319(b)(2), with the open meeting to resume at 7:44 p.m. (moved Robinson, seconded Vallette)
+
+### 2026-09-21 — 2026-09-21_September 21, 2026 City Council Meeting Minutes.pdf
+*Present: Robinson, O'Toole, Nelson, Logan, Bartelt, Vallette, Agniel, Reddell, Lawrence, Graves, Sellers*
+
+- **PASSED 11-0** [procedural] Approve the agenda as presented (moved Reddell, seconded Agniel)
+- **PASSED 11-0** [consent_agenda] Approve consent agenda including September 8, 2026 minutes, claims ordinance #3066, and appointments to the diversity committee (moved Nelson)
+  - Yes: Robinson, O'Toole, Nelson, Logan, Bartelt, Vallette, Agniel, Reddell, Lawrence, Graves, Sellers
+- **PASSED 8-3** [ordinance] Approve Ordinance 2523, amending Chapter XI, Article 2 – Conversion Therapy of Minors Prohibited (moved Nelson, seconded Sellers)
+  - Yes: Robinson, Nelson, Bartelt, Vallette, Agniel, Lawrence, Graves, Sellers
+  - No: O'Toole, Logan, Reddell
+- **PASSED 11-0** [contract_or_purchase] Approve the agreement and easements for the Johnson County Wastewater improvement project at Porter Park (moved O'Toole, seconded Reddell)
+- **PASSED 11-0** [procedural] Move to the council committee of the whole portion of the meeting (moved Logan, seconded Bartelt)
+- **PASSED 10-0** [other] Recommend approval of the MOU with Johnson County Library (moved Sellers, seconded Nelson)
+  - Abstain: Logan
+- **PASSED 11-0** [procedural] End the council committee of the whole portion of the meeting (moved Reddell, seconded Agniel)

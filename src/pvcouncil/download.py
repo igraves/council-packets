@@ -26,9 +26,12 @@ TYPE_DIRS = {
 }
 SKIP_TYPES = {"Agenda"}
 
+# The API returns 403 for urllib's default "Python-urllib/x.y" User-Agent.
+USER_AGENT = "pvcouncil/1.0"
+
 
 def _get_json(url: str) -> dict:
-    req = Request(url, headers={"Accept": "application/json"})
+    req = Request(url, headers={"Accept": "application/json", "User-Agent": USER_AGENT})
     with urlopen(req, timeout=60) as resp:
         return json.load(resp)
 
@@ -53,7 +56,7 @@ def download_file(file_id: int, dest: Path) -> int:
     """Stream one document to dest. Returns bytes written."""
     url = f"{API_BASE}/Meetings/GetMeetingFileStream(fileId={file_id},plainText=false)"
     tmp = dest.with_suffix(dest.suffix + ".part")
-    req = Request(url, headers={"Accept": "application/pdf"})
+    req = Request(url, headers={"Accept": "application/pdf", "User-Agent": USER_AGENT})
     written = 0
     with urlopen(req, timeout=300) as resp, open(tmp, "wb") as f:
         while chunk := resp.read(1 << 16):

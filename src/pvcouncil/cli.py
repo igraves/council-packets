@@ -34,6 +34,32 @@ def download(after_str, dry_run):
         click.echo("Run `pvc index` to add the new documents to the search index.")
 
 
+@cli.command("download-archive")
+@click.option("--category", "amids", type=int, multiple=True,
+              help="Archive category ID (AMID) to crawl; repeatable. Default: all")
+@click.option("--list", "list_only", is_flag=True, help="List archive categories and exit")
+@click.option("--dry-run", is_flag=True, help="Show what would be downloaded without downloading")
+def download_archive_cmd(amids, list_only, dry_run):
+    """Download reports from the city website's Archive Center (budgets, ACFRs, etc.)."""
+    from pvcouncil.archive import download_archive, fetch_categories
+
+    if list_only:
+        for amid, name in fetch_categories().items():
+            click.echo(f"  {amid:4d}  {name}")
+        return
+
+    def progress(category, filename, status):
+        click.echo(f"  [{category}] {filename} — {status}")
+
+    stats = download_archive(amids=list(amids) or None, dry_run=dry_run, progress_fn=progress)
+    click.echo(f"\nDone: {stats['categories']} categories, {stats['listed']} documents listed, "
+               f"{stats['downloaded']} downloaded, {stats['skipped']} already present")
+    if stats["errors"]:
+        click.echo(f"  ({stats['errors']} failed; rerun to retry)")
+    if stats["downloaded"] and not dry_run:
+        click.echo("Run `pvc index` to add the new documents to the search index.")
+
+
 @cli.command()
 @click.option("--force", is_flag=True, help="Re-index all documents")
 def index(force):
@@ -61,7 +87,7 @@ def index(force):
 @cli.command()
 @click.argument("query")
 @click.option("-n", "--num-results", default=10, help="Number of results")
-@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes"]))
+@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes", "archive", "other"]))
 @click.option("--after", "date_from", help="After date (YYYY-MM-DD)")
 @click.option("--before", "date_to", help="Before date (YYYY-MM-DD)")
 @click.option("--keyword", is_flag=True, help="Keyword search instead of semantic")
@@ -102,7 +128,7 @@ def search(query, num_results, doc_type, date_from, date_to, keyword):
 
 @cli.command()
 @click.argument("question")
-@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes"]))
+@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes", "archive", "other"]))
 @click.option("--after", "date_from", help="After date (YYYY-MM-DD)")
 @click.option("--before", "date_to", help="Before date (YYYY-MM-DD)")
 @click.option("--chunks", "n_chunks", default=config.RAG_N_CHUNKS, help="Number of context chunks")

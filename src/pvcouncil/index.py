@@ -54,7 +54,8 @@ def discover_docs() -> list[dict]:
     Derives doc_type from subdirectory, meeting_date from filename prefix.
     """
     docs = []
-    type_map = {"packets": "packet", "minutes": "minutes", "other": "other"}
+    type_map = {"packets": "packet", "minutes": "minutes", "other": "other",
+                "archive": "archive"}
 
     for subdir, doc_type in type_map.items():
         dir_path = DOCS_DIR / subdir

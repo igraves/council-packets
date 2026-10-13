@@ -29,7 +29,7 @@ def search(
     Args:
         query: Search query text
         num_results: Number of results to return (default 10)
-        doc_type: Filter by document type: "packet" or "minutes"
+        doc_type: Filter by document type: "packet", "minutes", "archive" (city reports: budgets, ACFRs, quarterly financials, police reports), or "other"
         date_from: Filter to documents after this date (YYYY-MM-DD)
         date_to: Filter to documents before this date (YYYY-MM-DD)
         keyword: If true, use exact keyword matching instead of semantic search
@@ -75,7 +75,7 @@ def ask(
 
     Args:
         question: The question to answer
-        doc_type: Filter by document type: "packet" or "minutes"
+        doc_type: Filter by document type: "packet", "minutes", "archive" (city reports: budgets, ACFRs, quarterly financials, police reports), or "other"
         date_from: Filter to documents after this date (YYYY-MM-DD)
         date_to: Filter to documents before this date (YYYY-MM-DD)
         num_chunks: Number of context chunks to retrieve (default 15)
@@ -102,7 +102,7 @@ def list_documents(
     """List all locally available council documents (PDFs).
 
     Args:
-        doc_type: Filter by type: "packet", "minutes", or "other"
+        doc_type: Filter by type: "packet", "minutes", "archive", or "other"
         date_from: Only show documents on or after this date (YYYY-MM-DD)
         date_to: Only show documents on or before this date (YYYY-MM-DD)
     """

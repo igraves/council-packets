@@ -9,7 +9,8 @@ mcp = FastMCP(
     instructions=(
         "Search and ask questions about Prairie Village, Kansas city council "
         "documents (meeting packets, minutes, etc.). Use 'search' for finding "
-        "specific documents and 'ask' for synthesized answers with citations."
+        "specific documents and 'ask' for synthesized answers with citations. "
+        "Use 'votes' for voting records and 'budget' for year-over-year budget figures."
     ),
 )
 
@@ -166,6 +167,32 @@ def votes(
             if v[key]:
                 lines.append(f"    {label}: {', '.join(v[key])}")
     return "\n".join(lines)
+
+
+@mcp.tool()
+def budget(year: int | None = None, compare_to: int | None = None) -> str:
+    """Prairie Village annual budgets extracted from council packets.
+
+    With no arguments: headline figures (total budget, General Fund, property
+    tax, mill levy, revenue-neutral rate, assessed valuation, reserves) for
+    every budget year. With year: that year compared with the prior year,
+    including which expense categories and departments drove the change and
+    the reasons staff cited, with source pages.
+
+    Args:
+        year: Budget year to examine (e.g. 2027)
+        compare_to: Year to compare against (default: year - 1)
+    """
+    from pvcouncil.budget import BUDGETS_PATH, compare, render_compare, render_trend
+
+    if not BUDGETS_PATH.exists():
+        return "No budget data extracted yet — run `pvc extract-budgets` first."
+    if year is None:
+        return render_trend()
+    try:
+        return render_compare(compare(compare_to or year - 1, year))
+    except KeyError as e:
+        return e.args[0]
 
 
 @mcp.tool()

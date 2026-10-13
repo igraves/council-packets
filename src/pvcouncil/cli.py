@@ -211,6 +211,60 @@ def votes(member, side, result, search, date_from, date_to, summary, md_path, nu
                + (f" (showing last {len(shown)})" if len(shown) < len(records) else ""))
 
 
+@cli.command("extract-budgets")
+@click.option("--force", is_flag=True, help="Re-extract all budget-season packets")
+@click.option("--limit", type=int, help="Process at most N packets (for testing)")
+@click.option("--workers", default=4, help="Concurrent extraction requests")
+@click.option("--batch", "use_batch", is_flag=True,
+              help="Use the Message Batches API (50% cheaper, async — best for large re-extractions)")
+def extract_budgets(force, limit, workers, use_batch):
+    """Extract annual budget figures and cost drivers from packets (into budgets.json)."""
+    from pvcouncil.budget import extract_all, extract_all_batch
+
+    if use_batch:
+        stats = extract_all_batch(force=force, limit=limit,
+                                  progress_fn=lambda msg: click.echo(f"  {msg}"))
+    else:
+        def progress(current, total, filename, status):
+            click.echo(f"  [{current}/{total}] {filename} — {status}")
+
+        stats = extract_all(force=force, limit=limit, workers=workers, progress_fn=progress)
+    click.echo(f"\nDone:")
+    click.echo(f"  Extracted: {stats['extracted']} packets")
+    click.echo(f"  Skipped:   {stats['skipped']} (already extracted or no budget pages)")
+    click.echo(f"  Errors:    {stats['errors']}")
+
+
+@cli.command()
+@click.option("--year", type=int, help="Compare this budget year with the year before")
+@click.option("--compare", "years", nargs=2, type=int, help="Compare two budget years, e.g. --compare 2020 2027")
+@click.option("--markdown", "md_path", type=click.Path(), help="Write the full budget history to a Markdown file")
+def budget(year, years, md_path):
+    """Track budgets year over year: headline trend, changes, and cost drivers."""
+    from pvcouncil.budget import (BUDGETS_PATH, compare, render_compare,
+                                  render_markdown, render_trend)
+
+    if not BUDGETS_PATH.exists():
+        click.echo("No budgets.json yet — run `pvc extract-budgets` first.")
+        return
+
+    if md_path:
+        from pathlib import Path
+        Path(md_path).write_text(render_markdown())
+        click.echo(f"Wrote budget history to {md_path}")
+        return
+
+    if year or years:
+        a, b = years if years else (year - 1, year)
+        try:
+            click.echo(render_compare(compare(a, b)))
+        except KeyError as e:
+            raise click.ClickException(e.args[0])
+        return
+
+    click.echo(render_trend())
+
+
 @cli.command()
 def stats():
     """Show index statistics."""

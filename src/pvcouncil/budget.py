@@ -7,7 +7,11 @@ May through September of year Y are scanned for budget pages about year Y+1;
 only those pages are sent to Claude, which returns headline figures, fund and
 expense-category totals, department totals, and the cost drivers staff cite.
 
-Results are stored per packet in budgets.json (same size+mtime incremental
+The published budget books in the city's Archive Center (2006 onward, see
+archive.py) go through the same extraction. Each book names its budget year
+in its title, and an adopted book outranks the packets for its year.
+
+Results are stored per document in budgets.json (same size+mtime incremental
 tracking as votes.json). budget_years() merges them into one record per
 budget year, preferring adopted over proposed over preliminary figures.
 """
@@ -26,6 +30,9 @@ BUDGETS_PATH = PROJECT_ROOT / "budgets.json"
 
 # Budgets for year Y+1 are prepared and adopted in these months of year Y.
 BUDGET_MONTHS = {"05", "06", "07", "08", "09"}
+# Archive Center budget books ("2026 Budget", "2027 Preliminary Budget Book
+# ..."). "Budget in Brief" summaries duplicate the full book for their year.
+_BUDGET_BOOK = re.compile(r"^\d{4}-\d{2}-\d{2}_((?:19|20)\d{2}) .*Budget(?! in Brief)", re.I)
 MIN_PAGES = 3    # fewer selected pages than this = a passing mention, not a budget item
 MAX_PAGES = 80   # cap per packet; keeps one request well inside the context window
 
@@ -191,6 +198,8 @@ def select_budget_pages(pages: list[tuple[int, str]], budget_year: int) -> list[
     are kept too, since staff memos explaining the tables sit next to them.
     """
     year = str(budget_year)
+    # Some budget books separate words with non-breaking spaces.
+    pages = [(n, t.replace("\xa0", " ")) for n, t in pages]
     scored = {}
     for num, text in pages:
         if year not in text or _NOISE.search(text):
@@ -210,8 +219,11 @@ def select_budget_pages(pages: list[tuple[int, str]], budget_year: int) -> list[
     return [(n, t) for n, t in pages if n in keep]
 
 
-def _request_params(pages: list[tuple[int, str]], budget_year: int) -> dict:
-    """Messages API params for one packet — shared by direct and batch paths."""
+def _request_params(pages: list[tuple[int, str]], budget_year: int,
+                    source: str = "packet") -> dict:
+    """Messages API params for one document — shared by direct and batch paths."""
+    origin = (f"the city's published {budget_year} budget book" if source == "archive"
+              else f"a council packet that likely covers the {budget_year} budget")
     text = "\n\n".join(f"=== Page {n} ===\n{t}" for n, t in pages)
     return {
         "model": CLAUDE_MODEL,
@@ -223,8 +235,7 @@ def _request_params(pages: list[tuple[int, str]], budget_year: int) -> dict:
         "messages": [{
             "role": "user",
             "content": (
-                f"These pages come from a council packet that likely covers the "
-                f"{budget_year} budget. Extract the budget data:\n\n{text}"
+                f"These pages come from {origin}. Extract the budget data:\n\n{text}"
             ),
         }],
     }
@@ -249,51 +260,71 @@ def save_store(store: dict) -> None:
     BUDGETS_PATH.write_text(json.dumps(store, indent=1))
 
 
-def _pending(force: bool, limit: int | None) -> tuple[list, int, int]:
-    """Budget-season packets not yet extracted. Returns (todo, total, skipped).
+def _budget_docs(sources: set[str]) -> list[tuple[dict, int, str]]:
+    """Documents that carry a budget: [(doc, budget_year, source)].
 
-    Each todo item is (doc, hash, budget_year, pages). Packets whose
+    A packet from May–September of year Y covers the Y+1 budget. An archive
+    budget book names its budget year in its title.
+    """
+    out = []
+    for d in discover_docs():
+        if ("packet" in sources and d["doc_type"] == "packet"
+                and d["meeting_date"][5:7] in BUDGET_MONTHS):
+            out.append((d, int(d["meeting_date"][:4]) + 1, "packet"))
+        elif "archive" in sources and d["doc_type"] == "archive":
+            m = _BUDGET_BOOK.match(d["filename"])
+            if m:
+                out.append((d, int(m.group(1)), "archive"))
+    return out
+
+
+def _pending(force: bool, limit: int | None,
+             sources: set[str] = frozenset({"packet", "archive"})) -> tuple[list, int, int]:
+    """Budget documents not yet extracted. Returns (todo, total, skipped).
+
+    Each todo item is (doc, hash, budget_year, source, pages). Documents whose
     selection is too thin are recorded as skipped-with-no-pages so they are
     not rescanned on every run.
     """
     store = load_store()
-    docs = [d for d in discover_docs()
-            if d["doc_type"] == "packet" and d["meeting_date"][5:7] in BUDGET_MONTHS]
+    docs = _budget_docs(sources)
     todo, skipped = [], 0
-    for doc in docs:
+    for doc, budget_year, source in docs:
         h = _file_hash(doc["path"])
         entry = store["files"].get(doc["filename"])
         if entry and entry.get("hash") == h and not force:
             skipped += 1
             continue
-        budget_year = int(doc["meeting_date"][:4]) + 1
         pages = select_budget_pages(extract_pages(doc["path"]), budget_year)
         if len(pages) < MIN_PAGES:
             store["files"][doc["filename"]] = {
-                "hash": h, "meeting_date": doc["meeting_date"],
+                "hash": h, "meeting_date": doc["meeting_date"], "source": source,
+                "expected_year": budget_year,
                 "pages": [n for n, _ in pages], "stage": "none",
             }
             skipped += 1
             continue
-        todo.append((doc, h, budget_year, pages))
+        todo.append((doc, h, budget_year, source, pages))
         if limit and len(todo) >= limit:
             break
     save_store(store)
     return todo, len(docs), skipped
 
 
-def _record(doc: dict, h: str, pages: list, result: dict) -> dict:
-    return {"hash": h, "meeting_date": doc["meeting_date"],
-            "pages": [n for n, _ in pages], **result}
+def _record(doc: dict, h: str, budget_year: int, source: str,
+            pages: list, result: dict) -> dict:
+    return {"hash": h, "meeting_date": doc["meeting_date"], "source": source,
+            "expected_year": budget_year, "pages": [n for n, _ in pages], **result}
 
 
 def extract_all(force: bool = False, limit: int | None = None,
-                workers: int = 4, progress_fn=None) -> dict:
-    """Extract budget data from all budget-season packets not yet processed.
+                workers: int = 4, sources: set[str] = frozenset({"packet", "archive"}),
+                progress_fn=None) -> dict:
+    """Extract budget data from all budget documents not yet processed.
 
     Returns stats: {total, extracted, skipped, errors}
     """
-    todo, total, skipped = _pending(force, limit)
+    todo, total, skipped = _pending(force, limit, sources)
     stats = {"total": total, "extracted": 0, "skipped": skipped, "errors": 0}
     if not todo:
         return stats
@@ -301,10 +332,10 @@ def extract_all(force: bool = False, limit: int | None = None,
     store = load_store()
     client = _client()
 
-    def work(doc, h, budget_year, pages):
-        with client.messages.stream(**_request_params(pages, budget_year)) as stream:
+    def work(doc, h, budget_year, source, pages):
+        with client.messages.stream(**_request_params(pages, budget_year, source)) as stream:
             resp = stream.get_final_message()
-        return doc, h, pages, _parse_response(resp)
+        return doc, h, budget_year, source, pages, _parse_response(resp)
 
     done = 0
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -313,8 +344,9 @@ def extract_all(force: bool = False, limit: int | None = None,
             doc = futures[fut]
             done += 1
             try:
-                doc, h, pages, result = fut.result()
-                store["files"][doc["filename"]] = _record(doc, h, pages, result)
+                doc, h, budget_year, source, pages, result = fut.result()
+                store["files"][doc["filename"]] = _record(doc, h, budget_year, source,
+                                                          pages, result)
                 stats["extracted"] += 1
                 save_store(store)  # checkpoint so an interrupt loses little
                 if progress_fn:
@@ -329,11 +361,13 @@ def extract_all(force: bool = False, limit: int | None = None,
 
 
 def extract_all_batch(force: bool = False, limit: int | None = None,
-                      poll_seconds: int = 30, progress_fn=None) -> dict:
+                      poll_seconds: int = 30,
+                      sources: set[str] = frozenset({"packet", "archive"}),
+                      progress_fn=None) -> dict:
     """Extract budget data via the Message Batches API (50% token cost, async)."""
     import time
 
-    todo, total, skipped = _pending(force, limit)
+    todo, total, skipped = _pending(force, limit, sources)
     stats = {"total": total, "extracted": 0, "skipped": skipped, "errors": 0}
     if not todo:
         return stats
@@ -341,10 +375,11 @@ def extract_all_batch(force: bool = False, limit: int | None = None,
     # custom_id must be short and [a-zA-Z0-9_-], so use an index
     by_id = {}
     requests = []
-    for idx, (doc, h, budget_year, pages) in enumerate(todo):
+    for idx, (doc, h, budget_year, source, pages) in enumerate(todo):
         cid = f"b{idx:04d}"
-        by_id[cid] = (doc, h, pages)
-        requests.append({"custom_id": cid, "params": _request_params(pages, budget_year)})
+        by_id[cid] = (doc, h, budget_year, source, pages)
+        requests.append({"custom_id": cid,
+                         "params": _request_params(pages, budget_year, source)})
 
     client = _client()
     batch = client.messages.batches.create(requests=requests)
@@ -363,7 +398,7 @@ def extract_all_batch(force: bool = False, limit: int | None = None,
 
     store = load_store()
     for result in client.messages.batches.results(batch.id):
-        doc, h, pages = by_id[result.custom_id]
+        doc, h, budget_year, source, pages = by_id[result.custom_id]
         if result.result.type != "succeeded":
             stats["errors"] += 1
             if progress_fn:
@@ -376,7 +411,8 @@ def extract_all_batch(force: bool = False, limit: int | None = None,
             if progress_fn:
                 progress_fn(f"parse error {doc['filename']}: {e}")
             continue
-        store["files"][doc["filename"]] = _record(doc, h, pages, parsed)
+        store["files"][doc["filename"]] = _record(doc, h, budget_year, source,
+                                                  pages, parsed)
         stats["extracted"] += 1
 
     save_store(store)
@@ -392,19 +428,31 @@ def extract_all_batch(force: bool = False, limit: int | None = None,
 MONTH_STAGE_CAP = {"05": "preliminary", "06": "preliminary", "07": "proposed"}
 
 
-def _capped_stage(entry: dict) -> str:
+def _capped_stage(entry: dict, filename: str) -> str:
+    if entry.get("source") == "archive":
+        # A published budget book is the adopted budget unless it says otherwise.
+        return "proposed" if "preliminary" in filename.lower() else "adopted"
     cap = MONTH_STAGE_CAP.get(entry["meeting_date"][5:7])
     if cap and STAGE_RANK[entry["stage"]] > STAGE_RANK[cap]:
         return cap
     return entry["stage"]
 
 
+def _expected_year(entry: dict) -> int:
+    # Entries extracted before archive support only came from packets.
+    return entry.get("expected_year") or int(entry["meeting_date"][:4]) + 1
+
+
 def _entries() -> list[dict]:
-    """Extracted packets that hold a budget, highest stage and latest first."""
+    """Extracted documents that hold a budget, highest stage and latest first.
+
+    A budget book is dated January 1 of its year, after the packets that
+    adopted it, so among equally adopted sources the book wins.
+    """
     store = load_store()
-    out = [{**e, "source_file": f, "stage": _capped_stage(e)} for f, e in store["files"].items()
+    out = [{**e, "source_file": f, "stage": _capped_stage(e, f)} for f, e in store["files"].items()
            if e.get("stage", "none") != "none"
-           and e.get("budget_year") == int(e["meeting_date"][:4]) + 1]
+           and e.get("budget_year") == _expected_year(e)]
     out.sort(key=lambda e: (STAGE_RANK[e["stage"]], e["meeting_date"]), reverse=True)
     return out
 

@@ -5,6 +5,8 @@ from pathlib import Path
 
 import fitz
 
+MIN_TEXT_CHARS = 50  # below this, a page with an image is treated as scanned
+
 
 def _tessdata_dir() -> str | None:
     """Locate Tesseract language data for PyMuPDF's OCR support."""
@@ -34,8 +36,9 @@ def extract_pages(pdf_path: Path, ocr: bool = True) -> list[tuple[int, str]]:
     """Extract text from each page of a PDF.
 
     Returns list of (1-based page_number, text) tuples.
-    Pages with no embedded text (scanned images) are OCR'd via Tesseract
-    when available; pages that still yield nothing are skipped.
+    Scanned pages (no embedded text, or only a few characters over an
+    image) are OCR'd via Tesseract when available; pages that still yield
+    nothing are skipped.
     """
     path = Path(pdf_path)
     if path.suffix.lower() == ".docx":
@@ -47,8 +50,11 @@ def extract_pages(pdf_path: Path, ocr: bool = True) -> list[tuple[int, str]]:
     pages = []
     for i, page in enumerate(doc):
         text = page.get_text("text").strip()
-        if not text and tessdata:
-            text = _ocr_page_text(page, tessdata)
+        # A scanned page can still carry a stray text layer, such as a typed
+        # page number over an image of a table, so near-empty pages with an
+        # image are OCR'd too.
+        if tessdata and len(text) < MIN_TEXT_CHARS and (not text or page.get_images()):
+            text = _ocr_page_text(page, tessdata) or text
         if text:
             pages.append((i + 1, text))
     doc.close()

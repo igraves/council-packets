@@ -34,11 +34,40 @@ def download(after_str, dry_run):
         click.echo("Run `pvc index` to add the new documents to the search index.")
 
 
+@cli.command("download-archive")
+@click.option("--category", "amids", type=int, multiple=True,
+              help="Archive category ID (AMID) to crawl; repeatable. Default: all")
+@click.option("--list", "list_only", is_flag=True, help="List archive categories and exit")
+@click.option("--dry-run", is_flag=True, help="Show what would be downloaded without downloading")
+def download_archive_cmd(amids, list_only, dry_run):
+    """Download reports from the city website's Archive Center (budgets, ACFRs, etc.)."""
+    from pvcouncil.archive import download_archive, fetch_categories
+
+    if list_only:
+        for amid, name in fetch_categories().items():
+            click.echo(f"  {amid:4d}  {name}")
+        return
+
+    def progress(category, filename, status):
+        click.echo(f"  [{category}] {filename} — {status}")
+
+    stats = download_archive(amids=list(amids) or None, dry_run=dry_run, progress_fn=progress)
+    click.echo(f"\nDone: {stats['categories']} categories, {stats['listed']} documents listed, "
+               f"{stats['downloaded']} downloaded, {stats['skipped']} already present")
+    if stats["errors"]:
+        click.echo(f"  ({stats['errors']} failed; rerun to retry)")
+    if stats["downloaded"] and not dry_run:
+        click.echo("Run `pvc index` to add the new documents to the search index.")
+
+
 @cli.command()
 @click.option("--force", is_flag=True, help="Re-index all documents")
-def index(force):
+@click.option("--ocr-gaps", is_flag=True,
+              help="Re-index only documents with scanned pages missed by OCR")
+def index(force, ocr_gaps):
     """Index PDF documents into ChromaDB."""
-    from pvcouncil.index import index_all
+    from pvcouncil.index import index_all, discover_docs
+    from pvcouncil.extract import has_ocr_gap
 
     def progress(current, total, filename, status):
         click.echo(f"  [{current}/{total}] {filename} — {status}")
@@ -47,7 +76,12 @@ def index(force):
     if force:
         click.echo("(force mode: re-indexing all documents)")
 
-    stats = index_all(force=force, progress_fn=progress)
+    only = None
+    if ocr_gaps:
+        only = {d["filename"] for d in discover_docs() if has_ocr_gap(d["path"])}
+        click.echo(f"(re-indexing {len(only)} documents with un-OCR'd scanned pages)")
+
+    stats = index_all(force=force, progress_fn=progress, only=only)
 
     click.echo(f"\nDone:")
     click.echo(f"  Indexed:  {stats['indexed']}")
@@ -61,7 +95,7 @@ def index(force):
 @cli.command()
 @click.argument("query")
 @click.option("-n", "--num-results", default=10, help="Number of results")
-@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes"]))
+@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes", "archive", "other"]))
 @click.option("--after", "date_from", help="After date (YYYY-MM-DD)")
 @click.option("--before", "date_to", help="Before date (YYYY-MM-DD)")
 @click.option("--keyword", is_flag=True, help="Keyword search instead of semantic")
@@ -102,7 +136,7 @@ def search(query, num_results, doc_type, date_from, date_to, keyword):
 
 @cli.command()
 @click.argument("question")
-@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes"]))
+@click.option("--type", "doc_type", type=click.Choice(["packet", "minutes", "archive", "other"]))
 @click.option("--after", "date_from", help="After date (YYYY-MM-DD)")
 @click.option("--before", "date_to", help="Before date (YYYY-MM-DD)")
 @click.option("--chunks", "n_chunks", default=config.RAG_N_CHUNKS, help="Number of context chunks")
@@ -212,25 +246,29 @@ def votes(member, side, result, search, date_from, date_to, summary, md_path, nu
 
 
 @cli.command("extract-budgets")
-@click.option("--force", is_flag=True, help="Re-extract all budget-season packets")
-@click.option("--limit", type=int, help="Process at most N packets (for testing)")
+@click.option("--force", is_flag=True, help="Re-extract all budget documents")
+@click.option("--limit", type=int, help="Process at most N documents (for testing)")
 @click.option("--workers", default=4, help="Concurrent extraction requests")
 @click.option("--batch", "use_batch", is_flag=True,
               help="Use the Message Batches API (50% cheaper, async — best for large re-extractions)")
-def extract_budgets(force, limit, workers, use_batch):
-    """Extract annual budget figures and cost drivers from packets (into budgets.json)."""
+@click.option("--source", type=click.Choice(["all", "packet", "archive"]), default="all",
+              help="Council packets, Archive Center budget books, or both (default)")
+def extract_budgets(force, limit, workers, use_batch, source):
+    """Extract annual budget figures and cost drivers from packets and budget books (into budgets.json)."""
     from pvcouncil.budget import extract_all, extract_all_batch
 
+    sources = {"packet", "archive"} if source == "all" else {source}
     if use_batch:
-        stats = extract_all_batch(force=force, limit=limit,
+        stats = extract_all_batch(force=force, limit=limit, sources=sources,
                                   progress_fn=lambda msg: click.echo(f"  {msg}"))
     else:
         def progress(current, total, filename, status):
             click.echo(f"  [{current}/{total}] {filename} — {status}")
 
-        stats = extract_all(force=force, limit=limit, workers=workers, progress_fn=progress)
+        stats = extract_all(force=force, limit=limit, workers=workers, sources=sources,
+                            progress_fn=progress)
     click.echo(f"\nDone:")
-    click.echo(f"  Extracted: {stats['extracted']} packets")
+    click.echo(f"  Extracted: {stats['extracted']} documents")
     click.echo(f"  Skipped:   {stats['skipped']} (already extracted or no budget pages)")
     click.echo(f"  Errors:    {stats['errors']}")
 

@@ -54,7 +54,8 @@ def discover_docs() -> list[dict]:
     Derives doc_type from subdirectory, meeting_date from filename prefix.
     """
     docs = []
-    type_map = {"packets": "packet", "minutes": "minutes", "other": "other"}
+    type_map = {"packets": "packet", "minutes": "minutes", "other": "other",
+                "archive": "archive"}
 
     for subdir, doc_type in type_map.items():
         dir_path = DOCS_DIR / subdir
@@ -74,10 +75,13 @@ def discover_docs() -> list[dict]:
     return docs
 
 
-def index_all(force: bool = False, batch_size: int = 50, progress_fn=None) -> dict:
+def index_all(force: bool = False, batch_size: int = 50, progress_fn=None,
+              only: set[str] | None = None) -> dict:
     """Index all documents into ChromaDB.
 
     Incremental: skips docs whose file hash matches what's already stored.
+    `only` limits the run to those filenames and re-indexes them regardless
+    of hash.
     Returns stats: {total, indexed, skipped, errors, chunks_added, empty_pages}
     """
     collection = get_collection()
@@ -91,6 +95,8 @@ def index_all(force: bool = False, batch_size: int = 50, progress_fn=None) -> di
         tracked = {}
 
     docs = discover_docs()
+    if only is not None:
+        docs = [d for d in docs if d["filename"] in only]
     stats = {
         "total": len(docs), "indexed": 0, "skipped": 0,
         "errors": 0, "chunks_added": 0, "empty_pages": 0,
@@ -100,7 +106,7 @@ def index_all(force: bool = False, batch_size: int = 50, progress_fn=None) -> di
         file_hash = _file_hash(doc["path"])
         track_key = str(doc["path"])
 
-        if not force and tracked.get(track_key) == file_hash:
+        if not force and only is None and tracked.get(track_key) == file_hash:
             stats["skipped"] += 1
             if progress_fn:
                 progress_fn(doc_idx + 1, len(docs), doc["filename"], "skipped")
@@ -144,6 +150,15 @@ def index_all(force: bool = False, batch_size: int = 50, progress_fn=None) -> di
                     "source_file": doc["filename"],
                     "chunk_index": chunk.chunk_index,
                 })
+
+            # Drop the doc's old chunks first; a re-extraction can produce
+            # fewer chunks, and upsert alone would leave the extras behind.
+            # Untrack it too, so a failed upload below is retried next run.
+            tracked.pop(track_key, None)
+            collection.delete(where={"$and": [
+                {"source_file": doc["filename"]},
+                {"doc_type": doc["doc_type"]},
+            ]})
 
             # Upsert in batches (respect Voyage rate limits)
             for i in range(0, len(ids), batch_size):

@@ -33,6 +33,7 @@ uv sync
 ```sh
 uv run pvc download    # fetch new packets/minutes from CivicClerk
 uv run pvc index       # chunk + embed new documents (incremental)
+uv run pvc index --ocr-gaps   # re-index docs whose scanned pages OCR missed
 
 uv run pvc search "stormwater drainage"
 uv run pvc search "ordinance 2428" --keyword
@@ -41,6 +42,37 @@ uv run pvc search "housing density" --type packet --after 2023-01-01
 uv run pvc ask "What has the council decided about the community center?"
 
 uv run pvc stats
+```
+
+### City reports archive
+
+`pvc download-archive` crawls the
+[Archive Center](https://www.prairievillageks.gov/Archive.aspx) on the city
+website, a separate CivicPlus site from the CivicClerk meeting portal. It
+holds the published reports that never appear in a council packet:
+
+- budget books (2006 onward)
+- annual comprehensive financial reports (1997 onward)
+- quarterly financial reports and popular annual financial reports
+- community improvement district reports
+- police annual reports, bias-based policing analyses and stop data summaries
+
+Files go to `pv_council_docs/archive/`, and `archive.json` records each
+document's category, title and source URL. Reruns fetch only new
+items. These reports have no meeting date, so the filename date comes from
+the title:
+
+- a quarterly report gets its quarter's end date
+- a budget gets January 1 of its budget year
+- other annual reports get December 31 of the year they cover
+
+```sh
+uv run pvc download-archive --list          # show categories and their IDs
+uv run pvc download-archive                 # download everything new
+uv run pvc download-archive --category 37   # one category (Budget)
+uv run pvc index                            # then index as usual
+
+uv run pvc search "fund balance policy" --type archive
 ```
 
 ### Voting records
@@ -102,7 +134,7 @@ Coverage is thinner before 2019 because the packets from those years carry
 only summary budget pages.
 
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
-`budget`, `list_documents`, and `stats` as tools for MCP clients.
+`budget`, `list_documents`, and `stats` as tools for MCP clients. Search, ask and list_documents accept `doc_type="archive"` for the city reports.
 
 ## Data
 

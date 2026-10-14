@@ -303,12 +303,15 @@ def import_parcels(xlsx_path, year, sheet):
 @click.option("--min-value", type=int, help="Minimum appraised value")
 @click.option("--max-value", type=int, help="Maximum appraised value")
 @click.option("--mails-elsewhere", is_flag=True, help="Only parcels whose tax bill goes to another address")
+@click.option("--llc", is_flag=True, help="Only parcels that appear to be LLC-owned")
+@click.option("--out-of-state", is_flag=True, help="Only parcels whose owner's mailing address is outside Kansas")
+@click.option("--mail-state", help="Owner's mailing state, e.g. MO")
 @click.option("--sort", type=click.Choice(["value", "assessed", "year", "address"]), default="address")
 @click.option("--summary", is_flag=True, help="Totals and breakdowns for the matched parcels")
 @click.option("--markdown", "md_path", type=click.Path(), help="Write the full property report for the year")
 @click.option("-n", "--num", default=50, help="Max parcels to list (default 50; 0 = all)")
 def parcels(year, address, owner, zoning, cls, use, tax_unit, subdivision, block, built_after, built_before,
-            min_value, max_value, mails_elsewhere, sort, summary, md_path, num):
+            min_value, max_value, mails_elsewhere, llc, out_of_state, mail_state, sort, summary, md_path, num):
     """Look up parcels and property values, or summarize them."""
     from pvcouncil import parcels as pm
 
@@ -331,7 +334,8 @@ def parcels(year, address, owner, zoning, cls, use, tax_unit, subdivision, block
     matched = pm.query(records, address=address, owner=owner, zoning=zoning, cls=cls, use=use,
                        tax_unit=tax_unit, subdivision=subdivision, block=block,
                        built_after=built_after, built_before=built_before,
-                       min_value=min_value, max_value=max_value, mails_elsewhere_only=mails_elsewhere)
+                       min_value=min_value, max_value=max_value, mails_elsewhere_only=mails_elsewhere,
+                       llc=llc, out_of_state=out_of_state, mail_state=mail_state)
     if not matched:
         click.echo("No matching parcels.")
         return

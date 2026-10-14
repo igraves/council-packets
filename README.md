@@ -113,7 +113,16 @@ common-area acreage separately.
 
 Owner names and mailing addresses go to `parcels/<year>-owners.csv`. That
 file is gitignored and stays on your machine. The `--owner` and
-`--mails-elsewhere` filters only work where it exists.
+`--mails-elsewhere` filters only work where it exists. The checked-in CSV
+keeps three columns derived from the owner data, none of which says who
+the owner is:
+
+- `llc_owned`: 1 if an owner or mailing name contains "LLC"
+- `owner_out_of_state`: 1 if the owner's mailing address is outside Kansas,
+  including foreign addresses
+- `owner_mail_state`: the two-letter state on the owner's mailing address
+
+The `--llc`, `--out-of-state`, and `--mail-state` filters use these columns.
 
 Platted parcels also get `subdivision_code`, `subdivision`, `plat`, `block`,
 and `lot`. The code and the block and lot come from the county parcel ID:
@@ -133,16 +142,20 @@ uv run pvc parcels --subdivision "West Riding" --summary
 uv run pvc parcels --subdivision 5500 --block 2           # by subdivision code
 uv run pvc parcels --built-after 2020 --zoning R-1B --summary
 uv run pvc parcels --mails-elsewhere --class Residential --summary
+uv run pvc parcels --llc --use "single family" --summary
+uv run pvc parcels --mail-state MO --class Residential
 uv run pvc parcels --markdown property-2026.md        # the full report
 ```
 
 [property-2026.md](property-2026.md) has 2026 totals by class, zoning,
 subdivision, and housing type. It also covers single-family values by
 decade built, new construction, tax-exempt property by use, tax units, and
-the largest parcels. The report names no owners. If the local owners file
-is present, it adds citywide ownership shares, such as the share of tax
-bills mailed out of state. If `budgets.json` is present, the report also
-checks the parcel total against the assessed valuation in the budget.
+the largest parcels. The report names no owners. Its ownership section
+gives the shares of LLC-owned and out-of-state-owned parcels, broken down by
+mailing state and by use. If the local owners file is present, it also adds
+the share of tax bills mailed somewhere other than the property. If
+`budgets.json` is present, the report also checks the parcel total against
+the assessed valuation in the budget.
 
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `budget`, `list_documents`, and `stats` as tools for MCP clients.

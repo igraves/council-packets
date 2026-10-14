@@ -149,9 +149,9 @@ file is gitignored and stays on your machine. The `--owner` and
 keeps three columns derived from the owner data, none of which says who
 the owner is:
 
-- `corp_or_llc_owned`: 1 if an owner name includes LLC, L.C., Inc., Corp.,
-  Company, or Ltd. Partnerships and trust companies acting as trustee
-  aren't counted.
+- `corp_or_llc_owned`: 1 if an owner name shows a corporation, LLC, or
+  partnership: LLC, L.C., Inc., Corp., Company, Ltd., LP, LLP, or
+  Partners/Partnership. Trust companies acting as trustee aren't counted.
 - `owner_out_of_state`: 1 if the owner's mailing address is outside Kansas,
   including foreign addresses
 - `owner_mail_state`: the two-letter state on the owner's mailing address

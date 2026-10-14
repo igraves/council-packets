@@ -271,7 +271,7 @@ Almost every lot in Prairie Village was built on by the 1970s. A recent year bui
 | --- | ---: | ---: |
 | Tax bill mailed somewhere other than the property | 1,621 | 17.4% |
 | Tax bill mailed outside Kansas | 359 | 3.8% |
-| Owned by a corporation or LLC | 695 | 7.4% |
+| Owned by a corporation, LLC, or partnership | 707 | 7.6% |
 
 **Out-of-state mailing addresses by state:**
 
@@ -288,20 +288,20 @@ Almost every lot in Prairie Village was built on by the 1970s. A recent year bui
 | OH | 4 |
 | TN | 4 |
 
-**Corporate- or LLC-owned residential parcels by use:**
+**Residential parcels owned by a corporation, LLC, or partnership, by use:**
 
-| Use | Corporate or LLC | Share of that use |
+| Use | Parcels | Share of that use |
 | --- | ---: | ---: |
-| Single family residence | 660 | 7.5% |
+| Single family residence | 664 | 7.5% |
 | Apartment unit single family | 13 | 12.0% |
-| Duplex | 7 | 4.1% |
-| Garden apartment complex (1-3 stories) | 3 | 33.3% |
+| Garden apartment complex (1-3 stories) | 9 | 100.0% |
+| Duplex | 8 | 4.7% |
+| Residential common area and support facilities | 3 | 75.0% |
 | Assisted-living facility | 3 | 100.0% |
 | Townhouse Unit | 2 | 4.1% |
-| Residential common area and support facilities | 2 | 50.0% |
 | Life care / continuing care services | 1 | 100.0% |
 
-Some owners have their bill sent to a bank, a trust, or a second home. A mailing address only shows where the bill goes, not where the owner lives. "Corporation or LLC" means an owner name includes LLC, L.C., Inc., Corp., Company, or Ltd. That includes homes associations and incorporated nonprofits. It doesn't include partnerships (LP, LLP), trusts, or trust companies acting as trustee.
+Some owners have their bill sent to a bank, a trust, or a second home. A mailing address only shows where the bill goes, not where the owner lives. "Corporation, LLC, or partnership" means an owner name includes LLC, L.C., Inc., Corp., Company, Ltd., LP, LLP, or Partners/Partnership. That includes homes associations and incorporated nonprofits. It doesn't include trusts or trust companies acting as trustee.
 
 ## Tax-exempt property
 

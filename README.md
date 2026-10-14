@@ -101,6 +101,49 @@ exists, so renamed or regrouped lines don't show up as false changes.
 Coverage is thinner before 2019 because the packets from those years carry
 only summary budget pages.
 
+### Parcels and property values
+
+`pvc import-parcels` reads a Johnson County AIMS parcel export (.xlsx) and
+writes `parcels/<year>.csv`, one row per tax parcel. The rows include
+address, land use, zoning, tax unit, year built, the county's grade and
+condition ratings, and appraised and assessed values. The county export
+lists condo and townhouse units twice, once for the unit and once for the
+shared common area. Import keeps one row per parcel and records the
+common-area acreage separately.
+
+Owner names and mailing addresses go to `parcels/<year>-owners.csv`. That
+file is gitignored and stays on your machine. The `--owner` and
+`--mails-elsewhere` filters only work where it exists.
+
+Platted parcels also get `subdivision_code`, `subdivision`, `plat`, `block`,
+and `lot`. The code and the block and lot come from the county parcel ID:
+`OP55000002 0030` is subdivision 5500 (Prairie Village), block 2, lot 30.
+The plat name is parsed from the legal description. A subdivision code can
+cover several plats, such as West Riding and West Riding 2nd Plat, so the
+subdivision takes the name of its most common plat. Unplatted acreage
+(`OF…` parcel IDs) has none of these fields.
+
+```sh
+uv run pvc import-parcels "2026 Parcel Data.xlsx" --year 2026
+
+uv run pvc parcels --address "4000 W 68TH"            # one parcel's full record
+uv run pvc parcels --owner "PRAIRIE VILLAGE" --class Exempt   # needs the local owners file
+uv run pvc parcels --use duplex --sort value
+uv run pvc parcels --subdivision "West Riding" --summary
+uv run pvc parcels --subdivision 5500 --block 2           # by subdivision code
+uv run pvc parcels --built-after 2020 --zoning R-1B --summary
+uv run pvc parcels --mails-elsewhere --class Residential --summary
+uv run pvc parcels --markdown property-2026.md        # the full report
+```
+
+[property-2026.md](property-2026.md) has 2026 totals by class, zoning,
+subdivision, and housing type. It also covers single-family values by
+decade built, new construction, tax-exempt property by use, tax units, and
+the largest parcels. The report names no owners. If the local owners file
+is present, it adds citywide ownership shares, such as the share of tax
+bills mailed out of state. If `budgets.json` is present, the report also
+checks the parcel total against the assessed valuation in the budget.
+
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `budget`, `list_documents`, and `stats` as tools for MCP clients.
 

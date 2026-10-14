@@ -265,6 +265,92 @@ def budget(year, years, md_path):
     click.echo(render_trend())
 
 
+@cli.command("import-parcels")
+@click.argument("xlsx_path", type=click.Path(exists=True, dir_okay=False))
+@click.option("--year", type=int, required=True, help="Valuation year of the export")
+@click.option("--sheet", help="Worksheet to read (default: the one with the most rows)")
+def import_parcels(xlsx_path, year, sheet):
+    """Import a Johnson County AIMS parcel export (.xlsx) into parcels/<year>.csv."""
+    from pathlib import Path
+
+    from pvcouncil.parcels import import_xlsx
+
+    try:
+        stats = import_xlsx(Path(xlsx_path), year, sheet)
+    except (KeyError, ValueError) as e:
+        raise click.ClickException(str(e))
+    click.echo(f"Sheet {stats['sheet']!r}: {stats['rows']:,} polygon rows → {stats['parcels']:,} tax parcels")
+    if stats["skipped"]:
+        click.echo(f"  Skipped {stats['skipped']} rows with no parcel ID (summary rows)")
+    if stats["conflicts"]:
+        click.echo(f"  Warning: {len(stats['conflicts'])} parcels have rows with differing values: "
+                   + ", ".join(stats["conflicts"][:5]))
+    click.echo(f"Wrote {stats['path']}")
+
+
+@cli.command()
+@click.option("--year", type=int, help="Valuation year (default: latest imported)")
+@click.option("--address", help="Substring match on the property address")
+@click.option("--owner", help="Substring match on owner or mailing name")
+@click.option("--zoning", help="Zoning district, e.g. R-1A")
+@click.option("--class", "cls", help="County class: Residential, Commercial, Exempt, Vacant, ...")
+@click.option("--use", help="Substring match on land use, e.g. duplex, townhouse, office")
+@click.option("--tax-unit", help="Tax unit code, e.g. 0897UT")
+@click.option("--subdivision", help="Subdivision or plat name (substring), or 4-digit subdivision code")
+@click.option("--block", help="Block within the subdivision")
+@click.option("--built-after", type=int, help="Year built on or after")
+@click.option("--built-before", type=int, help="Year built on or before")
+@click.option("--min-value", type=int, help="Minimum appraised value")
+@click.option("--max-value", type=int, help="Maximum appraised value")
+@click.option("--mails-elsewhere", is_flag=True, help="Only parcels whose tax bill goes to another address")
+@click.option("--sort", type=click.Choice(["value", "assessed", "year", "address"]), default="address")
+@click.option("--summary", is_flag=True, help="Totals and breakdowns for the matched parcels")
+@click.option("--markdown", "md_path", type=click.Path(), help="Write the full property report for the year")
+@click.option("-n", "--num", default=50, help="Max parcels to list (default 50; 0 = all)")
+def parcels(year, address, owner, zoning, cls, use, tax_unit, subdivision, block, built_after, built_before,
+            min_value, max_value, mails_elsewhere, sort, summary, md_path, num):
+    """Look up parcels and property values, or summarize them."""
+    from pvcouncil import parcels as pm
+
+    try:
+        records = pm.load(year)
+    except FileNotFoundError as e:
+        raise click.ClickException(str(e))
+
+    if md_path:
+        from pathlib import Path
+        Path(md_path).write_text(pm.render_markdown(year))
+        click.echo(f"Wrote property report to {md_path}")
+        return
+
+    if (owner or mails_elsewhere) and not pm.has_owners(records):
+        raise click.ClickException(
+            "Owner data isn't in the repo. Run `pvc import-parcels` on the county export "
+            "to create the local parcels/<year>-owners.csv.")
+
+    matched = pm.query(records, address=address, owner=owner, zoning=zoning, cls=cls, use=use,
+                       tax_unit=tax_unit, subdivision=subdivision, block=block,
+                       built_after=built_after, built_before=built_before,
+                       min_value=min_value, max_value=max_value, mails_elsewhere_only=mails_elsewhere)
+    if not matched:
+        click.echo("No matching parcels.")
+        return
+    if summary:
+        click.echo(pm.render_summary(matched))
+        return
+    if len(matched) == 1:
+        click.echo(pm.render_detail(matched[0]))
+        return
+
+    sort_key = {"value": lambda p: -(p["total_value"] or 0),
+                "assessed": lambda p: -(p["assessed_total"] or 0),
+                "year": lambda p: -(p["year_built"] or 0),
+                "address": lambda p: p["address"] or ""}[sort]
+    matched.sort(key=sort_key)
+    click.echo(f"{len(matched):,} parcels\n")
+    click.echo(pm.render_list(matched, num))
+
+
 @cli.command()
 def stats():
     """Show index statistics."""

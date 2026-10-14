@@ -33,6 +33,7 @@ uv sync
 ```sh
 uv run pvc download    # fetch new packets/minutes from CivicClerk
 uv run pvc index       # chunk + embed new documents (incremental)
+uv run pvc index --ocr-gaps   # re-index docs whose scanned pages OCR missed
 
 uv run pvc search "stormwater drainage"
 uv run pvc search "ordinance 2428" --keyword

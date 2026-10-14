@@ -61,6 +61,20 @@ def extract_pages(pdf_path: Path, ocr: bool = True) -> list[tuple[int, str]]:
     return pages
 
 
+def has_ocr_gap(pdf_path: Path) -> bool:
+    """True if a page has a stray text layer over an image.
+
+    Indexes built before MIN_TEXT_CHARS existed skipped OCR on such pages, so
+    their scanned content is missing from the index.
+    """
+    with fitz.open(str(pdf_path)) as doc:
+        for page in doc:
+            text = page.get_text("text").strip()
+            if 0 < len(text) < MIN_TEXT_CHARS and page.get_images():
+                return True
+    return False
+
+
 def extract_text(pdf_path: Path) -> str:
     """Extract all text from a PDF as a single string."""
     pages = extract_pages(pdf_path)

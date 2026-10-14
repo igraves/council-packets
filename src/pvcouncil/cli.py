@@ -62,9 +62,12 @@ def download_archive_cmd(amids, list_only, dry_run):
 
 @cli.command()
 @click.option("--force", is_flag=True, help="Re-index all documents")
-def index(force):
+@click.option("--ocr-gaps", is_flag=True,
+              help="Re-index only documents with scanned pages missed by OCR")
+def index(force, ocr_gaps):
     """Index PDF documents into ChromaDB."""
-    from pvcouncil.index import index_all
+    from pvcouncil.index import index_all, discover_docs
+    from pvcouncil.extract import has_ocr_gap
 
     def progress(current, total, filename, status):
         click.echo(f"  [{current}/{total}] {filename} — {status}")
@@ -73,7 +76,12 @@ def index(force):
     if force:
         click.echo("(force mode: re-indexing all documents)")
 
-    stats = index_all(force=force, progress_fn=progress)
+    only = None
+    if ocr_gaps:
+        only = {d["filename"] for d in discover_docs() if has_ocr_gap(d["path"])}
+        click.echo(f"(re-indexing {len(only)} documents with un-OCR'd scanned pages)")
+
+    stats = index_all(force=force, progress_fn=progress, only=only)
 
     click.echo(f"\nDone:")
     click.echo(f"  Indexed:  {stats['indexed']}")

@@ -341,7 +341,7 @@ def import_parcels(xlsx_path, year, sheet):
 @click.option("--min-value", type=int, help="Minimum appraised value")
 @click.option("--max-value", type=int, help="Maximum appraised value")
 @click.option("--mails-elsewhere", is_flag=True, help="Only parcels whose tax bill goes to another address")
-@click.option("--corp-or-llc", is_flag=True, help="Only parcels that appear to be owned by a corporation or LLC")
+@click.option("--corp-or-llc", is_flag=True, help="Only parcels that appear to be owned by a corporation, LLC, or partnership")
 @click.option("--out-of-state", is_flag=True, help="Only parcels whose owner's mailing address is outside Kansas")
 @click.option("--mail-state", help="Owner's mailing state, e.g. MO")
 @click.option("--sort", type=click.Choice(["value", "assessed", "year", "address"]), default="address")

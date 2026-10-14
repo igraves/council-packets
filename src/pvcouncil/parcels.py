@@ -186,6 +186,10 @@ _LLC = re.compile(r"\bL\.?\s?L\.?\s?C\b|\bL\.?C\b")
 # A bare "CO" is left out because in these names it is nearly always
 # "CO-TRUSTEE", not "& Co."
 _CORP = re.compile(r"\b(?:INC|INCORPORATED|CORP|CORPORATION|COMPANY|LTD)\b")
+# Partnerships: LP, L.P., LLP, LLLP, FLP (family limited partnership),
+# "... PARTNERS", "... LIMITED PARTNERSHIP". There is no space inside the
+# initials, so a middle-initial pair like "JOHN L P SMITH" doesn't match.
+_PARTNERSHIP = re.compile(r"\b(?:L\.?P|L\.?L\.?P|L\.?L\.?L\.?P|F\.?L\.?P)\b|\bPARTNERS(?:HIP)?\b")
 
 
 def _is_corp_or_llc(name: str | None) -> bool:
@@ -197,13 +201,14 @@ def _is_corp_or_llc(name: str | None) -> bool:
     # holds the property for a person's trust.
     if re.match(r"[A-Z'-]+, ", name) or re.search(r"\b(?:TRUSTEE|TTEE)\b", name):
         return False
-    return bool(_CORP.search(name))
+    return bool(_CORP.search(name) or _PARTNERSHIP.search(name))
 
 
 def _owner_flags(rec: dict) -> dict:
-    """Corporate/LLC ownership and the owner's mailing state, from the owner fields.
+    """Business-entity ownership and the owner's mailing state, from the owner fields.
 
-    Only the owner names count toward corporate/LLC ownership. The mailing
+    corp_or_llc_owned covers corporations, LLCs, and partnerships. Only the
+    owner names count toward it. The mailing
     name is often a bank or tax service paying the bill for the owner. The
     state is the two-letter code before the ZIP on the last mailing line
     ("KANSAS CITY, MO 64114"). A foreign address has no state code and is
@@ -440,7 +445,7 @@ def render_detail(p: dict) -> str:
                   f"  Mailing:     {', '.join(filter(None, (p['mail_name'], p['mail_line1'], p['mail_line2'])))}"]
     if p["owner_out_of_state"] is not None:
         state = p["owner_mail_state"] or "outside the US"
-        lines.append(f"  Ownership:   {'corporate/LLC-owned' if p['corp_or_llc_owned'] else 'not corporate/LLC-owned'}, "
+        lines.append(f"  Ownership:   {'corporation/LLC/partnership-owned' if p['corp_or_llc_owned'] else 'not owned by a corporation, LLC, or partnership'}, "
                      f"owner mails from {state}{' (out of state)' if p['owner_out_of_state'] else ''}")
     lines += [f"  Use:         {p['function']} ({p['class']}), zoned {p['zoning']}, tax unit {p['tax_unit']}",
               f"  Built:       {p['year_built'] or '—'}  {p['style'] or ''}  grade {p['grade'] or '—'}, "
@@ -606,21 +611,21 @@ def render_markdown(year: int | None = None) -> str:
         orows.append(["Tax bill mailed somewhere other than the property", f"{len(elsewhere):,}",
                       f"{len(elsewhere) / len(res) * 100:.1f}%"])
     orows += [["Tax bill mailed outside Kansas", f"{len(out_of_state):,}", f"{len(out_of_state) / len(res) * 100:.1f}%"],
-              ["Owned by a corporation or LLC", f"{len(corp):,}", f"{len(corp) / len(res) * 100:.1f}%"]]
+              ["Owned by a corporation, LLC, or partnership", f"{len(corp):,}", f"{len(corp) / len(res) * 100:.1f}%"]]
     lines += _table(["Residential parcels", "Count", "Share"], orows)
     lines += ["", "**Out-of-state mailing addresses by state:**", ""]
     states = Counter(p["owner_mail_state"] or "(outside the US)" for p in out_of_state)
     lines += _table(["State", "Residential parcels"], [[s, n] for s, n in states.most_common(10)])
-    lines += ["", "**Corporate- or LLC-owned residential parcels by use:**", ""]
-    lines += _table(["Use", "Corporate or LLC", "Share of that use"],
+    lines += ["", "**Residential parcels owned by a corporation, LLC, or partnership, by use:**", ""]
+    lines += _table(["Use", "Parcels", "Share of that use"],
                     [[k, n, f"{n / sum(1 for p in res if p['function'] == k) * 100:.1f}%"]
                      for k, n in Counter(p["function"] for p in corp).most_common(8)])
     lines += ["", "Some owners have their bill sent to a bank, a trust, or a second home. "
               "A mailing address only shows where the bill goes, not where the owner lives. "
-              "\"Corporation or LLC\" means an owner name includes LLC, L.C., Inc., Corp., "
-              "Company, or Ltd. That includes homes associations and incorporated nonprofits. "
-              "It doesn't include partnerships (LP, LLP), trusts, or trust companies acting "
-              "as trustee."]
+              "\"Corporation, LLC, or partnership\" means an owner name includes LLC, L.C., "
+              "Inc., Corp., Company, Ltd., LP, LLP, or Partners/Partnership. That includes "
+              "homes associations and incorporated nonprofits. It doesn't include trusts or "
+              "trust companies acting as trustee."]
 
     exempt = [p for p in ps if p["class"] == "Exempt"]
     lines += ["", "## Tax-exempt property", "",

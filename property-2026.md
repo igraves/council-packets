@@ -271,7 +271,7 @@ Almost every lot in Prairie Village was built on by the 1970s. A recent year bui
 | --- | ---: | ---: |
 | Tax bill mailed somewhere other than the property | 1,621 | 17.4% |
 | Tax bill mailed outside Kansas | 359 | 3.8% |
-| Owned by an LLC | 667 | 7.1% |
+| Owned by a corporation or LLC | 695 | 7.4% |
 
 **Out-of-state mailing addresses by state:**
 
@@ -288,20 +288,20 @@ Almost every lot in Prairie Village was built on by the 1970s. A recent year bui
 | OH | 4 |
 | TN | 4 |
 
-**LLC-owned residential parcels by use:**
+**Corporate- or LLC-owned residential parcels by use:**
 
-| Use | LLC-owned | Share of that use |
+| Use | Corporate or LLC | Share of that use |
 | --- | ---: | ---: |
-| Single family residence | 636 | 7.2% |
+| Single family residence | 660 | 7.5% |
 | Apartment unit single family | 13 | 12.0% |
-| Duplex | 6 | 3.5% |
+| Duplex | 7 | 4.1% |
 | Garden apartment complex (1-3 stories) | 3 | 33.3% |
 | Assisted-living facility | 3 | 100.0% |
 | Townhouse Unit | 2 | 4.1% |
+| Residential common area and support facilities | 2 | 50.0% |
 | Life care / continuing care services | 1 | 100.0% |
-| Triplex | 1 | 1.6% |
 
-Some owners have their bill sent to a bank, a trust, or a second home. A mailing address only shows where the bill goes, not where the owner lives. "LLC-owned" means an owner or mailing name contains "LLC". It doesn't include corporations, partnerships, or trusts.
+Some owners have their bill sent to a bank, a trust, or a second home. A mailing address only shows where the bill goes, not where the owner lives. "Corporation or LLC" means an owner name includes LLC, L.C., Inc., Corp., Company, or Ltd. That includes homes associations and incorporated nonprofits. It doesn't include partnerships (LP, LLP), trusts, or trust companies acting as trustee.
 
 ## Tax-exempt property
 

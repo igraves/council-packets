@@ -62,13 +62,13 @@ PLAT_COLUMNS = ["subdivision_code", "subdivision", "plat", "block", "lot"]
 # parcels/<year>-owners.csv so they stay local and out of the repo.
 OWNER_COLUMNS = ["owner1", "owner2", "mail_name", "mail_line1", "mail_line2"]
 # Flags derived from the owner data that say nothing about who the owner is
-OWNER_FLAG_COLUMNS = ["llc_owned", "owner_out_of_state", "owner_mail_state"]
+OWNER_FLAG_COLUMNS = ["corp_or_llc_owned", "owner_out_of_state", "owner_mail_state"]
 COLUMNS = ([c for c in SOURCE_COLUMNS if c not in OWNER_COLUMNS] + PLAT_COLUMNS
            + ["common_area_acres", "polygons"] + OWNER_FLAG_COLUMNS)
 
 INT_COLUMNS = {"dwelling_units", "year_built", "lot_sqft", "land_value", "improvement_value",
                "total_value", "assessed_land", "assessed_improvement", "assessed_total", "polygons",
-               "llc_owned", "owner_out_of_state"}
+               "corp_or_llc_owned", "owner_out_of_state"}
 FLOAT_COLUMNS = {"acres", "common_area_acres", "assessment_pct_land", "assessment_pct_improvement"}
 
 # A single-family house, as opposed to a condo, townhouse, or duplex unit
@@ -182,24 +182,41 @@ def _name_subdivisions(records: list[dict]) -> None:
             r["subdivision"] = names[r["subdivision_code"]].most_common(1)[0][0]
 
 
-_LLC = re.compile(r"\bL\.?\s?L\.?\s?C\b")
+_LLC = re.compile(r"\bL\.?\s?L\.?\s?C\b|\bL\.?C\b")
+# A bare "CO" is left out because in these names it is nearly always
+# "CO-TRUSTEE", not "& Co."
+_CORP = re.compile(r"\b(?:INC|INCORPORATED|CORP|CORPORATION|COMPANY|LTD)\b")
+
+
+def _is_corp_or_llc(name: str | None) -> bool:
+    if not name:
+        return False
+    if _LLC.search(name):
+        return True
+    # "CORP, LILLIAN I" is a surname. A trust company acting as trustee
+    # holds the property for a person's trust.
+    if re.match(r"[A-Z'-]+, ", name) or re.search(r"\b(?:TRUSTEE|TTEE)\b", name):
+        return False
+    return bool(_CORP.search(name))
 
 
 def _owner_flags(rec: dict) -> dict:
-    """LLC ownership and the owner's mailing state, from the owner fields.
+    """Corporate/LLC ownership and the owner's mailing state, from the owner fields.
 
-    The state is the two-letter code before the ZIP on the last mailing line
+    Only the owner names count toward corporate/LLC ownership. The mailing
+    name is often a bank or tax service paying the bill for the owner. The
+    state is the two-letter code before the ZIP on the last mailing line
     ("KANSAS CITY, MO 64114"). A foreign address has no state code and is
     recorded as out of state with no state. A missing address is unknown,
     and both flags are left blank.
     """
-    llc = int(any(_LLC.search(rec[k] or "") for k in ("owner1", "owner2", "mail_name")))
+    corp = int(_is_corp_or_llc(rec["owner1"]) or _is_corp_or_llc(rec["owner2"]))
     line = rec["mail_line2"]
     if not line:
-        return {"llc_owned": llc, "owner_out_of_state": None, "owner_mail_state": None}
+        return {"corp_or_llc_owned": corp, "owner_out_of_state": None, "owner_mail_state": None}
     m = re.search(r"\b([A-Z]{2})\s+\d{5}(?:-\d{4})?$", line)
     state = m.group(1) if m else None
-    return {"llc_owned": llc, "owner_out_of_state": int(state != "KS"), "owner_mail_state": state}
+    return {"corp_or_llc_owned": corp, "owner_out_of_state": int(state != "KS"), "owner_mail_state": state}
 
 
 def _clean(rec: dict) -> dict:
@@ -279,10 +296,10 @@ def owners(p: dict) -> str:
 
 def query(parcels: list[dict], *, address=None, owner=None, zoning=None, cls=None, use=None,
           tax_unit=None, subdivision=None, block=None, built_after=None, built_before=None,
-          min_value=None, max_value=None, mails_elsewhere_only=False, llc=False,
+          min_value=None, max_value=None, mails_elsewhere_only=False, corp_or_llc=False,
           out_of_state=False, mail_state=None) -> list[dict]:
     def match(p):
-        if llc and not p["llc_owned"]:
+        if corp_or_llc and not p["corp_or_llc_owned"]:
             return False
         if out_of_state and not p["owner_out_of_state"]:
             return False
@@ -423,7 +440,7 @@ def render_detail(p: dict) -> str:
                   f"  Mailing:     {', '.join(filter(None, (p['mail_name'], p['mail_line1'], p['mail_line2'])))}"]
     if p["owner_out_of_state"] is not None:
         state = p["owner_mail_state"] or "outside the US"
-        lines.append(f"  Ownership:   {'LLC-owned' if p['llc_owned'] else 'not LLC-owned'}, "
+        lines.append(f"  Ownership:   {'corporate/LLC-owned' if p['corp_or_llc_owned'] else 'not corporate/LLC-owned'}, "
                      f"owner mails from {state}{' (out of state)' if p['owner_out_of_state'] else ''}")
     lines += [f"  Use:         {p['function']} ({p['class']}), zoned {p['zoning']}, tax unit {p['tax_unit']}",
               f"  Built:       {p['year_built'] or '—'}  {p['style'] or ''}  grade {p['grade'] or '—'}, "
@@ -578,10 +595,10 @@ def render_markdown(year: int | None = None) -> str:
                   "year built usually means an older house was torn down and replaced."]
 
     # Owner names stay out of the report: only citywide shares, from the
-    # llc_owned / owner_out_of_state flags, plus the mailed-elsewhere share
-    # when the local owners file is present.
+    # corp_or_llc_owned / owner_out_of_state flags, plus the mailed-elsewhere
+    # share when the local owners file is present.
     lines += ["", "## Ownership", ""]
-    llc = [p for p in res if p["llc_owned"]]
+    corp = [p for p in res if p["corp_or_llc_owned"]]
     out_of_state = [p for p in res if p["owner_out_of_state"]]
     orows = []
     if has_owners(ps):
@@ -589,19 +606,21 @@ def render_markdown(year: int | None = None) -> str:
         orows.append(["Tax bill mailed somewhere other than the property", f"{len(elsewhere):,}",
                       f"{len(elsewhere) / len(res) * 100:.1f}%"])
     orows += [["Tax bill mailed outside Kansas", f"{len(out_of_state):,}", f"{len(out_of_state) / len(res) * 100:.1f}%"],
-              ["Owned by an LLC", f"{len(llc):,}", f"{len(llc) / len(res) * 100:.1f}%"]]
+              ["Owned by a corporation or LLC", f"{len(corp):,}", f"{len(corp) / len(res) * 100:.1f}%"]]
     lines += _table(["Residential parcels", "Count", "Share"], orows)
     lines += ["", "**Out-of-state mailing addresses by state:**", ""]
     states = Counter(p["owner_mail_state"] or "(outside the US)" for p in out_of_state)
     lines += _table(["State", "Residential parcels"], [[s, n] for s, n in states.most_common(10)])
-    lines += ["", "**LLC-owned residential parcels by use:**", ""]
-    lines += _table(["Use", "LLC-owned", "Share of that use"],
+    lines += ["", "**Corporate- or LLC-owned residential parcels by use:**", ""]
+    lines += _table(["Use", "Corporate or LLC", "Share of that use"],
                     [[k, n, f"{n / sum(1 for p in res if p['function'] == k) * 100:.1f}%"]
-                     for k, n in Counter(p["function"] for p in llc).most_common(8)])
+                     for k, n in Counter(p["function"] for p in corp).most_common(8)])
     lines += ["", "Some owners have their bill sent to a bank, a trust, or a second home. "
               "A mailing address only shows where the bill goes, not where the owner lives. "
-              "\"LLC-owned\" means an owner or mailing name contains \"LLC\". It doesn't "
-              "include corporations, partnerships, or trusts."]
+              "\"Corporation or LLC\" means an owner name includes LLC, L.C., Inc., Corp., "
+              "Company, or Ltd. That includes homes associations and incorporated nonprofits. "
+              "It doesn't include partnerships (LP, LLP), trusts, or trust companies acting "
+              "as trustee."]
 
     exempt = [p for p in ps if p["class"] == "Exempt"]
     lines += ["", "## Tax-exempt property", "",

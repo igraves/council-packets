@@ -70,6 +70,7 @@ def build_index() -> dict:
             "title": " / ".join(pl), "code": code, "subdivision": sub, "path": str(path),
             "features": o.get("terms", []), "note": None, "term": None,
             "ocr_words": words, "ocr": "poor" if words < POOR_PLAT_WORDS else "good",
+            "transcribed_terms": o.get("transcribed_terms", {}),
         }
     if restrictread.RESULTS_PATH.exists():
         for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]:
@@ -87,6 +88,7 @@ def build_index() -> dict:
                 "path": str(path), "features": r["features"], "note": r.get("note"), "term": r.get("term"),
                 "filed_with": r["plat_book_pages"], "reviewed": bool(r.get("reviewed")),
                 "ocr_words": words, "ocr": "poor" if poor else "good",
+                "transcribed_terms": r.get("transcribed_terms", {}),
             }
     for d in docs.values():
         with fitz.open(d["path"]) as pdf:
@@ -181,18 +183,35 @@ def ocr_region(doc: dict, page: int, box: list[float], rot: int, dpi: int, inver
     }
 
 
+def regions(doc: dict) -> list[dict]:
+    """A document's saved regions, each marked stale if drawn on a different image."""
+    fp = transcripts.fingerprint(doc["path"])
+    return [{**x, "stale": transcripts.is_stale(x, fp)} for x in transcripts.for_key(doc["key"])]
+
+
+def source(doc: dict) -> dict:
+    return {"book_page": doc["book_page"], "recorded": doc["recorded"], "pages": doc["pages"],
+            "fingerprint": transcripts.fingerprint(doc["path"])}
+
+
 def reclassify(doc: dict) -> dict:
-    """Restriction terms for a document with its OCR text plus saved transcriptions."""
+    """Restriction terms for a document with its OCR text plus saved transcriptions, and
+    which of them only a transcription found."""
     key = doc["key"]
     stem = Path(doc["path"]).stem
+    items = transcripts.for_key(key)
     if key.startswith("p:"):
         f = platocr.OCR_DIR / f"{stem}.txt"
-        text = (f.read_text() if f.exists() else "") + "\n\n" + transcripts.text_for(key)
-        return {"features": platocr.find_restrictions(text)["terms"]}
+        ocr = f.read_text() if f.exists() else ""
+        terms = lambda t: platocr.find_restrictions(t)["terms"]  # noqa: E731
+        return {"features": terms(ocr + "\n\n" + transcripts.text_for(key)),
+                "transcribed_terms": transcripts.attribute(items, set(terms(ocr)), terms)}
     f = restrictread.OCR_DIR / f"{stem}.txt"
-    text = (f.read_text() if f.exists() else "") + "\n\n" + transcripts.text_for(key)
-    c = restrictread.classify(text)
-    out = {"features": c["features"], "term": c["term"]}
+    ocr = f.read_text() if f.exists() else ""
+    c = restrictread.classify(ocr + "\n\n" + transcripts.text_for(key))
+    terms = lambda t: restrictread.classify(t)["features"]  # noqa: E731
+    out = {"features": c["features"], "term": c["term"],
+           "transcribed_terms": transcripts.attribute(items, set(terms(ocr)), terms)}
     if not doc.get("reviewed"):  # a kind read by eye stands
         out["kind"] = c["kind"]
     return out
@@ -217,9 +236,17 @@ class Handler(BaseHTTPRequestHandler):
 
     def _public(self) -> list[dict]:
         manual = transcripts.load()
-        # the browser never sees local file paths
-        out = [{**{k: v for k, v in d.items() if k != "path"}, "transcribed": len(manual.get(d["key"], []))}
-               for d in self.docs.values()]
+        out = []
+        for d in self.docs.values():
+            items = manual.get(d["key"], [])
+            stale, now = 0, {}
+            if items:
+                fp = transcripts.fingerprint(d["path"])
+                stale = sum(transcripts.is_stale(x, fp) is True for x in items)
+                now = reclassify(d)  # transcriptions saved since startup change the terms
+            # the browser never sees local file paths
+            out.append({**{k: v for k, v in d.items() if k != "path"}, **now,
+                        "transcribed": len(items), "stale_transcriptions": stale})
         return sorted(out, key=lambda d: (d["subdivision"], d["recorded"], d["book_page"]))
 
     def do_GET(self):
@@ -232,7 +259,7 @@ class Handler(BaseHTTPRequestHandler):
         if url.path == "/api/transcripts":
             key = q.get("key", [""])[0]
             if key in self.docs:
-                return self._json(transcripts.for_key(key))
+                return self._json(regions(self.docs[key]))
         m = re.fullmatch(r"/page/([pr]):(\d+)/(\d+)\.jpg", url.path)
         if m:
             doc = self.docs.get(f"{m.group(1)}:{m.group(2)}")
@@ -267,8 +294,8 @@ class Handler(BaseHTTPRequestHandler):
                 region = body["region"]
                 if not (1 <= int(region["page"]) <= doc["pages"] and len(region["box"]) == 4):
                     return self.send_error(HTTPStatus.BAD_REQUEST)
-                saved = transcripts.save(doc["key"], region)
-                return self._json({"saved": saved, "classified": reclassify(doc)})
+                saved = transcripts.save(doc["key"], region, source(doc))
+                return self._json({"saved": {**saved, "stale": False}, "classified": reclassify(doc)})
             if path == "/api/transcripts/delete":
                 transcripts.delete(doc["key"], str(body["id"]))
                 return self._json({"classified": reclassify(doc)})

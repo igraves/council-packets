@@ -351,8 +351,21 @@ def render_markdown(out: dict, manifest: dict) -> str:
     reads = {}
     if restrictread.RESULTS_PATH.exists():
         reads = {r["id"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
-    filed_all = [{**e, **{k: reads[e["id"]][k] for k in ("kind", "features", "term", "note", "unrelated")
+    filed_all = [{**e, **{k: reads[e["id"]][k] for k in ("kind", "features", "term", "note", "unrelated",
+                                                         "transcribed_terms", "stale_transcriptions")
                           if k in reads.get(e["id"], {})}} for e in out.get("filed_with_plat", [])]
+
+    def cite(term: str, e: dict) -> str:
+        """A term, cited to the transcribed page and region when only a transcription found it."""
+        where = (e.get("transcribed_terms") or {}).get(term)
+        if not where:
+            return term
+        return f"{term} (transcribed: " + "; ".join(f"p. {w['page']}, region {w['region']}" for w in where) + ")"
+
+    def stale_note(e: dict) -> str:
+        n = e.get("stale_transcriptions") or 0
+        return (f" ⚠ {n} transcription{'s' if n > 1 else ''} drawn on an earlier image of this document; "
+                "check in the viewer") if n else ""
     filed_rel = [e for e in filed_all if not e.get("unrelated")]
     decl_kinds = ("restrictions", "homes association", "restriction amendment")
     racial = [e for e in filed_rel if "racial restriction" in e.get("features", [])]
@@ -366,6 +379,12 @@ def render_markdown(out: dict, manifest: dict) -> str:
                 if p not in first_plat or e["recorded"] < first_plat[p]:
                     first_plat[p] = e["recorded"]
 
+    plat_rows = (json.loads(platocr.RESULTS_PATH.read_text())["plats"] if platocr.RESULTS_PATH.exists() else [])
+    tr_rows = [e for e in filed_rel if e.get("transcribed_terms") is not None] + \
+              [r for r in plat_rows if r.get("transcribed")]
+    n_tr = len([e for e in filed_rel if reads.get(e["id"], {}).get("transcribed")]) + len(
+        [r for r in plat_rows if r.get("transcribed")])
+    n_tr_terms = sum(len(e.get("transcribed_terms") or {}) for e in tr_rows)
     covered = [k for k, pl in subs.items() if any(filed[p] or on_plat.get(p) or typed[p] for p in pl)]
     lines = [
         "# Prairie Village subdivision restrictions",
@@ -388,6 +407,9 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "declarations it could read; about 20 Kansas City Investment Company declarations from "
         "1952–57 are low-resolution photostat negatives and were classified by eye from their "
         "headings only.",
+        *([f"- **{n_tr}** document{'s have' if n_tr != 1 else ' has'} hand-checked transcriptions of regions OCR couldn't read "
+           f"(made in `pvc deed-viewer`); **{n_tr_terms}** terms below were found only in a "
+           "transcription and are cited to its page and region."] if n_tr else []),
         f"- **{sum(len(v) for v in on_plat.values())}** plats state restrictions or covenants on "
         "their face (found by OCR of the plat images)",
         f"- **{len(out.get('instruments', []))}** instruments indexed as a Declaration of "
@@ -423,15 +445,16 @@ def render_markdown(out: dict, manifest: dict) -> str:
         lines += [f"### {sub} ({code})", ""]
         for e in f_:
             what = e.get("kind", e["doc_type"])
-            detail = [f for f in e.get("features", []) if f != "homes association assessments"]
+            detail = [cite(f, e) for f in e.get("features", []) if f != "homes association assessments"]
             extra = (f"; {e['term']}" if e.get("term") else "") + (f"; {', '.join(detail)}" if detail else "")
             lines.append(f"- **Filed with plat** {', '.join(e['plat_book_pages'])}: {e['recorded']} "
                          f"{e['book_page']} (document {e['docid']}) — **{what}**{extra}"
-                         + (f". {e['note']}" if e.get("note") else ""))
+                         + (f". {e['note']}" if e.get("note") else "") + stale_note(e))
         for e in o_:
             cites = ", ".join(f"MISC {c['book']}/{c['page'] or '?'}" for c in e["citations"])
             lines.append(f"- **On the plat** {e['book_page']} ({e['recorded']}): "
-                         f"{', '.join(e['terms'])}" + (f"; cites {cites}" if cites else ""))
+                         f"{', '.join(cite(t, e) for t in e['terms'])}" + (f"; cites {cites}" if cites else "")
+                         + stale_note(e))
         shown = {e["id"] for e in f_}
         t_rest = [e for e in t_ if e["id"] not in shown]
         for e in t_rest[:12]:

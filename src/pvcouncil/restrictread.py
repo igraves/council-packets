@@ -174,13 +174,20 @@ def build(entries: list[dict]) -> dict:
         if not txt.exists():
             continue
         text = txt.read_text()
-        ocr_words = classify(text)["words"]
+        base = classify(text)
         typed = transcripts.text_for(f"r:{e['id']}", manual)
         if typed:
             text += "\n\n" + typed
         c = classify(text)
-        c["words"] = ocr_words  # what OCR alone read
-        c["transcribed"] = len(manual.get(f"r:{e['id']}", []))
+        c["words"] = base["words"]  # what OCR alone read
+        items = manual.get(f"r:{e['id']}", [])
+        c["transcribed"] = len(items)
+        if items:
+            # terms only a transcription found, cited to its page and region
+            c["transcribed_terms"] = transcripts.attribute(items, set(base["features"]),
+                                                           lambda t: classify(t)["features"])
+            fp = transcripts.fingerprint(image_path(e))
+            c["stale_transcriptions"] = sum(transcripts.is_stale(x, fp) is True for x in items)
         r = review.get(e["book_page"])
         if r:
             c.update(kind=r["kind"], note=r["note"], unrelated=r.get("unrelated", False), reviewed=True)

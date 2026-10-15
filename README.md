@@ -338,10 +338,23 @@ or when it was classified by eye. To transcribe one:
    save it.
 
 Saved regions stay highlighted on the page and go to
-`deeds/ocr/manual/transcripts.json`, which is local. The document is
+`deeds/ocr/manual/transcripts.json`, which is local. Each region is keyed by
+the recorder's record ID (`r:<id>` or `p:<id>`). It records:
+
+- the page
+- the box, as fractions of the unrotated page
+- the OCR settings
+- its source: book and page, recording date, page count, and a SHA-256
+  fingerprint of the image file it was drawn on
+
+If that image is later replaced, the region is flagged stale: dashed red on
+the page and "⚠ stale" in the list and the report. Check it, then save again.
+A link like `#r:3138218/1/<region id>` opens a saved region. The document is
 re-classified on the spot. `pvc plat-ocr` and `pvc restriction-read` add the
 transcriptions to the OCR text, so a transcribed covenant or term reaches the
-report on the next `pvc restriction-survey --offline`.
+report on the next `pvc restriction-survey --offline`. A term found only in a
+transcription is cited there to its page and region, for example "residence
+only (transcribed: p. 1, region 0fc919e2b9)".
 
 Raw rows are cached in `deeds/cache/restrictions/` because they carry party
 names. The checked-in `deeds/restrictions.json` and

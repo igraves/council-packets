@@ -156,7 +156,14 @@ def build(manifest: dict) -> dict:
         ocr_text = txt.read_text()
         r = find_restrictions(ocr_text + "\n\n" + transcripts.text_for(f"p:{e['id']}", manual))
         r["words"] = len(_flatten(ocr_text).split())  # what OCR alone read
-        r["transcribed"] = len(manual.get(f"p:{e['id']}", []))
+        items = manual.get(f"p:{e['id']}", [])
+        r["transcribed"] = len(items)
+        if items:
+            # terms only a transcription found, cited to its page and region
+            base = set(find_restrictions(ocr_text)["terms"])
+            r["transcribed_terms"] = transcripts.attribute(items, base, lambda t: find_restrictions(t)["terms"])
+            fp = transcripts.fingerprint(plats.image_path(e))
+            r["stale_transcriptions"] = sum(transcripts.is_stale(x, fp) is True for x in items)
         excerpt = r.pop("excerpt")
         for c in r["citations"]:
             c.pop("text", None)

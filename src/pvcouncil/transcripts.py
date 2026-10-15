@@ -8,13 +8,19 @@ a restriction instrument. `pvc plat-ocr` and `pvc restriction-read` add them to
 each document's OCR text before looking for restriction terms.
 
 A box is stored in fractions of the unrotated page, [x0, y0, x1, y1], so it
-lands in the same place at any zoom or rotation.
+lands in the same place at any zoom or rotation. Each region also records its
+source: the document's book and page, recording date, page count, and a
+fingerprint (SHA-256 prefix) of the image file it was drawn on. If that image is
+later replaced (re-downloaded, rescanned), the region is flagged stale: its box
+may no longer sit on the text it transcribes.
 """
 
+import hashlib
 import json
 import threading
 import time
 import uuid
+from pathlib import Path
 
 from pvcouncil import plats
 
@@ -37,10 +43,30 @@ def for_key(key: str) -> list[dict]:
     return load().get(key, [])
 
 
-def save(key: str, region: dict) -> dict:
-    """Add a region, or replace the one with the same id."""
+_fingerprints: dict[tuple, str] = {}
+
+
+def fingerprint(path: str | Path) -> str:
+    """SHA-256 prefix of an image file, cached by path, size and modification time."""
+    st = Path(path).stat()
+    k = (str(path), st.st_size, st.st_mtime_ns)
+    if k not in _fingerprints:
+        _fingerprints[k] = hashlib.sha256(Path(path).read_bytes()).hexdigest()[:16]
+    return _fingerprints[k]
+
+
+def is_stale(region: dict, current: str) -> bool | None:
+    """True if the region was drawn on a different image than the current one; None if unknown."""
+    fp = (region.get("source") or {}).get("fingerprint")
+    return None if fp is None else fp != current
+
+
+def save(key: str, region: dict, source: dict) -> dict:
+    """Add a region, or replace the one with the same id. source carries the document's
+    book_page, recorded date, page count, and the fingerprint of the image the box was drawn on."""
     keep = ("page", "box", "rot", "dpi", "invert", "threshold", "psm", "text")
     r = {k: region[k] for k in keep if k in region}
+    r["source"] = {k: source[k] for k in ("book_page", "recorded", "pages", "fingerprint")}
     r["id"] = region.get("id") or uuid.uuid4().hex[:10]
     r["saved"] = time.strftime("%Y-%m-%d %H:%M")
     with _lock:
@@ -65,3 +91,16 @@ def text_for(key: str, data: dict | None = None) -> str:
     """The saved transcriptions of a document, in page order, ready to add to its OCR text."""
     items = (data if data is not None else load()).get(key, [])
     return "\n\n".join(f"[transcribed, page {x['page']}]\n{x['text']}" for x in items if x.get("text", "").strip())
+
+
+def attribute(items: list[dict], found_by_ocr: set[str], terms_of) -> dict[str, list[dict]]:
+    """Which terms only transcriptions found, and where: {term: [{page, region}, ...]}.
+
+    terms_of(text) returns the terms in a piece of text; a term OCR already found on its
+    own is not credited to a transcription."""
+    out: dict[str, list[dict]] = {}
+    for x in items:
+        for t in terms_of(x.get("text", "")):
+            if t not in found_by_ocr:
+                out.setdefault(t, []).append({"page": x["page"], "region": x["id"]})
+    return out

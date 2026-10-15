@@ -393,6 +393,44 @@ def parcels(year, address, owner, zoning, cls, use, tax_unit, subdivision, block
     click.echo(pm.render_list(matched, num))
 
 
+@cli.command("plat-survey")
+@click.option("--refresh", is_flag=True, help="Re-run every search instead of reusing cached results")
+@click.option("--offline", is_flag=True, help="Rebuild the manifest and report from cached results only")
+@click.option("--markdown", "md_path", default="subdivision-plats.md", show_default=True,
+              type=click.Path(), help="Where to write the report")
+def plat_survey(refresh, offline, md_path):
+    """Find the recorded plats for every subdivision in the parcel data (Recorder of Deeds)."""
+    from pathlib import Path
+
+    from pvcouncil import plats
+    from pvcouncil.recorder import RecorderError
+
+    names = plats.plat_names()
+    if not offline:
+        try:
+            plats.fetch(names, refresh=refresh, echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(f"{e} (finished searches are cached; rerun to resume)")
+    manifest = plats.build(names)
+    Path(md_path).write_text(plats.render_markdown(manifest))
+    exact = sum(1 for e in manifest["instruments"] if e["match"] == "exact")
+    click.echo(f"{len(manifest['instruments'])} plat instruments ({exact} exact name matches) → "
+               f"{plats.MANIFEST_PATH.relative_to(plats.PROJECT_ROOT)}, {md_path}")
+
+
+@cli.command("recorder-check")
+def recorder_check():
+    """Test the Recorder of Deeds login and search (prints no credentials or session values)."""
+    from pvcouncil.recorder import RecorderError, check
+
+    try:
+        report = check()
+    except RecorderError as e:
+        raise click.ClickException(str(e))
+    for k, v in report.items():
+        click.echo(f"{k}: {v}")
+
+
 @cli.command()
 def stats():
     """Show index statistics."""

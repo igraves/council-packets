@@ -191,6 +191,53 @@ the share of tax bills mailed somewhere other than the property. If
 `budgets.json` is present, the report also checks the parcel total against
 the assessed valuation in the budget.
 
+### Recorded plats (Recorder of Deeds)
+
+`pvc plat-survey` finds the recorded plats for every subdivision in the
+parcel data, using the Johnson County Recorder of Deeds subscription site
+(TrakRecord Public Access). It needs a subscriber login in `.env`:
+
+```sh
+JOCO_RECORDER_USER=...
+JOCO_RECORDER_PASS=...
+```
+
+`pvc recorder-check` tests the login and one search without printing the
+credentials or session values.
+
+The recorder indexes a plat under the plat's own name, and older plats
+have no legal description in the index, so the survey runs one name search
+per plat name, limited to the PLAT category. It writes:
+
+- `deeds/plats.json`: every recorded plat instrument found, with recorded
+  date, book and page, instrument number, and the recorder's record IDs
+  (`id`, `docid`) for pulling images later. It records only the plat names,
+  not other parties.
+- [subdivision-plats.md](subdivision-plats.md): each subdivision's original
+  platting date and every plat recorded for it.
+
+A name search is a prefix match, so it also finds plats with longer names.
+Each instrument is marked `exact` (indexed under one of our plat names),
+`variant` (a longer name, such as "MISSION VILLAGE BLOCK 2", located in
+Township 12 or 13, Range 25, where Prairie Village lies), `prefix` (a
+longer name with no location in the index), or `elsewhere` (located
+elsewhere in the county). Only `exact` and `variant` count toward a
+subdivision. The rest are listed in the report for review.
+
+Raw search results are cached in `deeds/cache/`, which is gitignored
+because rows can carry other party names. Reruns reuse the cache:
+
+```sh
+uv run pvc plat-survey             # search names not yet cached, rebuild
+uv run pvc plat-survey --offline   # rebuild from the cache only
+uv run pvc plat-survey --refresh   # search everything again
+```
+
+Covenants and deed restrictions aren't covered yet. Before the late 1980s,
+the recorder indexed restrictions as "Miscellaneous" instruments in the
+MISC books, mixed in with easements and other filings, so the index alone
+can't pick them out.
+
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `budget`, `list_documents`, and `stats` as tools for MCP clients. Search, ask and list_documents accept `doc_type="archive"` for the city reports.
 

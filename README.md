@@ -191,6 +191,147 @@ the share of tax bills mailed somewhere other than the property. If
 `budgets.json` is present, the report also checks the parcel total against
 the assessed valuation in the budget.
 
+### Recorded plats (Recorder of Deeds)
+
+`pvc plat-survey` finds the recorded plats for every subdivision in the
+parcel data, using the Johnson County Recorder of Deeds subscription site
+(TrakRecord Public Access). It needs a subscriber login in `.env`:
+
+```sh
+JOCO_RECORDER_USER=...
+JOCO_RECORDER_PASS=...
+```
+
+`pvc recorder-check` tests the login and one search without printing the
+credentials or session values.
+
+The recorder indexes a plat under the plat's own name, and older plats
+have no legal description in the index, so the survey runs one name search
+per plat name, limited to the PLAT category. It writes:
+
+- `deeds/plats.json`: every recorded plat instrument found, with recorded
+  date, book and page, instrument number, and the recorder's record IDs
+  (`id`, `docid`) for pulling images later. It records only the plat names,
+  not other parties.
+- [subdivision-plats.md](subdivision-plats.md): each subdivision's original
+  platting date and every plat recorded for it.
+
+Replats are searched under both their full name ("REPLAT OF PART OF LOT 5
+MEADOW VIEW") and their parent subdivision's name. A name search is a
+prefix match, so it also finds plats with longer names. Each instrument is
+marked as one of these:
+
+- `exact`: indexed under one of our plat names
+- `variant`: a longer name, such as "MISSION VILLAGE BLOCK 2", placed in
+  Prairie Village by its section, township, and range (Township 12 or 13,
+  Range 25) or by its subdivision legal
+- `prefix`: a longer name that the index gives no location for
+- `elsewhere`: located elsewhere in the county
+
+Only `exact` and `variant` count toward a subdivision. The rest are listed
+in the report for review. When a plat's place can only be settled by
+reading its image, the decision goes in
+[deeds/plat_review.json](deeds/plat_review.json), keyed by book and page,
+and the survey applies it. Reading the images placed the 1937–1946
+COUNTRYSIDE plats in Mission, not Prairie Village.
+
+`pvc plat-images` downloads the plat image PDFs for every Prairie Village
+plat in the manifest to `deeds/images/`, which is gitignored. Viewing and
+downloading images is free on the subscription; certified copies are not.
+Old scans run up to about 9 MB each, so expect a few hundred MB in all.
+Reruns skip images already downloaded:
+
+```sh
+uv run pvc plat-images --limit 5   # try a few
+uv run pvc plat-images             # all of them
+```
+
+Raw search results are cached in `deeds/cache/`, which is gitignored
+because rows can carry other party names. Reruns reuse the cache:
+
+```sh
+uv run pvc plat-survey             # search names not yet cached, rebuild
+uv run pvc plat-survey --offline   # rebuild from the cache only
+uv run pvc plat-survey --refresh   # search everything again
+```
+
+### Restrictions and covenants
+
+Three commands find each subdivision's recorded deed restrictions and
+covenants:
+
+```sh
+uv run pvc plat-images                  # plat image PDFs → deeds/images/
+uv run pvc plat-ocr                     # OCR the plats → deeds/plat_restrictions.json
+uv run pvc restriction-survey --walk    # restriction instruments → subdivision-restrictions.md
+```
+
+**On the plat.** `pvc plat-ocr` reads every plat image with Tesseract at 0,
+90, and 270 degrees, since some plats print their dedication sideways. It
+flags restriction language. Some plats carry their covenants in full, such as
+the 1923 Ridge View resurvey and the 1937 Sunset Heights View plat. Others
+state that restrictions are recorded separately. The full OCR text and the
+excerpts stay in `deeds/ocr/`, which is gitignored because plats name their
+signers.
+
+**Filed with the plat.** Developers recorded a subdivision's restrictions
+right after its plat. The 1941 Prairie Village plat is document 289996, and
+the J.C. Nichols Declaration of Restrictions for the same land (MISC 26/349)
+is 289997. The survey looks for instruments recorded the same day as a plat
+whose document number is within five after the plat's. This is the strongest
+evidence of a subdivision's original restrictions.
+
+**Indexed as restrictions.** The recorder labels some instruments
+"Declaration of Restrictions" (1914 on) or "Declaration of Home Owners
+Association". A document-type search works only with no category selected.
+The survey pulls every such instrument county-wide and matches them to our
+subdivisions by legal description or by a party named for the subdivision
+("KENILWORTH HOMES ASSOCIATION").
+
+**The MISC walk.** Before about 1976, most restrictions were indexed only as
+"Miscellaneous". `--walk` pulls every Miscellaneous filing recorded from
+three months before to twelve months after each pre-1976 plat. It drops
+utility easements and scores the rest on several signals:
+
+- a developer party, such as the J.C. Nichols companies
+- an UNKNOWN or PUBLIC grantee
+- a subdivision legal
+- no lot in the legal
+- a recording date within a week of the plat
+
+High scorers are listed as candidates to read. No Miscellaneous filings
+are indexed for 1972–74. Twelve months in the walk also come back empty when
+fetched again: 1925-01, 1925-02, 1939-02, 1948-02, 1948-04 through 1948-07,
+1952-05, 1952-06, 1962-08, and 1962-09. Filings from those months would
+have to be found by book and page.
+
+**Reading them.** `pvc restriction-read` downloads the image of each
+instrument filed with a plat and OCRs it. It classifies each one as a
+restriction declaration, homes association declaration, easement, deed, and
+so on. It also notes each declaration's terms: how long it runs, setbacks, use
+limits, and any racially restrictive covenant. About 40 of the 1950s
+instruments are low-resolution photostat negatives that OCR can't read. Those
+were classified by eye from their headings, in `deeds/restriction_review.json`,
+which also marks papers filed the same day that concern other land. The results
+go to `deeds/restriction_reads.json` and feed the report. Images and OCR text
+stay local.
+
+**Viewing them.** `uv run pvc deed-viewer` serves a viewer at
+http://127.0.0.1:8765/ for the downloaded plats and restriction instruments.
+It lists them by subdivision and lets you filter by type, search, or show
+only racially restrictive covenants. You can page through each document,
+zoom with Ctrl/⌘-scroll, a pinch, or a double-click, drag to pan, rotate,
+and invert the photostat negatives. Pages render from the local PDFs at the
+resolution the zoom needs and are cached in `deeds/cache/pages/`. The server
+listens on localhost only. Links like `#r:4442333/2` (instrument
+`r:<record id>` or plat `p:<record id>`, then page) open a document directly.
+
+Raw rows are cached in `deeds/cache/restrictions/` because they carry party
+names. The checked-in `deeds/restrictions.json` and
+[subdivision-restrictions.md](subdivision-restrictions.md) list instruments
+by date, book and page, and record ID, with no party names. Pass `--offline`
+to rebuild from the cache.
+
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `budget`, `list_documents`, and `stats` as tools for MCP clients. Search, ask and list_documents accept `doc_type="archive"` for the city reports.
 

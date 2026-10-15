@@ -1,0 +1,7473 @@
+{
+ "plats": {
+  "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST": {
+   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "subdivision_code": "6451",
+   "subdivision": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "parcels": 3
+  },
+  "75 MISSION OFFICE CONDOMINIUM 3RD PLAT": {
+   "plat": "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+   "subdivision_code": "6451",
+   "subdivision": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "parcels": 2
+  },
+  "75 MISSION OFFICE CONDOMINIUM WEST": {
+   "plat": "75 MISSION OFFICE CONDOMINIUM WEST",
+   "subdivision_code": "6450",
+   "subdivision": "75 MISSION OFFICE CONDOMINIUM WEST",
+   "parcels": 2
+  },
+  "95TH AND MISSION": {
+   "plat": "95TH AND MISSION",
+   "subdivision_code": "3650",
+   "subdivision": "95TH AND MISSION",
+   "parcels": 1
+  },
+  "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT": {
+   "plat": "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
+   "subdivision_code": "0050",
+   "subdivision": "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
+   "parcels": 1
+  },
+  "BREEZY HEIGHTS": {
+   "plat": "BREEZY HEIGHTS",
+   "subdivision_code": "0100",
+   "subdivision": "BREEZY HEIGHTS",
+   "parcels": 34
+  },
+  "BRIARWOOD ELEMENTARY": {
+   "plat": "BRIARWOOD ELEMENTARY",
+   "subdivision_code": "0195",
+   "subdivision": "BRIARWOOD ELEMENTARY",
+   "parcels": 1
+  },
+  "BRIARWOOD PLACE": {
+   "plat": "BRIARWOOD PLACE",
+   "subdivision_code": "0200",
+   "subdivision": "BRIARWOOD PLACE SECOND PLAT",
+   "parcels": 4
+  },
+  "BRIARWOOD PLACE SECOND PLAT": {
+   "plat": "BRIARWOOD PLACE SECOND PLAT",
+   "subdivision_code": "0200",
+   "subdivision": "BRIARWOOD PLACE SECOND PLAT",
+   "parcels": 4
+  },
+  "BRIGHTON GARDENS": {
+   "plat": "BRIGHTON GARDENS",
+   "subdivision_code": "0220",
+   "subdivision": "BRIGHTON GARDENS",
+   "parcels": 2
+  },
+  "CALVIN CREST": {
+   "plat": "CALVIN CREST",
+   "subdivision_code": "0250",
+   "subdivision": "CALVIN CREST",
+   "parcels": 79
+  },
+  "CALVIN CREST II": {
+   "plat": "CALVIN CREST II",
+   "subdivision_code": "0260",
+   "subdivision": "CALVIN CREST II",
+   "parcels": 12
+  },
+  "CANTERBURY COURT": {
+   "plat": "CANTERBURY COURT",
+   "subdivision_code": "0270",
+   "subdivision": "CANTERBURY COURT",
+   "parcels": 4
+  },
+  "CANTERBURY COURT ESTATES": {
+   "plat": "CANTERBURY COURT ESTATES",
+   "subdivision_code": "0280",
+   "subdivision": "CANTERBURY COURT ESTATES",
+   "parcels": 4
+  },
+  "CAPELLA CONDOMINIUM": {
+   "plat": "CAPELLA CONDOMINIUM",
+   "subdivision_code": "0290",
+   "subdivision": "CAPELLA CONDOMINIUM",
+   "parcels": 6
+  },
+  "CEDARVALE": {
+   "plat": "CEDARVALE",
+   "subdivision_code": "0300",
+   "subdivision": "CEDARVALE",
+   "parcels": 17
+  },
+  "CHADWICK COURT": {
+   "plat": "CHADWICK COURT",
+   "subdivision_code": "0380",
+   "subdivision": "CHADWICK COURT",
+   "parcels": 7
+  },
+  "CLARKVIEW": {
+   "plat": "CLARKVIEW",
+   "subdivision_code": "0400",
+   "subdivision": "CLARKVIEW",
+   "parcels": 13
+  },
+  "CORINTH DOWNS": {
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "subdivision": "CORINTH DOWNS",
+   "parcels": 192
+  },
+  "CORINTH ESTATES": {
+   "plat": "CORINTH ESTATES",
+   "subdivision_code": "0450",
+   "subdivision": "CORINTH ESTATES",
+   "parcels": 47
+  },
+  "CORINTH HILLS": {
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "subdivision": "CORINTH HILLS",
+   "parcels": 454
+  },
+  "CORINTH MEADOWS": {
+   "plat": "CORINTH MEADOWS",
+   "subdivision_code": "0600",
+   "subdivision": "CORINTH MEADOWS",
+   "parcels": 76
+  },
+  "CORINTH PLACE VILLAS": {
+   "plat": "CORINTH PLACE VILLAS",
+   "subdivision_code": "0610",
+   "subdivision": "CORINTH PLACE VILLAS",
+   "parcels": 45
+  },
+  "CORINTH SCHOOL": {
+   "plat": "CORINTH SCHOOL",
+   "subdivision_code": "0650",
+   "subdivision": "CORINTH SCHOOL",
+   "parcels": 1
+  },
+  "CORINTH SQUARE NORTH": {
+   "plat": "CORINTH SQUARE NORTH",
+   "subdivision_code": "0660",
+   "subdivision": "CORINTH SQUARE NORTH",
+   "parcels": 2
+  },
+  "CORINTH WOOD": {
+   "plat": "CORINTH WOOD",
+   "subdivision_code": "0680",
+   "subdivision": "CORINTH WOOD",
+   "parcels": 2
+  },
+  "CORRECTED PLAT OF MEADOW LAKE": {
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500",
+   "subdivision": "MEADOW LAKE",
+   "parcels": 229
+  },
+  "COUNTRY CLUB VIEW": {
+   "plat": "COUNTRY CLUB VIEW",
+   "subdivision_code": "0700",
+   "subdivision": "COUNTRY CLUB VIEW",
+   "parcels": 113
+  },
+  "COUNTRYSIDE-EAST": {
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "subdivision": "COUNTRYSIDE-EAST",
+   "parcels": 276
+  },
+  "CRESCENT COURT": {
+   "plat": "CRESCENT COURT",
+   "subdivision_code": "0770",
+   "subdivision": "CRESCENT COURT",
+   "parcels": 6
+  },
+  "DE VILLE 75 CONDOMINIUMS": {
+   "plat": "DE VILLE 75 CONDOMINIUMS",
+   "subdivision_code": "0820",
+   "subdivision": "DE VILLE 75 CONDOMINIUMS",
+   "parcels": 55
+  },
+  "ELIZABETH'S MEADOW": {
+   "plat": "ELIZABETH'S MEADOW",
+   "subdivision_code": "0840",
+   "subdivision": "ELIZABETH'S MEADOW",
+   "parcels": 2
+  },
+  "EVERGREEN": {
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850",
+   "subdivision": "EVERGREEN",
+   "parcels": 11
+  },
+  "FONTANA PLACE": {
+   "plat": "FONTANA PLACE",
+   "subdivision_code": "0870",
+   "subdivision": "FONTANA PLACE",
+   "parcels": 7
+  },
+  "FONTICELLO": {
+   "plat": "FONTICELLO",
+   "subdivision_code": "0880",
+   "subdivision": "FONTICELLO",
+   "parcels": 6
+  },
+  "FONTICELLO GARDENS": {
+   "plat": "FONTICELLO GARDENS",
+   "subdivision_code": "0900",
+   "subdivision": "FONTICELLO GARDENS",
+   "parcels": 4
+  },
+  "GRANTHURST": {
+   "plat": "GRANTHURST",
+   "subdivision_code": "1100",
+   "subdivision": "GRANTHURST",
+   "parcels": 268
+  },
+  "GREENVIEW PLACE": {
+   "plat": "GREENVIEW PLACE",
+   "subdivision_code": "1110",
+   "subdivision": "GREENVIEW PLACE",
+   "parcels": 2
+  },
+  "HOME PLACE": {
+   "plat": "HOME PLACE",
+   "subdivision_code": "1180",
+   "subdivision": "HOME PLACE",
+   "parcels": 2
+  },
+  "HOMESTEAD ESTATES": {
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185",
+   "subdivision": "HOMESTEAD ESTATES",
+   "parcels": 9
+  },
+  "HOMESTEAD ESTATES REPLAT": {
+   "plat": "HOMESTEAD ESTATES REPLAT",
+   "subdivision_code": "1186",
+   "subdivision": "HOMESTEAD ESTATES REPLAT",
+   "parcels": 3
+  },
+  "HUNTINGTON WOODS": {
+   "plat": "HUNTINGTON WOODS",
+   "subdivision_code": "1200",
+   "subdivision": "HUNTINGTON WOODS",
+   "parcels": 12
+  },
+  "INDIAN FIELDS": {
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300",
+   "subdivision": "INDIAN FIELDS",
+   "parcels": 243
+  },
+  "INDIAN HEIGHTS": {
+   "plat": "INDIAN HEIGHTS",
+   "subdivision_code": "1400",
+   "subdivision": "INDIAN HEIGHTS",
+   "parcels": 71
+  },
+  "INDIAN HILLS": {
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "subdivision": "INDIAN HILLS",
+   "parcels": 4
+  },
+  "JACKSON HEIGHTS": {
+   "plat": "JACKSON HEIGHTS",
+   "subdivision_code": "1600",
+   "subdivision": "JACKSON HEIGHTS",
+   "parcels": 10
+  },
+  "JARBOE HEIGHTS": {
+   "plat": "JARBOE HEIGHTS",
+   "subdivision_code": "1700",
+   "subdivision": "JARBOE HEIGHTS",
+   "parcels": 15
+  },
+  "JARBOE VIEW": {
+   "plat": "JARBOE VIEW",
+   "subdivision_code": "1800",
+   "subdivision": "JARBOE VIEW",
+   "parcels": 11
+  },
+  "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2": {
+   "plat": "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2",
+   "subdivision_code": "1870",
+   "subdivision": "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2",
+   "parcels": 1
+  },
+  "JORDAN PLACE": {
+   "plat": "JORDAN PLACE",
+   "subdivision_code": "2000",
+   "subdivision": "JORDAN PLACE",
+   "parcels": 8
+  },
+  "JUNIPER HILL": {
+   "plat": "JUNIPER HILL",
+   "subdivision_code": "1900",
+   "subdivision": "JUNIPER HILL",
+   "parcels": 18
+  },
+  "KENILWORTH": {
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100",
+   "subdivision": "KENILWORTH",
+   "parcels": 296
+  },
+  "MEADOW ACRES": {
+   "plat": "MEADOW ACRES",
+   "subdivision_code": "2200",
+   "subdivision": "MEADOW ACRES",
+   "parcels": 28
+  },
+  "MEADOW LAKE": {
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "subdivision": "MEADOW LAKE",
+   "parcels": 448
+  },
+  "MEADOW LAKE LAWN": {
+   "plat": "MEADOW LAKE LAWN",
+   "subdivision_code": "2600",
+   "subdivision": "MEADOW LAKE LAWN",
+   "parcels": 5
+  },
+  "MEADOW LAKE RESURVEY": {
+   "plat": "MEADOW LAKE RESURVEY",
+   "subdivision_code": "2500",
+   "subdivision": "MEADOW LAKE",
+   "parcels": 14
+  },
+  "MEADOW VIEW": {
+   "plat": "MEADOW VIEW",
+   "subdivision_code": "2700",
+   "subdivision": "MEADOW VIEW",
+   "parcels": 7
+  },
+  "MEADOWBROOK 2020": {
+   "plat": "MEADOWBROOK 2020",
+   "subdivision_code": "2450",
+   "subdivision": "MEADOWBROOK 2020",
+   "parcels": 2
+  },
+  "MEADOWBROOK DOWNS": {
+   "plat": "MEADOWBROOK DOWNS",
+   "subdivision_code": "2350",
+   "subdivision": "MEADOWBROOK DOWNS",
+   "parcels": 1
+  },
+  "MEADOWBROOK EXECUTIVE": {
+   "plat": "MEADOWBROOK EXECUTIVE",
+   "subdivision_code": "2371",
+   "subdivision": "MEADOWBROOK EXECUTIVE",
+   "parcels": 1
+  },
+  "MEADOWBROOK PARK": {
+   "plat": "MEADOWBROOK PARK",
+   "subdivision_code": "2440",
+   "subdivision": "MEADOWBROOK PARK",
+   "parcels": 125
+  },
+  "MEADOWBROOK PARK FIFTH PLAT": {
+   "plat": "MEADOWBROOK PARK FIFTH PLAT",
+   "subdivision_code": "2441",
+   "subdivision": "MEADOWBROOK PARK FOURTH PLAT",
+   "parcels": 2
+  },
+  "MEADOWBROOK PARK FOURTH PLAT": {
+   "plat": "MEADOWBROOK PARK FOURTH PLAT",
+   "subdivision_code": "2441",
+   "subdivision": "MEADOWBROOK PARK FOURTH PLAT",
+   "parcels": 2
+  },
+  "MEADOWBROOK PARK REPLAT": {
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442",
+   "subdivision": "MEADOWBROOK PARK REPLAT",
+   "parcels": 10
+  },
+  "MEADOWBROOK PARK SIXTH PLAT": {
+   "plat": "MEADOWBROOK PARK SIXTH PLAT",
+   "subdivision_code": "2441",
+   "subdivision": "MEADOWBROOK PARK FOURTH PLAT",
+   "parcels": 2
+  },
+  "MEADOWBROOK PARK THIRD PLAT": {
+   "plat": "MEADOWBROOK PARK THIRD PLAT",
+   "subdivision_code": "2441",
+   "subdivision": "MEADOWBROOK PARK FOURTH PLAT",
+   "parcels": 2
+  },
+  "MEADOWBROOK PLACE": {
+   "plat": "MEADOWBROOK PLACE",
+   "subdivision_code": "2445",
+   "subdivision": "MEADOWBROOK PLACE",
+   "parcels": 3
+  },
+  "MISSION CHATEAU": {
+   "plat": "MISSION CHATEAU",
+   "subdivision_code": "2770",
+   "subdivision": "MISSION CHATEAU 2ND PLAT",
+   "parcels": 4
+  },
+  "MISSION CHATEAU 2ND PLAT": {
+   "plat": "MISSION CHATEAU 2ND PLAT",
+   "subdivision_code": "2770",
+   "subdivision": "MISSION CHATEAU 2ND PLAT",
+   "parcels": 25
+  },
+  "MISSION PINES": {
+   "plat": "MISSION PINES",
+   "subdivision_code": "2780",
+   "subdivision": "MISSION PINES SECOND PLAT",
+   "parcels": 14
+  },
+  "MISSION PINES SECOND PLAT": {
+   "plat": "MISSION PINES SECOND PLAT",
+   "subdivision_code": "2780",
+   "subdivision": "MISSION PINES SECOND PLAT",
+   "parcels": 15
+  },
+  "MISSION VALLEY EAST": {
+   "plat": "MISSION VALLEY EAST",
+   "subdivision_code": "2800",
+   "subdivision": "MISSION VALLEY EAST",
+   "parcels": 14
+  },
+  "MISSION VALLEY WEST": {
+   "plat": "MISSION VALLEY WEST",
+   "subdivision_code": "2900",
+   "subdivision": "MISSION VALLEY WEST",
+   "parcels": 9
+  },
+  "MISSION VILLAGE": {
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000",
+   "subdivision": "MISSION VILLAGE",
+   "parcels": 6
+  },
+  "MOHAWK HILLS": {
+   "plat": "MOHAWK HILLS",
+   "subdivision_code": "3100",
+   "subdivision": "MOHAWK HILLS",
+   "parcels": 78
+  },
+  "NALL AVENUE GARDENS": {
+   "plat": "NALL AVENUE GARDENS",
+   "subdivision_code": "3400",
+   "subdivision": "NALL AVENUE GARDENS",
+   "parcels": 141
+  },
+  "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS": {
+   "plat": "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS",
+   "subdivision_code": "3460",
+   "subdivision": "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS",
+   "parcels": 4
+  },
+  "NALL VALLEY ESTATES": {
+   "plat": "NALL VALLEY ESTATES",
+   "subdivision_code": "3500",
+   "subdivision": "NALL VALLEY ESTATES",
+   "parcels": 12
+  },
+  "NALLANDS": {
+   "plat": "NALLANDS",
+   "subdivision_code": "3300",
+   "subdivision": "NALLANDS",
+   "parcels": 27
+  },
+  "NORMANDIE COURT": {
+   "plat": "NORMANDIE COURT",
+   "subdivision_code": "3680",
+   "subdivision": "NORMANDIE COURT",
+   "parcels": 19
+  },
+  "NORMANDIE COURT SECOND PLAT": {
+   "plat": "NORMANDIE COURT SECOND PLAT",
+   "subdivision_code": "3680",
+   "subdivision": "NORMANDIE COURT",
+   "parcels": 16
+  },
+  "NORMANDY SQUARE": {
+   "plat": "NORMANDY SQUARE",
+   "subdivision_code": "3700",
+   "subdivision": "NORMANDY SQUARE",
+   "parcels": 73
+  },
+  "OLD MISSION LODGE #153": {
+   "plat": "OLD MISSION LODGE #153",
+   "subdivision_code": "3720",
+   "subdivision": "OLD MISSION LODGE #153",
+   "parcels": 1
+  },
+  "OLD TRAIL": {
+   "plat": "OLD TRAIL",
+   "subdivision_code": "3725",
+   "subdivision": "OLD TRAIL",
+   "parcels": 1
+  },
+  "PADDOCK COURT": {
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750",
+   "subdivision": "PADDOCK COURT",
+   "parcels": 25
+  },
+  "PAWNEE MANOR": {
+   "plat": "PAWNEE MANOR",
+   "subdivision_code": "3900",
+   "subdivision": "PAWNEE MANOR",
+   "parcels": 62
+  },
+  "PAWNEE VIEW": {
+   "plat": "PAWNEE VIEW",
+   "subdivision_code": "4000",
+   "subdivision": "PAWNEE VIEW",
+   "parcels": 22
+  },
+  "PINE CREEK": {
+   "plat": "PINE CREEK",
+   "subdivision_code": "4025",
+   "subdivision": "PINE CREEK",
+   "parcels": 11
+  },
+  "PINECROFT": {
+   "plat": "PINECROFT",
+   "subdivision_code": "4040",
+   "subdivision": "PINECROFT",
+   "parcels": 18
+  },
+  "PRAIRIE ESTATES": {
+   "plat": "PRAIRIE ESTATES",
+   "subdivision_code": "4100",
+   "subdivision": "PRAIRIE ESTATES",
+   "parcels": 79
+  },
+  "PRAIRIE FIELDS": {
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "subdivision": "PRAIRIE FIELDS",
+   "parcels": 744
+  },
+  "PRAIRIE FOREST": {
+   "plat": "PRAIRIE FOREST",
+   "subdivision_code": "4300",
+   "subdivision": "PRAIRIE FOREST",
+   "parcels": 18
+  },
+  "PRAIRIE HEIGHTS": {
+   "plat": "PRAIRIE HEIGHTS",
+   "subdivision_code": "4400",
+   "subdivision": "PRAIRIE HEIGHTS",
+   "parcels": 102
+  },
+  "PRAIRIE HILLS": {
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "subdivision": "PRAIRIE HILLS",
+   "parcels": 652
+  },
+  "PRAIRIE HILLS VIEW": {
+   "plat": "PRAIRIE HILLS VIEW",
+   "subdivision_code": "4600",
+   "subdivision": "PRAIRIE HILLS VIEW",
+   "parcels": 9
+  },
+  "PRAIRIE MANOR": {
+   "plat": "PRAIRIE MANOR",
+   "subdivision_code": "4700",
+   "subdivision": "PRAIRIE MANOR",
+   "parcels": 18
+  },
+  "PRAIRIE PARK": {
+   "plat": "PRAIRIE PARK",
+   "subdivision_code": "4800",
+   "subdivision": "PRAIRIE PARK",
+   "parcels": 20
+  },
+  "PRAIRIE RIDGE": {
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "subdivision": "PRAIRIE RIDGE",
+   "parcels": 536
+  },
+  "PRAIRIE RIDGE REPLAT": {
+   "plat": "PRAIRIE RIDGE REPLAT",
+   "subdivision_code": "4905",
+   "subdivision": "PRAIRIE RIDGE REPLAT",
+   "parcels": 4
+  },
+  "PRAIRIE RIDGE SECOND PLAT": {
+   "plat": "PRAIRIE RIDGE SECOND PLAT",
+   "subdivision_code": "4910",
+   "subdivision": "PRAIRIE RIDGE SECOND PLAT",
+   "parcels": 3
+  },
+  "PRAIRIE RIDGE VIEW": {
+   "plat": "PRAIRIE RIDGE VIEW",
+   "subdivision_code": "5000",
+   "subdivision": "PRAIRIE RIDGE VIEW",
+   "parcels": 16
+  },
+  "PRAIRIE VALLEY": {
+   "plat": "PRAIRIE VALLEY",
+   "subdivision_code": "5100",
+   "subdivision": "PRAIRIE VALLEY",
+   "parcels": 40
+  },
+  "PRAIRIE VALLEY NORTH": {
+   "plat": "PRAIRIE VALLEY NORTH",
+   "subdivision_code": "5150",
+   "subdivision": "PRAIRIE VALLEY NORTH",
+   "parcels": 17
+  },
+  "PRAIRIE VALLEY NORTH ANNEX": {
+   "plat": "PRAIRIE VALLEY NORTH ANNEX",
+   "subdivision_code": "5200",
+   "subdivision": "PRAIRIE VALLEY NORTH ANNEX",
+   "parcels": 11
+  },
+  "PRAIRIE VIEW NO. 5": {
+   "plat": "PRAIRIE VIEW NO. 5",
+   "subdivision_code": "5400",
+   "subdivision": "PRAIRIE VIEW NO. 5",
+   "parcels": 30
+  },
+  "PRAIRIE VILLAGE": {
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "subdivision": "PRAIRIE VILLAGE",
+   "parcels": 1761
+  },
+  "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX": {
+   "plat": "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX",
+   "subdivision_code": "5520",
+   "subdivision": "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX",
+   "parcels": 2
+  },
+  "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX": {
+   "plat": "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX",
+   "subdivision_code": "5530",
+   "subdivision": "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX",
+   "parcels": 1
+  },
+  "PRAIRIE VILLAGE SHOPPING CENTER": {
+   "plat": "PRAIRIE VILLAGE SHOPPING CENTER",
+   "subdivision_code": "5540",
+   "subdivision": "PRAIRIE VILLAGE SHOPPING CENTER",
+   "parcels": 3
+  },
+  "PRAIRIE WOODS": {
+   "plat": "PRAIRIE WOODS",
+   "subdivision_code": "5600",
+   "subdivision": "PRAIRIE WOODS",
+   "parcels": 27
+  },
+  "RED FOX": {
+   "plat": "RED FOX",
+   "subdivision_code": "5800",
+   "subdivision": "RED FOX",
+   "parcels": 28
+  },
+  "REPLAT OF FONTICELLO GARDENS NO. 2": {
+   "plat": "REPLAT OF FONTICELLO GARDENS NO. 2",
+   "subdivision_code": "1000",
+   "subdivision": "REPLAT OF FONTICELLO GARDENS NO. 2",
+   "parcels": 6
+  },
+  "REPLAT OF PART OF LOT 5 MEADOW VIEW": {
+   "plat": "REPLAT OF PART OF LOT 5 MEADOW VIEW",
+   "subdivision_code": "5850",
+   "subdivision": "REPLAT OF PART OF LOT 5 MEADOW VIEW",
+   "parcels": 1
+  },
+  "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW": {
+   "plat": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+   "subdivision_code": "6000",
+   "subdivision": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+   "parcels": 4
+  },
+  "RIDGE VIEW": {
+   "plat": "RIDGE VIEW",
+   "subdivision_code": "5900",
+   "subdivision": "RIDGE VIEW",
+   "parcels": 16
+  },
+  "RIDGE VIEW HEIGHTS": {
+   "plat": "RIDGE VIEW HEIGHTS",
+   "subdivision_code": "6050",
+   "subdivision": "RIDGE VIEW HEIGHTS",
+   "parcels": 32
+  },
+  "RIDGE VIEW HEIGHTS NO. 2": {
+   "plat": "RIDGE VIEW HEIGHTS NO. 2",
+   "subdivision_code": "6060",
+   "subdivision": "RIDGE VIEW HEIGHTS NO. 2",
+   "parcels": 78
+  },
+  "RIDGE VIEW PLACE": {
+   "plat": "RIDGE VIEW PLACE",
+   "subdivision_code": "6100",
+   "subdivision": "RIDGE VIEW PLACE",
+   "parcels": 16
+  },
+  "RIDGEWOOD": {
+   "plat": "RIDGEWOOD",
+   "subdivision_code": "6200",
+   "subdivision": "RIDGEWOOD",
+   "parcels": 142
+  },
+  "ROE HILL": {
+   "plat": "ROE HILL",
+   "subdivision_code": "6300",
+   "subdivision": "ROE HILL",
+   "parcels": 3
+  },
+  "ROE-69": {
+   "plat": "ROE-69",
+   "subdivision_code": "6350",
+   "subdivision": "ROE-69",
+   "parcels": 6
+  },
+  "RUTIAGA RANCH": {
+   "plat": "RUTIAGA RANCH",
+   "subdivision_code": "6435",
+   "subdivision": "RUTIAGA RANCH",
+   "parcels": 2
+  },
+  "SAINT ANN CATHOLIC CHURCH": {
+   "plat": "SAINT ANN CATHOLIC CHURCH",
+   "subdivision_code": "6445",
+   "subdivision": "SAINT ANN CATHOLIC CHURCH",
+   "parcels": 2
+  },
+  "SHARP LAW OFFICES FIRST PLAT": {
+   "plat": "SHARP LAW OFFICES FIRST PLAT",
+   "subdivision_code": "6470",
+   "subdivision": "SHARP LAW OFFICES FIRST PLAT",
+   "parcels": 1
+  },
+  "SHAWNEE MISSION SOUTH HIGH SCHOOL": {
+   "plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "subdivision_code": "6500",
+   "subdivision": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "parcels": 1
+  },
+  "SOMERSET ACRES WEST": {
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700",
+   "subdivision": "SOMERSET ACRES WEST",
+   "parcels": 110
+  },
+  "SOMERSET COURT": {
+   "plat": "SOMERSET COURT",
+   "subdivision_code": "6800",
+   "subdivision": "SOMERSET COURT",
+   "parcels": 9
+  },
+  "SOMERSET COURTS WEST": {
+   "plat": "SOMERSET COURTS WEST",
+   "subdivision_code": "6820",
+   "subdivision": "SOMERSET COURTS WEST",
+   "parcels": 24
+  },
+  "SOMERSET ESTATES": {
+   "plat": "SOMERSET ESTATES",
+   "subdivision_code": "6850",
+   "subdivision": "SOMERSET ESTATES",
+   "parcels": 23
+  },
+  "SOMERSET GARDENS": {
+   "plat": "SOMERSET GARDENS",
+   "subdivision_code": "6900",
+   "subdivision": "SOMERSET GARDENS",
+   "parcels": 37
+  },
+  "SOMERSET HILLS": {
+   "plat": "SOMERSET HILLS",
+   "subdivision_code": "7000",
+   "subdivision": "SOMERSET HILLS",
+   "parcels": 137
+  },
+  "SOMERSET MANOR": {
+   "plat": "SOMERSET MANOR",
+   "subdivision_code": "7050",
+   "subdivision": "SOMERSET MANOR",
+   "parcels": 45
+  },
+  "SOMERSET PLACE": {
+   "plat": "SOMERSET PLACE",
+   "subdivision_code": "7070",
+   "subdivision": "SOMERSET PLACE",
+   "parcels": 15
+  },
+  "SOMERSIDE": {
+   "plat": "SOMERSIDE",
+   "subdivision_code": "7100",
+   "subdivision": "SOMERSIDE",
+   "parcels": 24
+  },
+  "SOUTHGATE FINANCIAL CENTER": {
+   "plat": "SOUTHGATE FINANCIAL CENTER",
+   "subdivision_code": "7120",
+   "subdivision": "SOUTHGATE FINANCIAL CENTER",
+   "parcels": 2
+  },
+  "STEVENS ESTATES": {
+   "plat": "STEVENS ESTATES",
+   "subdivision_code": "7150",
+   "subdivision": "STEVENS ESTATES",
+   "parcels": 5
+  },
+  "SUNSET HEIGHTS VIEW": {
+   "plat": "SUNSET HEIGHTS VIEW",
+   "subdivision_code": "7200",
+   "subdivision": "SUNSET HEIGHTS VIEW",
+   "parcels": 30
+  },
+  "SUNSET HILL ACRES": {
+   "plat": "SUNSET HILL ACRES",
+   "subdivision_code": "7300",
+   "subdivision": "SUNSET HILL ACRES",
+   "parcels": 37
+  },
+  "SUNSET HILL ACRES SECOND PLAT": {
+   "plat": "SUNSET HILL ACRES SECOND PLAT",
+   "subdivision_code": "7300",
+   "subdivision": "SUNSET HILL ACRES",
+   "parcels": 3
+  },
+  "SWARNER VALLEY": {
+   "plat": "SWARNER VALLEY",
+   "subdivision_code": "7400",
+   "subdivision": "SWARNER VALLEY",
+   "parcels": 32
+  },
+  "THE CHATEAU CONDOMINIUM": {
+   "plat": "THE CHATEAU CONDOMINIUM",
+   "subdivision_code": "7500",
+   "subdivision": "THE CHATEAU CONDOMINIUM",
+   "parcels": 42
+  },
+  "THE PALISADES": {
+   "plat": "THE PALISADES",
+   "subdivision_code": "7506",
+   "subdivision": "THE PALISADES",
+   "parcels": 70
+  },
+  "TOWN & COUNTRY ESTATES": {
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "subdivision": "TOWN & COUNTRY ESTATES",
+   "parcels": 134
+  },
+  "TRAIL VIEW": {
+   "plat": "TRAIL VIEW",
+   "subdivision_code": "7700",
+   "subdivision": "TRAIL VIEW",
+   "parcels": 9
+  },
+  "UMB PRAIRIE VILLAGE BRANCH BANK": {
+   "plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "subdivision_code": "7705",
+   "subdivision": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "parcels": 1
+  },
+  "VAUGHN SUBDIVISION": {
+   "plat": "VAUGHN SUBDIVISION",
+   "subdivision_code": "7710",
+   "subdivision": "VAUGHN SUBDIVISION",
+   "parcels": 2
+  },
+  "VILLAGE PARK": {
+   "plat": "VILLAGE PARK",
+   "subdivision_code": "7715",
+   "subdivision": "VILLAGE PARK",
+   "parcels": 19
+  },
+  "WALMER HEIGHTS": {
+   "plat": "WALMER HEIGHTS",
+   "subdivision_code": "7720",
+   "subdivision": "WALMER HEIGHTS",
+   "parcels": 16
+  },
+  "WEST HILL": {
+   "plat": "WEST HILL",
+   "subdivision_code": "7800",
+   "subdivision": "WEST HILL",
+   "parcels": 24
+  },
+  "WEST HILL NO. 2": {
+   "plat": "WEST HILL NO. 2",
+   "subdivision_code": "7900",
+   "subdivision": "WEST HILL NO. 2",
+   "parcels": 21
+  },
+  "WEST RIDING": {
+   "plat": "WEST RIDING",
+   "subdivision_code": "8100",
+   "subdivision": "WEST RIDING",
+   "parcels": 137
+  },
+  "WEST RIDING 2ND PLAT": {
+   "plat": "WEST RIDING 2ND PLAT",
+   "subdivision_code": "8100",
+   "subdivision": "WEST RIDING",
+   "parcels": 114
+  }
+ },
+ "instruments": [
+  {
+   "id": "1586106",
+   "recorded": "1906-06-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 3 16",
+   "instrument_number": "190606110000000",
+   "docid": null,
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "RIDGE VIEW"
+   ],
+   "plats": [
+    "RIDGE VIEW"
+   ],
+   "match": "exact",
+   "plat": "RIDGE VIEW",
+   "subdivision_code": "5900"
+  },
+  {
+   "id": "1586754",
+   "recorded": "1906-10-31",
+   "doc_type": "Plat",
+   "book_page": "PLAT 3 27",
+   "instrument_number": "190610310000000",
+   "docid": null,
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "JARBOE HEIGHTS"
+   ],
+   "plats": [
+    "JARBOE HEIGHTS"
+   ],
+   "match": "exact",
+   "plat": "JARBOE HEIGHTS",
+   "subdivision_code": "1700"
+  },
+  {
+   "id": "2028233",
+   "recorded": "1923-04-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 6",
+   "instrument_number": "192304030427344",
+   "docid": "129130",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "COUNTRY CLUB VIEW"
+   ],
+   "plats": [
+    "COUNTRY CLUB VIEW"
+   ],
+   "match": "exact",
+   "plat": "COUNTRY CLUB VIEW",
+   "subdivision_code": "0700"
+  },
+  {
+   "id": "2027354",
+   "recorded": "1923-05-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 8",
+   "instrument_number": "192305170434670",
+   "docid": "129907",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "SUNSET HILL ACRES"
+   ],
+   "plats": [
+    "SUNSET HILL ACRES"
+   ],
+   "match": "exact",
+   "plat": "SUNSET HILL ACRES",
+   "subdivision_code": "7300"
+  },
+  {
+   "id": "2026456",
+   "recorded": "1923-09-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 15",
+   "instrument_number": "192309260434693",
+   "docid": "131821",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "RESURVEY OF LOTS 15 AND 16 PLAT OF RIDGE VIEW"
+   ],
+   "plats": [
+    "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW"
+   ],
+   "match": "exact",
+   "plat": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+   "subdivision_code": "6000"
+  },
+  {
+   "id": "2026916",
+   "recorded": "1924-04-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 28",
+   "instrument_number": "192404170443367",
+   "docid": "134728",
+   "legal": "Sec:23 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "GRANTHURST"
+   ],
+   "plats": [
+    "GRANTHURST"
+   ],
+   "match": "exact",
+   "plat": "GRANTHURST",
+   "subdivision_code": "1100"
+  },
+  {
+   "id": "2026921",
+   "recorded": "1924-04-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 29",
+   "instrument_number": "192404170443368",
+   "docid": "134278",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "GRANTHURST"
+   ],
+   "plats": [
+    "GRANTHURST"
+   ],
+   "match": "exact",
+   "plat": "GRANTHURST",
+   "subdivision_code": "1100"
+  },
+  {
+   "id": "2027680",
+   "recorded": "1924-08-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 30",
+   "instrument_number": "192408130450772",
+   "docid": "136614",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "MEADOW VIEW"
+   ],
+   "plats": [
+    "MEADOW VIEW"
+   ],
+   "match": "exact",
+   "plat": "MEADOW VIEW",
+   "subdivision_code": "2700"
+  },
+  {
+   "id": "2027924",
+   "recorded": "1925-04-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 43",
+   "instrument_number": "192504170467296",
+   "docid": "140644",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2026990",
+   "recorded": "1925-05-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 41",
+   "instrument_number": "192505020475083",
+   "docid": "140926",
+   "legal": "Sec:26 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "MEADOW LAKE LAWN"
+   ],
+   "plats": [
+    "MEADOW LAKE LAWN"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE LAWN",
+   "subdivision_code": "2600"
+  },
+  {
+   "id": "2953079",
+   "recorded": "1926-01-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 7 8",
+   "instrument_number": "192601120500027",
+   "docid": "145399",
+   "legal": "Rmrk: PT OF Sec: 21 Twp: 12 Rng: 25 Qtr: SE",
+   "index_names": [
+    "JARBOE VIEW"
+   ],
+   "plats": [
+    "JARBOE VIEW"
+   ],
+   "match": "exact",
+   "plat": "JARBOE VIEW",
+   "subdivision_code": "1800"
+  },
+  {
+   "id": "2946804",
+   "recorded": "1927-09-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 7 28",
+   "instrument_number": "192709070529026",
+   "docid": "157769",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2946178",
+   "recorded": "1929-09-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 7 42",
+   "instrument_number": "192909120551405",
+   "docid": "173468",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "INDIAN HILLS (RESURVEY BLOCK FOUR (4))"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "variant",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "3841672",
+   "recorded": "1937-03-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 8 34",
+   "instrument_number": "193703290195227",
+   "docid": "234168",
+   "legal": null,
+   "index_names": [
+    "SUNSET HEIGHTS VIEW"
+   ],
+   "plats": [
+    "SUNSET HEIGHTS VIEW"
+   ],
+   "match": "exact",
+   "plat": "SUNSET HEIGHTS VIEW",
+   "subdivision_code": "7200"
+  },
+  {
+   "id": "3841673",
+   "recorded": "1937-03-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 8 35",
+   "instrument_number": "193703290195228",
+   "docid": "234168",
+   "legal": null,
+   "index_names": [
+    "SUNSET HEIGHTS VIEW"
+   ],
+   "plats": [
+    "SUNSET HEIGHTS VIEW"
+   ],
+   "match": "exact",
+   "plat": "SUNSET HEIGHTS VIEW",
+   "subdivision_code": "7200"
+  },
+  {
+   "id": "3843506",
+   "recorded": "1937-07-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 8 37",
+   "instrument_number": "193707020559223",
+   "docid": "237527",
+   "legal": null,
+   "index_names": [
+    "COUNTRYSIDE"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE, 61st St to 61st Terrace, Woodson to Nall Ave (Mission), not Countryside-East"
+   }
+  },
+  {
+   "id": "4605164",
+   "recorded": "1938-10-31",
+   "doc_type": "Plat",
+   "book_page": "PLAT 9 27",
+   "instrument_number": "193810310330431",
+   "docid": "253011",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "4605599",
+   "recorded": "1939-07-14",
+   "doc_type": "Plat",
+   "book_page": "PLAT 9 43",
+   "instrument_number": "193907140331281",
+   "docid": "262642",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE WOODS"
+   ],
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE WOODS",
+   "subdivision_code": "5600"
+  },
+  {
+   "id": "4605614",
+   "recorded": "1939-08-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 9 46",
+   "instrument_number": "193908290259338",
+   "docid": "264541",
+   "legal": null,
+   "index_names": [
+    "COUNTRYSIDE"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE block 6, 61st St to 61st Terrace, Lamar to Woodson (Mission). Cites restrictions at MISC 22/306 and a homes association declaration at MISC 22/312"
+   }
+  },
+  {
+   "id": "2137735",
+   "recorded": "1941-03-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 10 42",
+   "instrument_number": "194103290409814",
+   "docid": "288091",
+   "legal": null,
+   "index_names": [
+    "SUNSET HEIGHTS VIEW NO 2"
+   ],
+   "plats": [
+    "SUNSET HEIGHTS VIEW"
+   ],
+   "match": "variant",
+   "plat": "SUNSET HEIGHTS VIEW",
+   "subdivision_code": "7200",
+   "reviewed": {
+    "location": "Sec 17-12-25",
+    "note": "67th to 69th St between Copley Rd and Nall Rd. States its restrictions are the same as those already of record on the land"
+   }
+  },
+  {
+   "id": "2137761",
+   "recorded": "1941-05-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 10 47",
+   "instrument_number": "194105050168834",
+   "docid": "289996",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2307805",
+   "recorded": "1941-07-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 11 4",
+   "instrument_number": "194107110175436",
+   "docid": "293245",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE WOODS"
+   ],
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE WOODS",
+   "subdivision_code": "5600"
+  },
+  {
+   "id": "2307853",
+   "recorded": "1941-07-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 11 5",
+   "instrument_number": "194107180259024",
+   "docid": "293553",
+   "legal": null,
+   "index_names": [
+    "COUNTRYSIDE"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE block 5, 61st Terrace at Lamar Ave (Mission)"
+   }
+  },
+  {
+   "id": "2308878",
+   "recorded": "1941-07-21",
+   "doc_type": "Plat",
+   "book_page": "PLAT 11 6",
+   "instrument_number": "194107210409848",
+   "docid": "293641",
+   "legal": null,
+   "index_names": [
+    "SOMERSIDE"
+   ],
+   "plats": [
+    "SOMERSIDE"
+   ],
+   "match": "exact",
+   "plat": "SOMERSIDE",
+   "subdivision_code": "7100"
+  },
+  {
+   "id": "2307799",
+   "recorded": "1946-02-27",
+   "doc_type": "Plat",
+   "book_page": "PLAT 11 39",
+   "instrument_number": "194602270201383",
+   "docid": "346109",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2308599",
+   "recorded": "1946-03-04",
+   "doc_type": "Plat",
+   "book_page": "PLAT 11 40",
+   "instrument_number": "194603040201569",
+   "docid": "346359",
+   "legal": null,
+   "index_names": [
+    "CLARKVIEW"
+   ],
+   "plats": [
+    "CLARKVIEW"
+   ],
+   "match": "exact",
+   "plat": "CLARKVIEW",
+   "subdivision_code": "0400"
+  },
+  {
+   "id": "2307811",
+   "recorded": "1946-03-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 11 41",
+   "instrument_number": "194603130201637",
+   "docid": "346792",
+   "legal": null,
+   "index_names": [
+    "NALL AVENUE GARDENS"
+   ],
+   "plats": [
+    "NALL AVENUE GARDENS"
+   ],
+   "match": "exact",
+   "plat": "NALL AVENUE GARDENS",
+   "subdivision_code": "3400"
+  },
+  {
+   "id": "2307855",
+   "recorded": "1946-04-16",
+   "doc_type": "Plat",
+   "book_page": "PLAT 11 50",
+   "instrument_number": "194604160201559",
+   "docid": "348400",
+   "legal": null,
+   "index_names": [
+    "CEDARVALE"
+   ],
+   "plats": [
+    "CEDARVALE"
+   ],
+   "match": "exact",
+   "plat": "CEDARVALE",
+   "subdivision_code": "0300"
+  },
+  {
+   "id": "2486330",
+   "recorded": "1946-05-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 1",
+   "instrument_number": "194605050000000",
+   "docid": "349451",
+   "legal": null,
+   "index_names": [
+    "FONTICELLO GARDENS"
+   ],
+   "plats": [
+    "FONTICELLO GARDENS"
+   ],
+   "match": "exact",
+   "plat": "FONTICELLO GARDENS",
+   "subdivision_code": "0900"
+  },
+  {
+   "id": "2487304",
+   "recorded": "1946-05-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 2",
+   "instrument_number": "194605070201501",
+   "docid": "349469",
+   "legal": null,
+   "index_names": [
+    "MEADOW ACRES"
+   ],
+   "plats": [
+    "MEADOW ACRES"
+   ],
+   "match": "exact",
+   "plat": "MEADOW ACRES",
+   "subdivision_code": "2200"
+  },
+  {
+   "id": "2486332",
+   "recorded": "1946-06-04",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 10",
+   "instrument_number": "194606040201570",
+   "docid": "350507",
+   "legal": null,
+   "index_names": [
+    "MISSION VALLEY EAST"
+   ],
+   "plats": [
+    "MISSION VALLEY EAST"
+   ],
+   "match": "exact",
+   "plat": "MISSION VALLEY EAST",
+   "subdivision_code": "2800"
+  },
+  {
+   "id": "2487082",
+   "recorded": "1946-06-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 12",
+   "instrument_number": "194606120201597",
+   "docid": "350792",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2487089",
+   "recorded": "1946-06-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 13",
+   "instrument_number": "194606120201598",
+   "docid": "350792",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2487264",
+   "recorded": "1946-06-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 14",
+   "instrument_number": "194606250208004",
+   "docid": "351166",
+   "legal": null,
+   "index_names": [
+    "MISSION VALLEY WEST"
+   ],
+   "plats": [
+    "MISSION VALLEY WEST"
+   ],
+   "match": "exact",
+   "plat": "MISSION VALLEY WEST",
+   "subdivision_code": "2900"
+  },
+  {
+   "id": "2486399",
+   "recorded": "1946-08-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 19",
+   "instrument_number": "194608070207695",
+   "docid": "352512",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2486406",
+   "recorded": "1946-08-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 20",
+   "instrument_number": "194608070207696",
+   "docid": "352512",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2487307",
+   "recorded": "1946-08-09",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 21",
+   "instrument_number": "194608090207702",
+   "docid": "352567",
+   "legal": null,
+   "index_names": [
+    "FONTICELLO GARDENS NO 2"
+   ],
+   "plats": [
+    "REPLAT OF FONTICELLO GARDENS NO. 2"
+   ],
+   "match": "variant",
+   "plat": "REPLAT OF FONTICELLO GARDENS NO. 2",
+   "subdivision_code": "1000",
+   "reviewed": {
+    "location": "Sec 16-12-25",
+    "note": "Original plat of Fonticello Gardens No. 2, 69th St and Williamsburg Lane; replatted in 1959 (PLAT 21 36)"
+   }
+  },
+  {
+   "id": "2486613",
+   "recorded": "1946-09-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 25",
+   "instrument_number": "194609130207850",
+   "docid": "353887",
+   "legal": null,
+   "index_names": [
+    "COUNTRYSIDE"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE resurvey, 62nd St to 62nd Terrace, Lamar to Nall Ave (Mission); same instrument as PLAT 12 26"
+   }
+  },
+  {
+   "id": "2487342",
+   "recorded": "1946-09-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 26",
+   "instrument_number": "194609130207851",
+   "docid": "353887",
+   "legal": null,
+   "index_names": [
+    "COUNTRYSIDE"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE resurvey, 62nd St to 62nd Terrace, Lamar to Nall Ave (Mission); same instrument as PLAT 12 25"
+   }
+  },
+  {
+   "id": "2487427",
+   "recorded": "1947-04-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 41",
+   "instrument_number": "194704020220579",
+   "docid": "359846",
+   "legal": null,
+   "index_names": [
+    "MEADOW LAKE",
+    "MEADOW LAKE CORPORATION INC"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2486704",
+   "recorded": "1947-04-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 42",
+   "instrument_number": "194704020220580",
+   "docid": "359846",
+   "legal": null,
+   "index_names": [
+    "MEADOW LAKE",
+    "MEADOW LAKE CORPORATION INC"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2486752",
+   "recorded": "1947-07-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 53",
+   "instrument_number": "194707170226873",
+   "docid": "363342",
+   "legal": null,
+   "index_names": [
+    "BREEZY HEIGHTS"
+   ],
+   "plats": [
+    "BREEZY HEIGHTS"
+   ],
+   "match": "exact",
+   "plat": "BREEZY HEIGHTS",
+   "subdivision_code": "0100"
+  },
+  {
+   "id": "2486755",
+   "recorded": "1947-07-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 54",
+   "instrument_number": "194707290226930",
+   "docid": "363805",
+   "legal": null,
+   "index_names": [
+    "CORRECTED PLAT MEADOW LAKE",
+    "MEADOW LAKE CORPORATION INC (THE)"
+   ],
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2487097",
+   "recorded": "1947-07-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 55",
+   "instrument_number": "194707290226931",
+   "docid": "363805",
+   "legal": null,
+   "index_names": [
+    "CORRECTED PLAT MEADOW LAKE",
+    "MEADOW LAKE CORPORATION INC (THE)"
+   ],
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2487120",
+   "recorded": "1947-09-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 63",
+   "instrument_number": "194709230227092",
+   "docid": "365822",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2487122",
+   "recorded": "1947-09-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 64",
+   "instrument_number": "194709230227093",
+   "docid": "365823",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2487123",
+   "recorded": "1948-01-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 69",
+   "instrument_number": "194801230239399",
+   "docid": "369691",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2487879",
+   "recorded": "1948-02-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 12 71",
+   "instrument_number": "194802020239545",
+   "docid": "369939",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2677769",
+   "recorded": "1948-05-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 1",
+   "instrument_number": "194805260245786",
+   "docid": "373687",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2677277",
+   "recorded": "1948-05-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 2",
+   "instrument_number": "194805260245787",
+   "docid": "373688",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2678056",
+   "recorded": "1948-05-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 3",
+   "instrument_number": "194805260245788",
+   "docid": "373688",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2677543",
+   "recorded": "1948-08-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 7",
+   "instrument_number": "194808180153475",
+   "docid": "376393",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE WOODS"
+   ],
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE WOODS",
+   "subdivision_code": "5600"
+  },
+  {
+   "id": "2678435",
+   "recorded": "1948-09-20",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 9",
+   "instrument_number": "194809200154019",
+   "docid": "377465",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2676927",
+   "recorded": "1948-11-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 17",
+   "instrument_number": "194811120252356",
+   "docid": "379261",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2677973",
+   "recorded": "1948-11-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 18",
+   "instrument_number": "194811120252357",
+   "docid": "379262",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2677297",
+   "recorded": "1949-03-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 24",
+   "instrument_number": "194903070259599",
+   "docid": "382331",
+   "legal": "Rmrk: PT OF Sec: 21 Twp: 12 Rng: 25 Qtr: NW",
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2678048",
+   "recorded": "1949-04-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 29",
+   "instrument_number": "194904180157759",
+   "docid": "383641",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2678058",
+   "recorded": "1949-04-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 30",
+   "instrument_number": "194904250265951",
+   "docid": "383823",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2678117",
+   "recorded": "1949-08-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 40",
+   "instrument_number": "194908300272542",
+   "docid": "388396",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2677397",
+   "recorded": "1949-08-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 41",
+   "instrument_number": "194908300272543",
+   "docid": "388396",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2678300",
+   "recorded": "1949-08-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 42",
+   "instrument_number": "194908300272544",
+   "docid": "388397",
+   "legal": null,
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2678324",
+   "recorded": "1949-10-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 45",
+   "instrument_number": "194910110272430",
+   "docid": "390171",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2677428",
+   "recorded": "1949-10-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 46",
+   "instrument_number": "194910110272431",
+   "docid": "390171",
+   "legal": null,
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2677436",
+   "recorded": "1949-10-14",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 47",
+   "instrument_number": "194910140272453",
+   "docid": "390380",
+   "legal": null,
+   "index_names": [
+    "MOHAWK HILLS"
+   ],
+   "plats": [
+    "MOHAWK HILLS"
+   ],
+   "match": "exact",
+   "plat": "MOHAWK HILLS",
+   "subdivision_code": "3100"
+  },
+  {
+   "id": "2678336",
+   "recorded": "1949-12-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 49",
+   "instrument_number": "194912130278802",
+   "docid": "392855",
+   "legal": null,
+   "index_names": [
+    "MEADOWBROOK DOWNS"
+   ],
+   "plats": [
+    "MEADOWBROOK DOWNS"
+   ],
+   "match": "exact",
+   "plat": "MEADOWBROOK DOWNS",
+   "subdivision_code": "2350"
+  },
+  {
+   "id": "2677478",
+   "recorded": "1950-01-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 55",
+   "instrument_number": "195001070278900",
+   "docid": "393827",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE CORPORATION INC (THE)",
+    "MEADOW LAKE"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2677519",
+   "recorded": "1950-02-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 61",
+   "instrument_number": "195002030279031",
+   "docid": "394997",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500"
+  },
+  {
+   "id": "2678418",
+   "recorded": "1950-02-10",
+   "doc_type": "Plat",
+   "book_page": "PLAT 13 64",
+   "instrument_number": "195002100279082",
+   "docid": "395277",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE FOREST"
+   ],
+   "plats": [
+    "PRAIRIE FOREST"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FOREST",
+   "subdivision_code": "4300"
+  },
+  {
+   "id": "2865946",
+   "recorded": "1950-03-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 5",
+   "instrument_number": "195003290285855",
+   "docid": "397425",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2865658",
+   "recorded": "1950-06-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 22",
+   "instrument_number": "195006060293239",
+   "docid": "400698",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "2866528",
+   "recorded": "1950-06-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 23",
+   "instrument_number": "195006060293240",
+   "docid": "400698",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "2866529",
+   "recorded": "1950-06-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 24",
+   "instrument_number": "195006060293241",
+   "docid": "400699",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2866533",
+   "recorded": "1950-06-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 30",
+   "instrument_number": "195006260300462",
+   "docid": "401838",
+   "legal": "Sec:9 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "MISSION VILLAGE BLOCK 2"
+   ],
+   "plats": [
+    "MISSION VILLAGE"
+   ],
+   "match": "variant",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000"
+  },
+  {
+   "id": "2866538",
+   "recorded": "1950-06-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 31",
+   "instrument_number": "195006260300463",
+   "docid": "401838",
+   "legal": "Sec:9 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "MISSION VILLAGE BLOCK 2"
+   ],
+   "plats": [
+    "MISSION VILLAGE"
+   ],
+   "match": "variant",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000"
+  },
+  {
+   "id": "2865680",
+   "recorded": "1950-06-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 33",
+   "instrument_number": "195006300300548",
+   "docid": "402189",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "2866555",
+   "recorded": "1950-06-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 34",
+   "instrument_number": "195006300300549",
+   "docid": "402189",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "2866596",
+   "recorded": "1950-08-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 42",
+   "instrument_number": "195008080300376",
+   "docid": "404685",
+   "legal": "Sub:CORRECTED PLAT MEADOW LAKE Blk:15 Lt:1 other:REPLAT OF",
+   "index_names": [
+    "MEADOW LAKE RESURVEY OF LOTS 1 TO 13 BOTH INCLUSIVE OF BLOCK 15 OF THE CORRECTED PLAT OF MEADOW LAKE BLOCKS 4 TO 7 INCLUSIVE BLOCK 9 TO 16 INCLUSIVE AND LOT 1 OF BLOCK 8",
+    "MEADOW LAKE CORP INC (THE)"
+   ],
+   "plats": [
+    "MEADOW LAKE RESURVEY"
+   ],
+   "match": "variant",
+   "plat": "MEADOW LAKE RESURVEY",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2865746",
+   "recorded": "1950-08-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 43",
+   "instrument_number": "195008080300377",
+   "docid": "404686",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE",
+    "MEADOW LAKE CORPORATION INC (THE)"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2866612",
+   "recorded": "1950-08-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 45",
+   "instrument_number": "195008250300437",
+   "docid": "405716",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2866788",
+   "recorded": "1950-09-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 46",
+   "instrument_number": "195009050300498",
+   "docid": "406388",
+   "legal": "Sec:26 Twshp:12 Range:25 other:PT OF",
+   "index_names": [
+    "MEADOW LAKE CORPORATION INC (THE)",
+    "MEADOW LAKE"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "2865952",
+   "recorded": "1950-10-20",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 52",
+   "instrument_number": "195010200307717",
+   "docid": "409239",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "2866817",
+   "recorded": "1950-10-20",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 53",
+   "instrument_number": "195010200307718",
+   "docid": "409239",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "2865968",
+   "recorded": "1951-01-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 59",
+   "instrument_number": "195101020315314",
+   "docid": "413121",
+   "legal": "Sec:10 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE - EAST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "2866829",
+   "recorded": "1951-01-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 61",
+   "instrument_number": "195101150315364",
+   "docid": "413826",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "WEST HILL"
+   ],
+   "plats": [
+    "WEST HILL"
+   ],
+   "match": "exact",
+   "plat": "WEST HILL",
+   "subdivision_code": "7800"
+  },
+  {
+   "id": "2865971",
+   "recorded": "1951-02-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 63",
+   "instrument_number": "195102050315627",
+   "docid": "415007",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "2866835",
+   "recorded": "1951-02-19",
+   "doc_type": "Plat",
+   "book_page": "PLAT 14 66",
+   "instrument_number": "195102190322981",
+   "docid": "415690",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "TRAIL VIEW"
+   ],
+   "plats": [
+    "TRAIL VIEW"
+   ],
+   "match": "exact",
+   "plat": "TRAIL VIEW",
+   "subdivision_code": "7700"
+  },
+  {
+   "id": "3049845",
+   "recorded": "1951-05-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 5",
+   "instrument_number": "195105290332056",
+   "docid": "420694",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "3048922",
+   "recorded": "1951-06-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 6",
+   "instrument_number": "195106180331799",
+   "docid": "421615",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3049911",
+   "recorded": "1951-06-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 7",
+   "instrument_number": "195106180331800",
+   "docid": "421615",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3049927",
+   "recorded": "1951-07-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 8",
+   "instrument_number": "195107030331876",
+   "docid": "422264",
+   "legal": "Sec:22 Twshp:12 Range:25 other:PT OF",
+   "index_names": [
+    "MEADOW LAKE",
+    "MEADOW LAKE CORPORATION (THE)"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "3049497",
+   "recorded": "1951-10-01",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 15",
+   "instrument_number": "195110010339491",
+   "docid": "426320",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN FIELDS"
+   ],
+   "plats": [
+    "INDIAN FIELDS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300"
+  },
+  {
+   "id": "3048532",
+   "recorded": "1951-10-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 17",
+   "instrument_number": "195110050339511",
+   "docid": "426581",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE BLOCKS 35 TO 43 INCL"
+   ],
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE",
+    "MEADOW LAKE"
+   ],
+   "match": "variant",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "3049516",
+   "recorded": "1951-11-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 19",
+   "instrument_number": "195111020339607",
+   "docid": "427847",
+   "legal": "Sec:23 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE BLOCKS 44 45 46",
+    "MEADOW LAKE CORP INC (THE)"
+   ],
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE",
+    "MEADOW LAKE"
+   ],
+   "match": "variant",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "3048627",
+   "recorded": "1952-01-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 35",
+   "instrument_number": "195201280347142",
+   "docid": "431466",
+   "legal": "Sec:15 Twshp:12 Range:25 other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "3049772",
+   "recorded": "1952-01-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 36",
+   "instrument_number": "195201300347160",
+   "docid": "431585",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3049777",
+   "recorded": "1952-01-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 37",
+   "instrument_number": "195201300347161",
+   "docid": "431585",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3048881",
+   "recorded": "1952-03-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 51",
+   "instrument_number": "195203030354786",
+   "docid": "433042",
+   "legal": "Sec:9 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MISSION VALLEY EAST"
+   ],
+   "plats": [
+    "MISSION VALLEY EAST"
+   ],
+   "match": "exact",
+   "plat": "MISSION VALLEY EAST",
+   "subdivision_code": "2800"
+  },
+  {
+   "id": "3049859",
+   "recorded": "1952-03-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 53",
+   "instrument_number": "195203170354599",
+   "docid": "433661",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE VALLEY"
+   ],
+   "plats": [
+    "PRAIRIE VALLEY"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VALLEY",
+   "subdivision_code": "5100"
+  },
+  {
+   "id": "3049901",
+   "recorded": "1952-04-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 60",
+   "instrument_number": "195204050354681",
+   "docid": "434612",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "3049903",
+   "recorded": "1952-04-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 61",
+   "instrument_number": "195204050354682",
+   "docid": "434613",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE",
+    "MEADOW LAKE CORPORATION INC (THE)"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "3048923",
+   "recorded": "1952-04-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 62",
+   "instrument_number": "195204050354683",
+   "docid": "434614",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW LAKE CORP INC (THE)",
+    "MEADOW LAKE"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "match": "exact",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500"
+  },
+  {
+   "id": "3049906",
+   "recorded": "1952-04-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 66",
+   "instrument_number": "195204220362398",
+   "docid": "435365",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "RIDGE VIEW HEIGHTS"
+   ],
+   "plats": [
+    "RIDGE VIEW HEIGHTS"
+   ],
+   "match": "exact",
+   "plat": "RIDGE VIEW HEIGHTS",
+   "subdivision_code": "6050"
+  },
+  {
+   "id": "3049914",
+   "recorded": "1952-05-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 71",
+   "instrument_number": "195205050362418",
+   "docid": "435942",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "WEST HILL NO 2"
+   ],
+   "plats": [
+    "WEST HILL NO. 2"
+   ],
+   "match": "exact",
+   "plat": "WEST HILL NO. 2",
+   "subdivision_code": "7900"
+  },
+  {
+   "id": "3049923",
+   "recorded": "1952-06-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 15 75",
+   "instrument_number": "195206050362240",
+   "docid": "437398",
+   "legal": "Sec:9 Twp:12 Rng:25 Qtr:NW T:12 other:PT OF",
+   "index_names": [
+    "MISSION VILLAGE BLOCK 2"
+   ],
+   "plats": [
+    "MISSION VILLAGE"
+   ],
+   "match": "variant",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000"
+  },
+  {
+   "id": "3223423",
+   "recorded": "1952-07-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 6",
+   "instrument_number": "195207280369813",
+   "docid": "439780",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "INDIAN HEIGHTS"
+   ],
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HEIGHTS",
+   "subdivision_code": "1400"
+  },
+  {
+   "id": "3223448",
+   "recorded": "1952-08-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 9",
+   "instrument_number": "195208110370024",
+   "docid": "440492",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "3221583",
+   "recorded": "1952-08-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 10",
+   "instrument_number": "195208280370235",
+   "docid": "441393",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE VALLEY NORTH"
+   ],
+   "plats": [
+    "PRAIRIE VALLEY NORTH"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VALLEY NORTH",
+   "subdivision_code": "5150"
+  },
+  {
+   "id": "3221588",
+   "recorded": "1952-08-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 11",
+   "instrument_number": "195208280370236",
+   "docid": "441395",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE VALLEY NORTH ANNEX"
+   ],
+   "plats": [
+    "PRAIRIE VALLEY NORTH ANNEX"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VALLEY NORTH ANNEX",
+   "subdivision_code": "5200"
+  },
+  {
+   "id": "3222563",
+   "recorded": "1952-09-10",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 13",
+   "instrument_number": "195209100378373",
+   "docid": "442096",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN FIELDS"
+   ],
+   "plats": [
+    "INDIAN FIELDS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300"
+  },
+  {
+   "id": "3222571",
+   "recorded": "1952-09-10",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 14",
+   "instrument_number": "195209100378374",
+   "docid": "442097",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3222587",
+   "recorded": "1952-09-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 18",
+   "instrument_number": "195209300377773",
+   "docid": "443136",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE VIEW LOTS 1 TO 16"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE VIEW"
+   ],
+   "match": "variant",
+   "plat": "PRAIRIE RIDGE VIEW",
+   "subdivision_code": "5000"
+  },
+  {
+   "id": "3222172",
+   "recorded": "1952-10-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 26",
+   "instrument_number": "195210150377909",
+   "docid": "443932",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "RIDGE VIEW PLACE"
+   ],
+   "plats": [
+    "RIDGE VIEW PLACE"
+   ],
+   "match": "exact",
+   "plat": "RIDGE VIEW PLACE",
+   "subdivision_code": "6100"
+  },
+  {
+   "id": "3222177",
+   "recorded": "1952-11-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 29",
+   "instrument_number": "195211220378211",
+   "docid": "445620",
+   "legal": "Sec:21 Twp:12 Rng:25 Qtr:SW T:12 other:PT OF",
+   "index_names": [
+    "SWARNER VALLEY"
+   ],
+   "plats": [
+    "SWARNER VALLEY"
+   ],
+   "match": "exact",
+   "plat": "SWARNER VALLEY",
+   "subdivision_code": "7400"
+  },
+  {
+   "id": "3222192",
+   "recorded": "1952-11-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 31",
+   "instrument_number": "195211250378248",
+   "docid": "445725",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE VIEW NO 5"
+   ],
+   "plats": [
+    "PRAIRIE VIEW NO. 5"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VIEW NO. 5",
+   "subdivision_code": "5400"
+  },
+  {
+   "id": "3223338",
+   "recorded": "1953-01-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 38",
+   "instrument_number": "195301060385860",
+   "docid": "447643",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3222418",
+   "recorded": "1953-02-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 41",
+   "instrument_number": "195302070386233",
+   "docid": "449024",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "JUNIPER HILL"
+   ],
+   "plats": [
+    "JUNIPER HILL"
+   ],
+   "match": "exact",
+   "plat": "JUNIPER HILL",
+   "subdivision_code": "1900"
+  },
+  {
+   "id": "3223366",
+   "recorded": "1953-02-21",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 45",
+   "instrument_number": "195302210394060",
+   "docid": "449622",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "RIDGE VIEW HEIGHTS NO 2"
+   ],
+   "plats": [
+    "RIDGE VIEW HEIGHTS NO. 2"
+   ],
+   "match": "exact",
+   "plat": "RIDGE VIEW HEIGHTS NO. 2",
+   "subdivision_code": "6060"
+  },
+  {
+   "id": "3223386",
+   "recorded": "1953-03-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 49",
+   "instrument_number": "195303120393622",
+   "docid": "450620",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE HEIGHTS"
+   ],
+   "plats": [
+    "PRAIRIE HEIGHTS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HEIGHTS",
+   "subdivision_code": "4400"
+  },
+  {
+   "id": "3223405",
+   "recorded": "1953-04-27",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 54",
+   "instrument_number": "195304270394136",
+   "docid": "452980",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3223410",
+   "recorded": "1953-04-27",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 55",
+   "instrument_number": "195304270394137",
+   "docid": "452981",
+   "legal": "Rmrk: PT OF  Sec: 16 Twp: 12 Rng: 25 Qtr: NE",
+   "index_names": [
+    "INDIAN FIELDS"
+   ],
+   "plats": [
+    "INDIAN FIELDS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300"
+  },
+  {
+   "id": "3222501",
+   "recorded": "1953-06-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 16 67",
+   "instrument_number": "195306110401598",
+   "docid": "455029",
+   "legal": "Sec:20 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3393158",
+   "recorded": "1953-08-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 3",
+   "instrument_number": "195308180410759",
+   "docid": "458347",
+   "legal": "Sec:20 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3393436",
+   "recorded": "1953-09-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 6",
+   "instrument_number": "195309230419007",
+   "docid": "460143",
+   "legal": "Sec:17 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "NALLANDS"
+   ],
+   "plats": [
+    "NALLANDS"
+   ],
+   "match": "exact",
+   "plat": "NALLANDS",
+   "subdivision_code": "3300"
+  },
+  {
+   "id": "3392075",
+   "recorded": "1954-01-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 13",
+   "instrument_number": "195401220426825",
+   "docid": "465419",
+   "legal": "Sec:20 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3392079",
+   "recorded": "1954-01-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 14",
+   "instrument_number": "195401220426826",
+   "docid": "465419",
+   "legal": "Sec:20 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3393113",
+   "recorded": "1954-02-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 15",
+   "instrument_number": "195402020426930",
+   "docid": "465806",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE PARK"
+   ],
+   "plats": [
+    "PRAIRIE PARK"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE PARK",
+   "subdivision_code": "4800"
+  },
+  {
+   "id": "3392089",
+   "recorded": "1954-02-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 16",
+   "instrument_number": "195402120427151",
+   "docid": "466237",
+   "legal": "Sec:20 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3392140",
+   "recorded": "1954-05-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 31",
+   "instrument_number": "195405070442848",
+   "docid": "470743",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN FIELDS"
+   ],
+   "plats": [
+    "INDIAN FIELDS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300"
+  },
+  {
+   "id": "3393174",
+   "recorded": "1954-05-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 33",
+   "instrument_number": "195405150442955",
+   "docid": "471122",
+   "legal": "Sec:20 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE MANOR"
+   ],
+   "plats": [
+    "PRAIRIE MANOR"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE MANOR",
+   "subdivision_code": "4700"
+  },
+  {
+   "id": "3392171",
+   "recorded": "1954-07-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 38",
+   "instrument_number": "195407070451009",
+   "docid": "474091",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "SOMERSET ACRES WEST"
+   ],
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700"
+  },
+  {
+   "id": "3393196",
+   "recorded": "1954-07-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 39",
+   "instrument_number": "195407150451114",
+   "docid": "474637",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "3392188",
+   "recorded": "1954-07-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 46",
+   "instrument_number": "195407260451234",
+   "docid": "475311",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3393221",
+   "recorded": "1954-08-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 49",
+   "instrument_number": "195408120459645",
+   "docid": "476582",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "SOMERSET GARDENS"
+   ],
+   "plats": [
+    "SOMERSET GARDENS"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET GARDENS",
+   "subdivision_code": "6900"
+  },
+  {
+   "id": "3392210",
+   "recorded": "1954-09-14",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 53",
+   "instrument_number": "195409140459194",
+   "docid": "478588",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "3393444",
+   "recorded": "1954-11-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 69",
+   "instrument_number": "195411290467484",
+   "docid": "483115",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3392260",
+   "recorded": "1954-12-20",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 73",
+   "instrument_number": "195412200475010",
+   "docid": "484502",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS VIEW"
+   ],
+   "plats": [
+    "PRAIRIE HILLS VIEW"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS VIEW",
+   "subdivision_code": "4600"
+  },
+  {
+   "id": "3393449",
+   "recorded": "1955-01-04",
+   "doc_type": "Plat",
+   "book_page": "PLAT 17 74",
+   "instrument_number": "195501040475222",
+   "docid": "485381",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "SOMERSET ACRES WEST"
+   ],
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700"
+  },
+  {
+   "id": "3579573",
+   "recorded": "1955-01-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 2",
+   "instrument_number": "195501070475307",
+   "docid": "485603",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "CORINTH MEADOWS"
+   ],
+   "plats": [
+    "CORINTH MEADOWS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH MEADOWS",
+   "subdivision_code": "0600"
+  },
+  {
+   "id": "3579641",
+   "recorded": "1955-01-10",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 4",
+   "instrument_number": "195501100475315",
+   "docid": "485675",
+   "legal": "Sec:20 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "WALMER HEIGHTS"
+   ],
+   "plats": [
+    "WALMER HEIGHTS"
+   ],
+   "match": "exact",
+   "plat": "WALMER HEIGHTS",
+   "subdivision_code": "7720"
+  },
+  {
+   "id": "3579575",
+   "recorded": "1955-03-14",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 20",
+   "instrument_number": "195503140483283",
+   "docid": "489493",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3578911",
+   "recorded": "1955-04-01",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 26",
+   "instrument_number": "195504010491262",
+   "docid": "490756",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3579590",
+   "recorded": "1955-04-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 28",
+   "instrument_number": "195504070491459",
+   "docid": "491169",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE - EAST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "3579598",
+   "recorded": "1955-04-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 29",
+   "instrument_number": "195504080491491",
+   "docid": "491216",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "RIDGEWOOD"
+   ],
+   "plats": [
+    "RIDGEWOOD"
+   ],
+   "match": "exact",
+   "plat": "RIDGEWOOD",
+   "subdivision_code": "6200"
+  },
+  {
+   "id": "3579621",
+   "recorded": "1955-04-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 35",
+   "instrument_number": "195504250491753",
+   "docid": "492248",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "SOMERSET HILLS"
+   ],
+   "plats": [
+    "SOMERSET HILLS"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET HILLS",
+   "subdivision_code": "7000"
+  },
+  {
+   "id": "3578986",
+   "recorded": "1955-05-24",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 44",
+   "instrument_number": "195505240499808",
+   "docid": "0494090",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600"
+  },
+  {
+   "id": "3578989",
+   "recorded": "1955-05-24",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 45",
+   "instrument_number": "195505240499809",
+   "docid": "494091",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600"
+  },
+  {
+   "id": "3579708",
+   "recorded": "1955-06-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 50",
+   "instrument_number": "195506020499917",
+   "docid": "494699",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3580091",
+   "recorded": "1955-07-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 59",
+   "instrument_number": "195507050507661",
+   "docid": "496823",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "JORDAN PLACE"
+   ],
+   "plats": [
+    "JORDAN PLACE"
+   ],
+   "match": "exact",
+   "plat": "JORDAN PLACE",
+   "subdivision_code": "2000"
+  },
+  {
+   "id": "3580103",
+   "recorded": "1955-07-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 63",
+   "instrument_number": "195507150508022",
+   "docid": "497662",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "THE PALISADES"
+   ],
+   "plats": [
+    "THE PALISADES"
+   ],
+   "match": "exact",
+   "plat": "THE PALISADES",
+   "subdivision_code": "7506"
+  },
+  {
+   "id": "3579087",
+   "recorded": "1955-08-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 68",
+   "instrument_number": "195508150513056",
+   "docid": "499663",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "TOWN & COUNTRY ESTATES",
+    "TOWN & COUNTRY ESTATES INC"
+   ],
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600"
+  },
+  {
+   "id": "3580112",
+   "recorded": "1955-08-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 73",
+   "instrument_number": "195508260513180",
+   "docid": "500544",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PAWNEE MANOR"
+   ],
+   "plats": [
+    "PAWNEE MANOR"
+   ],
+   "match": "exact",
+   "plat": "PAWNEE MANOR",
+   "subdivision_code": "3900"
+  },
+  {
+   "id": "3579093",
+   "recorded": "1955-08-27",
+   "doc_type": "Plat",
+   "book_page": "PLAT 18 75",
+   "instrument_number": "195508270513187",
+   "docid": "500593",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "THE PALISADES"
+   ],
+   "plats": [
+    "THE PALISADES"
+   ],
+   "match": "exact",
+   "plat": "THE PALISADES",
+   "subdivision_code": "7506"
+  },
+  {
+   "id": "3789143",
+   "recorded": "1955-10-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 6",
+   "instrument_number": "195510260520683",
+   "docid": "504486",
+   "legal": "Sec:26 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600"
+  },
+  {
+   "id": "3789955",
+   "recorded": "1955-12-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 23",
+   "instrument_number": "195512230524872",
+   "docid": "508032",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3789962",
+   "recorded": "1955-12-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 24",
+   "instrument_number": "195512230524873",
+   "docid": "508033",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3789007",
+   "recorded": "1955-12-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 27",
+   "instrument_number": "195512230524876",
+   "docid": "508036",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "CORINTH SCHOOL"
+   ],
+   "plats": [
+    "CORINTH SCHOOL"
+   ],
+   "match": "exact",
+   "plat": "CORINTH SCHOOL",
+   "subdivision_code": "0650"
+  },
+  {
+   "id": "3789973",
+   "recorded": "1955-12-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 29",
+   "instrument_number": "195512230524878",
+   "docid": "508038",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "SHAWNEE MISSION SOUTH HIGH SCHOOL"
+   ],
+   "plats": [
+    "SHAWNEE MISSION SOUTH HIGH SCHOOL"
+   ],
+   "match": "exact",
+   "plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "subdivision_code": "6500"
+  },
+  {
+   "id": "3790002",
+   "recorded": "1956-02-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 36",
+   "instrument_number": "195602280533402",
+   "docid": "511495",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH ESTATES"
+   ],
+   "plats": [
+    "CORINTH ESTATES"
+   ],
+   "match": "exact",
+   "plat": "CORINTH ESTATES",
+   "subdivision_code": "0450"
+  },
+  {
+   "id": "3789053",
+   "recorded": "1956-04-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 40",
+   "instrument_number": "195604020533474",
+   "docid": "513476",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "3789098",
+   "recorded": "1956-05-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 49",
+   "instrument_number": "195605020537614",
+   "docid": "515270",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "SOMERSET HILLS"
+   ],
+   "plats": [
+    "SOMERSET HILLS"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET HILLS",
+   "subdivision_code": "7000"
+  },
+  {
+   "id": "3789102",
+   "recorded": "1956-05-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 50",
+   "instrument_number": "195605080537670",
+   "docid": "515565",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "SOMERSET ACRES WEST"
+   ],
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700"
+  },
+  {
+   "id": "3790115",
+   "recorded": "1956-08-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 60",
+   "instrument_number": "195608030547097",
+   "docid": "520600",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "SOMERSET ACRES WEST"
+   ],
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700"
+  },
+  {
+   "id": "3790133",
+   "recorded": "1956-10-24",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 71",
+   "instrument_number": "195610240548109",
+   "docid": "524951",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PAWNEE MANOR"
+   ],
+   "plats": [
+    "PAWNEE MANOR"
+   ],
+   "match": "exact",
+   "plat": "PAWNEE MANOR",
+   "subdivision_code": "3900"
+  },
+  {
+   "id": "3789331",
+   "recorded": "1956-11-16",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 73",
+   "instrument_number": "195611170549268",
+   "docid": "526121",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600"
+  },
+  {
+   "id": "3790134",
+   "recorded": "1956-11-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 19 74",
+   "instrument_number": "195611170549269",
+   "docid": "526138",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE - EAST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "4017746",
+   "recorded": "1957-03-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 8",
+   "instrument_number": "195703280550572",
+   "docid": "532144",
+   "legal": "Sec:15 Twshp:12 Range:24 Qtr:NE other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE WEST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "4018198",
+   "recorded": "1957-06-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 17",
+   "instrument_number": "195706110551717",
+   "docid": "535911",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PAWNEE VIEW"
+   ],
+   "plats": [
+    "PAWNEE VIEW"
+   ],
+   "match": "exact",
+   "plat": "PAWNEE VIEW",
+   "subdivision_code": "4000"
+  },
+  {
+   "id": "4017345",
+   "recorded": "1957-06-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 20",
+   "instrument_number": "195706250551791",
+   "docid": "536526",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PAWNEE MANOR"
+   ],
+   "plats": [
+    "PAWNEE MANOR"
+   ],
+   "match": "exact",
+   "plat": "PAWNEE MANOR",
+   "subdivision_code": "3900"
+  },
+  {
+   "id": "4017359",
+   "recorded": "1957-07-09",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 22",
+   "instrument_number": "195707090551890",
+   "docid": "537279",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600"
+  },
+  {
+   "id": "4018232",
+   "recorded": "1957-07-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 24",
+   "instrument_number": "195707260280604",
+   "docid": "538088",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "4018238",
+   "recorded": "1957-07-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 25",
+   "instrument_number": "195707250552233",
+   "docid": "538089",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "4018252",
+   "recorded": "1957-08-19",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 27",
+   "instrument_number": "195708190552283",
+   "docid": "536375",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "SOMERSET COURT"
+   ],
+   "plats": [
+    "SOMERSET COURT"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET COURT",
+   "subdivision_code": "6800"
+  },
+  {
+   "id": "4017420",
+   "recorded": "1957-10-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 36",
+   "instrument_number": "195710110553435",
+   "docid": "542131",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE ESTATES",
+    "PRAIRIE ESTATES DEVELOPMENT COMPANY INC"
+   ],
+   "plats": [
+    "PRAIRIE ESTATES"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE ESTATES",
+   "subdivision_code": "4100"
+  },
+  {
+   "id": "4018345",
+   "recorded": "1958-02-24",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 52",
+   "instrument_number": "195802240555178",
+   "docid": "547993",
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE FIELDS"
+   ],
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200"
+  },
+  {
+   "id": "4017690",
+   "recorded": "1958-03-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 56",
+   "instrument_number": "195803250555648",
+   "docid": "549412",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "4017719",
+   "recorded": "1958-05-14",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 62",
+   "instrument_number": "195805140556476",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600"
+  },
+  {
+   "id": "4017735",
+   "recorded": "1958-06-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 20 68",
+   "instrument_number": "195806170557728",
+   "docid": "553978",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3658573",
+   "recorded": "1958-11-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 21 10",
+   "instrument_number": "195811220559805",
+   "docid": "564758",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE - EAST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "3658607",
+   "recorded": "1959-01-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 21 17",
+   "instrument_number": "195901260308373",
+   "docid": "568291",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3659759",
+   "recorded": "1959-01-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 21 18",
+   "instrument_number": "195901260308374",
+   "docid": "568292",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3658659",
+   "recorded": "1959-04-16",
+   "doc_type": "Plat",
+   "book_page": "PLAT 21 33",
+   "instrument_number": "195904160312852",
+   "docid": "573758",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "NALL VALLEY ESTATES"
+   ],
+   "plats": [
+    "NALL VALLEY ESTATES"
+   ],
+   "match": "exact",
+   "plat": "NALL VALLEY ESTATES",
+   "subdivision_code": "3500"
+  },
+  {
+   "id": "3659018",
+   "recorded": "1959-05-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 21 36",
+   "instrument_number": "195905060313958",
+   "docid": "575154",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "REPLAT OF FONTICELLO GARDENS NO 2"
+   ],
+   "plats": [
+    "REPLAT OF FONTICELLO GARDENS NO. 2"
+   ],
+   "match": "exact",
+   "plat": "REPLAT OF FONTICELLO GARDENS NO. 2",
+   "subdivision_code": "1000"
+  },
+  {
+   "id": "3846040",
+   "recorded": "1959-12-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 22 7",
+   "instrument_number": "195912070326672",
+   "docid": "590416",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3845846",
+   "recorded": "1960-01-14",
+   "doc_type": "Plat",
+   "book_page": "PLAT 22 13",
+   "instrument_number": "196001140328331",
+   "docid": "592588",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE - EAST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "4032371",
+   "recorded": "1960-10-27",
+   "doc_type": "Plat",
+   "book_page": "PLAT 23 8",
+   "instrument_number": "196010270343550",
+   "docid": "610516",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "4031835",
+   "recorded": "1960-11-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 23 10",
+   "instrument_number": "196011080344509",
+   "docid": "611117",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "KENILWORTH"
+   ],
+   "plats": [
+    "KENILWORTH"
+   ],
+   "match": "exact",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100"
+  },
+  {
+   "id": "4031850",
+   "recorded": "1960-12-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 23 15",
+   "instrument_number": "196012260000000",
+   "docid": "613904",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "4031274",
+   "recorded": "1961-03-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 23 34",
+   "instrument_number": "196103130349520",
+   "docid": null,
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE - EAST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "4032290",
+   "recorded": "1961-05-04",
+   "doc_type": "Plat",
+   "book_page": "PLAT 23 44",
+   "instrument_number": "196105040352082",
+   "docid": "621946",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "NORMANDY SQUARE"
+   ],
+   "plats": [
+    "NORMANDY SQUARE"
+   ],
+   "match": "exact",
+   "plat": "NORMANDY SQUARE",
+   "subdivision_code": "3700"
+  },
+  {
+   "id": "4169833",
+   "recorded": "1961-09-21",
+   "doc_type": "Plat",
+   "book_page": "PLAT 24 10",
+   "instrument_number": "196109210360291",
+   "docid": "632154",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "JACKSON HEIGHTS"
+   ],
+   "plats": [
+    "JACKSON HEIGHTS"
+   ],
+   "match": "exact",
+   "plat": "JACKSON HEIGHTS",
+   "subdivision_code": "1600"
+  },
+  {
+   "id": "4170744",
+   "recorded": "1961-09-25",
+   "doc_type": "Plat",
+   "book_page": "PLAT 24 11",
+   "instrument_number": "196109250360511",
+   "docid": "632288",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "4171007",
+   "recorded": "1962-06-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 24 37",
+   "instrument_number": "196206180374470",
+   "docid": "649338",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "4170149",
+   "recorded": "1962-07-31",
+   "doc_type": "Plat",
+   "book_page": "PLAT 24 45",
+   "instrument_number": "196207310377564",
+   "docid": "652751",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "4311733",
+   "recorded": "1963-05-24",
+   "doc_type": "Plat",
+   "book_page": "PLAT 25 22",
+   "instrument_number": "196305240393025",
+   "docid": "672963",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "INDIAN FIELDS"
+   ],
+   "plats": [
+    "INDIAN FIELDS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300"
+  },
+  {
+   "id": "4310891",
+   "recorded": "1963-05-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 25 25",
+   "instrument_number": "196305290393351",
+   "docid": "673405",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "KENILWORTH"
+   ],
+   "plats": [
+    "KENILWORTH"
+   ],
+   "match": "exact",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100"
+  },
+  {
+   "id": "4310906",
+   "recorded": "1963-06-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 25 28",
+   "instrument_number": "196306180395439",
+   "docid": "674919",
+   "legal": "Sec:23 Twshp:12 Range:24 Qtr:NW other:PT OF",
+   "index_names": [
+    "HOMESTEAD ESTATES"
+   ],
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
+   "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185"
+  },
+  {
+   "id": "4442941",
+   "recorded": "1964-04-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 26 21",
+   "instrument_number": "196404280413778",
+   "docid": "697665",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "SOMERSET MANOR"
+   ],
+   "plats": [
+    "SOMERSET MANOR"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET MANOR",
+   "subdivision_code": "7050"
+  },
+  {
+   "id": "4443146",
+   "recorded": "1964-06-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 26 31",
+   "instrument_number": "196406150416602",
+   "docid": "791406",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "KENILWORTH"
+   ],
+   "plats": [
+    "KENILWORTH"
+   ],
+   "match": "exact",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100"
+  },
+  {
+   "id": "4442323",
+   "recorded": "1964-07-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 26 33",
+   "instrument_number": "196407080418047",
+   "docid": "703307",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "INDIAN HILLS"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "match": "exact",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500"
+  },
+  {
+   "id": "4591201",
+   "recorded": "1965-02-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 27 17",
+   "instrument_number": "196502030430804",
+   "docid": "719401",
+   "legal": "Sec:4 Twshp:13 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "KENILWORTH"
+   ],
+   "plats": [
+    "KENILWORTH"
+   ],
+   "match": "exact",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100"
+  },
+  {
+   "id": "4591322",
+   "recorded": "1965-06-19",
+   "doc_type": "Plat",
+   "book_page": "PLAT 27 45",
+   "instrument_number": "196506190000000",
+   "docid": "728858",
+   "legal": "Sec:23 Twshp:12 Range:24 Qtr:NW other:PT OF",
+   "index_names": [
+    "HOMESTEAD ESTATES"
+   ],
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
+   "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185"
+  },
+  {
+   "id": "4730573",
+   "recorded": "1965-08-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 28 8",
+   "instrument_number": "196508060444228",
+   "docid": "733866",
+   "legal": "Sec:4 Twshp:13 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "KENILWORTH"
+   ],
+   "plats": [
+    "KENILWORTH"
+   ],
+   "match": "exact",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100"
+  },
+  {
+   "id": "4730221",
+   "recorded": "1965-09-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 28 13",
+   "instrument_number": "196509170446367",
+   "docid": "737540",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "RED FOX"
+   ],
+   "plats": [
+    "RED FOX"
+   ],
+   "match": "exact",
+   "plat": "RED FOX",
+   "subdivision_code": "5800"
+  },
+  {
+   "id": "1451379",
+   "recorded": "1966-08-19",
+   "doc_type": "Plat",
+   "book_page": "PLAT 29 14",
+   "instrument_number": "196608190466578",
+   "docid": "763048",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "COUNTRYSIDE - EAST"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "1450436",
+   "recorded": "1966-12-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 29 27",
+   "instrument_number": "196612300472242",
+   "docid": "770347",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "WEST RIDING"
+   ],
+   "plats": [
+    "WEST RIDING"
+   ],
+   "match": "exact",
+   "plat": "WEST RIDING",
+   "subdivision_code": "8100"
+  },
+  {
+   "id": "1451434",
+   "recorded": "1967-02-21",
+   "doc_type": "Plat",
+   "book_page": "PLAT 29 30",
+   "instrument_number": "196702210473984",
+   "docid": "773031",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "BRIARWOOD PLACE"
+   ],
+   "plats": [
+    "BRIARWOOD PLACE"
+   ],
+   "match": "exact",
+   "plat": "BRIARWOOD PLACE",
+   "subdivision_code": "0200"
+  },
+  {
+   "id": "1451651",
+   "recorded": "1967-05-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 29 42",
+   "instrument_number": "196705110478245",
+   "docid": "777951",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "HUNTINGTON WOODS"
+   ],
+   "plats": [
+    "HUNTINGTON WOODS"
+   ],
+   "match": "exact",
+   "plat": "HUNTINGTON WOODS",
+   "subdivision_code": "1200"
+  },
+  {
+   "id": "1592681",
+   "recorded": "1968-08-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 30 46",
+   "instrument_number": "196808150505661",
+   "docid": "812628",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "SOMERSET ESTATES"
+   ],
+   "plats": [
+    "SOMERSET ESTATES"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET ESTATES",
+   "subdivision_code": "6850"
+  },
+  {
+   "id": "1593777",
+   "recorded": "1968-09-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 30 47",
+   "instrument_number": "196809030506539",
+   "docid": "813924",
+   "legal": "Sec:23 Twshp:12 Range:24 Qtr:NW other:PT OF",
+   "index_names": [
+    "HOMESTEAD ESTATES"
+   ],
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
+   "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185"
+  },
+  {
+   "id": "1733221",
+   "recorded": "1969-02-14",
+   "doc_type": "Plat",
+   "book_page": "PLAT 31 10",
+   "instrument_number": "196902140512484",
+   "docid": "824198",
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE HILLS"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "1733258",
+   "recorded": "1969-04-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 31 21",
+   "instrument_number": "196904300514653",
+   "docid": "829187",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "1733291",
+   "recorded": "1969-10-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 31 36",
+   "instrument_number": "196910030518709",
+   "docid": "840502",
+   "legal": "Sec:4 Twshp:13 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "INDIAN HEIGHTS ESTATES"
+   ],
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
+   "match": "variant",
+   "plat": "INDIAN HEIGHTS",
+   "subdivision_code": "1400"
+  },
+  {
+   "id": "1733476",
+   "recorded": "1969-10-31",
+   "doc_type": "Plat",
+   "book_page": "PLAT 31 39",
+   "instrument_number": "196910310519241",
+   "docid": "842358",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "STEVENS ESTATES"
+   ],
+   "plats": [
+    "STEVENS ESTATES"
+   ],
+   "match": "exact",
+   "plat": "STEVENS ESTATES",
+   "subdivision_code": "7150"
+  },
+  {
+   "id": "1850195",
+   "recorded": "1970-12-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 32 16",
+   "instrument_number": "197012150528086",
+   "docid": "867182",
+   "legal": "Sec:23 Twshp:12 Range:24 Qtr:NW other:PT OF",
+   "index_names": [
+    "HOMESTEAD ESTATES"
+   ],
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
+   "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185"
+  },
+  {
+   "id": "2213723",
+   "recorded": "1972-02-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 33 21",
+   "instrument_number": "197202020002391",
+   "docid": "902637",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2509051",
+   "recorded": "1973-05-31",
+   "doc_type": "Plat",
+   "book_page": "PLAT 35 26",
+   "instrument_number": "197305310051987",
+   "docid": "952991",
+   "legal": "Sec:9 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "MISSION VILLAGE BLOCK 5"
+   ],
+   "plats": [
+    "MISSION VILLAGE"
+   ],
+   "match": "variant",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000"
+  },
+  {
+   "id": "2642798",
+   "recorded": "1974-02-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 36 22",
+   "instrument_number": "197402150074965",
+   "docid": "976645",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2903207",
+   "recorded": "1975-09-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 38 29",
+   "instrument_number": "197509050119871",
+   "docid": "1030458",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "SOMERSET PLACE"
+   ],
+   "plats": [
+    "SOMERSET PLACE"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET PLACE",
+   "subdivision_code": "7070"
+  },
+  {
+   "id": "2903225",
+   "recorded": "1975-09-12",
+   "doc_type": "Plat",
+   "book_page": "PLAT 38 33",
+   "instrument_number": "197509120120547",
+   "docid": "1031175",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH WOOD"
+   ],
+   "plats": [
+    "CORINTH WOOD"
+   ],
+   "match": "exact",
+   "plat": "CORINTH WOOD",
+   "subdivision_code": "0680"
+  },
+  {
+   "id": "2902193",
+   "recorded": "1975-10-01",
+   "doc_type": "Plat",
+   "book_page": "PLAT 38 39",
+   "instrument_number": "197510010121101",
+   "docid": "1033351",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "3035000",
+   "recorded": "1976-01-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 39 15",
+   "instrument_number": "197601220125997",
+   "docid": "1044875",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "ROE HILL"
+   ],
+   "plats": [
+    "ROE HILL"
+   ],
+   "match": "exact",
+   "plat": "ROE HILL",
+   "subdivision_code": "6300"
+  },
+  {
+   "id": "3035994",
+   "recorded": "1976-02-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 39 21",
+   "instrument_number": "197602110127781",
+   "docid": "1046628",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "3434778",
+   "recorded": "1977-07-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 42 23",
+   "instrument_number": "197707070196871",
+   "docid": "1116568",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "WEST RIDING 2ND PLAT"
+   ],
+   "plats": [
+    "WEST RIDING 2ND PLAT"
+   ],
+   "match": "exact",
+   "plat": "WEST RIDING 2ND PLAT",
+   "subdivision_code": "8100"
+  },
+  {
+   "id": "3434789",
+   "recorded": "1977-07-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 42 26",
+   "instrument_number": "197707180198442",
+   "docid": "1118106",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "CALVIN CREST"
+   ],
+   "plats": [
+    "CALVIN CREST"
+   ],
+   "match": "exact",
+   "plat": "CALVIN CREST",
+   "subdivision_code": "0250"
+  },
+  {
+   "id": "3574310",
+   "recorded": "1977-12-21",
+   "doc_type": "Plat",
+   "book_page": "PLAT 43 32",
+   "instrument_number": "197712210224849",
+   "docid": "1144883",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "3574315",
+   "recorded": "1977-12-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 43 34",
+   "instrument_number": "197712300226197",
+   "docid": "1146252",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "3747132",
+   "recorded": "1978-04-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 44 19",
+   "instrument_number": "197804170241126",
+   "docid": "1161502",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "3942897",
+   "recorded": "1978-09-21",
+   "doc_type": "Plat",
+   "book_page": "PLAT 45 29",
+   "instrument_number": "197809210269364",
+   "docid": "1190090",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "4227772",
+   "recorded": "1979-05-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 47 26",
+   "instrument_number": "197905110303375",
+   "docid": "1225375",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "BRIARWOOD PLACE SECOND PLAT"
+   ],
+   "plats": [
+    "BRIARWOOD PLACE SECOND PLAT"
+   ],
+   "match": "exact",
+   "plat": "BRIARWOOD PLACE SECOND PLAT",
+   "subdivision_code": "0200"
+  },
+  {
+   "id": "4374522",
+   "recorded": "1980-01-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 48 48",
+   "instrument_number": "198001300333619",
+   "docid": "1266034",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "SOMERSET COURTS WEST"
+   ],
+   "plats": [
+    "SOMERSET COURTS WEST"
+   ],
+   "match": "exact",
+   "plat": "SOMERSET COURTS WEST",
+   "subdivision_code": "6820"
+  },
+  {
+   "id": "4493727",
+   "recorded": "1980-04-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 49 6",
+   "instrument_number": "198004150341703",
+   "docid": "1271321",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PADDOCK COURT"
+   ],
+   "plats": [
+    "PADDOCK COURT"
+   ],
+   "match": "exact",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750"
+  },
+  {
+   "id": "4493609",
+   "recorded": "1980-08-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 49 20",
+   "instrument_number": "198008280357598",
+   "docid": "1290354",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "CANTERBURY COURT"
+   ],
+   "plats": [
+    "CANTERBURY COURT"
+   ],
+   "match": "exact",
+   "plat": "CANTERBURY COURT",
+   "subdivision_code": "0270"
+  },
+  {
+   "id": "4494701",
+   "recorded": "1980-10-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 49 32",
+   "instrument_number": "198010230366321",
+   "docid": "1299467",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CALVIN CREST II"
+   ],
+   "plats": [
+    "CALVIN CREST II"
+   ],
+   "match": "exact",
+   "plat": "CALVIN CREST II",
+   "subdivision_code": "0260"
+  },
+  {
+   "id": "4627732",
+   "recorded": "1981-03-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 50 7",
+   "instrument_number": "198103180384160",
+   "docid": "1317548",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "4626759",
+   "recorded": "1981-06-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 50 21",
+   "instrument_number": "198106030392372",
+   "docid": "1326051",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PADDOCK COURT"
+   ],
+   "plats": [
+    "PADDOCK COURT"
+   ],
+   "match": "exact",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750"
+  },
+  {
+   "id": "4626786",
+   "recorded": "1981-07-24",
+   "doc_type": "Plat",
+   "book_page": "PLAT 50 33",
+   "instrument_number": "198107240399904",
+   "docid": "1333676",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "DE VILLE 75 CONDOMINIUMS"
+   ],
+   "plats": [
+    "DE VILLE 75 CONDOMINIUMS"
+   ],
+   "match": "exact",
+   "plat": "DE VILLE 75 CONDOMINIUMS",
+   "subdivision_code": "0820"
+  },
+  {
+   "id": "4626803",
+   "recorded": "1981-08-04",
+   "doc_type": "Plat",
+   "book_page": "PLAT 50 37",
+   "instrument_number": "198108040401549",
+   "docid": "1335357",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "4758879",
+   "recorded": "1981-11-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 51 6",
+   "instrument_number": "198111030411702",
+   "docid": "1345904",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "4758437",
+   "recorded": "1982-04-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 51 28",
+   "instrument_number": "198204230427248",
+   "docid": "1361957",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "4757498",
+   "recorded": "1982-04-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 51 29",
+   "instrument_number": "198204230427249",
+   "docid": "1361962",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PADDOCK COURT"
+   ],
+   "plats": [
+    "PADDOCK COURT"
+   ],
+   "match": "exact",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750"
+  },
+  {
+   "id": "4757865",
+   "recorded": "1982-05-10",
+   "doc_type": "Plat",
+   "book_page": "PLAT 51 34",
+   "instrument_number": "198205100429033",
+   "docid": "1363699",
+   "legal": "Sec:19 Twshp:13 Range:24 Qtr:SW other:PT OF",
+   "index_names": [
+    "RIDGE VIEW DEVELOPMENT INC"
+   ],
+   "plats": [
+    "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+    "RIDGE VIEW"
+   ],
+   "match": "elsewhere",
+   "plat": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+   "subdivision_code": "6000"
+  },
+  {
+   "id": "4757881",
+   "recorded": "1982-06-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 51 41",
+   "instrument_number": "198206110432338",
+   "docid": "1367228",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PADDOCK COURT"
+   ],
+   "plats": [
+    "PADDOCK COURT"
+   ],
+   "match": "exact",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750"
+  },
+  {
+   "id": "1475107",
+   "recorded": "1982-11-29",
+   "doc_type": "Plat",
+   "book_page": "PLAT 52 22",
+   "instrument_number": "198211290448955",
+   "docid": "1385105",
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "MEADOWBROOK EXECUTIVE BUILDING"
+   ],
+   "plats": [
+    "MEADOWBROOK EXECUTIVE"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK EXECUTIVE",
+   "subdivision_code": "2371"
+  },
+  {
+   "id": "1475120",
+   "recorded": "1982-11-30",
+   "doc_type": "Plat",
+   "book_page": "PLAT 52 24",
+   "instrument_number": "198211300449151",
+   "docid": "1385344",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "FONTICELLO"
+   ],
+   "plats": [
+    "FONTICELLO"
+   ],
+   "match": "exact",
+   "plat": "FONTICELLO",
+   "subdivision_code": "0880"
+  },
+  {
+   "id": "1476021",
+   "recorded": "1983-01-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 52 30",
+   "instrument_number": "198301170454397",
+   "docid": "1390672",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1579512",
+   "recorded": "1983-05-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 53 4",
+   "instrument_number": "198305020468677",
+   "docid": "1404905",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "NORMANDIE COURT"
+   ],
+   "plats": [
+    "NORMANDIE COURT"
+   ],
+   "match": "exact",
+   "plat": "NORMANDIE COURT",
+   "subdivision_code": "3680"
+  },
+  {
+   "id": "1579538",
+   "recorded": "1983-05-03",
+   "doc_type": "Plat",
+   "book_page": "PLAT 53 5",
+   "instrument_number": "198305030468676",
+   "docid": "1405399",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1579474",
+   "recorded": "1983-06-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 53 26",
+   "instrument_number": "198306220477517",
+   "docid": "1414353",
+   "legal": "Sec:9 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "MISSION VILLAGE BLOCK 3 REPLAT NO 1 OF LOTS 41 THRU 46 AND PART OF LOT 47"
+   ],
+   "plats": [
+    "MISSION VILLAGE"
+   ],
+   "match": "variant",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000"
+  },
+  {
+   "id": "1579498",
+   "recorded": "1983-07-01",
+   "doc_type": "Plat",
+   "book_page": "PLAT 53 34",
+   "instrument_number": "198307010479740",
+   "docid": "1416692",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1579499",
+   "recorded": "1983-07-01",
+   "doc_type": "Plat",
+   "book_page": "PLAT 53 35",
+   "instrument_number": "198307010479741",
+   "docid": "1416693",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1703742",
+   "recorded": "1983-08-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 54 2",
+   "instrument_number": "198308150487637",
+   "docid": "1424618",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1703795",
+   "recorded": "1983-08-15",
+   "doc_type": "Plat",
+   "book_page": "PLAT 54 3",
+   "instrument_number": "198308150487638",
+   "docid": "1424619",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1705134",
+   "recorded": "1983-08-19",
+   "doc_type": "Plat",
+   "book_page": "PLAT 54 7",
+   "instrument_number": "198308190488620",
+   "docid": "1425736",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "ROE 69"
+   ],
+   "plats": [
+    "ROE-69"
+   ],
+   "match": "exact",
+   "plat": "ROE-69",
+   "subdivision_code": "6350"
+  },
+  {
+   "id": "1704291",
+   "recorded": "1983-09-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 54 19",
+   "instrument_number": "198309060491940",
+   "docid": "1428974",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1703841",
+   "recorded": "1983-11-28",
+   "doc_type": "Plat",
+   "book_page": "PLAT 54 41",
+   "instrument_number": "198311280504767",
+   "docid": "1442032",
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "PADDOCK COURT"
+   ],
+   "plats": [
+    "PADDOCK COURT"
+   ],
+   "match": "exact",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750"
+  },
+  {
+   "id": "1812469",
+   "recorded": "1984-01-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 55 10",
+   "instrument_number": "198401231419030",
+   "docid": "1450357",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1811747",
+   "recorded": "1984-01-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 55 11",
+   "instrument_number": "198401231419031",
+   "docid": "1450358",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1812484",
+   "recorded": "1984-01-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 55 12",
+   "instrument_number": "198401231419032",
+   "docid": "1450359",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1812761",
+   "recorded": "1984-03-05",
+   "doc_type": "Plat",
+   "book_page": "PLAT 55 25",
+   "instrument_number": "198403050519452",
+   "docid": "1456779",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1811979",
+   "recorded": "1984-04-23",
+   "doc_type": "Plat",
+   "book_page": "PLAT 55 42",
+   "instrument_number": "198404230527272",
+   "docid": "1465197",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "THE CHATEAU CONDOMINIUM"
+   ],
+   "plats": [
+    "THE CHATEAU CONDOMINIUM"
+   ],
+   "match": "exact",
+   "plat": "THE CHATEAU CONDOMINIUM",
+   "subdivision_code": "7500"
+  },
+  {
+   "id": "1924250",
+   "recorded": "1984-07-20",
+   "doc_type": "Plat",
+   "book_page": "PLAT 57 2",
+   "instrument_number": "198407200543780",
+   "docid": "1482164",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1924318",
+   "recorded": "1984-07-20",
+   "doc_type": "Plat",
+   "book_page": "PLAT 57 3",
+   "instrument_number": "198407200543781",
+   "docid": "1482165",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1924277",
+   "recorded": "1984-09-10",
+   "doc_type": "Plat",
+   "book_page": "PLAT 57 23",
+   "instrument_number": "198409100551649",
+   "docid": "1491591",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "CANTERBURY COURT ESTATES"
+   ],
+   "plats": [
+    "CANTERBURY COURT ESTATES"
+   ],
+   "match": "exact",
+   "plat": "CANTERBURY COURT ESTATES",
+   "subdivision_code": "0280"
+  },
+  {
+   "id": "1943707",
+   "recorded": "1985-01-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 58 12",
+   "instrument_number": "198501180570157",
+   "docid": "1512229",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS"
+   ],
+   "plats": [
+    "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS"
+   ],
+   "match": "exact",
+   "plat": "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS",
+   "subdivision_code": "3460"
+  },
+  {
+   "id": "1943783",
+   "recorded": "1985-02-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 58 21",
+   "instrument_number": "198502130573463",
+   "docid": "1515569",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1945212",
+   "recorded": "1985-03-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 58 36",
+   "instrument_number": "198503180579135",
+   "docid": "1521395",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1944414",
+   "recorded": "1985-03-18",
+   "doc_type": "Plat",
+   "book_page": "PLAT 58 37",
+   "instrument_number": "198503180579136",
+   "docid": "1521396",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1988087",
+   "recorded": "1985-05-02",
+   "doc_type": "Plat",
+   "book_page": "PLAT 59 6",
+   "instrument_number": "198505020587270",
+   "docid": "1529607",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1988003",
+   "recorded": "1985-07-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 59 46",
+   "instrument_number": "198507260598591",
+   "docid": "1545960",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "1988015",
+   "recorded": "1985-08-13",
+   "doc_type": "Plat",
+   "book_page": "PLAT 59 49",
+   "instrument_number": "198508130602068",
+   "docid": "1549447",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "NORMANDIE COURT SECOND PLAT"
+   ],
+   "plats": [
+    "NORMANDIE COURT SECOND PLAT"
+   ],
+   "match": "exact",
+   "plat": "NORMANDIE COURT SECOND PLAT",
+   "subdivision_code": "3680"
+  },
+  {
+   "id": "2028298",
+   "recorded": "1985-08-27",
+   "doc_type": "Plat",
+   "book_page": "PLAT 60 10",
+   "instrument_number": "198508270604408",
+   "docid": "1552704",
+   "legal": "Sec:24 Twshp:13 Range:24 Qtr:NE other:PT OF",
+   "index_names": [
+    "EVERGREEN ESTATES"
+   ],
+   "plats": [
+    "EVERGREEN"
+   ],
+   "match": "elsewhere",
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850"
+  },
+  {
+   "id": "2027483",
+   "recorded": "1985-09-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 60 28",
+   "instrument_number": "198509170605838",
+   "docid": "1557366",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "EVERGREEN"
+   ],
+   "plats": [
+    "EVERGREEN"
+   ],
+   "match": "exact",
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850"
+  },
+  {
+   "id": "2027724",
+   "recorded": "1985-10-10",
+   "doc_type": "Plat",
+   "book_page": "PLAT 60 37",
+   "instrument_number": "198510100608444",
+   "docid": "1562461",
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "75 MISSION OFFICE CONDOMINIUM"
+   ],
+   "plats": [
+    "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+    "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+    "75 MISSION OFFICE CONDOMINIUM WEST"
+   ],
+   "match": "variant",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "subdivision_code": "6451"
+  },
+  {
+   "id": "2027807",
+   "recorded": "1985-11-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 60 49",
+   "instrument_number": "198511220613732",
+   "docid": "1570637",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2027817",
+   "recorded": "1985-11-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 60 50",
+   "instrument_number": "198511220613733",
+   "docid": "1570638",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2068717",
+   "recorded": "1985-11-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 61 1",
+   "instrument_number": "198511220613728",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2068775",
+   "recorded": "1985-11-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 61 2",
+   "instrument_number": "198511220613729",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2069938",
+   "recorded": "1985-11-22",
+   "doc_type": "Plat",
+   "book_page": "PLAT 61 3",
+   "instrument_number": "198511220613730",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2108835",
+   "recorded": "1986-04-17",
+   "doc_type": "Plat",
+   "book_page": "PLAT 62 9",
+   "instrument_number": "198604170637791",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2108395",
+   "recorded": "1986-06-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 62 41",
+   "instrument_number": "198606260910328",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH HILLS"
+   ],
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500"
+  },
+  {
+   "id": "2424340",
+   "recorded": "1987-03-11",
+   "doc_type": "Plat",
+   "book_page": "PLAT 65 28",
+   "instrument_number": "198703111518115",
+   "docid": "1685033",
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH DOWNS"
+   ],
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430"
+  },
+  {
+   "id": "2543255",
+   "recorded": "1987-05-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 66 12",
+   "instrument_number": "198705080741495",
+   "docid": null,
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "MISSION PINES"
+   ],
+   "plats": [
+    "MISSION PINES"
+   ],
+   "match": "exact",
+   "plat": "MISSION PINES",
+   "subdivision_code": "2780"
+  },
+  {
+   "id": "2656732",
+   "recorded": "1987-08-07",
+   "doc_type": "Plat",
+   "book_page": "PLAT 67 16",
+   "instrument_number": "198708071358655",
+   "docid": null,
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "GREENVIEW PLACE"
+   ],
+   "plats": [
+    "GREENVIEW PLACE"
+   ],
+   "match": "exact",
+   "plat": "GREENVIEW PLACE",
+   "subdivision_code": "1110"
+  },
+  {
+   "id": "2656847",
+   "recorded": "1987-09-09",
+   "doc_type": "Plat",
+   "book_page": "PLAT 67 32",
+   "instrument_number": "198709090776579",
+   "docid": "1738896",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "VAUGHN SUBDIVISION"
+   ],
+   "plats": [
+    "VAUGHN SUBDIVISION"
+   ],
+   "match": "exact",
+   "plat": "VAUGHN SUBDIVISION",
+   "subdivision_code": "7710"
+  },
+  {
+   "id": "2861527",
+   "recorded": "1988-04-19",
+   "doc_type": "Plat",
+   "book_page": "Plat 69 30",
+   "instrument_number": "198804191520236",
+   "docid": null,
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "CORINTH PLACE VILLAS"
+   ],
+   "plats": [
+    "CORINTH PLACE VILLAS"
+   ],
+   "match": "exact",
+   "plat": "CORINTH PLACE VILLAS",
+   "subdivision_code": "0610"
+  },
+  {
+   "id": "2953203",
+   "recorded": "1988-07-25",
+   "doc_type": "Plat",
+   "book_page": "Plat 70 24",
+   "instrument_number": "198807251775369",
+   "docid": null,
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "FONTANA PLACE"
+   ],
+   "plats": [
+    "FONTANA PLACE"
+   ],
+   "match": "exact",
+   "plat": "FONTANA PLACE",
+   "subdivision_code": "0870"
+  },
+  {
+   "id": "3219087",
+   "recorded": "1989-05-10",
+   "doc_type": "Plat",
+   "book_page": "Plat 73 5",
+   "instrument_number": "198905101283700",
+   "docid": null,
+   "legal": "Sec:29 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "PINECROFT"
+   ],
+   "plats": [
+    "PINECROFT"
+   ],
+   "match": "exact",
+   "plat": "PINECROFT",
+   "subdivision_code": "4040"
+  },
+  {
+   "id": "3289630",
+   "recorded": "1989-09-08",
+   "doc_type": "Plat",
+   "book_page": "PLAT 74 17",
+   "instrument_number": "198909080461131",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 22 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MISSION PINES SECOND PLAT"
+   ],
+   "plats": [
+    "MISSION PINES SECOND PLAT"
+   ],
+   "match": "exact",
+   "plat": "MISSION PINES SECOND PLAT",
+   "subdivision_code": "2780"
+  },
+  {
+   "id": "3843553",
+   "recorded": "1991-12-30",
+   "doc_type": "Plat",
+   "book_page": "Plat 80 14",
+   "instrument_number": "199112301950407",
+   "docid": null,
+   "legal": "Sub:MEADOW LAKE BLOCKS 44, 45, 46 Blk:44 Lt:1 other:REPLAT OF",
+   "index_names": [
+    "SOUTHGATE FINANCIAL CENTER",
+    "SOUTHGATE FINANCIAL CENTER INC"
+   ],
+   "plats": [
+    "SOUTHGATE FINANCIAL CENTER"
+   ],
+   "match": "exact",
+   "plat": "SOUTHGATE FINANCIAL CENTER",
+   "subdivision_code": "7120"
+  },
+  {
+   "id": "3933508",
+   "recorded": "1992-04-22",
+   "doc_type": "Plat",
+   "book_page": "Plat 81 2",
+   "instrument_number": "199204220967869",
+   "docid": null,
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "REPLAT OF PART OF LOT 5 MEADOW VIEW"
+   ],
+   "plats": [
+    "REPLAT OF PART OF LOT 5 MEADOW VIEW"
+   ],
+   "match": "exact",
+   "plat": "REPLAT OF PART OF LOT 5 MEADOW VIEW",
+   "subdivision_code": "5850"
+  },
+  {
+   "id": "4388551",
+   "recorded": "1994-06-28",
+   "doc_type": "Plat",
+   "book_page": "Plat 87 44",
+   "instrument_number": "199406280250771",
+   "docid": null,
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "ELIZABETH'S MEADOW"
+   ],
+   "plats": [
+    "ELIZABETH'S MEADOW"
+   ],
+   "match": "exact",
+   "plat": "ELIZABETH'S MEADOW",
+   "subdivision_code": "0840"
+  },
+  {
+   "id": "4502916",
+   "recorded": "1994-09-09",
+   "doc_type": "Plat",
+   "book_page": "Plat 88 42",
+   "instrument_number": "199409091727547",
+   "docid": null,
+   "legal": "Sub:SOMERSET VILLAGE FOURTH PLAT Lt:6 other:PT OF",
+   "index_names": [
+    "SOMERSET PLACE LLC"
+   ],
+   "plats": [
+    "SOMERSET PLACE"
+   ],
+   "match": "elsewhere",
+   "plat": "SOMERSET PLACE",
+   "subdivision_code": "7070"
+  },
+  {
+   "id": "1638636",
+   "recorded": "1996-08-06",
+   "doc_type": "Plat",
+   "book_page": "Plat 96 11",
+   "instrument_number": "199608060937457",
+   "docid": null,
+   "legal": "Sec:36 Twshp:14 Range:22 Qtr:NW other:PT OF",
+   "index_names": [
+    "EVERGREEN PARK"
+   ],
+   "plats": [
+    "EVERGREEN"
+   ],
+   "match": "elsewhere",
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850"
+  },
+  {
+   "id": "1780090",
+   "recorded": "1997-03-04",
+   "doc_type": "Plat",
+   "book_page": "Plat 98 31",
+   "instrument_number": "199703040037581",
+   "docid": null,
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "VILLAGE PARK",
+    "VILLAGE PARK TOWNHOMES L L C"
+   ],
+   "plats": [
+    "VILLAGE PARK"
+   ],
+   "match": "exact",
+   "plat": "VILLAGE PARK",
+   "subdivision_code": "7715"
+  },
+  {
+   "id": "1825222",
+   "recorded": "1997-06-10",
+   "doc_type": "Plat",
+   "book_page": "Plat 99 47",
+   "instrument_number": "199706100938917",
+   "docid": null,
+   "legal": "Sec:31 Twshp:13 Range:23 Qtr:SE",
+   "index_names": [
+    "PRAIRIE HILLS FARM"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500"
+  },
+  {
+   "id": "2188458",
+   "recorded": "1998-01-02",
+   "doc_type": "Plat",
+   "book_page": "Plat 102 39",
+   "instrument_number": "199801021647106",
+   "docid": null,
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "HOME PLACE"
+   ],
+   "plats": [
+    "HOME PLACE"
+   ],
+   "match": "exact",
+   "plat": "HOME PLACE",
+   "subdivision_code": "1180"
+  },
+  {
+   "id": "2188490",
+   "recorded": "1998-01-20",
+   "doc_type": "Plat",
+   "book_page": "Plat 102 47",
+   "instrument_number": "199801201688361",
+   "docid": null,
+   "legal": "Sub:PRAIRIE HILLS Blk:1 Lt:2 other:REPLAT OF",
+   "index_names": [
+    "BRIGHTON GARDENS"
+   ],
+   "plats": [
+    "BRIGHTON GARDENS"
+   ],
+   "match": "exact",
+   "plat": "BRIGHTON GARDENS",
+   "subdivision_code": "0220"
+  },
+  {
+   "id": "2211112",
+   "recorded": "1998-05-22",
+   "doc_type": "Plat",
+   "book_page": "Plat 104 27",
+   "instrument_number": "199805221493031",
+   "docid": null,
+   "legal": "Sec:36 Twshp:14 Range:22 Qtr:NW other:PT OF",
+   "index_names": [
+    "EVERGREEN PARK II"
+   ],
+   "plats": [
+    "EVERGREEN"
+   ],
+   "match": "elsewhere",
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850"
+  },
+  {
+   "id": "2246247",
+   "recorded": "1998-08-31",
+   "doc_type": "Plat",
+   "book_page": "Plat 106 34",
+   "instrument_number": "199808311004768",
+   "docid": null,
+   "legal": "Sub:BLACKBOB COURT APARTMENTS Lt:6 other:REPLAT OF",
+   "index_names": [
+    "COUNTRYSIDE HOLDINGS L L C"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  },
+  {
+   "id": "2308948",
+   "recorded": "1999-04-22",
+   "doc_type": "Plat",
+   "book_page": "Plat 110 7",
+   "instrument_number": "199904220831494",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "OLD TRAIL"
+   ],
+   "plats": [
+    "OLD TRAIL"
+   ],
+   "match": "exact",
+   "plat": "OLD TRAIL",
+   "subdivision_code": "3725"
+  },
+  {
+   "id": "2308644",
+   "recorded": "1999-06-24",
+   "doc_type": "Plat",
+   "book_page": "Plat 110 47",
+   "instrument_number": "199906241493980",
+   "docid": null,
+   "legal": "Sub:EVERGREEN Tract:A other:REPLAT PT OF",
+   "index_names": [
+    "PINE CREEK"
+   ],
+   "plats": [
+    "PINE CREEK"
+   ],
+   "match": "exact",
+   "plat": "PINE CREEK",
+   "subdivision_code": "4025"
+  },
+  {
+   "id": "2678572",
+   "recorded": "2003-05-01",
+   "doc_type": "Plat",
+   "book_page": "Plat 130 20",
+   "instrument_number": "200305010214724",
+   "docid": null,
+   "legal": "Sec:4 Twshp:13 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "INDIAN HEIGHTS METHODIST CHURCH",
+    "INDIAN HEIGHTS UNITED METHODIST CHURCH"
+   ],
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
+   "match": "variant",
+   "plat": "INDIAN HEIGHTS",
+   "subdivision_code": "1400"
+  },
+  {
+   "id": "2707208",
+   "recorded": "2003-06-27",
+   "doc_type": "Plat",
+   "book_page": "Plat 131 9",
+   "instrument_number": "200306270063125",
+   "docid": null,
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "OLD MISSION LODGE #153"
+   ],
+   "plats": [
+    "OLD MISSION LODGE #153"
+   ],
+   "match": "exact",
+   "plat": "OLD MISSION LODGE #153",
+   "subdivision_code": "3720"
+  },
+  {
+   "id": "2700370",
+   "recorded": "2003-07-31",
+   "doc_type": "Plat",
+   "book_page": "Plat 131 34",
+   "instrument_number": "200307311067041",
+   "docid": null,
+   "legal": "Sec:16 Twshp:12 Range:24 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE LAKE"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "47623",
+   "recorded": "2004-03-29",
+   "doc_type": "Plat",
+   "book_page": "OR 200403 012920",
+   "instrument_number": "200403290012920",
+   "docid": null,
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "CRESCENT COURT"
+   ],
+   "plats": [
+    "CRESCENT COURT"
+   ],
+   "match": "exact",
+   "plat": "CRESCENT COURT",
+   "subdivision_code": "0770"
+  },
+  {
+   "id": "184892",
+   "recorded": "2005-02-11",
+   "doc_type": "Picture of Record",
+   "book_page": "OR 200502 004234",
+   "instrument_number": "200502110004234",
+   "docid": null,
+   "legal": "Sub:VILLAGE PARK Lt:14 other:PTS OF",
+   "index_names": [
+    "VILLAGE PARK TOWNHOMES LLC"
+   ],
+   "plats": [
+    "VILLAGE PARK"
+   ],
+   "match": "variant",
+   "plat": "VILLAGE PARK",
+   "subdivision_code": "7715"
+  },
+  {
+   "id": "231120",
+   "recorded": "2005-06-08",
+   "doc_type": "Plat",
+   "book_page": "OR 200506 004157",
+   "instrument_number": "200506080004157",
+   "docid": null,
+   "legal": "Sec:18 Twshp:13 Range:24 Qtr:NW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE PARTNERS LLC",
+    "PRAIRIE RIDGE PLAZA FIRST PLAT"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "333676",
+   "recorded": "2006-02-24",
+   "doc_type": "Plat",
+   "book_page": "OR 200602 007242",
+   "instrument_number": "200602240007242",
+   "docid": null,
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX",
+   "subdivision_code": "5520"
+  },
+  {
+   "id": "529883",
+   "recorded": "2007-09-24",
+   "doc_type": "Plat",
+   "book_page": "OR 200709 006640",
+   "instrument_number": "200709240006640",
+   "docid": null,
+   "legal": "Sec:6 Twshp:15 Range:24 Qtr:SE other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE AT SPRING HILL"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "536245",
+   "recorded": "2007-10-16",
+   "doc_type": "Plat",
+   "book_page": "OR 200710 004700",
+   "instrument_number": "200710160004700",
+   "docid": null,
+   "legal": "Sec:33 Twshp:12 Range:23 Qtr:SE other:PT OF",
+   "index_names": [
+    "MEADOW VIEW INC"
+   ],
+   "plats": [
+    "MEADOW VIEW",
+    "REPLAT OF PART OF LOT 5 MEADOW VIEW"
+   ],
+   "match": "elsewhere",
+   "plat": "MEADOW VIEW",
+   "subdivision_code": "2700"
+  },
+  {
+   "id": "636495",
+   "recorded": "2008-09-30",
+   "doc_type": "Plat",
+   "book_page": "OR 200809 007368",
+   "instrument_number": "200809300007368",
+   "docid": null,
+   "legal": "Sec:16 Twshp:12 Range:24 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE RIDGE LAKE 2ND PLAT"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "724692",
+   "recorded": "2009-07-20",
+   "doc_type": "Plat",
+   "book_page": "OR 200907 007470",
+   "instrument_number": "200907200007470",
+   "docid": null,
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SE other:PT OF",
+   "index_names": [
+    "95TH AND MISSION"
+   ],
+   "plats": [
+    "95TH AND MISSION"
+   ],
+   "match": "exact",
+   "plat": "95TH AND MISSION",
+   "subdivision_code": "3650"
+  },
+  {
+   "id": "930930",
+   "recorded": "2011-05-09",
+   "doc_type": "Plat",
+   "book_page": "OR 201105 002190",
+   "instrument_number": "201105090002190",
+   "docid": null,
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "UMB PRAIRIE VILLAGE BRANCH BANK"
+   ],
+   "plats": [
+    "UMB PRAIRIE VILLAGE BRANCH BANK"
+   ],
+   "match": "exact",
+   "plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "subdivision_code": "7705"
+  },
+  {
+   "id": "993039",
+   "recorded": "2011-11-23",
+   "doc_type": "Plat",
+   "book_page": "OR 201111 008242",
+   "instrument_number": "201111230008242",
+   "docid": null,
+   "legal": "Sec:28 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "CORINTH SQUARE NORTH"
+   ],
+   "plats": [
+    "CORINTH SQUARE NORTH"
+   ],
+   "match": "exact",
+   "plat": "CORINTH SQUARE NORTH",
+   "subdivision_code": "0660"
+  },
+  {
+   "id": "1031496",
+   "recorded": "2012-03-23",
+   "doc_type": "Plat",
+   "book_page": "OR 201203 007986",
+   "instrument_number": "201203230007986",
+   "docid": null,
+   "legal": "Sec:27 Twshp:12 Range:25 Qtr:NE other:PT OF",
+   "index_names": [
+    "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
+    "PRAIRIE VILLAGE SLP LLC"
+   ],
+   "plats": [
+    "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT"
+   ],
+   "match": "exact",
+   "plat": "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
+   "subdivision_code": "0050"
+  },
+  {
+   "id": "1082633",
+   "recorded": "2012-08-06",
+   "doc_type": "Survey",
+   "book_page": "OR 201208 001844",
+   "instrument_number": "201208060001844",
+   "docid": null,
+   "legal": "Sub:PRAIRIE CENTER SUBDIVISION THI Blk:1 Lt:11",
+   "index_names": [
+    "EVERGREEN DEVELOPMENT CO"
+   ],
+   "plats": [
+    "EVERGREEN"
+   ],
+   "match": "elsewhere",
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850"
+  },
+  {
+   "id": "1093982",
+   "recorded": "2012-08-31",
+   "doc_type": "Plat",
+   "book_page": "OR 201208 013209",
+   "instrument_number": "201208310013209",
+   "docid": null,
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "75 MISSION OFFICE CONDOMINIUM 2ND PLAT"
+   ],
+   "plats": [
+    "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+    "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+    "75 MISSION OFFICE CONDOMINIUM WEST"
+   ],
+   "match": "variant",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "subdivision_code": "6451"
+  },
+  {
+   "id": "1220979",
+   "recorded": "2013-07-10",
+   "doc_type": "Plat",
+   "book_page": "OR 201307 004493",
+   "instrument_number": "201307100004493",
+   "docid": null,
+   "legal": "Sec:33 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "MEADOWBROOK EXECUTIVE BUILDING REPLAT"
+   ],
+   "plats": [
+    "MEADOWBROOK EXECUTIVE"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK EXECUTIVE",
+   "subdivision_code": "2371"
+  },
+  {
+   "id": "1226203",
+   "recorded": "2013-07-23",
+   "doc_type": "Plat",
+   "book_page": "OR 201307 009722",
+   "instrument_number": "201307230009722",
+   "docid": null,
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "SAINT ANN CATHOLIC CHURCH"
+   ],
+   "plats": [
+    "SAINT ANN CATHOLIC CHURCH"
+   ],
+   "match": "exact",
+   "plat": "SAINT ANN CATHOLIC CHURCH",
+   "subdivision_code": "6445"
+  },
+  {
+   "id": "1241450",
+   "recorded": "2013-08-29",
+   "doc_type": "Plat",
+   "book_page": "OR 201308 011387",
+   "instrument_number": "201308290011387",
+   "docid": null,
+   "legal": "Sec:15 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "PRAIRIE VILLAGE SHOPPING CENTER"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE SHOPPING CENTER"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE SHOPPING CENTER",
+   "subdivision_code": "5540"
+  },
+  {
+   "id": "1278629",
+   "recorded": "2014-01-02",
+   "doc_type": "Plat",
+   "book_page": "OR 201401 000224",
+   "instrument_number": "201401020000224",
+   "docid": null,
+   "legal": "Sec:23 Twshp:12 Range:25 Qtr:NW other:PT OF",
+   "index_names": [
+    "RUTIAGA RANCH"
+   ],
+   "plats": [
+    "RUTIAGA RANCH"
+   ],
+   "match": "exact",
+   "plat": "RUTIAGA RANCH",
+   "subdivision_code": "6435"
+  },
+  {
+   "id": "5162303",
+   "recorded": "2015-12-15",
+   "doc_type": "Plat",
+   "book_page": "OR 201512 004235",
+   "instrument_number": "201512150004235",
+   "docid": null,
+   "legal": "Sec:28 Range:25 Qtr:SW T:12 other:PT OF",
+   "index_names": [
+    "BRIARWOOD ELEMENTARY"
+   ],
+   "plats": [
+    "BRIARWOOD ELEMENTARY"
+   ],
+   "match": "exact",
+   "plat": "BRIARWOOD ELEMENTARY",
+   "subdivision_code": "0195"
+  },
+  {
+   "id": "5225873",
+   "recorded": "2016-07-01",
+   "doc_type": "Plat",
+   "book_page": "OR 201607 000194",
+   "instrument_number": "201607010000194",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 28 Twp: 12 Rng: 25 Qtr: SE",
+   "index_names": [
+    "MISSION CHATEAU"
+   ],
+   "plats": [
+    "MISSION CHATEAU"
+   ],
+   "match": "exact",
+   "plat": "MISSION CHATEAU",
+   "subdivision_code": "2770"
+  },
+  {
+   "id": "5250314",
+   "recorded": "2016-08-19",
+   "doc_type": "Plat",
+   "book_page": "OR 201608 007754",
+   "instrument_number": "201608190007754",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 6 Twp: 15 Rng: 24 Qtr: SE",
+   "index_names": [
+    "PRAIRIE RIDGE AT SPRING HILL NO 2"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "5253789",
+   "recorded": "2016-08-29",
+   "doc_type": "Plat",
+   "book_page": "OR 201608 011216",
+   "instrument_number": "201608290011216",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 28 Twp: 12 Rng: 25 Qtr: SE",
+   "index_names": [
+    "MISSION CHATEAU 2ND PLAT"
+   ],
+   "plats": [
+    "MISSION CHATEAU 2ND PLAT"
+   ],
+   "match": "exact",
+   "plat": "MISSION CHATEAU 2ND PLAT",
+   "subdivision_code": "2770"
+  },
+  {
+   "id": "5255394",
+   "recorded": "2016-09-01",
+   "doc_type": "Plat",
+   "book_page": "OR 201609 000725",
+   "instrument_number": "201609010000725",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 27 Twp: 14 Rng: 25 Qtr: NE",
+   "index_names": [
+    "RED FOX RUN AT SUNDANCE RIDGE 1ST PLAT"
+   ],
+   "plats": [
+    "RED FOX"
+   ],
+   "match": "elsewhere",
+   "plat": "RED FOX",
+   "subdivision_code": "5800"
+  },
+  {
+   "id": "5275139",
+   "recorded": "2016-10-18",
+   "doc_type": "Plat",
+   "book_page": "OR 201610 005993",
+   "instrument_number": "201610180005993",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: NW",
+   "index_names": [
+    "MEADOWBROOK PARK"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK"
+   ],
+   "match": "exact",
+   "plat": "MEADOWBROOK PARK",
+   "subdivision_code": "2440"
+  },
+  {
+   "id": "5276266",
+   "recorded": "2016-10-20",
+   "doc_type": "Plat",
+   "book_page": "OR 201610 007115",
+   "instrument_number": "201610200007115",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK 2020"
+   ],
+   "plats": [
+    "MEADOWBROOK 2020"
+   ],
+   "match": "exact",
+   "plat": "MEADOWBROOK 2020",
+   "subdivision_code": "2450"
+  },
+  {
+   "id": "5276939",
+   "recorded": "2016-10-21",
+   "doc_type": "Plat",
+   "book_page": "OR 201610 007784",
+   "instrument_number": "201610210007784",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 16 Twp: 12 Rng: 25 Qtr: NE",
+   "index_names": [
+    "HOMESTEAD ESTATES"
+   ],
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
+   "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185"
+  },
+  {
+   "id": "5280124",
+   "recorded": "2016-10-31",
+   "doc_type": "Plat",
+   "book_page": "OR 201610 010944",
+   "instrument_number": "201610310010944",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 22 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "CHADWICK COURT",
+    "CHADWICK COURT LLC"
+   ],
+   "plats": [
+    "CHADWICK COURT"
+   ],
+   "match": "exact",
+   "plat": "CHADWICK COURT",
+   "subdivision_code": "0380"
+  },
+  {
+   "id": "5294900",
+   "recorded": "2016-12-12",
+   "doc_type": "Plat",
+   "book_page": "OR 201612 004104",
+   "instrument_number": "201612120004104",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 21 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "PRAIRIE RIDGE REPLAT"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE REPLAT"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE REPLAT",
+   "subdivision_code": "4905"
+  },
+  {
+   "id": "5390611",
+   "recorded": "2017-09-26",
+   "doc_type": "Plat",
+   "book_page": "OR 201709 008100",
+   "instrument_number": "201709260008100",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 6 Twp: 15 Rng: 24 Qtr: SE",
+   "index_names": [
+    "PRAIRIE RIDGE AT SPRING HILL NO. 3"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "5441093",
+   "recorded": "2018-03-15",
+   "doc_type": "Plat",
+   "book_page": "OR 201803 004450",
+   "instrument_number": "201803150004450",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 21 Twp: 12 Rng: 25 Qtr: SE",
+   "index_names": [
+    "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2"
+   ],
+   "plats": [
+    "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2"
+   ],
+   "match": "exact",
+   "plat": "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2",
+   "subdivision_code": "1870"
+  },
+  {
+   "id": "5448818",
+   "recorded": "2018-04-10",
+   "doc_type": "Plat",
+   "book_page": "OR 201804 002829",
+   "instrument_number": "201804100002829",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK SECOND PLAT"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PARK",
+   "subdivision_code": "2440"
+  },
+  {
+   "id": "5493214",
+   "recorded": "2018-08-16",
+   "doc_type": "Plat",
+   "book_page": "OR 201808 005196",
+   "instrument_number": "201808160005196",
+   "docid": null,
+   "legal": "Sec: 16 Twp: 12 Rng: 25 Qtr: NE",
+   "index_names": [
+    "HOMESTEAD ESTATES REPLAT OF LOTS 1, 2 & 3"
+   ],
+   "plats": [
+    "HOMESTEAD ESTATES REPLAT"
+   ],
+   "match": "variant",
+   "plat": "HOMESTEAD ESTATES REPLAT",
+   "subdivision_code": "1186"
+  },
+  {
+   "id": "5562450",
+   "recorded": "2019-05-07",
+   "doc_type": "Plat",
+   "book_page": "OR 201905 002217",
+   "instrument_number": "201905070002217",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "CAPELLA CONDOMINIUM"
+   ],
+   "plats": [
+    "CAPELLA CONDOMINIUM"
+   ],
+   "match": "exact",
+   "plat": "CAPELLA CONDOMINIUM",
+   "subdivision_code": "0290"
+  },
+  {
+   "id": "5596343",
+   "recorded": "2019-08-13",
+   "doc_type": "Plat",
+   "book_page": "OR 201908 004366",
+   "instrument_number": "201908130004366",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK THIRD PLAT"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK THIRD PLAT"
+   ],
+   "match": "exact",
+   "plat": "MEADOWBROOK PARK THIRD PLAT",
+   "subdivision_code": "2441"
+  },
+  {
+   "id": "5602354",
+   "recorded": "2019-08-29",
+   "doc_type": "Plat",
+   "book_page": "OR 201908 010374",
+   "instrument_number": "201908290010374",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 26 Twp: 14 Rng: 25 Qtr: NE",
+   "index_names": [
+    "RED FOX RUN AT SUNDANCE RIDGE 2ND PLAT"
+   ],
+   "plats": [
+    "RED FOX"
+   ],
+   "match": "elsewhere",
+   "plat": "RED FOX",
+   "subdivision_code": "5800"
+  },
+  {
+   "id": "5658318",
+   "recorded": "2020-02-26",
+   "doc_type": "Plat",
+   "book_page": "OR 202002 006308",
+   "instrument_number": "202002260006308",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 21 Twp: 12 Rng: 25 Qtr: SE",
+   "index_names": [
+    "PRAIRIE RIDGE SECOND PLAT"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE SECOND PLAT"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE RIDGE SECOND PLAT",
+   "subdivision_code": "4910"
+  },
+  {
+   "id": "5684703",
+   "recorded": "2020-05-11",
+   "doc_type": "Plat",
+   "book_page": "OR 202005 003909",
+   "instrument_number": "202005110003909",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK FOURTH PLAT"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK FOURTH PLAT"
+   ],
+   "match": "exact",
+   "plat": "MEADOWBROOK PARK FOURTH PLAT",
+   "subdivision_code": "2441"
+  },
+  {
+   "id": "5720630",
+   "recorded": "2020-07-31",
+   "doc_type": "Plat",
+   "book_page": "OR 202007 013891",
+   "instrument_number": "202007310013891",
+   "docid": null,
+   "legal": "Rmrk: PT PF Sec: 21 Twp: 12 Rng: 25 Qtr: NW",
+   "index_names": [
+    "SHARP LAW OFFICES FIRST PLAT"
+   ],
+   "plats": [
+    "SHARP LAW OFFICES FIRST PLAT"
+   ],
+   "match": "exact",
+   "plat": "SHARP LAW OFFICES FIRST PLAT",
+   "subdivision_code": "6470"
+  },
+  {
+   "id": "5766351",
+   "recorded": "2020-11-06",
+   "doc_type": "Plat",
+   "book_page": "OR 202011 002593",
+   "instrument_number": "202011060002593",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK FIFTH PLAT"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK FIFTH PLAT"
+   ],
+   "match": "exact",
+   "plat": "MEADOWBROOK PARK FIFTH PLAT",
+   "subdivision_code": "2441"
+  },
+  {
+   "id": "5815353",
+   "recorded": "2021-03-02",
+   "doc_type": "Plat",
+   "book_page": "OR 202103 000603",
+   "instrument_number": "202103020000603",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK SIXTH PLAT"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK SIXTH PLAT"
+   ],
+   "match": "exact",
+   "plat": "MEADOWBROOK PARK SIXTH PLAT",
+   "subdivision_code": "2441"
+  },
+  {
+   "id": "5815354",
+   "recorded": "2021-03-02",
+   "doc_type": "Plat",
+   "book_page": "OR 202103 000604",
+   "instrument_number": "202103020000604",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK REPLAT LOTS 93-97"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442"
+  },
+  {
+   "id": "5815355",
+   "recorded": "2021-03-02",
+   "doc_type": "Plat",
+   "book_page": "OR 202103 000605",
+   "instrument_number": "202103020000605",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK REPLAT LOTS 70-72"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442"
+  },
+  {
+   "id": "5815356",
+   "recorded": "2021-03-02",
+   "doc_type": "Plat",
+   "book_page": "OR 202103 000606",
+   "instrument_number": "202103020000606",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK REPLAT LOTS 101-106"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442"
+  },
+  {
+   "id": "5861841",
+   "recorded": "2021-06-17",
+   "doc_type": "Plat",
+   "book_page": "OR 202106 007356",
+   "instrument_number": "202106170007356",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 5 Twp: 14 Rng: 23 Qtr: NE",
+   "index_names": [
+    "EVERGREEN GROVE"
+   ],
+   "plats": [
+    "EVERGREEN"
+   ],
+   "match": "elsewhere",
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850"
+  },
+  {
+   "id": "5885355",
+   "recorded": "2021-08-13",
+   "doc_type": "Plat",
+   "book_page": "OR 202108 004976",
+   "instrument_number": "202108130004976",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 6 Twp: 15 Rng: 24 Qtr: SE",
+   "index_names": [
+    "PRAIRIE RIDGE AT SPRING HILL NO. 4"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "5952184",
+   "recorded": "2022-02-18",
+   "doc_type": "Plat",
+   "book_page": "OR 202202 005249",
+   "instrument_number": "202202180005249",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PLACE LLC"
+   ],
+   "plats": [
+    "MEADOWBROOK PLACE"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PLACE",
+   "subdivision_code": "2445"
+  },
+  {
+   "id": "5993333",
+   "recorded": "2022-07-06",
+   "doc_type": "Plat",
+   "book_page": "OR 202207 001381",
+   "instrument_number": "202207060001381",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 6 Twp: 13 Rng: 24 Qtr: NW",
+   "index_names": [
+    "PRAIRIE RIDGE LLC"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "6020443",
+   "recorded": "2022-10-13",
+   "doc_type": "Plat",
+   "book_page": "OR 202210 002987",
+   "instrument_number": "202210130002987",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK REPLAT LOTS 92, 135 AND 136"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442"
+  },
+  {
+   "id": "6037713",
+   "recorded": "2023-01-05",
+   "doc_type": "Plat",
+   "book_page": "OR 202301 000560",
+   "instrument_number": "202301050000560",
+   "docid": null,
+   "legal": "Rmrk: PT Sec: 22 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "SUNSET HILL ACRES SECOND PLAT"
+   ],
+   "plats": [
+    "SUNSET HILL ACRES SECOND PLAT"
+   ],
+   "match": "exact",
+   "plat": "SUNSET HILL ACRES SECOND PLAT",
+   "subdivision_code": "7300"
+  },
+  {
+   "id": "6059961",
+   "recorded": "2023-05-03",
+   "doc_type": "Plat",
+   "book_page": "OR 202305 000657",
+   "instrument_number": "202305030000657",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK REPLAT LOTS 107 AND 141"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442"
+  },
+  {
+   "id": "6112590",
+   "recorded": "2023-12-27",
+   "doc_type": "Plat",
+   "book_page": "OR 202312 005296",
+   "instrument_number": "202312270005296",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 27 Twp: 12 Rng: 25 Qtr: NW",
+   "index_names": [
+    "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX"
+   ],
+   "match": "exact",
+   "plat": "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX",
+   "subdivision_code": "5530"
+  },
+  {
+   "id": "6148534",
+   "recorded": "2024-06-28",
+   "doc_type": "Plat",
+   "book_page": "OR 202406 006702",
+   "instrument_number": "202406280006702",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 33 Twp: 12 Rng: 25 Qtr: SW",
+   "index_names": [
+    "MEADOWBROOK PARK REPLAT LOTS 138 AND 139"
+   ],
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
+   "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442"
+  },
+  {
+   "id": "6151746",
+   "recorded": "2024-07-11",
+   "doc_type": "Plat",
+   "book_page": "OR 202407 002857",
+   "instrument_number": "202407110002857",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 22 Twp: 12 Rng: 25 Qtr: NW",
+   "index_names": [
+    "75 MISSION OFFICE CONDOMINIUM 3RD PLAT"
+   ],
+   "plats": [
+    "75 MISSION OFFICE CONDOMINIUM 3RD PLAT"
+   ],
+   "match": "exact",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+   "subdivision_code": "6451"
+  },
+  {
+   "id": "6152158",
+   "recorded": "2024-07-12",
+   "doc_type": "Plat",
+   "book_page": "OR 202407 003269",
+   "instrument_number": "202407120003269",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 18 Twp: 13 Rng: 24 Qtr: NW",
+   "index_names": [
+    "PRAIRIE RIDGE PLAZA MIDLAND"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "6158165",
+   "recorded": "2024-08-06",
+   "doc_type": "Plat",
+   "book_page": "OR 202408 001430",
+   "instrument_number": "202408060001430",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 18 Twp: 13 Rng: 24 Qtr: NW",
+   "index_names": [
+    "EVERGREEN LIVING INNOVATIONS INC",
+    "PRAIRIE RIDGE PLAZA EVERGREEN"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "6312915",
+   "recorded": "2026-05-06",
+   "doc_type": "Plat",
+   "book_page": "OR 202605 001444",
+   "instrument_number": "202605060001444",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 6 Twp: 15 Rng: 24 Qtr: SE",
+   "index_names": [
+    "PRAIRIE RIDGE AT SPRING HILL NO 5"
+   ],
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900"
+  },
+  {
+   "id": "6319802",
+   "recorded": "2026-06-02",
+   "doc_type": "Plat",
+   "book_page": "OR 202606 000715",
+   "instrument_number": "202606020000715",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 27 Twp: 14 Rng: 25 Qtr: NE",
+   "index_names": [
+    "RED FOX RUN AT SUNDANCE RIDGE 3RD PLAT"
+   ],
+   "plats": [
+    "RED FOX"
+   ],
+   "match": "elsewhere",
+   "plat": "RED FOX",
+   "subdivision_code": "5800"
+  },
+  {
+   "id": "6341455",
+   "recorded": "2026-08-14",
+   "doc_type": "Plat",
+   "book_page": "OR 202608 003952",
+   "instrument_number": "202608140003952",
+   "docid": null,
+   "legal": "Rmrk: PT OF Sec: 5 Twp: 13 Rng: 22 Qtr: NW",
+   "index_names": [
+    "COUNTRYSIDE FARMS FIRST PLAT"
+   ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750"
+  }
+ ]
+}

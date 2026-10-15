@@ -393,6 +393,156 @@ def parcels(year, address, owner, zoning, cls, use, tax_unit, subdivision, block
     click.echo(pm.render_list(matched, num))
 
 
+@cli.command("plat-survey")
+@click.option("--refresh", is_flag=True, help="Re-run every search instead of reusing cached results")
+@click.option("--offline", is_flag=True, help="Rebuild the manifest and report from cached results only")
+@click.option("--markdown", "md_path", default="subdivision-plats.md", show_default=True,
+              type=click.Path(), help="Where to write the report")
+def plat_survey(refresh, offline, md_path):
+    """Find the recorded plats for every subdivision in the parcel data (Recorder of Deeds)."""
+    from pathlib import Path
+
+    from pvcouncil import plats
+    from pvcouncil.recorder import RecorderError
+
+    names = plats.plat_names()
+    if not offline:
+        try:
+            plats.fetch(names, refresh=refresh, echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(f"{e} (finished searches are cached; rerun to resume)")
+    manifest = plats.build(names)
+    Path(md_path).write_text(plats.render_markdown(manifest))
+    exact = sum(1 for e in manifest["instruments"] if e["match"] == "exact")
+    click.echo(f"{len(manifest['instruments'])} plat instruments ({exact} exact name matches) → "
+               f"{plats.MANIFEST_PATH.relative_to(plats.PROJECT_ROOT)}, {md_path}")
+
+
+@cli.command("plat-images")
+@click.option("--limit", type=int, help="Download at most N images (for testing)")
+def plat_images(limit):
+    """Download the plat image PDFs for every Prairie Village plat in deeds/plats.json."""
+    from pvcouncil import plats
+    from pvcouncil.recorder import RecorderError
+
+    try:
+        manifest = plats.load_manifest()
+        stats = plats.download_images(manifest, limit=limit, echo=click.echo)
+    except (FileNotFoundError, RecorderError) as e:
+        raise click.ClickException(f"{e} (downloaded images are kept; rerun to resume)")
+    click.echo(f"Downloaded {stats['downloaded']} images ({stats['bytes'] / 1e6:.1f} MB), "
+               f"{stats['no_image']} with no image → {plats.IMAGES_DIR.relative_to(plats.PROJECT_ROOT)}/")
+
+
+@cli.command("plat-ocr")
+@click.option("--workers", default=6, show_default=True, help="Parallel OCR processes")
+def plat_ocr(workers):
+    """OCR the downloaded plat images and find the restrictions they state or cite."""
+    from collections import Counter
+
+    from pvcouncil import platocr, plats
+
+    manifest = plats.load_manifest()
+    platocr.ocr_all(manifest, workers=workers, echo=click.echo)
+    out = platocr.build(manifest)
+    rows = out["plats"]
+    with_terms = [r for r in rows if r["terms"]]
+    cited = [r for r in rows if r["citations"]]
+    click.echo(f"{len(rows)} plats scanned: {len(with_terms)} with restriction language, "
+               f"{len(cited)} citing recorded instruments ({sum(len(r['citations']) for r in cited)} citations)")
+    terms = Counter(t for r in rows for t in r["terms"])
+    click.echo("  " + ", ".join(f"{t} {n}" for t, n in terms.most_common()))
+    click.echo(f"→ {platocr.RESULTS_PATH.relative_to(plats.PROJECT_ROOT)}; "
+               f"excerpts in {platocr.EXCERPTS_PATH.relative_to(plats.PROJECT_ROOT)} (local)")
+
+
+@cli.command("restriction-read")
+@click.option("--workers", default=6, show_default=True, help="Parallel OCR processes")
+@click.option("--offline", is_flag=True, help="Skip downloading; OCR and classify what is on disk")
+def restriction_read(workers, offline):
+    """Download, OCR, and classify the instruments filed with a plat."""
+    from collections import Counter
+
+    import json
+
+    from pvcouncil import restrictions, restrictread
+    from pvcouncil.recorder import RecorderError
+
+    entries = json.loads(restrictions.RESULTS_PATH.read_text())["filed_with_plat"]
+    if not offline:
+        try:
+            s = restrictread.download(entries, echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(str(e))
+        click.echo(f"downloaded {s['downloaded']} ({s['bytes'] / 1e6:.0f} MB), {s['no_image']} without images")
+    restrictread.ocr_all(entries, workers=workers, echo=click.echo)
+    rows = restrictread.build(entries)["read"]
+    click.echo(f"{len(rows)} read: " + ", ".join(f"{k} {n}" for k, n in Counter(r["kind"] for r in rows).most_common()))
+    feats = Counter(f for r in rows for f in r["features"])
+    click.echo("  " + ", ".join(f"{f} {n}" for f, n in feats.most_common()))
+    click.echo(f"→ {restrictread.RESULTS_PATH.relative_to(plats_root())}")
+
+
+def plats_root():
+    from pvcouncil import plats
+
+    return plats.PROJECT_ROOT
+
+
+@cli.command("deed-viewer")
+@click.option("--port", default=8765, show_default=True, help="Port on 127.0.0.1")
+def deed_viewer(port):
+    """Page through the downloaded plats and restriction instruments in a browser."""
+    from pvcouncil import viewer
+
+    viewer.serve(port=port, echo=click.echo)
+
+
+@cli.command("restriction-survey")
+@click.option("--offline", is_flag=True, help="Rebuild from cached searches only")
+@click.option("--walk", is_flag=True, help="Also pull 'Miscellaneous' filings around each pre-1976 plat date")
+def restriction_survey(offline, walk):
+    """Find recorded restrictions and covenants for the subdivisions (Recorder of Deeds)."""
+    from collections import Counter
+
+    from pvcouncil import restrictions
+    from pvcouncil.recorder import RecorderError
+
+    if not offline:
+        try:
+            restrictions.fetch_typed(echo=click.echo)
+            restrictions.fetch_cited(echo=click.echo)
+            if walk:
+                restrictions.fetch_misc_walk(echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(f"{e} (finished searches are cached; rerun to resume)")
+    out = restrictions.build()
+    from pathlib import Path
+    Path("subdivision-restrictions.md").write_text(
+        restrictions.render_markdown(out, restrictions.plats.load_manifest()))
+    click.echo(f"{len(out['filed_with_plat'])} instruments filed with a plat; "
+               f"{len(out.get('misc_candidates', []))} Miscellaneous candidates")
+    m = out["instruments"]
+    subs = {c for e in m for c in e["subdivision_codes"]}
+    click.echo(f"Searched {sum(out['searched'].values()):,} restriction-type instruments county-wide; "
+               f"{len(m)} matched to {len(subs)} Prairie Village subdivisions")
+    click.echo("  " + ", ".join(f"{t} {n}" for t, n in Counter(e['doc_type'] for e in m).most_common()))
+    click.echo(f"→ {restrictions.RESULTS_PATH.relative_to(restrictions.plats.PROJECT_ROOT)}")
+
+
+@cli.command("recorder-check")
+def recorder_check():
+    """Test the Recorder of Deeds login and search (prints no credentials or session values)."""
+    from pvcouncil.recorder import RecorderError, check
+
+    try:
+        report = check()
+    except RecorderError as e:
+        raise click.ClickException(str(e))
+    for k, v in report.items():
+        click.echo(f"{k}: {v}")
+
+
 @cli.command()
 def stats():
     """Show index statistics."""

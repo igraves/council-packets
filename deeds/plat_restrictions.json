@@ -1,0 +1,3811 @@
+{
+ "plats": [
+  {
+   "id": "1586106",
+   "book_page": "PLAT 3 16",
+   "recorded": "1906-06-11",
+   "plat": "RIDGE VIEW",
+   "subdivision_code": "5900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 93
+  },
+  {
+   "id": "1586754",
+   "book_page": "PLAT 3 27",
+   "recorded": "1906-10-31",
+   "plat": "JARBOE HEIGHTS",
+   "subdivision_code": "1700",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 103
+  },
+  {
+   "id": "2028233",
+   "book_page": "PLAT 6 6",
+   "recorded": "1923-04-03",
+   "plat": "COUNTRY CLUB VIEW",
+   "subdivision_code": "0700",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 296
+  },
+  {
+   "id": "2027354",
+   "book_page": "PLAT 6 8",
+   "recorded": "1923-05-17",
+   "plat": "SUNSET HILL ACRES",
+   "subdivision_code": "7300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 302
+  },
+  {
+   "id": "2026456",
+   "book_page": "PLAT 6 15",
+   "recorded": "1923-09-26",
+   "plat": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+   "subdivision_code": "6000",
+   "terms": [
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 591
+  },
+  {
+   "id": "2026916",
+   "book_page": "PLAT 6 28",
+   "recorded": "1924-04-17",
+   "plat": "GRANTHURST",
+   "subdivision_code": "1100",
+   "terms": [
+    "covenants"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 211
+  },
+  {
+   "id": "2026921",
+   "book_page": "PLAT 6 29",
+   "recorded": "1924-04-17",
+   "plat": "GRANTHURST",
+   "subdivision_code": "1100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "2027680",
+   "book_page": "PLAT 6 30",
+   "recorded": "1924-08-13",
+   "plat": "MEADOW VIEW",
+   "subdivision_code": "2700",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 246
+  },
+  {
+   "id": "2027924",
+   "book_page": "PLAT 6 43",
+   "recorded": "1925-04-17",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 143
+  },
+  {
+   "id": "2026990",
+   "book_page": "PLAT 6 41",
+   "recorded": "1925-05-02",
+   "plat": "MEADOW LAKE LAWN",
+   "subdivision_code": "2600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 613
+  },
+  {
+   "id": "2953079",
+   "book_page": "PLAT 7 8",
+   "recorded": "1926-01-12",
+   "plat": "JARBOE VIEW",
+   "subdivision_code": "1800",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 278
+  },
+  {
+   "id": "2946804",
+   "book_page": "PLAT 7 28",
+   "recorded": "1927-09-07",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 249
+  },
+  {
+   "id": "2946178",
+   "book_page": "PLAT 7 42",
+   "recorded": "1929-09-12",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 1,
+   "words": 451
+  },
+  {
+   "id": "3841672",
+   "book_page": "PLAT 8 34",
+   "recorded": "1937-03-29",
+   "plat": "SUNSET HEIGHTS VIEW",
+   "subdivision_code": "7200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 301
+  },
+  {
+   "id": "3841673",
+   "book_page": "PLAT 8 35",
+   "recorded": "1937-03-29",
+   "plat": "SUNSET HEIGHTS VIEW",
+   "subdivision_code": "7200",
+   "terms": [
+    "building line",
+    "covenants",
+    "residential use",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 852
+  },
+  {
+   "id": "4605164",
+   "book_page": "PLAT 9 27",
+   "recorded": "1938-10-31",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 944
+  },
+  {
+   "id": "4605599",
+   "book_page": "PLAT 9 43",
+   "recorded": "1939-07-14",
+   "plat": "PRAIRIE WOODS",
+   "subdivision_code": "5600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 404
+  },
+  {
+   "id": "2137735",
+   "book_page": "PLAT 10 42",
+   "recorded": "1941-03-29",
+   "plat": "SUNSET HEIGHTS VIEW",
+   "subdivision_code": "7200",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 404
+  },
+  {
+   "id": "2137761",
+   "book_page": "PLAT 10 47",
+   "recorded": "1941-05-05",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 629
+  },
+  {
+   "id": "2307805",
+   "book_page": "PLAT 11 4",
+   "recorded": "1941-07-11",
+   "plat": "PRAIRIE WOODS",
+   "subdivision_code": "5600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 597
+  },
+  {
+   "id": "2308878",
+   "book_page": "PLAT 11 6",
+   "recorded": "1941-07-21",
+   "plat": "SOMERSIDE",
+   "subdivision_code": "7100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 305
+  },
+  {
+   "id": "2307799",
+   "book_page": "PLAT 11 39",
+   "recorded": "1946-02-27",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1107
+  },
+  {
+   "id": "2308599",
+   "book_page": "PLAT 11 40",
+   "recorded": "1946-03-04",
+   "plat": "CLARKVIEW",
+   "subdivision_code": "0400",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 259
+  },
+  {
+   "id": "2307811",
+   "book_page": "PLAT 11 41",
+   "recorded": "1946-03-13",
+   "plat": "NALL AVENUE GARDENS",
+   "subdivision_code": "3400",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 351
+  },
+  {
+   "id": "2307855",
+   "book_page": "PLAT 11 50",
+   "recorded": "1946-04-16",
+   "plat": "CEDARVALE",
+   "subdivision_code": "0300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 622
+  },
+  {
+   "id": "2486330",
+   "book_page": "PLAT 12 1",
+   "recorded": "1946-05-06",
+   "plat": "FONTICELLO GARDENS",
+   "subdivision_code": "0900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 358
+  },
+  {
+   "id": "2487304",
+   "book_page": "PLAT 12 2",
+   "recorded": "1946-05-07",
+   "plat": "MEADOW ACRES",
+   "subdivision_code": "2200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 401
+  },
+  {
+   "id": "2486332",
+   "book_page": "PLAT 12 10",
+   "recorded": "1946-06-04",
+   "plat": "MISSION VALLEY EAST",
+   "subdivision_code": "2800",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 490
+  },
+  {
+   "id": "2487082",
+   "book_page": "PLAT 12 12",
+   "recorded": "1946-06-12",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 678
+  },
+  {
+   "id": "2487089",
+   "book_page": "PLAT 12 13",
+   "recorded": "1946-06-12",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 535
+  },
+  {
+   "id": "2487264",
+   "book_page": "PLAT 12 14",
+   "recorded": "1946-06-25",
+   "plat": "MISSION VALLEY WEST",
+   "subdivision_code": "2900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 874
+  },
+  {
+   "id": "2486399",
+   "book_page": "PLAT 12 19",
+   "recorded": "1946-08-07",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1604
+  },
+  {
+   "id": "2486406",
+   "book_page": "PLAT 12 20",
+   "recorded": "1946-08-07",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1604
+  },
+  {
+   "id": "2487307",
+   "book_page": "PLAT 12 21",
+   "recorded": "1946-08-09",
+   "plat": "REPLAT OF FONTICELLO GARDENS NO. 2",
+   "subdivision_code": "1000",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 753
+  },
+  {
+   "id": "2487427",
+   "book_page": "PLAT 12 41",
+   "recorded": "1947-04-02",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2161
+  },
+  {
+   "id": "2486704",
+   "book_page": "PLAT 12 42",
+   "recorded": "1947-04-02",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2158
+  },
+  {
+   "id": "2486752",
+   "book_page": "PLAT 12 53",
+   "recorded": "1947-07-17",
+   "plat": "BREEZY HEIGHTS",
+   "subdivision_code": "0100",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 917
+  },
+  {
+   "id": "2486755",
+   "book_page": "PLAT 12 54",
+   "recorded": "1947-07-29",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1670
+  },
+  {
+   "id": "2487097",
+   "book_page": "PLAT 12 55",
+   "recorded": "1947-07-29",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 92
+  },
+  {
+   "id": "2487120",
+   "book_page": "PLAT 12 63",
+   "recorded": "1947-09-23",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1697
+  },
+  {
+   "id": "2487122",
+   "book_page": "PLAT 12 64",
+   "recorded": "1947-09-23",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 894
+  },
+  {
+   "id": "2487123",
+   "book_page": "PLAT 12 69",
+   "recorded": "1948-01-23",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1429
+  },
+  {
+   "id": "2487879",
+   "book_page": "PLAT 12 71",
+   "recorded": "1948-02-02",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 661
+  },
+  {
+   "id": "2677769",
+   "book_page": "PLAT 13 1",
+   "recorded": "1948-05-26",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 483
+  },
+  {
+   "id": "2677277",
+   "book_page": "PLAT 13 2",
+   "recorded": "1948-05-26",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1311
+  },
+  {
+   "id": "2678056",
+   "book_page": "PLAT 13 3",
+   "recorded": "1948-05-26",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1311
+  },
+  {
+   "id": "2677543",
+   "book_page": "PLAT 13 7",
+   "recorded": "1948-08-18",
+   "plat": "PRAIRIE WOODS",
+   "subdivision_code": "5600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 577
+  },
+  {
+   "id": "2678435",
+   "book_page": "PLAT 13 9",
+   "recorded": "1948-09-20",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 495
+  },
+  {
+   "id": "2676927",
+   "book_page": "PLAT 13 17",
+   "recorded": "1948-11-12",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 879
+  },
+  {
+   "id": "2677973",
+   "book_page": "PLAT 13 18",
+   "recorded": "1948-11-12",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 626
+  },
+  {
+   "id": "2677297",
+   "book_page": "PLAT 13 24",
+   "recorded": "1949-03-07",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1042
+  },
+  {
+   "id": "2678048",
+   "book_page": "PLAT 13 29",
+   "recorded": "1949-04-18",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1925
+  },
+  {
+   "id": "2678058",
+   "book_page": "PLAT 13 30",
+   "recorded": "1949-04-25",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 878
+  },
+  {
+   "id": "2678117",
+   "book_page": "PLAT 13 40",
+   "recorded": "1949-08-30",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1711
+  },
+  {
+   "id": "2677397",
+   "book_page": "PLAT 13 41",
+   "recorded": "1949-08-30",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1711
+  },
+  {
+   "id": "2678300",
+   "book_page": "PLAT 13 42",
+   "recorded": "1949-08-30",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1052
+  },
+  {
+   "id": "2678324",
+   "book_page": "PLAT 13 45",
+   "recorded": "1949-10-11",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1139
+  },
+  {
+   "id": "2677428",
+   "book_page": "PLAT 13 46",
+   "recorded": "1949-10-11",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1139
+  },
+  {
+   "id": "2677436",
+   "book_page": "PLAT 13 47",
+   "recorded": "1949-10-14",
+   "plat": "MOHAWK HILLS",
+   "subdivision_code": "3100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 667
+  },
+  {
+   "id": "2678336",
+   "book_page": "PLAT 13 49",
+   "recorded": "1949-12-13",
+   "plat": "MEADOWBROOK DOWNS",
+   "subdivision_code": "2350",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 523
+  },
+  {
+   "id": "2677478",
+   "book_page": "PLAT 13 55",
+   "recorded": "1950-01-07",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1062
+  },
+  {
+   "id": "2677519",
+   "book_page": "PLAT 13 61",
+   "recorded": "1950-02-03",
+   "plat": "PRAIRIE VILLAGE",
+   "subdivision_code": "5500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 870
+  },
+  {
+   "id": "2678418",
+   "book_page": "PLAT 13 64",
+   "recorded": "1950-02-10",
+   "plat": "PRAIRIE FOREST",
+   "subdivision_code": "4300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 925
+  },
+  {
+   "id": "2865946",
+   "book_page": "PLAT 14 5",
+   "recorded": "1950-03-29",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 864
+  },
+  {
+   "id": "2865658",
+   "book_page": "PLAT 14 22",
+   "recorded": "1950-06-06",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1087
+  },
+  {
+   "id": "2866528",
+   "book_page": "PLAT 14 23",
+   "recorded": "1950-06-06",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1087
+  },
+  {
+   "id": "2866529",
+   "book_page": "PLAT 14 24",
+   "recorded": "1950-06-06",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 770
+  },
+  {
+   "id": "2866533",
+   "book_page": "PLAT 14 30",
+   "recorded": "1950-06-26",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 605
+  },
+  {
+   "id": "2866538",
+   "book_page": "PLAT 14 31",
+   "recorded": "1950-06-26",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 605
+  },
+  {
+   "id": "2865680",
+   "book_page": "PLAT 14 33",
+   "recorded": "1950-06-30",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1074
+  },
+  {
+   "id": "2866555",
+   "book_page": "PLAT 14 34",
+   "recorded": "1950-06-30",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 416
+  },
+  {
+   "id": "2866596",
+   "book_page": "PLAT 14 42",
+   "recorded": "1950-08-08",
+   "plat": "MEADOW LAKE RESURVEY",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 712
+  },
+  {
+   "id": "2865746",
+   "book_page": "PLAT 14 43",
+   "recorded": "1950-08-08",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 791
+  },
+  {
+   "id": "2866612",
+   "book_page": "PLAT 14 45",
+   "recorded": "1950-08-25",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1103
+  },
+  {
+   "id": "2866788",
+   "book_page": "PLAT 14 46",
+   "recorded": "1950-09-05",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 818
+  },
+  {
+   "id": "2865952",
+   "book_page": "PLAT 14 52",
+   "recorded": "1950-10-20",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1244
+  },
+  {
+   "id": "2866817",
+   "book_page": "PLAT 14 53",
+   "recorded": "1950-10-20",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 624
+  },
+  {
+   "id": "2865968",
+   "book_page": "PLAT 14 59",
+   "recorded": "1951-01-02",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 838
+  },
+  {
+   "id": "2866829",
+   "book_page": "PLAT 14 61",
+   "recorded": "1951-01-15",
+   "plat": "WEST HILL",
+   "subdivision_code": "7800",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 752
+  },
+  {
+   "id": "2865971",
+   "book_page": "PLAT 14 63",
+   "recorded": "1951-02-05",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1278
+  },
+  {
+   "id": "2866835",
+   "book_page": "PLAT 14 66",
+   "recorded": "1951-02-19",
+   "plat": "TRAIL VIEW",
+   "subdivision_code": "7700",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 377
+  },
+  {
+   "id": "3049845",
+   "book_page": "PLAT 15 5",
+   "recorded": "1951-05-29",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 583
+  },
+  {
+   "id": "3048922",
+   "book_page": "PLAT 15 6",
+   "recorded": "1951-06-18",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1440
+  },
+  {
+   "id": "3049911",
+   "book_page": "PLAT 15 7",
+   "recorded": "1951-06-18",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1440
+  },
+  {
+   "id": "3049927",
+   "book_page": "PLAT 15 8",
+   "recorded": "1951-07-03",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 585
+  },
+  {
+   "id": "3049497",
+   "book_page": "PLAT 15 15",
+   "recorded": "1951-10-01",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1254
+  },
+  {
+   "id": "3048532",
+   "book_page": "PLAT 15 17",
+   "recorded": "1951-10-05",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 695
+  },
+  {
+   "id": "3049516",
+   "book_page": "PLAT 15 19",
+   "recorded": "1951-11-02",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 644
+  },
+  {
+   "id": "3048627",
+   "book_page": "PLAT 15 35",
+   "recorded": "1952-01-28",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1119
+  },
+  {
+   "id": "3049772",
+   "book_page": "PLAT 15 36",
+   "recorded": "1952-01-30",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2040
+  },
+  {
+   "id": "3049777",
+   "book_page": "PLAT 15 37",
+   "recorded": "1952-01-30",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 481
+  },
+  {
+   "id": "3048881",
+   "book_page": "PLAT 15 51",
+   "recorded": "1952-03-03",
+   "plat": "MISSION VALLEY EAST",
+   "subdivision_code": "2800",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 604
+  },
+  {
+   "id": "3049859",
+   "book_page": "PLAT 15 53",
+   "recorded": "1952-03-17",
+   "plat": "PRAIRIE VALLEY",
+   "subdivision_code": "5100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 421
+  },
+  {
+   "id": "3049901",
+   "book_page": "PLAT 15 60",
+   "recorded": "1952-04-05",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1576
+  },
+  {
+   "id": "3049903",
+   "book_page": "PLAT 15 61",
+   "recorded": "1952-04-05",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 838
+  },
+  {
+   "id": "3048923",
+   "book_page": "PLAT 15 62",
+   "recorded": "1952-04-05",
+   "plat": "MEADOW LAKE",
+   "subdivision_code": "2500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 612
+  },
+  {
+   "id": "3049906",
+   "book_page": "PLAT 15 66",
+   "recorded": "1952-04-22",
+   "plat": "RIDGE VIEW HEIGHTS",
+   "subdivision_code": "6050",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 455
+  },
+  {
+   "id": "3049914",
+   "book_page": "PLAT 15 71",
+   "recorded": "1952-05-05",
+   "plat": "WEST HILL NO. 2",
+   "subdivision_code": "7900",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 833
+  },
+  {
+   "id": "3049923",
+   "book_page": "PLAT 15 75",
+   "recorded": "1952-06-05",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 605
+  },
+  {
+   "id": "3223423",
+   "book_page": "PLAT 16 6",
+   "recorded": "1952-07-28",
+   "plat": "INDIAN HEIGHTS",
+   "subdivision_code": "1400",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 534
+  },
+  {
+   "id": "3223448",
+   "book_page": "PLAT 16 9",
+   "recorded": "1952-08-11",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1916
+  },
+  {
+   "id": "3221583",
+   "book_page": "PLAT 16 10",
+   "recorded": "1952-08-28",
+   "plat": "PRAIRIE VALLEY NORTH",
+   "subdivision_code": "5150",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 694
+  },
+  {
+   "id": "3221588",
+   "book_page": "PLAT 16 11",
+   "recorded": "1952-08-28",
+   "plat": "PRAIRIE VALLEY NORTH ANNEX",
+   "subdivision_code": "5200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 552
+  },
+  {
+   "id": "3222563",
+   "book_page": "PLAT 16 13",
+   "recorded": "1952-09-10",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 704
+  },
+  {
+   "id": "3222571",
+   "book_page": "PLAT 16 14",
+   "recorded": "1952-09-10",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1223
+  },
+  {
+   "id": "3222587",
+   "book_page": "PLAT 16 18",
+   "recorded": "1952-09-30",
+   "plat": "PRAIRIE RIDGE VIEW",
+   "subdivision_code": "5000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 407
+  },
+  {
+   "id": "3222172",
+   "book_page": "PLAT 16 26",
+   "recorded": "1952-10-15",
+   "plat": "RIDGE VIEW PLACE",
+   "subdivision_code": "6100",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 575
+  },
+  {
+   "id": "3222177",
+   "book_page": "PLAT 16 29",
+   "recorded": "1952-11-22",
+   "plat": "SWARNER VALLEY",
+   "subdivision_code": "7400",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 488
+  },
+  {
+   "id": "3222192",
+   "book_page": "PLAT 16 31",
+   "recorded": "1952-11-25",
+   "plat": "PRAIRIE VIEW NO. 5",
+   "subdivision_code": "5400",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 109
+  },
+  {
+   "id": "3223338",
+   "book_page": "PLAT 16 38",
+   "recorded": "1953-01-06",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 481
+  },
+  {
+   "id": "3222418",
+   "book_page": "PLAT 16 41",
+   "recorded": "1953-02-07",
+   "plat": "JUNIPER HILL",
+   "subdivision_code": "1900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 523
+  },
+  {
+   "id": "3223366",
+   "book_page": "PLAT 16 45",
+   "recorded": "1953-02-21",
+   "plat": "RIDGE VIEW HEIGHTS NO. 2",
+   "subdivision_code": "6060",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 565
+  },
+  {
+   "id": "3223386",
+   "book_page": "PLAT 16 49",
+   "recorded": "1953-03-12",
+   "plat": "PRAIRIE HEIGHTS",
+   "subdivision_code": "4400",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 546
+  },
+  {
+   "id": "3223405",
+   "book_page": "PLAT 16 54",
+   "recorded": "1953-04-27",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1463
+  },
+  {
+   "id": "3223410",
+   "book_page": "PLAT 16 55",
+   "recorded": "1953-04-27",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1421
+  },
+  {
+   "id": "3222501",
+   "book_page": "PLAT 16 67",
+   "recorded": "1953-06-11",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 940
+  },
+  {
+   "id": "3393158",
+   "book_page": "PLAT 17 3",
+   "recorded": "1953-08-18",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1328
+  },
+  {
+   "id": "3393436",
+   "book_page": "PLAT 17 6",
+   "recorded": "1953-09-23",
+   "plat": "NALLANDS",
+   "subdivision_code": "3300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 673
+  },
+  {
+   "id": "3392075",
+   "book_page": "PLAT 17 13",
+   "recorded": "1954-01-22",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2793
+  },
+  {
+   "id": "3392079",
+   "book_page": "PLAT 17 14",
+   "recorded": "1954-01-22",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2793
+  },
+  {
+   "id": "3393113",
+   "book_page": "PLAT 17 15",
+   "recorded": "1954-02-02",
+   "plat": "PRAIRIE PARK",
+   "subdivision_code": "4800",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 525
+  },
+  {
+   "id": "3392089",
+   "book_page": "PLAT 17 16",
+   "recorded": "1954-02-12",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1463
+  },
+  {
+   "id": "3392140",
+   "book_page": "PLAT 17 31",
+   "recorded": "1954-05-07",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1196
+  },
+  {
+   "id": "3393174",
+   "book_page": "PLAT 17 33",
+   "recorded": "1954-05-15",
+   "plat": "PRAIRIE MANOR",
+   "subdivision_code": "4700",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 236
+  },
+  {
+   "id": "3392171",
+   "book_page": "PLAT 17 38",
+   "recorded": "1954-07-07",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700",
+   "terms": [
+    "building line",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 517
+  },
+  {
+   "id": "3393196",
+   "book_page": "PLAT 17 39",
+   "recorded": "1954-07-15",
+   "plat": "PRAIRIE RIDGE",
+   "subdivision_code": "4900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 336
+  },
+  {
+   "id": "3392188",
+   "book_page": "PLAT 17 46",
+   "recorded": "1954-07-26",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 763
+  },
+  {
+   "id": "3393221",
+   "book_page": "PLAT 17 49",
+   "recorded": "1954-08-12",
+   "plat": "SOMERSET GARDENS",
+   "subdivision_code": "6900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 221
+  },
+  {
+   "id": "3392210",
+   "book_page": "PLAT 17 53",
+   "recorded": "1954-09-14",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1058
+  },
+  {
+   "id": "3393444",
+   "book_page": "PLAT 17 69",
+   "recorded": "1954-11-29",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1077
+  },
+  {
+   "id": "3392260",
+   "book_page": "PLAT 17 73",
+   "recorded": "1954-12-20",
+   "plat": "PRAIRIE HILLS VIEW",
+   "subdivision_code": "4600",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 559
+  },
+  {
+   "id": "3393449",
+   "book_page": "PLAT 17 74",
+   "recorded": "1955-01-04",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 956
+  },
+  {
+   "id": "3579573",
+   "book_page": "PLAT 18 2",
+   "recorded": "1955-01-07",
+   "plat": "CORINTH MEADOWS",
+   "subdivision_code": "0600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 573
+  },
+  {
+   "id": "3579641",
+   "book_page": "PLAT 18 4",
+   "recorded": "1955-01-10",
+   "plat": "WALMER HEIGHTS",
+   "subdivision_code": "7720",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 604
+  },
+  {
+   "id": "3579575",
+   "book_page": "PLAT 18 20",
+   "recorded": "1955-03-14",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 717
+  },
+  {
+   "id": "3578911",
+   "book_page": "PLAT 18 26",
+   "recorded": "1955-04-01",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 778
+  },
+  {
+   "id": "3579590",
+   "book_page": "PLAT 18 28",
+   "recorded": "1955-04-07",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 602
+  },
+  {
+   "id": "3579598",
+   "book_page": "PLAT 18 29",
+   "recorded": "1955-04-08",
+   "plat": "RIDGEWOOD",
+   "subdivision_code": "6200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 794
+  },
+  {
+   "id": "3579621",
+   "book_page": "PLAT 18 35",
+   "recorded": "1955-04-25",
+   "plat": "SOMERSET HILLS",
+   "subdivision_code": "7000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 602
+  },
+  {
+   "id": "3578986",
+   "book_page": "PLAT 18 44",
+   "recorded": "1955-05-24",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1020
+  },
+  {
+   "id": "3578989",
+   "book_page": "PLAT 18 45",
+   "recorded": "1955-05-24",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 856
+  },
+  {
+   "id": "3579708",
+   "book_page": "PLAT 18 50",
+   "recorded": "1955-06-02",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1113
+  },
+  {
+   "id": "3580091",
+   "book_page": "PLAT 18 59",
+   "recorded": "1955-07-05",
+   "plat": "JORDAN PLACE",
+   "subdivision_code": "2000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 485
+  },
+  {
+   "id": "3580103",
+   "book_page": "PLAT 18 63",
+   "recorded": "1955-07-15",
+   "plat": "THE PALISADES",
+   "subdivision_code": "7506",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 571
+  },
+  {
+   "id": "3579087",
+   "book_page": "PLAT 18 68",
+   "recorded": "1955-08-15",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 777
+  },
+  {
+   "id": "3580112",
+   "book_page": "PLAT 18 73",
+   "recorded": "1955-08-26",
+   "plat": "PAWNEE MANOR",
+   "subdivision_code": "3900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 578
+  },
+  {
+   "id": "3579093",
+   "book_page": "PLAT 18 75",
+   "recorded": "1955-08-27",
+   "plat": "THE PALISADES",
+   "subdivision_code": "7506",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 490
+  },
+  {
+   "id": "3789143",
+   "book_page": "PLAT 19 6",
+   "recorded": "1955-10-26",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 734
+  },
+  {
+   "id": "3789955",
+   "book_page": "PLAT 19 23",
+   "recorded": "1955-12-23",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1406
+  },
+  {
+   "id": "3789962",
+   "book_page": "PLAT 19 24",
+   "recorded": "1955-12-23",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 863
+  },
+  {
+   "id": "3789007",
+   "book_page": "PLAT 19 27",
+   "recorded": "1955-12-23",
+   "plat": "CORINTH SCHOOL",
+   "subdivision_code": "0650",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 456
+  },
+  {
+   "id": "3789973",
+   "book_page": "PLAT 19 29",
+   "recorded": "1955-12-23",
+   "plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "subdivision_code": "6500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 299
+  },
+  {
+   "id": "3790002",
+   "book_page": "PLAT 19 36",
+   "recorded": "1956-02-28",
+   "plat": "CORINTH ESTATES",
+   "subdivision_code": "0450",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 902
+  },
+  {
+   "id": "3789053",
+   "book_page": "PLAT 19 40",
+   "recorded": "1956-04-02",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 592
+  },
+  {
+   "id": "3789098",
+   "book_page": "PLAT 19 49",
+   "recorded": "1956-05-02",
+   "plat": "SOMERSET HILLS",
+   "subdivision_code": "7000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 699
+  },
+  {
+   "id": "3789102",
+   "book_page": "PLAT 19 50",
+   "recorded": "1956-05-08",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1131
+  },
+  {
+   "id": "3790115",
+   "book_page": "PLAT 19 60",
+   "recorded": "1956-08-03",
+   "plat": "SOMERSET ACRES WEST",
+   "subdivision_code": "6700",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 501
+  },
+  {
+   "id": "3790133",
+   "book_page": "PLAT 19 71",
+   "recorded": "1956-10-24",
+   "plat": "PAWNEE MANOR",
+   "subdivision_code": "3900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 669
+  },
+  {
+   "id": "3789331",
+   "book_page": "PLAT 19 73",
+   "recorded": "1956-11-16",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 757
+  },
+  {
+   "id": "3790134",
+   "book_page": "PLAT 19 74",
+   "recorded": "1956-11-17",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 706
+  },
+  {
+   "id": "4018198",
+   "book_page": "PLAT 20 17",
+   "recorded": "1957-06-11",
+   "plat": "PAWNEE VIEW",
+   "subdivision_code": "4000",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 903
+  },
+  {
+   "id": "4017345",
+   "book_page": "PLAT 20 20",
+   "recorded": "1957-06-25",
+   "plat": "PAWNEE MANOR",
+   "subdivision_code": "3900",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 510
+  },
+  {
+   "id": "4017359",
+   "book_page": "PLAT 20 22",
+   "recorded": "1957-07-09",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 680
+  },
+  {
+   "id": "4018232",
+   "book_page": "PLAT 20 24",
+   "recorded": "1957-07-26",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 553
+  },
+  {
+   "id": "4018238",
+   "book_page": "PLAT 20 25",
+   "recorded": "1957-07-26",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1075
+  },
+  {
+   "id": "4018252",
+   "book_page": "PLAT 20 27",
+   "recorded": "1957-08-19",
+   "plat": "SOMERSET COURT",
+   "subdivision_code": "6800",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 678
+  },
+  {
+   "id": "4017420",
+   "book_page": "PLAT 20 36",
+   "recorded": "1957-10-11",
+   "plat": "PRAIRIE ESTATES",
+   "subdivision_code": "4100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 782
+  },
+  {
+   "id": "4018345",
+   "book_page": "PLAT 20 52",
+   "recorded": "1958-02-24",
+   "plat": "PRAIRIE FIELDS",
+   "subdivision_code": "4200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 757
+  },
+  {
+   "id": "4017690",
+   "book_page": "PLAT 20 56",
+   "recorded": "1958-03-25",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 852
+  },
+  {
+   "id": "4017719",
+   "book_page": "PLAT 20 62",
+   "recorded": "1958-05-14",
+   "plat": "TOWN & COUNTRY ESTATES",
+   "subdivision_code": "7600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1092
+  },
+  {
+   "id": "4017735",
+   "book_page": "PLAT 20 68",
+   "recorded": "1958-06-17",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1669
+  },
+  {
+   "id": "3658573",
+   "book_page": "PLAT 21 10",
+   "recorded": "1958-11-22",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 885
+  },
+  {
+   "id": "3658607",
+   "book_page": "PLAT 21 17",
+   "recorded": "1959-01-26",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 912
+  },
+  {
+   "id": "3659759",
+   "book_page": "PLAT 21 18",
+   "recorded": "1959-01-26",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 802
+  },
+  {
+   "id": "3658659",
+   "book_page": "PLAT 21 33",
+   "recorded": "1959-04-16",
+   "plat": "NALL VALLEY ESTATES",
+   "subdivision_code": "3500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 474
+  },
+  {
+   "id": "3659018",
+   "book_page": "PLAT 21 36",
+   "recorded": "1959-05-06",
+   "plat": "REPLAT OF FONTICELLO GARDENS NO. 2",
+   "subdivision_code": "1000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 379
+  },
+  {
+   "id": "3846040",
+   "book_page": "PLAT 22 7",
+   "recorded": "1959-12-07",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1092
+  },
+  {
+   "id": "3845846",
+   "book_page": "PLAT 22 13",
+   "recorded": "1960-01-14",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 872
+  },
+  {
+   "id": "4032371",
+   "book_page": "PLAT 23 8",
+   "recorded": "1960-10-27",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1196
+  },
+  {
+   "id": "4031835",
+   "book_page": "PLAT 23 10",
+   "recorded": "1960-11-08",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1584
+  },
+  {
+   "id": "4031850",
+   "book_page": "PLAT 23 15",
+   "recorded": "1960-12-26",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 923
+  },
+  {
+   "id": "4031274",
+   "book_page": "PLAT 23 34",
+   "recorded": "1961-03-13",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1093
+  },
+  {
+   "id": "4032290",
+   "book_page": "PLAT 23 44",
+   "recorded": "1961-05-04",
+   "plat": "NORMANDY SQUARE",
+   "subdivision_code": "3700",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 794
+  },
+  {
+   "id": "4169833",
+   "book_page": "PLAT 24 10",
+   "recorded": "1961-09-21",
+   "plat": "JACKSON HEIGHTS",
+   "subdivision_code": "1600",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 775
+  },
+  {
+   "id": "4170744",
+   "book_page": "PLAT 24 11",
+   "recorded": "1961-09-25",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1102
+  },
+  {
+   "id": "4171007",
+   "book_page": "PLAT 24 37",
+   "recorded": "1962-06-18",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 877
+  },
+  {
+   "id": "4170149",
+   "book_page": "PLAT 24 45",
+   "recorded": "1962-07-31",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1358
+  },
+  {
+   "id": "4311733",
+   "book_page": "PLAT 25 22",
+   "recorded": "1963-05-24",
+   "plat": "INDIAN FIELDS",
+   "subdivision_code": "1300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 810
+  },
+  {
+   "id": "4310891",
+   "book_page": "PLAT 25 25",
+   "recorded": "1963-05-29",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1984
+  },
+  {
+   "id": "4310906",
+   "book_page": "PLAT 25 28",
+   "recorded": "1963-06-18",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 880
+  },
+  {
+   "id": "4442941",
+   "book_page": "PLAT 26 21",
+   "recorded": "1964-04-28",
+   "plat": "SOMERSET MANOR",
+   "subdivision_code": "7050",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1652
+  },
+  {
+   "id": "4443146",
+   "book_page": "PLAT 26 31",
+   "recorded": "1964-06-15",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1001
+  },
+  {
+   "id": "4442323",
+   "book_page": "PLAT 26 33",
+   "recorded": "1964-07-08",
+   "plat": "INDIAN HILLS",
+   "subdivision_code": "1500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 908
+  },
+  {
+   "id": "4591201",
+   "book_page": "PLAT 27 17",
+   "recorded": "1965-02-03",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1363
+  },
+  {
+   "id": "4591322",
+   "book_page": "PLAT 27 45",
+   "recorded": "1965-06-19",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 472
+  },
+  {
+   "id": "4730573",
+   "book_page": "PLAT 28 8",
+   "recorded": "1965-08-06",
+   "plat": "KENILWORTH",
+   "subdivision_code": "2100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1444
+  },
+  {
+   "id": "4730221",
+   "book_page": "PLAT 28 13",
+   "recorded": "1965-09-17",
+   "plat": "RED FOX",
+   "subdivision_code": "5800",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 957
+  },
+  {
+   "id": "1451379",
+   "book_page": "PLAT 29 14",
+   "recorded": "1966-08-19",
+   "plat": "COUNTRYSIDE-EAST",
+   "subdivision_code": "0750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1135
+  },
+  {
+   "id": "1450436",
+   "book_page": "PLAT 29 27",
+   "recorded": "1966-12-30",
+   "plat": "WEST RIDING",
+   "subdivision_code": "8100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1439
+  },
+  {
+   "id": "1451434",
+   "book_page": "PLAT 29 30",
+   "recorded": "1967-02-21",
+   "plat": "BRIARWOOD PLACE",
+   "subdivision_code": "0200",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 846
+  },
+  {
+   "id": "1451651",
+   "book_page": "PLAT 29 42",
+   "recorded": "1967-05-11",
+   "plat": "HUNTINGTON WOODS",
+   "subdivision_code": "1200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1232
+  },
+  {
+   "id": "1592681",
+   "book_page": "PLAT 30 46",
+   "recorded": "1968-08-15",
+   "plat": "SOMERSET ESTATES",
+   "subdivision_code": "6850",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 972
+  },
+  {
+   "id": "1593777",
+   "book_page": "PLAT 30 47",
+   "recorded": "1968-09-03",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 912
+  },
+  {
+   "id": "1733221",
+   "book_page": "PLAT 31 10",
+   "recorded": "1969-02-14",
+   "plat": "PRAIRIE HILLS",
+   "subdivision_code": "4500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 776
+  },
+  {
+   "id": "1733258",
+   "book_page": "PLAT 31 21",
+   "recorded": "1969-04-30",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 782
+  },
+  {
+   "id": "1733291",
+   "book_page": "PLAT 31 36",
+   "recorded": "1969-10-03",
+   "plat": "INDIAN HEIGHTS",
+   "subdivision_code": "1400",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 212
+  },
+  {
+   "id": "1733476",
+   "book_page": "PLAT 31 39",
+   "recorded": "1969-10-31",
+   "plat": "STEVENS ESTATES",
+   "subdivision_code": "7150",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 786
+  },
+  {
+   "id": "1850195",
+   "book_page": "PLAT 32 16",
+   "recorded": "1970-12-15",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1706
+  },
+  {
+   "id": "2213723",
+   "book_page": "PLAT 33 21",
+   "recorded": "1972-02-02",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 613
+  },
+  {
+   "id": "2509051",
+   "book_page": "PLAT 35 26",
+   "recorded": "1973-05-31",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1969
+  },
+  {
+   "id": "2642798",
+   "book_page": "PLAT 36 22",
+   "recorded": "1974-02-15",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 554
+  },
+  {
+   "id": "2903207",
+   "book_page": "PLAT 38 29",
+   "recorded": "1975-09-05",
+   "plat": "SOMERSET PLACE",
+   "subdivision_code": "7070",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1020
+  },
+  {
+   "id": "2903225",
+   "book_page": "PLAT 38 33",
+   "recorded": "1975-09-12",
+   "plat": "CORINTH WOOD",
+   "subdivision_code": "0680",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1137
+  },
+  {
+   "id": "2902193",
+   "book_page": "PLAT 38 39",
+   "recorded": "1975-10-01",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 609
+  },
+  {
+   "id": "3035000",
+   "book_page": "PLAT 39 15",
+   "recorded": "1976-01-22",
+   "plat": "ROE HILL",
+   "subdivision_code": "6300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 804
+  },
+  {
+   "id": "3035994",
+   "book_page": "PLAT 39 21",
+   "recorded": "1976-02-11",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 849
+  },
+  {
+   "id": "3434778",
+   "book_page": "PLAT 42 23",
+   "recorded": "1977-07-07",
+   "plat": "WEST RIDING 2ND PLAT",
+   "subdivision_code": "8100",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1655
+  },
+  {
+   "id": "3434789",
+   "book_page": "PLAT 42 26",
+   "recorded": "1977-07-18",
+   "plat": "CALVIN CREST",
+   "subdivision_code": "0250",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2921
+  },
+  {
+   "id": "3574310",
+   "book_page": "PLAT 43 32",
+   "recorded": "1977-12-21",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1271
+  },
+  {
+   "id": "3574315",
+   "book_page": "PLAT 43 34",
+   "recorded": "1977-12-30",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1068
+  },
+  {
+   "id": "3747132",
+   "book_page": "PLAT 44 19",
+   "recorded": "1978-04-17",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1179
+  },
+  {
+   "id": "3942897",
+   "book_page": "PLAT 45 29",
+   "recorded": "1978-09-21",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 862
+  },
+  {
+   "id": "4227772",
+   "book_page": "PLAT 47 26",
+   "recorded": "1979-05-11",
+   "plat": "BRIARWOOD PLACE SECOND PLAT",
+   "subdivision_code": "0200",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 928
+  },
+  {
+   "id": "4374522",
+   "book_page": "PLAT 48 48",
+   "recorded": "1980-01-30",
+   "plat": "SOMERSET COURTS WEST",
+   "subdivision_code": "6820",
+   "terms": [
+    "declaration"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 551
+  },
+  {
+   "id": "4493727",
+   "book_page": "PLAT 49 6",
+   "recorded": "1980-04-15",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1016
+  },
+  {
+   "id": "4493609",
+   "book_page": "PLAT 49 20",
+   "recorded": "1980-08-28",
+   "plat": "CANTERBURY COURT",
+   "subdivision_code": "0270",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1144
+  },
+  {
+   "id": "4494701",
+   "book_page": "PLAT 49 32",
+   "recorded": "1980-10-23",
+   "plat": "CALVIN CREST II",
+   "subdivision_code": "0260",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1491
+  },
+  {
+   "id": "4627732",
+   "book_page": "PLAT 50 7",
+   "recorded": "1981-03-18",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 815
+  },
+  {
+   "id": "4626759",
+   "book_page": "PLAT 50 21",
+   "recorded": "1981-06-03",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 741
+  },
+  {
+   "id": "4626786",
+   "book_page": "PLAT 50 33",
+   "recorded": "1981-07-24",
+   "plat": "DE VILLE 75 CONDOMINIUMS",
+   "subdivision_code": "0820",
+   "terms": [
+    "declaration"
+   ],
+   "citations": [],
+   "misc_mentions": 4,
+   "words": 2016
+  },
+  {
+   "id": "4626803",
+   "book_page": "PLAT 50 37",
+   "recorded": "1981-08-04",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 555
+  },
+  {
+   "id": "4758879",
+   "book_page": "PLAT 51 6",
+   "recorded": "1981-11-03",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 786
+  },
+  {
+   "id": "4758437",
+   "book_page": "PLAT 51 28",
+   "recorded": "1982-04-23",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 650
+  },
+  {
+   "id": "4757498",
+   "book_page": "PLAT 51 29",
+   "recorded": "1982-04-23",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 558
+  },
+  {
+   "id": "4757881",
+   "book_page": "PLAT 51 41",
+   "recorded": "1982-06-11",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 772
+  },
+  {
+   "id": "1475107",
+   "book_page": "PLAT 52 22",
+   "recorded": "1982-11-29",
+   "plat": "MEADOWBROOK EXECUTIVE",
+   "subdivision_code": "2371",
+   "terms": [
+    "declaration"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2113
+  },
+  {
+   "id": "1475120",
+   "book_page": "PLAT 52 24",
+   "recorded": "1982-11-30",
+   "plat": "FONTICELLO",
+   "subdivision_code": "0880",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1441
+  },
+  {
+   "id": "1476021",
+   "book_page": "PLAT 52 30",
+   "recorded": "1983-01-17",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 584
+  },
+  {
+   "id": "1579512",
+   "book_page": "PLAT 53 4",
+   "recorded": "1983-05-02",
+   "plat": "NORMANDIE COURT",
+   "subdivision_code": "3680",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1762
+  },
+  {
+   "id": "1579538",
+   "book_page": "PLAT 53 5",
+   "recorded": "1983-05-03",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 668
+  },
+  {
+   "id": "1579474",
+   "book_page": "PLAT 53 26",
+   "recorded": "1983-06-22",
+   "plat": "MISSION VILLAGE",
+   "subdivision_code": "3000",
+   "terms": [
+    "homes association"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 896
+  },
+  {
+   "id": "1579498",
+   "book_page": "PLAT 53 34",
+   "recorded": "1983-07-01",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 644
+  },
+  {
+   "id": "1579499",
+   "book_page": "PLAT 53 35",
+   "recorded": "1983-07-01",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 593
+  },
+  {
+   "id": "1703742",
+   "book_page": "PLAT 54 2",
+   "recorded": "1983-08-15",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 570
+  },
+  {
+   "id": "1703795",
+   "book_page": "PLAT 54 3",
+   "recorded": "1983-08-15",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 668
+  },
+  {
+   "id": "1705134",
+   "book_page": "PLAT 54 7",
+   "recorded": "1983-08-19",
+   "plat": "ROE-69",
+   "subdivision_code": "6350",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1236
+  },
+  {
+   "id": "1704291",
+   "book_page": "PLAT 54 19",
+   "recorded": "1983-09-06",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 683
+  },
+  {
+   "id": "1703841",
+   "book_page": "PLAT 54 41",
+   "recorded": "1983-11-28",
+   "plat": "PADDOCK COURT",
+   "subdivision_code": "3750",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 991
+  },
+  {
+   "id": "1812469",
+   "book_page": "PLAT 55 10",
+   "recorded": "1984-01-23",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 696
+  },
+  {
+   "id": "1811747",
+   "book_page": "PLAT 55 11",
+   "recorded": "1984-01-23",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 717
+  },
+  {
+   "id": "1812484",
+   "book_page": "PLAT 55 12",
+   "recorded": "1984-01-23",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 803
+  },
+  {
+   "id": "1812761",
+   "book_page": "PLAT 55 25",
+   "recorded": "1984-03-05",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 1,
+   "words": 792
+  },
+  {
+   "id": "1811979",
+   "book_page": "PLAT 55 42",
+   "recorded": "1984-04-23",
+   "plat": "THE CHATEAU CONDOMINIUM",
+   "subdivision_code": "7500",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 618
+  },
+  {
+   "id": "1924250",
+   "book_page": "PLAT 57 2",
+   "recorded": "1984-07-20",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 569
+  },
+  {
+   "id": "1924318",
+   "book_page": "PLAT 57 3",
+   "recorded": "1984-07-20",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 582
+  },
+  {
+   "id": "1924277",
+   "book_page": "PLAT 57 23",
+   "recorded": "1984-09-10",
+   "plat": "CANTERBURY COURT ESTATES",
+   "subdivision_code": "0280",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 886
+  },
+  {
+   "id": "1943707",
+   "book_page": "PLAT 58 12",
+   "recorded": "1985-01-18",
+   "plat": "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS",
+   "subdivision_code": "3460",
+   "terms": [
+    "declaration"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1721
+  },
+  {
+   "id": "1943783",
+   "book_page": "PLAT 58 21",
+   "recorded": "1985-02-13",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 588
+  },
+  {
+   "id": "1945212",
+   "book_page": "PLAT 58 36",
+   "recorded": "1985-03-18",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 575
+  },
+  {
+   "id": "1944414",
+   "book_page": "PLAT 58 37",
+   "recorded": "1985-03-18",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 666
+  },
+  {
+   "id": "1988087",
+   "book_page": "PLAT 59 6",
+   "recorded": "1985-05-02",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 584
+  },
+  {
+   "id": "1988003",
+   "book_page": "PLAT 59 46",
+   "recorded": "1985-07-26",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 541
+  },
+  {
+   "id": "1988015",
+   "book_page": "PLAT 59 49",
+   "recorded": "1985-08-13",
+   "plat": "NORMANDIE COURT SECOND PLAT",
+   "subdivision_code": "3680",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1700
+  },
+  {
+   "id": "2027483",
+   "book_page": "PLAT 60 28",
+   "recorded": "1985-09-17",
+   "plat": "EVERGREEN",
+   "subdivision_code": "0850",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2445
+  },
+  {
+   "id": "2027724",
+   "book_page": "PLAT 60 37",
+   "recorded": "1985-10-10",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "subdivision_code": "6451",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1050
+  },
+  {
+   "id": "2027807",
+   "book_page": "PLAT 60 49",
+   "recorded": "1985-11-22",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 561
+  },
+  {
+   "id": "2027817",
+   "book_page": "PLAT 60 50",
+   "recorded": "1985-11-22",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 631
+  },
+  {
+   "id": "2068717",
+   "book_page": "PLAT 61 1",
+   "recorded": "1985-11-22",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 779
+  },
+  {
+   "id": "2068775",
+   "book_page": "PLAT 61 2",
+   "recorded": "1985-11-22",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 680
+  },
+  {
+   "id": "2069938",
+   "book_page": "PLAT 61 3",
+   "recorded": "1985-11-22",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 615
+  },
+  {
+   "id": "2108835",
+   "book_page": "PLAT 62 9",
+   "recorded": "1986-04-17",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 714
+  },
+  {
+   "id": "2108395",
+   "book_page": "PLAT 62 41",
+   "recorded": "1986-06-26",
+   "plat": "CORINTH HILLS",
+   "subdivision_code": "0500",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 837
+  },
+  {
+   "id": "2424340",
+   "book_page": "PLAT 65 28",
+   "recorded": "1987-03-11",
+   "plat": "CORINTH DOWNS",
+   "subdivision_code": "0430",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 618
+  },
+  {
+   "id": "2543255",
+   "book_page": "PLAT 66 12",
+   "recorded": "1987-05-08",
+   "plat": "MISSION PINES",
+   "subdivision_code": "2780",
+   "terms": [
+    "declaration",
+    "homes association",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 975
+  },
+  {
+   "id": "2656732",
+   "book_page": "PLAT 67 16",
+   "recorded": "1987-08-07",
+   "plat": "GREENVIEW PLACE",
+   "subdivision_code": "1110",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 708
+  },
+  {
+   "id": "2656847",
+   "book_page": "PLAT 67 32",
+   "recorded": "1987-09-09",
+   "plat": "VAUGHN SUBDIVISION",
+   "subdivision_code": "7710",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 670
+  },
+  {
+   "id": "2861527",
+   "book_page": "Plat 69 30",
+   "recorded": "1988-04-19",
+   "plat": "CORINTH PLACE VILLAS",
+   "subdivision_code": "0610",
+   "terms": [
+    "declaration"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1686
+  },
+  {
+   "id": "2953203",
+   "book_page": "Plat 70 24",
+   "recorded": "1988-07-25",
+   "plat": "FONTANA PLACE",
+   "subdivision_code": "0870",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 930
+  },
+  {
+   "id": "3219087",
+   "book_page": "Plat 73 5",
+   "recorded": "1989-05-10",
+   "plat": "PINECROFT",
+   "subdivision_code": "4040",
+   "terms": [
+    "building line",
+    "homes association",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1317
+  },
+  {
+   "id": "3289630",
+   "book_page": "PLAT 74 17",
+   "recorded": "1989-09-08",
+   "plat": "MISSION PINES SECOND PLAT",
+   "subdivision_code": "2780",
+   "terms": [
+    "declaration",
+    "homes association",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 5114
+  },
+  {
+   "id": "3843553",
+   "book_page": "Plat 80 14",
+   "recorded": "1991-12-30",
+   "plat": "SOUTHGATE FINANCIAL CENTER",
+   "subdivision_code": "7120",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1464
+  },
+  {
+   "id": "3933508",
+   "book_page": "Plat 81 2",
+   "recorded": "1992-04-22",
+   "plat": "REPLAT OF PART OF LOT 5 MEADOW VIEW",
+   "subdivision_code": "5850",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 919
+  },
+  {
+   "id": "4388551",
+   "book_page": "Plat 87 44",
+   "recorded": "1994-06-28",
+   "plat": "ELIZABETH'S MEADOW",
+   "subdivision_code": "0840",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 968
+  },
+  {
+   "id": "1780090",
+   "book_page": "Plat 98 31",
+   "recorded": "1997-03-04",
+   "plat": "VILLAGE PARK",
+   "subdivision_code": "7715",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1275
+  },
+  {
+   "id": "2188458",
+   "book_page": "Plat 102 39",
+   "recorded": "1998-01-02",
+   "plat": "HOME PLACE",
+   "subdivision_code": "1180",
+   "terms": [
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1118
+  },
+  {
+   "id": "2188490",
+   "book_page": "Plat 102 47",
+   "recorded": "1998-01-20",
+   "plat": "BRIGHTON GARDENS",
+   "subdivision_code": "0220",
+   "terms": [
+    "building line",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1537
+  },
+  {
+   "id": "2308948",
+   "book_page": "Plat 110 7",
+   "recorded": "1999-04-22",
+   "plat": "OLD TRAIL",
+   "subdivision_code": "3725",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 881
+  },
+  {
+   "id": "2308644",
+   "book_page": "Plat 110 47",
+   "recorded": "1999-06-24",
+   "plat": "PINE CREEK",
+   "subdivision_code": "4025",
+   "terms": [
+    "building line",
+    "covenants",
+    "homes association",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 1,
+   "words": 2386
+  },
+  {
+   "id": "2678572",
+   "book_page": "Plat 130 20",
+   "recorded": "2003-05-01",
+   "plat": "INDIAN HEIGHTS",
+   "subdivision_code": "1400",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1284
+  },
+  {
+   "id": "2707208",
+   "book_page": "Plat 131 9",
+   "recorded": "2003-06-27",
+   "plat": "OLD MISSION LODGE #153",
+   "subdivision_code": "3720",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 2,
+   "words": 1045
+  },
+  {
+   "id": "47623",
+   "book_page": "OR 200403 012920",
+   "recorded": "2004-03-29",
+   "plat": "CRESCENT COURT",
+   "subdivision_code": "0770",
+   "terms": [
+    "building line",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1363
+  },
+  {
+   "id": "184892",
+   "book_page": "OR 200502 004234",
+   "recorded": "2005-02-11",
+   "plat": "VILLAGE PARK",
+   "subdivision_code": "7715",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "333676",
+   "book_page": "OR 200602 007242",
+   "recorded": "2006-02-24",
+   "plat": "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX",
+   "subdivision_code": "5520",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1071
+  },
+  {
+   "id": "724692",
+   "book_page": "OR 200907 007470",
+   "recorded": "2009-07-20",
+   "plat": "95TH AND MISSION",
+   "subdivision_code": "3650",
+   "terms": [
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1505
+  },
+  {
+   "id": "930930",
+   "book_page": "OR 201105 002190",
+   "recorded": "2011-05-09",
+   "plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "subdivision_code": "7705",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "993039",
+   "book_page": "OR 201111 008242",
+   "recorded": "2011-11-23",
+   "plat": "CORINTH SQUARE NORTH",
+   "subdivision_code": "0660",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "1031496",
+   "book_page": "OR 201203 007986",
+   "recorded": "2012-03-23",
+   "plat": "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
+   "subdivision_code": "0050",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "1093982",
+   "book_page": "OR 201208 013209",
+   "recorded": "2012-08-31",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "subdivision_code": "6451",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "1220979",
+   "book_page": "OR 201307 004493",
+   "recorded": "2013-07-10",
+   "plat": "MEADOWBROOK EXECUTIVE",
+   "subdivision_code": "2371",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "1226203",
+   "book_page": "OR 201307 009722",
+   "recorded": "2013-07-23",
+   "plat": "SAINT ANN CATHOLIC CHURCH",
+   "subdivision_code": "6445",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "1241450",
+   "book_page": "OR 201308 011387",
+   "recorded": "2013-08-29",
+   "plat": "PRAIRIE VILLAGE SHOPPING CENTER",
+   "subdivision_code": "5540",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "1278629",
+   "book_page": "OR 201401 000224",
+   "recorded": "2014-01-02",
+   "plat": "RUTIAGA RANCH",
+   "subdivision_code": "6435",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "5162303",
+   "book_page": "OR 201512 004235",
+   "recorded": "2015-12-15",
+   "plat": "BRIARWOOD ELEMENTARY",
+   "subdivision_code": "0195",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 0
+  },
+  {
+   "id": "5225873",
+   "book_page": "OR 201607 000194",
+   "recorded": "2016-07-01",
+   "plat": "MISSION CHATEAU",
+   "subdivision_code": "2770",
+   "terms": [
+    "building line",
+    "covenants",
+    "declaration",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2691
+  },
+  {
+   "id": "5253789",
+   "book_page": "OR 201608 011216",
+   "recorded": "2016-08-29",
+   "plat": "MISSION CHATEAU 2ND PLAT",
+   "subdivision_code": "2770",
+   "terms": [
+    "building line",
+    "covenants",
+    "declaration",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1488
+  },
+  {
+   "id": "5275139",
+   "book_page": "OR 201610 005993",
+   "recorded": "2016-10-18",
+   "plat": "MEADOWBROOK PARK",
+   "subdivision_code": "2440",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 3502
+  },
+  {
+   "id": "5276266",
+   "book_page": "OR 201610 007115",
+   "recorded": "2016-10-20",
+   "plat": "MEADOWBROOK 2020",
+   "subdivision_code": "2450",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1495
+  },
+  {
+   "id": "5276939",
+   "book_page": "OR 201610 007784",
+   "recorded": "2016-10-21",
+   "plat": "HOMESTEAD ESTATES",
+   "subdivision_code": "1185",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1498
+  },
+  {
+   "id": "5280124",
+   "book_page": "OR 201610 010944",
+   "recorded": "2016-10-31",
+   "plat": "CHADWICK COURT",
+   "subdivision_code": "0380",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1417
+  },
+  {
+   "id": "5294900",
+   "book_page": "OR 201612 004104",
+   "recorded": "2016-12-12",
+   "plat": "PRAIRIE RIDGE REPLAT",
+   "subdivision_code": "4905",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1306
+  },
+  {
+   "id": "5441093",
+   "book_page": "OR 201803 004450",
+   "recorded": "2018-03-15",
+   "plat": "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2",
+   "subdivision_code": "1870",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1528
+  },
+  {
+   "id": "5448818",
+   "book_page": "OR 201804 002829",
+   "recorded": "2018-04-10",
+   "plat": "MEADOWBROOK PARK",
+   "subdivision_code": "2440",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1171
+  },
+  {
+   "id": "5493214",
+   "book_page": "OR 201808 005196",
+   "recorded": "2018-08-16",
+   "plat": "HOMESTEAD ESTATES REPLAT",
+   "subdivision_code": "1186",
+   "terms": [
+    "building line"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1071
+  },
+  {
+   "id": "5562450",
+   "book_page": "OR 201905 002217",
+   "recorded": "2019-05-07",
+   "plat": "CAPELLA CONDOMINIUM",
+   "subdivision_code": "0290",
+   "terms": [
+    "building line",
+    "declaration"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2342
+  },
+  {
+   "id": "5596343",
+   "book_page": "OR 201908 004366",
+   "recorded": "2019-08-13",
+   "plat": "MEADOWBROOK PARK THIRD PLAT",
+   "subdivision_code": "2441",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1205
+  },
+  {
+   "id": "5658318",
+   "book_page": "OR 202002 006308",
+   "recorded": "2020-02-26",
+   "plat": "PRAIRIE RIDGE SECOND PLAT",
+   "subdivision_code": "4910",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1019
+  },
+  {
+   "id": "5684703",
+   "book_page": "OR 202005 003909",
+   "recorded": "2020-05-11",
+   "plat": "MEADOWBROOK PARK FOURTH PLAT",
+   "subdivision_code": "2441",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1181
+  },
+  {
+   "id": "5720630",
+   "book_page": "OR 202007 013891",
+   "recorded": "2020-07-31",
+   "plat": "SHARP LAW OFFICES FIRST PLAT",
+   "subdivision_code": "6470",
+   "terms": [
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1378
+  },
+  {
+   "id": "5766351",
+   "book_page": "OR 202011 002593",
+   "recorded": "2020-11-06",
+   "plat": "MEADOWBROOK PARK FIFTH PLAT",
+   "subdivision_code": "2441",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 927
+  },
+  {
+   "id": "5815353",
+   "book_page": "OR 202103 000603",
+   "recorded": "2021-03-02",
+   "plat": "MEADOWBROOK PARK SIXTH PLAT",
+   "subdivision_code": "2441",
+   "terms": [
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 904
+  },
+  {
+   "id": "5815354",
+   "book_page": "OR 202103 000604",
+   "recorded": "2021-03-02",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 702
+  },
+  {
+   "id": "5815355",
+   "book_page": "OR 202103 000605",
+   "recorded": "2021-03-02",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 729
+  },
+  {
+   "id": "5815356",
+   "book_page": "OR 202103 000606",
+   "recorded": "2021-03-02",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 777
+  },
+  {
+   "id": "5952184",
+   "book_page": "OR 202202 005249",
+   "recorded": "2022-02-18",
+   "plat": "MEADOWBROOK PLACE",
+   "subdivision_code": "2445",
+   "terms": [
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1382
+  },
+  {
+   "id": "6020443",
+   "book_page": "OR 202210 002987",
+   "recorded": "2022-10-13",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 919
+  },
+  {
+   "id": "6037713",
+   "book_page": "OR 202301 000560",
+   "recorded": "2023-01-05",
+   "plat": "SUNSET HILL ACRES SECOND PLAT",
+   "subdivision_code": "7300",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 488
+  },
+  {
+   "id": "6059961",
+   "book_page": "OR 202305 000657",
+   "recorded": "2023-05-03",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 756
+  },
+  {
+   "id": "6112590",
+   "book_page": "OR 202312 005296",
+   "recorded": "2023-12-27",
+   "plat": "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX",
+   "subdivision_code": "5530",
+   "terms": [],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 2298
+  },
+  {
+   "id": "6148534",
+   "book_page": "OR 202406 006702",
+   "recorded": "2024-06-28",
+   "plat": "MEADOWBROOK PARK REPLAT",
+   "subdivision_code": "2442",
+   "terms": [
+    "building line",
+    "covenants",
+    "restrictions"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 753
+  },
+  {
+   "id": "6151746",
+   "book_page": "OR 202407 002857",
+   "recorded": "2024-07-11",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+   "subdivision_code": "6451",
+   "terms": [
+    "declaration"
+   ],
+   "citations": [],
+   "misc_mentions": 0,
+   "words": 1134
+  }
+ ]
+}

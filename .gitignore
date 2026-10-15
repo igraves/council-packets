@@ -9,3 +9,6 @@ __pycache__/
 votes.json
 budgets.json
 parcels/*-owners.csv
+deeds/cache/
+deeds/images/
+deeds/ocr/

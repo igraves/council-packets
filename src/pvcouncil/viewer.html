@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deed Viewer</title>
+<style>
+:root {
+  --bg: #f4f3ef; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #dddbd3;
+  --accent: #2f5d8a; --accent-ink: #ffffff; --hover: #eceae3; --sel: #dbe6f1; --stage: #8a8984;
+  --warn: #9a3b1f; --warn-bg: #f7e3da; --chip: #eceae3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1c1e; --panel: #232427; --ink: #e8e6e0; --muted: #9a9890; --line: #36373b;
+    --accent: #7fa8d1; --accent-ink: #12161a; --hover: #2c2d31; --sel: #2c3b4b; --stage: #121314;
+    --warn: #f0a58a; --warn-bg: #4a2a1f; --chip: #303136;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b1c1e; --panel: #232427; --ink: #e8e6e0; --muted: #9a9890; --line: #36373b;
+  --accent: #7fa8d1; --accent-ink: #12161a; --hover: #2c2d31; --sel: #2c3b4b; --stage: #121314;
+  --warn: #f0a58a; --warn-bg: #4a2a1f; --chip: #303136;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  display: grid; grid-template-columns: 320px 1fr; overflow: hidden; }
+button, input, select { font: inherit; color: inherit; }
+
+/* sidebar */
+aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+.filters { padding: 12px; border-bottom: 1px solid var(--line); display: grid; gap: 8px; }
+.filters h1 { font-size: 15px; margin: 0; }
+.filters input[type=search], .filters select { width: 100%; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+.filters label { display: flex; gap: 6px; align-items: center; color: var(--muted); font-size: 13px; }
+.count { color: var(--muted); font-size: 12px; }
+#list { overflow-y: auto; flex: 1; padding-bottom: 24px; }
+.group { padding: 10px 12px 4px; font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .03em;
+  position: sticky; top: 0; z-index: 1; background: var(--panel); border-bottom: 1px solid var(--line); }
+.item { display: grid; grid-template-columns: auto 1fr; gap: 2px 8px; padding: 7px 12px; cursor: pointer; border-bottom: 1px solid var(--line); }
+.item:hover { background: var(--hover); }
+.item.sel { background: var(--sel); }
+.item .date { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+.item .bp { font-weight: 500; }
+.item .sub { grid-column: 1 / -1; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.badge { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 9px; background: var(--chip); color: var(--ink); margin-left: 4px; vertical-align: 1px; }
+.badge.plat { background: transparent; border: 1px solid var(--line); }
+.badge.warn { background: var(--warn-bg); color: var(--warn); }
+
+/* main */
+main { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+header { background: var(--panel); border-bottom: 1px solid var(--line); padding: 8px 12px; display: grid; gap: 6px; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.meta h2 { font-size: 16px; margin: 0; }
+.meta .sm { color: var(--muted); font-size: 13px; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.note { color: var(--muted); font-size: 13px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.toolbar .sep { width: 1px; height: 22px; background: var(--line); margin: 0 4px; }
+.toolbar button { border: 1px solid var(--line); background: var(--bg); border-radius: 6px; padding: 3px 9px; cursor: pointer; min-width: 30px; }
+.toolbar button:hover { background: var(--hover); }
+.toolbar button[aria-pressed=true] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.toolbar input[type=number] { width: 52px; padding: 3px 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); text-align: right; }
+.toolbar input[type=range] { width: 110px; }
+.zoomval { width: 48px; text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+#stage { flex: 1; overflow: auto; background: var(--stage); position: relative; cursor: grab; }
+#stage.drag { cursor: grabbing; }
+#stage .pad { padding: 16px; width: max-content; min-width: 100%; display: flex; justify-content: center; }
+#page { display: block; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.35); user-select: none; -webkit-user-drag: none; image-rendering: auto; }
+.empty { color: #ddd; padding: 40px; text-align: center; }
+.loading { position: absolute; top: 10px; right: 14px; font-size: 12px; color: #eee; background: rgba(0,0,0,.5); padding: 2px 8px; border-radius: 4px; display: none; }
+.help { color: var(--muted); font-size: 12px; }
+kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; }
+
+@media (max-width: 760px) {
+  body { grid-template-columns: 1fr; grid-template-rows: 40vh 1fr; }
+  aside { border-right: 0; border-bottom: 1px solid var(--line); }
+  .help { display: none; }
+}
+</style>
+</head>
+<body>
+<aside>
+  <div class="filters">
+    <h1>Prairie Village plats &amp; restrictions</h1>
+    <input type="search" id="q" placeholder="Search subdivision, book/page, note…">
+    <select id="kind">
+      <option value="">All documents</option>
+      <option value="plat">Plats</option>
+      <option value="decl">Restrictions &amp; HOA declarations</option>
+      <option value="other">Other instruments</option>
+    </select>
+    <label><input type="checkbox" id="racial"> Only racially restrictive covenants</label>
+    <label><input type="checkbox" id="stated"> Only plats stating restrictions</label>
+    <div class="count" id="count"></div>
+  </div>
+  <div id="list"></div>
+</aside>
+<main>
+  <header>
+    <div class="meta" id="meta"><h2>Select a document</h2></div>
+    <div class="toolbar">
+      <button id="prevDoc" title="Previous document (k)">⇡ Doc</button>
+      <button id="nextDoc" title="Next document (j)">⇣ Doc</button>
+      <span class="sep"></span>
+      <button id="prevPage" title="Previous page (←)">‹</button>
+      <input type="number" id="pageNum" min="1" value="1"> <span id="pageCount" class="sm">/ –</span>
+      <button id="nextPage" title="Next page (→)">›</button>
+      <span class="sep"></span>
+      <button id="zoomOut" title="Zoom out (−)">−</button>
+      <input type="range" id="zoomSlider" min="0" max="100" value="0" title="Zoom">
+      <button id="zoomIn" title="Zoom in (+)">+</button>
+      <span class="zoomval" id="zoomVal"></span>
+      <button id="fitPage" title="Fit page (0)">Fit</button>
+      <button id="fitWidth" title="Fit width (w)">Width</button>
+      <span class="sep"></span>
+      <button id="rotate" title="Rotate 90° (r)">⟳</button>
+      <button id="invert" aria-pressed="false" title="Invert, for photostat negatives (i)">Invert</button>
+      <label class="sm" title="Contrast">◐ <input type="range" id="contrast" min="60" max="250" value="100"></label>
+    </div>
+    <div class="help"><kbd>←</kbd><kbd>→</kbd> page · <kbd>j</kbd><kbd>k</kbd> document · <kbd>+</kbd><kbd>−</kbd> or ⌘/Ctrl-scroll or pinch to zoom · drag to pan · double-click to zoom in (⇧ out) · <kbd>0</kbd> fit · <kbd>w</kbd> width · <kbd>r</kbd> rotate · <kbd>i</kbd> invert</div>
+  </header>
+  <div id="stage"><div class="loading" id="loading">rendering…</div><div class="pad"><div class="empty" id="empty">Pick a plat or instrument from the list.</div><img id="page" alt="" hidden></div></div>
+</main>
+<script>
+const DPI_STEPS = [72, 110, 160, 220, 300];
+const DECL = new Set(["restrictions", "homes association", "restriction amendment"]);
+const $ = id => document.getElementById(id);
+const stage = $("stage"), img = $("page");
+let docs = [], shown = [], cur = null, page = 1, rot = 0, width = 0, invert = false, contrast = 100, dpiShown = 0, fitMode = "page";
+let reqToken = 0;
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("deedviewer." + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("deedviewer." + k, JSON.stringify(v)); } catch {} },
+};
+
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c])); }
+function racial(d) { return (d.features || []).includes("racial restriction"); }
+function kindBadge(d) {
+  if (d.kind === "plat") return `<span class="badge plat">plat</span>`;
+  return `<span class="badge">${esc(d.kind)}</span>` + (racial(d) ? `<span class="badge warn">racial covenant</span>` : "");
+}
+
+async function init() {
+  docs = await (await fetch("/api/docs")).json();
+  docs.forEach((d, i) => d.idx = i);
+  $("q").value = store.get("q", ""); $("kind").value = store.get("kind", "");
+  $("racial").checked = store.get("racial", false); $("stated").checked = store.get("stated", false);
+  invert = false; contrast = 100;
+  for (const id of ["q", "kind", "racial", "stated"]) $(id).addEventListener("input", () => {
+    store.set(id, $(id).type === "checkbox" ? $(id).checked : $(id).value); renderList();
+  });
+  renderList();
+  const h = parseHash();
+  if (h) open(h.key, h.page);
+}
+
+function filtered() {
+  const q = $("q").value.trim().toLowerCase(), k = $("kind").value;
+  return docs.filter(d => {
+    if (k === "plat" && d.kind !== "plat") return false;
+    if (k === "decl" && !DECL.has(d.kind)) return false;
+    if (k === "other" && (d.kind === "plat" || DECL.has(d.kind))) return false;
+    if ($("racial").checked && !racial(d)) return false;
+    if ($("stated").checked && !(d.kind === "plat" && (d.features || []).some(f => f === "restrictions" || f === "covenants"))) return false;
+    if (q) {
+      const hay = [d.subdivision, d.title, d.book_page, d.recorded, d.kind, d.note, d.code, ...(d.features || [])].join(" ").toLowerCase();
+      if (!q.split(/\s+/).every(w => hay.includes(w))) return false;
+    }
+    return true;
+  });
+}
+
+function renderList() {
+  shown = filtered();
+  $("count").textContent = `${shown.length} of ${docs.length} documents`;
+  let html = "", last = null;
+  for (const d of shown) {
+    const g = d.subdivision + (d.code ? ` (${d.code})` : "");
+    if (g !== last) { html += `<div class="group">${esc(g)}</div>`; last = g; }
+    html += `<div class="item${cur && cur.key === d.key ? " sel" : ""}" data-key="${esc(d.key)}">
+      <span class="date">${esc(d.recorded)}</span><span class="bp">${esc(d.book_page)} ${kindBadge(d)}</span>
+      ${d.title !== d.subdivision ? `<span class="sub">${esc(d.title)}</span>` : ""}</div>`;
+  }
+  $("list").innerHTML = html || `<div class="empty" style="color:var(--muted)">No documents match.</div>`;
+}
+$("list").addEventListener("click", e => { const it = e.target.closest(".item"); if (it) open(it.dataset.key, 1); });
+
+function parseHash() {
+  const m = location.hash.match(/^#([pr]:\d+)(?:\/(\d+))?/);
+  return m ? { key: m[1], page: +(m[2] || 1) } : null;
+}
+window.addEventListener("hashchange", () => { const h = parseHash(); if (h && (!cur || h.key !== cur.key || h.page !== page)) open(h.key, h.page); });
+
+function open(key, p) {
+  const d = docs.find(x => x.key === key);
+  if (!d) return;
+  const same = cur && cur.key === key;
+  cur = d; page = Math.min(Math.max(1, p || 1), d.pages);
+  if (!same) { rot = 0; fitMode = "page"; }
+  history.replaceState(null, "", `#${d.key}/${page}`);
+  document.querySelectorAll(".item.sel").forEach(x => x.classList.remove("sel"));
+  const el = document.querySelector(`.item[data-key="${CSS.escape(key)}"]`);
+  if (el) { el.classList.add("sel"); el.scrollIntoView({ block: "nearest" }); }
+  renderMeta();
+  showPage();
+}
+
+function renderMeta() {
+  const d = cur, chips = (d.features || []).map(f => `<span class="badge${f === "racial restriction" ? " warn" : ""}">${esc(f)}</span>`).join("");
+  $("meta").innerHTML = `<h2>${esc(d.book_page)}</h2>
+    <span class="sm">recorded ${esc(d.recorded)}</span>${kindBadge(d)}
+    <span class="sm">${esc(d.subdivision)}${d.code ? " · " + esc(d.code) : ""}${d.title !== d.subdivision ? " · " + esc(d.title) : ""}</span>
+    ${d.filed_with ? `<span class="sm">filed with ${esc(d.filed_with.join(", "))}</span>` : ""}
+    ${d.term ? `<span class="sm">${esc(d.term)}</span>` : ""}
+    ${chips ? `<div class="chips" style="flex-basis:100%">${chips}</div>` : ""}
+    ${d.note ? `<div class="note" style="flex-basis:100%">${esc(d.note)}</div>` : ""}`;
+  $("pageCount").textContent = `/ ${d.pages}`;
+  $("pageNum").max = d.pages;
+}
+
+// page geometry in points, after rotation
+function dims() {
+  const [w, h] = cur.dims[page - 1] || cur.dims[0];
+  return rot % 180 ? [h, w] : [w, h];
+}
+function fitWidthPx() { return Math.max(100, stage.clientWidth - 32); }
+function fitPagePx() { const [w, h] = dims(); return Math.max(100, Math.min(stage.clientWidth - 32, (stage.clientHeight - 32) * w / h)); }
+function minW() { return Math.min(fitPagePx(), 300); }
+function maxW() { const [w] = dims(); return Math.max(fitWidthPx() * 6, w / 72 * 300 / devicePixelRatio); }
+
+function pickDpi(px) {
+  const [w] = dims(), need = px * devicePixelRatio / (w / 72);
+  return DPI_STEPS.find(s => s >= need * 0.9) || DPI_STEPS[DPI_STEPS.length - 1];
+}
+function srcFor(dpi) { return `/page/${cur.key}/${page}.jpg?dpi=${dpi}&rot=${rot}`; }
+
+function showPage() {
+  $("empty").hidden = true; img.hidden = false;
+  $("pageNum").value = page;
+  width = fitMode === "width" ? fitWidthPx() : fitPagePx();
+  dpiShown = 0;
+  img.removeAttribute("src");
+  applySize();
+  stage.scrollTo(0, 0);
+  loadSharp(true);
+  history.replaceState(null, "", `#${cur.key}/${page}`);
+  // warm the next page
+  if (page < cur.pages) { const [w] = cur.dims[page] || cur.dims[0]; new Image().src = `/page/${cur.key}/${page + 1}.jpg?dpi=${pickDpi(width)}&rot=${rot}`; }
+}
+
+function applySize() {
+  const [w, h] = dims();
+  img.style.width = width + "px";
+  img.style.height = (width * h / w) + "px";
+  img.style.filter = `${invert ? "invert(1) " : ""}contrast(${contrast}%)`;
+  const lo = Math.log(minW()), hi = Math.log(maxW());
+  $("zoomSlider").value = Math.round(100 * (Math.log(width) - lo) / (hi - lo));
+  $("zoomVal").textContent = Math.round(100 * width / fitPagePx()) + "%";
+}
+
+// swap in a sharper render when the zoom needs one; keep the old one showing meanwhile
+let sharpTimer = null;
+function loadSharp(now) {
+  clearTimeout(sharpTimer);
+  sharpTimer = setTimeout(() => {
+    const dpi = pickDpi(width);
+    if (dpi <= dpiShown) return;
+    const token = ++reqToken, src = srcFor(dpi), pre = new Image();
+    $("loading").style.display = "block";
+    pre.onload = () => { if (token !== reqToken) return; img.src = src; dpiShown = dpi; $("loading").style.display = "none"; };
+    pre.onerror = () => { if (token === reqToken) $("loading").style.display = "none"; };
+    pre.src = src;
+  }, now ? 0 : 180);
+}
+
+// zoom to a new width, keeping the point under (cx, cy) in the stage fixed
+function zoomTo(newW, cx, cy) {
+  if (!cur) return;
+  newW = Math.min(maxW(), Math.max(minW(), newW));
+  const pad = 16, r = stage.getBoundingClientRect();
+  cx = cx ?? r.width / 2; cy = cy ?? r.height / 2;
+  const ir = img.getBoundingClientRect();
+  const fx = (r.left + cx - ir.left) / ir.width, fy = (r.top + cy - ir.top) / ir.height;
+  width = newW; fitMode = null;
+  applySize();
+  const nr = img.getBoundingClientRect();
+  stage.scrollLeft += (nr.left + fx * nr.width) - (r.left + cx);
+  stage.scrollTop += (nr.top + fy * nr.height) - (r.top + cy);
+  loadSharp(false);
+}
+
+$("zoomIn").onclick = () => zoomTo(width * 1.25);
+$("zoomOut").onclick = () => zoomTo(width / 1.25);
+$("zoomSlider").oninput = e => { const lo = Math.log(minW()), hi = Math.log(maxW()); zoomTo(Math.exp(lo + (hi - lo) * e.target.value / 100)); };
+$("fitPage").onclick = () => { fitMode = "page"; width = fitPagePx(); applySize(); stage.scrollTo(0, 0); loadSharp(true); };
+$("fitWidth").onclick = () => { fitMode = "width"; width = fitWidthPx(); applySize(); stage.scrollTo(0, 0); loadSharp(true); };
+$("rotate").onclick = () => { if (!cur) return; rot = (rot + 90) % 360; showPage(); };
+$("invert").onclick = () => { invert = !invert; $("invert").setAttribute("aria-pressed", invert); applySize(); };
+$("contrast").oninput = e => { contrast = +e.target.value; applySize(); };
+$("prevPage").onclick = () => cur && page > 1 && (page--, showPage());
+$("nextPage").onclick = () => cur && page < cur.pages && (page++, showPage());
+$("pageNum").onchange = e => { if (!cur) return; page = Math.min(cur.pages, Math.max(1, +e.target.value || 1)); showPage(); };
+function stepDoc(n) {
+  if (!shown.length) return;
+  const i = cur ? shown.findIndex(d => d.key === cur.key) : -1;
+  const next = shown[Math.min(shown.length - 1, Math.max(0, i + n))];
+  if (next) open(next.key, 1);
+}
+$("prevDoc").onclick = () => stepDoc(-1);
+$("nextDoc").onclick = () => stepDoc(1);
+
+// wheel: ctrl/cmd (and trackpad pinch, which arrives as ctrl+wheel) zooms; plain wheel scrolls
+stage.addEventListener("wheel", e => {
+  if (!cur || !(e.ctrlKey || e.metaKey)) return;
+  e.preventDefault();
+  const r = stage.getBoundingClientRect();
+  zoomTo(width * Math.exp(-e.deltaY * (e.deltaMode ? 0.05 : 0.002)), e.clientX - r.left, e.clientY - r.top);
+}, { passive: false });
+
+// drag to pan
+let drag = null;
+stage.addEventListener("pointerdown", e => {
+  if (e.button !== 0 || !cur) return;
+  drag = { x: e.clientX, y: e.clientY, l: stage.scrollLeft, t: stage.scrollTop, moved: false };
+  stage.setPointerCapture(e.pointerId); stage.classList.add("drag");
+});
+stage.addEventListener("pointermove", e => {
+  if (!drag) return;
+  const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+  if (Math.abs(dx) + Math.abs(dy) > 3) drag.moved = true;
+  stage.scrollLeft = drag.l - dx; stage.scrollTop = drag.t - dy;
+});
+stage.addEventListener("pointerup", () => { drag = null; stage.classList.remove("drag"); });
+stage.addEventListener("dblclick", e => {
+  if (!cur) return;
+  const r = stage.getBoundingClientRect();
+  zoomTo(width * (e.shiftKey ? 0.5 : 2), e.clientX - r.left, e.clientY - r.top);
+});
+
+window.addEventListener("resize", () => {
+  if (!cur) return;
+  if (fitMode === "page") width = fitPagePx(); else if (fitMode === "width") width = fitWidthPx();
+  applySize(); loadSharp(false);
+});
+
+document.addEventListener("keydown", e => {
+  if (e.target.matches?.("input[type=search], input[type=number], select") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key;
+  if (k === "ArrowRight") $("nextPage").click();
+  else if (k === "ArrowLeft") $("prevPage").click();
+  else if (k === "j") stepDoc(1);
+  else if (k === "k") stepDoc(-1);
+  else if (k === "+" || k === "=") $("zoomIn").click();
+  else if (k === "-" || k === "_") $("zoomOut").click();
+  else if (k === "0") $("fitPage").click();
+  else if (k === "w") $("fitWidth").click();
+  else if (k === "r") $("rotate").click();
+  else if (k === "i") $("invert").click();
+  else if (k === "/") { e.preventDefault(); $("q").focus(); }
+  else return;
+  e.preventDefault();
+});
+
+init();
+</script>
+</body>
+</html>

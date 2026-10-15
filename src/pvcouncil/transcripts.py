@@ -17,14 +17,19 @@ may no longer sit on the text it transcribes.
 
 import hashlib
 import json
+import os
+import subprocess
 import threading
 import time
 import uuid
 from pathlib import Path
 
-from pvcouncil import plats
+from pvcouncil import config, plats  # noqa: F401 - config loads .env
 
-PATH = plats.DEEDS_DIR / "ocr" / "manual" / "transcripts.json"
+# PVC_TRANSCRIPTS_DIR (in .env) keeps them outside the checkout, in a private git
+# repository: they're made by hand, so each save and delete is committed there
+_dir = os.environ.get("PVC_TRANSCRIPTS_DIR")
+PATH = (Path(_dir).expanduser() if _dir else plats.DEEDS_DIR / "ocr" / "manual") / "transcripts.json"
 _lock = threading.Lock()
 
 
@@ -37,6 +42,16 @@ def _write(data: dict) -> None:
     tmp = PATH.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, indent=1) + "\n")
     tmp.replace(PATH)
+
+
+def _commit(message: str) -> None:
+    """Commit the transcriptions if they live in a git repository. Messages carry only
+    record keys and region ids, never text."""
+    repo = PATH.parent
+    if not (repo / ".git").exists():
+        return
+    subprocess.run(["git", "-C", str(repo), "add", PATH.name], capture_output=True)
+    subprocess.run(["git", "-C", str(repo), "commit", "-q", "-m", message], capture_output=True)
 
 
 def for_key(key: str) -> list[dict]:
@@ -75,6 +90,7 @@ def save(key: str, region: dict, source: dict) -> dict:
         items.append(r)
         data[key] = sorted(items, key=lambda x: (x["page"], x["box"][1], x["box"][0]))
         _write(data)
+        _commit(f"Save {key} page {r['page']} region {r['id']}")
     return r
 
 
@@ -85,6 +101,7 @@ def delete(key: str, region_id: str) -> None:
         if not data[key]:
             del data[key]
         _write(data)
+        _commit(f"Delete {key} region {region_id}")
 
 
 def text_for(key: str, data: dict | None = None) -> str:

@@ -337,8 +337,13 @@ or when it was classified by eye. To transcribe one:
 3. The panel shows the image Tesseract read and its text. Correct the text and
    save it.
 
-Saved regions stay highlighted on the page and go to
-`deeds/ocr/manual/transcripts.json`, which is local. Each region is keyed by
+Saved regions stay highlighted on the page and go to `transcripts.json`. It
+quotes signature and notary blocks, so it never goes in this public
+repository. Set `PVC_TRANSCRIPTS_DIR` in `.env` to a directory outside the
+checkout that holds a private git repository. The viewer then commits each
+save and delete there, with commit messages that give only the record key and
+region id. Without `PVC_TRANSCRIPTS_DIR`, transcriptions are written to the
+gitignored `deeds/ocr/manual/`. Each region is keyed by
 the recorder's record ID (`r:<id>` or `p:<id>`). It records:
 
 - the page

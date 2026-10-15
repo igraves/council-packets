@@ -305,6 +305,17 @@ fetched again: 1925-01, 1925-02, 1939-02, 1948-02, 1948-04 through 1948-07,
 1952-05, 1952-06, 1962-08, and 1962-09. Filings from those months would
 have to be found by book and page.
 
+**Reading them.** `pvc restriction-read` downloads the image of each
+instrument filed with a plat and OCRs it. It classifies each one as a
+restriction declaration, homes association declaration, easement, deed, and
+so on. It also notes each declaration's terms: how long it runs, setbacks, use
+limits, and any racially restrictive covenant. About 40 of the 1950s
+instruments are low-resolution photostat negatives that OCR can't read. Those
+were classified by eye from their headings, in `deeds/restriction_review.json`,
+which also marks papers filed the same day that concern other land. The results
+go to `deeds/restriction_reads.json` and feed the report. Images and OCR text
+stay local.
+
 Raw rows are cached in `deeds/cache/restrictions/` because they carry party
 names. The checked-in `deeds/restrictions.json` and
 [subdivision-restrictions.md](subdivision-restrictions.md) list instruments

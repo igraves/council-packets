@@ -456,6 +456,39 @@ def plat_ocr(workers):
                f"excerpts in {platocr.EXCERPTS_PATH.relative_to(plats.PROJECT_ROOT)} (local)")
 
 
+@cli.command("restriction-read")
+@click.option("--workers", default=6, show_default=True, help="Parallel OCR processes")
+@click.option("--offline", is_flag=True, help="Skip downloading; OCR and classify what is on disk")
+def restriction_read(workers, offline):
+    """Download, OCR, and classify the instruments filed with a plat."""
+    from collections import Counter
+
+    import json
+
+    from pvcouncil import restrictions, restrictread
+    from pvcouncil.recorder import RecorderError
+
+    entries = json.loads(restrictions.RESULTS_PATH.read_text())["filed_with_plat"]
+    if not offline:
+        try:
+            s = restrictread.download(entries, echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(str(e))
+        click.echo(f"downloaded {s['downloaded']} ({s['bytes'] / 1e6:.0f} MB), {s['no_image']} without images")
+    restrictread.ocr_all(entries, workers=workers, echo=click.echo)
+    rows = restrictread.build(entries)["read"]
+    click.echo(f"{len(rows)} read: " + ", ".join(f"{k} {n}" for k, n in Counter(r["kind"] for r in rows).most_common()))
+    feats = Counter(f for r in rows for f in r["features"])
+    click.echo("  " + ", ".join(f"{f} {n}" for f, n in feats.most_common()))
+    click.echo(f"→ {restrictread.RESULTS_PATH.relative_to(plats_root())}")
+
+
+def plats_root():
+    from pvcouncil import plats
+
+    return plats.PROJECT_ROOT
+
+
 @cli.command("restriction-survey")
 @click.option("--offline", is_flag=True, help="Rebuild from cached searches only")
 @click.option("--walk", is_flag=True, help="Also pull 'Miscellaneous' filings around each pre-1976 plat date")

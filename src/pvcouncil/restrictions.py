@@ -346,7 +346,17 @@ def render_markdown(out: dict, manifest: dict) -> str:
                 d[p].append(e)
         return d
 
-    filed = by_plat(out.get("filed_with_plat", []))
+    from pvcouncil import restrictread
+
+    reads = {}
+    if restrictread.RESULTS_PATH.exists():
+        reads = {r["id"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
+    filed_all = [{**e, **{k: reads[e["id"]][k] for k in ("kind", "features", "term", "note", "unrelated")
+                          if k in reads.get(e["id"], {})}} for e in out.get("filed_with_plat", [])]
+    filed_rel = [e for e in filed_all if not e.get("unrelated")]
+    decl_kinds = ("restrictions", "homes association", "restriction amendment")
+    racial = [e for e in filed_rel if "racial restriction" in e.get("features", [])]
+    filed = by_plat(filed_rel)
     typed = by_plat(out.get("instruments", []))
     cands = by_plat([c for c in out.get("misc_candidates", []) if c["plats"]])
     first_plat = {}
@@ -366,9 +376,18 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "",
         f"- **{len(covered)}** of **{len(subs)}** subdivisions have at least one restriction "
         "instrument found or restrictions written on a plat",
-        f"- **{len(out.get('filed_with_plat', []))}** instruments were filed with a plat: recorded "
-        "the same day with one of the next few document numbers. The 1941 Prairie Village plat is "
-        "document 289996 and the J.C. Nichols Declaration of Restrictions is 289997.",
+        f"- **{len(filed_all)}** instruments were filed with a plat: recorded the same day with one "
+        "of the next few document numbers. The 1941 Prairie Village plat is document 289996 and the "
+        "J.C. Nichols Declaration of Restrictions is 289997. Read from their images, "
+        f"**{sum(e.get('kind') in decl_kinds for e in filed_rel)}** are restriction or homes "
+        f"association declarations covering **{len({p for e in filed_rel if e.get('kind') in decl_kinds for p in e['plats']})}** "
+        f"plats; {len(filed_all) - len(filed_rel)} concern other land and are left out below.",
+        f"- **{len(racial)}** of those declarations contain a racially restrictive covenant "
+        f"({', '.join(sorted({p for e in racial for p in e['plats']}))}). Such covenants have been "
+        "unenforceable since Shelley v. Kraemer (1948). This count comes from OCR and covers only the "
+        "declarations it could read; about 20 Kansas City Investment Company declarations from "
+        "1952–57 are low-resolution photostat negatives and were classified by eye from their "
+        "headings only.",
         f"- **{sum(len(v) for v in on_plat.values())}** plats state restrictions or covenants on "
         "their face (found by OCR of the plat images)",
         f"- **{len(out.get('instruments', []))}** instruments indexed as a Declaration of "
@@ -403,8 +422,12 @@ def render_markdown(out: dict, manifest: dict) -> str:
             continue
         lines += [f"### {sub} ({code})", ""]
         for e in f_:
+            what = e.get("kind", e["doc_type"])
+            detail = [f for f in e.get("features", []) if f != "homes association assessments"]
+            extra = (f"; {e['term']}" if e.get("term") else "") + (f"; {', '.join(detail)}" if detail else "")
             lines.append(f"- **Filed with plat** {', '.join(e['plat_book_pages'])}: {e['recorded']} "
-                         f"{e['doc_type']}, {e['book_page']} (document {e['docid']})")
+                         f"{e['book_page']} (document {e['docid']}) — **{what}**{extra}"
+                         + (f". {e['note']}" if e.get("note") else ""))
         for e in o_:
             cites = ", ".join(f"MISC {c['book']}/{c['page'] or '?'}" for c in e["citations"])
             lines.append(f"- **On the plat** {e['book_page']} ({e['recorded']}): "

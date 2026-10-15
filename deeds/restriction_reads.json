@@ -1,0 +1,2476 @@
+{
+ "read": [
+  {
+   "id": "2678020",
+   "book_page": "MISC 13 248",
+   "recorded": "1925-05-02",
+   "docid": 140928,
+   "plats": [
+    "MEADOW LAKE LAWN"
+   ],
+   "plat_book_pages": [
+    "PLAT 6 41"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 518,
+   "note": "affidavit of possession, land outside the plat",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4170963",
+   "book_page": "MISC 24 273",
+   "recorded": "1939-07-14",
+   "docid": 262643,
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
+   "plat_book_pages": [
+    "PLAT 9 43"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of Twenty-five (25) years",
+   "until_year": null,
+   "pages": 3,
+   "words": 1142
+  },
+  {
+   "id": "4442333",
+   "book_page": "MISC 26 349",
+   "recorded": "1941-05-05",
+   "docid": 289997,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 10 47"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "minimum floor area",
+    "renewal",
+    "racial restriction"
+   ],
+   "term": "period of twenty-five years",
+   "until_year": null,
+   "pages": 3,
+   "words": 1198
+  },
+  {
+   "id": "4443151",
+   "book_page": "MISC 26 352",
+   "recorded": "1941-05-05",
+   "docid": 289998,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 10 47"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum cost",
+    "renewal"
+   ],
+   "term": "period of twenty-five years",
+   "until_year": null,
+   "pages": 6,
+   "words": 2815
+  },
+  {
+   "id": "4443152",
+   "book_page": "MISC 26 358",
+   "recorded": "1941-05-05",
+   "docid": 289999,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 10 47"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": "period of three years",
+   "until_year": null,
+   "pages": 7,
+   "words": 3299
+  },
+  {
+   "id": "4591418",
+   "book_page": "MISC 27 84",
+   "recorded": "1941-07-21",
+   "docid": 293642,
+   "plats": [
+    "SOMERSIDE"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 6"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum cost",
+    "minimum floor area",
+    "homes association assessments",
+    "renewal"
+   ],
+   "term": "period of five (5) years",
+   "until_year": null,
+   "pages": 5,
+   "words": 2183
+  },
+  {
+   "id": "4590868",
+   "book_page": "MISC 27 89",
+   "recorded": "1941-07-21",
+   "docid": 293646,
+   "plats": [
+    "SOMERSIDE"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 6"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 313,
+   "note": "road vacation petition, Roesland Lane in Mission Ridge",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1733541",
+   "book_page": "MISC 31 57",
+   "recorded": "1946-03-04",
+   "docid": 346361,
+   "plats": [
+    "CLARKVIEW"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 40"
+   ],
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 148
+  },
+  {
+   "id": "1733572",
+   "book_page": "MISC 31 87",
+   "recorded": "1946-03-13",
+   "docid": 346793,
+   "plats": [
+    "NALL AVENUE GARDENS"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 41"
+   ],
+   "kind": "dedication",
+   "features": [
+    "residence only",
+    "minimum floor area"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 7,
+   "words": 324
+  },
+  {
+   "id": "1732633",
+   "book_page": "MISC 31 94",
+   "recorded": "1946-03-13",
+   "docid": 346794,
+   "plats": [
+    "NALL AVENUE GARDENS"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 41"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 102,
+   "note": "heirship affidavit, land in Sec 36-14-25",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1732420",
+   "book_page": "MISC 31 547",
+   "recorded": "1946-04-16",
+   "docid": 348401,
+   "plats": [
+    "CEDARVALE"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 50"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 136,
+   "note": "Declaration of Restrictions for CEDARVALE (Kansas City Investment Company and lot owners)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1732335",
+   "book_page": "MISC 31 354",
+   "recorded": "1946-04-16",
+   "docid": 348402,
+   "plats": [
+    "CEDARVALE"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 50"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 59,
+   "note": "heirship affidavit, land in Sec 18-13-24",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1733289",
+   "book_page": "MISC 31 355",
+   "recorded": "1946-04-16",
+   "docid": 348403,
+   "plats": [
+    "CEDARVALE"
+   ],
+   "plat_book_pages": [
+    "PLAT 11 50"
+   ],
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 284
+  },
+  {
+   "id": "1732379",
+   "book_page": "MISC 31 442",
+   "recorded": "1946-05-06",
+   "docid": 349452,
+   "plats": [
+    "FONTICELLO GARDENS"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 1"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 2,
+   "words": 702
+  },
+  {
+   "id": "1733502",
+   "book_page": "MISC 31 444",
+   "recorded": "1946-05-06",
+   "docid": 349453,
+   "plats": [
+    "FONTICELLO GARDENS"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 1"
+   ],
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 236,
+   "note": "road right-of-way release to Johnson County",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1732381",
+   "book_page": "MISC 31 447",
+   "recorded": "1946-05-07",
+   "docid": 349470,
+   "plats": [
+    "MEADOW ACRES"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 2"
+   ],
+   "kind": "easement",
+   "features": [
+    "building line / setback"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 2,
+   "words": 522
+  },
+  {
+   "id": "1733539",
+   "book_page": "MISC 31 566",
+   "recorded": "1946-06-04",
+   "docid": 350508,
+   "plats": [
+    "MISSION VALLEY EAST"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 10"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 1080
+  },
+  {
+   "id": "1733540",
+   "book_page": "MISC 31 569",
+   "recorded": "1946-06-04",
+   "docid": 350512,
+   "plats": [
+    "MISSION VALLEY EAST"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 10"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 17,
+   "note": "marital-status affidavit",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1850494",
+   "book_page": "MISC 32 5",
+   "recorded": "1946-06-25",
+   "docid": 351167,
+   "plats": [
+    "MISSION VALLEY WEST"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 14"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 437,
+   "note": "Declaration of Restrictions for MISSION VALLEY WEST (all lot owners)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1850207",
+   "book_page": "MISC 32 195",
+   "recorded": "1946-08-09",
+   "docid": 352568,
+   "plats": [
+    "REPLAT OF FONTICELLO GARDENS NO. 2"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 21"
+   ],
+   "kind": "homes association",
+   "features": [
+    "building line / setback",
+    "minimum cost",
+    "racial restriction"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 6,
+   "words": 1186
+  },
+  {
+   "id": "2370256",
+   "book_page": "MISC 34 250",
+   "recorded": "1947-04-02",
+   "docid": 359847,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 42"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 10,
+   "words": 1923
+  },
+  {
+   "id": "2509043",
+   "book_page": "MISC 35 247",
+   "recorded": "1947-07-29",
+   "docid": 363806,
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 12 55"
+   ],
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 302,
+   "note": "Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3294918",
+   "book_page": "MISC 41 23",
+   "recorded": "1949-04-25",
+   "docid": 383826,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 13 30"
+   ],
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 441
+  },
+  {
+   "id": "3294928",
+   "book_page": "MISC 41 25",
+   "recorded": "1949-04-25",
+   "docid": 383827,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 13 30"
+   ],
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 192
+  },
+  {
+   "id": "3433676",
+   "book_page": "MISC 42 322",
+   "recorded": "1949-10-11",
+   "docid": 390176,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 13 46"
+   ],
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 158
+  },
+  {
+   "id": "3433690",
+   "book_page": "MISC 42 362",
+   "recorded": "1949-10-14",
+   "docid": 390381,
+   "plats": [
+    "MOHAWK HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 13 47"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area",
+    "renewal",
+    "racial restriction"
+   ],
+   "term": "period of twenty-five years",
+   "until_year": null,
+   "pages": 4,
+   "words": 1402
+  },
+  {
+   "id": "3563607",
+   "book_page": "MISC 43 168",
+   "recorded": "1949-12-13",
+   "docid": 392856,
+   "plats": [
+    "MEADOWBROOK DOWNS"
+   ],
+   "plat_book_pages": [
+    "PLAT 13 49"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of 25 years",
+   "until_year": null,
+   "pages": 4,
+   "words": 829
+  },
+  {
+   "id": "3573529",
+   "book_page": "MISC 43 323",
+   "recorded": "1950-01-07",
+   "docid": 393828,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 13 55"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of twenty- five (25) years",
+   "until_year": null,
+   "pages": 9,
+   "words": 1296
+  },
+  {
+   "id": "3573623",
+   "book_page": "MISC 43 629",
+   "recorded": "1950-02-10",
+   "docid": 395278,
+   "plats": [
+    "PRAIRIE FOREST"
+   ],
+   "plat_book_pages": [
+    "PLAT 13 64"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 31,
+   "note": "Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4094249",
+   "book_page": "MISC 46 55",
+   "recorded": "1950-06-26",
+   "docid": 401839,
+   "plats": [
+    "MISSION VILLAGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 14 31"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 586
+  },
+  {
+   "id": "4094190",
+   "book_page": "MISC 46 398",
+   "recorded": "1950-08-08",
+   "docid": 404687,
+   "plats": [
+    "MEADOW LAKE",
+    "MEADOW LAKE RESURVEY"
+   ],
+   "plat_book_pages": [
+    "PLAT 14 43",
+    "PLAT 14 42"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": "period of five (25) years",
+   "until_year": null,
+   "pages": 7,
+   "words": 2029
+  },
+  {
+   "id": "4093668",
+   "book_page": "MISC 46 405",
+   "recorded": "1950-08-08",
+   "docid": 404688,
+   "plats": [
+    "MEADOW LAKE",
+    "MEADOW LAKE RESURVEY"
+   ],
+   "plat_book_pages": [
+    "PLAT 14 43",
+    "PLAT 14 42"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 137,
+   "note": "death certificate",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4093709",
+   "book_page": "MISC 46 503",
+   "recorded": "1950-08-25",
+   "docid": 405717,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 14 45"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 752
+  },
+  {
+   "id": "4373697",
+   "book_page": "MISC 48 230",
+   "recorded": "1951-01-15",
+   "docid": 413827,
+   "plats": [
+    "WEST HILL"
+   ],
+   "plat_book_pages": [
+    "PLAT 14 61"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 8,
+   "words": 472
+  },
+  {
+   "id": "4627257",
+   "book_page": "MISC 50 98",
+   "recorded": "1951-05-29",
+   "docid": 420695,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 5"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 8,
+   "words": 847
+  },
+  {
+   "id": "4627589",
+   "book_page": "MISC 50 218",
+   "recorded": "1951-06-18",
+   "docid": 421616,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 7"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 11,
+   "words": 1072
+  },
+  {
+   "id": "4627592",
+   "book_page": "MISC 50 229",
+   "recorded": "1951-06-18",
+   "docid": 421617,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 7"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 1376
+  },
+  {
+   "id": "4626802",
+   "book_page": "MISC 50 367",
+   "recorded": "1951-07-03",
+   "docid": 422265,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 8"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 1361
+  },
+  {
+   "id": "4758450",
+   "book_page": "MISC 51 321",
+   "recorded": "1951-10-05",
+   "docid": 426582,
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE",
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 17"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "racial restriction"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 8,
+   "words": 619
+  },
+  {
+   "id": "4757908",
+   "book_page": "MISC 51 468",
+   "recorded": "1951-11-02",
+   "docid": 427851,
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE",
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 19"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 6,
+   "note": "heirship affidavit, Southridge",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1580314",
+   "book_page": "MISC 53 89",
+   "recorded": "1952-03-03",
+   "docid": 433043,
+   "plats": [
+    "MISSION VALLEY EAST"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 51"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 580,
+   "note": "Declaration of Restrictions for MISSION VALLEY EAST lots 59-66 (Kansas City Investment Company)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1579481",
+   "book_page": "MISC 53 276",
+   "recorded": "1952-03-17",
+   "docid": 433662,
+   "plats": [
+    "PRAIRIE VALLEY"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 53"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "no apartments",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 1380
+  },
+  {
+   "id": "1580250",
+   "book_page": "MISC 53 466",
+   "recorded": "1952-04-05",
+   "docid": 434616,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 62",
+    "PLAT 15 61",
+    "PLAT 15 60"
+   ],
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 5,
+   "words": 580,
+   "note": "Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1580251",
+   "book_page": "MISC 53 471",
+   "recorded": "1952-04-05",
+   "docid": 434618,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 62",
+    "PLAT 15 61"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "minimum cost",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 8,
+   "words": 928
+  },
+  {
+   "id": "1704255",
+   "book_page": "MISC 54 1",
+   "recorded": "1952-04-22",
+   "docid": 435366,
+   "plats": [
+    "RIDGE VIEW HEIGHTS"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 66"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 432,
+   "note": "Declaration of Restrictions for RIDGE VIEW HEIGHTS",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1705073",
+   "book_page": "MISC 54 5",
+   "recorded": "1952-04-22",
+   "docid": 435369,
+   "plats": [
+    "RIDGE VIEW HEIGHTS"
+   ],
+   "plat_book_pages": [
+    "PLAT 15 66"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 53,
+   "note": "septic-tank covenant with the county health board, Antioch Acres",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1811801",
+   "book_page": "MISC 55 174",
+   "recorded": "1952-07-28",
+   "docid": 439781,
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 6"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 603
+  },
+  {
+   "id": "1812918",
+   "book_page": "MISC 55 481",
+   "recorded": "1952-08-28",
+   "docid": 441394,
+   "plats": [
+    "PRAIRIE VALLEY NORTH"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 10"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 13,
+   "note": "Declaration of Restrictions for PRAIRIE VALLEY NORTH (Kansas City Investment Company)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1812211",
+   "book_page": "MISC 55 484",
+   "recorded": "1952-08-28",
+   "docid": 441396,
+   "plats": [
+    "PRAIRIE VALLEY NORTH ANNEX",
+    "PRAIRIE VALLEY NORTH"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 11",
+    "PLAT 16 10"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 5,
+   "note": "Declaration of Restrictions for PRAIRIE VALLEY NORTH ANNEX (Kansas City Investment Company)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1894134",
+   "book_page": "MISC 56 242",
+   "recorded": "1952-09-30",
+   "docid": 443137,
+   "plats": [
+    "PRAIRIE RIDGE VIEW"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 18"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 105,
+   "note": "Declaration of Restrictions for PRAIRIE RIDGE VIEW",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1893289",
+   "book_page": "MISC 56 337",
+   "recorded": "1952-10-15",
+   "docid": 443933,
+   "plats": [
+    "RIDGE VIEW PLACE"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 26"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": "period of twenty five years",
+   "until_year": null,
+   "pages": 3,
+   "words": 1116
+  },
+  {
+   "id": "1893636",
+   "book_page": "MISC 56 588",
+   "recorded": "1952-11-25",
+   "docid": 445726,
+   "plats": [
+    "PRAIRIE VIEW NO. 5"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 31"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": "period of twenty-five years",
+   "until_year": null,
+   "pages": 3,
+   "words": 806,
+   "note": "Declaration of Restrictions for PRAIRIE VIEW #5 lots 1-30 (The Mission Land Company)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1924309",
+   "book_page": "MISC 57 287",
+   "recorded": "1953-01-06",
+   "docid": 447644,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 38"
+   ],
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 136,
+   "note": "J. C. Nichols Company reserves sewer right of way, Prairie Ridge Blocks 20-21",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1925145",
+   "book_page": "MISC 57 289",
+   "recorded": "1953-01-06",
+   "docid": 447645,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 38"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 303,
+   "note": "prenuptial contract",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1925511",
+   "book_page": "MISC 57 591",
+   "recorded": "1953-02-07",
+   "docid": 449025,
+   "plats": [
+    "JUNIPER HILL"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 41"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 336,
+   "note": "Declaration of Restrictions for JUNIPER HILL lots 1-18 (Frank C. Braun, Inc.)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1943728",
+   "book_page": "MISC 58 146",
+   "recorded": "1953-03-12",
+   "docid": 450621,
+   "plats": [
+    "PRAIRIE HEIGHTS"
+   ],
+   "plat_book_pages": [
+    "PLAT 16 49"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 730
+  },
+  {
+   "id": "2070233",
+   "book_page": "MISC 61 62",
+   "recorded": "1953-09-23",
+   "docid": 460144,
+   "plats": [
+    "NALLANDS"
+   ],
+   "plat_book_pages": [
+    "PLAT 17 6"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 3,
+   "words": 784,
+   "note": "Declaration of Restrictions for NALLANDS (Kansas City Investment Company and owners)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2070248",
+   "book_page": "MISC 61 65",
+   "recorded": "1953-09-23",
+   "docid": 460146,
+   "plats": [
+    "NALLANDS"
+   ],
+   "plat_book_pages": [
+    "PLAT 17 6"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 69
+  },
+  {
+   "id": "2303186",
+   "book_page": "MISC 64 373",
+   "recorded": "1954-05-15",
+   "docid": 471123,
+   "plats": [
+    "PRAIRIE MANOR"
+   ],
+   "plat_book_pages": [
+    "PLAT 17 33"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 457
+  },
+  {
+   "id": "2303188",
+   "book_page": "MISC 64 375",
+   "recorded": "1954-05-15",
+   "docid": 471125,
+   "plats": [
+    "PRAIRIE MANOR"
+   ],
+   "plat_book_pages": [
+    "PLAT 17 33"
+   ],
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 18,
+   "note": "ratification of dedication, Prairie Manor",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2423383",
+   "book_page": "MISC 65 353",
+   "recorded": "1954-07-07",
+   "docid": 474095,
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
+   "plat_book_pages": [
+    "PLAT 17 38"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 43,
+   "note": "federal tax lien discharge",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "2424646",
+   "book_page": "MISC 65 492",
+   "recorded": "1954-07-26",
+   "docid": 475312,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [
+    "PLAT 17 46"
+   ],
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 98
+  },
+  {
+   "id": "2423486",
+   "book_page": "MISC 65 493",
+   "recorded": "1954-07-26",
+   "docid": 475313,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [
+    "PLAT 17 46"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 358
+  },
+  {
+   "id": "2861683",
+   "book_page": "MISC 69 543",
+   "recorded": "1955-03-14",
+   "docid": 489494,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [
+    "PLAT 18 20"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 16,
+   "note": "affidavit concerning Bradley Hills Addition",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "2954565",
+   "book_page": "MISC 70 299",
+   "recorded": "1955-04-08",
+   "docid": 491219,
+   "plats": [
+    "RIDGEWOOD"
+   ],
+   "plat_book_pages": [
+    "PLAT 18 29"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 16,
+   "note": "surveyor's affidavit for Ferndale",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "2953915",
+   "book_page": "MISC 70 460",
+   "recorded": "1955-04-25",
+   "docid": 492253,
+   "plats": [
+    "SOMERSET HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 18 35"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 18,
+   "note": "Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3138218",
+   "book_page": "MISC 72 310",
+   "recorded": "1955-07-05",
+   "docid": 496824,
+   "plats": [
+    "JORDAN PLACE"
+   ],
+   "plat_book_pages": [
+    "PLAT 18 59"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 2,
+   "note": "Declaration of Restrictions for JORDAN PLACE",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3220162",
+   "book_page": "MISC 73 366",
+   "recorded": "1955-08-26",
+   "docid": 500545,
+   "plats": [
+    "PAWNEE MANOR"
+   ],
+   "plat_book_pages": [
+    "PLAT 18 73"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 698,
+   "note": "Declaration of Restrictions for PAWNEE MANOR (Kansas City Investment Company)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3220164",
+   "book_page": "MISC 73 368",
+   "recorded": "1955-08-26",
+   "docid": 500548,
+   "plats": [
+    "PAWNEE MANOR"
+   ],
+   "plat_book_pages": [
+    "PLAT 18 73"
+   ],
+   "kind": "other",
+   "features": [
+    "residence only",
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 981,
+   "note": "sewer connection contract, Leawood Hills",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3219020",
+   "book_page": "MISC 73 371",
+   "recorded": "1955-08-26",
+   "docid": 500549,
+   "plats": [
+    "PAWNEE MANOR"
+   ],
+   "plat_book_pages": [
+    "PLAT 18 73"
+   ],
+   "kind": "other",
+   "features": [
+    "residence only",
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 987,
+   "note": "sewer connection contract, Leawood Hills",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3360474",
+   "book_page": "MISC 75 177",
+   "recorded": "1955-10-26",
+   "docid": 504487,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 6"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 474
+  },
+  {
+   "id": "3360475",
+   "book_page": "MISC 75 179",
+   "recorded": "1955-10-26",
+   "docid": 504488,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 6"
+   ],
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 225,
+   "note": "Homes Association Declaration by Town and Country Estates, Inc., under the declaration at MISC 72/287",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3426963",
+   "book_page": "MISC 76 405",
+   "recorded": "1955-12-23",
+   "docid": 508042,
+   "plats": [
+    "SHAWNEE MISSION SOUTH HIGH SCHOOL"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 29"
+   ],
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 1093,
+   "note": "option agreement for land in Sec 6",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3526117",
+   "book_page": "MISC 77 631",
+   "recorded": "1956-02-28",
+   "docid": 511496,
+   "plats": [
+    "CORINTH ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 36"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 5,
+   "words": 600,
+   "note": "articles of incorporation of a church",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3526119",
+   "book_page": "MISC 77 636",
+   "recorded": "1956-02-28",
+   "docid": 511497,
+   "plats": [
+    "CORINTH ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 36"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 147,
+   "note": "county commission minutes, 77th Street benefit district 147",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3526121",
+   "book_page": "MISC 77 638",
+   "recorded": "1956-02-28",
+   "docid": 511498,
+   "plats": [
+    "CORINTH ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 36"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 212,
+   "note": "county commission minutes, Pawnee Street benefit district 148",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3525115",
+   "book_page": "MISC 77 640",
+   "recorded": "1956-02-28",
+   "docid": 511499,
+   "plats": [
+    "CORINTH ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 36"
+   ],
+   "kind": "zoning order",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 300,
+   "note": "county order classifying platted lots into minimum ground floor area districts",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3639433",
+   "book_page": "MISC 78 1",
+   "recorded": "1956-02-28",
+   "docid": 511500,
+   "plats": [
+    "CORINTH ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 36"
+   ],
+   "kind": "zoning order",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 295,
+   "note": "county order classifying platted lots into minimum ground floor area districts",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3640057",
+   "book_page": "MISC 78 592",
+   "recorded": "1956-04-02",
+   "docid": 513477,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 40"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 455
+  },
+  {
+   "id": "4096810",
+   "book_page": "MISC 83 342",
+   "recorded": "1956-10-24",
+   "docid": 524956,
+   "plats": [
+    "PAWNEE MANOR"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 71"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 139,
+   "note": "federal tax lien",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4166891",
+   "book_page": "MISC 84 30",
+   "recorded": "1956-11-16",
+   "docid": 526122,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 73"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "renewal"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 5,
+   "words": 1108
+  },
+  {
+   "id": "4166926",
+   "book_page": "MISC 84 35",
+   "recorded": "1956-11-16",
+   "docid": 526123,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 73"
+   ],
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 89,
+   "note": "Homes Association Declaration for TOWN & COUNTRY ESTATES lots 98-112",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4166959",
+   "book_page": "MISC 84 42",
+   "recorded": "1956-11-17",
+   "docid": 526139,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 74"
+   ],
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 338
+  },
+  {
+   "id": "4166065",
+   "book_page": "MISC 84 44",
+   "recorded": "1956-11-17",
+   "docid": 526140,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [
+    "PLAT 19 74"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 12,
+   "note": "fence viewers' order, Sec 5-13-23",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4502658",
+   "book_page": "MISC 88 225",
+   "recorded": "1957-06-11",
+   "docid": 535912,
+   "plats": [
+    "PAWNEE VIEW"
+   ],
+   "plat_book_pages": [
+    "PLAT 20 17"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 3,
+   "words": 588
+  },
+  {
+   "id": "4504850",
+   "book_page": "MISC 88 524",
+   "recorded": "1957-07-09",
+   "docid": 537280,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 20 22"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 5,
+   "words": 1902
+  },
+  {
+   "id": "4504851",
+   "book_page": "MISC 88 529",
+   "recorded": "1957-07-09",
+   "docid": 537281,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 20 22"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 419
+  },
+  {
+   "id": "4606248",
+   "book_page": "MISC 90 327",
+   "recorded": "1957-10-11",
+   "docid": 542132,
+   "plats": [
+    "PRAIRIE ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 20 36"
+   ],
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 95,
+   "note": "Declaration of Restrictions for PRAIRIE ESTATES lots 1-84 (Prairie Estates Development Company)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2507909",
+   "book_page": "MISC 121 614",
+   "recorded": "1961-09-21",
+   "docid": 632155,
+   "plats": [
+    "JACKSON HEIGHTS"
+   ],
+   "plat_book_pages": [
+    "PLAT 24 10"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 207
+  },
+  {
+   "id": "2627147",
+   "book_page": "MISC 127 330",
+   "recorded": "1962-06-18",
+   "docid": 649340,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 24 37"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 230,
+   "note": "inheritance tax order",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "2941321",
+   "book_page": "MISC 144 246",
+   "recorded": "1964-04-28",
+   "docid": 697666,
+   "plats": [
+    "SOMERSET MANOR"
+   ],
+   "plat_book_pages": [
+    "PLAT 26 21"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 2004
+  },
+  {
+   "id": "3082563",
+   "book_page": "MISC 152 192",
+   "recorded": "1965-02-03",
+   "docid": 719405,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [
+    "PLAT 27 17"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 46,
+   "note": "title affidavit, Sec 35-14-24",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3082565",
+   "book_page": "MISC 152 193",
+   "recorded": "1965-02-03",
+   "docid": 719406,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [
+    "PLAT 27 17"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 7,
+   "note": "title affidavit, Sec 35-14-24",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3172431",
+   "book_page": "MISC 157 654",
+   "recorded": "1965-09-17",
+   "docid": 737541,
+   "plats": [
+    "RED FOX"
+   ],
+   "plat_book_pages": [
+    "PLAT 28 13"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 190,
+   "note": "oil company lease, Roeland Park",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3908178",
+   "book_page": "MISC 195 612",
+   "recorded": "1969-04-30",
+   "docid": 829188,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 31 21"
+   ],
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 234,
+   "note": "sheriff's certificate of purchase",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3908964",
+   "book_page": "MISC 195 614",
+   "recorded": "1969-04-30",
+   "docid": 829191,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [
+    "PLAT 31 21"
+   ],
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 224,
+   "note": "heirship affidavit",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4017846",
+   "book_page": "MISC 200 186",
+   "recorded": "1969-10-03",
+   "docid": 840506,
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
+   "plat_book_pages": [
+    "PLAT 31 36"
+   ],
+   "kind": "zoning order",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 263,
+   "note": "county resolution on the Monticello Township zoning board",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "3740764",
+   "book_page": "MISC 214 6",
+   "recorded": "1970-12-15",
+   "docid": 867183,
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
+   "plat_book_pages": [
+    "PLAT 32 16"
+   ],
+   "kind": "other",
+   "features": [
+    "no apartments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 7,
+   "words": 1317,
+   "note": "articles of incorporation certified by the Secretary of State",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2559678",
+   "book_page": "OR 1235 752",
+   "recorded": "1977-07-18",
+   "docid": 1118107,
+   "plats": [
+    "CALVIN CREST"
+   ],
+   "plat_book_pages": [
+    "PLAT 42 26"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 5,
+   "words": 1021
+  },
+  {
+   "id": "2558643",
+   "book_page": "OR 1235 757",
+   "recorded": "1977-07-18",
+   "docid": 1118108,
+   "plats": [
+    "CALVIN CREST"
+   ],
+   "plat_book_pages": [
+    "PLAT 42 26"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": "period of five (5) years",
+   "until_year": null,
+   "pages": 11,
+   "words": 2702
+  },
+  {
+   "id": "3121879",
+   "book_page": "OR 1544 710",
+   "recorded": "1980-01-30",
+   "docid": 1266035,
+   "plats": [
+    "SOMERSET COURTS WEST"
+   ],
+   "plat_book_pages": [
+    "PLAT 48 48"
+   ],
+   "kind": "homes association",
+   "features": [
+    "residence only",
+    "homes association assessments",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 36,
+   "words": 7455
+  },
+  {
+   "id": "3270980",
+   "book_page": "OR 1617 197",
+   "recorded": "1980-10-23",
+   "docid": 1299468,
+   "plats": [
+    "CALVIN CREST II"
+   ],
+   "plat_book_pages": [
+    "PLAT 49 32"
+   ],
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 911
+  },
+  {
+   "id": "3270981",
+   "book_page": "OR 1617 201",
+   "recorded": "1980-10-23",
+   "docid": 1299469,
+   "plats": [
+    "CALVIN CREST II"
+   ],
+   "plat_book_pages": [
+    "PLAT 49 32"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 439
+  },
+  {
+   "id": "3382741",
+   "book_page": "OR 1693 475",
+   "recorded": "1981-07-24",
+   "docid": 1333677,
+   "plats": [
+    "DE VILLE 75 CONDOMINIUMS"
+   ],
+   "plat_book_pages": [
+    "PLAT 50 33"
+   ],
+   "kind": "easement",
+   "features": [
+    "residence only",
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 14,
+   "words": 14250
+  },
+  {
+   "id": "3384377",
+   "book_page": "OR 1697 317",
+   "recorded": "1981-08-04",
+   "docid": 1335358,
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "plat_book_pages": [
+    "PLAT 50 37"
+   ],
+   "kind": "homes association",
+   "features": [
+    "residence only"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 982
+  },
+  {
+   "id": "3384379",
+   "book_page": "OR 1697 321",
+   "recorded": "1981-08-04",
+   "docid": 1335359,
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "plat_book_pages": [
+    "PLAT 50 37"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 884
+  },
+  {
+   "id": "3383245",
+   "book_page": "OR 1697 324",
+   "recorded": "1981-08-04",
+   "docid": 1335360,
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "plat_book_pages": [
+    "PLAT 50 37"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 442
+  },
+  {
+   "id": "3482539",
+   "book_page": "OR 1754 331",
+   "recorded": "1982-04-23",
+   "docid": 1361958,
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "plat_book_pages": [
+    "PLAT 51 28"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 442
+  },
+  {
+   "id": "3482540",
+   "book_page": "OR 1754 333",
+   "recorded": "1982-04-23",
+   "docid": 1361959,
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "plat_book_pages": [
+    "PLAT 51 28"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 908
+  },
+  {
+   "id": "3482541",
+   "book_page": "OR 1754 336",
+   "recorded": "1982-04-23",
+   "docid": 1361960,
+   "plats": [
+    "CORINTH DOWNS"
+   ],
+   "plat_book_pages": [
+    "PLAT 51 28"
+   ],
+   "kind": "homes association",
+   "features": [
+    "residence only"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 978
+  },
+  {
+   "id": "3589642",
+   "book_page": "OR 1804 105",
+   "recorded": "1982-11-29",
+   "docid": 1385106,
+   "plats": [
+    "MEADOWBROOK EXECUTIVE"
+   ],
+   "plat_book_pages": [
+    "PLAT 52 22"
+   ],
+   "kind": "easement",
+   "features": [
+    "minimum floor area",
+    "architectural approval",
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 46,
+   "words": 15259
+  },
+  {
+   "id": "3696632",
+   "book_page": "OR 1852 216",
+   "recorded": "1983-05-02",
+   "docid": 1404906,
+   "plats": [
+    "NORMANDIE COURT"
+   ],
+   "plat_book_pages": [
+    "PLAT 53 4"
+   ],
+   "kind": "release",
+   "features": [
+    "residence only",
+    "homes association assessments",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 201,
+   "words": 43042
+  },
+  {
+   "id": "3800239",
+   "book_page": "OR 1902 789",
+   "recorded": "1983-08-19",
+   "docid": 1425737,
+   "plats": [
+    "ROE-69"
+   ],
+   "plat_book_pages": [
+    "PLAT 54 7"
+   ],
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 6,
+   "words": 1428
+  },
+  {
+   "id": "4003648",
+   "book_page": "OR 1996 189",
+   "recorded": "1984-04-23",
+   "docid": 1465198,
+   "plats": [
+    "THE CHATEAU CONDOMINIUM"
+   ],
+   "plat_book_pages": [
+    "PLAT 55 42"
+   ],
+   "kind": "release",
+   "features": [
+    "residence only",
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 22,
+   "words": 5157
+  },
+  {
+   "id": "4003650",
+   "book_page": "OR 1996 211",
+   "recorded": "1984-04-23",
+   "docid": 1465199,
+   "plats": [
+    "THE CHATEAU CONDOMINIUM"
+   ],
+   "plat_book_pages": [
+    "PLAT 55 42"
+   ],
+   "kind": "homes association",
+   "features": [
+    "residence only",
+    "homes association assessments",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 43,
+   "words": 8340
+  },
+  {
+   "id": "3715367",
+   "book_page": "OR 2111 272",
+   "recorded": "1985-01-18",
+   "docid": 1512230,
+   "plats": [
+    "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS"
+   ],
+   "plat_book_pages": [
+    "PLAT 58 12"
+   ],
+   "kind": "easement",
+   "features": [
+    "minimum floor area",
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 35,
+   "words": 13254
+  },
+  {
+   "id": "3859075",
+   "book_page": "OR 2203 322",
+   "recorded": "1985-08-13",
+   "docid": 1549448,
+   "plats": [
+    "NORMANDIE COURT SECOND PLAT"
+   ],
+   "plat_book_pages": [
+    "PLAT 59 49"
+   ],
+   "kind": "dedication",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 118,
+   "words": 4348
+  }
+ ]
+}

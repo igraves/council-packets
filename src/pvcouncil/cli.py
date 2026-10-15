@@ -523,7 +523,7 @@ def deed_ocr(engine_name, keys, poor, invert, rot, redo):
         raise click.ClickException(f"{engine_name} isn't set up: {engines[engine_name]['setup']}")
     docs = viewer.build_index()
     todo = [docs[k] for k in keys if k in docs] + [d for d in docs.values() if poor and d["ocr"] == "poor"]
-    todo = list({d["key"]: d for d in todo}.values())
+    todo = sorted({d["key"]: d for d in todo}.values(), key=lambda d: d["pages"])  # short documents first
     if not redo:
         todo = [d for d in todo if not ocrengines.reading_path(engine_name, d["key"]).exists()]
     if not todo:

@@ -255,10 +255,61 @@ uv run pvc plat-survey --offline   # rebuild from the cache only
 uv run pvc plat-survey --refresh   # search everything again
 ```
 
-Covenants and deed restrictions aren't covered yet. Before the late 1980s,
-the recorder indexed restrictions as "Miscellaneous" instruments in the
-MISC books, mixed in with easements and other filings, so the index alone
-can't pick them out.
+### Restrictions and covenants
+
+Three commands find each subdivision's recorded deed restrictions and
+covenants:
+
+```sh
+uv run pvc plat-images                  # plat image PDFs → deeds/images/
+uv run pvc plat-ocr                     # OCR the plats → deeds/plat_restrictions.json
+uv run pvc restriction-survey --walk    # restriction instruments → subdivision-restrictions.md
+```
+
+**On the plat.** `pvc plat-ocr` reads every plat image with Tesseract at 0,
+90, and 270 degrees, since some plats print their dedication sideways. It
+flags restriction language. Some plats carry their covenants in full, such as
+the 1923 Ridge View resurvey and the 1937 Sunset Heights View plat. Others
+state that restrictions are recorded separately. The full OCR text and the
+excerpts stay in `deeds/ocr/`, which is gitignored because plats name their
+signers.
+
+**Filed with the plat.** Developers recorded a subdivision's restrictions
+right after its plat. The 1941 Prairie Village plat is document 289996, and
+the J.C. Nichols Declaration of Restrictions for the same land (MISC 26/349)
+is 289997. The survey looks for instruments recorded the same day as a plat
+whose document number is within five after the plat's. This is the strongest
+evidence of a subdivision's original restrictions.
+
+**Indexed as restrictions.** The recorder labels some instruments
+"Declaration of Restrictions" (1914 on) or "Declaration of Home Owners
+Association". A document-type search works only with no category selected.
+The survey pulls every such instrument county-wide and matches them to our
+subdivisions by legal description or by a party named for the subdivision
+("KENILWORTH HOMES ASSOCIATION").
+
+**The MISC walk.** Before about 1976, most restrictions were indexed only as
+"Miscellaneous". `--walk` pulls every Miscellaneous filing recorded from
+three months before to twelve months after each pre-1976 plat. It drops
+utility easements and scores the rest on several signals:
+
+- a developer party, such as the J.C. Nichols companies
+- an UNKNOWN or PUBLIC grantee
+- a subdivision legal
+- no lot in the legal
+- a recording date within a week of the plat
+
+High scorers are listed as candidates to read. No Miscellaneous filings
+are indexed for 1972–74. Twelve months in the walk also come back empty when
+fetched again: 1925-01, 1925-02, 1939-02, 1948-02, 1948-04 through 1948-07,
+1952-05, 1952-06, 1962-08, and 1962-09. Filings from those months would
+have to be found by book and page.
+
+Raw rows are cached in `deeds/cache/restrictions/` because they carry party
+names. The checked-in `deeds/restrictions.json` and
+[subdivision-restrictions.md](subdivision-restrictions.md) list instruments
+by date, book and page, and record ID, with no party names. Pass `--offline`
+to rebuild from the cache.
 
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `budget`, `list_documents`, and `stats` as tools for MCP clients. Search, ask and list_documents accept `doc_type="archive"` for the city reports.

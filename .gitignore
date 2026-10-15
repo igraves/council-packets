@@ -11,3 +11,4 @@ budgets.json
 parcels/*-owners.csv
 deeds/cache/
 deeds/images/
+deeds/ocr/

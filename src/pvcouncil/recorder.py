@@ -174,17 +174,21 @@ class Recorder:
 
     def search(self, legal: list[tuple[str, str, str]] = (), categories: list[int] = (),
                doc_types: list[int] = (), order: str = "RecordedDate:asc",
-               max_rows: int | None = None, name: str = "", name_match: str = "Like") -> list[dict]:
+               max_rows: int | None = None, name: str = "", name_match: str = "Like",
+               book: tuple[str, int, int | str] | None = None,
+               recorded: tuple[str, str] | None = None) -> list[dict]:
         """Run a search and return every result row as a dict keyed by column name.
 
         legal is a list of (field, "LIKE"|"IS", value) with field in LEGAL_FIELDS.
+        book is (book type, book, page), e.g. ("MISC", 22, 306); recorded is a
+        (from, to) date range as MM/DD/YYYY.
         """
         legal_param = "|".join(f"{LEGAL_FIELDS[f]}:{op}:{v}" for f, op, v in legal)
         rows, first, total, draw = [], 1, None, 1
         while total is None or first <= total:
             last = first + PAGE_SIZE - 1
             data = self._search_page(legal_param, categories, doc_types, order, first, last, draw,
-                                     name, name_match)
+                                     name, name_match, book, recorded)
             total = data.get("recordsTotal", 0)
             cols = data.get("Columns", [])
             for r in data.get("aaData", []):
@@ -195,12 +199,14 @@ class Recorder:
         return rows
 
     def _search_page(self, legal_param, categories, doc_types, order, first, last, draw,
-                     name="", name_match="Like") -> dict:
+                     name="", name_match="Like", book=None, recorded=None) -> dict:
         wait = self.delay - (time.monotonic() - self._last)
         if wait > 0:
             time.sleep(wait)
         form = {
-            "Book": "", "BookType": "", "Bookpage": "",
+            # book=("MISC", 22, 306) looks up one recorded page; page "" means the whole book
+            "Book": str(book[1]) if book else "", "BookType": book[0] if book else "",
+            "Bookpage": str(book[2]) if book else "",
             "CategoryDocumentTypes": ",".join(map(str, doc_types)),
             "CategoryTypes": ",".join(map(str, categories)),
             "Columns": f" {COLUMNS} ",
@@ -212,7 +218,7 @@ class Recorder:
             "LastNameComparison": name_match, "LastRecordNum": str(last),
             "LegalParameters": legal_param, "Message": "", "NameOrganization": name,
             "OrderBy": order, "ParentId": "", "Party": "any",
-            "RecordedDate1": "", "RecordedDate2": "", "Remarks": "",
+            "RecordedDate1": recorded[0] if recorded else "", "RecordedDate2": recorded[1] if recorded else "", "Remarks": "",
             "SavedSearchId": "", "SearchHistoryId": "",
             "SearchType": "Advanced", "SearchTypeClient": "", "SearchTypeResults": "Summary",
             "TotalRecords": "0", "isDetailPrint": "false",

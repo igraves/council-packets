@@ -3653,11 +3653,36 @@
    "recorded": "2012-03-23",
    "plat": "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
    "subdivision_code": "0050",
-   "terms": [],
+   "terms": [
+    "building line",
+    "residential use",
+    "restrictions"
+   ],
    "citations": [],
    "misc_mentions": 0,
    "words": 0,
-   "transcribed": 0
+   "transcribed": 3,
+   "transcribed_terms": {
+    "building line": [
+     {
+      "page": 1,
+      "region": "ce1ad63b87"
+     }
+    ],
+    "residential use": [
+     {
+      "page": 1,
+      "region": "ce1ad63b87"
+     }
+    ],
+    "restrictions": [
+     {
+      "page": 1,
+      "region": "ce1ad63b87"
+     }
+    ]
+   },
+   "stale_transcriptions": 0
   },
   {
    "id": "1093982",
@@ -3665,11 +3690,22 @@
    "recorded": "2012-08-31",
    "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
    "subdivision_code": "6451",
-   "terms": [],
+   "terms": [
+    "declaration"
+   ],
    "citations": [],
    "misc_mentions": 0,
    "words": 0,
-   "transcribed": 0
+   "transcribed": 2,
+   "transcribed_terms": {
+    "declaration": [
+     {
+      "page": 1,
+      "region": "0965c4c795"
+     }
+    ]
+   },
+   "stale_transcriptions": 0
   },
   {
    "id": "1220979",

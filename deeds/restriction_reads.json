@@ -237,12 +237,59 @@
     "PLAT 11 50"
    ],
    "kind": "restrictions",
-   "features": [],
-   "term": null,
+   "features": [
+    "residence only",
+    "no apartments",
+    "minimum cost",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of Twenty-five (25) years",
    "until_year": null,
    "pages": 4,
    "words": 136,
-   "transcribed": 0,
+   "transcribed": 9,
+   "transcribed_terms": {
+    "residence only": [
+     {
+      "page": 1,
+      "region": "463e0d633f"
+     }
+    ],
+    "no apartments": [
+     {
+      "page": 1,
+      "region": "463e0d633f"
+     }
+    ],
+    "minimum floor area": [
+     {
+      "page": 1,
+      "region": "463e0d633f"
+     },
+     {
+      "page": 2,
+      "region": "37524ff402"
+     },
+     {
+      "page": 2,
+      "region": "7f6465f557"
+     }
+    ],
+    "minimum cost": [
+     {
+      "page": 2,
+      "region": "37524ff402"
+     }
+    ],
+    "racial restriction": [
+     {
+      "page": 3,
+      "region": "ca6762536d"
+     }
+    ]
+   },
+   "stale_transcriptions": 0,
    "note": "Declaration of Restrictions for CEDARVALE (Kansas City Investment Company and lot owners)",
    "unrelated": false,
    "reviewed": true

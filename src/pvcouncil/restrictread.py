@@ -23,7 +23,7 @@ from pathlib import Path
 
 import fitz
 
-from pvcouncil import plats
+from pvcouncil import plats, transcripts
 from pvcouncil.recorder import Recorder
 
 IMAGES_DIR = plats.IMAGES_DIR / "restrictions"
@@ -167,13 +167,20 @@ REVIEW_PATH = plats.DEEDS_DIR / "restriction_review.json"
 
 def build(entries: list[dict]) -> dict:
     review = json.loads(REVIEW_PATH.read_text()) if REVIEW_PATH.exists() else {}
+    manual = transcripts.load()
     rows, excerpts = [], ["# Restriction instrument excerpts (local only)", ""]
     for e in entries:
         txt = OCR_DIR / f"{image_path(e).stem}.txt"
         if not txt.exists():
             continue
         text = txt.read_text()
+        ocr_words = classify(text)["words"]
+        typed = transcripts.text_for(f"r:{e['id']}", manual)
+        if typed:
+            text += "\n\n" + typed
         c = classify(text)
+        c["words"] = ocr_words  # what OCR alone read
+        c["transcribed"] = len(manual.get(f"r:{e['id']}", []))
         r = review.get(e["book_page"])
         if r:
             c.update(kind=r["kind"], note=r["note"], unrelated=r.get("unrelated", False), reviewed=True)

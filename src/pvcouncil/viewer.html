@@ -8,28 +8,29 @@
 :root {
   --bg: #f4f3ef; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #dddbd3;
   --accent: #2f5d8a; --accent-ink: #ffffff; --hover: #eceae3; --sel: #dbe6f1; --stage: #8a8984;
-  --warn: #9a3b1f; --warn-bg: #f7e3da; --chip: #eceae3;
+  --warn: #9a3b1f; --warn-bg: #f7e3da; --chip: #eceae3; --ok: #2d6a36; --ok-bg: #dcefdc;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #1b1c1e; --panel: #232427; --ink: #e8e6e0; --muted: #9a9890; --line: #36373b;
     --accent: #7fa8d1; --accent-ink: #12161a; --hover: #2c2d31; --sel: #2c3b4b; --stage: #121314;
-    --warn: #f0a58a; --warn-bg: #4a2a1f; --chip: #303136;
+    --warn: #f0a58a; --warn-bg: #4a2a1f; --chip: #303136; --ok: #9fd3a5; --ok-bg: #22392a;
   }
 }
 :root[data-theme="dark"] {
   --bg: #1b1c1e; --panel: #232427; --ink: #e8e6e0; --muted: #9a9890; --line: #36373b;
   --accent: #7fa8d1; --accent-ink: #12161a; --hover: #2c2d31; --sel: #2c3b4b; --stage: #121314;
-  --warn: #f0a58a; --warn-bg: #4a2a1f; --chip: #303136;
+  --warn: #f0a58a; --warn-bg: #4a2a1f; --chip: #303136; --ok: #9fd3a5; --ok-bg: #22392a;
 }
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 body { background: var(--bg); color: var(--ink); font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   display: grid; grid-template-columns: 320px 1fr; overflow: hidden; }
-button, input, select { font: inherit; color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+[hidden] { display: none !important; }
 
 /* sidebar */
-aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+aside.side { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
 .filters { padding: 12px; border-bottom: 1px solid var(--line); display: grid; gap: 8px; }
 .filters h1 { font-size: 15px; margin: 0; }
 .filters input[type=search], .filters select { width: 100%; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
@@ -44,52 +45,92 @@ aside { background: var(--panel); border-right: 1px solid var(--line); display: 
 .item .date { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
 .item .bp { font-weight: 500; }
 .item .sub { grid-column: 1 / -1; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.badge { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 9px; background: var(--chip); color: var(--ink); margin-left: 4px; vertical-align: 1px; }
+.badge { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 9px; background: var(--chip); color: var(--ink); margin-left: 4px; vertical-align: 1px; font-weight: 400; }
 .badge.plat { background: transparent; border: 1px solid var(--line); }
 .badge.warn { background: var(--warn-bg); color: var(--warn); }
+.badge.poor { background: transparent; border: 1px dashed var(--muted); color: var(--muted); }
+.badge.ok { background: var(--ok-bg); color: var(--ok); }
 
 /* main */
 main { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
 header { background: var(--panel); border-bottom: 1px solid var(--line); padding: 8px 12px; display: grid; gap: 6px; }
 .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
 .meta h2 { font-size: 16px; margin: 0; }
-.meta .sm { color: var(--muted); font-size: 13px; }
+.sm { color: var(--muted); font-size: 13px; }
 .chips { display: flex; flex-wrap: wrap; gap: 4px; }
 .note { color: var(--muted); font-size: 13px; }
 .toolbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .toolbar .sep { width: 1px; height: 22px; background: var(--line); margin: 0 4px; }
-.toolbar button { border: 1px solid var(--line); background: var(--bg); border-radius: 6px; padding: 3px 9px; cursor: pointer; min-width: 30px; }
-.toolbar button:hover { background: var(--hover); }
-.toolbar button[aria-pressed=true] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button.b { border: 1px solid var(--line); background: var(--bg); border-radius: 6px; padding: 3px 9px; cursor: pointer; min-width: 30px; }
+button.b:hover { background: var(--hover); }
+button.b[aria-pressed=true] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button.b.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button.b:disabled { opacity: .5; cursor: default; }
 .toolbar input[type=number] { width: 52px; padding: 3px 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); text-align: right; }
 .toolbar input[type=range] { width: 110px; }
 .zoomval { width: 48px; text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
-#stage { flex: 1; overflow: auto; background: var(--stage); position: relative; cursor: grab; }
+.work { flex: 1; display: flex; min-height: 0; }
+#stage { flex: 1; overflow: auto; background: var(--stage); position: relative; cursor: grab; min-width: 0; }
 #stage.drag { cursor: grabbing; }
+#stage.selecting, #stage.selecting .mark { cursor: crosshair; }
 #stage .pad { padding: 16px; width: max-content; min-width: 100%; display: flex; justify-content: center; }
-#page { display: block; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.35); user-select: none; -webkit-user-drag: none; image-rendering: auto; }
+#sheet { position: relative; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.35); }
+#page { display: block; width: 100%; height: 100%; user-select: none; -webkit-user-drag: none; }
+#marks { position: absolute; inset: 0; }
+.mark { position: absolute; border: 2px solid #e0a020; background: rgba(255, 196, 0, .16); cursor: pointer; }
+.mark:hover { background: rgba(255, 196, 0, .28); }
+.mark.active { border-color: #2f8ae8; background: rgba(47, 138, 232, .14); }
+#selbox { position: absolute; border: 2px dashed #2f8ae8; background: rgba(47, 138, 232, .14); pointer-events: none; }
 .empty { color: #ddd; padding: 40px; text-align: center; }
-.loading { position: absolute; top: 10px; right: 14px; font-size: 12px; color: #eee; background: rgba(0,0,0,.5); padding: 2px 8px; border-radius: 4px; display: none; }
+.loading { position: sticky; top: 10px; float: right; margin-right: 14px; font-size: 12px; color: #eee; background: rgba(0,0,0,.55); padding: 2px 8px; border-radius: 4px; z-index: 2; }
 .help { color: var(--muted); font-size: 12px; }
 kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; }
 
+/* OCR panel */
+#panel { width: 380px; flex: none; background: var(--panel); border-left: 1px solid var(--line); overflow-y: auto; padding: 12px; display: grid; gap: 10px; align-content: start; }
+#panel h3 { font-size: 14px; margin: 0; display: flex; justify-content: space-between; align-items: center; }
+#panel .hint { color: var(--muted); font-size: 13px; margin: 0; }
+#ocrPreview { width: 100%; border: 1px solid var(--line); background: #fff; display: block; max-height: 220px; object-fit: contain; }
+.opts { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; font-size: 13px; }
+.opts label { display: flex; gap: 6px; align-items: center; }
+.opts select { padding: 2px 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); max-width: 100%; }
+#ocrText { width: 100%; min-height: 200px; resize: vertical; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); font: 12.5px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+#ocrStatus { color: var(--muted); font-size: 12px; }
+#classified { font-size: 13px; padding: 8px; border-radius: 6px; background: var(--ok-bg); color: var(--ok); }
+.titem { border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; cursor: pointer; font-size: 12.5px; display: grid; grid-template-columns: 1fr auto; gap: 2px 6px; }
+.titem:hover { background: var(--hover); }
+.titem.active { border-color: #2f8ae8; }
+.titem .snip { grid-column: 1 / -1; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: ui-monospace, monospace; font-size: 11.5px; }
+.titem button { border: 0; background: none; color: var(--muted); cursor: pointer; padding: 0 4px; }
+.titem button:hover { color: var(--warn); }
+
+@media (max-width: 1100px) { #panel { width: 320px; } }
 @media (max-width: 760px) {
   body { grid-template-columns: 1fr; grid-template-rows: 40vh 1fr; }
-  aside { border-right: 0; border-bottom: 1px solid var(--line); }
+  aside.side { border-right: 0; border-bottom: 1px solid var(--line); }
   .help { display: none; }
+  .work { flex-direction: column; }
+  #panel { width: auto; max-height: 45vh; border-left: 0; border-top: 1px solid var(--line); }
 }
 </style>
 </head>
 <body>
-<aside>
+<aside class="side">
   <div class="filters">
     <h1>Prairie Village plats &amp; restrictions</h1>
-    <input type="search" id="q" placeholder="Search subdivision, book/page, note…">
+    <input type="search" id="q" placeholder="Search subdivision, book/page, note…  ( / )">
     <select id="kind">
       <option value="">All documents</option>
       <option value="plat">Plats</option>
       <option value="decl">Restrictions &amp; HOA declarations</option>
       <option value="other">Other instruments</option>
+    </select>
+    <select id="ocrf">
+      <option value="">Any OCR quality</option>
+      <option value="poor">Poor OCR: couldn't be read</option>
+      <option value="todo">Poor OCR, not yet transcribed</option>
+      <option value="mine">Has my transcriptions</option>
     </select>
     <label><input type="checkbox" id="racial"> Only racially restrictive covenants</label>
     <label><input type="checkbox" id="stated"> Only plats stating restrictions</label>
@@ -101,68 +142,123 @@ kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-
   <header>
     <div class="meta" id="meta"><h2>Select a document</h2></div>
     <div class="toolbar">
-      <button id="prevDoc" title="Previous document (k)">⇡ Doc</button>
-      <button id="nextDoc" title="Next document (j)">⇣ Doc</button>
+      <button class="b" id="prevDoc" title="Previous document (k)">⇡ Doc</button>
+      <button class="b" id="nextDoc" title="Next document (j)">⇣ Doc</button>
       <span class="sep"></span>
-      <button id="prevPage" title="Previous page (←)">‹</button>
+      <button class="b" id="prevPage" title="Previous page (←)">‹</button>
       <input type="number" id="pageNum" min="1" value="1"> <span id="pageCount" class="sm">/ –</span>
-      <button id="nextPage" title="Next page (→)">›</button>
+      <button class="b" id="nextPage" title="Next page (→)">›</button>
       <span class="sep"></span>
-      <button id="zoomOut" title="Zoom out (−)">−</button>
+      <button class="b" id="zoomOut" title="Zoom out (−)">−</button>
       <input type="range" id="zoomSlider" min="0" max="100" value="0" title="Zoom">
-      <button id="zoomIn" title="Zoom in (+)">+</button>
+      <button class="b" id="zoomIn" title="Zoom in (+)">+</button>
       <span class="zoomval" id="zoomVal"></span>
-      <button id="fitPage" title="Fit page (0)">Fit</button>
-      <button id="fitWidth" title="Fit width (w)">Width</button>
+      <button class="b" id="fitPage" title="Fit page (0)">Fit</button>
+      <button class="b" id="fitWidth" title="Fit width (w)">Width</button>
       <span class="sep"></span>
-      <button id="rotate" title="Rotate 90° (r)">⟳</button>
-      <button id="invert" aria-pressed="false" title="Invert, for photostat negatives (i)">Invert</button>
+      <button class="b" id="rotate" title="Rotate 90° (r)">⟳</button>
+      <button class="b" id="invert" aria-pressed="false" title="Invert, for photostat negatives (i)">Invert</button>
       <label class="sm" title="Contrast">◐ <input type="range" id="contrast" min="60" max="250" value="100"></label>
+      <span class="sep"></span>
+      <button class="b" id="selectMode" aria-pressed="false" title="Drag a box around text to OCR it (s, or hold ⇧ and drag)">⬚ Select text</button>
+      <button class="b" id="panelBtn" aria-pressed="false" title="Region OCR and transcriptions (t)">Transcribe</button>
     </div>
-    <div class="help"><kbd>←</kbd><kbd>→</kbd> page · <kbd>j</kbd><kbd>k</kbd> document · <kbd>+</kbd><kbd>−</kbd> or ⌘/Ctrl-scroll or pinch to zoom · drag to pan · double-click to zoom in (⇧ out) · <kbd>0</kbd> fit · <kbd>w</kbd> width · <kbd>r</kbd> rotate · <kbd>i</kbd> invert</div>
+    <div class="help"><kbd>←</kbd><kbd>→</kbd> page · <kbd>j</kbd><kbd>k</kbd> document · <kbd>+</kbd><kbd>−</kbd>, ⌘/Ctrl-scroll or pinch to zoom · drag to pan · double-click zoom (⇧ out) · <kbd>0</kbd> fit · <kbd>w</kbd> width · <kbd>r</kbd> rotate · <kbd>i</kbd> invert · <kbd>s</kbd> or ⇧-drag select text · <kbd>t</kbd> transcribe panel</div>
   </header>
-  <div id="stage"><div class="loading" id="loading">rendering…</div><div class="pad"><div class="empty" id="empty">Pick a plat or instrument from the list.</div><img id="page" alt="" hidden></div></div>
+  <div class="work">
+    <div id="stage">
+      <div class="loading" id="loading" hidden>rendering…</div>
+      <div class="pad">
+        <div class="empty" id="empty">Pick a plat or instrument from the list.</div>
+        <div id="sheet" hidden><img id="page" alt=""><div id="marks"></div></div>
+      </div>
+    </div>
+    <aside id="panel" hidden>
+      <h3>Region OCR <button class="b" id="panelClose" title="Close (t)">×</button></h3>
+      <p class="hint" id="ocrHint">Turn on <b>Select text</b> (<kbd>s</kbd>), or hold ⇧, and drag a box around the text to read. It's read again at the OCR zoom below, cleaned up, and shown here to correct and save.</p>
+      <div id="editor" hidden>
+        <div class="sm" id="regionLabel"></div>
+        <img id="ocrPreview" alt="What OCR saw">
+        <div class="opts">
+          <label title="Resolution the region is rendered at for OCR; higher helps small or faint type">OCR zoom
+            <select id="ocrDpi"><option>200</option><option>300</option><option selected>400</option><option>600</option></select> dpi</label>
+          <label>Layout
+            <select id="ocrPsm">
+              <option value="6" selected>Block of text</option>
+              <option value="4">Columns</option>
+              <option value="3">Automatic</option>
+              <option value="7">Single line</option>
+              <option value="11">Scattered (plats)</option>
+            </select></label>
+          <label title="White type on black (photostat negative)"><input type="checkbox" id="ocrInvert"> Invert</label>
+          <label title="Force pure black and white; can help faint type, can hurt speckled scans"><input type="checkbox" id="ocrThreshold"> Black &amp; white</label>
+        </div>
+        <div class="row"><button class="b" id="ocrRun">Run OCR again</button><span id="ocrStatus"></span></div>
+        <textarea id="ocrText" spellcheck="true" placeholder="OCR text appears here; correct it before saving."></textarea>
+        <div class="row">
+          <button class="b primary" id="ocrSave">Save transcription</button>
+          <button class="b" id="ocrCopy">Copy</button>
+          <button class="b" id="ocrDiscard">Discard</button>
+        </div>
+      </div>
+      <div id="classified" hidden></div>
+      <h3>Saved on this document</h3>
+      <div id="tlist" class="sm">None yet.</div>
+    </aside>
+  </div>
 </main>
 <script>
 const DPI_STEPS = [72, 110, 160, 220, 300];
 const DECL = new Set(["restrictions", "homes association", "restriction amendment"]);
 const $ = id => document.getElementById(id);
-const stage = $("stage"), img = $("page");
+const stage = $("stage"), sheet = $("sheet"), img = $("page");
 let docs = [], shown = [], cur = null, page = 1, rot = 0, width = 0, invert = false, contrast = 100, dpiShown = 0, fitMode = "page";
-let reqToken = 0;
+let reqToken = 0, selectMode = false, saved = [], region = null, ocrToken = 0;
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem("deedviewer." + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem("deedviewer." + k, JSON.stringify(v)); } catch {} },
 };
+async function post(url, body) {
+  const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
+  return r.json();
+}
 
 function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c])); }
 function racial(d) { return (d.features || []).includes("racial restriction"); }
 function kindBadge(d) {
-  if (d.kind === "plat") return `<span class="badge plat">plat</span>`;
-  return `<span class="badge">${esc(d.kind)}</span>` + (racial(d) ? `<span class="badge warn">racial covenant</span>` : "");
+  let b = d.kind === "plat" ? `<span class="badge plat">plat</span>` : `<span class="badge">${esc(d.kind)}</span>`;
+  if (racial(d)) b += `<span class="badge warn">racial covenant</span>`;
+  if (d.ocr === "poor") b += `<span class="badge poor" title="OCR read ${d.ocr_words} words">poor OCR</span>`;
+  if (d.transcribed) b += `<span class="badge ok" title="${d.transcribed} saved transcription(s)">✎ ${d.transcribed}</span>`;
+  return b;
 }
 
 async function init() {
   docs = await (await fetch("/api/docs")).json();
-  docs.forEach((d, i) => d.idx = i);
-  $("q").value = store.get("q", ""); $("kind").value = store.get("kind", "");
-  $("racial").checked = store.get("racial", false); $("stated").checked = store.get("stated", false);
-  invert = false; contrast = 100;
-  for (const id of ["q", "kind", "racial", "stated"]) $(id).addEventListener("input", () => {
+  for (const id of ["q", "kind", "ocrf"]) $(id).value = store.get(id, "");
+  for (const id of ["racial", "stated"]) $(id).checked = store.get(id, false);
+  for (const id of ["q", "kind", "ocrf", "racial", "stated"]) $(id).addEventListener("input", () => {
     store.set(id, $(id).type === "checkbox" ? $(id).checked : $(id).value); renderList();
   });
+  $("ocrDpi").value = String(store.get("ocrDpi", 400));
+  $("ocrPsm").value = String(store.get("ocrPsm", 6));
+  if (store.get("panel", false)) togglePanel(true);
   renderList();
   const h = parseHash();
   if (h) open(h.key, h.page);
 }
 
 function filtered() {
-  const q = $("q").value.trim().toLowerCase(), k = $("kind").value;
+  const q = $("q").value.trim().toLowerCase(), k = $("kind").value, o = $("ocrf").value;
   return docs.filter(d => {
     if (k === "plat" && d.kind !== "plat") return false;
     if (k === "decl" && !DECL.has(d.kind)) return false;
     if (k === "other" && (d.kind === "plat" || DECL.has(d.kind))) return false;
+    if (o === "poor" && d.ocr !== "poor") return false;
+    if (o === "todo" && (d.ocr !== "poor" || d.transcribed)) return false;
+    if (o === "mine" && !d.transcribed) return false;
     if ($("racial").checked && !racial(d)) return false;
     if ($("stated").checked && !(d.kind === "plat" && (d.features || []).some(f => f === "restrictions" || f === "covenants"))) return false;
     if (q) {
@@ -173,6 +269,11 @@ function filtered() {
   });
 }
 
+function itemHtml(d) {
+  return `<div class="item${cur && cur.key === d.key ? " sel" : ""}" data-key="${esc(d.key)}">
+      <span class="date">${esc(d.recorded)}</span><span class="bp">${esc(d.book_page)} ${kindBadge(d)}</span>
+      ${d.title !== d.subdivision ? `<span class="sub">${esc(d.title)}</span>` : ""}</div>`;
+}
 function renderList() {
   shown = filtered();
   $("count").textContent = `${shown.length} of ${docs.length} documents`;
@@ -180,11 +281,13 @@ function renderList() {
   for (const d of shown) {
     const g = d.subdivision + (d.code ? ` (${d.code})` : "");
     if (g !== last) { html += `<div class="group">${esc(g)}</div>`; last = g; }
-    html += `<div class="item${cur && cur.key === d.key ? " sel" : ""}" data-key="${esc(d.key)}">
-      <span class="date">${esc(d.recorded)}</span><span class="bp">${esc(d.book_page)} ${kindBadge(d)}</span>
-      ${d.title !== d.subdivision ? `<span class="sub">${esc(d.title)}</span>` : ""}</div>`;
+    html += itemHtml(d);
   }
   $("list").innerHTML = html || `<div class="empty" style="color:var(--muted)">No documents match.</div>`;
+}
+function refreshItem(d) {
+  const el = document.querySelector(`.item[data-key="${CSS.escape(d.key)}"]`);
+  if (el) el.outerHTML = itemHtml(d);
 }
 $("list").addEventListener("click", e => { const it = e.target.closest(".item"); if (it) open(it.dataset.key, 1); });
 
@@ -194,18 +297,25 @@ function parseHash() {
 }
 window.addEventListener("hashchange", () => { const h = parseHash(); if (h && (!cur || h.key !== cur.key || h.page !== page)) open(h.key, h.page); });
 
-function open(key, p) {
+async function open(key, p) {
   const d = docs.find(x => x.key === key);
   if (!d) return;
   const same = cur && cur.key === key;
   cur = d; page = Math.min(Math.max(1, p || 1), d.pages);
-  if (!same) { rot = 0; fitMode = "page"; }
+  if (!same) {
+    rot = 0; fitMode = "page"; closeEditor(); $("classified").hidden = true; saved = [];
+    invert = false; $("invert").setAttribute("aria-pressed", false);
+  }
   history.replaceState(null, "", `#${d.key}/${page}`);
   document.querySelectorAll(".item.sel").forEach(x => x.classList.remove("sel"));
   const el = document.querySelector(`.item[data-key="${CSS.escape(key)}"]`);
   if (el) { el.classList.add("sel"); el.scrollIntoView({ block: "nearest" }); }
   renderMeta();
   showPage();
+  if (!same) {
+    saved = await (await fetch(`/api/transcripts?key=${encodeURIComponent(key)}`)).json();
+    if (cur === d) { renderMarks(); renderTList(); }
+  }
 }
 
 function renderMeta() {
@@ -215,22 +325,38 @@ function renderMeta() {
     <span class="sm">${esc(d.subdivision)}${d.code ? " · " + esc(d.code) : ""}${d.title !== d.subdivision ? " · " + esc(d.title) : ""}</span>
     ${d.filed_with ? `<span class="sm">filed with ${esc(d.filed_with.join(", "))}</span>` : ""}
     ${d.term ? `<span class="sm">${esc(d.term)}</span>` : ""}
+    <span class="sm">OCR read ${d.ocr_words} words</span>
     ${chips ? `<div class="chips" style="flex-basis:100%">${chips}</div>` : ""}
     ${d.note ? `<div class="note" style="flex-basis:100%">${esc(d.note)}</div>` : ""}`;
   $("pageCount").textContent = `/ ${d.pages}`;
   $("pageNum").max = d.pages;
 }
 
-// page geometry in points, after rotation
+// ---- geometry ----
+// page sizes in points, after rotation
 function dims() {
   const [w, h] = cur.dims[page - 1] || cur.dims[0];
   return rot % 180 ? [h, w] : [w, h];
+}
+// fractions of the unrotated page <-> fractions of the page as displayed at rotation r
+function pageToDisp(u, v, r) {
+  return r === 90 ? [1 - v, u] : r === 180 ? [1 - u, 1 - v] : r === 270 ? [v, 1 - u] : [u, v];
+}
+function dispToPage(x, y, r) {
+  return r === 90 ? [y, 1 - x] : r === 180 ? [1 - x, 1 - y] : r === 270 ? [1 - y, x] : [x, y];
+}
+function boxToDisp(b, r) {
+  const [a, c] = [pageToDisp(b[0], b[1], r), pageToDisp(b[2], b[3], r)];
+  return [Math.min(a[0], c[0]), Math.min(a[1], c[1]), Math.max(a[0], c[0]), Math.max(a[1], c[1])];
+}
+function boxToPage(b, r) {
+  const [a, c] = [dispToPage(b[0], b[1], r), dispToPage(b[2], b[3], r)];
+  return [Math.min(a[0], c[0]), Math.min(a[1], c[1]), Math.max(a[0], c[0]), Math.max(a[1], c[1])];
 }
 function fitWidthPx() { return Math.max(100, stage.clientWidth - 32); }
 function fitPagePx() { const [w, h] = dims(); return Math.max(100, Math.min(stage.clientWidth - 32, (stage.clientHeight - 32) * w / h)); }
 function minW() { return Math.min(fitPagePx(), 300); }
 function maxW() { const [w] = dims(); return Math.max(fitWidthPx() * 6, w / 72 * 300 / devicePixelRatio); }
-
 function pickDpi(px) {
   const [w] = dims(), need = px * devicePixelRatio / (w / 72);
   return DPI_STEPS.find(s => s >= need * 0.9) || DPI_STEPS[DPI_STEPS.length - 1];
@@ -238,7 +364,7 @@ function pickDpi(px) {
 function srcFor(dpi) { return `/page/${cur.key}/${page}.jpg?dpi=${dpi}&rot=${rot}`; }
 
 function showPage() {
-  $("empty").hidden = true; img.hidden = false;
+  $("empty").hidden = true; sheet.hidden = false;
   $("pageNum").value = page;
   width = fitMode === "width" ? fitWidthPx() : fitPagePx();
   dpiShown = 0;
@@ -246,15 +372,15 @@ function showPage() {
   applySize();
   stage.scrollTo(0, 0);
   loadSharp(true);
+  renderMarks();
   history.replaceState(null, "", `#${cur.key}/${page}`);
-  // warm the next page
-  if (page < cur.pages) { const [w] = cur.dims[page] || cur.dims[0]; new Image().src = `/page/${cur.key}/${page + 1}.jpg?dpi=${pickDpi(width)}&rot=${rot}`; }
+  if (page < cur.pages) new Image().src = `/page/${cur.key}/${page + 1}.jpg?dpi=${pickDpi(width)}&rot=${rot}`;
 }
 
 function applySize() {
   const [w, h] = dims();
-  img.style.width = width + "px";
-  img.style.height = (width * h / w) + "px";
+  sheet.style.width = width + "px";
+  sheet.style.height = (width * h / w) + "px";
   img.style.filter = `${invert ? "invert(1) " : ""}contrast(${contrast}%)`;
   const lo = Math.log(minW()), hi = Math.log(maxW());
   $("zoomSlider").value = Math.round(100 * (Math.log(width) - lo) / (hi - lo));
@@ -269,9 +395,9 @@ function loadSharp(now) {
     const dpi = pickDpi(width);
     if (dpi <= dpiShown) return;
     const token = ++reqToken, src = srcFor(dpi), pre = new Image();
-    $("loading").style.display = "block";
-    pre.onload = () => { if (token !== reqToken) return; img.src = src; dpiShown = dpi; $("loading").style.display = "none"; };
-    pre.onerror = () => { if (token === reqToken) $("loading").style.display = "none"; };
+    $("loading").hidden = false;
+    pre.onload = () => { if (token !== reqToken) return; img.src = src; dpiShown = dpi; $("loading").hidden = true; };
+    pre.onerror = () => { if (token === reqToken) $("loading").hidden = true; };
     pre.src = src;
   }, now ? 0 : 180);
 }
@@ -280,13 +406,13 @@ function loadSharp(now) {
 function zoomTo(newW, cx, cy) {
   if (!cur) return;
   newW = Math.min(maxW(), Math.max(minW(), newW));
-  const pad = 16, r = stage.getBoundingClientRect();
+  const r = stage.getBoundingClientRect();
   cx = cx ?? r.width / 2; cy = cy ?? r.height / 2;
-  const ir = img.getBoundingClientRect();
+  const ir = sheet.getBoundingClientRect();
   const fx = (r.left + cx - ir.left) / ir.width, fy = (r.top + cy - ir.top) / ir.height;
   width = newW; fitMode = null;
   applySize();
-  const nr = img.getBoundingClientRect();
+  const nr = sheet.getBoundingClientRect();
   stage.scrollLeft += (nr.left + fx * nr.width) - (r.left + cx);
   stage.scrollTop += (nr.top + fy * nr.height) - (r.top + cy);
   loadSharp(false);
@@ -295,8 +421,8 @@ function zoomTo(newW, cx, cy) {
 $("zoomIn").onclick = () => zoomTo(width * 1.25);
 $("zoomOut").onclick = () => zoomTo(width / 1.25);
 $("zoomSlider").oninput = e => { const lo = Math.log(minW()), hi = Math.log(maxW()); zoomTo(Math.exp(lo + (hi - lo) * e.target.value / 100)); };
-$("fitPage").onclick = () => { fitMode = "page"; width = fitPagePx(); applySize(); stage.scrollTo(0, 0); loadSharp(true); };
-$("fitWidth").onclick = () => { fitMode = "width"; width = fitWidthPx(); applySize(); stage.scrollTo(0, 0); loadSharp(true); };
+$("fitPage").onclick = () => { if (!cur) return; fitMode = "page"; width = fitPagePx(); applySize(); stage.scrollTo(0, 0); loadSharp(true); };
+$("fitWidth").onclick = () => { if (!cur) return; fitMode = "width"; width = fitWidthPx(); applySize(); stage.scrollTo(0, 0); loadSharp(true); };
 $("rotate").onclick = () => { if (!cur) return; rot = (rot + 90) % 360; showPage(); };
 $("invert").onclick = () => { invert = !invert; $("invert").setAttribute("aria-pressed", invert); applySize(); };
 $("contrast").oninput = e => { contrast = +e.target.value; applySize(); };
@@ -320,22 +446,51 @@ stage.addEventListener("wheel", e => {
   zoomTo(width * Math.exp(-e.deltaY * (e.deltaMode ? 0.05 : 0.002)), e.clientX - r.left, e.clientY - r.top);
 }, { passive: false });
 
-// drag to pan
+// ---- pointer: drag pans; in select mode (or with shift) drag boxes a region; a click opens a saved region ----
 let drag = null;
+function sheetFrac(e) {
+  const r = sheet.getBoundingClientRect();
+  return [Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), Math.min(1, Math.max(0, (e.clientY - r.top) / r.height))];
+}
 stage.addEventListener("pointerdown", e => {
   if (e.button !== 0 || !cur) return;
-  drag = { x: e.clientX, y: e.clientY, l: stage.scrollLeft, t: stage.scrollTop, moved: false };
-  stage.setPointerCapture(e.pointerId); stage.classList.add("drag");
+  const selecting = selectMode || e.shiftKey;
+  drag = { x: e.clientX, y: e.clientY, l: stage.scrollLeft, t: stage.scrollTop, moved: false, select: selecting && sheet.contains(e.target) };
+  if (drag.select) {
+    drag.start = sheetFrac(e);
+    let box = $("selbox");
+    if (!box) { box = document.createElement("div"); box.id = "selbox"; $("marks").appendChild(box); }
+    Object.assign(box.style, { left: drag.start[0] * 100 + "%", top: drag.start[1] * 100 + "%", width: 0, height: 0, display: "block" });
+  } else stage.classList.add("drag");
+  stage.setPointerCapture(e.pointerId);
 });
 stage.addEventListener("pointermove", e => {
   if (!drag) return;
   const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
   if (Math.abs(dx) + Math.abs(dy) > 3) drag.moved = true;
-  stage.scrollLeft = drag.l - dx; stage.scrollTop = drag.t - dy;
+  if (drag.select) {
+    const [x, y] = sheetFrac(e), [x0, y0] = drag.start;
+    Object.assign($("selbox").style, { left: Math.min(x, x0) * 100 + "%", top: Math.min(y, y0) * 100 + "%",
+      width: Math.abs(x - x0) * 100 + "%", height: Math.abs(y - y0) * 100 + "%" });
+  } else { stage.scrollLeft = drag.l - dx; stage.scrollTop = drag.t - dy; }
 });
-stage.addEventListener("pointerup", () => { drag = null; stage.classList.remove("drag"); });
+stage.addEventListener("pointerup", e => {
+  const d = drag; drag = null; stage.classList.remove("drag");
+  if (!d) return;
+  if (d.select) {
+    $("selbox").style.display = "none";
+    const [x, y] = sheetFrac(e), [x0, y0] = d.start;
+    const box = [Math.min(x, x0), Math.min(y, y0), Math.max(x, x0), Math.max(y, y0)];
+    if (box[2] - box[0] > 0.005 && box[3] - box[1] > 0.003) newRegion(boxToPage(box, rot));
+    return;
+  }
+  if (!d.moved) {
+    const mark = document.elementsFromPoint(e.clientX, e.clientY).find(el => el.classList?.contains("mark"));
+    if (mark) editSaved(mark.dataset.id);
+  }
+});
 stage.addEventListener("dblclick", e => {
-  if (!cur) return;
+  if (!cur || selectMode || e.target.closest?.(".mark")) return;
   const r = stage.getBoundingClientRect();
   zoomTo(width * (e.shiftKey ? 0.5 : 2), e.clientX - r.left, e.clientY - r.top);
 });
@@ -346,8 +501,166 @@ window.addEventListener("resize", () => {
   applySize(); loadSharp(false);
 });
 
+// ---- regions and transcriptions ----
+function setSelectMode(on) {
+  selectMode = on;
+  $("selectMode").setAttribute("aria-pressed", on);
+  stage.classList.toggle("selecting", on);
+  if (on) togglePanel(true);
+}
+$("selectMode").onclick = () => setSelectMode(!selectMode);
+function togglePanel(on) {
+  on = on ?? $("panel").hidden;
+  $("panel").hidden = !on;
+  $("panelBtn").setAttribute("aria-pressed", on);
+  store.set("panel", on);
+  if (cur) window.dispatchEvent(new Event("resize"));
+}
+$("panelBtn").onclick = () => togglePanel();
+$("panelClose").onclick = () => { togglePanel(false); setSelectMode(false); };
+
+function renderMarks() {
+  const m = $("marks"), sel = $("selbox");
+  m.innerHTML = "";
+  if (sel) m.appendChild(sel);
+  if (!cur) return;
+  const list = saved.filter(s => s.page === page);
+  if (region && region.page === page && !region.id) list.push({ ...region, id: "_new" });
+  for (const s of list) {
+    const [x0, y0, x1, y1] = boxToDisp(s.box, rot), el = document.createElement("div");
+    el.className = "mark" + (region && (region.id || "_new") === s.id ? " active" : "");
+    el.dataset.id = s.id;
+    el.title = (s.text || "").slice(0, 200);
+    Object.assign(el.style, { left: x0 * 100 + "%", top: y0 * 100 + "%", width: (x1 - x0) * 100 + "%", height: (y1 - y0) * 100 + "%" });
+    m.appendChild(el);
+  }
+}
+
+function renderTList() {
+  if (!saved.length) { $("tlist").innerHTML = "None yet."; return; }
+  $("tlist").innerHTML = saved.map(s => `<div class="titem${region && region.id === s.id ? " active" : ""}" data-id="${esc(s.id)}">
+    <span>Page ${s.page} · ${esc(s.saved || "")}</span><button title="Delete" data-del="${esc(s.id)}">×</button>
+    <span class="snip">${esc((s.text || "").replace(/\s+/g, " ").slice(0, 120))}</span></div>`).join("");
+}
+$("tlist").addEventListener("click", async e => {
+  const del = e.target.closest("[data-del]");
+  if (del) {
+    e.stopPropagation();
+    const res = await post("/api/transcripts/delete", { key: cur.key, id: del.dataset.del });
+    saved = saved.filter(s => s.id !== del.dataset.del);
+    if (region && region.id === del.dataset.del) closeEditor();
+    afterChange(res.classified, "Transcription deleted.");
+    return;
+  }
+  const it = e.target.closest(".titem");
+  if (it) editSaved(it.dataset.id);
+});
+
+function regionSettings() {
+  return { dpi: +$("ocrDpi").value, psm: +$("ocrPsm").value, invert: $("ocrInvert").checked, threshold: $("ocrThreshold").checked };
+}
+function showEditor() {
+  $("editor").hidden = false; $("ocrHint").hidden = true;
+  $("regionLabel").textContent = `${cur.book_page}, page ${region.page}` + (region.id ? " · saved transcription" : " · new region");
+  renderMarks(); renderTList();
+}
+function closeEditor() {
+  region = null; ocrToken++;
+  $("editor").hidden = true; $("ocrHint").hidden = false;
+  $("ocrText").value = ""; $("ocrPreview").removeAttribute("src"); $("ocrStatus").textContent = "";
+  renderMarks(); renderTList();
+}
+function newRegion(box) {
+  togglePanel(true);
+  region = { page, box, rot };
+  $("ocrInvert").checked = invert;  // negatives the viewer shows inverted are OCR'd inverted too
+  $("ocrThreshold").checked = false;
+  $("ocrText").value = "";
+  showEditor();
+  runOcr();
+}
+function editSaved(id) {
+  const s = saved.find(x => x.id === id);
+  if (!s) return;
+  togglePanel(true);
+  if (s.page !== page) { page = s.page; showPage(); }
+  region = { ...s };
+  $("ocrDpi").value = String(s.dpi || 400); $("ocrPsm").value = String(s.psm || 6);
+  $("ocrInvert").checked = !!s.invert; $("ocrThreshold").checked = !!s.threshold;
+  $("ocrText").value = s.text || "";
+  $("ocrPreview").removeAttribute("src");
+  $("ocrStatus").textContent = "Saved text. Run OCR again to compare.";
+  showEditor();
+}
+async function runOcr() {
+  if (!region) return;
+  const token = ++ocrToken, s = regionSettings();
+  store.set("ocrDpi", s.dpi); store.set("ocrPsm", s.psm);
+  const edited = region.id && $("ocrText").value.trim();
+  $("ocrStatus").textContent = "Reading…"; $("ocrRun").disabled = true;
+  try {
+    const res = await post("/api/ocr", { key: cur.key, page: region.page, box: region.box, rot: region.rot, ...s });
+    if (token !== ocrToken) return;
+    $("ocrPreview").src = res.preview;
+    if (edited && $("ocrText").value.trim() && !confirmReplace()) {
+      $("ocrStatus").textContent = `OCR read ${res.words} words (kept your text; new reading not applied).`;
+    } else {
+      $("ocrText").value = res.text;
+      $("ocrStatus").textContent = `OCR read ${res.words} words at ${s.dpi} dpi (${res.size[0]}×${res.size[1]} px).`;
+    }
+  } catch (err) {
+    if (token === ocrToken) $("ocrStatus").textContent = "OCR failed: " + err.message;
+  } finally {
+    if (token === ocrToken) $("ocrRun").disabled = false;
+  }
+}
+// replacing hand-corrected text needs a deliberate second click
+let replaceArmed = false;
+function confirmReplace() {
+  if (replaceArmed) { replaceArmed = false; return true; }
+  replaceArmed = true; setTimeout(() => replaceArmed = false, 6000);
+  return false;
+}
+$("ocrRun").onclick = () => { if (region && region.id) $("ocrStatus").textContent = "Reading… (click again within 6 s to replace your text)"; runOcr(); };
+for (const id of ["ocrDpi", "ocrPsm", "ocrInvert", "ocrThreshold"]) $(id).addEventListener("change", () => { if (region && !region.id) runOcr(); });
+
+$("ocrSave").onclick = async () => {
+  if (!region) return;
+  const text = $("ocrText").value.trim();
+  if (!text) { $("ocrStatus").textContent = "Nothing to save."; return; }
+  $("ocrSave").disabled = true;
+  try {
+    const res = await post("/api/transcripts", { key: cur.key, region: { ...region, ...regionSettings(), text } });
+    saved = saved.filter(s => s.id !== res.saved.id).concat(res.saved)
+      .sort((a, b) => a.page - b.page || a.box[1] - b.box[1] || a.box[0] - b.box[0]);
+    region = { ...res.saved };
+    showEditor();
+    afterChange(res.classified, "Saved.");
+  } catch (err) {
+    $("ocrStatus").textContent = "Save failed: " + err.message;
+  } finally { $("ocrSave").disabled = false; }
+};
+$("ocrCopy").onclick = async () => {
+  try { await navigator.clipboard.writeText($("ocrText").value); $("ocrStatus").textContent = "Copied."; }
+  catch { $("ocrText").select(); $("ocrStatus").textContent = "Select-all done; press ⌘/Ctrl-C."; }
+};
+$("ocrDiscard").onclick = () => closeEditor();
+
+function afterChange(classified, msg) {
+  const before = new Set(cur.features || []);
+  Object.assign(cur, classified, { transcribed: saved.length });
+  const added = (cur.features || []).filter(f => !before.has(f));
+  const box = $("classified");
+  box.hidden = false;
+  box.innerHTML = `${esc(msg)} Re-classified with your transcriptions: <b>${esc(cur.kind)}</b>` +
+    ((cur.features || []).length ? ` · ${esc(cur.features.join(", "))}` : " · no restriction terms found") +
+    (added.length ? `<br>New: ${esc(added.join(", "))}` : "") +
+    `<br><span style="opacity:.8">Run <code>pvc ${cur.kind === "plat" ? "plat-ocr" : "restriction-read --offline"}</code> and <code>pvc restriction-survey --offline</code> to update the report.</span>`;
+  renderMeta(); refreshItem(cur); renderTList(); renderMarks();
+}
+
 document.addEventListener("keydown", e => {
-  if (e.target.matches?.("input[type=search], input[type=number], select") || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.target.matches?.("input[type=search], input[type=number], select, textarea") || e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key;
   if (k === "ArrowRight") $("nextPage").click();
   else if (k === "ArrowLeft") $("prevPage").click();
@@ -359,6 +672,9 @@ document.addEventListener("keydown", e => {
   else if (k === "w") $("fitWidth").click();
   else if (k === "r") $("rotate").click();
   else if (k === "i") $("invert").click();
+  else if (k === "s") setSelectMode(!selectMode);
+  else if (k === "t") togglePanel();
+  else if (k === "Escape") { if (selectMode) setSelectMode(false); else if (region) closeEditor(); }
   else if (k === "/") { e.preventDefault(); $("q").focus(); }
   else return;
   e.preventDefault();

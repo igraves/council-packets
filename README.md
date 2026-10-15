@@ -326,6 +326,23 @@ resolution the zoom needs and are cached in `deeds/cache/pages/`. The server
 listens on localhost only. Links like `#r:4442333/2` (instrument
 `r:<record id>` or plat `p:<record id>`, then page) open a document directly.
 
+Documents that OCR read poorly are badged and can be filtered. A plat counts
+as poor under 150 words. An instrument counts as poor under 120 words a page,
+or when it was classified by eye. To transcribe one:
+
+1. Turn on **Select text** (`s`, or hold ⇧) and drag a box around the text.
+2. The server renders just that region at a chosen OCR zoom (200–600 dpi) and
+   cleans it up: invert for negatives, a contrast stretch, and an optional
+   black-and-white threshold. It then runs Tesseract with a chosen layout.
+3. The panel shows the image Tesseract read and its text. Correct the text and
+   save it.
+
+Saved regions stay highlighted on the page and go to
+`deeds/ocr/manual/transcripts.json`, which is local. The document is
+re-classified on the spot. `pvc plat-ocr` and `pvc restriction-read` add the
+transcriptions to the OCR text, so a transcribed covenant or term reaches the
+report on the next `pvc restriction-survey --offline`.
+
 Raw rows are cached in `deeds/cache/restrictions/` because they carry party
 names. The checked-in `deeds/restrictions.json` and
 [subdivision-restrictions.md](subdivision-restrictions.md) list instruments

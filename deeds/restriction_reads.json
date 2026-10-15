@@ -17,6 +17,7 @@
    "until_year": null,
    "pages": 1,
    "words": 518,
+   "transcribed": 0,
    "note": "affidavit of possession, land outside the plat",
    "unrelated": true,
    "reviewed": true
@@ -42,7 +43,8 @@
    "term": "period of Twenty-five (25) years",
    "until_year": null,
    "pages": 3,
-   "words": 1142
+   "words": 1142,
+   "transcribed": 0
   },
   {
    "id": "4442333",
@@ -66,7 +68,8 @@
    "term": "period of twenty-five years",
    "until_year": null,
    "pages": 3,
-   "words": 1198
+   "words": 1198,
+   "transcribed": 0
   },
   {
    "id": "4443151",
@@ -88,7 +91,8 @@
    "term": "period of twenty-five years",
    "until_year": null,
    "pages": 6,
-   "words": 2815
+   "words": 2815,
+   "transcribed": 0
   },
   {
    "id": "4443152",
@@ -108,7 +112,8 @@
    "term": "period of three years",
    "until_year": null,
    "pages": 7,
-   "words": 3299
+   "words": 3299,
+   "transcribed": 0
   },
   {
    "id": "4591418",
@@ -132,7 +137,8 @@
    "term": "period of five (5) years",
    "until_year": null,
    "pages": 5,
-   "words": 2183
+   "words": 2183,
+   "transcribed": 0
   },
   {
    "id": "4590868",
@@ -151,6 +157,7 @@
    "until_year": null,
    "pages": 1,
    "words": 313,
+   "transcribed": 0,
    "note": "road vacation petition, Roesland Lane in Mission Ridge",
    "unrelated": true,
    "reviewed": true
@@ -171,7 +178,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 148
+   "words": 148,
+   "transcribed": 0
   },
   {
    "id": "1733572",
@@ -192,7 +200,8 @@
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 7,
-   "words": 324
+   "words": 324,
+   "transcribed": 0
   },
   {
    "id": "1732633",
@@ -211,6 +220,7 @@
    "until_year": null,
    "pages": 1,
    "words": 102,
+   "transcribed": 0,
    "note": "heirship affidavit, land in Sec 36-14-25",
    "unrelated": true,
    "reviewed": true
@@ -232,6 +242,7 @@
    "until_year": null,
    "pages": 4,
    "words": 136,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for CEDARVALE (Kansas City Investment Company and lot owners)",
    "unrelated": false,
    "reviewed": true
@@ -253,6 +264,7 @@
    "until_year": null,
    "pages": 1,
    "words": 59,
+   "transcribed": 0,
    "note": "heirship affidavit, land in Sec 18-13-24",
    "unrelated": true,
    "reviewed": true
@@ -273,7 +285,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 284
+   "words": 284,
+   "transcribed": 0
   },
   {
    "id": "1732379",
@@ -293,7 +306,8 @@
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 2,
-   "words": 702
+   "words": 702,
+   "transcribed": 0
   },
   {
    "id": "1733502",
@@ -312,6 +326,7 @@
    "until_year": null,
    "pages": 1,
    "words": 236,
+   "transcribed": 0,
    "note": "road right-of-way release to Johnson County",
    "unrelated": true,
    "reviewed": true
@@ -334,7 +349,8 @@
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 2,
-   "words": 522
+   "words": 522,
+   "transcribed": 0
   },
   {
    "id": "1733539",
@@ -356,7 +372,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 1080
+   "words": 1080,
+   "transcribed": 0
   },
   {
    "id": "1733540",
@@ -375,6 +392,7 @@
    "until_year": null,
    "pages": 1,
    "words": 17,
+   "transcribed": 0,
    "note": "marital-status affidavit",
    "unrelated": false,
    "reviewed": true
@@ -396,6 +414,7 @@
    "until_year": null,
    "pages": 3,
    "words": 437,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for MISSION VALLEY WEST (all lot owners)",
    "unrelated": false,
    "reviewed": true
@@ -420,7 +439,8 @@
    "term": null,
    "until_year": null,
    "pages": 6,
-   "words": 1186
+   "words": 1186,
+   "transcribed": 0
   },
   {
    "id": "2370256",
@@ -444,7 +464,8 @@
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 10,
-   "words": 1923
+   "words": 1923,
+   "transcribed": 0
   },
   {
    "id": "2509043",
@@ -463,6 +484,7 @@
    "until_year": null,
    "pages": 2,
    "words": 302,
+   "transcribed": 0,
    "note": "Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake",
    "unrelated": false,
    "reviewed": true
@@ -483,7 +505,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 441
+   "words": 441,
+   "transcribed": 0
   },
   {
    "id": "3294928",
@@ -501,7 +524,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 192
+   "words": 192,
+   "transcribed": 0
   },
   {
    "id": "3433676",
@@ -519,7 +543,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 158
+   "words": 158,
+   "transcribed": 0
   },
   {
    "id": "3433690",
@@ -543,7 +568,8 @@
    "term": "period of twenty-five years",
    "until_year": null,
    "pages": 4,
-   "words": 1402
+   "words": 1402,
+   "transcribed": 0
   },
   {
    "id": "3563607",
@@ -565,7 +591,8 @@
    "term": "period of 25 years",
    "until_year": null,
    "pages": 4,
-   "words": 829
+   "words": 829,
+   "transcribed": 0
   },
   {
    "id": "3573529",
@@ -587,7 +614,8 @@
    "term": "period of twenty- five (25) years",
    "until_year": null,
    "pages": 9,
-   "words": 1296
+   "words": 1296,
+   "transcribed": 0
   },
   {
    "id": "3573623",
@@ -606,6 +634,7 @@
    "until_year": null,
    "pages": 4,
    "words": 31,
+   "transcribed": 0,
    "note": "Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest)",
    "unrelated": false,
    "reviewed": true
@@ -626,7 +655,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 586
+   "words": 586,
+   "transcribed": 0
   },
   {
    "id": "4094190",
@@ -648,7 +678,8 @@
    "term": "period of five (25) years",
    "until_year": null,
    "pages": 7,
-   "words": 2029
+   "words": 2029,
+   "transcribed": 0
   },
   {
    "id": "4093668",
@@ -669,6 +700,7 @@
    "until_year": null,
    "pages": 1,
    "words": 137,
+   "transcribed": 0,
    "note": "death certificate",
    "unrelated": true,
    "reviewed": true
@@ -691,7 +723,8 @@
    "term": null,
    "until_year": null,
    "pages": 9,
-   "words": 752
+   "words": 752,
+   "transcribed": 0
   },
   {
    "id": "4373697",
@@ -709,7 +742,8 @@
    "term": null,
    "until_year": null,
    "pages": 8,
-   "words": 472
+   "words": 472,
+   "transcribed": 0
   },
   {
    "id": "4627257",
@@ -731,7 +765,8 @@
    "term": null,
    "until_year": null,
    "pages": 8,
-   "words": 847
+   "words": 847,
+   "transcribed": 0
   },
   {
    "id": "4627589",
@@ -752,7 +787,8 @@
    "term": null,
    "until_year": null,
    "pages": 11,
-   "words": 1072
+   "words": 1072,
+   "transcribed": 0
   },
   {
    "id": "4627592",
@@ -772,7 +808,8 @@
    "term": null,
    "until_year": null,
    "pages": 10,
-   "words": 1376
+   "words": 1376,
+   "transcribed": 0
   },
   {
    "id": "4626802",
@@ -795,7 +832,8 @@
    "term": null,
    "until_year": null,
    "pages": 9,
-   "words": 1361
+   "words": 1361,
+   "transcribed": 0
   },
   {
    "id": "4758450",
@@ -816,7 +854,8 @@
    "term": null,
    "until_year": null,
    "pages": 8,
-   "words": 619
+   "words": 619,
+   "transcribed": 0
   },
   {
    "id": "4757908",
@@ -836,6 +875,7 @@
    "until_year": null,
    "pages": 1,
    "words": 6,
+   "transcribed": 0,
    "note": "heirship affidavit, Southridge",
    "unrelated": true,
    "reviewed": true
@@ -859,6 +899,7 @@
    "until_year": null,
    "pages": 3,
    "words": 580,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for MISSION VALLEY EAST lots 59-66 (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -882,7 +923,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 1380
+   "words": 1380,
+   "transcribed": 0
   },
   {
    "id": "1580250",
@@ -903,6 +945,7 @@
    "until_year": null,
    "pages": 5,
    "words": 580,
+   "transcribed": 0,
    "note": "Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners",
    "unrelated": false,
    "reviewed": true
@@ -929,7 +972,8 @@
    "term": null,
    "until_year": null,
    "pages": 8,
-   "words": 928
+   "words": 928,
+   "transcribed": 0
   },
   {
    "id": "1704255",
@@ -950,6 +994,7 @@
    "until_year": null,
    "pages": 3,
    "words": 432,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for RIDGE VIEW HEIGHTS",
    "unrelated": false,
    "reviewed": true
@@ -971,6 +1016,7 @@
    "until_year": null,
    "pages": 1,
    "words": 53,
+   "transcribed": 0,
    "note": "septic-tank covenant with the county health board, Antioch Acres",
    "unrelated": true,
    "reviewed": true
@@ -994,7 +1040,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 603
+   "words": 603,
+   "transcribed": 0
   },
   {
    "id": "1812918",
@@ -1013,6 +1060,7 @@
    "until_year": null,
    "pages": 3,
    "words": 13,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for PRAIRIE VALLEY NORTH (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1036,6 +1084,7 @@
    "until_year": null,
    "pages": 3,
    "words": 5,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for PRAIRIE VALLEY NORTH ANNEX (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1057,6 +1106,7 @@
    "until_year": null,
    "pages": 2,
    "words": 105,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for PRAIRIE RIDGE VIEW",
    "unrelated": false,
    "reviewed": true
@@ -1080,7 +1130,8 @@
    "term": "period of twenty five years",
    "until_year": null,
    "pages": 3,
-   "words": 1116
+   "words": 1116,
+   "transcribed": 0
   },
   {
    "id": "1893636",
@@ -1101,6 +1152,7 @@
    "until_year": null,
    "pages": 3,
    "words": 806,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for PRAIRIE VIEW #5 lots 1-30 (The Mission Land Company)",
    "unrelated": false,
    "reviewed": true
@@ -1122,6 +1174,7 @@
    "until_year": null,
    "pages": 2,
    "words": 136,
+   "transcribed": 0,
    "note": "J. C. Nichols Company reserves sewer right of way, Prairie Ridge Blocks 20-21",
    "unrelated": false,
    "reviewed": true
@@ -1143,6 +1196,7 @@
    "until_year": null,
    "pages": 4,
    "words": 303,
+   "transcribed": 0,
    "note": "prenuptial contract",
    "unrelated": true,
    "reviewed": true
@@ -1166,6 +1220,7 @@
    "until_year": null,
    "pages": 3,
    "words": 336,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for JUNIPER HILL lots 1-18 (Frank C. Braun, Inc.)",
    "unrelated": false,
    "reviewed": true
@@ -1189,7 +1244,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 730
+   "words": 730,
+   "transcribed": 0
   },
   {
    "id": "2070233",
@@ -1208,6 +1264,7 @@
    "until_year": null,
    "pages": 3,
    "words": 784,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for NALLANDS (Kansas City Investment Company and owners)",
    "unrelated": false,
    "reviewed": true
@@ -1228,7 +1285,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 69
+   "words": 69,
+   "transcribed": 0
   },
   {
    "id": "2303186",
@@ -1249,7 +1307,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 457
+   "words": 457,
+   "transcribed": 0
   },
   {
    "id": "2303188",
@@ -1268,6 +1327,7 @@
    "until_year": null,
    "pages": 1,
    "words": 18,
+   "transcribed": 0,
    "note": "ratification of dedication, Prairie Manor",
    "unrelated": false,
    "reviewed": true
@@ -1289,6 +1349,7 @@
    "until_year": null,
    "pages": 1,
    "words": 43,
+   "transcribed": 0,
    "note": "federal tax lien discharge",
    "unrelated": true,
    "reviewed": true
@@ -1309,7 +1370,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 98
+   "words": 98,
+   "transcribed": 0
   },
   {
    "id": "2423486",
@@ -1329,7 +1391,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 358
+   "words": 358,
+   "transcribed": 0
   },
   {
    "id": "2861683",
@@ -1348,6 +1411,7 @@
    "until_year": null,
    "pages": 1,
    "words": 16,
+   "transcribed": 0,
    "note": "affidavit concerning Bradley Hills Addition",
    "unrelated": true,
    "reviewed": true
@@ -1369,6 +1433,7 @@
    "until_year": null,
    "pages": 1,
    "words": 16,
+   "transcribed": 0,
    "note": "surveyor's affidavit for Ferndale",
    "unrelated": true,
    "reviewed": true
@@ -1390,6 +1455,7 @@
    "until_year": null,
    "pages": 2,
    "words": 18,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1411,6 +1477,7 @@
    "until_year": null,
    "pages": 2,
    "words": 2,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for JORDAN PLACE",
    "unrelated": false,
    "reviewed": true
@@ -1432,6 +1499,7 @@
    "until_year": null,
    "pages": 2,
    "words": 698,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for PAWNEE MANOR (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1456,6 +1524,7 @@
    "until_year": null,
    "pages": 3,
    "words": 981,
+   "transcribed": 0,
    "note": "sewer connection contract, Leawood Hills",
    "unrelated": true,
    "reviewed": true
@@ -1480,6 +1549,7 @@
    "until_year": null,
    "pages": 3,
    "words": 987,
+   "transcribed": 0,
    "note": "sewer connection contract, Leawood Hills",
    "unrelated": true,
    "reviewed": true
@@ -1500,7 +1570,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 474
+   "words": 474,
+   "transcribed": 0
   },
   {
    "id": "3360475",
@@ -1519,6 +1590,7 @@
    "until_year": null,
    "pages": 2,
    "words": 225,
+   "transcribed": 0,
    "note": "Homes Association Declaration by Town and Country Estates, Inc., under the declaration at MISC 72/287",
    "unrelated": false,
    "reviewed": true
@@ -1542,6 +1614,7 @@
    "until_year": null,
    "pages": 2,
    "words": 1093,
+   "transcribed": 0,
    "note": "option agreement for land in Sec 6",
    "unrelated": true,
    "reviewed": true
@@ -1563,6 +1636,7 @@
    "until_year": null,
    "pages": 5,
    "words": 600,
+   "transcribed": 0,
    "note": "articles of incorporation of a church",
    "unrelated": true,
    "reviewed": true
@@ -1584,6 +1658,7 @@
    "until_year": null,
    "pages": 2,
    "words": 147,
+   "transcribed": 0,
    "note": "county commission minutes, 77th Street benefit district 147",
    "unrelated": false,
    "reviewed": true
@@ -1605,6 +1680,7 @@
    "until_year": null,
    "pages": 2,
    "words": 212,
+   "transcribed": 0,
    "note": "county commission minutes, Pawnee Street benefit district 148",
    "unrelated": false,
    "reviewed": true
@@ -1628,6 +1704,7 @@
    "until_year": null,
    "pages": 2,
    "words": 300,
+   "transcribed": 0,
    "note": "county order classifying platted lots into minimum ground floor area districts",
    "unrelated": false,
    "reviewed": true
@@ -1651,6 +1728,7 @@
    "until_year": null,
    "pages": 2,
    "words": 295,
+   "transcribed": 0,
    "note": "county order classifying platted lots into minimum ground floor area districts",
    "unrelated": false,
    "reviewed": true
@@ -1673,7 +1751,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 455
+   "words": 455,
+   "transcribed": 0
   },
   {
    "id": "4096810",
@@ -1692,6 +1771,7 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
+   "transcribed": 0,
    "note": "federal tax lien",
    "unrelated": true,
    "reviewed": true
@@ -1715,7 +1795,8 @@
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 5,
-   "words": 1108
+   "words": 1108,
+   "transcribed": 0
   },
   {
    "id": "4166926",
@@ -1734,6 +1815,7 @@
    "until_year": null,
    "pages": 2,
    "words": 89,
+   "transcribed": 0,
    "note": "Homes Association Declaration for TOWN & COUNTRY ESTATES lots 98-112",
    "unrelated": false,
    "reviewed": true
@@ -1754,7 +1836,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 338
+   "words": 338,
+   "transcribed": 0
   },
   {
    "id": "4166065",
@@ -1773,6 +1856,7 @@
    "until_year": null,
    "pages": 1,
    "words": 12,
+   "transcribed": 0,
    "note": "fence viewers' order, Sec 5-13-23",
    "unrelated": true,
    "reviewed": true
@@ -1798,7 +1882,8 @@
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 3,
-   "words": 588
+   "words": 588,
+   "transcribed": 0
   },
   {
    "id": "4504850",
@@ -1822,7 +1907,8 @@
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 5,
-   "words": 1902
+   "words": 1902,
+   "transcribed": 0
   },
   {
    "id": "4504851",
@@ -1842,7 +1928,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 419
+   "words": 419,
+   "transcribed": 0
   },
   {
    "id": "4606248",
@@ -1861,6 +1948,7 @@
    "until_year": null,
    "pages": 3,
    "words": 95,
+   "transcribed": 0,
    "note": "Declaration of Restrictions for PRAIRIE ESTATES lots 1-84 (Prairie Estates Development Company)",
    "unrelated": false,
    "reviewed": true
@@ -1881,7 +1969,8 @@
    "term": null,
    "until_year": null,
    "pages": 1,
-   "words": 207
+   "words": 207,
+   "transcribed": 0
   },
   {
    "id": "2627147",
@@ -1900,6 +1989,7 @@
    "until_year": null,
    "pages": 1,
    "words": 230,
+   "transcribed": 0,
    "note": "inheritance tax order",
    "unrelated": true,
    "reviewed": true
@@ -1926,7 +2016,8 @@
    "term": null,
    "until_year": null,
    "pages": 10,
-   "words": 2004
+   "words": 2004,
+   "transcribed": 0
   },
   {
    "id": "3082563",
@@ -1945,6 +2036,7 @@
    "until_year": null,
    "pages": 1,
    "words": 46,
+   "transcribed": 0,
    "note": "title affidavit, Sec 35-14-24",
    "unrelated": true,
    "reviewed": true
@@ -1966,6 +2058,7 @@
    "until_year": null,
    "pages": 1,
    "words": 7,
+   "transcribed": 0,
    "note": "title affidavit, Sec 35-14-24",
    "unrelated": true,
    "reviewed": true
@@ -1987,6 +2080,7 @@
    "until_year": null,
    "pages": 2,
    "words": 190,
+   "transcribed": 0,
    "note": "oil company lease, Roeland Park",
    "unrelated": true,
    "reviewed": true
@@ -2008,6 +2102,7 @@
    "until_year": null,
    "pages": 2,
    "words": 234,
+   "transcribed": 0,
    "note": "sheriff's certificate of purchase",
    "unrelated": true,
    "reviewed": true
@@ -2029,6 +2124,7 @@
    "until_year": null,
    "pages": 1,
    "words": 224,
+   "transcribed": 0,
    "note": "heirship affidavit",
    "unrelated": true,
    "reviewed": true
@@ -2050,6 +2146,7 @@
    "until_year": null,
    "pages": 2,
    "words": 263,
+   "transcribed": 0,
    "note": "county resolution on the Monticello Township zoning board",
    "unrelated": true,
    "reviewed": true
@@ -2073,6 +2170,7 @@
    "until_year": null,
    "pages": 7,
    "words": 1317,
+   "transcribed": 0,
    "note": "articles of incorporation certified by the Secretary of State",
    "unrelated": false,
    "reviewed": true
@@ -2097,7 +2195,8 @@
    "term": null,
    "until_year": null,
    "pages": 5,
-   "words": 1021
+   "words": 1021,
+   "transcribed": 0
   },
   {
    "id": "2558643",
@@ -2117,7 +2216,8 @@
    "term": "period of five (5) years",
    "until_year": null,
    "pages": 11,
-   "words": 2702
+   "words": 2702,
+   "transcribed": 0
   },
   {
    "id": "3121879",
@@ -2139,7 +2239,8 @@
    "term": null,
    "until_year": null,
    "pages": 36,
-   "words": 7455
+   "words": 7455,
+   "transcribed": 0
   },
   {
    "id": "3270980",
@@ -2161,7 +2262,8 @@
    "term": null,
    "until_year": null,
    "pages": 4,
-   "words": 911
+   "words": 911,
+   "transcribed": 0
   },
   {
    "id": "3270981",
@@ -2181,7 +2283,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 439
+   "words": 439,
+   "transcribed": 0
   },
   {
    "id": "3382741",
@@ -2202,7 +2305,8 @@
    "term": null,
    "until_year": null,
    "pages": 14,
-   "words": 14250
+   "words": 14250,
+   "transcribed": 0
   },
   {
    "id": "3384377",
@@ -2222,7 +2326,8 @@
    "term": null,
    "until_year": null,
    "pages": 4,
-   "words": 982
+   "words": 982,
+   "transcribed": 0
   },
   {
    "id": "3384379",
@@ -2242,7 +2347,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 884
+   "words": 884,
+   "transcribed": 0
   },
   {
    "id": "3383245",
@@ -2262,7 +2368,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 442
+   "words": 442,
+   "transcribed": 0
   },
   {
    "id": "3482539",
@@ -2282,7 +2389,8 @@
    "term": null,
    "until_year": null,
    "pages": 2,
-   "words": 442
+   "words": 442,
+   "transcribed": 0
   },
   {
    "id": "3482540",
@@ -2302,7 +2410,8 @@
    "term": null,
    "until_year": null,
    "pages": 3,
-   "words": 908
+   "words": 908,
+   "transcribed": 0
   },
   {
    "id": "3482541",
@@ -2322,7 +2431,8 @@
    "term": null,
    "until_year": null,
    "pages": 4,
-   "words": 978
+   "words": 978,
+   "transcribed": 0
   },
   {
    "id": "3589642",
@@ -2344,7 +2454,8 @@
    "term": null,
    "until_year": null,
    "pages": 46,
-   "words": 15259
+   "words": 15259,
+   "transcribed": 0
   },
   {
    "id": "3696632",
@@ -2366,7 +2477,8 @@
    "term": null,
    "until_year": null,
    "pages": 201,
-   "words": 43042
+   "words": 43042,
+   "transcribed": 0
   },
   {
    "id": "3800239",
@@ -2386,7 +2498,8 @@
    "term": null,
    "until_year": null,
    "pages": 6,
-   "words": 1428
+   "words": 1428,
+   "transcribed": 0
   },
   {
    "id": "4003648",
@@ -2407,7 +2520,8 @@
    "term": null,
    "until_year": null,
    "pages": 22,
-   "words": 5157
+   "words": 5157,
+   "transcribed": 0
   },
   {
    "id": "4003650",
@@ -2429,7 +2543,8 @@
    "term": null,
    "until_year": null,
    "pages": 43,
-   "words": 8340
+   "words": 8340,
+   "transcribed": 0
   },
   {
    "id": "3715367",
@@ -2450,7 +2565,8 @@
    "term": null,
    "until_year": null,
    "pages": 35,
-   "words": 13254
+   "words": 13254,
+   "transcribed": 0
   },
   {
    "id": "3859075",
@@ -2470,7 +2586,8 @@
    "term": null,
    "until_year": null,
    "pages": 118,
-   "words": 4348
+   "words": 4348,
+   "transcribed": 0
   }
  ]
 }

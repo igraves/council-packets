@@ -143,6 +143,9 @@ EXCERPTS_PATH = OCR_DIR / "excerpts.md"  # local only: excerpts can carry signer
 def build(manifest: dict) -> dict:
     """Scan the OCR text of every Prairie Village plat; write the checked-in results (terms and
     citations only) and a local excerpts file for reading."""
+    from pvcouncil import transcripts
+
+    manual = transcripts.load()
     results, excerpts = [], ["# Restriction excerpts from plat OCR (local, not checked in)", ""]
     for e in manifest["instruments"]:
         if e["match"] not in ("exact", "variant"):
@@ -150,7 +153,10 @@ def build(manifest: dict) -> dict:
         txt = OCR_DIR / f"{plats.image_path(e).stem}.txt"
         if not txt.exists():
             continue
-        r = find_restrictions(txt.read_text())
+        ocr_text = txt.read_text()
+        r = find_restrictions(ocr_text + "\n\n" + transcripts.text_for(f"p:{e['id']}", manual))
+        r["words"] = len(_flatten(ocr_text).split())  # what OCR alone read
+        r["transcribed"] = len(manual.get(f"p:{e['id']}", []))
         excerpt = r.pop("excerpt")
         for c in r["citations"]:
             c.pop("text", None)

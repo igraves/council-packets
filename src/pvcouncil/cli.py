@@ -489,6 +489,15 @@ def plats_root():
     return plats.PROJECT_ROOT
 
 
+@cli.command("deed-viewer")
+@click.option("--port", default=8765, show_default=True, help="Port on 127.0.0.1")
+def deed_viewer(port):
+    """Page through the downloaded plats and restriction instruments in a browser."""
+    from pvcouncil import viewer
+
+    viewer.serve(port=port, echo=click.echo)
+
+
 @cli.command("restriction-survey")
 @click.option("--offline", is_flag=True, help="Rebuild from cached searches only")
 @click.option("--walk", is_flag=True, help="Also pull 'Miscellaneous' filings around each pre-1976 plat date")

@@ -316,6 +316,16 @@ which also marks papers filed the same day that concern other land. The results
 go to `deeds/restriction_reads.json` and feed the report. Images and OCR text
 stay local.
 
+**Viewing them.** `uv run pvc deed-viewer` serves a viewer at
+http://127.0.0.1:8765/ for the downloaded plats and restriction instruments.
+It lists them by subdivision and lets you filter by type, search, or show
+only racially restrictive covenants. You can page through each document,
+zoom with Ctrl/⌘-scroll, a pinch, or a double-click, drag to pan, rotate,
+and invert the photostat negatives. Pages render from the local PDFs at the
+resolution the zoom needs and are cached in `deeds/cache/pages/`. The server
+listens on localhost only. Links like `#r:4442333/2` (instrument
+`r:<record id>` or plat `p:<record id>`, then page) open a document directly.
+
 Raw rows are cached in `deeds/cache/restrictions/` because they carry party
 names. The checked-in `deeds/restrictions.json` and
 [subdivision-restrictions.md](subdivision-restrictions.md) list instruments

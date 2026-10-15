@@ -129,12 +129,48 @@ class Recorder:
         self._open(f"{BASE}/", form)
         page = self._open(f"{BASE}/views/search")
         self.session = _session_values(page)
+        uid = re.search(r"'UserId':\s*'?(\d+)'?", page)
+        self.user_id = uid.group(1) if uid else ""
         missing = [k for k in SESSION_KEYS if k not in self.session]
         if missing:
             raise RecorderError(
                 f"Logged-in search page is missing {', '.join(missing)}; "
                 "the login may have failed or the site changed. Run `pvc recorder-check`.")
         return self
+
+    def _pace(self):
+        wait = self.delay - (time.monotonic() - self._last)
+        if wait > 0:
+            time.sleep(wait)
+        self._last = time.monotonic()
+
+    def image_detail(self, ref_id: str) -> dict:
+        """Image metadata for an instrument: HasImage, NumberOfPages, IsOwned, ..."""
+        self._pace()
+        text = self._open(f"{BASE}/api/ImageDetail/{self.session['SessionTicket']},{ref_id}",
+                          headers={"X-Requested-With": "XMLHttpRequest",
+                                   "Accept": "application/json, text/javascript, */*"})
+        data = text
+        for _ in range(3):  # the API nests JSON in JSON strings
+            if isinstance(data, str) and data:
+                data = json.loads(data)
+        return data if isinstance(data, dict) else {}
+
+    def image_pdf(self, ref_id: str) -> bytes:
+        """The instrument's image as a PDF, as the site's viewer fetches it.
+
+        Viewing and downloading are free on this subscription (ImageViewingCostsMoney and
+        PrintingCostsMoneyEnabled are false); certified copies through the cart are not.
+        """
+        self._pace()
+        url = (f"{BASE}/api/Image/{self.session['SessionTicket']},{ref_id},,false,false,,"
+               f"{self.user_id}")
+        req = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/pdf,*/*"})
+        with self.opener.open(req, timeout=SEARCH_TIMEOUT) as resp:
+            data = resp.read()
+        if not data.startswith(b"%PDF"):
+            raise RecorderError(f"Image for {ref_id} is not a PDF (session expired?)")
+        return data
 
     def search(self, legal: list[tuple[str, str, str]] = (), categories: list[int] = (),
                doc_types: list[int] = (), order: str = "RecordedDate:asc",

@@ -1,0 +1,10 @@
+{
+ "_about": "Placements decided by reading the plat image, for plats the index can't locate. Keyed by book/page. `pvc plat-survey` applies these over its own matching.",
+ "PLAT 8 37": {"match": "elsewhere", "location": "Sec 8-12-25", "note": "COUNTRYSIDE, 61st St to 61st Terrace, Woodson to Nall Ave (Mission), not Countryside-East"},
+ "PLAT 9 46": {"match": "elsewhere", "location": "Sec 8-12-25", "note": "COUNTRYSIDE block 6, 61st St to 61st Terrace, Lamar to Woodson (Mission). Cites restrictions at MISC 22/306 and a homes association declaration at MISC 22/312"},
+ "PLAT 11 5": {"match": "elsewhere", "location": "Sec 8-12-25", "note": "COUNTRYSIDE block 5, 61st Terrace at Lamar Ave (Mission)"},
+ "PLAT 12 25": {"match": "elsewhere", "location": "Sec 8-12-25", "note": "COUNTRYSIDE resurvey, 62nd St to 62nd Terrace, Lamar to Nall Ave (Mission); same instrument as PLAT 12 26"},
+ "PLAT 12 26": {"match": "elsewhere", "location": "Sec 8-12-25", "note": "COUNTRYSIDE resurvey, 62nd St to 62nd Terrace, Lamar to Nall Ave (Mission); same instrument as PLAT 12 25"},
+ "PLAT 10 42": {"match": "variant", "plat": "SUNSET HEIGHTS VIEW", "location": "Sec 17-12-25", "note": "67th to 69th St between Copley Rd and Nall Rd. States its restrictions are the same as those already of record on the land"},
+ "PLAT 12 21": {"match": "variant", "plat": "REPLAT OF FONTICELLO GARDENS NO. 2", "location": "Sec 16-12-25", "note": "Original plat of Fonticello Gardens No. 2, 69th St and Williamsburg Lane; replatted in 1959 (PLAT 21 36)"}
+}

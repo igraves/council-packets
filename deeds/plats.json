@@ -925,8 +925,11 @@
    "index_names": [
     "RIDGE VIEW"
    ],
-   "plat": "RIDGE VIEW",
+   "plats": [
+    "RIDGE VIEW"
+   ],
    "match": "exact",
+   "plat": "RIDGE VIEW",
    "subdivision_code": "5900"
   },
   {
@@ -940,8 +943,11 @@
    "index_names": [
     "JARBOE HEIGHTS"
    ],
-   "plat": "JARBOE HEIGHTS",
+   "plats": [
+    "JARBOE HEIGHTS"
+   ],
    "match": "exact",
+   "plat": "JARBOE HEIGHTS",
    "subdivision_code": "1700"
   },
   {
@@ -955,8 +961,11 @@
    "index_names": [
     "COUNTRY CLUB VIEW"
    ],
-   "plat": "COUNTRY CLUB VIEW",
+   "plats": [
+    "COUNTRY CLUB VIEW"
+   ],
    "match": "exact",
+   "plat": "COUNTRY CLUB VIEW",
    "subdivision_code": "0700"
   },
   {
@@ -970,9 +979,30 @@
    "index_names": [
     "SUNSET HILL ACRES"
    ],
-   "plat": "SUNSET HILL ACRES",
+   "plats": [
+    "SUNSET HILL ACRES"
+   ],
    "match": "exact",
+   "plat": "SUNSET HILL ACRES",
    "subdivision_code": "7300"
+  },
+  {
+   "id": "2026456",
+   "recorded": "1923-09-26",
+   "doc_type": "Plat",
+   "book_page": "PLAT 6 15",
+   "instrument_number": "192309260434693",
+   "docid": "131821",
+   "legal": "Sec:21 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "RESURVEY OF LOTS 15 AND 16 PLAT OF RIDGE VIEW"
+   ],
+   "plats": [
+    "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW"
+   ],
+   "match": "exact",
+   "plat": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+   "subdivision_code": "6000"
   },
   {
    "id": "2026916",
@@ -985,8 +1015,11 @@
    "index_names": [
     "GRANTHURST"
    ],
-   "plat": "GRANTHURST",
+   "plats": [
+    "GRANTHURST"
+   ],
    "match": "exact",
+   "plat": "GRANTHURST",
    "subdivision_code": "1100"
   },
   {
@@ -1000,8 +1033,11 @@
    "index_names": [
     "GRANTHURST"
    ],
-   "plat": "GRANTHURST",
+   "plats": [
+    "GRANTHURST"
+   ],
    "match": "exact",
+   "plat": "GRANTHURST",
    "subdivision_code": "1100"
   },
   {
@@ -1015,8 +1051,11 @@
    "index_names": [
     "MEADOW VIEW"
    ],
-   "plat": "MEADOW VIEW",
+   "plats": [
+    "MEADOW VIEW"
+   ],
    "match": "exact",
+   "plat": "MEADOW VIEW",
    "subdivision_code": "2700"
   },
   {
@@ -1030,8 +1069,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1045,8 +1087,11 @@
    "index_names": [
     "MEADOW LAKE LAWN"
    ],
-   "plat": "MEADOW LAKE LAWN",
+   "plats": [
+    "MEADOW LAKE LAWN"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE LAWN",
    "subdivision_code": "2600"
   },
   {
@@ -1060,8 +1105,11 @@
    "index_names": [
     "JARBOE VIEW"
    ],
-   "plat": "JARBOE VIEW",
+   "plats": [
+    "JARBOE VIEW"
+   ],
    "match": "exact",
+   "plat": "JARBOE VIEW",
    "subdivision_code": "1800"
   },
   {
@@ -1075,8 +1123,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1090,8 +1141,11 @@
    "index_names": [
     "INDIAN HILLS (RESURVEY BLOCK FOUR (4))"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "variant",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1105,8 +1159,11 @@
    "index_names": [
     "SUNSET HEIGHTS VIEW"
    ],
-   "plat": "SUNSET HEIGHTS VIEW",
+   "plats": [
+    "SUNSET HEIGHTS VIEW"
+   ],
    "match": "exact",
+   "plat": "SUNSET HEIGHTS VIEW",
    "subdivision_code": "7200"
   },
   {
@@ -1120,8 +1177,11 @@
    "index_names": [
     "SUNSET HEIGHTS VIEW"
    ],
-   "plat": "SUNSET HEIGHTS VIEW",
+   "plats": [
+    "SUNSET HEIGHTS VIEW"
+   ],
    "match": "exact",
+   "plat": "SUNSET HEIGHTS VIEW",
    "subdivision_code": "7200"
   },
   {
@@ -1135,9 +1195,16 @@
    "index_names": [
     "COUNTRYSIDE"
    ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
    "plat": "COUNTRYSIDE-EAST",
-   "match": "prefix",
-   "subdivision_code": "0750"
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE, 61st St to 61st Terrace, Woodson to Nall Ave (Mission), not Countryside-East"
+   }
   },
   {
    "id": "4605164",
@@ -1150,8 +1217,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1165,8 +1235,11 @@
    "index_names": [
     "PRAIRIE WOODS"
    ],
-   "plat": "PRAIRIE WOODS",
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE WOODS",
    "subdivision_code": "5600"
   },
   {
@@ -1180,9 +1253,16 @@
    "index_names": [
     "COUNTRYSIDE"
    ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
    "plat": "COUNTRYSIDE-EAST",
-   "match": "prefix",
-   "subdivision_code": "0750"
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE block 6, 61st St to 61st Terrace, Lamar to Woodson (Mission). Cites restrictions at MISC 22/306 and a homes association declaration at MISC 22/312"
+   }
   },
   {
    "id": "2137735",
@@ -1195,9 +1275,16 @@
    "index_names": [
     "SUNSET HEIGHTS VIEW NO 2"
    ],
+   "plats": [
+    "SUNSET HEIGHTS VIEW"
+   ],
+   "match": "variant",
    "plat": "SUNSET HEIGHTS VIEW",
-   "match": "prefix",
-   "subdivision_code": "7200"
+   "subdivision_code": "7200",
+   "reviewed": {
+    "location": "Sec 17-12-25",
+    "note": "67th to 69th St between Copley Rd and Nall Rd. States its restrictions are the same as those already of record on the land"
+   }
   },
   {
    "id": "2137761",
@@ -1210,8 +1297,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1225,8 +1315,11 @@
    "index_names": [
     "PRAIRIE WOODS"
    ],
-   "plat": "PRAIRIE WOODS",
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE WOODS",
    "subdivision_code": "5600"
   },
   {
@@ -1240,9 +1333,16 @@
    "index_names": [
     "COUNTRYSIDE"
    ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
    "plat": "COUNTRYSIDE-EAST",
-   "match": "prefix",
-   "subdivision_code": "0750"
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE block 5, 61st Terrace at Lamar Ave (Mission)"
+   }
   },
   {
    "id": "2308878",
@@ -1255,8 +1355,11 @@
    "index_names": [
     "SOMERSIDE"
    ],
-   "plat": "SOMERSIDE",
+   "plats": [
+    "SOMERSIDE"
+   ],
    "match": "exact",
+   "plat": "SOMERSIDE",
    "subdivision_code": "7100"
   },
   {
@@ -1270,8 +1373,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1285,8 +1391,11 @@
    "index_names": [
     "CLARKVIEW"
    ],
-   "plat": "CLARKVIEW",
+   "plats": [
+    "CLARKVIEW"
+   ],
    "match": "exact",
+   "plat": "CLARKVIEW",
    "subdivision_code": "0400"
   },
   {
@@ -1300,8 +1409,11 @@
    "index_names": [
     "NALL AVENUE GARDENS"
    ],
-   "plat": "NALL AVENUE GARDENS",
+   "plats": [
+    "NALL AVENUE GARDENS"
+   ],
    "match": "exact",
+   "plat": "NALL AVENUE GARDENS",
    "subdivision_code": "3400"
   },
   {
@@ -1315,8 +1427,11 @@
    "index_names": [
     "CEDARVALE"
    ],
-   "plat": "CEDARVALE",
+   "plats": [
+    "CEDARVALE"
+   ],
    "match": "exact",
+   "plat": "CEDARVALE",
    "subdivision_code": "0300"
   },
   {
@@ -1330,8 +1445,11 @@
    "index_names": [
     "FONTICELLO GARDENS"
    ],
-   "plat": "FONTICELLO GARDENS",
+   "plats": [
+    "FONTICELLO GARDENS"
+   ],
    "match": "exact",
+   "plat": "FONTICELLO GARDENS",
    "subdivision_code": "0900"
   },
   {
@@ -1345,8 +1463,11 @@
    "index_names": [
     "MEADOW ACRES"
    ],
-   "plat": "MEADOW ACRES",
+   "plats": [
+    "MEADOW ACRES"
+   ],
    "match": "exact",
+   "plat": "MEADOW ACRES",
    "subdivision_code": "2200"
   },
   {
@@ -1360,8 +1481,11 @@
    "index_names": [
     "MISSION VALLEY EAST"
    ],
-   "plat": "MISSION VALLEY EAST",
+   "plats": [
+    "MISSION VALLEY EAST"
+   ],
    "match": "exact",
+   "plat": "MISSION VALLEY EAST",
    "subdivision_code": "2800"
   },
   {
@@ -1375,8 +1499,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1390,8 +1517,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1405,8 +1535,11 @@
    "index_names": [
     "MISSION VALLEY WEST"
    ],
-   "plat": "MISSION VALLEY WEST",
+   "plats": [
+    "MISSION VALLEY WEST"
+   ],
    "match": "exact",
+   "plat": "MISSION VALLEY WEST",
    "subdivision_code": "2900"
   },
   {
@@ -1420,8 +1553,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1435,8 +1571,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1450,9 +1589,16 @@
    "index_names": [
     "FONTICELLO GARDENS NO 2"
    ],
+   "plats": [
+    "REPLAT OF FONTICELLO GARDENS NO. 2"
+   ],
+   "match": "variant",
    "plat": "REPLAT OF FONTICELLO GARDENS NO. 2",
-   "match": "prefix",
-   "subdivision_code": "1000"
+   "subdivision_code": "1000",
+   "reviewed": {
+    "location": "Sec 16-12-25",
+    "note": "Original plat of Fonticello Gardens No. 2, 69th St and Williamsburg Lane; replatted in 1959 (PLAT 21 36)"
+   }
   },
   {
    "id": "2486613",
@@ -1465,9 +1611,16 @@
    "index_names": [
     "COUNTRYSIDE"
    ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
    "plat": "COUNTRYSIDE-EAST",
-   "match": "prefix",
-   "subdivision_code": "0750"
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE resurvey, 62nd St to 62nd Terrace, Lamar to Nall Ave (Mission); same instrument as PLAT 12 26"
+   }
   },
   {
    "id": "2487342",
@@ -1480,9 +1633,16 @@
    "index_names": [
     "COUNTRYSIDE"
    ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
    "plat": "COUNTRYSIDE-EAST",
-   "match": "prefix",
-   "subdivision_code": "0750"
+   "subdivision_code": "0750",
+   "reviewed": {
+    "location": "Sec 8-12-25",
+    "note": "COUNTRYSIDE resurvey, 62nd St to 62nd Terrace, Lamar to Nall Ave (Mission); same instrument as PLAT 12 25"
+   }
   },
   {
    "id": "2487427",
@@ -1496,8 +1656,11 @@
     "MEADOW LAKE",
     "MEADOW LAKE CORPORATION INC"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -1512,8 +1675,11 @@
     "MEADOW LAKE",
     "MEADOW LAKE CORPORATION INC"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -1527,8 +1693,11 @@
    "index_names": [
     "BREEZY HEIGHTS"
    ],
-   "plat": "BREEZY HEIGHTS",
+   "plats": [
+    "BREEZY HEIGHTS"
+   ],
    "match": "exact",
+   "plat": "BREEZY HEIGHTS",
    "subdivision_code": "0100"
   },
   {
@@ -1540,10 +1709,14 @@
    "docid": "363805",
    "legal": null,
    "index_names": [
+    "CORRECTED PLAT MEADOW LAKE",
     "MEADOW LAKE CORPORATION INC (THE)"
    ],
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE"
+   ],
+   "match": "exact",
    "plat": "CORRECTED PLAT OF MEADOW LAKE",
-   "match": "prefix",
    "subdivision_code": "2500"
   },
   {
@@ -1555,10 +1728,14 @@
    "docid": "363805",
    "legal": null,
    "index_names": [
+    "CORRECTED PLAT MEADOW LAKE",
     "MEADOW LAKE CORPORATION INC (THE)"
    ],
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE"
+   ],
+   "match": "exact",
    "plat": "CORRECTED PLAT OF MEADOW LAKE",
-   "match": "prefix",
    "subdivision_code": "2500"
   },
   {
@@ -1572,8 +1749,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1587,8 +1767,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1602,8 +1785,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1617,8 +1803,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1632,8 +1821,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1647,8 +1839,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1662,8 +1857,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1677,8 +1875,11 @@
    "index_names": [
     "PRAIRIE WOODS"
    ],
-   "plat": "PRAIRIE WOODS",
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE WOODS",
    "subdivision_code": "5600"
   },
   {
@@ -1692,8 +1893,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1707,8 +1911,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1722,8 +1929,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1737,8 +1947,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1752,8 +1965,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1767,8 +1983,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1782,8 +2001,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1797,8 +2019,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1812,8 +2037,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1827,8 +2055,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1842,8 +2073,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1857,8 +2091,11 @@
    "index_names": [
     "MOHAWK HILLS"
    ],
-   "plat": "MOHAWK HILLS",
+   "plats": [
+    "MOHAWK HILLS"
+   ],
    "match": "exact",
+   "plat": "MOHAWK HILLS",
    "subdivision_code": "3100"
   },
   {
@@ -1872,8 +2109,11 @@
    "index_names": [
     "MEADOWBROOK DOWNS"
    ],
-   "plat": "MEADOWBROOK DOWNS",
+   "plats": [
+    "MEADOWBROOK DOWNS"
+   ],
    "match": "exact",
+   "plat": "MEADOWBROOK DOWNS",
    "subdivision_code": "2350"
   },
   {
@@ -1888,8 +2128,11 @@
     "MEADOW LAKE CORPORATION INC (THE)",
     "MEADOW LAKE"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -1903,8 +2146,11 @@
    "index_names": [
     "PRAIRIE VILLAGE"
    ],
-   "plat": "PRAIRIE VILLAGE",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE",
    "subdivision_code": "5500"
   },
   {
@@ -1918,8 +2164,11 @@
    "index_names": [
     "PRAIRIE FOREST"
    ],
-   "plat": "PRAIRIE FOREST",
+   "plats": [
+    "PRAIRIE FOREST"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FOREST",
    "subdivision_code": "4300"
   },
   {
@@ -1933,8 +2182,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1948,8 +2200,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -1963,8 +2218,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -1978,8 +2236,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -1993,8 +2254,11 @@
    "index_names": [
     "MISSION VILLAGE BLOCK 2"
    ],
-   "plat": "MISSION VILLAGE",
+   "plats": [
+    "MISSION VILLAGE"
+   ],
    "match": "variant",
+   "plat": "MISSION VILLAGE",
    "subdivision_code": "3000"
   },
   {
@@ -2008,8 +2272,11 @@
    "index_names": [
     "MISSION VILLAGE BLOCK 2"
    ],
-   "plat": "MISSION VILLAGE",
+   "plats": [
+    "MISSION VILLAGE"
+   ],
    "match": "variant",
+   "plat": "MISSION VILLAGE",
    "subdivision_code": "3000"
   },
   {
@@ -2023,8 +2290,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -2038,8 +2308,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -2054,8 +2327,11 @@
     "MEADOW LAKE RESURVEY OF LOTS 1 TO 13 BOTH INCLUSIVE OF BLOCK 15 OF THE CORRECTED PLAT OF MEADOW LAKE BLOCKS 4 TO 7 INCLUSIVE BLOCK 9 TO 16 INCLUSIVE AND LOT 1 OF BLOCK 8",
     "MEADOW LAKE CORP INC (THE)"
    ],
+   "plats": [
+    "MEADOW LAKE RESURVEY"
+   ],
+   "match": "variant",
    "plat": "MEADOW LAKE RESURVEY",
-   "match": "prefix",
    "subdivision_code": "2500"
   },
   {
@@ -2070,8 +2346,11 @@
     "MEADOW LAKE",
     "MEADOW LAKE CORPORATION INC (THE)"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2085,8 +2364,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -2101,8 +2383,11 @@
     "MEADOW LAKE CORPORATION INC (THE)",
     "MEADOW LAKE"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2116,8 +2401,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -2131,8 +2419,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -2146,8 +2437,11 @@
    "index_names": [
     "COUNTRYSIDE - EAST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -2161,8 +2455,11 @@
    "index_names": [
     "WEST HILL"
    ],
-   "plat": "WEST HILL",
+   "plats": [
+    "WEST HILL"
+   ],
    "match": "exact",
+   "plat": "WEST HILL",
    "subdivision_code": "7800"
   },
   {
@@ -2176,8 +2473,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -2191,8 +2491,11 @@
    "index_names": [
     "TRAIL VIEW"
    ],
-   "plat": "TRAIL VIEW",
+   "plats": [
+    "TRAIL VIEW"
+   ],
    "match": "exact",
+   "plat": "TRAIL VIEW",
    "subdivision_code": "7700"
   },
   {
@@ -2206,8 +2509,11 @@
    "index_names": [
     "MEADOW LAKE"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2221,8 +2527,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2236,8 +2545,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2252,8 +2564,11 @@
     "MEADOW LAKE",
     "MEADOW LAKE CORPORATION (THE)"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2267,8 +2582,11 @@
    "index_names": [
     "INDIAN FIELDS"
    ],
-   "plat": "INDIAN FIELDS",
+   "plats": [
+    "INDIAN FIELDS"
+   ],
    "match": "exact",
+   "plat": "INDIAN FIELDS",
    "subdivision_code": "1300"
   },
   {
@@ -2282,8 +2600,12 @@
    "index_names": [
     "MEADOW LAKE BLOCKS 35 TO 43 INCL"
    ],
-   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE",
+    "MEADOW LAKE"
+   ],
    "match": "variant",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2298,8 +2620,12 @@
     "MEADOW LAKE BLOCKS 44 45 46",
     "MEADOW LAKE CORP INC (THE)"
    ],
-   "plat": "CORRECTED PLAT OF MEADOW LAKE",
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE",
+    "MEADOW LAKE"
+   ],
    "match": "variant",
+   "plat": "CORRECTED PLAT OF MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2313,8 +2639,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -2328,8 +2657,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2343,8 +2675,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2358,8 +2693,11 @@
    "index_names": [
     "MISSION VALLEY EAST"
    ],
-   "plat": "MISSION VALLEY EAST",
+   "plats": [
+    "MISSION VALLEY EAST"
+   ],
    "match": "exact",
+   "plat": "MISSION VALLEY EAST",
    "subdivision_code": "2800"
   },
   {
@@ -2373,8 +2711,11 @@
    "index_names": [
     "PRAIRIE VALLEY"
    ],
-   "plat": "PRAIRIE VALLEY",
+   "plats": [
+    "PRAIRIE VALLEY"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VALLEY",
    "subdivision_code": "5100"
   },
   {
@@ -2388,8 +2729,11 @@
    "index_names": [
     "MEADOW LAKE"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2404,8 +2748,11 @@
     "MEADOW LAKE",
     "MEADOW LAKE CORPORATION INC (THE)"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2420,8 +2767,11 @@
     "MEADOW LAKE CORP INC (THE)",
     "MEADOW LAKE"
    ],
-   "plat": "MEADOW LAKE",
+   "plats": [
+    "MEADOW LAKE"
+   ],
    "match": "exact",
+   "plat": "MEADOW LAKE",
    "subdivision_code": "2500"
   },
   {
@@ -2435,8 +2785,11 @@
    "index_names": [
     "RIDGE VIEW HEIGHTS"
    ],
-   "plat": "RIDGE VIEW HEIGHTS",
+   "plats": [
+    "RIDGE VIEW HEIGHTS"
+   ],
    "match": "exact",
+   "plat": "RIDGE VIEW HEIGHTS",
    "subdivision_code": "6050"
   },
   {
@@ -2450,8 +2803,11 @@
    "index_names": [
     "WEST HILL NO 2"
    ],
-   "plat": "WEST HILL NO. 2",
+   "plats": [
+    "WEST HILL NO. 2"
+   ],
    "match": "exact",
+   "plat": "WEST HILL NO. 2",
    "subdivision_code": "7900"
   },
   {
@@ -2465,8 +2821,11 @@
    "index_names": [
     "MISSION VILLAGE BLOCK 2"
    ],
-   "plat": "MISSION VILLAGE",
+   "plats": [
+    "MISSION VILLAGE"
+   ],
    "match": "variant",
+   "plat": "MISSION VILLAGE",
    "subdivision_code": "3000"
   },
   {
@@ -2480,8 +2839,11 @@
    "index_names": [
     "INDIAN HEIGHTS"
    ],
-   "plat": "INDIAN HEIGHTS",
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HEIGHTS",
    "subdivision_code": "1400"
   },
   {
@@ -2495,8 +2857,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -2510,8 +2875,11 @@
    "index_names": [
     "PRAIRIE VALLEY NORTH"
    ],
-   "plat": "PRAIRIE VALLEY NORTH",
+   "plats": [
+    "PRAIRIE VALLEY NORTH"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VALLEY NORTH",
    "subdivision_code": "5150"
   },
   {
@@ -2525,8 +2893,11 @@
    "index_names": [
     "PRAIRIE VALLEY NORTH ANNEX"
    ],
-   "plat": "PRAIRIE VALLEY NORTH ANNEX",
+   "plats": [
+    "PRAIRIE VALLEY NORTH ANNEX"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VALLEY NORTH ANNEX",
    "subdivision_code": "5200"
   },
   {
@@ -2540,8 +2911,11 @@
    "index_names": [
     "INDIAN FIELDS"
    ],
-   "plat": "INDIAN FIELDS",
+   "plats": [
+    "INDIAN FIELDS"
+   ],
    "match": "exact",
+   "plat": "INDIAN FIELDS",
    "subdivision_code": "1300"
   },
   {
@@ -2555,8 +2929,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2570,8 +2947,11 @@
    "index_names": [
     "PRAIRIE RIDGE VIEW LOTS 1 TO 16"
    ],
-   "plat": "PRAIRIE RIDGE VIEW",
+   "plats": [
+    "PRAIRIE RIDGE VIEW"
+   ],
    "match": "variant",
+   "plat": "PRAIRIE RIDGE VIEW",
    "subdivision_code": "5000"
   },
   {
@@ -2585,8 +2965,11 @@
    "index_names": [
     "RIDGE VIEW PLACE"
    ],
-   "plat": "RIDGE VIEW PLACE",
+   "plats": [
+    "RIDGE VIEW PLACE"
+   ],
    "match": "exact",
+   "plat": "RIDGE VIEW PLACE",
    "subdivision_code": "6100"
   },
   {
@@ -2600,8 +2983,11 @@
    "index_names": [
     "SWARNER VALLEY"
    ],
-   "plat": "SWARNER VALLEY",
+   "plats": [
+    "SWARNER VALLEY"
+   ],
    "match": "exact",
+   "plat": "SWARNER VALLEY",
    "subdivision_code": "7400"
   },
   {
@@ -2615,8 +3001,11 @@
    "index_names": [
     "PRAIRIE VIEW NO 5"
    ],
-   "plat": "PRAIRIE VIEW NO. 5",
+   "plats": [
+    "PRAIRIE VIEW NO. 5"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VIEW NO. 5",
    "subdivision_code": "5400"
   },
   {
@@ -2630,8 +3019,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2645,8 +3037,11 @@
    "index_names": [
     "JUNIPER HILL"
    ],
-   "plat": "JUNIPER HILL",
+   "plats": [
+    "JUNIPER HILL"
+   ],
    "match": "exact",
+   "plat": "JUNIPER HILL",
    "subdivision_code": "1900"
   },
   {
@@ -2660,8 +3055,11 @@
    "index_names": [
     "RIDGE VIEW HEIGHTS NO 2"
    ],
-   "plat": "RIDGE VIEW HEIGHTS NO. 2",
+   "plats": [
+    "RIDGE VIEW HEIGHTS NO. 2"
+   ],
    "match": "exact",
+   "plat": "RIDGE VIEW HEIGHTS NO. 2",
    "subdivision_code": "6060"
   },
   {
@@ -2675,8 +3073,11 @@
    "index_names": [
     "PRAIRIE HEIGHTS"
    ],
-   "plat": "PRAIRIE HEIGHTS",
+   "plats": [
+    "PRAIRIE HEIGHTS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HEIGHTS",
    "subdivision_code": "4400"
   },
   {
@@ -2690,8 +3091,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2705,8 +3109,11 @@
    "index_names": [
     "INDIAN FIELDS"
    ],
-   "plat": "INDIAN FIELDS",
+   "plats": [
+    "INDIAN FIELDS"
+   ],
    "match": "exact",
+   "plat": "INDIAN FIELDS",
    "subdivision_code": "1300"
   },
   {
@@ -2720,8 +3127,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -2735,8 +3145,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -2750,8 +3163,11 @@
    "index_names": [
     "NALLANDS"
    ],
-   "plat": "NALLANDS",
+   "plats": [
+    "NALLANDS"
+   ],
    "match": "exact",
+   "plat": "NALLANDS",
    "subdivision_code": "3300"
   },
   {
@@ -2765,8 +3181,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -2780,8 +3199,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -2795,8 +3217,11 @@
    "index_names": [
     "PRAIRIE PARK"
    ],
-   "plat": "PRAIRIE PARK",
+   "plats": [
+    "PRAIRIE PARK"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE PARK",
    "subdivision_code": "4800"
   },
   {
@@ -2810,8 +3235,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -2825,8 +3253,11 @@
    "index_names": [
     "INDIAN FIELDS"
    ],
-   "plat": "INDIAN FIELDS",
+   "plats": [
+    "INDIAN FIELDS"
+   ],
    "match": "exact",
+   "plat": "INDIAN FIELDS",
    "subdivision_code": "1300"
   },
   {
@@ -2840,8 +3271,11 @@
    "index_names": [
     "PRAIRIE MANOR"
    ],
-   "plat": "PRAIRIE MANOR",
+   "plats": [
+    "PRAIRIE MANOR"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE MANOR",
    "subdivision_code": "4700"
   },
   {
@@ -2855,8 +3289,11 @@
    "index_names": [
     "SOMERSET ACRES WEST"
    ],
-   "plat": "SOMERSET ACRES WEST",
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
    "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
    "subdivision_code": "6700"
   },
   {
@@ -2870,8 +3307,11 @@
    "index_names": [
     "PRAIRIE RIDGE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -2885,8 +3325,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -2900,8 +3343,11 @@
    "index_names": [
     "SOMERSET GARDENS"
    ],
-   "plat": "SOMERSET GARDENS",
+   "plats": [
+    "SOMERSET GARDENS"
+   ],
    "match": "exact",
+   "plat": "SOMERSET GARDENS",
    "subdivision_code": "6900"
   },
   {
@@ -2915,8 +3361,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -2930,8 +3379,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -2945,8 +3397,11 @@
    "index_names": [
     "PRAIRIE HILLS VIEW"
    ],
-   "plat": "PRAIRIE HILLS VIEW",
+   "plats": [
+    "PRAIRIE HILLS VIEW"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS VIEW",
    "subdivision_code": "4600"
   },
   {
@@ -2960,8 +3415,11 @@
    "index_names": [
     "SOMERSET ACRES WEST"
    ],
-   "plat": "SOMERSET ACRES WEST",
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
    "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
    "subdivision_code": "6700"
   },
   {
@@ -2975,8 +3433,11 @@
    "index_names": [
     "CORINTH MEADOWS"
    ],
-   "plat": "CORINTH MEADOWS",
+   "plats": [
+    "CORINTH MEADOWS"
+   ],
    "match": "exact",
+   "plat": "CORINTH MEADOWS",
    "subdivision_code": "0600"
   },
   {
@@ -2990,8 +3451,11 @@
    "index_names": [
     "WALMER HEIGHTS"
    ],
-   "plat": "WALMER HEIGHTS",
+   "plats": [
+    "WALMER HEIGHTS"
+   ],
    "match": "exact",
+   "plat": "WALMER HEIGHTS",
    "subdivision_code": "7720"
   },
   {
@@ -3005,8 +3469,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -3020,8 +3487,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -3035,8 +3505,11 @@
    "index_names": [
     "COUNTRYSIDE - EAST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -3050,8 +3523,11 @@
    "index_names": [
     "RIDGEWOOD"
    ],
-   "plat": "RIDGEWOOD",
+   "plats": [
+    "RIDGEWOOD"
+   ],
    "match": "exact",
+   "plat": "RIDGEWOOD",
    "subdivision_code": "6200"
   },
   {
@@ -3065,8 +3541,11 @@
    "index_names": [
     "SOMERSET HILLS"
    ],
-   "plat": "SOMERSET HILLS",
+   "plats": [
+    "SOMERSET HILLS"
+   ],
    "match": "exact",
+   "plat": "SOMERSET HILLS",
    "subdivision_code": "7000"
   },
   {
@@ -3080,8 +3559,11 @@
    "index_names": [
     "TOWN & COUNTRY ESTATES"
    ],
-   "plat": "TOWN & COUNTRY ESTATES",
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
    "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
    "subdivision_code": "7600"
   },
   {
@@ -3095,8 +3577,11 @@
    "index_names": [
     "TOWN & COUNTRY ESTATES"
    ],
-   "plat": "TOWN & COUNTRY ESTATES",
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
    "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
    "subdivision_code": "7600"
   },
   {
@@ -3110,8 +3595,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3125,8 +3613,11 @@
    "index_names": [
     "JORDAN PLACE"
    ],
-   "plat": "JORDAN PLACE",
+   "plats": [
+    "JORDAN PLACE"
+   ],
    "match": "exact",
+   "plat": "JORDAN PLACE",
    "subdivision_code": "2000"
   },
   {
@@ -3140,8 +3631,11 @@
    "index_names": [
     "THE PALISADES"
    ],
-   "plat": "THE PALISADES",
+   "plats": [
+    "THE PALISADES"
+   ],
    "match": "exact",
+   "plat": "THE PALISADES",
    "subdivision_code": "7506"
   },
   {
@@ -3156,8 +3650,11 @@
     "TOWN & COUNTRY ESTATES",
     "TOWN & COUNTRY ESTATES INC"
    ],
-   "plat": "TOWN & COUNTRY ESTATES",
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
    "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
    "subdivision_code": "7600"
   },
   {
@@ -3171,8 +3668,11 @@
    "index_names": [
     "PAWNEE MANOR"
    ],
-   "plat": "PAWNEE MANOR",
+   "plats": [
+    "PAWNEE MANOR"
+   ],
    "match": "exact",
+   "plat": "PAWNEE MANOR",
    "subdivision_code": "3900"
   },
   {
@@ -3186,8 +3686,11 @@
    "index_names": [
     "THE PALISADES"
    ],
-   "plat": "THE PALISADES",
+   "plats": [
+    "THE PALISADES"
+   ],
    "match": "exact",
+   "plat": "THE PALISADES",
    "subdivision_code": "7506"
   },
   {
@@ -3201,8 +3704,11 @@
    "index_names": [
     "TOWN & COUNTRY ESTATES"
    ],
-   "plat": "TOWN & COUNTRY ESTATES",
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
    "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
    "subdivision_code": "7600"
   },
   {
@@ -3216,8 +3722,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3231,8 +3740,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3246,8 +3758,11 @@
    "index_names": [
     "CORINTH SCHOOL"
    ],
-   "plat": "CORINTH SCHOOL",
+   "plats": [
+    "CORINTH SCHOOL"
+   ],
    "match": "exact",
+   "plat": "CORINTH SCHOOL",
    "subdivision_code": "0650"
   },
   {
@@ -3261,8 +3776,11 @@
    "index_names": [
     "SHAWNEE MISSION SOUTH HIGH SCHOOL"
    ],
-   "plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "plats": [
+    "SHAWNEE MISSION SOUTH HIGH SCHOOL"
+   ],
    "match": "exact",
+   "plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
    "subdivision_code": "6500"
   },
   {
@@ -3276,8 +3794,11 @@
    "index_names": [
     "CORINTH ESTATES"
    ],
-   "plat": "CORINTH ESTATES",
+   "plats": [
+    "CORINTH ESTATES"
+   ],
    "match": "exact",
+   "plat": "CORINTH ESTATES",
    "subdivision_code": "0450"
   },
   {
@@ -3291,8 +3812,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -3306,8 +3830,11 @@
    "index_names": [
     "SOMERSET HILLS"
    ],
-   "plat": "SOMERSET HILLS",
+   "plats": [
+    "SOMERSET HILLS"
+   ],
    "match": "exact",
+   "plat": "SOMERSET HILLS",
    "subdivision_code": "7000"
   },
   {
@@ -3321,8 +3848,11 @@
    "index_names": [
     "SOMERSET ACRES WEST"
    ],
-   "plat": "SOMERSET ACRES WEST",
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
    "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
    "subdivision_code": "6700"
   },
   {
@@ -3336,8 +3866,11 @@
    "index_names": [
     "SOMERSET ACRES WEST"
    ],
-   "plat": "SOMERSET ACRES WEST",
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
    "match": "exact",
+   "plat": "SOMERSET ACRES WEST",
    "subdivision_code": "6700"
   },
   {
@@ -3351,8 +3884,11 @@
    "index_names": [
     "PAWNEE MANOR"
    ],
-   "plat": "PAWNEE MANOR",
+   "plats": [
+    "PAWNEE MANOR"
+   ],
    "match": "exact",
+   "plat": "PAWNEE MANOR",
    "subdivision_code": "3900"
   },
   {
@@ -3366,8 +3902,11 @@
    "index_names": [
     "TOWN & COUNTRY ESTATES"
    ],
-   "plat": "TOWN & COUNTRY ESTATES",
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
    "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
    "subdivision_code": "7600"
   },
   {
@@ -3381,8 +3920,11 @@
    "index_names": [
     "COUNTRYSIDE - EAST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -3396,8 +3938,11 @@
    "index_names": [
     "COUNTRYSIDE WEST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -3411,8 +3956,11 @@
    "index_names": [
     "PAWNEE VIEW"
    ],
-   "plat": "PAWNEE VIEW",
+   "plats": [
+    "PAWNEE VIEW"
+   ],
    "match": "exact",
+   "plat": "PAWNEE VIEW",
    "subdivision_code": "4000"
   },
   {
@@ -3426,8 +3974,11 @@
    "index_names": [
     "PAWNEE MANOR"
    ],
-   "plat": "PAWNEE MANOR",
+   "plats": [
+    "PAWNEE MANOR"
+   ],
    "match": "exact",
+   "plat": "PAWNEE MANOR",
    "subdivision_code": "3900"
   },
   {
@@ -3441,8 +3992,11 @@
    "index_names": [
     "TOWN & COUNTRY ESTATES"
    ],
-   "plat": "TOWN & COUNTRY ESTATES",
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
    "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
    "subdivision_code": "7600"
   },
   {
@@ -3456,8 +4010,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3471,8 +4028,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3486,8 +4046,11 @@
    "index_names": [
     "SOMERSET COURT"
    ],
-   "plat": "SOMERSET COURT",
+   "plats": [
+    "SOMERSET COURT"
+   ],
    "match": "exact",
+   "plat": "SOMERSET COURT",
    "subdivision_code": "6800"
   },
   {
@@ -3502,8 +4065,11 @@
     "PRAIRIE ESTATES",
     "PRAIRIE ESTATES DEVELOPMENT COMPANY INC"
    ],
-   "plat": "PRAIRIE ESTATES",
+   "plats": [
+    "PRAIRIE ESTATES"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE ESTATES",
    "subdivision_code": "4100"
   },
   {
@@ -3517,8 +4083,11 @@
    "index_names": [
     "PRAIRIE FIELDS"
    ],
-   "plat": "PRAIRIE FIELDS",
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE FIELDS",
    "subdivision_code": "4200"
   },
   {
@@ -3532,8 +4101,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3547,8 +4119,11 @@
    "index_names": [
     "TOWN & COUNTRY ESTATES"
    ],
-   "plat": "TOWN & COUNTRY ESTATES",
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
    "match": "exact",
+   "plat": "TOWN & COUNTRY ESTATES",
    "subdivision_code": "7600"
   },
   {
@@ -3562,8 +4137,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3577,8 +4155,11 @@
    "index_names": [
     "COUNTRYSIDE - EAST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -3592,8 +4173,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3607,8 +4191,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3622,9 +4209,30 @@
    "index_names": [
     "NALL VALLEY ESTATES"
    ],
-   "plat": "NALL VALLEY ESTATES",
+   "plats": [
+    "NALL VALLEY ESTATES"
+   ],
    "match": "exact",
+   "plat": "NALL VALLEY ESTATES",
    "subdivision_code": "3500"
+  },
+  {
+   "id": "3659018",
+   "recorded": "1959-05-06",
+   "doc_type": "Plat",
+   "book_page": "PLAT 21 36",
+   "instrument_number": "195905060313958",
+   "docid": "575154",
+   "legal": "Sec:16 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "REPLAT OF FONTICELLO GARDENS NO 2"
+   ],
+   "plats": [
+    "REPLAT OF FONTICELLO GARDENS NO. 2"
+   ],
+   "match": "exact",
+   "plat": "REPLAT OF FONTICELLO GARDENS NO. 2",
+   "subdivision_code": "1000"
   },
   {
    "id": "3846040",
@@ -3637,8 +4245,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3652,8 +4263,11 @@
    "index_names": [
     "COUNTRYSIDE - EAST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -3667,8 +4281,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3682,8 +4299,11 @@
    "index_names": [
     "KENILWORTH"
    ],
-   "plat": "KENILWORTH",
+   "plats": [
+    "KENILWORTH"
+   ],
    "match": "exact",
+   "plat": "KENILWORTH",
    "subdivision_code": "2100"
   },
   {
@@ -3697,8 +4317,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -3712,8 +4335,11 @@
    "index_names": [
     "COUNTRYSIDE - EAST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -3727,8 +4353,11 @@
    "index_names": [
     "NORMANDY SQUARE"
    ],
-   "plat": "NORMANDY SQUARE",
+   "plats": [
+    "NORMANDY SQUARE"
+   ],
    "match": "exact",
+   "plat": "NORMANDY SQUARE",
    "subdivision_code": "3700"
   },
   {
@@ -3742,8 +4371,11 @@
    "index_names": [
     "JACKSON HEIGHTS"
    ],
-   "plat": "JACKSON HEIGHTS",
+   "plats": [
+    "JACKSON HEIGHTS"
+   ],
    "match": "exact",
+   "plat": "JACKSON HEIGHTS",
    "subdivision_code": "1600"
   },
   {
@@ -3757,8 +4389,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3772,8 +4407,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -3787,8 +4425,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -3802,8 +4443,11 @@
    "index_names": [
     "INDIAN FIELDS"
    ],
-   "plat": "INDIAN FIELDS",
+   "plats": [
+    "INDIAN FIELDS"
+   ],
    "match": "exact",
+   "plat": "INDIAN FIELDS",
    "subdivision_code": "1300"
   },
   {
@@ -3817,8 +4461,11 @@
    "index_names": [
     "KENILWORTH"
    ],
-   "plat": "KENILWORTH",
+   "plats": [
+    "KENILWORTH"
+   ],
    "match": "exact",
+   "plat": "KENILWORTH",
    "subdivision_code": "2100"
   },
   {
@@ -3832,8 +4479,11 @@
    "index_names": [
     "HOMESTEAD ESTATES"
    ],
-   "plat": "HOMESTEAD ESTATES",
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
    "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
    "subdivision_code": "1185"
   },
   {
@@ -3847,8 +4497,11 @@
    "index_names": [
     "SOMERSET MANOR"
    ],
-   "plat": "SOMERSET MANOR",
+   "plats": [
+    "SOMERSET MANOR"
+   ],
    "match": "exact",
+   "plat": "SOMERSET MANOR",
    "subdivision_code": "7050"
   },
   {
@@ -3862,8 +4515,11 @@
    "index_names": [
     "KENILWORTH"
    ],
-   "plat": "KENILWORTH",
+   "plats": [
+    "KENILWORTH"
+   ],
    "match": "exact",
+   "plat": "KENILWORTH",
    "subdivision_code": "2100"
   },
   {
@@ -3877,8 +4533,11 @@
    "index_names": [
     "INDIAN HILLS"
    ],
-   "plat": "INDIAN HILLS",
+   "plats": [
+    "INDIAN HILLS"
+   ],
    "match": "exact",
+   "plat": "INDIAN HILLS",
    "subdivision_code": "1500"
   },
   {
@@ -3892,8 +4551,11 @@
    "index_names": [
     "KENILWORTH"
    ],
-   "plat": "KENILWORTH",
+   "plats": [
+    "KENILWORTH"
+   ],
    "match": "exact",
+   "plat": "KENILWORTH",
    "subdivision_code": "2100"
   },
   {
@@ -3907,8 +4569,11 @@
    "index_names": [
     "HOMESTEAD ESTATES"
    ],
-   "plat": "HOMESTEAD ESTATES",
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
    "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
    "subdivision_code": "1185"
   },
   {
@@ -3922,8 +4587,11 @@
    "index_names": [
     "KENILWORTH"
    ],
-   "plat": "KENILWORTH",
+   "plats": [
+    "KENILWORTH"
+   ],
    "match": "exact",
+   "plat": "KENILWORTH",
    "subdivision_code": "2100"
   },
   {
@@ -3937,8 +4605,11 @@
    "index_names": [
     "RED FOX"
    ],
-   "plat": "RED FOX",
+   "plats": [
+    "RED FOX"
+   ],
    "match": "exact",
+   "plat": "RED FOX",
    "subdivision_code": "5800"
   },
   {
@@ -3952,8 +4623,11 @@
    "index_names": [
     "COUNTRYSIDE - EAST"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "exact",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   },
   {
@@ -3967,8 +4641,11 @@
    "index_names": [
     "WEST RIDING"
    ],
-   "plat": "WEST RIDING",
+   "plats": [
+    "WEST RIDING"
+   ],
    "match": "exact",
+   "plat": "WEST RIDING",
    "subdivision_code": "8100"
   },
   {
@@ -3982,8 +4659,11 @@
    "index_names": [
     "BRIARWOOD PLACE"
    ],
-   "plat": "BRIARWOOD PLACE",
+   "plats": [
+    "BRIARWOOD PLACE"
+   ],
    "match": "exact",
+   "plat": "BRIARWOOD PLACE",
    "subdivision_code": "0200"
   },
   {
@@ -3997,8 +4677,11 @@
    "index_names": [
     "HUNTINGTON WOODS"
    ],
-   "plat": "HUNTINGTON WOODS",
+   "plats": [
+    "HUNTINGTON WOODS"
+   ],
    "match": "exact",
+   "plat": "HUNTINGTON WOODS",
    "subdivision_code": "1200"
   },
   {
@@ -4012,8 +4695,11 @@
    "index_names": [
     "SOMERSET ESTATES"
    ],
-   "plat": "SOMERSET ESTATES",
+   "plats": [
+    "SOMERSET ESTATES"
+   ],
    "match": "exact",
+   "plat": "SOMERSET ESTATES",
    "subdivision_code": "6850"
   },
   {
@@ -4027,8 +4713,11 @@
    "index_names": [
     "HOMESTEAD ESTATES"
    ],
-   "plat": "HOMESTEAD ESTATES",
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
    "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
    "subdivision_code": "1185"
   },
   {
@@ -4042,8 +4731,11 @@
    "index_names": [
     "PRAIRIE HILLS"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -4057,8 +4749,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -4072,8 +4767,11 @@
    "index_names": [
     "INDIAN HEIGHTS ESTATES"
    ],
-   "plat": "INDIAN HEIGHTS",
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
    "match": "variant",
+   "plat": "INDIAN HEIGHTS",
    "subdivision_code": "1400"
   },
   {
@@ -4087,8 +4785,11 @@
    "index_names": [
     "STEVENS ESTATES"
    ],
-   "plat": "STEVENS ESTATES",
+   "plats": [
+    "STEVENS ESTATES"
+   ],
    "match": "exact",
+   "plat": "STEVENS ESTATES",
    "subdivision_code": "7150"
   },
   {
@@ -4102,8 +4803,11 @@
    "index_names": [
     "HOMESTEAD ESTATES"
    ],
-   "plat": "HOMESTEAD ESTATES",
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
    "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
    "subdivision_code": "1185"
   },
   {
@@ -4117,8 +4821,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4132,8 +4839,11 @@
    "index_names": [
     "MISSION VILLAGE BLOCK 5"
    ],
-   "plat": "MISSION VILLAGE",
+   "plats": [
+    "MISSION VILLAGE"
+   ],
    "match": "variant",
+   "plat": "MISSION VILLAGE",
    "subdivision_code": "3000"
   },
   {
@@ -4147,8 +4857,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4162,8 +4875,11 @@
    "index_names": [
     "SOMERSET PLACE"
    ],
-   "plat": "SOMERSET PLACE",
+   "plats": [
+    "SOMERSET PLACE"
+   ],
    "match": "exact",
+   "plat": "SOMERSET PLACE",
    "subdivision_code": "7070"
   },
   {
@@ -4177,8 +4893,11 @@
    "index_names": [
     "CORINTH WOOD"
    ],
-   "plat": "CORINTH WOOD",
+   "plats": [
+    "CORINTH WOOD"
+   ],
    "match": "exact",
+   "plat": "CORINTH WOOD",
    "subdivision_code": "0680"
   },
   {
@@ -4192,8 +4911,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4207,8 +4929,11 @@
    "index_names": [
     "ROE HILL"
    ],
-   "plat": "ROE HILL",
+   "plats": [
+    "ROE HILL"
+   ],
    "match": "exact",
+   "plat": "ROE HILL",
    "subdivision_code": "6300"
   },
   {
@@ -4222,8 +4947,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4237,8 +4965,11 @@
    "index_names": [
     "WEST RIDING 2ND PLAT"
    ],
-   "plat": "WEST RIDING 2ND PLAT",
+   "plats": [
+    "WEST RIDING 2ND PLAT"
+   ],
    "match": "exact",
+   "plat": "WEST RIDING 2ND PLAT",
    "subdivision_code": "8100"
   },
   {
@@ -4252,8 +4983,11 @@
    "index_names": [
     "CALVIN CREST"
    ],
-   "plat": "CALVIN CREST",
+   "plats": [
+    "CALVIN CREST"
+   ],
    "match": "exact",
+   "plat": "CALVIN CREST",
    "subdivision_code": "0250"
   },
   {
@@ -4267,8 +5001,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4282,8 +5019,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -4297,8 +5037,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4312,8 +5055,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4327,8 +5073,11 @@
    "index_names": [
     "BRIARWOOD PLACE SECOND PLAT"
    ],
-   "plat": "BRIARWOOD PLACE SECOND PLAT",
+   "plats": [
+    "BRIARWOOD PLACE SECOND PLAT"
+   ],
    "match": "exact",
+   "plat": "BRIARWOOD PLACE SECOND PLAT",
    "subdivision_code": "0200"
   },
   {
@@ -4342,8 +5091,11 @@
    "index_names": [
     "SOMERSET COURTS WEST"
    ],
-   "plat": "SOMERSET COURTS WEST",
+   "plats": [
+    "SOMERSET COURTS WEST"
+   ],
    "match": "exact",
+   "plat": "SOMERSET COURTS WEST",
    "subdivision_code": "6820"
   },
   {
@@ -4357,8 +5109,11 @@
    "index_names": [
     "PADDOCK COURT"
    ],
-   "plat": "PADDOCK COURT",
+   "plats": [
+    "PADDOCK COURT"
+   ],
    "match": "exact",
+   "plat": "PADDOCK COURT",
    "subdivision_code": "3750"
   },
   {
@@ -4372,8 +5127,11 @@
    "index_names": [
     "CANTERBURY COURT"
    ],
-   "plat": "CANTERBURY COURT",
+   "plats": [
+    "CANTERBURY COURT"
+   ],
    "match": "exact",
+   "plat": "CANTERBURY COURT",
    "subdivision_code": "0270"
   },
   {
@@ -4387,8 +5145,11 @@
    "index_names": [
     "CALVIN CREST II"
    ],
-   "plat": "CALVIN CREST II",
+   "plats": [
+    "CALVIN CREST II"
+   ],
    "match": "exact",
+   "plat": "CALVIN CREST II",
    "subdivision_code": "0260"
   },
   {
@@ -4402,8 +5163,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4417,8 +5181,11 @@
    "index_names": [
     "PADDOCK COURT"
    ],
-   "plat": "PADDOCK COURT",
+   "plats": [
+    "PADDOCK COURT"
+   ],
    "match": "exact",
+   "plat": "PADDOCK COURT",
    "subdivision_code": "3750"
   },
   {
@@ -4432,8 +5199,11 @@
    "index_names": [
     "DE VILLE 75 CONDOMINIUMS"
    ],
-   "plat": "DE VILLE 75 CONDOMINIUMS",
+   "plats": [
+    "DE VILLE 75 CONDOMINIUMS"
+   ],
    "match": "exact",
+   "plat": "DE VILLE 75 CONDOMINIUMS",
    "subdivision_code": "0820"
   },
   {
@@ -4447,8 +5217,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4462,8 +5235,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4477,8 +5253,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4492,8 +5271,11 @@
    "index_names": [
     "PADDOCK COURT"
    ],
-   "plat": "PADDOCK COURT",
+   "plats": [
+    "PADDOCK COURT"
+   ],
    "match": "exact",
+   "plat": "PADDOCK COURT",
    "subdivision_code": "3750"
   },
   {
@@ -4507,8 +5289,12 @@
    "index_names": [
     "RIDGE VIEW DEVELOPMENT INC"
    ],
-   "plat": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+   "plats": [
+    "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
+    "RIDGE VIEW"
+   ],
    "match": "elsewhere",
+   "plat": "RESURVEY OF LOTS 15 AND 16 RIDGE VIEW",
    "subdivision_code": "6000"
   },
   {
@@ -4522,8 +5308,11 @@
    "index_names": [
     "PADDOCK COURT"
    ],
-   "plat": "PADDOCK COURT",
+   "plats": [
+    "PADDOCK COURT"
+   ],
    "match": "exact",
+   "plat": "PADDOCK COURT",
    "subdivision_code": "3750"
   },
   {
@@ -4537,8 +5326,11 @@
    "index_names": [
     "MEADOWBROOK EXECUTIVE BUILDING"
    ],
-   "plat": "MEADOWBROOK EXECUTIVE",
+   "plats": [
+    "MEADOWBROOK EXECUTIVE"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK EXECUTIVE",
    "subdivision_code": "2371"
   },
   {
@@ -4552,8 +5344,11 @@
    "index_names": [
     "FONTICELLO"
    ],
-   "plat": "FONTICELLO",
+   "plats": [
+    "FONTICELLO"
+   ],
    "match": "exact",
+   "plat": "FONTICELLO",
    "subdivision_code": "0880"
   },
   {
@@ -4567,8 +5362,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4582,8 +5380,11 @@
    "index_names": [
     "NORMANDIE COURT"
    ],
-   "plat": "NORMANDIE COURT",
+   "plats": [
+    "NORMANDIE COURT"
+   ],
    "match": "exact",
+   "plat": "NORMANDIE COURT",
    "subdivision_code": "3680"
   },
   {
@@ -4597,8 +5398,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4612,8 +5416,11 @@
    "index_names": [
     "MISSION VILLAGE BLOCK 3 REPLAT NO 1 OF LOTS 41 THRU 46 AND PART OF LOT 47"
    ],
-   "plat": "MISSION VILLAGE",
+   "plats": [
+    "MISSION VILLAGE"
+   ],
    "match": "variant",
+   "plat": "MISSION VILLAGE",
    "subdivision_code": "3000"
   },
   {
@@ -4627,8 +5434,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4642,8 +5452,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4657,8 +5470,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4672,8 +5488,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4687,8 +5506,11 @@
    "index_names": [
     "ROE 69"
    ],
-   "plat": "ROE-69",
+   "plats": [
+    "ROE-69"
+   ],
    "match": "exact",
+   "plat": "ROE-69",
    "subdivision_code": "6350"
   },
   {
@@ -4702,8 +5524,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4717,8 +5542,11 @@
    "index_names": [
     "PADDOCK COURT"
    ],
-   "plat": "PADDOCK COURT",
+   "plats": [
+    "PADDOCK COURT"
+   ],
    "match": "exact",
+   "plat": "PADDOCK COURT",
    "subdivision_code": "3750"
   },
   {
@@ -4732,8 +5560,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4747,8 +5578,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4762,8 +5596,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4777,8 +5614,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4792,8 +5632,11 @@
    "index_names": [
     "THE CHATEAU CONDOMINIUM"
    ],
-   "plat": "THE CHATEAU CONDOMINIUM",
+   "plats": [
+    "THE CHATEAU CONDOMINIUM"
+   ],
    "match": "exact",
+   "plat": "THE CHATEAU CONDOMINIUM",
    "subdivision_code": "7500"
   },
   {
@@ -4807,8 +5650,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4822,8 +5668,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4837,8 +5686,11 @@
    "index_names": [
     "CANTERBURY COURT ESTATES"
    ],
-   "plat": "CANTERBURY COURT ESTATES",
+   "plats": [
+    "CANTERBURY COURT ESTATES"
+   ],
    "match": "exact",
+   "plat": "CANTERBURY COURT ESTATES",
    "subdivision_code": "0280"
   },
   {
@@ -4852,8 +5704,11 @@
    "index_names": [
     "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS"
    ],
-   "plat": "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS",
+   "plats": [
+    "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS"
+   ],
    "match": "exact",
+   "plat": "NALL SEVENTY-FIVE OFFICE CONDOMINIUMS",
    "subdivision_code": "3460"
   },
   {
@@ -4867,8 +5722,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4882,8 +5740,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4897,8 +5758,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4912,8 +5776,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4927,8 +5794,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -4942,8 +5812,11 @@
    "index_names": [
     "NORMANDIE COURT SECOND PLAT"
    ],
-   "plat": "NORMANDIE COURT SECOND PLAT",
+   "plats": [
+    "NORMANDIE COURT SECOND PLAT"
+   ],
    "match": "exact",
+   "plat": "NORMANDIE COURT SECOND PLAT",
    "subdivision_code": "3680"
   },
   {
@@ -4957,8 +5830,11 @@
    "index_names": [
     "EVERGREEN ESTATES"
    ],
-   "plat": "EVERGREEN",
+   "plats": [
+    "EVERGREEN"
+   ],
    "match": "elsewhere",
+   "plat": "EVERGREEN",
    "subdivision_code": "0850"
   },
   {
@@ -4972,8 +5848,11 @@
    "index_names": [
     "EVERGREEN"
    ],
-   "plat": "EVERGREEN",
+   "plats": [
+    "EVERGREEN"
+   ],
    "match": "exact",
+   "plat": "EVERGREEN",
    "subdivision_code": "0850"
   },
   {
@@ -4987,8 +5866,13 @@
    "index_names": [
     "75 MISSION OFFICE CONDOMINIUM"
    ],
-   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "plats": [
+    "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+    "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+    "75 MISSION OFFICE CONDOMINIUM WEST"
+   ],
    "match": "variant",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
    "subdivision_code": "6451"
   },
   {
@@ -5002,8 +5886,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -5017,8 +5904,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -5032,8 +5922,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -5047,8 +5940,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -5062,8 +5958,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -5077,8 +5976,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -5092,8 +5994,11 @@
    "index_names": [
     "CORINTH HILLS"
    ],
-   "plat": "CORINTH HILLS",
+   "plats": [
+    "CORINTH HILLS"
+   ],
    "match": "exact",
+   "plat": "CORINTH HILLS",
    "subdivision_code": "0500"
   },
   {
@@ -5107,8 +6012,11 @@
    "index_names": [
     "CORINTH DOWNS"
    ],
-   "plat": "CORINTH DOWNS",
+   "plats": [
+    "CORINTH DOWNS"
+   ],
    "match": "exact",
+   "plat": "CORINTH DOWNS",
    "subdivision_code": "0430"
   },
   {
@@ -5122,8 +6030,11 @@
    "index_names": [
     "MISSION PINES"
    ],
-   "plat": "MISSION PINES",
+   "plats": [
+    "MISSION PINES"
+   ],
    "match": "exact",
+   "plat": "MISSION PINES",
    "subdivision_code": "2780"
   },
   {
@@ -5137,8 +6048,11 @@
    "index_names": [
     "GREENVIEW PLACE"
    ],
-   "plat": "GREENVIEW PLACE",
+   "plats": [
+    "GREENVIEW PLACE"
+   ],
    "match": "exact",
+   "plat": "GREENVIEW PLACE",
    "subdivision_code": "1110"
   },
   {
@@ -5152,8 +6066,11 @@
    "index_names": [
     "VAUGHN SUBDIVISION"
    ],
-   "plat": "VAUGHN SUBDIVISION",
+   "plats": [
+    "VAUGHN SUBDIVISION"
+   ],
    "match": "exact",
+   "plat": "VAUGHN SUBDIVISION",
    "subdivision_code": "7710"
   },
   {
@@ -5167,8 +6084,11 @@
    "index_names": [
     "CORINTH PLACE VILLAS"
    ],
-   "plat": "CORINTH PLACE VILLAS",
+   "plats": [
+    "CORINTH PLACE VILLAS"
+   ],
    "match": "exact",
+   "plat": "CORINTH PLACE VILLAS",
    "subdivision_code": "0610"
   },
   {
@@ -5182,8 +6102,11 @@
    "index_names": [
     "FONTANA PLACE"
    ],
-   "plat": "FONTANA PLACE",
+   "plats": [
+    "FONTANA PLACE"
+   ],
    "match": "exact",
+   "plat": "FONTANA PLACE",
    "subdivision_code": "0870"
   },
   {
@@ -5197,8 +6120,11 @@
    "index_names": [
     "PINECROFT"
    ],
-   "plat": "PINECROFT",
+   "plats": [
+    "PINECROFT"
+   ],
    "match": "exact",
+   "plat": "PINECROFT",
    "subdivision_code": "4040"
   },
   {
@@ -5212,8 +6138,11 @@
    "index_names": [
     "MISSION PINES SECOND PLAT"
    ],
-   "plat": "MISSION PINES SECOND PLAT",
+   "plats": [
+    "MISSION PINES SECOND PLAT"
+   ],
    "match": "exact",
+   "plat": "MISSION PINES SECOND PLAT",
    "subdivision_code": "2780"
   },
   {
@@ -5228,9 +6157,30 @@
     "SOUTHGATE FINANCIAL CENTER",
     "SOUTHGATE FINANCIAL CENTER INC"
    ],
-   "plat": "SOUTHGATE FINANCIAL CENTER",
+   "plats": [
+    "SOUTHGATE FINANCIAL CENTER"
+   ],
    "match": "exact",
+   "plat": "SOUTHGATE FINANCIAL CENTER",
    "subdivision_code": "7120"
+  },
+  {
+   "id": "3933508",
+   "recorded": "1992-04-22",
+   "doc_type": "Plat",
+   "book_page": "Plat 81 2",
+   "instrument_number": "199204220967869",
+   "docid": null,
+   "legal": "Sec:22 Twshp:12 Range:25 Qtr:SW other:PT OF",
+   "index_names": [
+    "REPLAT OF PART OF LOT 5 MEADOW VIEW"
+   ],
+   "plats": [
+    "REPLAT OF PART OF LOT 5 MEADOW VIEW"
+   ],
+   "match": "exact",
+   "plat": "REPLAT OF PART OF LOT 5 MEADOW VIEW",
+   "subdivision_code": "5850"
   },
   {
    "id": "4388551",
@@ -5243,8 +6193,11 @@
    "index_names": [
     "ELIZABETH'S MEADOW"
    ],
-   "plat": "ELIZABETH'S MEADOW",
+   "plats": [
+    "ELIZABETH'S MEADOW"
+   ],
    "match": "exact",
+   "plat": "ELIZABETH'S MEADOW",
    "subdivision_code": "0840"
   },
   {
@@ -5258,8 +6211,11 @@
    "index_names": [
     "SOMERSET PLACE LLC"
    ],
+   "plats": [
+    "SOMERSET PLACE"
+   ],
+   "match": "elsewhere",
    "plat": "SOMERSET PLACE",
-   "match": "prefix",
    "subdivision_code": "7070"
   },
   {
@@ -5273,8 +6229,11 @@
    "index_names": [
     "EVERGREEN PARK"
    ],
-   "plat": "EVERGREEN",
+   "plats": [
+    "EVERGREEN"
+   ],
    "match": "elsewhere",
+   "plat": "EVERGREEN",
    "subdivision_code": "0850"
   },
   {
@@ -5289,8 +6248,11 @@
     "VILLAGE PARK",
     "VILLAGE PARK TOWNHOMES L L C"
    ],
-   "plat": "VILLAGE PARK",
+   "plats": [
+    "VILLAGE PARK"
+   ],
    "match": "exact",
+   "plat": "VILLAGE PARK",
    "subdivision_code": "7715"
   },
   {
@@ -5304,8 +6266,11 @@
    "index_names": [
     "PRAIRIE HILLS FARM"
    ],
-   "plat": "PRAIRIE HILLS",
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE HILLS",
    "subdivision_code": "4500"
   },
   {
@@ -5319,8 +6284,11 @@
    "index_names": [
     "HOME PLACE"
    ],
-   "plat": "HOME PLACE",
+   "plats": [
+    "HOME PLACE"
+   ],
    "match": "exact",
+   "plat": "HOME PLACE",
    "subdivision_code": "1180"
   },
   {
@@ -5334,8 +6302,11 @@
    "index_names": [
     "BRIGHTON GARDENS"
    ],
-   "plat": "BRIGHTON GARDENS",
+   "plats": [
+    "BRIGHTON GARDENS"
+   ],
    "match": "exact",
+   "plat": "BRIGHTON GARDENS",
    "subdivision_code": "0220"
   },
   {
@@ -5349,8 +6320,11 @@
    "index_names": [
     "EVERGREEN PARK II"
    ],
-   "plat": "EVERGREEN",
+   "plats": [
+    "EVERGREEN"
+   ],
    "match": "elsewhere",
+   "plat": "EVERGREEN",
    "subdivision_code": "0850"
   },
   {
@@ -5364,8 +6338,11 @@
    "index_names": [
     "COUNTRYSIDE HOLDINGS L L C"
    ],
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "match": "elsewhere",
    "plat": "COUNTRYSIDE-EAST",
-   "match": "prefix",
    "subdivision_code": "0750"
   },
   {
@@ -5379,8 +6356,11 @@
    "index_names": [
     "OLD TRAIL"
    ],
-   "plat": "OLD TRAIL",
+   "plats": [
+    "OLD TRAIL"
+   ],
    "match": "exact",
+   "plat": "OLD TRAIL",
    "subdivision_code": "3725"
   },
   {
@@ -5394,8 +6374,11 @@
    "index_names": [
     "PINE CREEK"
    ],
-   "plat": "PINE CREEK",
+   "plats": [
+    "PINE CREEK"
+   ],
    "match": "exact",
+   "plat": "PINE CREEK",
    "subdivision_code": "4025"
   },
   {
@@ -5410,8 +6393,11 @@
     "INDIAN HEIGHTS METHODIST CHURCH",
     "INDIAN HEIGHTS UNITED METHODIST CHURCH"
    ],
-   "plat": "INDIAN HEIGHTS",
+   "plats": [
+    "INDIAN HEIGHTS"
+   ],
    "match": "variant",
+   "plat": "INDIAN HEIGHTS",
    "subdivision_code": "1400"
   },
   {
@@ -5425,8 +6411,11 @@
    "index_names": [
     "OLD MISSION LODGE #153"
    ],
-   "plat": "OLD MISSION LODGE #153",
+   "plats": [
+    "OLD MISSION LODGE #153"
+   ],
    "match": "exact",
+   "plat": "OLD MISSION LODGE #153",
    "subdivision_code": "3720"
   },
   {
@@ -5440,8 +6429,11 @@
    "index_names": [
     "PRAIRIE RIDGE LAKE"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -5455,8 +6447,11 @@
    "index_names": [
     "CRESCENT COURT"
    ],
-   "plat": "CRESCENT COURT",
+   "plats": [
+    "CRESCENT COURT"
+   ],
    "match": "exact",
+   "plat": "CRESCENT COURT",
    "subdivision_code": "0770"
   },
   {
@@ -5470,8 +6465,11 @@
    "index_names": [
     "VILLAGE PARK TOWNHOMES LLC"
    ],
+   "plats": [
+    "VILLAGE PARK"
+   ],
+   "match": "variant",
    "plat": "VILLAGE PARK",
-   "match": "prefix",
    "subdivision_code": "7715"
   },
   {
@@ -5486,8 +6484,11 @@
     "PRAIRIE RIDGE PARTNERS LLC",
     "PRAIRIE RIDGE PLAZA FIRST PLAT"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -5501,8 +6502,11 @@
    "index_names": [
     "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX"
    ],
-   "plat": "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX",
+   "plats": [
+    "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX",
    "subdivision_code": "5520"
   },
   {
@@ -5516,8 +6520,11 @@
    "index_names": [
     "PRAIRIE RIDGE AT SPRING HILL"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -5531,8 +6538,12 @@
    "index_names": [
     "MEADOW VIEW INC"
    ],
-   "plat": "MEADOW VIEW",
+   "plats": [
+    "MEADOW VIEW",
+    "REPLAT OF PART OF LOT 5 MEADOW VIEW"
+   ],
    "match": "elsewhere",
+   "plat": "MEADOW VIEW",
    "subdivision_code": "2700"
   },
   {
@@ -5546,8 +6557,11 @@
    "index_names": [
     "PRAIRIE RIDGE LAKE 2ND PLAT"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -5561,8 +6575,11 @@
    "index_names": [
     "95TH AND MISSION"
    ],
-   "plat": "95TH AND MISSION",
+   "plats": [
+    "95TH AND MISSION"
+   ],
    "match": "exact",
+   "plat": "95TH AND MISSION",
    "subdivision_code": "3650"
   },
   {
@@ -5576,8 +6593,11 @@
    "index_names": [
     "UMB PRAIRIE VILLAGE BRANCH BANK"
    ],
-   "plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "plats": [
+    "UMB PRAIRIE VILLAGE BRANCH BANK"
+   ],
    "match": "exact",
+   "plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
    "subdivision_code": "7705"
   },
   {
@@ -5591,8 +6611,11 @@
    "index_names": [
     "CORINTH SQUARE NORTH"
    ],
-   "plat": "CORINTH SQUARE NORTH",
+   "plats": [
+    "CORINTH SQUARE NORTH"
+   ],
    "match": "exact",
+   "plat": "CORINTH SQUARE NORTH",
    "subdivision_code": "0660"
   },
   {
@@ -5607,8 +6630,11 @@
     "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
     "PRAIRIE VILLAGE SLP LLC"
    ],
-   "plat": "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
+   "plats": [
+    "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT"
+   ],
    "match": "exact",
+   "plat": "BENTON HOUSE OF PRAIRIE VILLAGE FIRST PLAT",
    "subdivision_code": "0050"
   },
   {
@@ -5622,8 +6648,11 @@
    "index_names": [
     "EVERGREEN DEVELOPMENT CO"
    ],
+   "plats": [
+    "EVERGREEN"
+   ],
+   "match": "elsewhere",
    "plat": "EVERGREEN",
-   "match": "prefix",
    "subdivision_code": "0850"
   },
   {
@@ -5637,8 +6666,13 @@
    "index_names": [
     "75 MISSION OFFICE CONDOMINIUM 2ND PLAT"
    ],
-   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+   "plats": [
+    "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
+    "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+    "75 MISSION OFFICE CONDOMINIUM WEST"
+   ],
    "match": "variant",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 2ND PLAT EAST",
    "subdivision_code": "6451"
   },
   {
@@ -5652,8 +6686,11 @@
    "index_names": [
     "MEADOWBROOK EXECUTIVE BUILDING REPLAT"
    ],
-   "plat": "MEADOWBROOK EXECUTIVE",
+   "plats": [
+    "MEADOWBROOK EXECUTIVE"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK EXECUTIVE",
    "subdivision_code": "2371"
   },
   {
@@ -5667,8 +6704,11 @@
    "index_names": [
     "SAINT ANN CATHOLIC CHURCH"
    ],
-   "plat": "SAINT ANN CATHOLIC CHURCH",
+   "plats": [
+    "SAINT ANN CATHOLIC CHURCH"
+   ],
    "match": "exact",
+   "plat": "SAINT ANN CATHOLIC CHURCH",
    "subdivision_code": "6445"
   },
   {
@@ -5682,8 +6722,11 @@
    "index_names": [
     "PRAIRIE VILLAGE SHOPPING CENTER"
    ],
-   "plat": "PRAIRIE VILLAGE SHOPPING CENTER",
+   "plats": [
+    "PRAIRIE VILLAGE SHOPPING CENTER"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE SHOPPING CENTER",
    "subdivision_code": "5540"
   },
   {
@@ -5697,8 +6740,11 @@
    "index_names": [
     "RUTIAGA RANCH"
    ],
-   "plat": "RUTIAGA RANCH",
+   "plats": [
+    "RUTIAGA RANCH"
+   ],
    "match": "exact",
+   "plat": "RUTIAGA RANCH",
    "subdivision_code": "6435"
   },
   {
@@ -5712,8 +6758,11 @@
    "index_names": [
     "BRIARWOOD ELEMENTARY"
    ],
-   "plat": "BRIARWOOD ELEMENTARY",
+   "plats": [
+    "BRIARWOOD ELEMENTARY"
+   ],
    "match": "exact",
+   "plat": "BRIARWOOD ELEMENTARY",
    "subdivision_code": "0195"
   },
   {
@@ -5727,8 +6776,11 @@
    "index_names": [
     "MISSION CHATEAU"
    ],
-   "plat": "MISSION CHATEAU",
+   "plats": [
+    "MISSION CHATEAU"
+   ],
    "match": "exact",
+   "plat": "MISSION CHATEAU",
    "subdivision_code": "2770"
   },
   {
@@ -5742,8 +6794,11 @@
    "index_names": [
     "PRAIRIE RIDGE AT SPRING HILL NO 2"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -5757,8 +6812,11 @@
    "index_names": [
     "MISSION CHATEAU 2ND PLAT"
    ],
-   "plat": "MISSION CHATEAU 2ND PLAT",
+   "plats": [
+    "MISSION CHATEAU 2ND PLAT"
+   ],
    "match": "exact",
+   "plat": "MISSION CHATEAU 2ND PLAT",
    "subdivision_code": "2770"
   },
   {
@@ -5772,8 +6830,11 @@
    "index_names": [
     "RED FOX RUN AT SUNDANCE RIDGE 1ST PLAT"
    ],
-   "plat": "RED FOX",
+   "plats": [
+    "RED FOX"
+   ],
    "match": "elsewhere",
+   "plat": "RED FOX",
    "subdivision_code": "5800"
   },
   {
@@ -5787,8 +6848,11 @@
    "index_names": [
     "MEADOWBROOK PARK"
    ],
-   "plat": "MEADOWBROOK PARK",
+   "plats": [
+    "MEADOWBROOK PARK"
+   ],
    "match": "exact",
+   "plat": "MEADOWBROOK PARK",
    "subdivision_code": "2440"
   },
   {
@@ -5802,8 +6866,11 @@
    "index_names": [
     "MEADOWBROOK 2020"
    ],
-   "plat": "MEADOWBROOK 2020",
+   "plats": [
+    "MEADOWBROOK 2020"
+   ],
    "match": "exact",
+   "plat": "MEADOWBROOK 2020",
    "subdivision_code": "2450"
   },
   {
@@ -5817,8 +6884,11 @@
    "index_names": [
     "HOMESTEAD ESTATES"
    ],
-   "plat": "HOMESTEAD ESTATES",
+   "plats": [
+    "HOMESTEAD ESTATES"
+   ],
    "match": "exact",
+   "plat": "HOMESTEAD ESTATES",
    "subdivision_code": "1185"
   },
   {
@@ -5833,8 +6903,11 @@
     "CHADWICK COURT",
     "CHADWICK COURT LLC"
    ],
-   "plat": "CHADWICK COURT",
+   "plats": [
+    "CHADWICK COURT"
+   ],
    "match": "exact",
+   "plat": "CHADWICK COURT",
    "subdivision_code": "0380"
   },
   {
@@ -5848,8 +6921,11 @@
    "index_names": [
     "PRAIRIE RIDGE REPLAT"
    ],
-   "plat": "PRAIRIE RIDGE REPLAT",
+   "plats": [
+    "PRAIRIE RIDGE REPLAT"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE REPLAT",
    "subdivision_code": "4905"
   },
   {
@@ -5863,8 +6939,11 @@
    "index_names": [
     "PRAIRIE RIDGE AT SPRING HILL NO. 3"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -5878,8 +6957,11 @@
    "index_names": [
     "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2"
    ],
-   "plat": "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2",
+   "plats": [
+    "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2"
+   ],
    "match": "exact",
+   "plat": "JOHNSON COUNTY CONSOLIDATED FIRE DISTRICT NO 2",
    "subdivision_code": "1870"
   },
   {
@@ -5893,8 +6975,11 @@
    "index_names": [
     "MEADOWBROOK PARK SECOND PLAT"
    ],
-   "plat": "MEADOWBROOK PARK",
+   "plats": [
+    "MEADOWBROOK PARK"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PARK",
    "subdivision_code": "2440"
   },
   {
@@ -5908,8 +6993,11 @@
    "index_names": [
     "HOMESTEAD ESTATES REPLAT OF LOTS 1, 2 & 3"
    ],
-   "plat": "HOMESTEAD ESTATES REPLAT",
+   "plats": [
+    "HOMESTEAD ESTATES REPLAT"
+   ],
    "match": "variant",
+   "plat": "HOMESTEAD ESTATES REPLAT",
    "subdivision_code": "1186"
   },
   {
@@ -5923,8 +7011,11 @@
    "index_names": [
     "CAPELLA CONDOMINIUM"
    ],
-   "plat": "CAPELLA CONDOMINIUM",
+   "plats": [
+    "CAPELLA CONDOMINIUM"
+   ],
    "match": "exact",
+   "plat": "CAPELLA CONDOMINIUM",
    "subdivision_code": "0290"
   },
   {
@@ -5938,8 +7029,11 @@
    "index_names": [
     "MEADOWBROOK PARK THIRD PLAT"
    ],
-   "plat": "MEADOWBROOK PARK THIRD PLAT",
+   "plats": [
+    "MEADOWBROOK PARK THIRD PLAT"
+   ],
    "match": "exact",
+   "plat": "MEADOWBROOK PARK THIRD PLAT",
    "subdivision_code": "2441"
   },
   {
@@ -5953,8 +7047,11 @@
    "index_names": [
     "RED FOX RUN AT SUNDANCE RIDGE 2ND PLAT"
    ],
-   "plat": "RED FOX",
+   "plats": [
+    "RED FOX"
+   ],
    "match": "elsewhere",
+   "plat": "RED FOX",
    "subdivision_code": "5800"
   },
   {
@@ -5968,8 +7065,11 @@
    "index_names": [
     "PRAIRIE RIDGE SECOND PLAT"
    ],
-   "plat": "PRAIRIE RIDGE SECOND PLAT",
+   "plats": [
+    "PRAIRIE RIDGE SECOND PLAT"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE RIDGE SECOND PLAT",
    "subdivision_code": "4910"
   },
   {
@@ -5983,8 +7083,11 @@
    "index_names": [
     "MEADOWBROOK PARK FOURTH PLAT"
    ],
-   "plat": "MEADOWBROOK PARK FOURTH PLAT",
+   "plats": [
+    "MEADOWBROOK PARK FOURTH PLAT"
+   ],
    "match": "exact",
+   "plat": "MEADOWBROOK PARK FOURTH PLAT",
    "subdivision_code": "2441"
   },
   {
@@ -5998,8 +7101,11 @@
    "index_names": [
     "SHARP LAW OFFICES FIRST PLAT"
    ],
-   "plat": "SHARP LAW OFFICES FIRST PLAT",
+   "plats": [
+    "SHARP LAW OFFICES FIRST PLAT"
+   ],
    "match": "exact",
+   "plat": "SHARP LAW OFFICES FIRST PLAT",
    "subdivision_code": "6470"
   },
   {
@@ -6013,8 +7119,11 @@
    "index_names": [
     "MEADOWBROOK PARK FIFTH PLAT"
    ],
-   "plat": "MEADOWBROOK PARK FIFTH PLAT",
+   "plats": [
+    "MEADOWBROOK PARK FIFTH PLAT"
+   ],
    "match": "exact",
+   "plat": "MEADOWBROOK PARK FIFTH PLAT",
    "subdivision_code": "2441"
   },
   {
@@ -6028,8 +7137,11 @@
    "index_names": [
     "MEADOWBROOK PARK SIXTH PLAT"
    ],
-   "plat": "MEADOWBROOK PARK SIXTH PLAT",
+   "plats": [
+    "MEADOWBROOK PARK SIXTH PLAT"
+   ],
    "match": "exact",
+   "plat": "MEADOWBROOK PARK SIXTH PLAT",
    "subdivision_code": "2441"
   },
   {
@@ -6043,8 +7155,11 @@
    "index_names": [
     "MEADOWBROOK PARK REPLAT LOTS 93-97"
    ],
-   "plat": "MEADOWBROOK PARK REPLAT",
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
    "subdivision_code": "2442"
   },
   {
@@ -6058,8 +7173,11 @@
    "index_names": [
     "MEADOWBROOK PARK REPLAT LOTS 70-72"
    ],
-   "plat": "MEADOWBROOK PARK REPLAT",
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
    "subdivision_code": "2442"
   },
   {
@@ -6073,8 +7191,11 @@
    "index_names": [
     "MEADOWBROOK PARK REPLAT LOTS 101-106"
    ],
-   "plat": "MEADOWBROOK PARK REPLAT",
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
    "subdivision_code": "2442"
   },
   {
@@ -6088,8 +7209,11 @@
    "index_names": [
     "EVERGREEN GROVE"
    ],
-   "plat": "EVERGREEN",
+   "plats": [
+    "EVERGREEN"
+   ],
    "match": "elsewhere",
+   "plat": "EVERGREEN",
    "subdivision_code": "0850"
   },
   {
@@ -6103,8 +7227,11 @@
    "index_names": [
     "PRAIRIE RIDGE AT SPRING HILL NO. 4"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -6118,8 +7245,11 @@
    "index_names": [
     "MEADOWBROOK PLACE LLC"
    ],
-   "plat": "MEADOWBROOK PLACE",
+   "plats": [
+    "MEADOWBROOK PLACE"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PLACE",
    "subdivision_code": "2445"
   },
   {
@@ -6133,8 +7263,11 @@
    "index_names": [
     "PRAIRIE RIDGE LLC"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -6148,8 +7281,11 @@
    "index_names": [
     "MEADOWBROOK PARK REPLAT LOTS 92, 135 AND 136"
    ],
-   "plat": "MEADOWBROOK PARK REPLAT",
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
    "subdivision_code": "2442"
   },
   {
@@ -6163,8 +7299,11 @@
    "index_names": [
     "SUNSET HILL ACRES SECOND PLAT"
    ],
-   "plat": "SUNSET HILL ACRES SECOND PLAT",
+   "plats": [
+    "SUNSET HILL ACRES SECOND PLAT"
+   ],
    "match": "exact",
+   "plat": "SUNSET HILL ACRES SECOND PLAT",
    "subdivision_code": "7300"
   },
   {
@@ -6178,8 +7317,11 @@
    "index_names": [
     "MEADOWBROOK PARK REPLAT LOTS 107 AND 141"
    ],
-   "plat": "MEADOWBROOK PARK REPLAT",
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
    "subdivision_code": "2442"
   },
   {
@@ -6193,8 +7335,11 @@
    "index_names": [
     "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX"
    ],
-   "plat": "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX",
+   "plats": [
+    "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX"
+   ],
    "match": "exact",
+   "plat": "PRAIRIE VILLAGE PUBLIC WORKS COMPLEX",
    "subdivision_code": "5530"
   },
   {
@@ -6208,8 +7353,11 @@
    "index_names": [
     "MEADOWBROOK PARK REPLAT LOTS 138 AND 139"
    ],
-   "plat": "MEADOWBROOK PARK REPLAT",
+   "plats": [
+    "MEADOWBROOK PARK REPLAT"
+   ],
    "match": "variant",
+   "plat": "MEADOWBROOK PARK REPLAT",
    "subdivision_code": "2442"
   },
   {
@@ -6223,8 +7371,11 @@
    "index_names": [
     "75 MISSION OFFICE CONDOMINIUM 3RD PLAT"
    ],
-   "plat": "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
+   "plats": [
+    "75 MISSION OFFICE CONDOMINIUM 3RD PLAT"
+   ],
    "match": "exact",
+   "plat": "75 MISSION OFFICE CONDOMINIUM 3RD PLAT",
    "subdivision_code": "6451"
   },
   {
@@ -6238,8 +7389,11 @@
    "index_names": [
     "PRAIRIE RIDGE PLAZA MIDLAND"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -6254,8 +7408,11 @@
     "EVERGREEN LIVING INNOVATIONS INC",
     "PRAIRIE RIDGE PLAZA EVERGREEN"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -6269,8 +7426,11 @@
    "index_names": [
     "PRAIRIE RIDGE AT SPRING HILL NO 5"
    ],
-   "plat": "PRAIRIE RIDGE",
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
    "match": "elsewhere",
+   "plat": "PRAIRIE RIDGE",
    "subdivision_code": "4900"
   },
   {
@@ -6284,8 +7444,11 @@
    "index_names": [
     "RED FOX RUN AT SUNDANCE RIDGE 3RD PLAT"
    ],
-   "plat": "RED FOX",
+   "plats": [
+    "RED FOX"
+   ],
    "match": "elsewhere",
+   "plat": "RED FOX",
    "subdivision_code": "5800"
   },
   {
@@ -6299,8 +7462,11 @@
    "index_names": [
     "COUNTRYSIDE FARMS FIRST PLAT"
    ],
-   "plat": "COUNTRYSIDE-EAST",
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
    "match": "elsewhere",
+   "plat": "COUNTRYSIDE-EAST",
    "subdivision_code": "0750"
   }
  ]

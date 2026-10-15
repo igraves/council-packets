@@ -418,6 +418,22 @@ def plat_survey(refresh, offline, md_path):
                f"{plats.MANIFEST_PATH.relative_to(plats.PROJECT_ROOT)}, {md_path}")
 
 
+@cli.command("plat-images")
+@click.option("--limit", type=int, help="Download at most N images (for testing)")
+def plat_images(limit):
+    """Download the plat image PDFs for every Prairie Village plat in deeds/plats.json."""
+    from pvcouncil import plats
+    from pvcouncil.recorder import RecorderError
+
+    try:
+        manifest = plats.load_manifest()
+        stats = plats.download_images(manifest, limit=limit, echo=click.echo)
+    except (FileNotFoundError, RecorderError) as e:
+        raise click.ClickException(f"{e} (downloaded images are kept; rerun to resume)")
+    click.echo(f"Downloaded {stats['downloaded']} images ({stats['bytes'] / 1e6:.1f} MB), "
+               f"{stats['no_image']} with no image → {plats.IMAGES_DIR.relative_to(plats.PROJECT_ROOT)}/")
+
+
 @cli.command("recorder-check")
 def recorder_check():
     """Test the Recorder of Deeds login and search (prints no credentials or session values)."""

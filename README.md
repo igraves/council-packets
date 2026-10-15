@@ -216,13 +216,35 @@ per plat name, limited to the PLAT category. It writes:
 - [subdivision-plats.md](subdivision-plats.md): each subdivision's original
   platting date and every plat recorded for it.
 
-A name search is a prefix match, so it also finds plats with longer names.
-Each instrument is marked `exact` (indexed under one of our plat names),
-`variant` (a longer name, such as "MISSION VILLAGE BLOCK 2", located in
-Township 12 or 13, Range 25, where Prairie Village lies), `prefix` (a
-longer name with no location in the index), or `elsewhere` (located
-elsewhere in the county). Only `exact` and `variant` count toward a
-subdivision. The rest are listed in the report for review.
+Replats are searched under both their full name ("REPLAT OF PART OF LOT 5
+MEADOW VIEW") and their parent subdivision's name. A name search is a
+prefix match, so it also finds plats with longer names. Each instrument is
+marked as one of these:
+
+- `exact`: indexed under one of our plat names
+- `variant`: a longer name, such as "MISSION VILLAGE BLOCK 2", placed in
+  Prairie Village by its section, township, and range (Township 12 or 13,
+  Range 25) or by its subdivision legal
+- `prefix`: a longer name that the index gives no location for
+- `elsewhere`: located elsewhere in the county
+
+Only `exact` and `variant` count toward a subdivision. The rest are listed
+in the report for review. When a plat's place can only be settled by
+reading its image, the decision goes in
+[deeds/plat_review.json](deeds/plat_review.json), keyed by book and page,
+and the survey applies it. Reading the images placed the 1937–1946
+COUNTRYSIDE plats in Mission, not Prairie Village.
+
+`pvc plat-images` downloads the plat image PDFs for every Prairie Village
+plat in the manifest to `deeds/images/`, which is gitignored. Viewing and
+downloading images is free on the subscription; certified copies are not.
+Old scans run up to about 9 MB each, so expect a few hundred MB in all.
+Reruns skip images already downloaded:
+
+```sh
+uv run pvc plat-images --limit 5   # try a few
+uv run pvc plat-images             # all of them
+```
 
 Raw search results are cached in `deeds/cache/`, which is gitignored
 because rows can carry other party names. Reruns reuse the cache:

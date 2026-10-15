@@ -33,6 +33,7 @@ from pvcouncil.recorder import PLAT_CATEGORY, PLAT_DOC_TYPES, Recorder
 DEEDS_DIR = PROJECT_ROOT / "deeds"
 CACHE_DIR = DEEDS_DIR / "cache" / "plats"
 MANIFEST_PATH = DEEDS_DIR / "plats.json"
+REVIEW_PATH = DEEDS_DIR / "plat_review.json"  # placements decided from the plat images
 MAX_ROWS = 2000  # per name search; no plat name should come near this
 PV_TOWNSHIPS = {(12, 25), (13, 25)}  # (township, range) pairs covering Prairie Village
 
@@ -47,6 +48,12 @@ def norm(name: str) -> str:
     words = [_ORDINALS.get(w, w) for w in s.split()]
     words = [w for w in words if w not in ("THE", "NO")]
     return " ".join(words)
+
+
+def loose(name: str) -> str:
+    """norm() without filler words: 'RESURVEY OF LOTS 15 AND 16 PLAT OF RIDGE VIEW'
+    == 'RESURVEY OF LOTS 15 AND 16 RIDGE VIEW'."""
+    return " ".join(w for w in norm(name).split() if w not in ("PLAT", "OF"))
 
 
 def _slug(name: str) -> str:
@@ -66,21 +73,38 @@ def plat_names(year: int | None = None) -> dict[str, dict]:
 
 
 def search_term(plat: str) -> str:
-    """The name to search for: index names drop 'REPLAT OF ...'-style prefixes."""
+    """The parent subdivision name inside a 'REPLAT OF ...'-style name.
+
+    Replats are indexed both ways (some under the full name, some under the
+    parent's name), so the survey searches both.
+    """
     m = re.match(r"(?:CORRECTED PLAT|REPLAT|RESURVEY)\s+OF\s+(?:PART OF\s+)?(?:LOTS?\s+[\d\s,AND-]+)?(.*)", plat)
     return (m.group(1).strip() if m and m.group(1).strip() else plat)
 
 
 def fallback_terms(term: str) -> list[str]:
     """Looser names to try when a term finds nothing: no punctuation, then shorter."""
-    out = []
-    plain = re.sub(r"\s+", " ", re.sub(r"[^A-Z0-9& ]", " ", term.upper())).strip()
-    out.append(plain)
-    short = re.sub(r"\s+(?:NO\s*\d+|\d+(?:ST|ND|RD|TH)\s+PLAT|EAST|WEST|NORTH|SOUTH)(?:\s+.*)?$", "", plain)
-    out.append(short)
+    def plain_of(s):
+        return re.sub(r"\s+", " ", re.sub(r"[^A-Z0-9& ]", " ", s.upper())).strip()
+
+    plain = plain_of(term)
+    out = [plain]
     words = plain.split()
-    if len(words) > 2:
-        out.append(" ".join(words[:2]))
+    if words and words[0] in ("CORRECTED", "REPLAT", "RESURVEY"):
+        # Replat names stay specific: the index may drop "OF" ("CORRECTED PLAT MEADOW LAKE")
+        # or add words before the parent's name ("RESURVEY OF LOTS 15 AND 16 PLAT OF RIDGE
+        # VIEW"), so try the name without "OF" and the part before the parent's name.
+        out.append(re.sub(r"^(CORRECTED PLAT) OF ", r"\1 ", plain))
+        parent = plain_of(search_term(term))
+        if parent != plain and plain.endswith(" " + parent):
+            head = plain[: -len(parent)].strip()
+            if len(head.split()) >= 4:  # "REPLAT OF PART OF LOT 5", not just "REPLAT OF"
+                out.append(head)
+    else:
+        out.append(re.sub(r"\s+(?:NO\s*\d+|\d+(?:ST|ND|RD|TH)\s+PLAT|EAST|WEST|NORTH|SOUTH)(?:\s+.*)?$",
+                          "", plain))
+        if len(words) > 2:
+            out.append(" ".join(words[:2]))
     seen, uniq = {term}, []
     for t in out:
         if t and t not in seen and len(t) >= 6:
@@ -92,7 +116,7 @@ def fallback_terms(term: str) -> list[str]:
 def fetch(names: dict[str, dict], refresh: bool = False, echo=print) -> None:
     """Run (or resume) the name searches, caching raw rows per search term."""
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    terms = sorted({search_term(n) for n in names})
+    terms = sorted({search_term(n) for n in names} | set(names))
     def needs(t):
         f = CACHE_DIR / f"{_slug(t)}.json"
         if refresh or not f.exists():
@@ -131,9 +155,23 @@ def location(legal: str | None) -> tuple[int, int, int] | None:
     return tuple(int(x) for x in m.groups()) if m else None
 
 
+def legal_subdivision(legal: str | None) -> str | None:
+    """The 'Sub:' name in an index legal description (truncated at 30 characters there)."""
+    m = re.search(r"Sub:\s*(.+?)\s*(?:Blk:|Bl:|Lt:|Tract:|other:|Rmrk:|$)", legal or "")
+    return m.group(1).strip() if m else None
+
+
+def _ours(sub: str, names: dict) -> bool:
+    """Whether an index subdivision name is one of our plats (allowing for truncation)."""
+    s = loose(sub)
+    return any(loose(n) == s or (len(sub) >= 29 and loose(n).startswith(s)) or
+               loose(search_term(n)) == s for n in names)
+
+
 def build(names: dict[str, dict]) -> dict:
     """Match cached rows to our plat names and write deeds/plats.json."""
     by_norm = {norm(n): n for n in names}
+    by_loose = {loose(n): n for n in names}
     instruments: dict[str, dict] = {}
     for f in sorted(CACHE_DIR.glob("*.json")):
         cached = json.loads(f.read_text())
@@ -159,27 +197,53 @@ def build(names: dict[str, dict]) -> dict:
                 e["index_names"].append(idx_name)
 
     for e in instruments.values():
-        matches = [by_norm[norm(n)] for n in e["index_names"] if norm(n) in by_norm]
+        matches = [by_norm[norm(n)] for n in e["index_names"] if norm(n) in by_norm] or \
+                  [by_loose[loose(n)] for n in e["index_names"] if loose(n) in by_loose]
         if matches:
-            e["plat"], e["match"] = matches[0], "exact"
+            e["plats"], e["match"] = sorted(set(matches)), "exact"
         else:
-            # the plat whose name (or looser fallback form) matches the most of the index name
-            best, best_len = None, 0
+            # the plat(s) whose name (or looser fallback form) matches the most of the index name
+            # score by matched length; at equal length a plat's own name beats a fallback
+            # form of another plat's name ("MEADOW LAKE" itself vs. a shortened "MEADOW LAKE LAWN")
+            best, best_score = [], (0, 0)
             for p in sorted(names):
-                for t in [search_term(p)] + fallback_terms(search_term(p)):
-                    if len(norm(t)) > best_len and any(norm(n).startswith(norm(t)) for n in e["index_names"]):
-                        best, best_len = p, len(norm(t))
-            e["plat"] = best
-            loc = location(e["legal"])
-            if loc is None:
-                e["match"] = "prefix"
-            else:
+                own = {norm(p), norm(search_term(p))}
+                for t in [p, search_term(p)] + fallback_terms(search_term(p)):
+                    if any(norm(n).startswith(norm(t)) for n in e["index_names"]):
+                        score = (len(norm(t)), int(norm(t) in own))
+                        if score > best_score:
+                            best, best_score = [p], score
+                        elif score == best_score and p not in best:
+                            best.append(p)
+            e["plats"] = best
+            loc, sub = location(e["legal"]), legal_subdivision(e["legal"])
+            if loc is not None:
                 e["match"] = "variant" if (loc[1], loc[2]) in PV_TOWNSHIPS else "elsewhere"
+            elif sub is not None:
+                e["match"] = "variant" if _ours(sub, names) else "elsewhere"
+            else:
+                e["match"] = "prefix"
+        e["plat"] = e["plats"][0] if e["plats"] else None
         e["subdivision_code"] = names[e["plat"]]["subdivision_code"] if e["plat"] else None
 
+    # drop plats that matched none of our names (a broad fallback search can return other
+    # "RESURVEY OF ..." plats, for instance)
+    # placements decided by reading the plat image override the name/location matching
+    review = json.loads(REVIEW_PATH.read_text()) if REVIEW_PATH.exists() else {}
+    for e in instruments.values():
+        r = review.get(e["book_page"])
+        if not r:
+            continue
+        e["match"] = r["match"]
+        if r.get("plat"):
+            e["plats"], e["plat"] = [r["plat"]], r["plat"]
+            e["subdivision_code"] = names[r["plat"]]["subdivision_code"]
+        e["reviewed"] = {k: v for k, v in r.items() if k in ("location", "note")}
+
+    kept = [e for e in instruments.values() if e["plats"]]
     manifest = {
         "plats": names,
-        "instruments": sorted(instruments.values(), key=lambda e: (e["recorded"], e["book_page"])),
+        "instruments": sorted(kept, key=lambda e: (e["recorded"], e["book_page"])),
     }
     DEEDS_DIR.mkdir(exist_ok=True)
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=1) + "\n")
@@ -201,8 +265,9 @@ def render_markdown(manifest: dict) -> str:
     # a subdivision's plats: exact name matches plus name variants located in Prairie Village
     by_plat = defaultdict(list)
     for e in by_match["exact"] + by_match["variant"]:
-        if e["plat"]:
-            by_plat[e["plat"]].append(e)
+        for p in e.get("plats") or [e["plat"]]:
+            if p:
+                by_plat[p].append(e)
     subs = defaultdict(list)
     for n, info in names.items():
         subs[(info["subdivision_code"], info["subdivision"])].append(n)
@@ -219,8 +284,8 @@ def render_markdown(manifest: dict) -> str:
         f"- **{found}** plat names matched to at least one recorded plat",
         f"- **{len(by_match['exact'])}** plat instruments indexed under one of our plat names",
         f"- **{len(by_match['variant'])}** more under a variant of one of our names "
-        "(\"MISSION VILLAGE BLOCK 2\") and located in Township 12 or 13, Range 25, "
-        "where Prairie Village lies",
+        "(\"MISSION VILLAGE BLOCK 2\"), placed in Prairie Village by their location "
+        "(Township 12 or 13, Range 25), their subdivision legal, or the plat image",
         f"- **{len(by_match['prefix'])}** variants with no location in the index, and "
         f"**{len(by_match['elsewhere'])}** located elsewhere in the county; both are listed "
         "at the end and left out of the counts",
@@ -235,7 +300,7 @@ def render_markdown(manifest: dict) -> str:
         "|---|---|---:|---|---:|",
     ]
     for (code, sub), plat_list in sorted(subs.items()):
-        insts = [e for p in plat_list for e in by_plat[p]]
+        insts = list({e["id"]: e for p in plat_list for e in by_plat[p]}.values())
         first = min(insts, key=lambda e: e["recorded"]) if insts else None
         parcels = sum(names[p]["parcels"] for p in plat_list)
         orig = f"{first['recorded']} ({first['book_page']})" if first else "not found"
@@ -254,6 +319,8 @@ def render_markdown(manifest: dict) -> str:
             for e in insts:
                 extra = f" — {e['legal']}" if e["legal"] else ""
                 variant = f" *(variant: {'; '.join(e['index_names'])})*" if e["match"] == "variant" else ""
+                if e.get("reviewed"):
+                    extra = f" — {e['reviewed'].get('location', '')}: {e['reviewed'].get('note', '')} *(from the plat image)*"
                 lines.append(f"  - {e['recorded']} {e['doc_type']}, {e['book_page']}{variant}{extra}")
         lines.append("")
 
@@ -277,10 +344,49 @@ def render_markdown(manifest: dict) -> str:
         return out + [""]
 
     lines += table("Variants with no location (review)",
-                   "Index names that start with one of our plat names but have no section, "
-                   "township, and range in the index, so they can't be placed. Many older "
-                   "ones are likely Prairie Village plats.", by_match["prefix"])
+                   "Index names that start with one of our plat names but have no location "
+                   "(section, township, and range, or subdivision) in the index, so they can't "
+                   "be placed. Many older ones are likely Prairie Village plats; the plat image "
+                   "settles it.", by_match["prefix"])
     lines += table("Same-name plats elsewhere in the county",
                    "Index names that start with one of our plat names but are located outside "
                    "Township 12–13, Range 25.", by_match["elsewhere"])
     return "\n".join(lines)
+
+
+IMAGES_DIR = DEEDS_DIR / "images"
+
+
+def image_path(e: dict) -> Path:
+    return IMAGES_DIR / f"{_slug(e['book_page'])}--{e['id']}.pdf"
+
+
+def download_images(manifest: dict, limit: int | None = None, echo=print) -> dict:
+    """Download the plat image for every Prairie Village plat instrument (exact or variant).
+
+    Images go to deeds/images/ (gitignored). Downloaded images are skipped, so an
+    interrupted run resumes.
+    """
+    wanted = [e for e in manifest["instruments"] if e["match"] in ("exact", "variant")]
+    missing = [e for e in wanted if not image_path(e).exists()]
+    todo = missing[:limit] if limit else missing
+    echo(f"{len(wanted)} plat instruments, {len(wanted) - len(missing)} already downloaded, "
+         f"fetching {len(todo)}")
+    stats = {"downloaded": 0, "no_image": 0, "bytes": 0}
+    if not todo:
+        return stats
+    IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+    rec = Recorder().login()
+    for i, e in enumerate(todo, 1):
+        detail = rec.image_detail(e["id"])
+        if not detail.get("HasImage"):
+            stats["no_image"] += 1
+            echo(f"[{i}/{len(todo)}] {e['book_page']}: no image")
+            continue
+        data = rec.image_pdf(e["id"])
+        image_path(e).write_bytes(data)
+        stats["downloaded"] += 1
+        stats["bytes"] += len(data)
+        echo(f"[{i}/{len(todo)}] {e['book_page']} ({e['plat']}): "
+             f"{detail.get('NumberOfPages')} page(s), {len(data) // 1024} KB")
+    return stats

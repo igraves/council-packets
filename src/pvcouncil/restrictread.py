@@ -23,7 +23,7 @@ from pathlib import Path
 
 import fitz
 
-from pvcouncil import plats, transcripts
+from pvcouncil import ocrengines, plats, transcripts
 from pvcouncil.recorder import Recorder
 
 IMAGES_DIR = plats.IMAGES_DIR / "restrictions"
@@ -167,19 +167,24 @@ REVIEW_PATH = plats.DEEDS_DIR / "restriction_review.json"
 
 def build(entries: list[dict]) -> dict:
     review = json.loads(REVIEW_PATH.read_text()) if REVIEW_PATH.exists() else {}
-    manual = transcripts.load()
+    manual, chosen = transcripts.load(), ocrengines.adopted()
     rows, excerpts = [], ["# Restriction instrument excerpts (local only)", ""]
     for e in entries:
         txt = OCR_DIR / f"{image_path(e).stem}.txt"
         if not txt.exists():
             continue
-        text = txt.read_text()
+        tess = txt.read_text()
+        # a reading from another engine, adopted in the viewer, stands in for Tesseract's
+        text, eng = ocrengines.base_text(f"r:{e['id']}", tess, image_path(e), chosen)
         base = classify(text)
         typed = transcripts.text_for(f"r:{e['id']}", manual)
         if typed:
             text += "\n\n" + typed
         c = classify(text)
-        c["words"] = base["words"]  # what OCR alone read
+        c["words"] = classify(tess)["words"]  # what Tesseract alone read
+        if eng:
+            c.update(engine=eng["label"], engine_stale=eng["stale"],
+                     engine_terms=sorted(set(base["features"]) - set(classify(tess)["features"])))
         items = manual.get(f"r:{e['id']}", [])
         c["transcribed"] = len(items)
         if items:

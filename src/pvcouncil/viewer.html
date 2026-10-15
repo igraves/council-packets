@@ -98,6 +98,15 @@ kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-
 .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; font-size: 13px; }
 .opts label { display: flex; gap: 6px; align-items: center; }
 .opts select { padding: 2px 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); max-width: 100%; }
+#rtext { width: 100%; min-height: 260px; resize: vertical; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.ritem { border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; margin-bottom: 6px; display: grid; grid-template-columns: 1fr auto; gap: 2px 6px; align-items: center; }
+.ritem.viewing { border-color: #2f8ae8; }
+.ritem.adopted { background: var(--ok-bg); }
+.ritem .acts { display: flex; gap: 4px; }
+.ritem .acts button { font-size: 12px; padding: 2px 6px; }
+.ritem .src { grid-column: 1 / -1; color: var(--muted); }
+.ritem .warnline { grid-column: 1 / -1; color: var(--warn); }
+.badge.eng { outline: 1px dashed #2f8ae8; outline-offset: -1px; }
 #ocrText { width: 100%; min-height: 200px; resize: vertical; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); font: 12.5px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; }
 .row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
 #ocrStatus { color: var(--muted); font-size: 12px; }
@@ -135,6 +144,7 @@ kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-
       <option value="poor">Poor OCR: couldn't be read</option>
       <option value="todo">Poor OCR, not yet transcribed</option>
       <option value="mine">Has my transcriptions</option>
+      <option value="engine">Read by another OCR engine</option>
     </select>
     <label><input type="checkbox" id="racial"> Only racially restrictive covenants</label>
     <label><input type="checkbox" id="stated"> Only plats stating restrictions</label>
@@ -184,9 +194,11 @@ kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-
         <div class="sm" id="regionLabel"></div>
         <img id="ocrPreview" alt="What OCR saw" hidden>
         <div class="opts">
+          <label style="grid-column: 1 / -1" title="Which OCR engine reads the region">Engine
+            <select id="ocrEngine" class="engines"></select></label>
           <label title="Resolution the region is rendered at for OCR; higher helps small or faint type">OCR zoom
-            <select id="ocrDpi"><option>200</option><option>300</option><option selected>400</option><option>600</option></select> dpi</label>
-          <label>Layout
+            <select id="ocrDpi"><option>150</option><option>200</option><option>300</option><option selected>400</option><option>600</option></select> dpi</label>
+          <label id="psmLabel" title="Tesseract only: how the text is laid out">Layout
             <select id="ocrPsm">
               <option value="6" selected>Block of text</option>
               <option value="4">Columns</option>
@@ -208,6 +220,20 @@ kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-
       <div id="classified" hidden></div>
       <h3>Saved on this document</h3>
       <div id="tlist" class="sm">None yet.</div>
+      <h3>Whole-document readings</h3>
+      <p class="hint">Read every page with another engine, compare it with Tesseract's, and adopt the one the report should use. Model engines can write what a page ought to say rather than what it does; check a reading against the image before adopting it.</p>
+      <div class="opts">
+        <label style="grid-column: 1 / -1">Engine <select id="docEngine" class="engines"></select></label>
+        <label title="Invert pages before reading: auto inverts mostly-dark pages (photostat negatives)">Invert
+          <select id="docInvert"><option value="auto">auto</option><option value="on">on</option><option value="off">off</option></select></label>
+        <span class="sm" title="Pages are read at the viewer's current rotation">at ⟳ <span id="docRot">0</span>°</span>
+      </div>
+      <div class="row"><button class="b" id="docRead">Read document</button><span id="jobStatus" class="sm"></span></div>
+      <div id="rlist" class="sm"></div>
+      <div id="rview" hidden>
+        <div class="row sm" id="rviewHead"></div>
+        <textarea id="rtext" readonly></textarea>
+      </div>
     </aside>
   </div>
 </main>
@@ -218,6 +244,7 @@ const $ = id => document.getElementById(id);
 const stage = $("stage"), sheet = $("sheet"), img = $("page");
 let docs = [], shown = [], cur = null, page = 1, rot = 0, width = 0, invert = false, contrast = 100, dpiShown = 0, fitMode = "page";
 let reqToken = 0, selectMode = false, saved = [], region = null, ocrToken = 0;
+let engines = {}, reads = null, viewing = null, jobTimer = null;
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem("deedviewer." + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
@@ -237,6 +264,8 @@ function kindBadge(d) {
   if (d.ocr === "poor") b += `<span class="badge poor" title="OCR read ${d.ocr_words} words">poor OCR</span>`;
   if (d.transcribed) b += `<span class="badge ok" title="${d.transcribed} saved transcription(s)">✎ ${d.transcribed}</span>`;
   if (d.stale_transcriptions) b += `<span class="badge warn" title="${d.stale_transcriptions} transcription(s) were drawn on a different image of this document">⚠ stale</span>`;
+  if (d.engine) b += `<span class="badge ok" title="The report uses the ${esc(d.engine.label)} reading of this document">⚙ ${esc(d.engine.label)}${d.engine.stale ? " ⚠" : ""}</span>`;
+  else if ((d.read_by || []).length) b += `<span class="badge" title="Read by ${esc(d.read_by.join(", "))}; not adopted">⚙ ${d.read_by.length}</span>`;
   return b;
 }
 
@@ -247,6 +276,8 @@ async function init() {
   for (const id of ["q", "kind", "ocrf", "racial", "stated"]) $(id).addEventListener("input", () => {
     store.set(id, $(id).type === "checkbox" ? $(id).checked : $(id).value); renderList();
   });
+  engines = await (await fetch("/api/engines")).json();
+  fillEngines();
   $("ocrDpi").value = String(store.get("ocrDpi", 400));
   $("ocrPsm").value = String(store.get("ocrPsm", 6));
   if (store.get("panel", false)) togglePanel(true);
@@ -262,8 +293,9 @@ function filtered() {
     if (k === "decl" && !DECL.has(d.kind)) return false;
     if (k === "other" && (d.kind === "plat" || DECL.has(d.kind))) return false;
     if (o === "poor" && d.ocr !== "poor") return false;
-    if (o === "todo" && (d.ocr !== "poor" || d.transcribed)) return false;
+    if (o === "todo" && (d.ocr !== "poor" || d.transcribed || d.engine)) return false;
     if (o === "mine" && !d.transcribed) return false;
+    if (o === "engine" && !(d.read_by || []).length) return false;
     if ($("racial").checked && !racial(d)) return false;
     if ($("stated").checked && !(d.kind === "plat" && (d.features || []).some(f => f === "restrictions" || f === "covenants"))) return false;
     if (q) {
@@ -318,6 +350,7 @@ async function open(key, p, regionId) {
   cur = d; page = Math.min(Math.max(1, p || 1), d.pages);
   if (!same) {
     rot = 0; fitMode = "page"; closeEditor(); $("classified").hidden = true; saved = [];
+    reads = null; viewing = null; renderReadings();
     invert = false; $("invert").setAttribute("aria-pressed", false);
   }
   setHash();
@@ -329,6 +362,7 @@ async function open(key, p, regionId) {
   if (!same) {
     saved = await (await fetch(`/api/transcripts?key=${encodeURIComponent(key)}`)).json();
     if (cur === d) { renderMarks(); renderTList(); }
+    loadReadings();
   }
   if (regionId && cur === d) editSaved(regionId);
 }
@@ -336,16 +370,18 @@ async function open(key, p, regionId) {
 function renderMeta() {
   const d = cur, tt = d.transcribed_terms || {};
   const chips = (d.features || []).map(f => {
-    const cites = tt[f], cls = (f === "racial restriction" ? " warn" : "") + (cites ? " tr" : "");
-    const title = cites ? ` title="found by transcription: ${esc(cites.map(c => `page ${c.page}, region ${c.region}`).join("; "))}"` : "";
-    return `<span class="badge${cls}"${title}>${esc(f)}${cites ? " ✎" : ""}</span>`;
+    const cites = tt[f], byEng = !cites && d.engine && (d.engine_terms || []).includes(f);
+    const cls = (f === "racial restriction" ? " warn" : "") + (cites ? " tr" : "") + (byEng ? " eng" : "");
+    const title = cites ? ` title="found by transcription: ${esc(cites.map(c => `page ${c.page}, region ${c.region}`).join("; "))}"`
+      : byEng ? ` title="found only by the ${esc(d.engine.label)} reading; Tesseract missed it"` : "";
+    return `<span class="badge${cls}"${title}>${esc(f)}${cites ? " ✎" : byEng ? " ⚙" : ""}</span>`;
   }).join("");
   $("meta").innerHTML = `<h2>${esc(d.book_page)}</h2>
     <span class="sm">recorded ${esc(d.recorded)}</span>${kindBadge(d)}
     <span class="sm">${esc(d.subdivision)}${d.code ? " · " + esc(d.code) : ""}${d.title !== d.subdivision ? " · " + esc(d.title) : ""}</span>
     ${d.filed_with ? `<span class="sm">filed with ${esc(d.filed_with.join(", "))}</span>` : ""}
     ${d.term ? `<span class="sm">${esc(d.term)}</span>` : ""}
-    <span class="sm">OCR read ${d.ocr_words} words</span>
+    <span class="sm">Tesseract read ${d.ocr_words} words${d.engine ? ` · report uses the ${esc(d.engine.label)} reading` : ""}</span>
     ${chips ? `<div class="chips" style="flex-basis:100%">${chips}</div>` : ""}
     ${d.note ? `<div class="note" style="flex-basis:100%">${esc(d.note)}</div>` : ""}`;
   $("pageCount").textContent = `/ ${d.pages}`;
@@ -394,6 +430,8 @@ function showPage() {
   loadSharp(true);
   renderMarks();
   setHash();
+  $("docRot").textContent = rot;
+  renderReadingView();
   if (page < cur.pages) new Image().src = `/page/${cur.key}/${page + 1}.jpg?dpi=${pickDpi(width)}&rot=${rot}`;
 }
 
@@ -561,7 +599,7 @@ function renderTList() {
   $("tlist").innerHTML = saved.map(s => {
     const src = s.source || {};
     return `<div class="titem${region && region.id === s.id ? " active" : ""}" data-id="${esc(s.id)}">
-    <span>Page ${s.page} · region ${esc(s.id)}</span><button title="Delete" data-del="${esc(s.id)}">×</button>
+    <span>Page ${s.page} · region ${esc(s.id)}${s.engine && s.engine !== "tesseract" ? ` · read by ${esc(engines[s.engine]?.label || s.engine)}` : ""}</span><button title="Delete" data-del="${esc(s.id)}">×</button>
     <span class="src">${esc(src.book_page || cur.book_page)}, recorded ${esc(src.recorded || cur.recorded)} · saved ${esc(s.saved || "")}${src.fingerprint ? ` · image ${esc(src.fingerprint.slice(0, 8))}` : ""}</span>
     ${s.stale ? `<span class="warnline">⚠ Drawn on a different image of this document; check the box still covers this text, then save again.</span>` : ""}
     ${s.stale === null ? `<span class="warnline">No image fingerprint (saved before fingerprints); save again to record one.</span>` : ""}
@@ -583,7 +621,8 @@ $("tlist").addEventListener("click", async e => {
 });
 
 function regionSettings() {
-  return { dpi: +$("ocrDpi").value, psm: +$("ocrPsm").value, invert: $("ocrInvert").checked, threshold: $("ocrThreshold").checked };
+  return { engine: $("ocrEngine").value, dpi: +$("ocrDpi").value, psm: +$("ocrPsm").value,
+           invert: $("ocrInvert").checked, threshold: $("ocrThreshold").checked };
 }
 function showEditor() {
   $("editor").hidden = false; $("ocrHint").hidden = true;
@@ -613,6 +652,8 @@ function editSaved(id) {
   if (s.page !== page) { page = s.page; showPage(); }
   region = { ...s };
   $("ocrDpi").value = String(s.dpi || 400); $("ocrPsm").value = String(s.psm || 6);
+  if (s.engine && engines[s.engine]?.ok) $("ocrEngine").value = s.engine;
+  psmShown();
   $("ocrInvert").checked = !!s.invert; $("ocrThreshold").checked = !!s.threshold;
   $("ocrText").value = s.text || "";
   $("ocrPreview").removeAttribute("src"); $("ocrPreview").hidden = true;
@@ -623,18 +664,22 @@ function editSaved(id) {
 async function runOcr() {
   if (!region) return;
   const token = ++ocrToken, s = regionSettings();
-  store.set("ocrDpi", s.dpi); store.set("ocrPsm", s.psm);
+  store.set("ocrDpi", s.dpi); store.set("ocrPsm", s.psm); store.set("ocrEngine", s.engine);
+  const label = engines[s.engine]?.label || s.engine;
   const edited = region.id && $("ocrText").value.trim();
-  $("ocrStatus").textContent = "Reading…"; $("ocrRun").disabled = true;
+  $("ocrStatus").textContent = engines[s.engine]?.kind === "vlm" ? `Reading with ${label}… (a model can take a minute; the first run loads it)` : `Reading with ${label}…`;
+  $("ocrRun").disabled = true;
   try {
     const res = await post("/api/ocr", { key: cur.key, page: region.page, box: region.box, rot: region.rot, ...s });
     if (token !== ocrToken) return;
+    if (res.error) { $("ocrStatus").textContent = res.error; return; }
     $("ocrPreview").src = res.preview; $("ocrPreview").hidden = false;
     if (edited && $("ocrText").value.trim() && !confirmReplace()) {
-      $("ocrStatus").textContent = `OCR read ${res.words} words (kept your text; new reading not applied).`;
+      $("ocrStatus").textContent = `${label} read ${res.words} words (kept your text; new reading not applied).`;
     } else {
       $("ocrText").value = res.text;
-      $("ocrStatus").textContent = `OCR read ${res.words} words at ${s.dpi} dpi (${res.size[0]}×${res.size[1]} px).`;
+      $("ocrStatus").textContent = `${label} read ${res.words} words in ${res.seconds}s from ${res.size[0]}×${res.size[1]} px`
+        + (engines[s.engine]?.kind === "vlm" ? ". A model can fill in wording it expects; check every word against the image." : ".");
     }
   } catch (err) {
     if (token === ocrToken) $("ocrStatus").textContent = "OCR failed: " + err.message;
@@ -650,7 +695,8 @@ function confirmReplace() {
   return false;
 }
 $("ocrRun").onclick = () => { if (region && region.id) $("ocrStatus").textContent = "Reading… (click again within 6 s to replace your text)"; runOcr(); };
-for (const id of ["ocrDpi", "ocrPsm", "ocrInvert", "ocrThreshold"]) $(id).addEventListener("change", () => { if (region && !region.id) runOcr(); });
+for (const id of ["ocrDpi", "ocrPsm", "ocrInvert", "ocrThreshold", "ocrEngine"]) $(id).addEventListener("change", () => { psmShown(); if (region && !region.id) runOcr(); });
+function psmShown() { $("psmLabel").hidden = $("ocrEngine").value !== "tesseract"; }
 
 $("ocrSave").onclick = async () => {
   if (!region) return;
@@ -680,11 +726,106 @@ function afterChange(classified, msg) {
   const added = (cur.features || []).filter(f => !before.has(f));
   const box = $("classified");
   box.hidden = false;
-  box.innerHTML = `${esc(msg)} Re-classified with your transcriptions: <b>${esc(cur.kind)}</b>` +
+  box.innerHTML = `${esc(msg)} Re-classified: <b>${esc(cur.kind)}</b>` +
     ((cur.features || []).length ? ` · ${esc(cur.features.join(", "))}` : " · no restriction terms found") +
     (added.length ? `<br>New: ${esc(added.join(", "))}` : "") +
     `<br><span style="opacity:.8">Run <code>pvc ${cur.kind === "plat" ? "plat-ocr" : "restriction-read --offline"}</code> and <code>pvc restriction-survey --offline</code> to update the report.</span>`;
   renderMeta(); refreshItem(cur); renderTList(); renderMarks();
+}
+
+// ---- engines and whole-document readings ----
+function fillEngines() {
+  for (const sel of document.querySelectorAll("select.engines")) {
+    sel.innerHTML = Object.entries(engines).map(([n, e]) =>
+      `<option value="${esc(n)}"${e.ok ? "" : ` disabled title="Set up with: ${esc(e.setup)}"`}>${esc(e.label)}${e.kind === "vlm" ? " (model)" : ""}${e.ok ? "" : " — not set up"}</option>`).join("");
+  }
+  const pick = (id, d) => { const v = store.get(id, d); $(id).value = engines[v]?.ok ? v : "tesseract"; };
+  pick("ocrEngine", "tesseract");
+  pick("docEngine", Object.keys(engines).find(n => n === "olmocr" && engines[n].ok) || "tesseract");
+  psmShown();
+}
+$("docEngine").addEventListener("change", () => store.set("docEngine", $("docEngine").value));
+
+async function loadReadings() {
+  if (!cur) return;
+  const key = cur.key, res = await (await fetch(`/api/readings?key=${encodeURIComponent(key)}`)).json();
+  if (!cur || cur.key !== key) return;
+  reads = res;
+  if (!viewing || !reads.readings.some(r => r.engine === viewing)) viewing = null;
+  renderReadings();
+}
+function renderReadings() {
+  if (!reads) { $("rlist").innerHTML = ""; $("rview").hidden = true; return; }
+  const adopted = reads.adopted || "pipeline";
+  $("rlist").innerHTML = reads.readings.map(r => {
+    const using = r.engine === adopted, pages = r.pages.length;
+    return `<div class="ritem${using ? " adopted" : ""}${viewing === r.engine ? " viewing" : ""}">
+      <span><b>${esc(r.label)}</b> · ${r.words} words${r.ran ? "" : ""}</span>
+      <span class="acts"><button class="b" data-view="${esc(r.engine)}">${viewing === r.engine ? "Hide" : "View"}</button>${using
+        ? `<span class="badge ok" title="The report is built on this reading">used for report</span>`
+        : `<button class="b" data-adopt="${esc(r.engine)}" title="Build this document's report text from this reading">Use for report</button>`}</span>
+      <span class="src">${r.ran ? `read ${esc(r.ran)} in ${Math.round(r.seconds)}s · ${pages} page${pages > 1 ? "s" : ""}` +
+        ` · rotation ${r.settings.rot}°, invert ${esc(r.settings.invert)}` : "the pipeline's OCR, which the report uses by default"}</span>
+      ${r.stale ? `<span class="warnline">⚠ Read from an earlier image of this document; read it again.</span>` : ""}
+    </div>`;
+  }).join("");
+  renderReadingView();
+}
+function renderReadingView() {
+  const r = reads && viewing && reads.readings.find(x => x.engine === viewing);
+  $("rview").hidden = !r;
+  if (!r) return;
+  const pg = r.pages.find(x => x.page === page) || (cur.kind === "plat" ? r.pages[0] : null);
+  const text = pg ? pg.text : "";
+  $("rviewHead").textContent = `${r.label}, page ${page}: ${text.match(/\b[A-Za-z]{3,}\b/g)?.length || 0} words`;
+  $("rtext").value = pg ? text : "(no text for this page)";
+}
+$("rlist").addEventListener("click", async e => {
+  const v = e.target.closest("[data-view]"), a = e.target.closest("[data-adopt]");
+  if (v) { viewing = viewing === v.dataset.view ? null : v.dataset.view; renderReadings(); }
+  if (a) {
+    const engine = a.dataset.adopt === "pipeline" ? null : a.dataset.adopt;
+    a.disabled = true;
+    try {
+      const res = await post("/api/adopt", { key: cur.key, engine });
+      reads = { readings: res.readings, adopted: res.adopted };
+      renderReadings();
+      afterChange(res.classified, engine ? `The report now uses the ${engines[engine]?.label || engine} reading.` : "The report uses Tesseract again.");
+    } catch (err) { $("jobStatus").textContent = "Couldn't adopt: " + err.message; a.disabled = false; }
+  }
+});
+$("docRead").onclick = async () => {
+  if (!cur) return;
+  const engine = $("docEngine").value;
+  $("docRead").disabled = true;
+  try {
+    const res = await post("/api/read-doc", { key: cur.key, engine, rot, invert: $("docInvert").value });
+    if (res.error) $("jobStatus").textContent = res.error; else pollJobs();
+  } catch (err) { $("jobStatus").textContent = "Couldn't start: " + err.message; }
+  finally { $("docRead").disabled = false; }
+};
+let seenDone = new Set();
+async function pollJobs() {
+  clearTimeout(jobTimer);
+  let jobs = [];
+  try { jobs = await (await fetch("/api/jobs")).json(); } catch { jobTimer = setTimeout(pollJobs, 5000); return; }
+  const active = jobs.filter(j => j.status === "queued" || j.status === "running");
+  for (const j of jobs) {
+    if ((j.status === "done" || j.status === "failed") && !seenDone.has(j.id)) {
+      seenDone.add(j.id);
+      const d = docs.find(x => x.key === j.key);
+      if (d && j.status === "done" && !(d.read_by || []).includes(j.engine)) { d.read_by = [...(d.read_by || []), j.engine]; refreshItem(d); }
+      if (cur && j.key === cur.key) { if (j.status === "done") viewing = j.engine; loadReadings(); }
+    }
+  }
+  const mine = cur && jobs.filter(j => j.key === cur.key).sort((a, b) => b.queued - a.queued)[0];
+  let msg = "";
+  if (mine) msg = mine.status === "running" ? `${mine.label}: page ${mine.done + 1 > mine.total ? mine.total : mine.done + 1} of ${mine.total}…`
+    : mine.status === "queued" ? `${mine.label}: queued` : mine.status === "failed" ? `${mine.label} failed: ${mine.error}` : `${mine.label}: done`;
+  const others = active.filter(j => !cur || j.key !== cur.key).length;
+  if (others) msg += `${msg ? " · " : ""}${others} other document${others > 1 ? "s" : ""} in the queue`;
+  $("jobStatus").textContent = msg;
+  if (active.length) jobTimer = setTimeout(pollJobs, 2000);
 }
 
 document.addEventListener("keydown", e => {
@@ -708,7 +849,7 @@ document.addEventListener("keydown", e => {
   e.preventDefault();
 });
 
-init();
+init().then(pollJobs);
 </script>
 </body>
 </html>

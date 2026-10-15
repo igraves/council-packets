@@ -352,20 +352,25 @@ def render_markdown(out: dict, manifest: dict) -> str:
     if restrictread.RESULTS_PATH.exists():
         reads = {r["id"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
     filed_all = [{**e, **{k: reads[e["id"]][k] for k in ("kind", "features", "term", "note", "unrelated",
-                                                         "transcribed_terms", "stale_transcriptions")
+                                                         "transcribed_terms", "stale_transcriptions", "engine",
+                                                         "engine_terms", "engine_stale")
                           if k in reads.get(e["id"], {})}} for e in out.get("filed_with_plat", [])]
 
     def cite(term: str, e: dict) -> str:
-        """A term, cited to the transcribed page and region when only a transcription found it."""
+        """A term, cited to the transcribed page and region when only a transcription found it, or
+        to the OCR engine whose adopted reading found it when Tesseract didn't."""
         where = (e.get("transcribed_terms") or {}).get(term)
         if not where:
-            return term
+            return f"{term} (read by {e['engine']})" if term in (e.get("engine_terms") or []) else term
         return f"{term} (transcribed: " + "; ".join(f"p. {w['page']}, region {w['region']}" for w in where) + ")"
 
     def stale_note(e: dict) -> str:
         n = e.get("stale_transcriptions") or 0
-        return (f" ⚠ {n} transcription{'s' if n > 1 else ''} drawn on an earlier image of this document; "
-                "check in the viewer") if n else ""
+        out = (f" ⚠ {n} transcription{'s' if n > 1 else ''} drawn on an earlier image of this document; "
+               "check in the viewer") if n else ""
+        if e.get("engine_stale"):
+            out += f" ⚠ the {e['engine']} reading is of an earlier image of this document; read it again"
+        return out
     filed_rel = [e for e in filed_all if not e.get("unrelated")]
     decl_kinds = ("restrictions", "homes association", "restriction amendment")
     racial = [e for e in filed_rel if "racial restriction" in e.get("features", [])]
@@ -385,6 +390,8 @@ def render_markdown(out: dict, manifest: dict) -> str:
     n_tr = len([e for e in filed_rel if reads.get(e["id"], {}).get("transcribed")]) + len(
         [r for r in plat_rows if r.get("transcribed")])
     n_tr_terms = sum(len(e.get("transcribed_terms") or {}) for e in tr_rows)
+    eng_rows = [e for e in filed_rel if e.get("engine")] + [r for r in plat_rows if r.get("engine")]
+    n_eng_terms = sum(len(e.get("engine_terms") or []) for e in eng_rows)
     covered = [k for k, pl in subs.items() if any(filed[p] or on_plat.get(p) or typed[p] for p in pl)]
     lines = [
         "# Prairie Village subdivision restrictions",
@@ -410,6 +417,11 @@ def render_markdown(out: dict, manifest: dict) -> str:
         *([f"- **{n_tr}** document{'s have' if n_tr != 1 else ' has'} hand-checked transcriptions of regions OCR couldn't read "
            f"(made in `pvc deed-viewer`); **{n_tr_terms}** terms below were found only in a "
            "transcription and are cited to its page and region."] if n_tr else []),
+        *([f"- **{len(eng_rows)}** document{'s are' if len(eng_rows) != 1 else ' is'} read with an OCR engine "
+           f"other than Tesseract ({', '.join(sorted({e['engine'] for e in eng_rows}))}), adopted in "
+           "`pvc deed-viewer` after checking against the image; "
+           f"**{n_eng_terms}** term{'s' if n_eng_terms != 1 else ''} below {'were' if n_eng_terms != 1 else 'was'} "
+           "found only in that reading and say which engine read them."] if eng_rows else []),
         f"- **{sum(len(v) for v in on_plat.values())}** plats state restrictions or covenants on "
         "their face (found by OCR of the plat images)",
         f"- **{len(out.get('instruments', []))}** instruments indexed as a Declaration of "

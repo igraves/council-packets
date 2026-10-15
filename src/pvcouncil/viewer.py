@@ -15,10 +15,11 @@ and the document re-classified with it.
 
 import base64
 import json
+import queue
 import re
-import subprocess
-import tempfile
-from collections import Counter
+import threading
+import time
+import uuid
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -26,13 +27,13 @@ from urllib.parse import parse_qs, urlparse
 
 import fitz
 
-from pvcouncil import platocr, plats, restrictread, transcripts
+from pvcouncil import ocrengines, platocr, plats, restrictread, transcripts
 
 PAGE_CACHE = plats.DEEDS_DIR / "cache" / "pages"
 HTML_PATH = Path(__file__).with_name("viewer.html")
 DPI_STEPS = (72, 110, 160, 220, 300)
 MAX_SIDE = 9000  # pixels; big plat sheets are capped so a render stays manageable
-OCR_DPIS = (200, 300, 400, 600)
+OCR_DPIS = (150, 200, 300, 400, 600)
 OCR_PSMS = (3, 4, 6, 7, 11)
 OCR_MAX_PIXELS = 40_000_000
 # below these, OCR missed most of a document's text
@@ -116,27 +117,11 @@ def render(doc: dict, page: int, dpi: int, rot: int) -> Path:
     return out
 
 
-def _otsu(hist: list[int]) -> int:
-    total = sum(hist)
-    sum_all = sum(i * c for i, c in enumerate(hist))
-    best, best_t, w0, sum0 = -1.0, 128, 0, 0
-    for t in range(256):
-        w0 += hist[t]
-        if w0 == 0 or w0 == total:
-            continue
-        sum0 += t * hist[t]
-        m0, m1 = sum0 / w0, (sum_all - sum0) / (total - w0)
-        between = w0 * (total - w0) * (m0 - m1) ** 2
-        if between > best:
-            best, best_t = between, t
-    return best_t
-
-
 def ocr_region(doc: dict, page: int, box: list[float], rot: int, dpi: int, invert: bool,
-               threshold: bool, psm: int) -> dict:
+               threshold: bool, psm: int, engine: str = "tesseract") -> dict:
     """OCR one boxed region. box is [x0, y0, x1, y1] in fractions of the unrotated page; the
-    crop is rendered upright at the given rotation, cleaned up, and handed to Tesseract.
-    Returns the text and a preview of the image Tesseract saw."""
+    crop is rendered upright at the given rotation, cleaned up, and read by the chosen engine
+    (see ocrengines.py). Returns the text and a preview of the image the engine saw."""
     with fitz.open(doc["path"]) as pdf:
         p = pdf[page - 1]
         r = p.rect
@@ -146,39 +131,18 @@ def ocr_region(doc: dict, page: int, box: list[float], rot: int, dpi: int, inver
         if clip.width * clip.height * scale * scale > OCR_MAX_PIXELS:
             scale = (OCR_MAX_PIXELS / (clip.width * clip.height)) ** 0.5
         pix = p.get_pixmap(matrix=fitz.Matrix(scale, scale).prerotate(rot), clip=clip, colorspace=fitz.csGRAY)
-    w, h = pix.width, pix.height
-    data = bytes(pix.samples)
-    if pix.stride != w:  # drop any row padding
-        data = b"".join(data[i * pix.stride: i * pix.stride + w] for i in range(h))
-    if invert:
-        data = data.translate(bytes(255 - v for v in range(256)))
-    # stretch levels between the 1st and 99th percentile; faint photostats use a narrow band
-    hist = [0] * 256
-    for v, n in Counter(data[:: max(1, len(data) // 400_000)]).items():
-        hist[v] = n
-    total, acc, lo, hi = sum(hist), 0, 0, 255
-    for v in range(256):
-        acc += hist[v]
-        if acc <= total * 0.01:
-            lo = v
-        if acc <= total * 0.99:
-            hi = v
-    if hi - lo > 8:
-        lut = bytes(min(255, max(0, (v - lo) * 255 // (hi - lo))) for v in range(256))
-        data = data.translate(lut)
-        hist = [sum(hist[u] for u in range(256) if lut[u] == v) for v in range(256)]
-    if threshold:
-        t = _otsu(hist)
-        data = data.translate(bytes(255 if v > t else 0 for v in range(256)))
-    img = fitz.Pixmap(fitz.csGRAY, w, h, data, False)
-    with tempfile.NamedTemporaryFile(suffix=".png") as f:
-        img.save(f.name)
-        text = subprocess.run(["tesseract", f.name, "-", "--psm", str(psm), "-c", "preserve_interword_spaces=1"],
-                              capture_output=True, text=True).stdout.strip()
+    img = ocrengines.prepare(pix, invert, threshold)
+    e = ocrengines.get(engine)
+    if e.max_side:
+        img = ocrengines.fit(img, e.max_side)
+    t0 = time.time()
+    text = ocrengines.read(engine, [img], psm=psm, region=True)[0]
+    w, h = img.width, img.height
     shrink = max(1, w // 900 + 1) if w > 900 else 1
     prev = fitz.Pixmap(img, w // shrink, h // shrink) if shrink > 1 else img
     return {
-        "text": text, "words": len(re.findall(r"\b[A-Za-z]{3,}\b", text)), "size": [w, h],
+        "text": text, "words": ocrengines.words(text), "size": [w, h], "engine": engine,
+        "label": e.label, "seconds": round(time.time() - t0, 1),
         "preview": "data:image/jpeg;base64," + base64.b64encode(prev.tobytes("jpg", jpg_quality=80)).decode(),
     }
 
@@ -194,31 +158,95 @@ def source(doc: dict) -> dict:
             "fingerprint": transcripts.fingerprint(doc["path"])}
 
 
+def tesseract_text(doc: dict) -> str:
+    """The pipeline's own Tesseract OCR of a document."""
+    d = platocr.OCR_DIR if doc["key"].startswith("p:") else restrictread.OCR_DIR
+    f = d / f"{Path(doc['path']).stem}.txt"
+    return f.read_text() if f.exists() else ""
+
+
 def reclassify(doc: dict) -> dict:
-    """Restriction terms for a document with its OCR text plus saved transcriptions, and
-    which of them only a transcription found."""
+    """Restriction terms for a document with its OCR text (an adopted engine reading, else
+    Tesseract's) plus saved transcriptions, and which of them only a transcription found."""
     key = doc["key"]
-    stem = Path(doc["path"]).stem
     items = transcripts.for_key(key)
+    ocr, eng = ocrengines.base_text(key, tesseract_text(doc), doc["path"])
     if key.startswith("p:"):
-        f = platocr.OCR_DIR / f"{stem}.txt"
-        ocr = f.read_text() if f.exists() else ""
         terms = lambda t: platocr.find_restrictions(t)["terms"]  # noqa: E731
         return {"features": terms(ocr + "\n\n" + transcripts.text_for(key)),
-                "transcribed_terms": transcripts.attribute(items, set(terms(ocr)), terms)}
-    f = restrictread.OCR_DIR / f"{stem}.txt"
-    ocr = f.read_text() if f.exists() else ""
+                "transcribed_terms": transcripts.attribute(items, set(terms(ocr)), terms),
+                "engine": eng, "engine_terms": _engine_terms(doc, eng, ocr, terms)}
     c = restrictread.classify(ocr + "\n\n" + transcripts.text_for(key))
     terms = lambda t: restrictread.classify(t)["features"]  # noqa: E731
     out = {"features": c["features"], "term": c["term"],
-           "transcribed_terms": transcripts.attribute(items, set(terms(ocr)), terms)}
+           "transcribed_terms": transcripts.attribute(items, set(terms(ocr)), terms),
+           "engine": eng, "engine_terms": _engine_terms(doc, eng, ocr, terms)}
     if not doc.get("reviewed"):  # a kind read by eye stands
         out["kind"] = c["kind"]
     return out
 
 
+def _engine_terms(doc: dict, eng: dict | None, text: str, terms) -> list[str]:
+    """Terms an adopted engine reading found that Tesseract didn't."""
+    return sorted(set(terms(text)) - set(terms(tesseract_text(doc)))) if eng else []
+
+
+def readings(doc: dict) -> dict:
+    """Every reading of a document: Tesseract's from the pipeline, and each engine's."""
+    fp = transcripts.fingerprint(doc["path"])
+    tess = tesseract_text(doc)
+    parts = re.split(r"\[page (\d+)\]\n?", tess)
+    if len(parts) > 1:
+        pages = [{"page": int(n), "text": t.strip()} for n, t in zip(parts[1::2], parts[2::2])]
+    else:  # plats: one sheet, read at several rotations
+        pages = [{"page": 1, "text": tess.strip()}]
+    out = [{"engine": "pipeline", "label": "Tesseract (pipeline)", "words": ocrengines.words(tess),
+            "pages": pages, "stale": False}]
+    for name, r in ocrengines.readings_for(doc["key"]).items():
+        out.append({**{k: r[k] for k in ("engine", "label", "model", "ran", "seconds", "settings", "words", "pages")},
+                    "stale": r.get("fingerprint") != fp})
+    return {"readings": out, "adopted": ocrengines.adopted().get(doc["key"])}
+
+
+class Jobs:
+    """Whole-document readings, run one at a time in the background: the models share memory."""
+
+    def __init__(self):
+        self.q: queue.Queue = queue.Queue()
+        self.jobs: dict[str, dict] = {}
+        threading.Thread(target=self._run, daemon=True).start()
+
+    def submit(self, doc: dict, engine: str, rot: int, invert: str) -> dict:
+        for j in self.jobs.values():
+            if j["key"] == doc["key"] and j["engine"] == engine and j["status"] in ("queued", "running"):
+                return j
+        j = {"id": uuid.uuid4().hex[:8], "key": doc["key"], "book_page": doc["book_page"], "engine": engine,
+             "label": ocrengines.get(engine).label, "status": "queued", "done": 0, "total": doc["pages"],
+             "error": None, "queued": time.time()}
+        self.jobs[j["id"]] = j
+        self.q.put((j, doc["path"], rot, invert))
+        return j
+
+    def _run(self):
+        while True:
+            j, path, rot, invert = self.q.get()
+            j["status"], j["started"] = "running", time.time()
+            try:
+                ocrengines.read_document(j["engine"], j["key"], path, rot, invert,
+                                         progress=lambda d, t: j.update(done=d, total=t))
+                j["status"] = "done"
+            except Exception as err:  # noqa: BLE001 - reported to the browser
+                j["status"], j["error"] = "failed", str(err)[:300]
+            j["finished"] = time.time()
+
+    def list(self) -> list[dict]:
+        cutoff = time.time() - 3600  # finished jobs drop off after an hour
+        return [j for j in self.jobs.values() if j.get("finished", time.time()) > cutoff]
+
+
 class Handler(BaseHTTPRequestHandler):
     docs: dict = {}
+    jobs: Jobs | None = None
 
     def log_message(self, *args):  # quiet
         pass
@@ -235,18 +263,19 @@ class Handler(BaseHTTPRequestHandler):
         self._send(json.dumps(obj).encode(), "application/json")
 
     def _public(self) -> list[dict]:
-        manual = transcripts.load()
+        manual, chosen = transcripts.load(), ocrengines.adopted()
         out = []
         for d in self.docs.values():
             items = manual.get(d["key"], [])
             stale, now = 0, {}
-            if items:
+            if items or d["key"] in chosen:
                 fp = transcripts.fingerprint(d["path"])
                 stale = sum(transcripts.is_stale(x, fp) is True for x in items)
                 now = reclassify(d)  # transcriptions saved since startup change the terms
             # the browser never sees local file paths
             out.append({**{k: v for k, v in d.items() if k != "path"}, **now,
-                        "transcribed": len(items), "stale_transcriptions": stale})
+                        "transcribed": len(items), "stale_transcriptions": stale,
+                        "read_by": [n for n in ocrengines.ENGINES if ocrengines.reading_path(n, d["key"]).exists()]})
         return sorted(out, key=lambda d: (d["subdivision"], d["recorded"], d["book_page"]))
 
     def do_GET(self):
@@ -256,10 +285,15 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(HTML_PATH.read_bytes(), "text/html; charset=utf-8")
         if url.path == "/api/docs":
             return self._json(self._public())
-        if url.path == "/api/transcripts":
-            key = q.get("key", [""])[0]
-            if key in self.docs:
-                return self._json(regions(self.docs[key]))
+        if url.path == "/api/engines":
+            return self._json(ocrengines.available(refresh="refresh" in q))
+        if url.path == "/api/jobs":
+            return self._json(self.jobs.list())
+        key = q.get("key", [""])[0]
+        if url.path == "/api/transcripts" and key in self.docs:
+            return self._json(regions(self.docs[key]))
+        if url.path == "/api/readings" and key in self.docs:
+            return self._json(readings(self.docs[key]))
         m = re.fullmatch(r"/page/([pr]):(\d+)/(\d+)\.jpg", url.path)
         if m:
             doc = self.docs.get(f"{m.group(1)}:{m.group(2)}")
@@ -288,8 +322,25 @@ class Handler(BaseHTTPRequestHandler):
                 if not (1 <= page <= doc["pages"] and rot in (0, 90, 180, 270) and dpi in OCR_DPIS
                         and psm in OCR_PSMS and len(box) == 4 and box[2] > box[0] and box[3] > box[1]):
                     return self.send_error(HTTPStatus.BAD_REQUEST)
-                return self._json(ocr_region(doc, page, box, rot, dpi, bool(body.get("invert")),
-                                             bool(body.get("threshold")), psm))
+                engine = str(body.get("engine", "tesseract"))
+                ocrengines.get(engine)
+                try:
+                    return self._json(ocr_region(doc, page, box, rot, dpi, bool(body.get("invert")),
+                                                 bool(body.get("threshold")), psm, engine))
+                except RuntimeError as err:
+                    return self._json({"error": str(err)})
+            if path == "/api/read-doc":
+                engine, rot, invert = str(body["engine"]), int(body.get("rot", 0)), str(body.get("invert", "auto"))
+                ocrengines.get(engine)
+                if rot not in (0, 90, 180, 270) or invert not in ("auto", "on", "off"):
+                    return self.send_error(HTTPStatus.BAD_REQUEST)
+                if not ocrengines.available(refresh=True)[engine]["ok"]:
+                    return self._json({"error": f"{engine} isn't set up: {ocrengines.available()[engine]['setup']}"})
+                return self._json(self.jobs.submit(doc, engine, rot, invert))
+            if path == "/api/adopt":
+                engine = body.get("engine")
+                ocrengines.adopt(doc["key"], str(engine) if engine else None)
+                return self._json({"classified": reclassify(doc), **readings(doc)})
             if path == "/api/transcripts":
                 region = body["region"]
                 if not (1 <= int(region["page"]) <= doc["pages"] and len(region["box"]) == 4):
@@ -307,6 +358,7 @@ class Handler(BaseHTTPRequestHandler):
 def serve(port: int = 8765, echo=print) -> None:
     docs = build_index()
     Handler.docs = docs
+    Handler.jobs = Jobs()
     server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
     poor = sum(d["ocr"] == "poor" for d in docs.values())
     echo(f"{sum(d['kind'] == 'plat' for d in docs.values())} plats and "

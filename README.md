@@ -356,6 +356,43 @@ report on the next `pvc restriction-survey --offline`. A term found only in a
 transcription is cited there to its page and region, for example "residence
 only (transcribed: p. 1, region 0fc919e2b9)".
 
+**OCR engines.** Tesseract can't read most of the 1950s photostat negatives,
+so the viewer and `pvc deed-ocr` can switch to other engines. All of them run
+on this machine:
+
+| Engine | What it is | Setup |
+|---|---|---|
+| `tesseract` | Tesseract 5, the pipeline's engine | `brew install tesseract` |
+| `surya` | Surya 2 (Datalab), a document OCR model served through llama.cpp | `uv tool install surya-ocr`, `brew install llama.cpp` |
+| `olmocr` | olmOCR-2 7B (Allen AI), a Qwen2.5-VL fine-tune for scanned pages | `ollama pull hf.co/lmstudio-community/olmOCR-2-7B-1025-GGUF:Q4_K_M` |
+| `qwen-vl` | Qwen2.5-VL 7B | `ollama pull qwen2.5vl:7b` |
+| `gemma4` | Gemma 4 26B | `ollama pull gemma4:26b` |
+
+The Ollama engines need `ollama serve` running; `pvc deed-ocr` with no
+arguments lists what's ready. In the viewer, the region panel has an engine
+picker. A saved region records the engine that read it. Under **Whole-document
+readings**, **Read document** queues every page of the open document. Jobs
+run one at a time in the background, at the viewer's rotation, inverting
+mostly-dark pages. You can then view each reading page by page beside the
+image. From the command line,
+`pvc deed-ocr --engine olmocr --poor` reads every poor-OCR document, and
+`--key r:<id>` reads one.
+
+Readings go to `deeds/ocr/engines/<engine>/` (local). They don't change the
+report until you press **Use for report** on one. That reading then stands
+in for Tesseract's text in `pvc plat-ocr` and `pvc restriction-read`. In
+`subdivision-restrictions.md`, a term only that reading found is cited, for
+example "minimum floor area (read by olmOCR-2 7B)". A reading of an image
+that has since been replaced is flagged.
+
+Every engine except Tesseract is a vision-language model. Each read the
+Jordan Place negative (MISC 72/310) almost perfectly where Tesseract read 2
+words. But they can also write what a declaration usually says rather than
+what the page says. Surya invented the last line of a paragraph cut off by
+the box, and Gemma 4 can loop on "[illegible]" (the loop is trimmed). Check a
+reading against the image before you adopt it, especially any racial
+covenant it reports.
+
 Raw rows are cached in `deeds/cache/restrictions/` because they carry party
 names. The checked-in `deeds/restrictions.json` and
 [subdivision-restrictions.md](subdivision-restrictions.md) list instruments

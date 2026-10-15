@@ -498,6 +498,43 @@ def deed_viewer(port):
     viewer.serve(port=port, echo=click.echo)
 
 
+@cli.command("deed-ocr")
+@click.option("--engine", "engine_name", help="tesseract, surya, olmocr, qwen-vl, or gemma4")
+@click.option("--key", "keys", multiple=True, help="Document key from the viewer (p:<id> or r:<id>); repeatable")
+@click.option("--poor", is_flag=True, help="Every document flagged poor OCR")
+@click.option("--invert", type=click.Choice(["auto", "on", "off"]), default="auto", show_default=True,
+              help="Invert pages: auto inverts mostly-dark pages (photostat negatives)")
+@click.option("--rot", type=click.Choice(["0", "90", "180", "270"]), default="0", show_default=True)
+@click.option("--redo", is_flag=True, help="Read again documents this engine has already read")
+def deed_ocr(engine_name, keys, poor, invert, rot, redo):
+    """Read whole documents with an OCR engine; with no --engine, list the engines.
+
+    Readings are saved locally and compared in `pvc deed-viewer`, where one can be
+    adopted as a document's report text after checking it against the image."""
+    from pvcouncil import ocrengines, viewer
+
+    engines = ocrengines.available(refresh=True)
+    if not engine_name:
+        for name, e in engines.items():
+            click.echo(f"{name:10} {e['label']:16} {'ready' if e['ok'] else 'not set up: ' + e['setup']}")
+        return
+    ocrengines.get(engine_name)
+    if not engines[engine_name]["ok"]:
+        raise click.ClickException(f"{engine_name} isn't set up: {engines[engine_name]['setup']}")
+    docs = viewer.build_index()
+    todo = [docs[k] for k in keys if k in docs] + [d for d in docs.values() if poor and d["ocr"] == "poor"]
+    todo = list({d["key"]: d for d in todo}.values())
+    if not redo:
+        todo = [d for d in todo if not ocrengines.reading_path(engine_name, d["key"]).exists()]
+    if not todo:
+        raise click.ClickException("nothing to read: pass --key or --poor (and --redo to read again)")
+    click.echo(f"Reading {len(todo)} documents ({sum(d['pages'] for d in todo)} pages) with {engine_name}")
+    for i, d in enumerate(todo, 1):
+        r = ocrengines.read_document(engine_name, d["key"], d["path"], int(rot), invert)
+        click.echo(f"[{i}/{len(todo)}] {d['book_page']} ({d['key']}): {r['words']} words "
+                   f"(Tesseract {d['ocr_words']}) in {r['seconds']:.0f}s")
+
+
 @cli.command("restriction-survey")
 @click.option("--offline", is_flag=True, help="Rebuild from cached searches only")
 @click.option("--walk", is_flag=True, help="Also pull 'Miscellaneous' filings around each pre-1976 plat date")

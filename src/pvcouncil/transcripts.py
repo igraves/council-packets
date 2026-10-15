@@ -64,7 +64,7 @@ def is_stale(region: dict, current: str) -> bool | None:
 def save(key: str, region: dict, source: dict) -> dict:
     """Add a region, or replace the one with the same id. source carries the document's
     book_page, recorded date, page count, and the fingerprint of the image the box was drawn on."""
-    keep = ("page", "box", "rot", "dpi", "invert", "threshold", "psm", "text")
+    keep = ("page", "box", "rot", "dpi", "invert", "threshold", "psm", "engine", "text")
     r = {k: region[k] for k in keep if k in region}
     r["source"] = {k: source[k] for k in ("book_page", "recorded", "pages", "fingerprint")}
     r["id"] = region.get("id") or uuid.uuid4().hex[:10]

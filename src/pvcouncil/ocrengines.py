@@ -44,7 +44,8 @@ import fitz
 from pvcouncil import plats, transcripts
 
 READINGS_DIR = plats.DEEDS_DIR / "ocr" / "engines"
-ADOPTED_PATH = READINGS_DIR / "adopted.json"
+# which reading the report uses is a hand-made choice: kept, and committed, with the transcriptions
+ADOPTED_PATH = (transcripts.PRIVATE_DIR or READINGS_DIR) / "adopted.json"
 OLLAMA = "http://127.0.0.1:11434"
 _lock = threading.Lock()
 
@@ -358,7 +359,9 @@ def adopt(key: str, name: str | None) -> None:
         else:
             data.pop(key, None)
         READINGS_DIR.mkdir(parents=True, exist_ok=True)
+        ADOPTED_PATH.parent.mkdir(parents=True, exist_ok=True)
         ADOPTED_PATH.write_text(json.dumps(data, indent=1, sort_keys=True) + "\n")
+        transcripts.commit(f"Adopt {name} reading for {key}" if name else f"Use Tesseract for {key}", ADOPTED_PATH)
 
 
 def base_text(key: str, ocr_text: str, pdf_path: str | Path, chosen: dict | None = None) -> tuple[str, dict | None]:

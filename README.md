@@ -385,7 +385,9 @@ image. From the command line,
 `--key r:<id>` reads one.
 
 Readings go to `deeds/ocr/engines/<engine>/` (local). They don't change the
-report until you press **Use for report** on one. That reading then stands
+report until you press **Use for report** on one. That choice is saved in
+`adopted.json`, which lives next to the transcriptions in the
+`PVC_TRANSCRIPTS_DIR` repository and is committed there. That reading then stands
 in for Tesseract's text in `pvc plat-ocr` and `pvc restriction-read`. In
 `subdivision-restrictions.md`, a term only that reading found is cited, for
 example "minimum floor area (read by olmOCR-2 7B)". A reading of an image

@@ -29,7 +29,8 @@ from pvcouncil import config, plats  # noqa: F401 - config loads .env
 # PVC_TRANSCRIPTS_DIR (in .env) keeps them outside the checkout, in a private git
 # repository: they're made by hand, so each save and delete is committed there
 _dir = os.environ.get("PVC_TRANSCRIPTS_DIR")
-PATH = (Path(_dir).expanduser() if _dir else plats.DEEDS_DIR / "ocr" / "manual") / "transcripts.json"
+PRIVATE_DIR = Path(_dir).expanduser() if _dir else None  # also holds other hand-made choices (adopted.json)
+PATH = (PRIVATE_DIR or plats.DEEDS_DIR / "ocr" / "manual") / "transcripts.json"
 _lock = threading.Lock()
 
 
@@ -44,13 +45,13 @@ def _write(data: dict) -> None:
     tmp.replace(PATH)
 
 
-def _commit(message: str) -> None:
-    """Commit the transcriptions if they live in a git repository. Messages carry only
-    record keys and region ids, never text."""
-    repo = PATH.parent
+def commit(message: str, path: Path = PATH) -> None:
+    """Commit a hand-made file if it lives in a git repository. Messages carry only
+    record keys, engines and region ids, never text."""
+    repo = path.parent
     if not (repo / ".git").exists():
         return
-    subprocess.run(["git", "-C", str(repo), "add", PATH.name], capture_output=True)
+    subprocess.run(["git", "-C", str(repo), "add", path.name], capture_output=True)
     subprocess.run(["git", "-C", str(repo), "commit", "-q", "-m", message], capture_output=True)
     # back it up to its (private) remote, if it has one, without making the viewer wait
     if subprocess.run(["git", "-C", str(repo), "remote"], capture_output=True, text=True).stdout.strip():
@@ -93,7 +94,7 @@ def save(key: str, region: dict, source: dict) -> dict:
         items.append(r)
         data[key] = sorted(items, key=lambda x: (x["page"], x["box"][1], x["box"][0]))
         _write(data)
-        _commit(f"Save {key} page {r['page']} region {r['id']}")
+        commit(f"Save {key} page {r['page']} region {r['id']}")
     return r
 
 
@@ -104,7 +105,7 @@ def delete(key: str, region_id: str) -> None:
         if not data[key]:
             del data[key]
         _write(data)
-        _commit(f"Delete {key} region {region_id}")
+        commit(f"Delete {key} region {region_id}")
 
 
 def text_for(key: str, data: dict | None = None) -> str:

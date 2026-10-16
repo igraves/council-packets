@@ -192,15 +192,33 @@
    "plat_book_pages": [
     "PLAT 11 41"
    ],
-   "kind": "dedication",
+   "kind": "homes association",
    "features": [
     "residence only",
-    "minimum floor area"
+    "no apartments",
+    "building line / setback",
+    "minimum cost",
+    "minimum floor area",
+    "architectural approval",
+    "homes association assessments",
+    "renewal",
+    "racial restriction"
    ],
    "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 7,
    "words": 324,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "architectural approval",
+    "building line / setback",
+    "homes association assessments",
+    "minimum cost",
+    "no apartments",
+    "racial restriction",
+    "renewal"
+   ],
    "transcribed": 0
   },
   {
@@ -685,11 +703,18 @@
     "PLAT 13 64"
    ],
    "kind": "restrictions",
-   "features": [],
-   "term": null,
+   "features": [
+    "racial restriction"
+   ],
+   "term": "period of twenty-five years",
    "until_year": null,
    "pages": 4,
    "words": 31,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "racial restriction"
+   ],
    "transcribed": 0,
    "note": "Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest)",
    "unrelated": false,

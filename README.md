@@ -342,7 +342,8 @@ quotes signature and notary blocks, so it never goes in this public
 repository. Set `PVC_TRANSCRIPTS_DIR` in `.env` to a directory outside the
 checkout that holds a private git repository. The viewer then commits each
 save and delete there, with commit messages that give only the record key and
-region id. Without `PVC_TRANSCRIPTS_DIR`, transcriptions are written to the
+region id. If that repository has a remote (keep it private), each commit is
+also pushed there in the background. Without `PVC_TRANSCRIPTS_DIR`, transcriptions are written to the
 gitignored `deeds/ocr/manual/`. Each region is keyed by
 the recorder's record ID (`r:<id>` or `p:<id>`). It records:
 

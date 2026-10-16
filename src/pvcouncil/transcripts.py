@@ -52,6 +52,9 @@ def _commit(message: str) -> None:
         return
     subprocess.run(["git", "-C", str(repo), "add", PATH.name], capture_output=True)
     subprocess.run(["git", "-C", str(repo), "commit", "-q", "-m", message], capture_output=True)
+    # back it up to its (private) remote, if it has one, without making the viewer wait
+    if subprocess.run(["git", "-C", str(repo), "remote"], capture_output=True, text=True).stdout.strip():
+        subprocess.Popen(["git", "-C", str(repo), "push", "-q"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
 def for_key(key: str) -> list[dict]:

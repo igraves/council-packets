@@ -4,8 +4,9 @@ Recorded deed restrictions and covenants for each subdivision, from the Johnson 
 
 - **103** of **140** subdivisions have at least one restriction instrument found or restrictions written on a plat
 - **117** instruments were filed with a plat: recorded the same day with one of the next few document numbers. The 1941 Prairie Village plat is document 289996 and the J.C. Nichols Declaration of Restrictions is 289997. Read from their images, **68** are restriction or homes association declarations covering **45** plats; 25 concern other land and are left out below.
-- **10** of those declarations contain a racially restrictive covenant (CEDARVALE, CORRECTED PLAT OF MEADOW LAKE, MEADOW LAKE, MEADOWBROOK DOWNS, MOHAWK HILLS, PRAIRIE VILLAGE, PRAIRIE WOODS, REPLAT OF FONTICELLO GARDENS NO. 2). Such covenants have been unenforceable since Shelley v. Kraemer (1948). This count comes from OCR and covers only the declarations it could read; about 20 Kansas City Investment Company declarations from 1952–57 are low-resolution photostat negatives and were classified by eye from their headings only.
+- **11** of those declarations contain a racially restrictive covenant (CEDARVALE, CORRECTED PLAT OF MEADOW LAKE, MEADOW LAKE, MEADOWBROOK DOWNS, MISSION VALLEY WEST, MOHAWK HILLS, PRAIRIE VILLAGE, PRAIRIE WOODS, REPLAT OF FONTICELLO GARDENS NO. 2). Such covenants have been unenforceable since Shelley v. Kraemer (1948). This count comes from OCR and covers only the declarations it could read; about 20 Kansas City Investment Company declarations from 1952–57 are low-resolution photostat negatives and were classified by eye from their headings only.
 - **3** documents have hand-checked transcriptions of regions OCR couldn't read (made in `pvc deed-viewer`); **9** terms below were found only in a transcription and are cited to its page and region.
+- **4** documents are read with an OCR engine other than Tesseract (olmOCR-2 7B), adopted in `pvc deed-viewer` after checking against the image; **6** terms below were found only in that reading and say which engine read them.
 - **47** plats state restrictions or covenants on their face (found by OCR of the plat images)
 - **297** instruments indexed as a Declaration of Restrictions or homes association declaration name one of our subdivisions
 
@@ -377,7 +378,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### JORDAN PLACE (2000)
 
-- **Filed with plat** PLAT 18 59: 1955-07-05 MISC 72 310 (document 496824) — **restrictions**. Declaration of Restrictions for JORDAN PLACE
+- **Filed with plat** PLAT 18 59: 1955-07-05 MISC 72 310 (document 496824) — **restrictions**; period of twenty-five years; residence only (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for JORDAN PLACE
 
 ### KENILWORTH (2100)
 
@@ -504,7 +505,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### MISSION VALLEY WEST (2900)
 
-- **Filed with plat** PLAT 12 14: 1946-06-25 MISC 32 5 (document 351167) — **restrictions**. Declaration of Restrictions for MISSION VALLEY WEST (all lot owners)
+- **Filed with plat** PLAT 12 14: 1946-06-25 MISC 32 5 (document 351167) — **restrictions**; period of twenty-five (25) years; minimum floor area (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B). Declaration of Restrictions for MISSION VALLEY WEST (all lot owners)
 
 ### MISSION VILLAGE (3000)
 
@@ -629,7 +630,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### PRAIRIE MANOR (4700)
 
-- **Filed with plat** PLAT 17 33: 1954-05-15 MISC 64 373 (document 471123) — **restrictions**; building line / setback, minimum floor area
+- **Filed with plat** PLAT 17 33: 1954-05-15 MISC 64 373 (document 471123) — **restrictions**; residence only, building line / setback, minimum floor area
 - **Filed with plat** PLAT 17 33: 1954-05-15 MISC 64 375 (document 471125) — **dedication**. ratification of dedication, Prairie Manor
 
 ### PRAIRIE RIDGE (4900)

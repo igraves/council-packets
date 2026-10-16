@@ -120,7 +120,11 @@ KINDS = [
 ]
 
 FEATURES = {
-    "residence only": r"private\s+residence|residence\s+purposes\s+only|single[\s-]+family",
+    # "for other than residence purposes", "private dwelling purposes only"; not a bare "for
+    # residential purposes", which also reads "shall not be used for residential purposes"
+    "residence only": r"private\s+residence|single[\s-]+family|"
+                      r"other\s+than\s+(?:private\s+)?(?:residen(?:ce|tial)|dwelling)\s+purposes|"
+                      r"(?:residen(?:ce|tial)|dwelling)\s+purposes\s+only",
     "no apartments": r"flat\s+or\s+apartment|apartment\s+house",
     "building line / setback": r"building\s+line|set\s*back|feet\s+(?:back\s+)?from\s+the\s+(?:front|street)",
     "minimum cost": r"(?:cost|value)\s+(?:of\s+)?(?:not\s+)?less\s+than|minimum\s+cost",

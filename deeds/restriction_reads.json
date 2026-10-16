@@ -456,11 +456,20 @@
     "PLAT 12 14"
    ],
    "kind": "restrictions",
-   "features": [],
-   "term": null,
+   "features": [
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 3,
    "words": 437,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "minimum floor area",
+    "racial restriction"
+   ],
    "transcribed": 0,
    "note": "Declaration of Restrictions for MISSION VALLEY WEST (all lot owners)",
    "unrelated": false,
@@ -1348,6 +1357,7 @@
    ],
    "kind": "restrictions",
    "features": [
+    "residence only",
     "building line / setback",
     "minimum floor area"
    ],
@@ -1519,11 +1529,20 @@
     "PLAT 18 59"
    ],
    "kind": "restrictions",
-   "features": [],
-   "term": null,
+   "features": [
+    "residence only",
+    "minimum floor area"
+   ],
+   "term": "period of twenty-five years",
    "until_year": null,
    "pages": 2,
    "words": 2,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "minimum floor area",
+    "residence only"
+   ],
    "transcribed": 0,
    "note": "Declaration of Restrictions for JORDAN PLACE",
    "unrelated": false,
@@ -1700,11 +1719,18 @@
     "PLAT 19 36"
    ],
    "kind": "other",
-   "features": [],
+   "features": [
+    "homes association assessments"
+   ],
    "term": null,
    "until_year": null,
    "pages": 2,
    "words": 147,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "homes association assessments"
+   ],
    "transcribed": 0,
    "note": "county commission minutes, 77th Street benefit district 147",
    "unrelated": false,
@@ -1722,11 +1748,18 @@
     "PLAT 19 36"
    ],
    "kind": "other",
-   "features": [],
+   "features": [
+    "homes association assessments"
+   ],
    "term": null,
    "until_year": null,
    "pages": 2,
    "words": 212,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "homes association assessments"
+   ],
    "transcribed": 0,
    "note": "county commission minutes, Pawnee Street benefit district 148",
    "unrelated": false,

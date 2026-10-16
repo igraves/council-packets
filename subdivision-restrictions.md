@@ -6,7 +6,7 @@ Recorded deed restrictions and covenants for each subdivision, from the Johnson 
 - **117** instruments were filed with a plat: recorded the same day with one of the next few document numbers. The 1941 Prairie Village plat is document 289996 and the J.C. Nichols Declaration of Restrictions is 289997. Read from their images, **69** are restriction or homes association declarations covering **46** plats; 25 concern other land and are left out below.
 - **13** of those declarations contain a racially restrictive covenant (CEDARVALE, CORRECTED PLAT OF MEADOW LAKE, MEADOW LAKE, MEADOWBROOK DOWNS, MISSION VALLEY WEST, MOHAWK HILLS, NALL AVENUE GARDENS, PRAIRIE FOREST, PRAIRIE VILLAGE, PRAIRIE WOODS, REPLAT OF FONTICELLO GARDENS NO. 2). Such covenants have been unenforceable since Shelley v. Kraemer (1948). This count comes from OCR and covers only the declarations it could read; about 20 Kansas City Investment Company declarations from 1952–57 are low-resolution photostat negatives and were classified by eye from their headings only.
 - **3** documents have hand-checked transcriptions of regions OCR couldn't read (made in `pvc deed-viewer`); **9** terms below were found only in a transcription and are cited to its page and region.
-- **6** documents are read with an OCR engine other than Tesseract (olmOCR-2 7B), adopted in `pvc deed-viewer` after checking against the image; **14** terms below were found only in that reading and say which engine read them.
+- **8** documents are read with an OCR engine other than Tesseract (olmOCR-2 7B), adopted in `pvc deed-viewer` after checking against the image; **21** terms below were found only in that reading and say which engine read them.
 - **47** plats state restrictions or covenants on their face (found by OCR of the plat images)
 - **297** instruments indexed as a Declaration of Restrictions or homes association declaration name one of our subdivisions
 
@@ -452,7 +452,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 - **Filed with plat** PLAT 14 43, PLAT 14 42: 1950-08-08 MISC 46 398 (document 404687) — **restrictions**; period of five (25) years; minimum floor area
 - **Filed with plat** PLAT 15 5: 1951-05-29 MISC 50 98 (document 420695) — **restrictions**; residence only, no apartments, minimum floor area
 - **Filed with plat** PLAT 15 8: 1951-07-03 MISC 50 367 (document 422265) — **restrictions**; residence only, building line / setback, minimum floor area, racial restriction
-- **Filed with plat** PLAT 15 17: 1951-10-05 MISC 51 321 (document 426582) — **restrictions**; racial restriction
+- **Filed with plat** PLAT 15 17: 1951-10-05 MISC 51 321 (document 426582) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B), racial restriction
 - **Filed with plat** PLAT 15 62, PLAT 15 61, PLAT 15 60: 1952-04-05 MISC 53 466 (document 434616) — **restriction amendment**. Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners
 - **Filed with plat** PLAT 15 62, PLAT 15 61: 1952-04-05 MISC 53 471 (document 434618) — **restrictions**; residence only, no apartments, minimum cost, minimum floor area
 - 1952-04-14 Declaration of Home Owners Association, MISC 53 548 — Sub:MEADOW LAKE Blk:19 Lt:29
@@ -753,7 +753,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### SOMERSET HILLS (7000)
 
-- **Filed with plat** PLAT 18 35: 1955-04-25 MISC 70 460 (document 492253) — **restrictions**. Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)
+- **Filed with plat** PLAT 18 35: 1955-04-25 MISC 70 460 (document 492253) — **restrictions**; period of twenty-five years; residence only (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)
 - 1957-09-21 Declaration of Home Owners Association, MISC 90 80 — Sub:SOMERSET HILLS Lt:85
 - Candidates to read (1): MISC 83 152 (1956-10-02)
 

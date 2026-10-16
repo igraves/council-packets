@@ -930,12 +930,26 @@
    ],
    "kind": "restrictions",
    "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum cost",
+    "minimum floor area",
     "racial restriction"
    ],
-   "term": null,
+   "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 8,
    "words": 619,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "building line / setback",
+    "minimum cost",
+    "minimum floor area",
+    "no apartments",
+    "residence only"
+   ],
    "transcribed": 0
   },
   {
@@ -1532,11 +1546,20 @@
     "PLAT 18 35"
    ],
    "kind": "restrictions",
-   "features": [],
-   "term": null,
+   "features": [
+    "residence only",
+    "minimum floor area"
+   ],
+   "term": "period of twenty-five years",
    "until_year": null,
    "pages": 2,
    "words": 18,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "minimum floor area",
+    "residence only"
+   ],
    "transcribed": 0,
    "note": "Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)",
    "unrelated": false,

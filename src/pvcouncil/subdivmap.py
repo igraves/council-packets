@@ -1,0 +1,170 @@
+"""A map of Prairie Village's subdivisions and their recorded restrictions.
+
+Subdivision outlines are built from the county's public Prairie Village parcel layer
+(maps.jocogov.org, PrairieVillage/Parcels): a platted parcel's ID reads OP<subdivision
+code><block> <lot>, so the parcels of each subdivision code are merged into one shape,
+closing the streets between blocks. Only parcel IDs and geometry are fetched; the
+layer's owner fields are not. The raw parcels are cached in deeds/cache/gis/.
+
+Each subdivision carries what the restrictions survey found: declarations filed with
+its plats (with their terms, and whether a racial covenant was released), restrictions
+written on the plat, and how many indexed restriction instruments name it. The result,
+map/subdivisions.geojson, is drawn by map/index.html.
+"""
+
+import json
+import re
+import urllib.parse
+import urllib.request
+from collections import defaultdict
+
+from pvcouncil import platocr, plats, restrictions, restrictread
+from pvcouncil.config import PROJECT_ROOT
+
+PARCELS_URL = "https://maps.jocogov.org/ArcGIS/rest/services/PrairieVillage/Parcels/MapServer/0/query"
+CACHE_PATH = plats.DEEDS_DIR / "cache" / "gis" / "pv-parcels.geojson"
+MAP_DIR = PROJECT_ROOT / "map"
+GEOJSON_PATH = MAP_DIR / "subdivisions.geojson"
+REPORT_URL = "https://github.com/igraves/council-packets/blob/main/subdivision-restrictions.md"
+PAGE = 2000
+# streets between blocks are separate right-of-way parcels; grow each parcel by about
+# half a street's width, merge, and shrink back so a subdivision is one shape
+CLOSE_DEG = 0.00013
+SIMPLIFY_DEG = 0.00002
+
+
+def fetch_parcels(refresh: bool = False, echo=print) -> dict:
+    """Every parcel polygon in the layer (ID and geometry only), in WGS84."""
+    if CACHE_PATH.exists() and not refresh:
+        return json.loads(CACHE_PATH.read_text())
+    features, offset = [], 0
+    while True:
+        q = urllib.parse.urlencode({
+            "where": "1=1", "outFields": "GeoPropID", "returnGeometry": "true", "outSR": 4326,
+            "orderByFields": "OBJECTID", "resultOffset": offset, "resultRecordCount": PAGE, "f": "geojson"})
+        req = urllib.request.Request(f"{PARCELS_URL}?{q}", headers={"User-Agent": "Mozilla/5.0 (council-packets)"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            page = json.load(r)
+        features += page["features"]
+        echo(f"{len(features)} parcels")
+        if len(page["features"]) < PAGE:
+            break
+        offset += PAGE
+    data = {"type": "FeatureCollection", "features": features}
+    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CACHE_PATH.write_text(json.dumps(data))
+    return data
+
+
+def outlines(parcels: dict) -> dict:
+    """Subdivision code → merged (Multi)Polygon of its platted parcels."""
+    from shapely.geometry import shape
+    from shapely.ops import unary_union
+
+    by_code = defaultdict(list)
+    for f in parcels["features"]:
+        pid = (f["properties"] or {}).get("GeoPropID") or ""
+        if pid.startswith("OP") and f.get("geometry"):
+            by_code[pid[2:6]].append(shape(f["geometry"]).buffer(0))
+    out = {}
+    for code, geoms in by_code.items():
+        merged = unary_union([g.buffer(CLOSE_DEG, join_style="mitre") for g in geoms])
+        out[code] = _fill_small_holes(merged.buffer(-CLOSE_DEG, join_style="mitre")).simplify(SIMPLIFY_DEG)
+    return out
+
+
+SMALL_HOLE_DEG2 = 3e-7  # about 3,000 m²: the gaps left where streets cross
+
+
+def _fill_small_holes(geom):
+    from shapely.geometry import MultiPolygon, Polygon
+
+    polys = [geom] if geom.geom_type == "Polygon" else list(geom.geoms)
+    kept = [Polygon(p.exterior, [r for r in p.interiors if Polygon(r).area > SMALL_HOLE_DEG2]) for p in polys]
+    return kept[0] if len(kept) == 1 else MultiPolygon(kept)
+
+
+def anchor(sub: str, code: str) -> str:
+    """GitHub's heading anchor for '### {sub} ({code})' in the restrictions report."""
+    return "#" + re.sub(r"[^\w\- ]", "", f"{sub} ({code})".lower()).replace(" ", "-")
+
+
+def subdivision_records() -> dict[str, dict]:
+    """Subdivision code → name, plats, and what the restrictions survey found for it."""
+    manifest = plats.load_manifest()
+    out = json.loads(restrictions.RESULTS_PATH.read_text())
+    reads = {}
+    if restrictread.RESULTS_PATH.exists():
+        reads = {r["id"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
+    on_plat = defaultdict(list)
+    if platocr.RESULTS_PATH.exists():
+        for p in json.loads(platocr.RESULTS_PATH.read_text())["plats"]:
+            if {"restrictions", "covenants"} & set(p.get("terms") or []):
+                on_plat[p["plat"]].append(p)
+
+    subs: dict[str, dict] = {}
+    plat_code = {}
+    for name, info in manifest["plats"].items():
+        s = subs.setdefault(info["subdivision_code"], {
+            "code": info["subdivision_code"], "name": info["subdivision"], "plats": [],
+            "declarations": [], "on_plat": [], "indexed": 0})
+        s["plats"].append(name)
+        plat_code[name] = info["subdivision_code"]
+
+    for e in out.get("filed_with_plat", []):
+        r = reads.get(e["id"], {})
+        if r.get("unrelated"):
+            continue
+        racial = "racial restriction" in r.get("features", [])
+        rel = restrictions.RACIAL_RELEASES.get(e["book_page"]) if racial else None
+        d = {"recorded": e["recorded"], "book_page": e["book_page"], "document": e["docid"],
+             "kind": r.get("kind", e["doc_type"]), "term": r.get("term"),
+             "features": [f for f in r.get("features", []) if f != "racial restriction"],
+             "racial": racial, "released": rel, "note": r.get("note"), "plats": e["plats"]}
+        for code in {plat_code[p] for p in e["plats"] if p in plat_code}:
+            subs[code]["declarations"].append(d)
+    for p, rows in on_plat.items():
+        if p in plat_code:
+            for x in rows:
+                subs[plat_code[p]]["on_plat"].append({"book_page": x["book_page"], "recorded": x["recorded"],
+                                                      "terms": x["terms"]})
+    for e in out.get("instruments", []):
+        for code in {plat_code[p] for p in e.get("plats") or [] if p in plat_code}:
+            subs[code]["indexed"] += 1
+
+    for s in subs.values():
+        s["declarations"].sort(key=lambda d: d["recorded"])
+        racial = [d for d in s["declarations"] if d["racial"]]
+        if any(not d["released"] for d in racial):
+            s["status"] = "racial"
+        elif racial:
+            s["status"] = "released"
+        elif s["declarations"] or s["on_plat"] or s["indexed"]:
+            s["status"] = "restrictions"
+        else:
+            s["status"] = "none"
+        s["report"] = REPORT_URL + anchor(s["name"], s["code"]) if s["status"] != "none" else REPORT_URL
+    return subs
+
+
+def build(refresh: bool = False, echo=print) -> dict:
+    import shapely
+
+    shapes = outlines(fetch_parcels(refresh, echo))
+    subs = subdivision_records()
+    features = []
+    for code, geom in sorted(shapes.items()):
+        geom = shapely.set_precision(geom, 1e-6)  # about 10 cm
+        if geom.is_empty:
+            continue
+        s = subs.get(code) or {"code": code, "name": f"Subdivision {code}", "plats": [], "declarations": [],
+                               "on_plat": [], "indexed": 0, "status": "none", "report": REPORT_URL}
+        props = {k: s[k] for k in ("code", "name", "status", "report", "indexed")}
+        # Mapbox flattens nested properties to strings, so the details travel as JSON
+        props["details"] = json.dumps({k: s[k] for k in ("plats", "declarations", "on_plat")})
+        features.append({"type": "Feature", "id": int(code), "properties": props,
+                         "geometry": json.loads(shapely.to_geojson(geom))})
+    fc = {"type": "FeatureCollection", "features": features}
+    MAP_DIR.mkdir(exist_ok=True)
+    GEOJSON_PATH.write_text(json.dumps(fc, separators=(",", ":")))
+    return fc

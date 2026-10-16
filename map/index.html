@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prairie Village Deed Restrictions</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js"></script>
+<style>
+  :root {
+    --bg: #0e1116; --panel: rgba(17, 21, 28, 0.94); --text: #e6e8eb; --muted: #9aa3ad;
+    --line: #2a313c; --racial: #e5484d; --released: #f5c518; --restr: #5b8def; --none: #3a414c;
+  }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  #map { position: absolute; inset: 0; }
+  .panel { position: absolute; background: var(--panel); border: 1px solid var(--line);
+    border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.45); }
+  #intro { top: 12px; left: 12px; max-width: 340px; padding: 14px 16px; }
+  #intro h1 { font-size: 17px; margin: 0 0 6px; }
+  #intro p { margin: 0 0 10px; color: var(--muted); font-size: 13px; }
+  .legend div { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 13px; }
+  .sw { width: 16px; height: 12px; border-radius: 3px; flex: none; }
+  .sw.racial { background: var(--racial); }
+  .sw.released { border: 2px solid var(--released); background: rgba(245,197,24,.12); width: 12px; height: 8px; }
+  .sw.restr { background: var(--restr); opacity: .55; }
+  .sw.none { background: var(--none); }
+  #tip { pointer-events: none; display: none; max-width: 360px; padding: 10px 12px; z-index: 2; }
+  #tip.pinned { pointer-events: auto; }
+  #tip h2 { font-size: 15px; margin: 0 0 2px; }
+  #tip .sub { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+  #tip .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px;
+    border-radius: 999px; margin-bottom: 6px; }
+  .badge.racial { background: var(--racial); color: #fff; }
+  .badge.released { background: var(--released); color: #1a1a1a; }
+  .badge.restrictions { background: #2b3f66; color: #cfe0ff; }
+  .badge.none { background: #2a2f37; color: var(--muted); }
+  #tip ul { margin: 4px 0 6px; padding-left: 16px; }
+  #tip li { margin: 3px 0; font-size: 12.5px; }
+  #tip .terms { color: var(--muted); }
+  #tip .rel { color: var(--released); }
+  #tip .unrel { color: #ff8a8d; }
+  #tip a { color: #8ab4ff; }
+  #tip .hint { color: var(--muted); font-size: 11px; margin-top: 6px; }
+  #tip .close { position: absolute; top: 6px; right: 9px; cursor: pointer; color: var(--muted);
+    display: none; font-size: 16px; background: none; border: 0; }
+  #tip.pinned .close { display: block; }
+  #notoken { position: absolute; inset: 0; display: none; place-items: center; text-align: center; padding: 24px; }
+  #notoken code { background: #1b2028; padding: 2px 6px; border-radius: 4px; }
+  @media (max-width: 600px) {
+    #intro { left: 8px; right: 8px; max-width: none; padding: 10px 12px; }
+    #intro p { display: none; }
+    #tip { left: 8px !important; right: 8px; bottom: 8px; top: auto !important; max-width: none; }
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="intro" class="panel">
+  <h1>Prairie Village deed restrictions</h1>
+  <p>Each subdivision's recorded restrictions, read from the Johnson County Recorder of Deeds.
+    Racial covenants have been unenforceable since <i>Shelley v. Kraemer</i> (1948), but most were
+    never formally released. Hover a subdivision for details; click to keep its card open.</p>
+  <div class="legend">
+    <div><span class="sw racial"></span>Racial covenant, no release found</div>
+    <div><span class="sw released"></span>Racial covenant released (Prairie Village Homes Assn., 2007)</div>
+    <div><span class="sw restr"></span>Other recorded restrictions</div>
+    <div><span class="sw none"></span>None found</div>
+  </div>
+</div>
+<div id="tip" class="panel"><button class="close" aria-label="Close">×</button><div id="tipbody"></div></div>
+<div id="notoken"><div>
+  <h2>Mapbox token needed</h2>
+  <p>Put <code>window.MAPBOX_TOKEN = "pk…";</code> in <code>map/config.js</code>,
+    or open this page with <code>?token=pk…</code>.</p>
+</div></div>
+<script src="config.js"></script>
+<script>
+const token = new URLSearchParams(location.search).get("token") || window.MAPBOX_TOKEN;
+const STATUS = {
+  racial: "Racial covenant — no release found",
+  released: "Racial covenant — released",
+  restrictions: "Recorded restrictions",
+  none: "No restrictions found",
+};
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const title = s => esc(s).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+
+function card(p) {
+  const d = JSON.parse(p.details);
+  let h = `<h2>${title(p.name)}</h2><div class="sub">Subdivision ${esc(p.code)}` +
+          (d.plats.length > 1 ? ` · ${d.plats.length} plats` : "") + `</div>` +
+          `<span class="badge ${p.status}">${STATUS[p.status]}</span>`;
+  if (d.declarations.length) {
+    h += `<div>Filed with the plat:</div><ul>` + d.declarations.map(x => {
+      let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${esc(x.book_page)} — ${esc(x.kind)}`;
+      if (x.features.length) li += ` <span class="terms">(${esc(x.features.join(", "))})</span>`;
+      if (x.racial) li += x.released
+        ? `<br><span class="rel">Racial covenant released ${esc(x.released.recorded)}, ${esc(x.released.book_page)}</span>`
+        : `<br><span class="unrel">Racial covenant — no release on record</span>`;
+      return `<li>${li}</li>`;
+    }).join("") + `</ul>`;
+  }
+  if (d.on_plat.length)
+    h += `<div>Written on the plat: ${d.on_plat.map(x => esc(x.book_page)).join(", ")}</div>`;
+  if (p.indexed) h += `<div>${p.indexed} indexed restriction instrument${p.indexed > 1 ? "s" : ""}</div>`;
+  if (p.status !== "none")
+    h += `<div style="margin-top:6px"><a href="${esc(p.report)}" target="_blank" rel="noopener">Documents in the restrictions report →</a></div>`;
+  h += `<div class="hint">${pinned ? "" : "Click to keep open"}</div>`;
+  return h;
+}
+
+const tip = document.getElementById("tip"), tipbody = document.getElementById("tipbody");
+let pinned = null, hovered = null;
+
+function place(pt) {
+  if (window.innerWidth <= 600) return;
+  const w = tip.offsetWidth, h = tip.offsetHeight, pad = 14;
+  let x = pt.x + pad, y = pt.y + pad;
+  if (x + w > window.innerWidth - 8) x = pt.x - w - pad;
+  if (y + h > window.innerHeight - 8) y = Math.max(8, window.innerHeight - h - 8);
+  tip.style.left = Math.max(8, x) + "px"; tip.style.top = y + "px";
+}
+
+if (!token) {
+  document.getElementById("notoken").style.display = "grid";
+} else {
+  mapboxgl.accessToken = token;
+  const map = new mapboxgl.Map({
+    container: "map", style: "mapbox://styles/mapbox/dark-v11",
+    center: [-94.633, 38.99], zoom: 13, minZoom: 11,
+  });
+  map.addControl(new mapboxgl.NavigationControl({showCompass: false}), "bottom-right");
+
+  map.on("load", async () => {
+    const data = await (await fetch("subdivisions.geojson")).json();
+    const b = new mapboxgl.LngLatBounds();
+    data.features.forEach(f => (f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates)
+      .forEach(poly => poly[0].forEach(c => b.extend(c))));
+    map.fitBounds(b, {padding: 40, duration: 0});
+
+    map.addSource("subs", {type: "geojson", data});
+    const hov = ["boolean", ["feature-state", "hover"], false];
+    map.addLayer({id: "fill", type: "fill", source: "subs", paint: {
+      "fill-color": ["match", ["get", "status"],
+        "racial", "#e5484d", "released", "#f5c518", "restrictions", "#5b8def", "#3a414c"],
+      "fill-opacity": ["case", hov, 0.75,
+        ["match", ["get", "status"], "racial", 0.55, "released", 0.12, "restrictions", 0.22, 0.25]],
+    }});
+    map.addLayer({id: "line", type: "line", source: "subs", paint: {
+      "line-color": ["case", hov, "#ffffff", ["==", ["get", "status"], "racial"], "#ff6b6f", "#6b7480"],
+      "line-width": ["case", hov, 2, 0.8],
+    }});
+    map.addLayer({id: "released", type: "line", source: "subs", filter: ["==", ["get", "status"], "released"],
+      paint: {"line-color": "#f5c518", "line-width": 3.5}});
+
+    map.on("mousemove", "fill", e => {
+      const f = e.features[0];
+      map.getCanvas().style.cursor = "pointer";
+      if (hovered !== f.id) {
+        if (hovered !== null) map.setFeatureState({source: "subs", id: hovered}, {hover: false});
+        hovered = f.id;
+        map.setFeatureState({source: "subs", id: hovered}, {hover: true});
+      }
+      if (!pinned) { tipbody.innerHTML = card(f.properties); tip.style.display = "block"; place(e.point); }
+    });
+    map.on("mouseleave", "fill", () => {
+      map.getCanvas().style.cursor = "";
+      if (hovered !== null) map.setFeatureState({source: "subs", id: hovered}, {hover: false});
+      hovered = null;
+      if (!pinned) tip.style.display = "none";
+    });
+    map.on("click", e => {
+      const f = map.queryRenderedFeatures(e.point, {layers: ["fill"]})[0];
+      if (!f) { unpin(); return; }
+      pinned = f.id;
+      tip.classList.add("pinned");
+      tipbody.innerHTML = card(f.properties);
+      tip.style.display = "block";
+      place(e.point);
+    });
+  });
+}
+function unpin() { pinned = null; tip.classList.remove("pinned"); tip.style.display = "none"; }
+tip.querySelector(".close").addEventListener("click", unpin);
+</script>
+</body>
+</html>

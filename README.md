@@ -407,6 +407,28 @@ names. The checked-in `deeds/restrictions.json` and
 by date, book and page, and record ID, with no party names. Pass `--offline`
 to rebuild from the cache.
 
+### Subdivision map
+
+```bash
+uv run pvc subdivision-map --serve 8766   # build map/subdivisions.geojson, serve map/ on 127.0.0.1
+```
+
+`map/index.html` draws every subdivision on a dark Mapbox map: red where a
+declaration filed with the plat carries a racial covenant with no release on
+record, a yellow outline where the covenant was released (the original
+Prairie Village plat, by the Prairie Village Homes Association in 2007), blue
+for other recorded restrictions. Hovering shows the subdivision's declarations
+and terms; clicking keeps the card open with a link to its section of
+[subdivision-restrictions.md](subdivision-restrictions.md).
+
+Outlines come from the county's public Prairie Village parcel layer
+(`maps.jocogov.org`, `PrairieVillage/Parcels`): a platted parcel ID reads
+`OP<subdivision code>…`, so each code's parcels are merged, closing the
+streets between blocks. Only parcel IDs and geometry are fetched (cached in
+`deeds/cache/gis/`; `--refresh` fetches again). The page needs a Mapbox
+public token: set `MAPBOX_TOKEN` in `.env` (it is written to the gitignored
+`map/config.js`), or open the page with `?token=pk…`.
+
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `budget`, `list_documents`, and `stats` as tools for MCP clients. Search, ask and list_documents accept `doc_type="archive"` for the city reports.
 

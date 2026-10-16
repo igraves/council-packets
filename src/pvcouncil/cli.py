@@ -498,6 +498,35 @@ def deed_viewer(port):
     viewer.serve(port=port, echo=click.echo)
 
 
+@cli.command("subdivision-map")
+@click.option("--refresh", is_flag=True, help="Fetch the county's parcel polygons again")
+@click.option("--serve", "port", type=int, default=None, help="Then serve the map on 127.0.0.1 at this port")
+def subdivision_map(refresh, port):
+    """Build map/subdivisions.geojson: subdivision outlines with their restrictions."""
+    import functools
+    import http.server
+    import json
+    import os
+    from collections import Counter
+
+    from pvcouncil import subdivmap
+
+    fc = subdivmap.build(refresh, echo=click.echo)
+    n = Counter(f["properties"]["status"] for f in fc["features"])
+    click.echo(f"{len(fc['features'])} subdivisions: {n['racial']} with an unreleased racial covenant, "
+               f"{n['released']} released, {n['restrictions']} other restrictions, {n['none']} none found "
+               f"→ {subdivmap.GEOJSON_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
+    # the Mapbox token stays out of git: map/config.js is gitignored
+    token = os.environ.get("MAPBOX_TOKEN", "")
+    (subdivmap.MAP_DIR / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")
+    if not token:
+        click.echo("MAPBOX_TOKEN is not set in .env; open the map with ?token=pk...")
+    if port:
+        handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(subdivmap.MAP_DIR))
+        click.echo(f"→ http://127.0.0.1:{port}/  (Ctrl-C to stop)")
+        http.server.ThreadingHTTPServer(("127.0.0.1", port), handler).serve_forever()
+
+
 @cli.command("deed-ocr")
 @click.option("--engine", "engine_name", help="tesseract, surya, olmocr, qwen-vl, or gemma4")
 @click.option("--key", "keys", multiple=True, help="Document key from the viewer (p:<id> or r:<id>); repeatable")

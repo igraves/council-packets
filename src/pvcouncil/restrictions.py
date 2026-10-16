@@ -313,6 +313,19 @@ def walk_candidates(names: dict[str, dict], devs: set[str], plat_manifest: dict)
     return sorted(out, key=lambda c: (-c["score"], c["recorded"]))
 
 
+# Releases of racial covenants, keyed by the released declaration's book and page. Kansas House Bill
+# 2582 (2006) let a homes association's board amend such a clause out of its declaration; the
+# recorder indexes those as a Declaration of Restrictions under the association's name only, so they
+# were found by searching association names (all document types) and reading every association-filed
+# declaration of 2006-09. The 2024 law's Certificates of Release of Prohibitive Covenants (filed by an
+# owner or a city) were also checked.
+RACIAL_RELEASES = {
+    "MISC 26 349": {"recorded": "2007-11-07", "book_page": "OR 200711 001865",
+                    "by": "the Prairie Village Homes Association", "law": "House Bill 2582 (2006)"},
+}
+RELEASES_SEARCHED = "2026-10-16"
+
+
 _NICHOLS = re.compile(r"\bJ\.?\s?C\.?\s+NICHOLS\b|\bNICHOLS\s+(?:INVESTMENT\s+)?CO", re.I)
 
 
@@ -374,6 +387,15 @@ def render_markdown(out: dict, manifest: dict) -> str:
     filed_rel = [e for e in filed_all if not e.get("unrelated")]
     decl_kinds = ("restrictions", "homes association", "restriction amendment")
     racial = [e for e in filed_rel if "racial restriction" in e.get("features", [])]
+    n_released = sum(e["book_page"] in RACIAL_RELEASES for e in racial)
+
+    def release_note(e: dict) -> str:
+        if "racial restriction" not in e.get("features", []):
+            return ""
+        r = RACIAL_RELEASES.get(e["book_page"])
+        if not r:
+            return f". Racial covenant: no release found (recorder searched 2006 to {RELEASES_SEARCHED})"
+        return f". Racial covenant **released** {r['recorded']} by {r['by']} under {r['law']}, {r['book_page']}"
     filed = by_plat(filed_rel)
     typed = by_plat(out.get("instruments", []))
     cands = by_plat([c for c in out.get("misc_candidates", []) if c["plats"]])
@@ -410,7 +432,12 @@ def render_markdown(out: dict, manifest: dict) -> str:
         f"plats; {len(filed_all) - len(filed_rel)} concern other land and are left out below.",
         f"- **{len(racial)}** of those declarations contain a racially restrictive covenant "
         f"({', '.join(sorted({p for e in racial for p in e['plats']}))}). Such covenants have been "
-        "unenforceable since Shelley v. Kraemer (1948). This count comes from OCR and covers only the "
+        "unenforceable since Shelley v. Kraemer (1948). "
+        f"**{n_released}** of them {'has' if n_released == 1 else 'have'} been formally released of record: "
+        "Kansas House Bill 2582 (2006) let a homes association's board amend the clause out, and a 2024 "
+        "law lets an owner or the city file a certificate of release, but a search of the recorder from "
+        f"2006 to {RELEASES_SEARCHED} found no release for the others (see each declaration below). "
+        "This count comes from OCR and covers only the "
         "declarations it could read; about 20 Kansas City Investment Company declarations from "
         "1952–57 are low-resolution photostat negatives and were classified by eye from their "
         "headings only.",
@@ -461,7 +488,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
             extra = (f"; {e['term']}" if e.get("term") else "") + (f"; {', '.join(detail)}" if detail else "")
             lines.append(f"- **Filed with plat** {', '.join(e['plat_book_pages'])}: {e['recorded']} "
                          f"{e['book_page']} (document {e['docid']}) — **{what}**{extra}"
-                         + (f". {e['note']}" if e.get("note") else "") + stale_note(e))
+                         + (f". {e['note']}" if e.get("note") else "") + release_note(e) + stale_note(e))
         for e in o_:
             cites = ", ".join(f"MISC {c['book']}/{c['page'] or '?'}" for c in e["citations"])
             lines.append(f"- **On the plat** {e['book_page']} ({e['recorded']}): "

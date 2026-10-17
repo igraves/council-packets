@@ -12,6 +12,19 @@ Recorded deed restrictions and covenants for each subdivision, from the Johnson 
 
 How to read it: *filed with the plat* is the strongest evidence that an instrument is the subdivision's original restrictions, though some may be other papers filed the same day (easements to utilities are left out). Before about 1976 the recorder indexed most restrictions as "Miscellaneous", so the label alone doesn't say what an instrument is; the images settle it.
 
+## Before it was platted
+
+Some land was put under a racial covenant before it was platted, by its owners or by the developer who was buying it. Such instruments are indexed to the bare land (section, township and range) rather than to a subdivision, so the search by subdivision name above cannot find them. `pvc preplat` dates each 40-acre tract our subdivisions occupy by its first plat and reads every Miscellaneous instrument indexed to bare land in that tract in the 10 years before: **165** instruments, **8** of them with a racial covenant. Each was read from its image and its land placed from the description it gives (the index's quarter-section is often wrong). All ran for a fixed term with no renewal clause, so all have ended; the land they covered is shown on the map as dashed outlines.
+
+- **1926-08-12 MISC 14 317**, by the owners of the four corners, among them the J. C. Nichols Investment Company: The owners of a 200-foot square on each corner where four sections meet (today 63rd Street and Mission Road) restricted them together, barring ownership or occupancy by Black people. Ended 1951 (25 years).
+- **1927-09-06 MISC 15 305**, by neighboring owners: Owners of adjoining tracts restricted the north half of their land together, barring ownership or occupancy by Black people. Ended 1952 (25 years). Land now in Meadow Lake, Somerset Estates, Somerset Hills.
+- **1929-05-22 MISC 16 490**, by the owners, in an option to purchase: An option to purchase the land that itself bars its ownership or occupancy by Black people. Ended 1954 (25 years). Land now in Corinth Estates, Corinth Place Villas, Paddock Court, Prairie Village Public Works Complex.
+- **1929-05-31 MISC 16 496**, by neighboring owners: Owners agreed not to convey any of their land to "any person of color or of African descent". Ended 1952 (25 years from 1927). Land now in Corinth Hills.
+- **1929-06-18 MISC 16 521**, by the owners: Restriction Agreement made as part of an option sale of the land to the north (MISC 16 490): the sellers restricted the land they kept, barring ownership or occupancy by Black people. Ended 1954 (25 years). Land now in Corinth Meadows, Corinth School.
+- **1930-02-25 MISC 14 315**, by owners along Porter Road and the J. C. Nichols Company: Owners along Porter Road (Mission Road) restricted land within 325 feet of it, while the J. C. Nichols Company held an option to buy part of it, barring ownership or occupancy by Black people. Ended 1955 (25 years). Land now in Indian Fields, Indian Hills.
+- **1950-02-03 MISC 43 532**, by the J. C. Nichols Company: A declaration whose only restriction is racial, the same form as Prairie Village Block 36's, filed four months before the Prairie Hills plat. Ended 1990 (40 years). Land now in Prairie Hills.
+- **1950-02-04 MISC 43 553**, by the J. C. Nichols Company: A declaration whose only restriction is racial, on the northeast quarter of the section except three small tracts, a day after the Prairie Hills one and 20 months before the Indian Fields plat. Ended 1990 (40 years). Land now in Indian Fields.
+
 ## Summary
 
 | Code | Subdivision | First plat | Filed with plat | On plat | Indexed restrictions | Candidates |
@@ -55,7 +68,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 | 1200 | HUNTINGTON WOODS | 1967-05-11 | 0 | 0 | 1 | 0 |
 | 1300 | INDIAN FIELDS | 1951-10-01 | 0 | 0 | 0 | 11 |
 | 1400 | INDIAN HEIGHTS | 1952-07-28 | 1 | 0 | 1 | 1 |
-| 1500 | INDIAN HILLS | 1925-04-17 | 3 | 0 | 6 | 20 |
+| 1500 | INDIAN HILLS | 1925-04-17 | 3 | 0 | 6 | 22 |
 | 1600 | JACKSON HEIGHTS | 1961-09-21 | 1 | 0 | 0 | 0 |
 | 1700 | JARBOE HEIGHTS | 1906-10-31 | 0 | 0 | 1 | 0 |
 | 1800 | JARBOE VIEW | 1926-01-12 | 0 | 0 | 1 | 0 |
@@ -71,7 +84,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 | 2442 | MEADOWBROOK PARK REPLAT | 2021-03-02 | 0 | 6 | 0 | 0 |
 | 2445 | MEADOWBROOK PLACE | 2022-02-18 | 0 | 1 | 0 | 0 |
 | 2450 | MEADOWBROOK 2020 | 2016-10-20 | 0 | 0 | 1 | 0 |
-| 2500 | MEADOW LAKE | 1947-04-02 | 9 | 0 | 8 | 36 |
+| 2500 | MEADOW LAKE | 1947-04-02 | 9 | 0 | 8 | 37 |
 | 2600 | MEADOW LAKE LAWN | 1925-05-02 | 0 | 0 | 0 | 0 |
 | 2700 | MEADOW VIEW | 1924-08-13 | 0 | 0 | 3 | 0 |
 | 2770 | MISSION CHATEAU 2ND PLAT | 2016-07-01 | 0 | 2 | 12 | 0 |
@@ -98,7 +111,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 | 4200 | PRAIRIE FIELDS | 1953-06-11 | 1 | 0 | 3 | 126 |
 | 4300 | PRAIRIE FOREST | 1950-02-10 | 1 | 0 | 0 | 4 |
 | 4400 | PRAIRIE HEIGHTS | 1953-03-12 | 1 | 0 | 0 | 0 |
-| 4500 | PRAIRIE HILLS | 1950-06-06 | 0 | 0 | 11 | 67 |
+| 4500 | PRAIRIE HILLS | 1950-06-06 | 0 | 0 | 11 | 68 |
 | 4600 | PRAIRIE HILLS VIEW | 1954-12-20 | 0 | 1 | 0 | 0 |
 | 4700 | PRAIRIE MANOR | 1954-05-15 | 2 | 0 | 0 | 0 |
 | 4800 | PRAIRIE PARK | 1954-02-02 | 0 | 0 | 0 | 0 |
@@ -110,7 +123,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 | 5150 | PRAIRIE VALLEY NORTH | 1952-08-28 | 2 | 0 | 0 | 0 |
 | 5200 | PRAIRIE VALLEY NORTH ANNEX | 1952-08-28 | 1 | 0 | 0 | 0 |
 | 5400 | PRAIRIE VIEW NO. 5 | 1952-11-25 | 1 | 0 | 0 | 0 |
-| 5500 | PRAIRIE VILLAGE | 1941-05-05 | 4 | 0 | 8 | 159 |
+| 5500 | PRAIRIE VILLAGE | 1941-05-05 | 4 | 0 | 8 | 161 |
 | 5520 | PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX | 2006-02-24 | 0 | 1 | 0 | 0 |
 | 5530 | PRAIRIE VILLAGE PUBLIC WORKS COMPLEX | 2023-12-27 | 0 | 0 | 0 | 0 |
 | 5540 | PRAIRIE VILLAGE SHOPPING CENTER | 2013-08-29 | 0 | 0 | 0 | 0 |
@@ -233,6 +246,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### CORINTH ESTATES (0450)
 
+- **[Before it was platted](#before-it-was-platted)**: 1929-05-22 MISC 16 490, a racial covenant put on this land by the owners, in an option to purchase (ended 1954)
 - **Filed with plat** PLAT 19 36: 1956-02-28 MISC 77 636 (document 511497) — **other**. county commission minutes, 77th Street benefit district 147
 - **Filed with plat** PLAT 19 36: 1956-02-28 MISC 77 638 (document 511498) — **other**. county commission minutes, Pawnee Street benefit district 148
 - **Filed with plat** PLAT 19 36: 1956-02-28 MISC 77 640 (document 511499) — **zoning order**; minimum floor area. county order classifying platted lots into minimum ground floor area districts
@@ -241,6 +255,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### CORINTH HILLS (0500)
 
+- **[Before it was platted](#before-it-was-platted)**: 1929-05-31 MISC 16 496, a racial covenant put on this land by neighboring owners (ended 1952)
 - **On the plat** PLAT 62 41 (1986-06-26): restrictions
 - 1957-08-08 Declaration of Restrictions, MISC 89 214 — Sub:CORINTH HILLS Blk:1 Lt:5
 - 1959-11-16 Declaration of Restrictions, MISC 107 477 — Sub:CORINTH HILLS Blk:6 Lt:34
@@ -255,6 +270,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### CORINTH MEADOWS (0600)
 
+- **[Before it was platted](#before-it-was-platted)**: 1929-06-18 MISC 16 521, a racial covenant put on this land by the owners (ended 1954)
 - 1959-01-30 Declaration of Restrictions, MISC 100 496 — Sub:CORINTH MEADOWS Blk:2 Lt:8 other:PT OF
 - 1959-02-10 Declaration of Restrictions, MISC 101 95 — Sub:CORINTH MEADOWS Blk:1 Lt:14
 - 1977-10-11 Declaration of Restrictions, OR 1267 387 — Sub:CORINTH MEADOWS Blk:1 Lt:9
@@ -264,8 +280,13 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### CORINTH PLACE VILLAS (0610)
 
+- **[Before it was platted](#before-it-was-platted)**: 1929-05-22 MISC 16 490, a racial covenant put on this land by the owners, in an option to purchase (ended 1954)
 - 1988-04-26 Declaration of Restrictions, OR 2778 864 — Sub:CORINTH PLACE VILLAS Blk:1 Lt:1
 - 2001-06-18 Declaration of Restrictions, OR 7099 654 — Sub:CORINTH PLACE VILLAS Blk:1 Lt:1
+
+### CORINTH SCHOOL (0650)
+
+- **[Before it was platted](#before-it-was-platted)**: 1929-06-18 MISC 16 521, a racial covenant put on this land by the owners (ended 1954)
 
 ### COUNTRY CLUB VIEW (0700)
 
@@ -340,6 +361,8 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### INDIAN FIELDS (1300)
 
+- **[Before it was platted](#before-it-was-platted)**: 1930-02-25 MISC 14 315, a racial covenant put on this land by owners along Porter Road and the J. C. Nichols Company (ended 1955)
+- **[Before it was platted](#before-it-was-platted)**: 1950-02-04 MISC 43 553, a racial covenant put on this land by the J. C. Nichols Company (ended 1990)
 - Candidates to read (11): MISC 51 353 (1951-10-12); MISC 51 362 (1951-10-12); MISC 211 630 (1970-10-14); MISC 213 630 (1970-12-10); MISC 59 76 (1953-05-19); MISC 59 85 (1953-05-19); MISC 65 148 (1954-06-21); MISC 65 157 (1954-06-21) …
 
 ### INDIAN HEIGHTS (1400)
@@ -349,6 +372,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### INDIAN HILLS (1500)
 
+- **[Before it was platted](#before-it-was-platted)**: 1930-02-25 MISC 14 315, a racial covenant put on this land by owners along Porter Road and the J. C. Nichols Company (ended 1955)
 - **Filed with plat** PLAT 13 30: 1949-04-25 MISC 41 23 (document 383826) — **deed**
 - **Filed with plat** PLAT 13 30: 1949-04-25 MISC 41 25 (document 383827) — **easement**
 - **Filed with plat** PLAT 14 45: 1950-08-25 MISC 46 503 (document 405717) — **restrictions**; building line / setback
@@ -357,7 +381,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 - 1952-03-24 Declaration of Restrictions, MISC 53 338 — Sub:INDIAN HILLS Blk:23 Lt:1
 - 1952-04-01 Declaration of Home Owners Association, MISC 53 426 — Sub:INDIAN HILLS Blk:23 Lt:A
 - 1957-07-15 Declaration of Restrictions, MISC 88 559 — Sub:INDIAN HILLS Blk:12 Lt:12
-- Candidates to read (20): MISC 15 309 (1927-09-07); MISC 55 488 (1952-08-29); MISC 55 605 (1952-09-04); MISC 57 540 (1953-02-02); MISC 68 212 (1954-12-18); MISC 68 302 (1954-12-27); MISC 73 446 (1955-09-02); MISC 171 225 (1966-11-29) …
+- Candidates to read (22): MISC 15 309 (1927-09-07); MISC 55 488 (1952-08-29); MISC 55 605 (1952-09-04); MISC 57 540 (1953-02-02); MISC 68 212 (1954-12-18); MISC 68 302 (1954-12-27); MISC 73 446 (1955-09-02); MISC 171 225 (1966-11-29) …
 
 ### JACKSON HEIGHTS (1600)
 
@@ -446,6 +470,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### MEADOW LAKE (2500)
 
+- **[Before it was platted](#before-it-was-platted)**: 1927-09-06 MISC 15 305, a racial covenant put on this land by neighboring owners (ended 1952)
 - **Filed with plat** PLAT 12 42: 1947-04-02 MISC 34 250 (document 359847) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 12 55: 1947-07-29 MISC 35 247 (document 363806) — **restriction amendment**. Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake
 - **Filed with plat** PLAT 13 55: 1950-01-07 MISC 43 323 (document 393828) — **restrictions**; period of twenty- five (25) years; building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
@@ -462,7 +487,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 - 1960-02-03 Declaration of Restrictions, MISC 109 107 — Sub:MEADOW LAKE Blk:1 Lt:1
 - 1960-02-03 Declaration of Restrictions, MISC 109 108 — Sub:MEADOW LAKE Blk:1 Lt:1
 - 1960-02-03 Declaration of Restrictions, MISC 109 109 — Sub:MEADOW LAKE Blk:1 Lt:1
-- Candidates to read (30): MISC 51 337 (1951-10-08); MISC 51 351 (1951-10-12); MISC 51 534 (1951-11-09); MISC 43 629 (1950-02-10); MISC 47 97 (1950-09-26); MISC 49 124 (1951-03-07); MISC 52 156 (1951-12-14); MISC 51 567 (1951-11-15) …
+- Candidates to read (31): MISC 51 337 (1951-10-08); MISC 51 351 (1951-10-12); MISC 51 534 (1951-11-09); MISC 43 629 (1950-02-10); MISC 47 97 (1950-09-26); MISC 49 124 (1951-03-07); MISC 52 156 (1951-12-14); MISC 51 567 (1951-11-15) …
 
 ### MEADOW VIEW (2700)
 
@@ -550,6 +575,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### PADDOCK COURT (3750)
 
+- **[Before it was platted](#before-it-was-platted)**: 1929-05-22 MISC 16 490, a racial covenant put on this land by the owners, in an option to purchase (ended 1954)
 - 1980-06-17 Declaration of Restrictions, OR 1574 756 — Sub:PADDOCK COURT Blk:1 Lt:1
 - 1980-06-17 Declaration of Restrictions, OR 1574 759 — Sub: PADDOCK COURT Lt: 1
 - 1980-06-17 Declaration of Restrictions, OR 1574 761 — Sub: PADDOCK COURT Lt: 1 Bl: 1
@@ -609,6 +635,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 
 ### PRAIRIE HILLS (4500)
 
+- **[Before it was platted](#before-it-was-platted)**: 1950-02-03 MISC 43 532, a racial covenant put on this land by the J. C. Nichols Company (ended 1990)
 - 1950-07-08 Declaration of Restrictions, MISC 46 137 — Sub:PRAIRIE HILLS Blk:12 Lt:1
 - 1950-07-08 Declaration of Home Owners Association, MISC 46 158 — Sub:PRAIRIE HILLS Blk:6 Lt:30
 - 1962-08-08 Declaration of Restrictions, MISC 128 555 — Sub:PRAIRIE HILLS Blk:22 Lt:2
@@ -620,7 +647,7 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 - 1999-05-27 Declaration of Restrictions, OR 6185 234 — Sub:COUNTRY CLUB VIEW Lt:32
 - 1999-05-28 Declaration of Restrictions, OR 6187 672 — Sub:COUNTRY CLUB VIEW Lt:16
 - 2006-04-07 Declaration of Restrictions, OR 200604 002129 — Sub:PRAIRIE HILLS Blk:3 Lt:14
-- Candidates to read (67): MISC 167 380 (1966-08-12); MISC 167 381 (1966-08-12); MISC 167 382 (1966-08-12); MISC 167 383 (1966-08-12); MISC 167 384 (1966-08-12); MISC 167 385 (1966-08-12); MISC 167 386 (1966-08-12); MISC 193 437 (1969-02-18) …
+- Candidates to read (68): MISC 167 380 (1966-08-12); MISC 167 381 (1966-08-12); MISC 167 382 (1966-08-12); MISC 167 383 (1966-08-12); MISC 167 384 (1966-08-12); MISC 167 385 (1966-08-12); MISC 167 386 (1966-08-12); MISC 193 437 (1969-02-18) …
 
 ### PRAIRIE HILLS VIEW (4600)
 
@@ -679,11 +706,15 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 - 1983-08-19 Declaration of Restrictions, OR 1902 789 — Sub:PRAIRIE VILLAGE Lt:1
 - 1985-09-11 Declaration of Restrictions, OR 2219 816 — Sub:PRAIRIE VILLAGE Blk:38 Lt:34
 - 2007-11-07 Declaration of Restrictions, OR 200711 001865 — Sub:PRAIRIE VILLAGE Lt:1 Bl:1
-- Candidates to read (159): MISC 152 136 (1965-02-01); MISC 157 548 (1965-09-14); MISC 173 68 (1967-02-14); MISC 175 90 (1967-05-09); MISC 193 290 (1969-02-07); MISC 43 573 (1950-02-07); MISC 44 47 (1950-02-14); MISC 134 106 (1963-04-01) …
+- Candidates to read (161): MISC 152 136 (1965-02-01); MISC 157 548 (1965-09-14); MISC 173 68 (1967-02-14); MISC 175 90 (1967-05-09); MISC 193 290 (1969-02-07); MISC 43 573 (1950-02-07); MISC 44 47 (1950-02-14); MISC 134 106 (1963-04-01) …
 
 ### PRAIRIE VILLAGE MUNICIPAL OFFICE COMPLEX (5520)
 
 - **On the plat** OR 200602 007242 (2006-02-24): restrictions
+
+### PRAIRIE VILLAGE PUBLIC WORKS COMPLEX (5530)
+
+- **[Before it was platted](#before-it-was-platted)**: 1929-05-22 MISC 16 490, a racial covenant put on this land by the owners, in an option to purchase (ended 1954)
 
 ### PRAIRIE WOODS (5600)
 
@@ -745,12 +776,17 @@ How to read it: *filed with the plat* is the strongest evidence that an instrume
 - **Filed with plat** PLAT 48 48: 1980-01-30 OR 1544 710 (document 1266035) — **homes association**; residence only, renewal
 - 1996-06-11 Declaration of Restrictions, OR 4903 546 — Sub:SOMERSET COURTS WEST Lt:1
 
+### SOMERSET ESTATES (6850)
+
+- **[Before it was platted](#before-it-was-platted)**: 1927-09-06 MISC 15 305, a racial covenant put on this land by neighboring owners (ended 1952)
+
 ### SOMERSET GARDENS (6900)
 
 - Candidates to read (1): MISC 73 361 (1955-08-26)
 
 ### SOMERSET HILLS (7000)
 
+- **[Before it was platted](#before-it-was-platted)**: 1927-09-06 MISC 15 305, a racial covenant put on this land by neighboring owners (ended 1952)
 - **Filed with plat** PLAT 18 35: 1955-04-25 MISC 70 460 (document 492253) — **restrictions**; period of twenty-five years; residence only (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)
 - 1957-09-21 Declaration of Home Owners Association, MISC 90 80 — Sub:SOMERSET HILLS Lt:85
 - Candidates to read (1): MISC 83 152 (1956-10-02)

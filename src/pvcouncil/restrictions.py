@@ -344,6 +344,43 @@ def _months_between(a: str, b: str) -> int:
     return (int(b[:4]) - int(a[:4])) * 12 + int(b[5:7]) - int(a[5:7])
 
 
+def _preplat_section() -> tuple[list[str], dict[str, list[dict]]]:
+    """Report lines for covenants put on acreage before it was platted (pvc preplat), and those
+    covenants by the subdivision name now on their land. Empty until pvc preplat has run."""
+    from pvcouncil import preplat
+
+    if not (preplat.RESULTS_PATH.exists() and preplat.OVERLAY_PATH.exists()):
+        return [], {}
+    found = json.loads(preplat.RESULTS_PATH.read_text())
+    insts = found["instruments"]
+    covs = [f["properties"] for f in json.loads(preplat.OVERLAY_PATH.read_text())["features"]]
+    by_sub = defaultdict(list)
+    lines = [
+        "## Before it was platted",
+        "",
+        "Some land was put under a racial covenant before it was platted, by its owners or by the "
+        "developer who was buying it. Such instruments are indexed to the bare land (section, township "
+        "and range) rather than to a subdivision, so the search by subdivision name above cannot find "
+        "them. `pvc preplat` dates each 40-acre tract our subdivisions occupy by its first plat and "
+        "reads every Miscellaneous instrument indexed to bare land in that tract in the "
+        f"{found['years_before']} years before: **{len(insts)}** instruments, "
+        f"**{sum(bool(e.get('racial')) for e in insts)}** of them with a racial covenant. Each was read "
+        "from its image and its land placed from the description it gives (the index's quarter-section "
+        "is often wrong). All ran for a fixed term with no renewal clause, so all have ended; the land "
+        "they covered is shown on the map as dashed outlines.",
+        "",
+    ]
+    for p in sorted(covs, key=lambda p: p["recorded"]):
+        now = [n.split(",")[0] for n in json.loads(p["now"])]
+        for n in dict.fromkeys(now):
+            by_sub[n].append(p)
+        where = (f"Land now in {', '.join(dict.fromkeys(n.title() for n in now))}." if now else "")
+        lines.append(f"- **{p['recorded']} {p['book_page']}**, by {p['by']}: {p['summary']} "
+                     f"Ended {p['ended']} ({p['term']}). {where}".rstrip())
+    lines.append("")
+    return lines, by_sub
+
+
 def render_markdown(out: dict, manifest: dict) -> str:
     """Per-subdivision report: restrictions filed with the plat, written on the plat, typed
     restriction instruments, and Miscellaneous candidates still to read."""
@@ -422,6 +459,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
     eng_rows = [e for e in filed_rel if e.get("engine")] + [r for r in plat_rows if r.get("engine")]
     n_eng_terms = sum(len(e.get("engine_terms") or []) for e in eng_rows)
     covered = [k for k, pl in subs.items() if any(filed[p] or on_plat.get(p) or typed[p] for p in pl)]
+    preplat_lines, preplat_by_sub = _preplat_section()
     lines = [
         "# Prairie Village subdivision restrictions",
         "",
@@ -467,6 +505,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "restrictions as \"Miscellaneous\", so the label alone doesn't say what an instrument is; "
         "the images settle it.",
         "",
+        *preplat_lines,
         "## Summary",
         "",
         "| Code | Subdivision | First plat | Filed with plat | On plat | Indexed restrictions | Candidates |",
@@ -486,9 +525,13 @@ def render_markdown(out: dict, manifest: dict) -> str:
         o_ = sorted({e["book_page"]: e for p in pl for e in on_plat.get(p, [])}.values(), key=lambda e: e["recorded"])
         t_ = sorted({e["id"]: e for p in pl for e in typed[p]}.values(), key=lambda e: e["recorded"])
         c_ = sorted({e["id"]: e for p in pl for e in cands[p]}.values(), key=lambda e: -e["score"])
-        if not (f_ or o_ or t_ or c_):
+        pre = preplat_by_sub.get(sub.upper(), [])
+        if not (f_ or o_ or t_ or c_ or pre):
             continue
         lines += [f"### {sub} ({code})", ""]
+        for p in pre:
+            lines.append(f"- **[Before it was platted](#before-it-was-platted)**: {p['recorded']} {p['book_page']}, "
+                         f"a racial covenant put on this land by {p['by']} (ended {p['ended']})")
         for e in f_:
             what = e.get("kind", e["doc_type"])
             detail = [cite(f, e) for f in e.get("features", []) if f != "homes association assessments"]

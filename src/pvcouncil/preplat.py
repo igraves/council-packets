@@ -178,7 +178,8 @@ def read(entries: list[dict], workers: int = 4, echo=print, offline: bool = Fals
 
 # Racial covenants on acreage, read by eye, with the land they cover. "parts" are aliquot parts
 # (section, path for part()); "strip" is land within half_ft of the line between two sections,
-# from_ft to to_ft south of their north line. Small exceptions in the descriptions are not cut out.
+# from_ft to to_ft south of their north line; "corner" is the ft square on each side of the
+# point where four sections meet. Small exceptions in the descriptions are not cut out.
 COVENANTS = {
     "MISC 15 305": {
         "recorded": "1927-09-06", "parts": [(22, "SW/E/E/N"), (22, "SE/W/N")], "ended": "1952", "term": "25 years",
@@ -199,6 +200,29 @@ COVENANTS = {
                    "J. C. Nichols Company held an option to buy part of it, barring ownership or occupancy "
                    "by Black people.",
     },
+    "MISC 14 317": {
+        "recorded": "1926-08-12", "corner": {"sections": (9, 10, 15, 16), "ft": 200}, "ended": "1951",
+        "term": "25 years", "by": "the owners of the four corners, among them the J. C. Nichols Investment Company",
+        "nichols": True,
+        "summary": "The owners of a 200-foot square on each corner where four sections meet (today 63rd Street "
+                   "and Mission Road) restricted them together, barring ownership or occupancy by Black people.",
+    },
+    "MISC 16 490": {
+        "recorded": "1929-05-22", "parts": [(27, "NW/W")], "ended": "1954", "term": "25 years",
+        "by": "the owners, in an option to purchase", "nichols": False,
+        "summary": "An option to purchase the land that itself bars its ownership or occupancy by Black people.",
+    },
+    "MISC 16 496": {
+        "recorded": "1929-05-31", "parts": [(28, "NW/N"), (28, "NW/SE"), (28, "NW/SW/N")], "ended": "1952",
+        "term": "25 years from 1927", "by": "neighboring owners", "nichols": False,
+        "summary": "Owners agreed not to convey any of their land to \"any person of color or of African descent\".",
+    },
+    "MISC 43 553": {
+        "recorded": "1950-02-04", "parts": [(16, "NE")], "ended": "1990", "term": "40 years",
+        "by": "the J. C. Nichols Company", "nichols": True,
+        "summary": "A declaration whose only restriction is racial, on the northeast quarter of the section except "
+                   "three small tracts, a day after the Prairie Hills one and 20 months before the Indian Fields plat.",
+    },
     "MISC 43 532": {
         "recorded": "1950-02-03", "parts": [(22, "NW/E")], "ended": "1990", "term": "40 years", "by": "the J. C. Nichols Company",
         "nichols": True,
@@ -217,6 +241,12 @@ def covenant_area(c: dict, secs: dict, twp: int = 12, rng: int = 25):
 
     if "parts" in c:
         return unary_union([part(secs[(s, twp, rng)], p) for s, p in c["parts"]])
+    if "corner" in c:
+        # a square of ft on each side of the point where the sections meet
+        g = unary_union([secs[(s, twp, rng)] for s in c["corner"]["sections"]])
+        x, y = g.centroid.x, g.centroid.y
+        d = c["corner"]["ft"] * FT_LAT
+        return box(x - d / cos(radians(y)), y - d, x + d / cos(radians(y)), y + d)
     s = c["strip"]
     a, b = secs[(s["between"][0], twp, rng)], secs[(s["between"][1], twp, rng)]
     line_x = (a.bounds[0] + b.bounds[2]) / 2  # their shared line, east of b and west of a

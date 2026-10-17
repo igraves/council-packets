@@ -6602,6 +6602,239 @@
    "transcribed": 0
   },
   {
+   "id": "1578913",
+   "book_page": "MISC 53 125",
+   "recorded": "1952-03-11",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 8,
+   "words": 1751,
+   "transcribed": 0
+  },
+  {
+   "id": "1580139",
+   "book_page": "MISC 53 133",
+   "recorded": "1952-03-11",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 324,
+   "transcribed": 0
+  },
+  {
+   "id": "1812923",
+   "book_page": "MISC 55 488",
+   "recorded": "1952-08-29",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 2,
+   "transcribed": 0
+  },
+  {
+   "id": "1813026",
+   "book_page": "MISC 55 605",
+   "recorded": "1952-09-04",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 11,
+   "words": 2535,
+   "transcribed": 0
+  },
+  {
+   "id": "1812320",
+   "book_page": "MISC 55 635",
+   "recorded": "1952-09-08",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 23,
+   "transcribed": 0
+  },
+  {
+   "id": "1813047",
+   "book_page": "MISC 55 639",
+   "recorded": "1952-09-08",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 7,
+   "transcribed": 0
+  },
+  {
+   "id": "1893062",
+   "book_page": "MISC 56 265",
+   "recorded": "1952-10-03",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 192,
+   "transcribed": 0
+  },
+  {
+   "id": "1893325",
+   "book_page": "MISC 56 386",
+   "recorded": "1952-10-22",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 106,
+   "transcribed": 0
+  },
+  {
+   "id": "1925482",
+   "book_page": "MISC 57 540",
+   "recorded": "1953-02-02",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 6,
+   "words": 983,
+   "transcribed": 0
+  },
+  {
+   "id": "1945017",
+   "book_page": "MISC 58 122",
+   "recorded": "1953-03-09",
+   "docid": null,
+   "plats": [
+    "SWARNER VALLEY"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 28,
+   "transcribed": 0
+  },
+  {
+   "id": "1944562",
+   "book_page": "MISC 58 530",
+   "recorded": "1953-04-30",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 1209,
+   "transcribed": 0
+  },
+  {
+   "id": "1945694",
+   "book_page": "MISC 58 539",
+   "recorded": "1953-04-30",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 148,
+   "transcribed": 0
+  },
+  {
    "id": "2071504",
    "book_page": "MISC 61 93",
    "recorded": "1953-09-28",
@@ -6713,6 +6946,42 @@
    "transcribed": 0
   },
   {
+   "id": "2423512",
+   "book_page": "MISC 65 533",
+   "recorded": "1954-07-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 85,
+   "transcribed": 0
+  },
+  {
+   "id": "2424677",
+   "book_page": "MISC 65 537",
+   "recorded": "1954-07-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 49,
+   "transcribed": 0
+  },
+  {
    "id": "2423883",
    "book_page": "MISC 65 586",
    "recorded": "1954-08-02",
@@ -6772,6 +7041,62 @@
    "until_year": null,
    "pages": 2,
    "words": 20,
+   "transcribed": 0
+  },
+  {
+   "id": "2764524",
+   "book_page": "MISC 68 212",
+   "recorded": "1954-12-18",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 306,
+   "transcribed": 0
+  },
+  {
+   "id": "2765496",
+   "book_page": "MISC 68 291",
+   "recorded": "1954-12-27",
+   "docid": null,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 5,
+   "words": 201,
+   "transcribed": 0
+  },
+  {
+   "id": "2765506",
+   "book_page": "MISC 68 302",
+   "recorded": "1954-12-27",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 114,
    "transcribed": 0
   },
   {
@@ -6849,6 +7174,42 @@
    "transcribed": 0
   },
   {
+   "id": "2953296",
+   "book_page": "MISC 70 341",
+   "recorded": "1955-04-13",
+   "docid": null,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 4,
+   "words": 675,
+   "transcribed": 0
+  },
+  {
+   "id": "2954599",
+   "book_page": "MISC 70 345",
+   "recorded": "1955-04-13",
+   "docid": null,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 55,
+   "transcribed": 0
+  },
+  {
    "id": "2953902",
    "book_page": "MISC 70 440",
    "recorded": "1955-04-23",
@@ -6882,6 +7243,66 @@
    "until_year": null,
    "pages": 2,
    "words": 143,
+   "transcribed": 0
+  },
+  {
+   "id": "3138535",
+   "book_page": "MISC 72 473",
+   "recorded": "1955-07-13",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 2956,
+   "transcribed": 0
+  },
+  {
+   "id": "3220214",
+   "book_page": "MISC 73 446",
+   "recorded": "1955-09-02",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "release",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 257,
+   "transcribed": 0
+  },
+  {
+   "id": "4166586",
+   "book_page": "MISC 84 107",
+   "recorded": "1956-11-20",
+   "docid": null,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 573,
    "transcribed": 0
   },
   {
@@ -6926,6 +7347,1508 @@
    "until_year": null,
    "pages": 2,
    "words": 518,
+   "transcribed": 0
+  },
+  {
+   "id": "1814327",
+   "book_page": "MISC 99 415",
+   "recorded": "1958-11-28",
+   "docid": null,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 455,
+   "transcribed": 0
+  },
+  {
+   "id": "2195866",
+   "book_page": "MISC 103 319",
+   "recorded": "1959-05-07",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 2435,
+   "transcribed": 0
+  },
+  {
+   "id": "2195874",
+   "book_page": "MISC 103 329",
+   "recorded": "1959-05-07",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 421,
+   "transcribed": 0
+  },
+  {
+   "id": "2195936",
+   "book_page": "MISC 103 423",
+   "recorded": "1959-05-13",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "release",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 364,
+   "transcribed": 0
+  },
+  {
+   "id": "2194984",
+   "book_page": "MISC 103 424",
+   "recorded": "1959-05-13",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 446,
+   "transcribed": 0
+  },
+  {
+   "id": "2383472",
+   "book_page": "MISC 114 464",
+   "recorded": "1960-11-01",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 1733,
+   "transcribed": 0
+  },
+  {
+   "id": "2383480",
+   "book_page": "MISC 114 474",
+   "recorded": "1960-11-01",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 475,
+   "transcribed": 0
+  },
+  {
+   "id": "2446693",
+   "book_page": "MISC 118 10",
+   "recorded": "1961-03-15",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 607,
+   "transcribed": 0
+  },
+  {
+   "id": "2453963",
+   "book_page": "MISC 118 8",
+   "recorded": "1961-03-15",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 397,
+   "transcribed": 0
+  },
+  {
+   "id": "2626328",
+   "book_page": "MISC 127 397",
+   "recorded": "1962-06-22",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 2407,
+   "transcribed": 0
+  },
+  {
+   "id": "2777655",
+   "book_page": "MISC 135 565",
+   "recorded": "1963-06-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 11,
+   "words": 2718,
+   "transcribed": 0
+  },
+  {
+   "id": "2776665",
+   "book_page": "MISC 135 576",
+   "recorded": "1963-06-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 509,
+   "transcribed": 0
+  },
+  {
+   "id": "2849294",
+   "book_page": "MISC 139 629",
+   "recorded": "1963-11-15",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 145,
+   "transcribed": 0
+  },
+  {
+   "id": "2850016",
+   "book_page": "MISC 139 630",
+   "recorded": "1963-11-15",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 144,
+   "transcribed": 0
+  },
+  {
+   "id": "2850018",
+   "book_page": "MISC 139 631",
+   "recorded": "1963-11-15",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 148,
+   "transcribed": 0
+  },
+  {
+   "id": "2850019",
+   "book_page": "MISC 139 632",
+   "recorded": "1963-11-15",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 152,
+   "transcribed": 0
+  },
+  {
+   "id": "2850020",
+   "book_page": "MISC 139 633",
+   "recorded": "1963-11-15",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 144,
+   "transcribed": 0
+  },
+  {
+   "id": "2850021",
+   "book_page": "MISC 139 634",
+   "recorded": "1963-11-15",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 148,
+   "transcribed": 0
+  },
+  {
+   "id": "3090936",
+   "book_page": "MISC 152 352",
+   "recorded": "1965-02-15",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 25,
+   "transcribed": 0
+  },
+  {
+   "id": "3133009",
+   "book_page": "MISC 155 502",
+   "recorded": "1965-06-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 150,
+   "transcribed": 0
+  },
+  {
+   "id": "3133010",
+   "book_page": "MISC 155 503",
+   "recorded": "1965-06-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 146,
+   "transcribed": 0
+  },
+  {
+   "id": "3133011",
+   "book_page": "MISC 155 504",
+   "recorded": "1965-06-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 163,
+   "transcribed": 0
+  },
+  {
+   "id": "3132335",
+   "book_page": "MISC 155 505",
+   "recorded": "1965-06-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 111,
+   "transcribed": 0
+  },
+  {
+   "id": "3132336",
+   "book_page": "MISC 155 506",
+   "recorded": "1965-06-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 125,
+   "transcribed": 0
+  },
+  {
+   "id": "3132337",
+   "book_page": "MISC 155 507",
+   "recorded": "1965-06-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 142,
+   "transcribed": 0
+  },
+  {
+   "id": "3133013",
+   "book_page": "MISC 155 508",
+   "recorded": "1965-06-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 128,
+   "transcribed": 0
+  },
+  {
+   "id": "3189296",
+   "book_page": "MISC 158 526",
+   "recorded": "1965-10-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 45,
+   "transcribed": 0
+  },
+  {
+   "id": "3223141",
+   "book_page": "MISC 160 336",
+   "recorded": "1965-12-16",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 100,
+   "transcribed": 0
+  },
+  {
+   "id": "3298088",
+   "book_page": "MISC 162 145",
+   "recorded": "1966-02-16",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 14,
+   "transcribed": 0
+  },
+  {
+   "id": "3301496",
+   "book_page": "MISC 162 146",
+   "recorded": "1966-02-16",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 88,
+   "transcribed": 0
+  },
+  {
+   "id": "3301497",
+   "book_page": "MISC 162 147",
+   "recorded": "1966-02-16",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 13,
+   "transcribed": 0
+  },
+  {
+   "id": "3301498",
+   "book_page": "MISC 162 148",
+   "recorded": "1966-02-16",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 159,
+   "transcribed": 0
+  },
+  {
+   "id": "3301499",
+   "book_page": "MISC 162 149",
+   "recorded": "1966-02-16",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 64,
+   "transcribed": 0
+  },
+  {
+   "id": "3259303",
+   "book_page": "MISC 162 693",
+   "recorded": "1966-03-16",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 62,
+   "transcribed": 0
+  },
+  {
+   "id": "3272093",
+   "book_page": "MISC 163 499",
+   "recorded": "1966-04-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 13,
+   "transcribed": 0
+  },
+  {
+   "id": "3272919",
+   "book_page": "MISC 163 500",
+   "recorded": "1966-04-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 24,
+   "transcribed": 0
+  },
+  {
+   "id": "3272096",
+   "book_page": "MISC 163 501",
+   "recorded": "1966-04-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 134,
+   "transcribed": 0
+  },
+  {
+   "id": "3272097",
+   "book_page": "MISC 163 502",
+   "recorded": "1966-04-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 51,
+   "transcribed": 0
+  },
+  {
+   "id": "3272924",
+   "book_page": "MISC 163 503",
+   "recorded": "1966-04-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 19,
+   "transcribed": 0
+  },
+  {
+   "id": "3272100",
+   "book_page": "MISC 163 504",
+   "recorded": "1966-04-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 21,
+   "transcribed": 0
+  },
+  {
+   "id": "3319274",
+   "book_page": "MISC 165 70",
+   "recorded": "1966-06-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 92,
+   "transcribed": 0
+  },
+  {
+   "id": "3319280",
+   "book_page": "MISC 165 71",
+   "recorded": "1966-06-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 134,
+   "transcribed": 0
+  },
+  {
+   "id": "3311696",
+   "book_page": "MISC 165 412",
+   "recorded": "1966-06-17",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 92,
+   "transcribed": 0
+  },
+  {
+   "id": "3330667",
+   "book_page": "MISC 166 7",
+   "recorded": "1966-07-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 144,
+   "transcribed": 0
+  },
+  {
+   "id": "3321430",
+   "book_page": "MISC 166 191",
+   "recorded": "1966-07-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS",
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 104,
+   "transcribed": 0
+  },
+  {
+   "id": "3321431",
+   "book_page": "MISC 166 192",
+   "recorded": "1966-07-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 151,
+   "transcribed": 0
+  },
+  {
+   "id": "3322614",
+   "book_page": "MISC 166 193",
+   "recorded": "1966-07-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 143,
+   "transcribed": 0
+  },
+  {
+   "id": "3322616",
+   "book_page": "MISC 166 194",
+   "recorded": "1966-07-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 150,
+   "transcribed": 0
+  },
+  {
+   "id": "3321435",
+   "book_page": "MISC 166 195",
+   "recorded": "1966-07-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 133,
+   "transcribed": 0
+  },
+  {
+   "id": "3322617",
+   "book_page": "MISC 166 196",
+   "recorded": "1966-07-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 123,
+   "transcribed": 0
+  },
+  {
+   "id": "3321437",
+   "book_page": "MISC 166 197",
+   "recorded": "1966-07-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 113,
+   "transcribed": 0
+  },
+  {
+   "id": "3322294",
+   "book_page": "MISC 166 528",
+   "recorded": "1966-07-22",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 77,
+   "transcribed": 0
+  },
+  {
+   "id": "3341608",
+   "book_page": "MISC 167 103",
+   "recorded": "1966-08-01",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 69,
+   "transcribed": 0
+  },
+  {
+   "id": "3343100",
+   "book_page": "MISC 167 373",
+   "recorded": "1966-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 117,
+   "transcribed": 0
+  },
+  {
+   "id": "3343101",
+   "book_page": "MISC 167 374",
+   "recorded": "1966-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3341987",
+   "book_page": "MISC 167 375",
+   "recorded": "1966-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 140,
+   "transcribed": 0
+  },
+  {
+   "id": "3341989",
+   "book_page": "MISC 167 376",
+   "recorded": "1966-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 142,
+   "transcribed": 0
+  },
+  {
+   "id": "3341990",
+   "book_page": "MISC 167 377",
+   "recorded": "1966-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 118,
+   "transcribed": 0
+  },
+  {
+   "id": "3343103",
+   "book_page": "MISC 167 378",
+   "recorded": "1966-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS",
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 112,
+   "transcribed": 0
+  },
+  {
+   "id": "3341993",
+   "book_page": "MISC 167 379",
+   "recorded": "1966-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS",
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 115,
+   "transcribed": 0
+  },
+  {
+   "id": "3373485",
+   "book_page": "MISC 169 71",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 136,
+   "transcribed": 0
+  },
+  {
+   "id": "3373489",
+   "book_page": "MISC 169 72",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 144,
+   "transcribed": 0
+  },
+  {
+   "id": "3373661",
+   "book_page": "MISC 169 73",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 140,
+   "transcribed": 0
+  },
+  {
+   "id": "3373663",
+   "book_page": "MISC 169 74",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3372839",
+   "book_page": "MISC 169 75",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 146,
+   "transcribed": 0
+  },
+  {
+   "id": "3372842",
+   "book_page": "MISC 169 76",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 105,
+   "transcribed": 0
+  },
+  {
+   "id": "3373665",
+   "book_page": "MISC 169 77",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 111,
+   "transcribed": 0
+  },
+  {
+   "id": "3373667",
+   "book_page": "MISC 169 78",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 150,
+   "transcribed": 0
+  },
+  {
+   "id": "3373670",
+   "book_page": "MISC 169 79",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 110,
+   "transcribed": 0
+  },
+  {
+   "id": "3372846",
+   "book_page": "MISC 169 80",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 75,
+   "transcribed": 0
+  },
+  {
+   "id": "3372848",
+   "book_page": "MISC 169 81",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 110,
+   "transcribed": 0
+  },
+  {
+   "id": "3372850",
+   "book_page": "MISC 169 82",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 65,
+   "transcribed": 0
+  },
+  {
+   "id": "3373673",
+   "book_page": "MISC 169 83",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 114,
+   "transcribed": 0
+  },
+  {
+   "id": "3372852",
+   "book_page": "MISC 169 84",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 87,
+   "transcribed": 0
+  },
+  {
+   "id": "3372854",
+   "book_page": "MISC 169 85",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 54,
+   "transcribed": 0
+  },
+  {
+   "id": "3373675",
+   "book_page": "MISC 169 86",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 144,
+   "transcribed": 0
+  },
+  {
+   "id": "3372857",
+   "book_page": "MISC 169 87",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE",
+    "SWARNER VALLEY"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 84,
+   "transcribed": 0
+  },
+  {
+   "id": "3372859",
+   "book_page": "MISC 169 88",
+   "recorded": "1966-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 132,
    "transcribed": 0
   },
   {

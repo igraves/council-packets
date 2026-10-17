@@ -522,7 +522,12 @@ def subdivision_map(refresh, port):
     if not token:
         click.echo("MAPBOX_TOKEN is not set in .env; open the map with ?token=pk...")
     if port:
-        handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(subdivmap.MAP_DIR))
+        class NoCache(http.server.SimpleHTTPRequestHandler):
+            def end_headers(self):  # so a rebuilt page or data shows on reload
+                self.send_header("Cache-Control", "no-cache")
+                super().end_headers()
+
+        handler = functools.partial(NoCache, directory=str(subdivmap.MAP_DIR))
         click.echo(f"→ http://127.0.0.1:{port}/  (Ctrl-C to stop)")
         http.server.ThreadingHTTPServer(("127.0.0.1", port), handler).serve_forever()
 

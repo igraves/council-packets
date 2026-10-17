@@ -101,6 +101,7 @@ function card(p) {
       return `<li>${li}</li>`;
     }).join("") + `</ul>`;
   }
+  if (p.note) h += `<div class="terms" style="margin:4px 0">${esc(p.note)}</div>`;
   if (d.on_plat.length)
     h += `<div>Written on the plat: ${d.on_plat.map(x => esc(x.book_page)).join(", ")}</div>`;
   if (p.indexed) h += `<div>${p.indexed} indexed restriction instrument${p.indexed > 1 ? "s" : ""}</div>`;

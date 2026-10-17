@@ -31,6 +31,23 @@ PAGE = 2000
 # half a street's width, merge, and shrink back so a subdivision is one shape
 CLOSE_DEG = 0.00013
 SIMPLIFY_DEG = 0.00002
+# Subdivisions whose declaration covers only some of the county code's blocks: those blocks are
+# drawn as the subdivision, the rest as a separate shape without the declaration. Prairie
+# Village's 1941 declaration (MISC 26 349), released in 2007, names Lots in Blocks 1-5 only.
+SPLITS = {"5500": {"blocks": {1, 2, 3, 4, 5}, "label": "Blocks 1–5", "rest": "Blocks 6–56",
+                   "note": "The 1941 declaration (MISC 26 349), whose racial covenant was released in 2007, "
+                           "covers Blocks 1–5 only. The survey has not matched a declaration to these later blocks."}}
+# Lots re-platted into a later subdivision: a replat does not release the original
+# declaration, so they are drawn with the subdivision they were first platted in.
+REPLATS = {
+    # Prairie Fields (PLAT 17 46, 1954) re-platted Lots 1-5, Block 1 of Meadowbrook Downs as its
+    # Block 22, Lots 1-5; MISC 43 168 (1949) covers all six lots and renews every ten years
+    "2350": {"code": "4200", "block": 22, "lots": {1, 2, 3, 4, 5},
+             "note": "Lots 1–5 were re-platted in 1954 as Prairie Fields Block 22, Lots 1–5 (PLAT 17 46). "
+                     "The replat did not release the 1949 declaration, which renews every ten years.",
+             "later_note": "Block 22, Lots 1–5 are shown with Meadowbrook Downs, the 1949 subdivision "
+                           "they were re-platted from, whose declaration still covers them."},
+}
 
 
 def fetch_parcels(refresh: bool = False, echo=print) -> dict:
@@ -65,12 +82,25 @@ def outlines(parcels: dict) -> dict:
     for f in parcels["features"]:
         pid = (f["properties"] or {}).get("GeoPropID") or ""
         if pid.startswith("OP") and f.get("geometry"):
-            by_code[pid[2:6]].append(shape(f["geometry"]).buffer(0))
+            by_code[_group(pid)].append(shape(f["geometry"]).buffer(0))
     out = {}
     for code, geoms in by_code.items():
         merged = unary_union([g.buffer(CLOSE_DEG, join_style="mitre") for g in geoms])
         out[code] = _fill_small_holes(merged.buffer(-CLOSE_DEG, join_style="mitre")).simplify(SIMPLIFY_DEG)
     return out
+
+
+def _group(pid: str) -> str:
+    """The shape a parcel ID (OP<code><block> <lot>) is drawn in: its code, a REPLATS original, or code+."""
+    code = pid[2:6]
+    block = int(pid[6:10]) if pid[6:10].isdigit() else None  # a few blocks are lettered, e.g. 00BS
+    lot = re.match(r"\d*", pid[11:]).group()
+    for orig, r in REPLATS.items():
+        if code == r["code"] and block == r["block"] and lot and int(lot) in r["lots"]:
+            return orig
+    if code in SPLITS and block not in SPLITS[code]["blocks"]:
+        return code + "+"  # the split's other blocks
+    return code
 
 
 SMALL_HOLE_DEG2 = 3e-7  # about 3,000 m²: the gaps left where streets cross
@@ -153,16 +183,30 @@ def build(refresh: bool = False, echo=print) -> dict:
     shapes = outlines(fetch_parcels(refresh, echo))
     subs = subdivision_records()
     features = []
-    for code, geom in sorted(shapes.items()):
+    for i, (key, geom) in enumerate(sorted(shapes.items())):
         geom = shapely.set_precision(geom, 1e-6)  # about 10 cm
         if geom.is_empty:
             continue
+        code = key.rstrip("+")
         s = subs.get(code) or {"code": code, "name": f"Subdivision {code}", "plats": [], "declarations": [],
                                "on_plat": [], "indexed": 0, "status": "none", "report": REPORT_URL}
-        props = {k: s[k] for k in ("code", "name", "status", "report", "indexed")}
+        s = dict(s, note=None)
+        if code in REPLATS:
+            s["note"] = REPLATS[code]["note"]
+        for r in REPLATS.values():
+            if code == r["code"]:
+                s["note"] = r["later_note"]
+        if code in SPLITS:
+            split = SPLITS[code]
+            if key.endswith("+"):
+                s.update(name=f"{s['name']}, {split['rest']}", declarations=[], note=split["note"],
+                         status="restrictions" if s["on_plat"] or s["indexed"] else "none")
+            else:
+                s["name"] = f"{s['name']}, {split['label']}"
+        props = {k: s[k] for k in ("code", "name", "status", "report", "indexed", "note")}
         # Mapbox flattens nested properties to strings, so the details travel as JSON
         props["details"] = json.dumps({k: s[k] for k in ("plats", "declarations", "on_plat")})
-        features.append({"type": "Feature", "id": int(code), "properties": props,
+        features.append({"type": "Feature", "id": i, "properties": props,
                          "geometry": json.loads(shapely.to_geojson(geom))})
     fc = {"type": "FeatureCollection", "features": features}
     MAP_DIR.mkdir(exist_ok=True)

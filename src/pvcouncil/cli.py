@@ -505,6 +505,43 @@ def deed_viewer(port):
     viewer.serve(port=port, echo=click.echo)
 
 
+@cli.command("preplat")
+@click.option("--offline", is_flag=True, help="Use cached index months and images only")
+@click.option("--dry-run", is_flag=True, help="List the sections and months to fetch, and stop")
+@click.option("--workers", default=4, show_default=True, help="Parallel OCR processes")
+def preplat_cmd(offline, dry_run, workers):
+    """Find covenants put on acreage before it was platted (indexed to Sec/Twp/Rng, not a subdivision)."""
+    from pvcouncil import preplat, restrictions
+    from pvcouncil.recorder import RecorderError
+
+    firsts = preplat.first_plats()
+    todo = [m for m in preplat.months(firsts) if not restrictions._month_file(*m).exists()]
+    click.echo(f"{len(firsts)} quarter-quarter sections in {len({k[:3] for k in firsts})} sections; "
+               f"{len(preplat.months(firsts))} pre-plat months, {len(todo)} not cached")
+    if dry_run:
+        return
+    if not offline:
+        try:
+            preplat.fetch(echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(str(e))
+    entries = preplat.find(firsts)
+    click.echo(f"{len(entries)} instruments on bare land before the first plat "
+               f"({sum(e['nichols'] for e in entries)} with a Nichols party)")
+    try:
+        preplat.read(entries, workers=workers, echo=click.echo, offline=offline)
+    except RecorderError as e:
+        raise click.ClickException(str(e))
+    out = preplat.build(entries)
+    racial = [e for e in out["instruments"] if e.get("racial")]
+    click.echo(f"{len(racial)} with a racial restriction:")
+    for e in racial:
+        x = e["legals"][0]
+        click.echo(f"  {e['recorded']} {e['book_page']} Sec {'-'.join(map(str, x['section']))} "
+                   f"{x['qtr'] or ''} {x['qtrqtr'] or ''} ({e.get('term')}); first plat {e['first_plat']} {e['later_plat']}")
+    click.echo(f"→ {preplat.RESULTS_PATH.relative_to(plats_root())}")
+
+
 @cli.command("subdivision-map")
 @click.option("--refresh", is_flag=True, help="Fetch the county's parcel polygons again")
 @click.option("--serve", "port", type=int, default=None, help="Then serve the map on 127.0.0.1 at this port")
@@ -524,6 +561,11 @@ def subdivision_map(refresh, port):
                f"{n['expired']} expired, {n['released']} released, {n['restrictions']} other restrictions, "
                f"{n['none']} none found "
                f"→ {subdivmap.GEOJSON_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
+    from pvcouncil import preplat
+
+    pre = json.loads(preplat.RESULTS_PATH.read_text())["instruments"] if preplat.RESULTS_PATH.exists() else []
+    click.echo(f"{len(preplat.overlay(pre)['features'])} pre-plat covenants "
+               f"→ {preplat.OVERLAY_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
     # the Mapbox token stays out of git: map/config.js is gitignored
     token = os.environ.get("MAPBOX_TOKEN", "")
     (subdivmap.MAP_DIR / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")

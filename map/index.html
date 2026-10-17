@@ -23,6 +23,7 @@
   .sw { width: 16px; height: 12px; border-radius: 3px; flex: none; }
   .sw.racial { background: var(--racial); }
   .sw.expired { background: var(--expired); opacity: .8; }
+  .sw.pre { border: 2px dashed var(--expired); width: 12px; height: 8px; }
   .sw.released { border: 2px solid var(--released); background: rgba(245,197,24,.12); width: 12px; height: 8px; }
   .sw.restr { background: var(--restr); opacity: .55; }
   .sw.none { background: var(--none); }
@@ -43,6 +44,8 @@
   #tip .rel { color: var(--released); }
   #tip .unrel { color: #ff8a8d; }
   #tip .exp { color: var(--expired); }
+  #tip .pre { border-top: 1px dashed var(--expired); margin-top: 8px; padding-top: 6px; font-size: 12.5px; }
+  #tip .pre h3 { font-size: 12px; margin: 0 0 3px; color: var(--expired); text-transform: uppercase; letter-spacing: .04em; }
   #tip a { color: #8ab4ff; }
   #tip .hint { color: var(--muted); font-size: 11px; margin-top: 6px; }
   #tip .close { position: absolute; top: 6px; right: 9px; cursor: pointer; color: var(--muted);
@@ -67,6 +70,7 @@
   <div class="legend">
     <div><span class="sw racial"></span>Racial covenant, no release found</div>
     <div><span class="sw expired"></span>Racial covenant, expired by its own term</div>
+    <div><span class="sw pre"></span>Racial covenant put on the land before it was platted</div>
     <div><span class="sw released"></span>Racial covenant released (Prairie Village Homes Assn., 2007)</div>
     <div><span class="sw restr"></span>Other recorded restrictions</div>
     <div><span class="sw none"></span>None found</div>
@@ -91,7 +95,21 @@ const STATUS = {
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
 const title = s => esc(s).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
 
-function card(p) {
+function preCard(list) {
+  return list.map(p => {
+    const now = JSON.parse(p.now);
+    return `<div class="pre"><h3>Before it was platted</h3><b>${esc(String(p.recorded).slice(0, 4))}</b> ${esc(p.book_page)}, ` +
+      `by ${esc(p.by)}: ${esc(p.summary)}<br><span class="exp">Racial covenant ended ${esc(p.ended)} (${esc(p.term)})</span>` +
+      (now.length ? `<div class="sub" style="margin:3px 0 0">Land now in ${now.map(title).join(", ")}</div>` : "") + `</div>`;
+  }).join("");
+}
+
+function content(sub, pre) {
+  if (!sub) return preCard(pre) + `<div class="hint">${pinned ? "" : "Click to keep open"}</div>`;
+  return card(sub.properties, preCard(pre));
+}
+
+function card(p, extra = "") {
   const d = JSON.parse(p.details);
   let h = `<h2>${title(p.name)}</h2><div class="sub">Subdivision ${esc(p.code)}` +
           (d.plats.length > 1 ? ` · ${d.plats.length} plats` : "") + `</div>` +
@@ -114,6 +132,7 @@ function card(p) {
   if (p.indexed) h += `<div>${p.indexed} indexed restriction instrument${p.indexed > 1 ? "s" : ""}</div>`;
   if (p.status !== "none")
     h += `<div style="margin-top:6px"><a href="${esc(p.report)}" target="_blank" rel="noopener">Documents in the restrictions report →</a></div>`;
+  h += extra;
   h += `<div class="hint">${pinned ? "" : "Click to keep open"}</div>`;
   return h;
 }
@@ -162,28 +181,34 @@ if (!token) {
     map.addLayer({id: "released", type: "line", source: "subs", filter: ["==", ["get", "status"], "released"],
       paint: {"line-color": "#f5c518", "line-width": 3.5}});
 
-    map.on("mousemove", "fill", e => {
-      const f = e.features[0];
-      map.getCanvas().style.cursor = "pointer";
-      if (hovered !== f.id) {
+    // racial covenants put on acreage before it was platted
+    const pre = await (await fetch("preplat.geojson")).json();
+    map.addSource("pre", {type: "geojson", data: pre});
+    map.addLayer({id: "pre-fill", type: "fill", source: "pre", paint: {"fill-color": "#f07fbf", "fill-opacity": 0.08}});
+    map.addLayer({id: "pre-line", type: "line", source: "pre",
+      paint: {"line-color": "#f07fbf", "line-width": 2.2, "line-dasharray": [2, 1.5]}});
+
+    const at = pt => [map.queryRenderedFeatures(pt, {layers: ["fill"]})[0],
+                      map.queryRenderedFeatures(pt, {layers: ["pre-fill"]}).map(f => f.properties)];
+    map.on("mousemove", e => {
+      const [f, p] = at(e.point);
+      const id = f ? f.id : null;
+      if (hovered !== id) {
         if (hovered !== null) map.setFeatureState({source: "subs", id: hovered}, {hover: false});
-        hovered = f.id;
-        map.setFeatureState({source: "subs", id: hovered}, {hover: true});
+        hovered = id;
+        if (id !== null) map.setFeatureState({source: "subs", id}, {hover: true});
       }
-      if (!pinned) { tipbody.innerHTML = card(f.properties); tip.style.display = "block"; place(e.point); }
-    });
-    map.on("mouseleave", "fill", () => {
-      map.getCanvas().style.cursor = "";
-      if (hovered !== null) map.setFeatureState({source: "subs", id: hovered}, {hover: false});
-      hovered = null;
-      if (!pinned) tip.style.display = "none";
+      map.getCanvas().style.cursor = f || p.length ? "pointer" : "";
+      if (pinned) return;
+      if (!f && !p.length) { tip.style.display = "none"; return; }
+      tipbody.innerHTML = content(f, p); tip.style.display = "block"; place(e.point);
     });
     map.on("click", e => {
-      const f = map.queryRenderedFeatures(e.point, {layers: ["fill"]})[0];
-      if (!f) { unpin(); return; }
-      pinned = f.id;
+      const [f, p] = at(e.point);
+      if (!f && !p.length) { unpin(); return; }
+      pinned = true;
       tip.classList.add("pinned");
-      tipbody.innerHTML = card(f.properties);
+      tipbody.innerHTML = content(f, p);
       tip.style.display = "block";
       place(e.point);
     });

@@ -37,6 +37,30 @@ def image_path(e: dict) -> Path:
     return IMAGES_DIR / f"{plats._slug(e['book_page'])}--{e['id']}.pdf"
 
 
+CANDIDATE_MIN_SCORE = 5
+
+
+def candidate_entries(out: dict, skip: set[str], n_new: int) -> list[dict]:
+    """Walk candidates (restrictions.walk_candidates) tied to one of our plats: the ones already
+    OCR'd, plus the next n_new by score (then date). They carry source "candidate"."""
+    cands = sorted((c for c in out.get("misc_candidates", [])
+                    if c["score"] >= CANDIDATE_MIN_SCORE and c["plats"] and c["id"] not in skip),
+                   key=lambda c: (-c["score"], c["recorded"]))
+    picked, seen = [], set()
+    for c in cands:
+        if c["id"] in seen:
+            continue
+        seen.add(c["id"])
+        e = {"id": c["id"], "book_page": c["book_page"], "recorded": c["recorded"][:10], "docid": None,
+             "plats": c["plats"], "plat_book_pages": [], "source": "candidate"}
+        if (OCR_DIR / f"{image_path(e).stem}.txt").exists():
+            picked.append(e)
+        elif n_new > 0:
+            picked.append(e)
+            n_new -= 1
+    return picked
+
+
 def download(entries: list[dict], echo=print) -> dict:
     """Download each instrument's image; skips ones already downloaded."""
     todo = [e for e in entries if not image_path(e).exists()]
@@ -201,7 +225,8 @@ def build(entries: list[dict]) -> dict:
         if r:
             c.update(kind=r["kind"], note=r["note"], unrelated=r.get("unrelated", False), reviewed=True)
         rows.append({"id": e["id"], "book_page": e["book_page"], "recorded": e["recorded"],
-                     "docid": e["docid"], "plats": e["plats"], "plat_book_pages": e["plat_book_pages"], **c})
+                     "docid": e["docid"], "plats": e["plats"], "plat_book_pages": e["plat_book_pages"],
+                     **({"source": e["source"]} if e.get("source") else {}), **c})
         if "racial restriction" in c["features"]:
             excerpts += [f"## {e['book_page']} ({e['recorded']}) {', '.join(e['plats'])}", ""]
             excerpts += [f"> {x}" for x in _excerpt(text, FEATURES["racial restriction"])] + [""]

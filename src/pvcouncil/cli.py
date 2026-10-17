@@ -459,8 +459,10 @@ def plat_ocr(workers):
 @cli.command("restriction-read")
 @click.option("--workers", default=6, show_default=True, help="Parallel OCR processes")
 @click.option("--offline", is_flag=True, help="Skip downloading; OCR and classify what is on disk")
-def restriction_read(workers, offline):
-    """Download, OCR, and classify the instruments filed with a plat."""
+@click.option("--candidates", "n_candidates", default=0, show_default=True,
+              help="Also read this many more unread Miscellaneous candidates, highest score first")
+def restriction_read(workers, offline, n_candidates):
+    """Download, OCR, and classify the instruments filed with a plat (and walk candidates)."""
     from collections import Counter
 
     import json
@@ -468,7 +470,12 @@ def restriction_read(workers, offline):
     from pvcouncil import restrictions, restrictread
     from pvcouncil.recorder import RecorderError
 
-    entries = json.loads(restrictions.RESULTS_PATH.read_text())["filed_with_plat"]
+    out = json.loads(restrictions.RESULTS_PATH.read_text())
+    entries = out["filed_with_plat"]
+    cands = restrictread.candidate_entries(out, {e["id"] for e in entries}, n_candidates)
+    if n_candidates:
+        click.echo(f"{len(cands)} walk candidates ({n_candidates} new)")
+    entries = entries + cands
     if not offline:
         try:
             s = restrictread.download(entries, echo=click.echo)

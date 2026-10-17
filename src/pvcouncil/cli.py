@@ -521,7 +521,8 @@ def subdivision_map(refresh, port):
     fc = subdivmap.build(refresh, echo=click.echo)
     n = Counter(f["properties"]["status"] for f in fc["features"])
     click.echo(f"{len(fc['features'])} subdivisions: {n['racial']} with an unreleased racial covenant, "
-               f"{n['released']} released, {n['restrictions']} other restrictions, {n['none']} none found "
+               f"{n['expired']} expired, {n['released']} released, {n['restrictions']} other restrictions, "
+               f"{n['none']} none found "
                f"→ {subdivmap.GEOJSON_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
     # the Mapbox token stays out of git: map/config.js is gitignored
     token = os.environ.get("MAPBOX_TOKEN", "")

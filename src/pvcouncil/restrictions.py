@@ -325,6 +325,13 @@ RACIAL_RELEASES = {
 }
 RELEASES_SEARCHED = "2026-10-16"
 
+# Racial covenants that ended on their own: a fixed term with no renewal clause, read by hand
+# (the classifier's "renewal" pattern misses wordings like "automatically shall be continued").
+RACIAL_EXPIRED = {
+    # J. C. Nichols Company's race-only declaration on Prairie Village Block 36, 1950
+    "MISC 43 573": {"expired": "1990-02", "term": "40 years, no renewal"},
+}
+
 
 _NICHOLS = re.compile(r"\bJ\.?\s?C\.?\s+NICHOLS\b|\bNICHOLS\s+(?:INVESTMENT\s+)?CO", re.I)
 

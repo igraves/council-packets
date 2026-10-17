@@ -9,7 +9,7 @@
 <style>
   :root {
     --bg: #0e1116; --panel: rgba(17, 21, 28, 0.94); --text: #e6e8eb; --muted: #9aa3ad;
-    --line: #2a313c; --racial: #e5484d; --released: #f5c518; --restr: #5b8def; --none: #3a414c;
+    --line: #2a313c; --racial: #e5484d; --expired: #f07fbf; --released: #f5c518; --restr: #5b8def; --none: #3a414c;
   }
   html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
     font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
@@ -22,6 +22,7 @@
   .legend div { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 13px; }
   .sw { width: 16px; height: 12px; border-radius: 3px; flex: none; }
   .sw.racial { background: var(--racial); }
+  .sw.expired { background: var(--expired); opacity: .8; }
   .sw.released { border: 2px solid var(--released); background: rgba(245,197,24,.12); width: 12px; height: 8px; }
   .sw.restr { background: var(--restr); opacity: .55; }
   .sw.none { background: var(--none); }
@@ -32,6 +33,7 @@
   #tip .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px;
     border-radius: 999px; margin-bottom: 6px; }
   .badge.racial { background: var(--racial); color: #fff; }
+  .badge.expired { background: var(--expired); color: #2a0d1d; }
   .badge.released { background: var(--released); color: #1a1a1a; }
   .badge.restrictions { background: #2b3f66; color: #cfe0ff; }
   .badge.none { background: #2a2f37; color: var(--muted); }
@@ -40,6 +42,7 @@
   #tip .terms { color: var(--muted); }
   #tip .rel { color: var(--released); }
   #tip .unrel { color: #ff8a8d; }
+  #tip .exp { color: var(--expired); }
   #tip a { color: #8ab4ff; }
   #tip .hint { color: var(--muted); font-size: 11px; margin-top: 6px; }
   #tip .close { position: absolute; top: 6px; right: 9px; cursor: pointer; color: var(--muted);
@@ -63,6 +66,7 @@
     never formally released. Hover a subdivision for details; click to keep its card open.</p>
   <div class="legend">
     <div><span class="sw racial"></span>Racial covenant, no release found</div>
+    <div><span class="sw expired"></span>Racial covenant, expired by its own term</div>
     <div><span class="sw released"></span>Racial covenant released (Prairie Village Homes Assn., 2007)</div>
     <div><span class="sw restr"></span>Other recorded restrictions</div>
     <div><span class="sw none"></span>None found</div>
@@ -79,6 +83,7 @@
 const token = new URLSearchParams(location.search).get("token") || window.MAPBOX_TOKEN;
 const STATUS = {
   racial: "Racial covenant — no release found",
+  expired: "Racial covenant — expired",
   released: "Racial covenant — released",
   restrictions: "Recorded restrictions",
   none: "No restrictions found",
@@ -92,11 +97,13 @@ function card(p) {
           (d.plats.length > 1 ? ` · ${d.plats.length} plats` : "") + `</div>` +
           `<span class="badge ${p.status}">${STATUS[p.status]}</span>`;
   if (d.declarations.length) {
-    h += `<div>Filed with the plat:</div><ul>` + d.declarations.map(x => {
+    h += `<div>Recorded declarations:</div><ul>` + d.declarations.map(x => {
       let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${esc(x.book_page)} — ${esc(x.kind)}`;
       if (x.features.length) li += ` <span class="terms">(${esc(x.features.join(", "))})</span>`;
       if (x.racial) li += x.released
         ? `<br><span class="rel">Racial covenant released ${esc(x.released.recorded)}, ${esc(x.released.book_page)}</span>`
+        : x.expired
+        ? `<br><span class="exp">Racial covenant expired ${esc(x.expired.expired)} (${esc(x.expired.term)})</span>`
         : `<br><span class="unrel">Racial covenant — no release on record</span>`;
       return `<li>${li}</li>`;
     }).join("") + `</ul>`;
@@ -144,9 +151,9 @@ if (!token) {
     const hov = ["boolean", ["feature-state", "hover"], false];
     map.addLayer({id: "fill", type: "fill", source: "subs", paint: {
       "fill-color": ["match", ["get", "status"],
-        "racial", "#e5484d", "released", "#f5c518", "restrictions", "#5b8def", "#3a414c"],
+        "racial", "#e5484d", "expired", "#f07fbf", "released", "#f5c518", "restrictions", "#5b8def", "#3a414c"],
       "fill-opacity": ["case", hov, 0.75,
-        ["match", ["get", "status"], "racial", 0.55, "released", 0.12, "restrictions", 0.22, 0.25]],
+        ["match", ["get", "status"], "racial", 0.55, "expired", 0.5, "released", 0.12, "restrictions", 0.22, 0.25]],
     }});
     map.addLayer({id: "line", type: "line", source: "subs", paint: {
       "line-color": ["case", hov, "#ffffff", ["==", ["get", "status"], "racial"], "#ff6b6f", "#6b7480"],

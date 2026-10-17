@@ -51,5 +51,8 @@
  "MISC 195 612": {"kind": "other", "note": "sheriff's certificate of purchase", "unrelated": true},
  "MISC 195 614": {"kind": "affidavit", "note": "heirship affidavit", "unrelated": true},
  "MISC 200 186": {"kind": "zoning order", "note": "county resolution on the Monticello Township zoning board", "unrelated": true},
- "MISC 214 6": {"kind": "other", "note": "articles of incorporation certified by the Secretary of State"}
+ "MISC 214 6": {"kind": "other", "note": "articles of incorporation certified by the Secretary of State"},
+ "MISC 43 573": {"kind": "restrictions", "note": "race-only declaration on all of Block 36, 40 years, no renewal"},
+ "MISC 65 492": {"kind": "affidavit", "note": "1917 identity affidavit, land in Sec 25-14-22", "unrelated": true},
+ "MISC 65 493": {"kind": "restriction amendment", "note": "modifies Southmoor Gardens' building lines", "unrelated": true}
 }

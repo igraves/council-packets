@@ -31,12 +31,19 @@ PAGE = 2000
 # half a street's width, merge, and shrink back so a subdivision is one shape
 CLOSE_DEG = 0.00013
 SIMPLIFY_DEG = 0.00002
-# Subdivisions whose declaration covers only some of the county code's blocks: those blocks are
-# drawn as the subdivision, the rest as a separate shape without the declaration. Prairie
-# Village's 1941 declaration (MISC 26 349), released in 2007, names Lots in Blocks 1-5 only.
-SPLITS = {"5500": {"blocks": {1, 2, 3, 4, 5}, "label": "Blocks 1–5", "rest": "Blocks 6–56",
-                   "note": "The 1941 declaration (MISC 26 349), whose racial covenant was released in 2007, "
-                           "covers Blocks 1–5 only. The survey has not matched a declaration to these later blocks."}}
+# Subdivisions whose declarations each cover only some of the county code's blocks: each part is
+# drawn as its own shape. A part without "declarations" keeps the declarations filed with the
+# plat; one with a list carries just those (read walk candidates, by book and page). The last
+# part, blocks None, takes the remaining blocks.
+SPLITS = {"5500": [
+    # Prairie Village's 1941 declaration (MISC 26 349), released in 2007, names Lots in Blocks 1-5 only
+    {"blocks": {1, 2, 3, 4, 5}, "label": "Blocks 1–5"},
+    {"blocks": {36}, "label": "Block 36", "declarations": ["MISC 43 573"]},
+    {"blocks": None, "label": "Blocks 6–35 and 37–56", "declarations": [],
+     "note": "The 1941 declaration (MISC 26 349), whose racial covenant was released in 2007, covers "
+             "Blocks 1–5 only, and Block 36 has its own 1950 declaration. The survey has not yet matched "
+             "a declaration to these blocks."},
+]}
 # Lots re-platted into a later subdivision: a replat does not release the original
 # declaration, so they are drawn with the subdivision they were first platted in.
 REPLATS = {
@@ -98,8 +105,9 @@ def _group(pid: str) -> str:
     for orig, r in REPLATS.items():
         if code == r["code"] and block == r["block"] and lot and int(lot) in r["lots"]:
             return orig
-    if code in SPLITS and block not in SPLITS[code]["blocks"]:
-        return code + "+"  # the split's other blocks
+    for i, part in enumerate(SPLITS.get(code, [])):
+        if part["blocks"] is None or block in part["blocks"]:
+            return f"{code}#{i}"
     return code
 
 
@@ -145,12 +153,7 @@ def subdivision_records() -> dict[str, dict]:
         r = reads.get(e["id"], {})
         if r.get("unrelated"):
             continue
-        racial = "racial restriction" in r.get("features", [])
-        rel = restrictions.RACIAL_RELEASES.get(e["book_page"]) if racial else None
-        d = {"recorded": e["recorded"], "book_page": e["book_page"], "document": e["docid"],
-             "kind": r.get("kind", e["doc_type"]), "term": r.get("term"),
-             "features": [f for f in r.get("features", []) if f != "racial restriction"],
-             "racial": racial, "released": rel, "note": r.get("note"), "plats": e["plats"]}
+        d = _declaration(e, r)
         for code in {plat_code[p] for p in e["plats"] if p in plat_code}:
             subs[code]["declarations"].append(d)
     for p, rows in on_plat.items():
@@ -164,17 +167,31 @@ def subdivision_records() -> dict[str, dict]:
 
     for s in subs.values():
         s["declarations"].sort(key=lambda d: d["recorded"])
-        racial = [d for d in s["declarations"] if d["racial"]]
-        if any(not d["released"] for d in racial):
-            s["status"] = "racial"
-        elif racial:
-            s["status"] = "released"
-        elif s["declarations"] or s["on_plat"] or s["indexed"]:
-            s["status"] = "restrictions"
-        else:
-            s["status"] = "none"
+        s["status"] = _status(s)
         s["report"] = REPORT_URL + anchor(s["name"], s["code"]) if s["status"] != "none" else REPORT_URL
     return subs
+
+
+def _declaration(e: dict, r: dict) -> dict:
+    """What the map shows of one instrument: e an entry (filed with a plat, or a read candidate), r its reading."""
+    racial = "racial restriction" in r.get("features", [])
+    return {"recorded": e["recorded"], "book_page": e["book_page"], "document": e.get("docid"),
+            "kind": r.get("kind", e.get("doc_type")), "term": r.get("term"),
+            "features": [f for f in r.get("features", []) if f != "racial restriction"], "racial": racial,
+            "released": restrictions.RACIAL_RELEASES.get(e["book_page"]) if racial else None,
+            "expired": restrictions.RACIAL_EXPIRED.get(e["book_page"]) if racial else None,
+            "note": r.get("note"), "plats": e["plats"]}
+
+
+def _status(s: dict) -> str:
+    racial = [d for d in s["declarations"] if d["racial"]]
+    if any(not d["released"] and not d["expired"] for d in racial):
+        return "racial"
+    if any(d["expired"] for d in racial):
+        return "expired"
+    if racial:
+        return "released"
+    return "restrictions" if s["declarations"] or s["on_plat"] or s["indexed"] else "none"
 
 
 def build(refresh: bool = False, echo=print) -> dict:
@@ -182,12 +199,15 @@ def build(refresh: bool = False, echo=print) -> dict:
 
     shapes = outlines(fetch_parcels(refresh, echo))
     subs = subdivision_records()
+    by_book_page = {}
+    if restrictread.RESULTS_PATH.exists():
+        by_book_page = {r["book_page"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
     features = []
     for i, (key, geom) in enumerate(sorted(shapes.items())):
         geom = shapely.set_precision(geom, 1e-6)  # about 10 cm
         if geom.is_empty:
             continue
-        code = key.rstrip("+")
+        code = key[:4]
         s = subs.get(code) or {"code": code, "name": f"Subdivision {code}", "plats": [], "declarations": [],
                                "on_plat": [], "indexed": 0, "status": "none", "report": REPORT_URL}
         s = dict(s, note=None)
@@ -196,13 +216,14 @@ def build(refresh: bool = False, echo=print) -> dict:
         for r in REPLATS.values():
             if code == r["code"]:
                 s["note"] = r["later_note"]
-        if code in SPLITS:
-            split = SPLITS[code]
-            if key.endswith("+"):
-                s.update(name=f"{s['name']}, {split['rest']}", declarations=[], note=split["note"],
-                         status="restrictions" if s["on_plat"] or s["indexed"] else "none")
-            else:
-                s["name"] = f"{s['name']}, {split['label']}"
+        if "#" in key:
+            part = SPLITS[code][int(key.split("#")[1])]
+            s["name"] = f"{s['name']}, {part['label']}"
+            if "declarations" in part:
+                s["declarations"] = [_declaration(by_book_page[bp], by_book_page[bp])
+                                     for bp in part["declarations"] if bp in by_book_page]
+                s["note"] = part.get("note")
+                s["status"] = _status(s)
         props = {k: s[k] for k in ("code", "name", "status", "report", "indexed", "note")}
         # Mapbox flattens nested properties to strings, so the details travel as JSON
         props["details"] = json.dumps({k: s[k] for k in ("plats", "declarations", "on_plat")})

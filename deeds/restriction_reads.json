@@ -1461,13 +1461,16 @@
    "plat_book_pages": [
     "PLAT 17 46"
    ],
-   "kind": "deed",
+   "kind": "affidavit",
    "features": [],
    "term": null,
    "until_year": null,
    "pages": 1,
    "words": 98,
-   "transcribed": 0
+   "transcribed": 0,
+   "note": "1917 identity affidavit, land in Sec 25-14-22",
+   "unrelated": true,
+   "reviewed": true
   },
   {
    "id": "2423486",
@@ -1480,7 +1483,7 @@
    "plat_book_pages": [
     "PLAT 17 46"
    ],
-   "kind": "restrictions",
+   "kind": "restriction amendment",
    "features": [
     "building line / setback"
    ],
@@ -1488,7 +1491,10 @@
    "until_year": null,
    "pages": 1,
    "words": 358,
-   "transcribed": 0
+   "transcribed": 0,
+   "note": "modifies Southmoor Gardens' building lines",
+   "unrelated": true,
+   "reviewed": true
   },
   {
    "id": "2861683",
@@ -3182,7 +3188,7 @@
    ],
    "plat_book_pages": [],
    "source": "candidate",
-   "kind": "other",
+   "kind": "restrictions",
    "features": [
     "racial restriction"
    ],
@@ -3190,7 +3196,10 @@
    "until_year": null,
    "pages": 2,
    "words": 449,
-   "transcribed": 0
+   "transcribed": 0,
+   "note": "race-only declaration on all of Block 36, 40 years, no renewal",
+   "unrelated": false,
+   "reviewed": true
   },
   {
    "id": "3748161",
@@ -4615,6 +4624,1981 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
+   "transcribed": 0
+  },
+  {
+   "id": "3605391",
+   "book_page": "MISC 181 486",
+   "recorded": "1967-12-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 118,
+   "transcribed": 0
+  },
+  {
+   "id": "3605392",
+   "book_page": "MISC 181 487",
+   "recorded": "1967-12-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 135,
+   "transcribed": 0
+  },
+  {
+   "id": "3605394",
+   "book_page": "MISC 181 488",
+   "recorded": "1967-12-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 62,
+   "transcribed": 0
+  },
+  {
+   "id": "3606487",
+   "book_page": "MISC 181 489",
+   "recorded": "1967-12-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 136,
+   "transcribed": 0
+  },
+  {
+   "id": "3605397",
+   "book_page": "MISC 181 490",
+   "recorded": "1967-12-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 154,
+   "transcribed": 0
+  },
+  {
+   "id": "3605407",
+   "book_page": "MISC 181 500",
+   "recorded": "1967-12-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 159,
+   "transcribed": 0
+  },
+  {
+   "id": "3631726",
+   "book_page": "MISC 182 603",
+   "recorded": "1968-02-13",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 132,
+   "transcribed": 0
+  },
+  {
+   "id": "3631728",
+   "book_page": "MISC 182 604",
+   "recorded": "1968-02-13",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 113,
+   "transcribed": 0
+  },
+  {
+   "id": "3630764",
+   "book_page": "MISC 182 605",
+   "recorded": "1968-02-13",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 125,
+   "transcribed": 0
+  },
+  {
+   "id": "3631731",
+   "book_page": "MISC 182 606",
+   "recorded": "1968-02-13",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 84,
+   "transcribed": 0
+  },
+  {
+   "id": "3631732",
+   "book_page": "MISC 182 607",
+   "recorded": "1968-02-13",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 140,
+   "transcribed": 0
+  },
+  {
+   "id": "3670939",
+   "book_page": "MISC 184 23",
+   "recorded": "1968-03-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3670949",
+   "book_page": "MISC 184 24",
+   "recorded": "1968-03-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 152,
+   "transcribed": 0
+  },
+  {
+   "id": "3670250",
+   "book_page": "MISC 184 25",
+   "recorded": "1968-03-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 137,
+   "transcribed": 0
+  },
+  {
+   "id": "3670259",
+   "book_page": "MISC 184 26",
+   "recorded": "1968-03-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 147,
+   "transcribed": 0
+  },
+  {
+   "id": "3670977",
+   "book_page": "MISC 184 27",
+   "recorded": "1968-03-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS",
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 132,
+   "transcribed": 0
+  },
+  {
+   "id": "3671012",
+   "book_page": "MISC 184 30",
+   "recorded": "1968-03-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 110,
+   "transcribed": 0
+  },
+  {
+   "id": "3712460",
+   "book_page": "MISC 186 65",
+   "recorded": "1968-05-27",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 103,
+   "transcribed": 0
+  },
+  {
+   "id": "3712463",
+   "book_page": "MISC 186 66",
+   "recorded": "1968-05-27",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 132,
+   "transcribed": 0
+  },
+  {
+   "id": "3711355",
+   "book_page": "MISC 186 67",
+   "recorded": "1968-05-27",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 66,
+   "transcribed": 0
+  },
+  {
+   "id": "3710342",
+   "book_page": "MISC 186 194",
+   "recorded": "1968-05-31",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 47,
+   "transcribed": 0
+  },
+  {
+   "id": "3710469",
+   "book_page": "MISC 186 345",
+   "recorded": "1968-06-07",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 15,
+   "transcribed": 0
+  },
+  {
+   "id": "3749278",
+   "book_page": "MISC 187 645",
+   "recorded": "1968-07-26",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3790591",
+   "book_page": "MISC 190 79",
+   "recorded": "1968-10-09",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 76,
+   "transcribed": 0
+  },
+  {
+   "id": "3791363",
+   "book_page": "MISC 190 83",
+   "recorded": "1968-10-09",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 42,
+   "transcribed": 0
+  },
+  {
+   "id": "3790392",
+   "book_page": "MISC 190 465",
+   "recorded": "1968-10-30",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 116,
+   "transcribed": 0
+  },
+  {
+   "id": "3863716",
+   "book_page": "MISC 192 181",
+   "recorded": "1968-12-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 129,
+   "transcribed": 0
+  },
+  {
+   "id": "3863717",
+   "book_page": "MISC 192 182",
+   "recorded": "1968-12-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 139,
+   "transcribed": 0
+  },
+  {
+   "id": "3840445",
+   "book_page": "MISC 192 400",
+   "recorded": "1969-01-09",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 104,
+   "transcribed": 0
+  },
+  {
+   "id": "3840480",
+   "book_page": "MISC 192 432",
+   "recorded": "1969-01-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 141,
+   "transcribed": 0
+  },
+  {
+   "id": "3840481",
+   "book_page": "MISC 192 433",
+   "recorded": "1969-01-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 113,
+   "transcribed": 0
+  },
+  {
+   "id": "3839479",
+   "book_page": "MISC 192 434",
+   "recorded": "1969-01-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 156,
+   "transcribed": 0
+  },
+  {
+   "id": "3840484",
+   "book_page": "MISC 192 435",
+   "recorded": "1969-01-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 140,
+   "transcribed": 0
+  },
+  {
+   "id": "3839481",
+   "book_page": "MISC 192 436",
+   "recorded": "1969-01-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 133,
+   "transcribed": 0
+  },
+  {
+   "id": "3839483",
+   "book_page": "MISC 192 437",
+   "recorded": "1969-01-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 134,
+   "transcribed": 0
+  },
+  {
+   "id": "3839485",
+   "book_page": "MISC 192 438",
+   "recorded": "1969-01-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3840530",
+   "book_page": "MISC 192 488",
+   "recorded": "1969-01-13",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 140,
+   "transcribed": 0
+  },
+  {
+   "id": "3880175",
+   "book_page": "MISC 194 11",
+   "recorded": "1969-03-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3897536",
+   "book_page": "MISC 195 312",
+   "recorded": "1969-04-21",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 126,
+   "transcribed": 0
+  },
+  {
+   "id": "3897575",
+   "book_page": "MISC 195 347",
+   "recorded": "1969-04-22",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 137,
+   "transcribed": 0
+  },
+  {
+   "id": "3924823",
+   "book_page": "MISC 196 565",
+   "recorded": "1969-06-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 127,
+   "transcribed": 0
+  },
+  {
+   "id": "3950820",
+   "book_page": "MISC 197 2",
+   "recorded": "1969-06-11",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 144,
+   "transcribed": 0
+  },
+  {
+   "id": "3949350",
+   "book_page": "MISC 197 148",
+   "recorded": "1969-06-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 111,
+   "transcribed": 0
+  },
+  {
+   "id": "3951151",
+   "book_page": "MISC 197 484",
+   "recorded": "1969-07-07",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 148,
+   "transcribed": 0
+  },
+  {
+   "id": "2530865",
+   "book_page": "MISC 201 593",
+   "recorded": "1969-11-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 119,
+   "transcribed": 0
+  },
+  {
+   "id": "2530866",
+   "book_page": "MISC 201 594",
+   "recorded": "1969-11-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 142,
+   "transcribed": 0
+  },
+  {
+   "id": "2531848",
+   "book_page": "MISC 201 595",
+   "recorded": "1969-11-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 134,
+   "transcribed": 0
+  },
+  {
+   "id": "2531850",
+   "book_page": "MISC 201 596",
+   "recorded": "1969-11-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 136,
+   "transcribed": 0
+  },
+  {
+   "id": "2530868",
+   "book_page": "MISC 201 597",
+   "recorded": "1969-11-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 129,
+   "transcribed": 0
+  },
+  {
+   "id": "3510172",
+   "book_page": "MISC 202 32",
+   "recorded": "1969-11-28",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 144,
+   "transcribed": 0
+  },
+  {
+   "id": "3511034",
+   "book_page": "MISC 202 331",
+   "recorded": "1969-12-17",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 152,
+   "transcribed": 0
+  },
+  {
+   "id": "3660444",
+   "book_page": "MISC 210 27",
+   "recorded": "1970-08-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 133,
+   "transcribed": 0
+  },
+  {
+   "id": "3676740",
+   "book_page": "MISC 211 4",
+   "recorded": "1970-09-16",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3677125",
+   "book_page": "MISC 211 718",
+   "recorded": "1970-10-16",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 130,
+   "transcribed": 0
+  },
+  {
+   "id": "3716450",
+   "book_page": "MISC 213 52",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 124,
+   "transcribed": 0
+  },
+  {
+   "id": "3716455",
+   "book_page": "MISC 213 53",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 143,
+   "transcribed": 0
+  },
+  {
+   "id": "3717494",
+   "book_page": "MISC 213 54",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 111,
+   "transcribed": 0
+  },
+  {
+   "id": "3717500",
+   "book_page": "MISC 213 55",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 135,
+   "transcribed": 0
+  },
+  {
+   "id": "3717507",
+   "book_page": "MISC 213 56",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 141,
+   "transcribed": 0
+  },
+  {
+   "id": "3717515",
+   "book_page": "MISC 213 57",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 132,
+   "transcribed": 0
+  },
+  {
+   "id": "3716652",
+   "book_page": "MISC 213 58",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 146,
+   "transcribed": 0
+  },
+  {
+   "id": "3716659",
+   "book_page": "MISC 213 59",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 141,
+   "transcribed": 0
+  },
+  {
+   "id": "3717538",
+   "book_page": "MISC 213 60",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 145,
+   "transcribed": 0
+  },
+  {
+   "id": "3716675",
+   "book_page": "MISC 213 61",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3717550",
+   "book_page": "MISC 213 62",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 134,
+   "transcribed": 0
+  },
+  {
+   "id": "3716696",
+   "book_page": "MISC 213 63",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 118,
+   "transcribed": 0
+  },
+  {
+   "id": "3717564",
+   "book_page": "MISC 213 64",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 139,
+   "transcribed": 0
+  },
+  {
+   "id": "3716709",
+   "book_page": "MISC 213 65",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 152,
+   "transcribed": 0
+  },
+  {
+   "id": "3717573",
+   "book_page": "MISC 213 66",
+   "recorded": "1970-11-18",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 135,
+   "transcribed": 0
+  },
+  {
+   "id": "3716249",
+   "book_page": "MISC 213 272",
+   "recorded": "1970-11-27",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 119,
+   "transcribed": 0
+  },
+  {
+   "id": "3716337",
+   "book_page": "MISC 213 388",
+   "recorded": "1970-12-02",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 128,
+   "transcribed": 0
+  },
+  {
+   "id": "3717279",
+   "book_page": "MISC 213 486",
+   "recorded": "1970-12-07",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 145,
+   "transcribed": 0
+  },
+  {
+   "id": "3739352",
+   "book_page": "MISC 214 221",
+   "recorded": "1970-12-24",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 80,
+   "transcribed": 0
+  },
+  {
+   "id": "3767543",
+   "book_page": "MISC 215 632",
+   "recorded": "1971-02-16",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 163,
+   "transcribed": 0
+  },
+  {
+   "id": "3767545",
+   "book_page": "MISC 215 633",
+   "recorded": "1971-02-16",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 136,
+   "transcribed": 0
+  },
+  {
+   "id": "3786088",
+   "book_page": "MISC 216 124",
+   "recorded": "1971-03-01",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 156,
+   "transcribed": 0
+  },
+  {
+   "id": "3794621",
+   "book_page": "MISC 216 125",
+   "recorded": "1971-03-01",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 120,
+   "transcribed": 0
+  },
+  {
+   "id": "3809441",
+   "book_page": "MISC 216 645",
+   "recorded": "1971-03-19",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 142,
+   "transcribed": 0
+  },
+  {
+   "id": "3816311",
+   "book_page": "MISC 216 673",
+   "recorded": "1971-03-22",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 141,
+   "transcribed": 0
+  },
+  {
+   "id": "3794050",
+   "book_page": "MISC 217 306",
+   "recorded": "1971-04-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 138,
+   "transcribed": 0
+  },
+  {
+   "id": "3805047",
+   "book_page": "MISC 218 125",
+   "recorded": "1971-04-26",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 127,
+   "transcribed": 0
+  },
+  {
+   "id": "3805218",
+   "book_page": "MISC 218 127",
+   "recorded": "1971-04-26",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 143,
+   "transcribed": 0
+  },
+  {
+   "id": "3846117",
+   "book_page": "MISC 220 177",
+   "recorded": "1971-06-14",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 142,
+   "transcribed": 0
+  },
+  {
+   "id": "3847663",
+   "book_page": "MISC 220 448",
+   "recorded": "1971-06-25",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 137,
+   "transcribed": 0
+  },
+  {
+   "id": "3846739",
+   "book_page": "MISC 220 518",
+   "recorded": "1971-06-29",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 137,
+   "transcribed": 0
+  },
+  {
+   "id": "3900614",
+   "book_page": "MISC 223 236",
+   "recorded": "1971-09-02",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "release",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 432,
+   "transcribed": 0
+  },
+  {
+   "id": "3900663",
+   "book_page": "MISC 223 281",
+   "recorded": "1971-09-03",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 145,
+   "transcribed": 0
+  },
+  {
+   "id": "3926020",
+   "book_page": "MISC 224 150",
+   "recorded": "1971-09-27",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 131,
+   "transcribed": 0
+  },
+  {
+   "id": "3926963",
+   "book_page": "MISC 224 484",
+   "recorded": "1971-10-06",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 143,
+   "transcribed": 0
+  },
+  {
+   "id": "3994761",
+   "book_page": "MISC 228 162",
+   "recorded": "1971-12-28",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 130,
+   "transcribed": 0
+  },
+  {
+   "id": "1733499",
+   "book_page": "MISC 31 44",
+   "recorded": "1946-03-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 527,
+   "transcribed": 0
+  },
+  {
+   "id": "1732383",
+   "book_page": "MISC 31 46",
+   "recorded": "1946-03-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum cost",
+    "renewal"
+   ],
+   "term": "period of twenty-five years",
+   "until_year": null,
+   "pages": 7,
+   "words": 2874,
+   "transcribed": 0
+  },
+  {
+   "id": "2371429",
+   "book_page": "MISC 34 327",
+   "recorded": "1947-04-07",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "dedication",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 7,
+   "words": 2598,
+   "transcribed": 0
+  },
+  {
+   "id": "3747601",
+   "book_page": "MISC 44 50",
+   "recorded": "1950-02-14",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "renewal"
+   ],
+   "term": "period of twenty-five (25) years",
+   "until_year": null,
+   "pages": 9,
+   "words": 1904,
+   "transcribed": 0
+  },
+  {
+   "id": "3747658",
+   "book_page": "MISC 44 68",
+   "recorded": "1950-02-14",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FOREST"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 420,
+   "transcribed": 0
+  },
+  {
+   "id": "4374863",
+   "book_page": "MISC 48 606",
+   "recorded": "1951-02-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 1308,
+   "transcribed": 0
+  },
+  {
+   "id": "4375745",
+   "book_page": "MISC 48 616",
+   "recorded": "1951-02-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 229,
+   "transcribed": 0
+  },
+  {
+   "id": "4758462",
+   "book_page": "MISC 51 353",
+   "recorded": "1951-10-12",
+   "docid": null,
+   "plats": [
+    "INDIAN FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "restrictions",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 188,
+   "transcribed": 0
+  },
+  {
+   "id": "4758464",
+   "book_page": "MISC 51 362",
+   "recorded": "1951-10-12",
+   "docid": null,
+   "plats": [
+    "INDIAN FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 11,
+   "words": 513,
+   "transcribed": 0
+  },
+  {
+   "id": "4757945",
+   "book_page": "MISC 51 567",
+   "recorded": "1951-11-15",
+   "docid": null,
+   "plats": [
+    "CORRECTED PLAT OF MEADOW LAKE",
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "candidate",
+   "kind": "other",
+   "features": [
+    "architectural approval"
+   ],
+   "term": "period of fifteen (15) years",
+   "until_year": null,
+   "pages": 5,
+   "words": 453,
    "transcribed": 0
   },
   {

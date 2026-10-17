@@ -185,6 +185,62 @@ def classify(text: str) -> dict:
     }
 
 
+_NUM_WORDS = ("one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|"
+              "seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred")
+_WORDED = re.compile(rf"\b(?:(?:{_NUM_WORDS})[\s-]*)+\(\s*([\dlIO]{{1,3}})\s*\)", re.I)  # "Thirty-six (36)"
+_NUM = r"[\dlIOh|]{1,3}"
+_ITEM = rf"{_NUM}(?:-?[A-Z]\b)?"  # lettered blocks (1A, 2-A) are read past, not counted
+_LIST = rf"{_ITEM}(?:(?:\s*(?:,|&|and|to|through|thru|-|–)\s*)+(?:both\s+inclusive,?\s*)?{_ITEM})*"
+_LOTS_IN_BLOCK = re.compile(rf"\bLots?\s+({_LIST})[^.;]{{0,40}}?\bBlock\s+({_NUM})\b", re.I)
+_BLOCKS = re.compile(rf"\bBlocks?\s+({_LIST})", re.I)
+
+
+def _n(tok: str) -> int | None:
+    tok = tok.translate(str.maketrans("lIOh|", "11041"))
+    return int(tok) if tok.isdigit() else None
+
+
+def _numbers(s: str) -> set[int]:
+    out, prev, rng = set(), None, False
+    for tok in re.findall(rf"{_NUM}(?:-?[A-Z]\b)?|to|through|thru|-|–", s, re.I):
+        if tok.lower() in ("to", "through", "thru", "-", "–"):
+            rng = prev is not None
+            continue
+        n = _n(tok)
+        if n is None:
+            continue
+        if rng and prev is not None and 0 < n - prev < 200:
+            out |= set(range(prev, n + 1))
+        out.add(n)
+        prev, rng = n, False
+    return out
+
+
+LAND_CHARS = 2500  # the land a declaration covers is described before its restrictions begin
+
+
+def lots_blocks(text: str) -> dict[str, list[int] | None]:
+    """Blocks a declaration covers, each with the lots named in it (None: the whole block, or lots not
+    given). Keys are block numbers as strings, for JSON. OCR slips in numbers (l, I, O, h, |) are mended.
+
+    Only the opening is read: the restrictions themselves name lots and blocks too (frontages, floor
+    areas), and a declaration with no blocks in its opening covers the whole subdivision."""
+    flat = re.sub(r"\s+", " ", text.replace("_", " "))[:LAND_CHARS]
+    flat = _WORDED.sub(lambda m: m.group(1), flat)
+    out: dict[int, set[int] | None] = {}
+    for m in _LOTS_IN_BLOCK.finditer(flat):
+        b = _n(m.group(2))
+        if b:
+            lots = _numbers(m.group(1))
+            if out.get(b, set()) is not None:
+                out[b] = (out.get(b) or set()) | lots
+    for m in _BLOCKS.finditer(flat):
+        for b in _numbers(m.group(1)):
+            if b and b not in out:
+                out[b] = None
+    return {str(b): sorted(v) if v is not None else None for b, v in sorted(out.items()) if 0 < b < 200}
+
+
 def _excerpt(text: str, pat: str, width: int = 300) -> list[str]:
     flat = re.sub(r"\s+", " ", text)
     return [flat[max(0, m.start() - width // 2): m.end() + width // 2] for m in re.finditer(pat, flat, re.I)][:3]
@@ -221,9 +277,15 @@ def build(entries: list[dict]) -> dict:
                                                            lambda t: classify(t)["features"])
             fp = transcripts.fingerprint(image_path(e))
             c["stale_transcriptions"] = sum(transcripts.is_stale(x, fp) is True for x in items)
+        # the blocks and lots it names, from olmOCR's reading when there is one (it reads lot and block
+        # numbers far better than Tesseract), else the report text
+        olm = ocrengines.load_reading("olmocr", f"r:{e['id']}")
+        c["blocks"] = lots_blocks(ocrengines.reading_text(olm) if olm else text)
         r = review.get(e["book_page"])
-        if r:
+        if r and "kind" in r:
             c.update(kind=r["kind"], note=r["note"], unrelated=r.get("unrelated", False), reviewed=True)
+        if r and "blocks" in r:  # read by eye: {"1": "1-34", "6": null, ...}
+            c["blocks"] = {b: sorted(_numbers(v)) if v else None for b, v in r["blocks"].items()}
         rows.append({"id": e["id"], "book_page": e["book_page"], "recorded": e["recorded"],
                      "docid": e["docid"], "plats": e["plats"], "plat_book_pages": e["plat_book_pages"],
                      **({"source": e["source"]} if e.get("source") else {}), **c})

@@ -18,6 +18,7 @@
    "pages": 1,
    "words": 518,
    "transcribed": 0,
+   "blocks": {},
    "note": "affidavit of possession, land outside the plat",
    "unrelated": true,
    "reviewed": true
@@ -44,7 +45,8 @@
    "until_year": null,
    "pages": 3,
    "words": 1142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4442333",
@@ -69,7 +71,171 @@
    "until_year": null,
    "pages": 3,
    "words": 1198,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "2": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "3": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
   },
   {
    "id": "4443151",
@@ -92,7 +258,159 @@
    "until_year": null,
    "pages": 6,
    "words": 2815,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "2": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54
+    ],
+    "3": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     354
+    ],
+    "4": [
+     1
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
   },
   {
    "id": "4443152",
@@ -113,7 +431,8 @@
    "until_year": null,
    "pages": 7,
    "words": 3299,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4591418",
@@ -138,7 +457,8 @@
    "until_year": null,
    "pages": 5,
    "words": 2183,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4590868",
@@ -158,6 +478,9 @@
    "pages": 1,
    "words": 313,
    "transcribed": 0,
+   "blocks": {
+    "3": null
+   },
    "note": "road vacation petition, Roesland Lane in Mission Ridge",
    "unrelated": true,
    "reviewed": true
@@ -179,7 +502,8 @@
    "until_year": null,
    "pages": 1,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1733572",
@@ -219,7 +543,8 @@
     "racial restriction",
     "renewal"
    ],
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1732633",
@@ -239,6 +564,7 @@
    "pages": 1,
    "words": 102,
    "transcribed": 0,
+   "blocks": {},
    "note": "heirship affidavit, land in Sec 36-14-25",
    "unrelated": true,
    "reviewed": true
@@ -308,6 +634,7 @@
     ]
    },
    "stale_transcriptions": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for CEDARVALE (Kansas City Investment Company and lot owners)",
    "unrelated": false,
    "reviewed": true
@@ -330,6 +657,7 @@
    "pages": 1,
    "words": 59,
    "transcribed": 0,
+   "blocks": {},
    "note": "heirship affidavit, land in Sec 18-13-24",
    "unrelated": true,
    "reviewed": true
@@ -351,7 +679,8 @@
    "until_year": null,
    "pages": 1,
    "words": 284,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1732379",
@@ -372,7 +701,8 @@
    "until_year": null,
    "pages": 2,
    "words": 702,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1733502",
@@ -392,6 +722,7 @@
    "pages": 1,
    "words": 236,
    "transcribed": 0,
+   "blocks": {},
    "note": "road right-of-way release to Johnson County",
    "unrelated": true,
    "reviewed": true
@@ -415,7 +746,8 @@
    "until_year": null,
    "pages": 2,
    "words": 522,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1733539",
@@ -438,7 +770,8 @@
    "until_year": null,
    "pages": 3,
    "words": 1080,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1733540",
@@ -458,6 +791,7 @@
    "pages": 1,
    "words": 17,
    "transcribed": 0,
+   "blocks": {},
    "note": "marital-status affidavit",
    "unrelated": false,
    "reviewed": true
@@ -489,6 +823,7 @@
     "racial restriction"
    ],
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for MISSION VALLEY WEST (all lot owners)",
    "unrelated": false,
    "reviewed": true
@@ -514,7 +849,8 @@
    "until_year": null,
    "pages": 6,
    "words": 1186,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2370256",
@@ -539,7 +875,35 @@
    "until_year": null,
    "pages": 10,
    "words": 1923,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "9": null,
+    "10": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "2509043",
@@ -559,6 +923,21 @@
    "pages": 2,
    "words": 302,
    "transcribed": 0,
+   "blocks": {
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null,
+    "10": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null,
+    "16": null
+   },
    "note": "Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake",
    "unrelated": false,
    "reviewed": true
@@ -580,7 +959,8 @@
    "until_year": null,
    "pages": 2,
    "words": 441,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3294928",
@@ -599,7 +979,27 @@
    "until_year": null,
    "pages": 1,
    "words": 192,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "35": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
   },
   {
    "id": "3433676",
@@ -618,7 +1018,10 @@
    "until_year": null,
    "pages": 1,
    "words": 158,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "40": null
+   }
   },
   {
    "id": "3433690",
@@ -643,7 +1046,26 @@
    "until_year": null,
    "pages": 4,
    "words": 1402,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "2": null,
+    "3": null,
+    "4": null
+   }
   },
   {
    "id": "3563607",
@@ -666,7 +1088,10 @@
    "until_year": null,
    "pages": 4,
    "words": 829,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null
+   }
   },
   {
    "id": "3573529",
@@ -689,7 +1114,12 @@
    "until_year": null,
    "pages": 9,
    "words": 1296,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null
+   }
   },
   {
    "id": "3573623",
@@ -716,6 +1146,7 @@
     "racial restriction"
    ],
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest)",
    "unrelated": false,
    "reviewed": true
@@ -737,7 +1168,8 @@
    "until_year": null,
    "pages": 3,
    "words": 586,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4094190",
@@ -760,7 +1192,13 @@
    "until_year": null,
    "pages": 7,
    "words": 2029,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "17": [],
+    "18": [
+     1
+    ]
+   }
   },
   {
    "id": "4093668",
@@ -782,6 +1220,7 @@
    "pages": 1,
    "words": 137,
    "transcribed": 0,
+   "blocks": {},
    "note": "death certificate",
    "unrelated": true,
    "reviewed": true
@@ -805,7 +1244,11 @@
    "until_year": null,
    "pages": 9,
    "words": 752,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "20": null,
+    "21": null
+   }
   },
   {
    "id": "4373697",
@@ -824,7 +1267,8 @@
    "until_year": null,
    "pages": 8,
    "words": 472,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4627257",
@@ -847,7 +1291,8 @@
    "until_year": null,
    "pages": 8,
    "words": 847,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4627589",
@@ -869,7 +1314,36 @@
    "until_year": null,
    "pages": 11,
    "words": 1072,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "8": null,
+    "9": null
+   }
   },
   {
    "id": "4627592",
@@ -890,7 +1364,8 @@
    "until_year": null,
    "pages": 10,
    "words": 1376,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4626802",
@@ -914,7 +1389,55 @@
    "until_year": null,
    "pages": 9,
    "words": 1361,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
   },
   {
    "id": "4758450",
@@ -950,7 +1473,73 @@
     "no apartments",
     "residence only"
    ],
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "35": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "36": null,
+    "37": null,
+    "38": null,
+    "39": null,
+    "40": null,
+    "41": null,
+    "42": null,
+    "43": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "45": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
   },
   {
    "id": "4757908",
@@ -971,6 +1560,7 @@
    "pages": 1,
    "words": 6,
    "transcribed": 0,
+   "blocks": {},
    "note": "heirship affidavit, Southridge",
    "unrelated": true,
    "reviewed": true
@@ -995,6 +1585,7 @@
    "pages": 3,
    "words": 580,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for MISSION VALLEY EAST lots 59-66 (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1019,7 +1610,8 @@
    "until_year": null,
    "pages": 3,
    "words": 1380,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1580250",
@@ -1041,6 +1633,7 @@
    "pages": 5,
    "words": 580,
    "transcribed": 0,
+   "blocks": {},
    "note": "Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners",
    "unrelated": false,
    "reviewed": true
@@ -1068,7 +1661,66 @@
    "until_year": null,
    "pages": 8,
    "words": 928,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "19": [
+     1,
+     4,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37
+    ],
+    "20": [
+     1,
+     4,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "21": [
+     1,
+     4,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ]
+   }
   },
   {
    "id": "1704255",
@@ -1090,6 +1742,7 @@
    "pages": 3,
    "words": 432,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for RIDGE VIEW HEIGHTS",
    "unrelated": false,
    "reviewed": true
@@ -1112,6 +1765,7 @@
    "pages": 1,
    "words": 53,
    "transcribed": 0,
+   "blocks": {},
    "note": "septic-tank covenant with the county health board, Antioch Acres",
    "unrelated": true,
    "reviewed": true
@@ -1136,7 +1790,8 @@
    "until_year": null,
    "pages": 3,
    "words": 603,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1812918",
@@ -1156,6 +1811,7 @@
    "pages": 3,
    "words": 13,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for PRAIRIE VALLEY NORTH (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1180,6 +1836,7 @@
    "pages": 3,
    "words": 5,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for PRAIRIE VALLEY NORTH ANNEX (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1202,6 +1859,7 @@
    "pages": 2,
    "words": 105,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for PRAIRIE RIDGE VIEW",
    "unrelated": false,
    "reviewed": true
@@ -1226,7 +1884,8 @@
    "until_year": null,
    "pages": 3,
    "words": 1116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1893636",
@@ -1248,6 +1907,7 @@
    "pages": 3,
    "words": 806,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for PRAIRIE VIEW #5 lots 1-30 (The Mission Land Company)",
    "unrelated": false,
    "reviewed": true
@@ -1270,6 +1930,28 @@
    "pages": 2,
    "words": 136,
    "transcribed": 0,
+   "blocks": {
+    "20": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "21": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
    "note": "J. C. Nichols Company reserves sewer right of way, Prairie Ridge Blocks 20-21",
    "unrelated": false,
    "reviewed": true
@@ -1292,6 +1974,7 @@
    "pages": 4,
    "words": 303,
    "transcribed": 0,
+   "blocks": {},
    "note": "prenuptial contract",
    "unrelated": true,
    "reviewed": true
@@ -1316,6 +1999,7 @@
    "pages": 3,
    "words": 336,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for JUNIPER HILL lots 1-18 (Frank C. Braun, Inc.)",
    "unrelated": false,
    "reviewed": true
@@ -1340,7 +2024,12 @@
    "until_year": null,
    "pages": 3,
    "words": 730,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     1
+    ]
+   }
   },
   {
    "id": "2070233",
@@ -1360,6 +2049,32 @@
    "pages": 3,
    "words": 784,
    "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "2": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
    "note": "Declaration of Restrictions for NALLANDS (Kansas City Investment Company and owners)",
    "unrelated": false,
    "reviewed": true
@@ -1381,7 +2096,12 @@
    "until_year": null,
    "pages": 1,
    "words": 69,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     4
+    ]
+   }
   },
   {
    "id": "2303186",
@@ -1404,7 +2124,11 @@
    "until_year": null,
    "pages": 2,
    "words": 457,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "3": null,
+    "4": null
+   }
   },
   {
    "id": "2303188",
@@ -1424,6 +2148,12 @@
    "pages": 1,
    "words": 18,
    "transcribed": 0,
+   "blocks": {
+    "2": [
+     2,
+     3
+    ]
+   },
    "note": "ratification of dedication, Prairie Manor",
    "unrelated": false,
    "reviewed": true
@@ -1446,6 +2176,7 @@
    "pages": 1,
    "words": 43,
    "transcribed": 0,
+   "blocks": {},
    "note": "federal tax lien discharge",
    "unrelated": true,
    "reviewed": true
@@ -1468,6 +2199,7 @@
    "pages": 1,
    "words": 98,
    "transcribed": 0,
+   "blocks": {},
    "note": "1917 identity affidavit, land in Sec 25-14-22",
    "unrelated": true,
    "reviewed": true
@@ -1492,6 +2224,7 @@
    "pages": 1,
    "words": 358,
    "transcribed": 0,
+   "blocks": {},
    "note": "modifies Southmoor Gardens' building lines",
    "unrelated": true,
    "reviewed": true
@@ -1514,6 +2247,7 @@
    "pages": 1,
    "words": 16,
    "transcribed": 0,
+   "blocks": {},
    "note": "affidavit concerning Bradley Hills Addition",
    "unrelated": true,
    "reviewed": true
@@ -1536,6 +2270,7 @@
    "pages": 1,
    "words": 16,
    "transcribed": 0,
+   "blocks": {},
    "note": "surveyor's affidavit for Ferndale",
    "unrelated": true,
    "reviewed": true
@@ -1567,6 +2302,7 @@
     "residence only"
    ],
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1598,6 +2334,7 @@
     "residence only"
    ],
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for JORDAN PLACE",
    "unrelated": false,
    "reviewed": true
@@ -1620,6 +2357,7 @@
    "pages": 2,
    "words": 698,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for PAWNEE MANOR (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -1645,6 +2383,12 @@
    "pages": 3,
    "words": 981,
    "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null
+   },
    "note": "sewer connection contract, Leawood Hills",
    "unrelated": true,
    "reviewed": true
@@ -1670,6 +2414,15 @@
    "pages": 3,
    "words": 987,
    "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null,
+    "40": [
+     1
+    ]
+   },
    "note": "sewer connection contract, Leawood Hills",
    "unrelated": true,
    "reviewed": true
@@ -1691,7 +2444,8 @@
    "until_year": null,
    "pages": 2,
    "words": 474,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3360475",
@@ -1711,6 +2465,7 @@
    "pages": 2,
    "words": 225,
    "transcribed": 0,
+   "blocks": {},
    "note": "Homes Association Declaration by Town and Country Estates, Inc., under the declaration at MISC 72/287",
    "unrelated": false,
    "reviewed": true
@@ -1735,6 +2490,7 @@
    "pages": 2,
    "words": 1093,
    "transcribed": 0,
+   "blocks": {},
    "note": "option agreement for land in Sec 6",
    "unrelated": true,
    "reviewed": true
@@ -1757,6 +2513,7 @@
    "pages": 5,
    "words": 600,
    "transcribed": 0,
+   "blocks": {},
    "note": "articles of incorporation of a church",
    "unrelated": true,
    "reviewed": true
@@ -1786,6 +2543,18 @@
     "homes association assessments"
    ],
    "transcribed": 0,
+   "blocks": {
+    "3": [
+     1,
+     15
+    ],
+    "4": [
+     7,
+     11,
+     12,
+     13
+    ]
+   },
    "note": "county commission minutes, 77th Street benefit district 147",
    "unrelated": false,
    "reviewed": true
@@ -1815,6 +2584,12 @@
     "homes association assessments"
    ],
    "transcribed": 0,
+   "blocks": {
+    "1": [
+     3,
+     5
+    ]
+   },
    "note": "county commission minutes, Pawnee Street benefit district 148",
    "unrelated": false,
    "reviewed": true
@@ -1839,6 +2614,7 @@
    "pages": 2,
    "words": 300,
    "transcribed": 0,
+   "blocks": {},
    "note": "county order classifying platted lots into minimum ground floor area districts",
    "unrelated": false,
    "reviewed": true
@@ -1863,6 +2639,21 @@
    "pages": 2,
    "words": 295,
    "transcribed": 0,
+   "blocks": {
+    "3": [
+     1,
+     2,
+     3
+    ],
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
    "note": "county order classifying platted lots into minimum ground floor area districts",
    "unrelated": false,
    "reviewed": true
@@ -1886,7 +2677,18 @@
    "until_year": null,
    "pages": 3,
    "words": 455,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "21": [
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ]
+   }
   },
   {
    "id": "4096810",
@@ -1906,6 +2708,7 @@
    "pages": 1,
    "words": 139,
    "transcribed": 0,
+   "blocks": {},
    "note": "federal tax lien",
    "unrelated": true,
    "reviewed": true
@@ -1930,7 +2733,8 @@
    "until_year": null,
    "pages": 5,
    "words": 1108,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4166926",
@@ -1950,6 +2754,7 @@
    "pages": 2,
    "words": 89,
    "transcribed": 0,
+   "blocks": {},
    "note": "Homes Association Declaration for TOWN & COUNTRY ESTATES lots 98-112",
    "unrelated": false,
    "reviewed": true
@@ -1971,7 +2776,14 @@
    "until_year": null,
    "pages": 2,
    "words": 338,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     1,
+     2
+    ],
+    "7": null
+   }
   },
   {
    "id": "4166065",
@@ -1991,6 +2803,7 @@
    "pages": 1,
    "words": 12,
    "transcribed": 0,
+   "blocks": {},
    "note": "fence viewers' order, Sec 5-13-23",
    "unrelated": true,
    "reviewed": true
@@ -2017,7 +2830,8 @@
    "until_year": null,
    "pages": 3,
    "words": 588,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4504850",
@@ -2042,7 +2856,8 @@
    "until_year": null,
    "pages": 5,
    "words": 1902,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4504851",
@@ -2063,7 +2878,8 @@
    "until_year": null,
    "pages": 2,
    "words": 419,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4606248",
@@ -2083,6 +2899,7 @@
    "pages": 3,
    "words": 95,
    "transcribed": 0,
+   "blocks": {},
    "note": "Declaration of Restrictions for PRAIRIE ESTATES lots 1-84 (Prairie Estates Development Company)",
    "unrelated": false,
    "reviewed": true
@@ -2104,7 +2921,10 @@
    "until_year": null,
    "pages": 1,
    "words": 207,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "9": null
+   }
   },
   {
    "id": "2627147",
@@ -2124,6 +2944,7 @@
    "pages": 1,
    "words": 230,
    "transcribed": 0,
+   "blocks": {},
    "note": "inheritance tax order",
    "unrelated": true,
    "reviewed": true
@@ -2151,7 +2972,8 @@
    "until_year": null,
    "pages": 10,
    "words": 2004,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3082563",
@@ -2171,6 +2993,7 @@
    "pages": 1,
    "words": 46,
    "transcribed": 0,
+   "blocks": {},
    "note": "title affidavit, Sec 35-14-24",
    "unrelated": true,
    "reviewed": true
@@ -2193,6 +3016,7 @@
    "pages": 1,
    "words": 7,
    "transcribed": 0,
+   "blocks": {},
    "note": "title affidavit, Sec 35-14-24",
    "unrelated": true,
    "reviewed": true
@@ -2215,6 +3039,7 @@
    "pages": 2,
    "words": 190,
    "transcribed": 0,
+   "blocks": {},
    "note": "oil company lease, Roeland Park",
    "unrelated": true,
    "reviewed": true
@@ -2237,6 +3062,7 @@
    "pages": 2,
    "words": 234,
    "transcribed": 0,
+   "blocks": {},
    "note": "sheriff's certificate of purchase",
    "unrelated": true,
    "reviewed": true
@@ -2259,6 +3085,7 @@
    "pages": 1,
    "words": 224,
    "transcribed": 0,
+   "blocks": {},
    "note": "heirship affidavit",
    "unrelated": true,
    "reviewed": true
@@ -2281,6 +3108,7 @@
    "pages": 2,
    "words": 263,
    "transcribed": 0,
+   "blocks": {},
    "note": "county resolution on the Monticello Township zoning board",
    "unrelated": true,
    "reviewed": true
@@ -2305,6 +3133,7 @@
    "pages": 7,
    "words": 1317,
    "transcribed": 0,
+   "blocks": {},
    "note": "articles of incorporation certified by the Secretary of State",
    "unrelated": false,
    "reviewed": true
@@ -2330,7 +3159,8 @@
    "until_year": null,
    "pages": 5,
    "words": 1021,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2558643",
@@ -2351,7 +3181,8 @@
    "until_year": null,
    "pages": 11,
    "words": 2702,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3121879",
@@ -2374,7 +3205,8 @@
    "until_year": null,
    "pages": 36,
    "words": 7455,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3270980",
@@ -2397,7 +3229,8 @@
    "until_year": null,
    "pages": 4,
    "words": 911,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3270981",
@@ -2418,7 +3251,8 @@
    "until_year": null,
    "pages": 2,
    "words": 439,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3382741",
@@ -2440,7 +3274,8 @@
    "until_year": null,
    "pages": 14,
    "words": 14250,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3384377",
@@ -2461,7 +3296,10 @@
    "until_year": null,
    "pages": 4,
    "words": 982,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "11": null
+   }
   },
   {
    "id": "3384379",
@@ -2482,7 +3320,17 @@
    "until_year": null,
    "pages": 3,
    "words": 884,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   }
   },
   {
    "id": "3383245",
@@ -2503,7 +3351,17 @@
    "until_year": null,
    "pages": 2,
    "words": 442,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   }
   },
   {
    "id": "3482539",
@@ -2524,7 +3382,15 @@
    "until_year": null,
    "pages": 2,
    "words": 442,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "13": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
   },
   {
    "id": "3482540",
@@ -2545,7 +3411,15 @@
    "until_year": null,
    "pages": 3,
    "words": 908,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "13": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
   },
   {
    "id": "3482541",
@@ -2566,7 +3440,15 @@
    "until_year": null,
    "pages": 4,
    "words": 978,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "13": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
   },
   {
    "id": "3589642",
@@ -2589,7 +3471,8 @@
    "until_year": null,
    "pages": 46,
    "words": 15259,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3696632",
@@ -2612,7 +3495,8 @@
    "until_year": null,
    "pages": 201,
    "words": 43042,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3800239",
@@ -2633,7 +3517,8 @@
    "until_year": null,
    "pages": 6,
    "words": 1428,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4003648",
@@ -2655,7 +3540,8 @@
    "until_year": null,
    "pages": 22,
    "words": 5157,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4003650",
@@ -2678,7 +3564,8 @@
    "until_year": null,
    "pages": 43,
    "words": 8340,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3715367",
@@ -2700,7 +3587,8 @@
    "until_year": null,
    "pages": 35,
    "words": 13254,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3859075",
@@ -2721,7 +3609,8 @@
    "until_year": null,
    "pages": 118,
    "words": 4348,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4757862",
@@ -2739,7 +3628,32 @@
    "until_year": null,
    "pages": 2,
    "words": 252,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
   },
   {
    "id": "4758461",
@@ -2759,7 +3673,8 @@
    "until_year": null,
    "pages": 2,
    "words": 401,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4758862",
@@ -2777,7 +3692,55 @@
    "until_year": null,
    "pages": 2,
    "words": 17,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
   },
   {
    "id": "3219036",
@@ -2797,7 +3760,8 @@
    "until_year": null,
    "pages": 3,
    "words": 616,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3220185",
@@ -2815,7 +3779,8 @@
    "until_year": null,
    "pages": 2,
    "words": 476,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3640074",
@@ -2833,7 +3798,8 @@
    "until_year": null,
    "pages": 2,
    "words": 9,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1545419",
@@ -2851,7 +3817,8 @@
    "until_year": null,
    "pages": 5,
    "words": 249,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1545442",
@@ -2869,7 +3836,8 @@
    "until_year": null,
    "pages": 2,
    "words": 164,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2384648",
@@ -2889,7 +3857,8 @@
    "until_year": null,
    "pages": 2,
    "words": 372,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3082977",
@@ -2909,7 +3878,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3172149",
@@ -2927,7 +3897,8 @@
    "until_year": null,
    "pages": 1,
    "words": 24,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341995",
@@ -2945,7 +3916,8 @@
    "until_year": null,
    "pages": 1,
    "words": 130,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341997",
@@ -2965,7 +3937,8 @@
    "until_year": null,
    "pages": 1,
    "words": 141,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3343105",
@@ -2983,7 +3956,8 @@
    "until_year": null,
    "pages": 1,
    "words": 118,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341999",
@@ -3001,7 +3975,8 @@
    "until_year": null,
    "pages": 1,
    "words": 58,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3342000",
@@ -3019,7 +3994,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3342002",
@@ -3037,7 +4013,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3343108",
@@ -3055,7 +4032,8 @@
    "until_year": null,
    "pages": 1,
    "words": 94,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3442112",
@@ -3073,7 +4051,8 @@
    "until_year": null,
    "pages": 1,
    "words": 91,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3480230",
@@ -3091,7 +4070,8 @@
    "until_year": null,
    "pages": 1,
    "words": 62,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3857248",
@@ -3111,7 +4091,8 @@
    "until_year": null,
    "pages": 1,
    "words": 114,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3857000",
@@ -3131,7 +4112,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3060194",
@@ -3151,7 +4133,8 @@
    "until_year": null,
    "pages": 8,
    "words": 127,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3049747",
@@ -3176,7 +4159,8 @@
    "until_year": null,
    "pages": 9,
    "words": 3506,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3574747",
@@ -3197,6 +4181,9 @@
    "pages": 2,
    "words": 449,
    "transcribed": 0,
+   "blocks": {
+    "36": null
+   },
    "note": "race-only declaration on all of Block 36, 40 years, no renewal",
    "unrelated": false,
    "reviewed": true
@@ -3217,7 +4204,15 @@
    "until_year": null,
    "pages": 3,
    "words": 562,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "51": null,
+    "52": null,
+    "53": null,
+    "54": null,
+    "55": null,
+    "56": null
+   }
   },
   {
    "id": "4227153",
@@ -3235,7 +4230,12 @@
    "until_year": null,
    "pages": 2,
    "words": 283,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     13
+    ]
+   }
   },
   {
    "id": "4494628",
@@ -3255,7 +4255,8 @@
    "until_year": null,
    "pages": 3,
    "words": 539,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1475079",
@@ -3273,7 +4274,55 @@
    "until_year": null,
    "pages": 3,
    "words": 31,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   }
   },
   {
    "id": "3138198",
@@ -3291,7 +4340,8 @@
    "until_year": null,
    "pages": 10,
    "words": 58,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3138542",
@@ -3311,7 +4361,27 @@
    "until_year": null,
    "pages": 12,
    "words": 3350,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": null,
+    "6": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
   },
   {
    "id": "3359781",
@@ -3329,7 +4399,8 @@
    "until_year": null,
    "pages": 2,
    "words": 65,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3639994",
@@ -3347,7 +4418,8 @@
    "until_year": null,
    "pages": 2,
    "words": 91,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3933884",
@@ -3365,7 +4437,8 @@
    "until_year": null,
    "pages": 2,
    "words": 3,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3934772",
@@ -3383,7 +4456,8 @@
    "until_year": null,
    "pages": 2,
    "words": 24,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4388986",
@@ -3403,7 +4477,8 @@
    "until_year": null,
    "pages": 2,
    "words": 464,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2626339",
@@ -3421,7 +4496,16 @@
    "until_year": null,
    "pages": 2,
    "words": 460,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "14": [
+     1
+    ],
+    "15": [
+     4,
+     37
+    ]
+   }
   },
   {
    "id": "2754955",
@@ -3441,7 +4525,8 @@
    "until_year": null,
    "pages": 2,
    "words": 167,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2828494",
@@ -3461,7 +4546,8 @@
    "until_year": null,
    "pages": 1,
    "words": 161,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2848839",
@@ -3481,7 +4567,10 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": null
+   }
   },
   {
    "id": "2999025",
@@ -3501,7 +4590,8 @@
    "until_year": null,
    "pages": 1,
    "words": 109,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2997818",
@@ -3521,7 +4611,12 @@
    "until_year": null,
    "pages": 1,
    "words": 158,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "31": [
+     11
+    ]
+   }
   },
   {
    "id": "3016362",
@@ -3539,7 +4634,8 @@
    "until_year": null,
    "pages": 1,
    "words": 110,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3112931",
@@ -3557,7 +4653,8 @@
    "until_year": null,
    "pages": 1,
    "words": 78,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3120172",
@@ -3578,7 +4675,8 @@
    "until_year": null,
    "pages": 1,
    "words": 142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3172460",
@@ -3596,7 +4694,15 @@
    "until_year": null,
    "pages": 2,
    "words": 320,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "24": [
+     3
+    ],
+    "29": [
+     2
+    ]
+   }
   },
   {
    "id": "3185697",
@@ -3614,7 +4720,8 @@
    "until_year": null,
    "pages": 1,
    "words": 59,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3224362",
@@ -3634,7 +4741,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3307881",
@@ -3652,7 +4760,8 @@
    "until_year": null,
    "pages": 1,
    "words": 7,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321249",
@@ -3670,7 +4779,8 @@
    "until_year": null,
    "pages": 1,
    "words": 126,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3322267",
@@ -3690,7 +4800,8 @@
    "until_year": null,
    "pages": 1,
    "words": 141,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3322269",
@@ -3710,7 +4821,8 @@
    "until_year": null,
    "pages": 1,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321253",
@@ -3728,7 +4840,8 @@
    "until_year": null,
    "pages": 1,
    "words": 120,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321255",
@@ -3746,7 +4859,8 @@
    "until_year": null,
    "pages": 1,
    "words": 83,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3322271",
@@ -3764,7 +4878,8 @@
    "until_year": null,
    "pages": 1,
    "words": 14,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321428",
@@ -3782,7 +4897,8 @@
    "until_year": null,
    "pages": 1,
    "words": 75,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3342533",
@@ -3802,7 +4918,8 @@
    "until_year": null,
    "pages": 1,
    "words": 112,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372871",
@@ -3822,7 +4939,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373129",
@@ -3840,7 +4958,8 @@
    "until_year": null,
    "pages": 1,
    "words": 72,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372320",
@@ -3858,7 +4977,8 @@
    "until_year": null,
    "pages": 1,
    "words": 45,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373131",
@@ -3876,7 +4996,8 @@
    "until_year": null,
    "pages": 1,
    "words": 105,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3413680",
@@ -3894,7 +5015,8 @@
    "until_year": null,
    "pages": 1,
    "words": 50,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412033",
@@ -3912,7 +5034,8 @@
    "until_year": null,
    "pages": 1,
    "words": 103,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412366",
@@ -3932,7 +5055,8 @@
    "until_year": null,
    "pages": 1,
    "words": 106,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3413364",
@@ -3952,7 +5076,8 @@
    "until_year": null,
    "pages": 1,
    "words": 107,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429854",
@@ -3972,7 +5097,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429856",
@@ -3990,7 +5116,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429857",
@@ -4010,7 +5137,8 @@
    "until_year": null,
    "pages": 1,
    "words": 105,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429858",
@@ -4030,7 +5158,8 @@
    "until_year": null,
    "pages": 1,
    "words": 141,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429859",
@@ -4048,7 +5177,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428962",
@@ -4066,7 +5196,8 @@
    "until_year": null,
    "pages": 1,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428963",
@@ -4086,7 +5217,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428964",
@@ -4104,7 +5236,8 @@
    "until_year": null,
    "pages": 1,
    "words": 108,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429860",
@@ -4124,7 +5257,8 @@
    "until_year": null,
    "pages": 1,
    "words": 79,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429861",
@@ -4142,7 +5276,8 @@
    "until_year": null,
    "pages": 1,
    "words": 105,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429863",
@@ -4160,7 +5295,8 @@
    "until_year": null,
    "pages": 1,
    "words": 24,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429864",
@@ -4180,7 +5316,8 @@
    "until_year": null,
    "pages": 1,
    "words": 160,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428968",
@@ -4198,7 +5335,8 @@
    "until_year": null,
    "pages": 1,
    "words": 58,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428969",
@@ -4216,7 +5354,8 @@
    "until_year": null,
    "pages": 1,
    "words": 147,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428970",
@@ -4236,7 +5375,8 @@
    "until_year": null,
    "pages": 1,
    "words": 147,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428971",
@@ -4254,7 +5394,8 @@
    "until_year": null,
    "pages": 1,
    "words": 131,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440620",
@@ -4274,7 +5415,8 @@
    "until_year": null,
    "pages": 1,
    "words": 119,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441665",
@@ -4294,7 +5436,8 @@
    "until_year": null,
    "pages": 1,
    "words": 71,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440679",
@@ -4314,7 +5457,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440680",
@@ -4334,7 +5478,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440681",
@@ -4352,7 +5497,8 @@
    "until_year": null,
    "pages": 1,
    "words": 128,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440683",
@@ -4372,7 +5518,8 @@
    "until_year": null,
    "pages": 1,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440732",
@@ -4390,7 +5537,8 @@
    "until_year": null,
    "pages": 1,
    "words": 113,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440735",
@@ -4408,7 +5556,8 @@
    "until_year": null,
    "pages": 1,
    "words": 13,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3442027",
@@ -4428,7 +5577,8 @@
    "until_year": null,
    "pages": 1,
    "words": 97,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3460575",
@@ -4448,7 +5598,8 @@
    "until_year": null,
    "pages": 1,
    "words": 112,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3461836",
@@ -4468,7 +5619,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3479588",
@@ -4488,7 +5640,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3503533",
@@ -4506,7 +5659,8 @@
    "until_year": null,
    "pages": 1,
    "words": 74,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3503534",
@@ -4526,7 +5680,8 @@
    "until_year": null,
    "pages": 1,
    "words": 84,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3492274",
@@ -4546,7 +5701,8 @@
    "until_year": null,
    "pages": 1,
    "words": 94,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3581121",
@@ -4564,7 +5720,8 @@
    "until_year": null,
    "pages": 1,
    "words": 63,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3604624",
@@ -4584,7 +5741,8 @@
    "until_year": null,
    "pages": 1,
    "words": 116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605287",
@@ -4604,7 +5762,8 @@
    "until_year": null,
    "pages": 1,
    "words": 52,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606483",
@@ -4624,7 +5783,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605391",
@@ -4644,7 +5804,8 @@
    "until_year": null,
    "pages": 1,
    "words": 118,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605392",
@@ -4664,7 +5825,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605394",
@@ -4682,7 +5844,8 @@
    "until_year": null,
    "pages": 1,
    "words": 62,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606487",
@@ -4702,7 +5865,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605397",
@@ -4722,7 +5886,8 @@
    "until_year": null,
    "pages": 1,
    "words": 154,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605407",
@@ -4742,7 +5907,8 @@
    "until_year": null,
    "pages": 1,
    "words": 159,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3631726",
@@ -4762,7 +5928,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3631728",
@@ -4782,7 +5949,8 @@
    "until_year": null,
    "pages": 1,
    "words": 113,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3630764",
@@ -4802,7 +5970,8 @@
    "until_year": null,
    "pages": 1,
    "words": 125,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3631731",
@@ -4820,7 +5989,8 @@
    "until_year": null,
    "pages": 1,
    "words": 84,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3631732",
@@ -4840,7 +6010,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3670939",
@@ -4860,7 +6031,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3670949",
@@ -4880,7 +6052,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3670250",
@@ -4900,7 +6073,8 @@
    "until_year": null,
    "pages": 1,
    "words": 137,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3670259",
@@ -4920,7 +6094,8 @@
    "until_year": null,
    "pages": 1,
    "words": 147,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3670977",
@@ -4941,7 +6116,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3671012",
@@ -4959,7 +6135,8 @@
    "until_year": null,
    "pages": 1,
    "words": 110,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3712460",
@@ -4979,7 +6156,8 @@
    "until_year": null,
    "pages": 1,
    "words": 103,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3712463",
@@ -4997,7 +6175,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3711355",
@@ -5017,7 +6196,8 @@
    "until_year": null,
    "pages": 1,
    "words": 66,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3710342",
@@ -5035,7 +6215,8 @@
    "until_year": null,
    "pages": 1,
    "words": 47,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3710469",
@@ -5053,7 +6234,8 @@
    "until_year": null,
    "pages": 1,
    "words": 15,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3749278",
@@ -5073,7 +6255,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3790591",
@@ -5091,7 +6274,8 @@
    "until_year": null,
    "pages": 1,
    "words": 76,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3791363",
@@ -5109,7 +6293,8 @@
    "until_year": null,
    "pages": 1,
    "words": 42,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3790392",
@@ -5129,7 +6314,8 @@
    "until_year": null,
    "pages": 1,
    "words": 116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3863716",
@@ -5149,7 +6335,8 @@
    "until_year": null,
    "pages": 1,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3863717",
@@ -5169,7 +6356,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3840445",
@@ -5189,7 +6377,8 @@
    "until_year": null,
    "pages": 1,
    "words": 104,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3840480",
@@ -5209,7 +6398,8 @@
    "until_year": null,
    "pages": 1,
    "words": 141,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3840481",
@@ -5229,7 +6419,8 @@
    "until_year": null,
    "pages": 1,
    "words": 113,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3839479",
@@ -5249,7 +6440,8 @@
    "until_year": null,
    "pages": 1,
    "words": 156,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3840484",
@@ -5269,7 +6461,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3839481",
@@ -5289,7 +6482,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3839483",
@@ -5309,7 +6503,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3839485",
@@ -5329,7 +6524,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3840530",
@@ -5349,7 +6545,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3880175",
@@ -5369,7 +6566,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3897536",
@@ -5389,7 +6587,8 @@
    "until_year": null,
    "pages": 1,
    "words": 126,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3897575",
@@ -5409,7 +6608,8 @@
    "until_year": null,
    "pages": 1,
    "words": 137,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3924823",
@@ -5429,7 +6629,8 @@
    "until_year": null,
    "pages": 1,
    "words": 127,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3950820",
@@ -5449,7 +6650,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3949350",
@@ -5469,7 +6671,8 @@
    "until_year": null,
    "pages": 1,
    "words": 111,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3951151",
@@ -5489,7 +6692,8 @@
    "until_year": null,
    "pages": 1,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2530865",
@@ -5509,7 +6713,8 @@
    "until_year": null,
    "pages": 1,
    "words": 119,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2530866",
@@ -5529,7 +6734,8 @@
    "until_year": null,
    "pages": 1,
    "words": 142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2531848",
@@ -5549,7 +6755,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2531850",
@@ -5569,7 +6776,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2530868",
@@ -5589,7 +6797,8 @@
    "until_year": null,
    "pages": 1,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3510172",
@@ -5609,7 +6818,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3511034",
@@ -5629,7 +6839,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3660444",
@@ -5649,7 +6860,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3676740",
@@ -5669,7 +6881,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3677125",
@@ -5687,7 +6900,8 @@
    "until_year": null,
    "pages": 1,
    "words": 130,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716450",
@@ -5707,7 +6921,8 @@
    "until_year": null,
    "pages": 1,
    "words": 124,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716455",
@@ -5727,7 +6942,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717494",
@@ -5747,7 +6963,8 @@
    "until_year": null,
    "pages": 1,
    "words": 111,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717500",
@@ -5767,7 +6984,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717507",
@@ -5787,7 +7005,8 @@
    "until_year": null,
    "pages": 1,
    "words": 141,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717515",
@@ -5807,7 +7026,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716652",
@@ -5827,7 +7047,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716659",
@@ -5847,7 +7068,8 @@
    "until_year": null,
    "pages": 1,
    "words": 141,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717538",
@@ -5867,7 +7089,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716675",
@@ -5887,7 +7110,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717550",
@@ -5907,7 +7131,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716696",
@@ -5927,7 +7152,8 @@
    "until_year": null,
    "pages": 1,
    "words": 118,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717564",
@@ -5947,7 +7173,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716709",
@@ -5967,7 +7194,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717573",
@@ -5985,7 +7213,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716249",
@@ -6005,7 +7234,8 @@
    "until_year": null,
    "pages": 1,
    "words": 119,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716337",
@@ -6025,7 +7255,8 @@
    "until_year": null,
    "pages": 1,
    "words": 128,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717279",
@@ -6045,7 +7276,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3739352",
@@ -6065,7 +7297,8 @@
    "until_year": null,
    "pages": 1,
    "words": 80,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3767543",
@@ -6085,7 +7318,8 @@
    "until_year": null,
    "pages": 1,
    "words": 163,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3767545",
@@ -6105,7 +7339,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3786088",
@@ -6125,7 +7360,8 @@
    "until_year": null,
    "pages": 1,
    "words": 156,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3794621",
@@ -6145,7 +7381,8 @@
    "until_year": null,
    "pages": 1,
    "words": 120,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3809441",
@@ -6165,7 +7402,8 @@
    "until_year": null,
    "pages": 1,
    "words": 142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3816311",
@@ -6185,7 +7423,8 @@
    "until_year": null,
    "pages": 1,
    "words": 141,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3794050",
@@ -6205,7 +7444,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3805047",
@@ -6223,7 +7463,8 @@
    "until_year": null,
    "pages": 1,
    "words": 127,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3805218",
@@ -6243,7 +7484,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3846117",
@@ -6263,7 +7505,8 @@
    "until_year": null,
    "pages": 1,
    "words": 142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3847663",
@@ -6283,7 +7526,8 @@
    "until_year": null,
    "pages": 1,
    "words": 137,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3846739",
@@ -6303,7 +7547,8 @@
    "until_year": null,
    "pages": 1,
    "words": 137,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3900614",
@@ -6323,7 +7568,8 @@
    "until_year": null,
    "pages": 3,
    "words": 432,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3900663",
@@ -6343,7 +7589,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3926020",
@@ -6361,7 +7608,8 @@
    "until_year": null,
    "pages": 1,
    "words": 131,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3926963",
@@ -6381,7 +7629,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3994761",
@@ -6401,7 +7650,8 @@
    "until_year": null,
    "pages": 1,
    "words": 130,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1733499",
@@ -6419,7 +7669,14 @@
    "until_year": null,
    "pages": 2,
    "words": 527,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null,
+    "10": null
+   }
   },
   {
    "id": "1732383",
@@ -6441,7 +7698,10 @@
    "until_year": null,
    "pages": 7,
    "words": 2874,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "9": null
+   }
   },
   {
    "id": "2371429",
@@ -6461,7 +7721,8 @@
    "until_year": null,
    "pages": 7,
    "words": 2598,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3747601",
@@ -6482,7 +7743,44 @@
    "until_year": null,
    "pages": 9,
    "words": 1904,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "51": null,
+    "52": [
+     1,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "53": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "54": null,
+    "55": [
+     1
+    ],
+    "56": null
+   }
   },
   {
    "id": "3747658",
@@ -6500,7 +7798,8 @@
    "until_year": null,
    "pages": 3,
    "words": 420,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4374863",
@@ -6520,7 +7819,52 @@
    "until_year": null,
    "pages": 10,
    "words": 1308,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     1,
+     4,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70
+    ],
+    "13": null,
+    "14": null,
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "4375745",
@@ -6538,7 +7882,37 @@
    "until_year": null,
    "pages": 3,
    "words": 229,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     1,
+     4,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45
+    ],
+    "13": null,
+    "14": null,
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "4758462",
@@ -6558,7 +7932,58 @@
    "until_year": null,
    "pages": 9,
    "words": 188,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "2": null,
+    "3": null,
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
   },
   {
    "id": "4758464",
@@ -6578,7 +8003,58 @@
    "until_year": null,
    "pages": 11,
    "words": 513,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "2": null,
+    "3": null,
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
   },
   {
    "id": "4757945",
@@ -6599,7 +8075,24 @@
    "until_year": null,
    "pages": 5,
    "words": 453,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": [
+     1
+    ],
+    "9": null,
+    "10": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "1578913",
@@ -6620,7 +8113,65 @@
    "until_year": null,
    "pages": 8,
    "words": 1751,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     15,
+     16,
+     18
+    ],
+    "5": [
+     17,
+     22
+    ],
+    "6": [
+     17,
+     18,
+     19,
+     20,
+     24,
+     25,
+     26
+    ],
+    "8": [
+     1,
+     4,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "9": [
+     1,
+     4,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "10": null,
+    "11": [
+     23
+    ],
+    "12": null,
+    "13": null,
+    "14": [
+     14,
+     15,
+     33,
+     34
+    ],
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "1580139",
@@ -6640,7 +8191,65 @@
    "until_year": null,
    "pages": 3,
    "words": 324,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     15,
+     16,
+     18
+    ],
+    "5": [
+     17,
+     22
+    ],
+    "6": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     25,
+     26
+    ],
+    "8": [
+     1,
+     4,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "9": [
+     1,
+     4,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "10": [],
+    "11": [
+     23
+    ],
+    "12": null,
+    "13": null,
+    "14": [
+     14,
+     15,
+     33,
+     34
+    ],
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "1812923",
@@ -6658,7 +8267,19 @@
    "until_year": null,
    "pages": 2,
    "words": 2,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
   },
   {
    "id": "1813026",
@@ -6681,7 +8302,89 @@
    "until_year": null,
    "pages": 11,
    "words": 2535,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "13": null,
+    "17": [
+     1,
+     4,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "18": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "19": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "21": [
+     1,
+     4,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "22": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
   },
   {
    "id": "1812320",
@@ -6699,7 +8402,27 @@
    "until_year": null,
    "pages": 4,
    "words": 23,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "7": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
   },
   {
    "id": "1813047",
@@ -6717,7 +8440,27 @@
    "until_year": null,
    "pages": 4,
    "words": 7,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "7": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
   },
   {
    "id": "1893062",
@@ -6735,7 +8478,12 @@
    "until_year": null,
    "pages": 3,
    "words": 192,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "36": [
+     6
+    ]
+   }
   },
   {
    "id": "1893325",
@@ -6753,7 +8501,43 @@
    "until_year": null,
    "pages": 3,
    "words": 106,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "17": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "18": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
   },
   {
    "id": "1925482",
@@ -6775,7 +8559,33 @@
    "until_year": null,
    "pages": 6,
    "words": 983,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
   },
   {
    "id": "1945017",
@@ -6793,7 +8603,8 @@
    "until_year": null,
    "pages": 2,
    "words": 28,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1944562",
@@ -6814,7 +8625,23 @@
    "until_year": null,
    "pages": 9,
    "words": 1209,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "2": null,
+    "22": null,
+    "23": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
   },
   {
    "id": "1945694",
@@ -6832,7 +8659,8 @@
    "until_year": null,
    "pages": 2,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2071504",
@@ -6850,7 +8678,8 @@
    "until_year": null,
    "pages": 11,
    "words": 70,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2107703",
@@ -6868,7 +8697,10 @@
    "until_year": null,
    "pages": 4,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": null
+   }
   },
   {
    "id": "2107706",
@@ -6889,7 +8721,21 @@
    "until_year": null,
    "pages": 14,
    "words": 942,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "8": null,
+    "9": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null
+   }
   },
   {
    "id": "2107844",
@@ -6907,7 +8753,13 @@
    "until_year": null,
    "pages": 2,
    "words": 69,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": null,
+    "6": null,
+    "7": null,
+    "15": null
+   }
   },
   {
    "id": "2178846",
@@ -6925,7 +8777,16 @@
    "until_year": null,
    "pages": 2,
    "words": 357,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "9": [
+     6,
+     8,
+     9,
+     13,
+     14
+    ]
+   }
   },
   {
    "id": "2179272",
@@ -6943,7 +8804,21 @@
    "until_year": null,
    "pages": 2,
    "words": 125,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "17": null
+   }
   },
   {
    "id": "2423512",
@@ -6961,7 +8836,8 @@
    "until_year": null,
    "pages": 4,
    "words": 85,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2424677",
@@ -6979,7 +8855,8 @@
    "until_year": null,
    "pages": 2,
    "words": 49,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2423883",
@@ -7003,7 +8880,40 @@
    "until_year": null,
    "pages": 10,
    "words": 2624,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "2": [
+     1,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "21": [
+     5,
+     9
+    ],
+    "22": null,
+    "23": null
+   }
   },
   {
    "id": "2423885",
@@ -7023,7 +8933,97 @@
    "until_year": null,
    "pages": 2,
    "words": 468,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "21": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "22": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "23": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "24": [
+     1,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ]
+   }
   },
   {
    "id": "2543498",
@@ -7041,7 +9041,8 @@
    "until_year": null,
    "pages": 2,
    "words": 20,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2764524",
@@ -7059,7 +9060,24 @@
    "until_year": null,
    "pages": 9,
    "words": 306,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "22": [
+     1,
+     4,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
   },
   {
    "id": "2765496",
@@ -7077,7 +9095,8 @@
    "until_year": null,
    "pages": 5,
    "words": 201,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2765506",
@@ -7097,7 +9116,8 @@
    "until_year": null,
    "pages": 3,
    "words": 114,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2765852",
@@ -7117,7 +9137,8 @@
    "until_year": null,
    "pages": 9,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2766026",
@@ -7135,7 +9156,8 @@
    "until_year": null,
    "pages": 2,
    "words": 23,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2766027",
@@ -7153,7 +9175,8 @@
    "until_year": null,
    "pages": 2,
    "words": 45,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2861899",
@@ -7171,7 +9194,16 @@
    "until_year": null,
    "pages": 2,
    "words": 187,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "24": [
+     0,
+     6,
+     11,
+     14,
+     15
+    ]
+   }
   },
   {
    "id": "2953296",
@@ -7189,7 +9221,8 @@
    "until_year": null,
    "pages": 4,
    "words": 675,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2954599",
@@ -7207,7 +9240,8 @@
    "until_year": null,
    "pages": 1,
    "words": 55,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2953902",
@@ -7225,7 +9259,8 @@
    "until_year": null,
    "pages": 9,
    "words": 28,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2954691",
@@ -7243,7 +9278,28 @@
    "until_year": null,
    "pages": 2,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "21": [
+     1,
+     4,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "24": null
+   }
   },
   {
    "id": "3138535",
@@ -7267,7 +9323,43 @@
    "until_year": null,
    "pages": 10,
    "words": 2956,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "4": [
+     1
+    ],
+    "5": null,
+    "6": [
+     1
+    ]
+   }
   },
   {
    "id": "3220214",
@@ -7285,7 +9377,13 @@
    "until_year": null,
    "pages": 2,
    "words": 257,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     6,
+     7
+    ]
+   }
   },
   {
    "id": "4166586",
@@ -7303,7 +9401,13 @@
    "until_year": null,
    "pages": 2,
    "words": 573,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": null,
+    "6": [
+     17
+    ]
+   }
   },
   {
    "id": "1465494",
@@ -7327,7 +9431,11 @@
    "until_year": null,
    "pages": 10,
    "words": 2620,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": null,
+    "8": null
+   }
   },
   {
    "id": "1466458",
@@ -7347,7 +9455,12 @@
    "until_year": null,
    "pages": 2,
    "words": 518,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "8": [
+     47
+    ]
+   }
   },
   {
    "id": "1814327",
@@ -7365,7 +9478,41 @@
    "until_year": null,
    "pages": 2,
    "words": 455,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "8": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     26
+    ]
+   }
   },
   {
    "id": "2195866",
@@ -7389,7 +9536,30 @@
    "until_year": null,
    "pages": 10,
    "words": 2435,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": null,
+    "7": null,
+    "8": null,
+    "9": [
+     1,
+     4,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "10": null,
+    "11": null
+   }
   },
   {
    "id": "2195874",
@@ -7409,7 +9579,90 @@
    "until_year": null,
    "pages": 2,
    "words": 421,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42
+    ],
+    "8": null,
+    "9": [
+     1,
+     4,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "10": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "11": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
   },
   {
    "id": "2195936",
@@ -7427,7 +9680,12 @@
    "until_year": null,
    "pages": 1,
    "words": 364,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     44
+    ]
+   }
   },
   {
    "id": "2194984",
@@ -7445,7 +9703,27 @@
    "until_year": null,
    "pages": 2,
    "words": 446,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     6,
+     7
+    ],
+    "7": [
+     13,
+     14,
+     18,
+     44,
+     45
+    ],
+    "8": [
+     6,
+     7
+    ],
+    "11": [
+     3
+    ]
+   }
   },
   {
    "id": "2383472",
@@ -7467,7 +9745,8 @@
    "until_year": null,
    "pages": 10,
    "words": 1733,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2383480",
@@ -7487,7 +9766,43 @@
    "until_year": null,
    "pages": 2,
    "words": 475,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27
+    ],
+    "13": [
+     1,
+     4,
+     5
+    ]
+   }
   },
   {
    "id": "2446693",
@@ -7505,7 +9820,66 @@
    "until_year": null,
    "pages": 2,
    "words": 607,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "3": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "6": null,
+    "7": [
+     1
+    ],
+    "10": null
+   }
   },
   {
    "id": "2453963",
@@ -7523,7 +9897,104 @@
    "until_year": null,
    "pages": 2,
    "words": 397,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "3": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "6": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "7": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "10": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
   },
   {
    "id": "2626328",
@@ -7547,7 +10018,12 @@
    "until_year": null,
    "pages": 9,
    "words": 2407,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "14": [
+     1
+    ]
+   }
   },
   {
    "id": "2777655",
@@ -7571,7 +10047,94 @@
    "until_year": null,
    "pages": 11,
    "words": 2718,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     4,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "10": [
+     1,
+     4,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "11": null,
+    "12": null,
+    "13": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "14": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "15": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "21": [
+     12
+    ]
+   }
   },
   {
    "id": "2776665",
@@ -7589,7 +10152,79 @@
    "until_year": null,
    "pages": 2,
    "words": 509,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "10": [
+     14
+    ],
+    "11": [
+     1,
+     4,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "13": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "14": null,
+    "15": null,
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "21": [
+     1,
+     4,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ]
+   }
   },
   {
    "id": "2849294",
@@ -7609,7 +10244,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2850016",
@@ -7629,7 +10265,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2850018",
@@ -7649,7 +10286,10 @@
    "until_year": null,
    "pages": 1,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "9": null
+   }
   },
   {
    "id": "2850019",
@@ -7669,7 +10309,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2850020",
@@ -7689,7 +10330,10 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "26": null
+   }
   },
   {
    "id": "2850021",
@@ -7709,7 +10353,8 @@
    "until_year": null,
    "pages": 1,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3090936",
@@ -7727,7 +10372,8 @@
    "until_year": null,
    "pages": 1,
    "words": 25,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3133009",
@@ -7747,7 +10393,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3133010",
@@ -7767,7 +10414,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3133011",
@@ -7787,7 +10435,8 @@
    "until_year": null,
    "pages": 1,
    "words": 163,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3132335",
@@ -7807,7 +10456,8 @@
    "until_year": null,
    "pages": 1,
    "words": 111,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3132336",
@@ -7827,7 +10477,8 @@
    "until_year": null,
    "pages": 1,
    "words": 125,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3132337",
@@ -7847,7 +10498,8 @@
    "until_year": null,
    "pages": 1,
    "words": 142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3133013",
@@ -7867,7 +10519,8 @@
    "until_year": null,
    "pages": 1,
    "words": 128,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3189296",
@@ -7885,7 +10538,8 @@
    "until_year": null,
    "pages": 1,
    "words": 45,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3223141",
@@ -7903,7 +10557,8 @@
    "until_year": null,
    "pages": 1,
    "words": 100,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3298088",
@@ -7921,7 +10576,8 @@
    "until_year": null,
    "pages": 1,
    "words": 14,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3301496",
@@ -7939,7 +10595,8 @@
    "until_year": null,
    "pages": 1,
    "words": 88,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3301497",
@@ -7957,7 +10614,8 @@
    "until_year": null,
    "pages": 1,
    "words": 13,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3301498",
@@ -7977,7 +10635,8 @@
    "until_year": null,
    "pages": 1,
    "words": 159,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3301499",
@@ -7995,7 +10654,8 @@
    "until_year": null,
    "pages": 1,
    "words": 64,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3259303",
@@ -8013,7 +10673,8 @@
    "until_year": null,
    "pages": 1,
    "words": 62,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3272093",
@@ -8031,7 +10692,8 @@
    "until_year": null,
    "pages": 1,
    "words": 13,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3272919",
@@ -8049,7 +10711,8 @@
    "until_year": null,
    "pages": 1,
    "words": 24,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3272096",
@@ -8067,7 +10730,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3272097",
@@ -8085,7 +10749,8 @@
    "until_year": null,
    "pages": 1,
    "words": 51,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3272924",
@@ -8103,7 +10768,8 @@
    "until_year": null,
    "pages": 1,
    "words": 19,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3272100",
@@ -8121,7 +10787,8 @@
    "until_year": null,
    "pages": 1,
    "words": 21,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3319274",
@@ -8139,7 +10806,8 @@
    "until_year": null,
    "pages": 1,
    "words": 92,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3319280",
@@ -8159,7 +10827,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3311696",
@@ -8177,7 +10846,8 @@
    "until_year": null,
    "pages": 1,
    "words": 92,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3330667",
@@ -8197,7 +10867,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321430",
@@ -8216,7 +10887,8 @@
    "until_year": null,
    "pages": 1,
    "words": 104,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321431",
@@ -8234,7 +10906,8 @@
    "until_year": null,
    "pages": 1,
    "words": 151,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3322614",
@@ -8254,7 +10927,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3322616",
@@ -8274,7 +10948,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321435",
@@ -8294,7 +10969,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3322617",
@@ -8314,7 +10990,8 @@
    "until_year": null,
    "pages": 1,
    "words": 123,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3321437",
@@ -8334,7 +11011,8 @@
    "until_year": null,
    "pages": 1,
    "words": 113,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3322294",
@@ -8352,7 +11030,8 @@
    "until_year": null,
    "pages": 1,
    "words": 77,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341608",
@@ -8372,7 +11051,8 @@
    "until_year": null,
    "pages": 1,
    "words": 69,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3343100",
@@ -8392,7 +11072,8 @@
    "until_year": null,
    "pages": 1,
    "words": 117,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3343101",
@@ -8412,7 +11093,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341987",
@@ -8430,7 +11112,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341989",
@@ -8448,7 +11131,8 @@
    "until_year": null,
    "pages": 1,
    "words": 142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341990",
@@ -8468,7 +11152,8 @@
    "until_year": null,
    "pages": 1,
    "words": 118,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3343103",
@@ -8487,7 +11172,8 @@
    "until_year": null,
    "pages": 1,
    "words": 112,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3341993",
@@ -8508,7 +11194,8 @@
    "until_year": null,
    "pages": 1,
    "words": 115,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373485",
@@ -8528,7 +11215,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373489",
@@ -8546,7 +11234,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373661",
@@ -8566,7 +11255,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373663",
@@ -8586,7 +11276,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372839",
@@ -8604,7 +11295,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372842",
@@ -8624,7 +11316,8 @@
    "until_year": null,
    "pages": 1,
    "words": 105,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373665",
@@ -8644,7 +11337,8 @@
    "until_year": null,
    "pages": 1,
    "words": 111,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373667",
@@ -8662,7 +11356,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373670",
@@ -8682,7 +11377,8 @@
    "until_year": null,
    "pages": 1,
    "words": 110,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372846",
@@ -8700,7 +11396,8 @@
    "until_year": null,
    "pages": 1,
    "words": 75,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372848",
@@ -8718,7 +11415,8 @@
    "until_year": null,
    "pages": 1,
    "words": 110,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372850",
@@ -8736,7 +11434,8 @@
    "until_year": null,
    "pages": 1,
    "words": 65,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373673",
@@ -8756,7 +11455,8 @@
    "until_year": null,
    "pages": 1,
    "words": 114,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372852",
@@ -8774,7 +11474,8 @@
    "until_year": null,
    "pages": 1,
    "words": 87,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372854",
@@ -8792,7 +11493,8 @@
    "until_year": null,
    "pages": 1,
    "words": 54,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373675",
@@ -8812,7 +11514,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372857",
@@ -8831,7 +11534,8 @@
    "until_year": null,
    "pages": 1,
    "words": 84,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372859",
@@ -8849,7 +11553,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373678",
@@ -8870,7 +11575,8 @@
    "until_year": null,
    "pages": 1,
    "words": 118,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372861",
@@ -8888,7 +11594,8 @@
    "until_year": null,
    "pages": 1,
    "words": 124,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373683",
@@ -8908,7 +11615,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373684",
@@ -8926,7 +11634,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372864",
@@ -8944,7 +11653,8 @@
    "until_year": null,
    "pages": 1,
    "words": 92,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372867",
@@ -8962,7 +11672,8 @@
    "until_year": null,
    "pages": 1,
    "words": 64,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373688",
@@ -8980,7 +11691,8 @@
    "until_year": null,
    "pages": 1,
    "words": 80,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3372869",
@@ -8998,7 +11710,8 @@
    "until_year": null,
    "pages": 1,
    "words": 77,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3373691",
@@ -9016,7 +11729,8 @@
    "until_year": null,
    "pages": 1,
    "words": 60,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3392355",
@@ -9034,7 +11748,8 @@
    "until_year": null,
    "pages": 1,
    "words": 113,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3393524",
@@ -9054,7 +11769,8 @@
    "until_year": null,
    "pages": 1,
    "words": 111,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412092",
@@ -9072,7 +11788,8 @@
    "until_year": null,
    "pages": 1,
    "words": 38,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3411782",
@@ -9092,7 +11809,8 @@
    "until_year": null,
    "pages": 1,
    "words": 110,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412670",
@@ -9112,7 +11830,8 @@
    "until_year": null,
    "pages": 1,
    "words": 126,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412731",
@@ -9130,7 +11849,8 @@
    "until_year": null,
    "pages": 1,
    "words": 80,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412733",
@@ -9150,7 +11870,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3413271",
@@ -9170,7 +11891,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3413272",
@@ -9188,7 +11910,8 @@
    "until_year": null,
    "pages": 1,
    "words": 122,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412369",
@@ -9206,7 +11929,8 @@
    "until_year": null,
    "pages": 1,
    "words": 137,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412370",
@@ -9226,7 +11950,8 @@
    "until_year": null,
    "pages": 1,
    "words": 119,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412485",
@@ -9246,7 +11971,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3412486",
@@ -9266,7 +11992,8 @@
    "until_year": null,
    "pages": 1,
    "words": 115,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428675",
@@ -9284,7 +12011,8 @@
    "until_year": null,
    "pages": 1,
    "words": 62,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3428737",
@@ -9304,7 +12032,8 @@
    "until_year": null,
    "pages": 1,
    "words": 22,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3429866",
@@ -9324,7 +12053,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441048",
@@ -9342,7 +12072,8 @@
    "until_year": null,
    "pages": 1,
    "words": 131,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440469",
@@ -9362,7 +12093,8 @@
    "until_year": null,
    "pages": 1,
    "words": 116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441709",
@@ -9380,7 +12112,8 @@
    "until_year": null,
    "pages": 1,
    "words": 45,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440672",
@@ -9398,7 +12131,8 @@
    "until_year": null,
    "pages": 1,
    "words": 28,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441711",
@@ -9418,7 +12152,8 @@
    "until_year": null,
    "pages": 1,
    "words": 107,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441713",
@@ -9438,7 +12173,8 @@
    "until_year": null,
    "pages": 1,
    "words": 130,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440676",
@@ -9458,7 +12194,8 @@
    "until_year": null,
    "pages": 1,
    "words": 131,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441756",
@@ -9478,7 +12215,8 @@
    "until_year": null,
    "pages": 1,
    "words": 126,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440738",
@@ -9498,7 +12236,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441759",
@@ -9518,7 +12257,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440740",
@@ -9538,7 +12278,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441762",
@@ -9558,7 +12299,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441764",
@@ -9578,7 +12320,8 @@
    "until_year": null,
    "pages": 1,
    "words": 156,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441766",
@@ -9598,7 +12341,8 @@
    "until_year": null,
    "pages": 1,
    "words": 130,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3440742",
@@ -9618,7 +12362,8 @@
    "until_year": null,
    "pages": 1,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3442094",
@@ -9636,7 +12381,8 @@
    "until_year": null,
    "pages": 1,
    "words": 10,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3442097",
@@ -9656,7 +12402,8 @@
    "until_year": null,
    "pages": 1,
    "words": 112,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3441415",
@@ -9676,7 +12423,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3442101",
@@ -9694,7 +12442,8 @@
    "until_year": null,
    "pages": 1,
    "words": 93,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3461893",
@@ -9714,7 +12463,8 @@
    "until_year": null,
    "pages": 1,
    "words": 120,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3462079",
@@ -9734,7 +12484,8 @@
    "until_year": null,
    "pages": 1,
    "words": 125,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3462093",
@@ -9752,7 +12503,8 @@
    "until_year": null,
    "pages": 1,
    "words": 89,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3460965",
@@ -9770,7 +12522,8 @@
    "until_year": null,
    "pages": 1,
    "words": 87,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3462114",
@@ -9789,7 +12542,8 @@
    "until_year": null,
    "pages": 1,
    "words": 52,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3460989",
@@ -9808,7 +12562,8 @@
    "until_year": null,
    "pages": 1,
    "words": 71,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3461590",
@@ -9826,7 +12581,8 @@
    "until_year": null,
    "pages": 1,
    "words": 92,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3460573",
@@ -9844,7 +12600,8 @@
    "until_year": null,
    "pages": 1,
    "words": 47,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3461744",
@@ -9862,7 +12619,8 @@
    "until_year": null,
    "pages": 1,
    "words": 11,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3462472",
@@ -9880,7 +12638,8 @@
    "until_year": null,
    "pages": 1,
    "words": 79,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3462474",
@@ -9900,7 +12659,8 @@
    "until_year": null,
    "pages": 1,
    "words": 62,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3462475",
@@ -9918,7 +12678,8 @@
    "until_year": null,
    "pages": 1,
    "words": 114,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3479362",
@@ -9938,7 +12699,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3479363",
@@ -9958,7 +12720,8 @@
    "until_year": null,
    "pages": 1,
    "words": 149,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3480205",
@@ -9976,7 +12739,8 @@
    "until_year": null,
    "pages": 1,
    "words": 111,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3503530",
@@ -9996,7 +12760,8 @@
    "until_year": null,
    "pages": 1,
    "words": 96,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3503532",
@@ -10016,7 +12781,8 @@
    "until_year": null,
    "pages": 1,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3493101",
@@ -10034,7 +12800,8 @@
    "until_year": null,
    "pages": 1,
    "words": 120,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3493389",
@@ -10054,7 +12821,8 @@
    "until_year": null,
    "pages": 1,
    "words": 70,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3524479",
@@ -10074,7 +12842,8 @@
    "until_year": null,
    "pages": 1,
    "words": 64,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3525281",
@@ -10092,7 +12861,8 @@
    "until_year": null,
    "pages": 1,
    "words": 35,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3525282",
@@ -10112,7 +12882,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3525283",
@@ -10133,7 +12904,8 @@
    "until_year": null,
    "pages": 1,
    "words": 107,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3520117",
@@ -10151,7 +12923,8 @@
    "until_year": null,
    "pages": 1,
    "words": 89,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3519908",
@@ -10169,7 +12942,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3519987",
@@ -10189,7 +12963,8 @@
    "until_year": null,
    "pages": 1,
    "words": 101,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3544420",
@@ -10209,7 +12984,8 @@
    "until_year": null,
    "pages": 1,
    "words": 69,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3581113",
@@ -10229,7 +13005,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3579956",
@@ -10247,7 +13024,8 @@
    "until_year": null,
    "pages": 1,
    "words": 116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3581116",
@@ -10267,7 +13045,8 @@
    "until_year": null,
    "pages": 1,
    "words": 125,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3579959",
@@ -10285,7 +13064,8 @@
    "until_year": null,
    "pages": 1,
    "words": 105,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3581119",
@@ -10305,7 +13085,8 @@
    "until_year": null,
    "pages": 1,
    "words": 118,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3581123",
@@ -10325,7 +13106,8 @@
    "until_year": null,
    "pages": 1,
    "words": 128,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3581127",
@@ -10345,7 +13127,8 @@
    "until_year": null,
    "pages": 1,
    "words": 153,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3581129",
@@ -10363,7 +13146,8 @@
    "until_year": null,
    "pages": 1,
    "words": 69,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3579967",
@@ -10383,7 +13167,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605585",
@@ -10403,7 +13188,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3604947",
@@ -10423,7 +13209,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606218",
@@ -10443,7 +13230,8 @@
    "until_year": null,
    "pages": 1,
    "words": 147,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605400",
@@ -10463,7 +13251,8 @@
    "until_year": null,
    "pages": 1,
    "words": 147,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606495",
@@ -10483,7 +13272,8 @@
    "until_year": null,
    "pages": 1,
    "words": 105,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606497",
@@ -10503,7 +13293,8 @@
    "until_year": null,
    "pages": 1,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606499",
@@ -10523,7 +13314,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606500",
@@ -10543,7 +13335,8 @@
    "until_year": null,
    "pages": 1,
    "words": 146,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3605404",
@@ -10563,7 +13356,8 @@
    "until_year": null,
    "pages": 1,
    "words": 151,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3606503",
@@ -10583,7 +13377,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3630766",
@@ -10603,7 +13398,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3630767",
@@ -10623,7 +13419,8 @@
    "until_year": null,
    "pages": 1,
    "words": 61,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3631735",
@@ -10641,7 +13438,8 @@
    "until_year": null,
    "pages": 1,
    "words": 76,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3630771",
@@ -10661,7 +13459,10 @@
    "until_year": null,
    "pages": 1,
    "words": 124,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": null
+   }
   },
   {
    "id": "3631737",
@@ -10681,7 +13482,8 @@
    "until_year": null,
    "pages": 1,
    "words": 126,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3670990",
@@ -10701,7 +13503,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3671003",
@@ -10721,7 +13524,8 @@
    "until_year": null,
    "pages": 1,
    "words": 123,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3670808",
@@ -10741,7 +13545,10 @@
    "until_year": null,
    "pages": 2,
    "words": 181,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null
+   }
   },
   {
    "id": "3712468",
@@ -10759,7 +13566,8 @@
    "until_year": null,
    "pages": 1,
    "words": 111,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3711222",
@@ -10779,7 +13587,8 @@
    "until_year": null,
    "pages": 1,
    "words": 52,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3711025",
@@ -10799,7 +13608,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3749279",
@@ -10817,7 +13627,8 @@
    "until_year": null,
    "pages": 1,
    "words": 92,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3750478",
@@ -10835,7 +13646,8 @@
    "until_year": null,
    "pages": 1,
    "words": 98,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3750479",
@@ -10853,7 +13665,8 @@
    "until_year": null,
    "pages": 1,
    "words": 16,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3766260",
@@ -10873,7 +13686,10 @@
    "until_year": null,
    "pages": 1,
    "words": 154,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null
+   }
   },
   {
    "id": "3776425",
@@ -10893,7 +13709,19 @@
    "until_year": null,
    "pages": 1,
    "words": 297,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "4": null,
+    "8": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   }
   },
   {
    "id": "3790593",
@@ -10911,7 +13739,8 @@
    "until_year": null,
    "pages": 1,
    "words": 88,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3790595",
@@ -10931,7 +13760,8 @@
    "until_year": null,
    "pages": 1,
    "words": 104,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3791362",
@@ -10951,7 +13781,8 @@
    "until_year": null,
    "pages": 1,
    "words": 125,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3790391",
@@ -10971,7 +13802,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3791270",
@@ -10991,7 +13823,8 @@
    "until_year": null,
    "pages": 1,
    "words": 157,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3790498",
@@ -11011,7 +13844,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3791275",
@@ -11031,7 +13865,8 @@
    "until_year": null,
    "pages": 1,
    "words": 153,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3791277",
@@ -11051,7 +13886,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3814550",
@@ -11071,7 +13907,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3814476",
@@ -11089,7 +13926,8 @@
    "until_year": null,
    "pages": 1,
    "words": 15,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3840175",
@@ -11107,7 +13945,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3841355",
@@ -11127,7 +13966,8 @@
    "until_year": null,
    "pages": 1,
    "words": 71,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3841365",
@@ -11147,7 +13987,10 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "21": null
+   }
   },
   {
    "id": "3828279",
@@ -11167,7 +14010,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3869776",
@@ -11187,7 +14031,8 @@
    "until_year": null,
    "pages": 1,
    "words": 128,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3840138",
@@ -11205,7 +14050,8 @@
    "until_year": null,
    "pages": 1,
    "words": 109,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3856304",
@@ -11225,7 +14071,8 @@
    "until_year": null,
    "pages": 1,
    "words": 112,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3897209",
@@ -11245,7 +14092,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3907946",
@@ -11265,7 +14113,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3909009",
@@ -11285,7 +14134,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3924803",
@@ -11305,7 +14155,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3924878",
@@ -11325,7 +14176,8 @@
    "until_year": null,
    "pages": 1,
    "words": 110,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3951152",
@@ -11345,7 +14197,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3950341",
@@ -11363,7 +14216,8 @@
    "until_year": null,
    "pages": 1,
    "words": 359,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3950360",
@@ -11383,7 +14237,8 @@
    "until_year": null,
    "pages": 1,
    "words": 138,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3966873",
@@ -11403,7 +14258,8 @@
    "until_year": null,
    "pages": 1,
    "words": 116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3965668",
@@ -11423,7 +14279,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3966355",
@@ -11443,7 +14300,8 @@
    "until_year": null,
    "pages": 1,
    "words": 102,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3990441",
@@ -11461,7 +14319,8 @@
    "until_year": null,
    "pages": 5,
    "words": 748,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4018809",
@@ -11481,7 +14340,55 @@
    "until_year": null,
    "pages": 2,
    "words": 433,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": [
+     1,
+     4,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
   },
   {
    "id": "4020458",
@@ -11501,7 +14408,8 @@
    "until_year": null,
    "pages": 1,
    "words": 127,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4019685",
@@ -11521,7 +14429,8 @@
    "until_year": null,
    "pages": 1,
    "words": 130,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3513221",
@@ -11541,7 +14450,8 @@
    "until_year": null,
    "pages": 1,
    "words": 145,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3540431",
@@ -11561,7 +14471,8 @@
    "until_year": null,
    "pages": 1,
    "words": 140,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3541589",
@@ -11581,7 +14492,8 @@
    "until_year": null,
    "pages": 1,
    "words": 153,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3540432",
@@ -11601,7 +14513,8 @@
    "until_year": null,
    "pages": 1,
    "words": 147,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3541161",
@@ -11621,7 +14534,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3567680",
@@ -11641,7 +14555,8 @@
    "until_year": null,
    "pages": 1,
    "words": 121,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3567682",
@@ -11661,7 +14576,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3567683",
@@ -11681,7 +14597,8 @@
    "until_year": null,
    "pages": 1,
    "words": 123,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3566679",
@@ -11701,7 +14618,8 @@
    "until_year": null,
    "pages": 1,
    "words": 116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3566681",
@@ -11721,7 +14639,8 @@
    "until_year": null,
    "pages": 1,
    "words": 134,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3566682",
@@ -11741,7 +14660,8 @@
    "until_year": null,
    "pages": 1,
    "words": 142,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3567685",
@@ -11761,7 +14681,8 @@
    "until_year": null,
    "pages": 1,
    "words": 157,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3567686",
@@ -11781,7 +14702,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3566803",
@@ -11801,7 +14723,8 @@
    "until_year": null,
    "pages": 1,
    "words": 159,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3566804",
@@ -11821,7 +14744,8 @@
    "until_year": null,
    "pages": 1,
    "words": 115,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3567987",
@@ -11841,7 +14765,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3582981",
@@ -11859,7 +14784,8 @@
    "until_year": null,
    "pages": 1,
    "words": 80,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3594304",
@@ -11879,7 +14805,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3634953",
@@ -11899,7 +14826,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3634955",
@@ -11919,7 +14847,8 @@
    "until_year": null,
    "pages": 1,
    "words": 117,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3659634",
@@ -11939,7 +14868,8 @@
    "until_year": null,
    "pages": 1,
    "words": 137,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3677093",
@@ -11959,7 +14889,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3677126",
@@ -11977,7 +14908,8 @@
    "until_year": null,
    "pages": 1,
    "words": 19,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3699011",
@@ -11997,7 +14929,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716918",
@@ -12017,7 +14950,8 @@
    "until_year": null,
    "pages": 1,
    "words": 110,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3716369",
@@ -12037,7 +14971,8 @@
    "until_year": null,
    "pages": 1,
    "words": 133,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3717557",
@@ -12057,7 +14992,8 @@
    "until_year": null,
    "pages": 1,
    "words": 107,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3740252",
@@ -12077,7 +15013,8 @@
    "until_year": null,
    "pages": 1,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3740302",
@@ -12097,7 +15034,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3739631",
@@ -12117,7 +15055,8 @@
    "until_year": null,
    "pages": 1,
    "words": 163,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3741169",
@@ -12137,7 +15076,8 @@
    "until_year": null,
    "pages": 1,
    "words": 128,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3740032",
@@ -12158,7 +15098,8 @@
    "until_year": null,
    "pages": 1,
    "words": 139,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3766288",
@@ -12176,7 +15117,8 @@
    "until_year": null,
    "pages": 1,
    "words": 124,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3767542",
@@ -12196,7 +15138,8 @@
    "until_year": null,
    "pages": 1,
    "words": 119,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3799728",
@@ -12216,7 +15159,8 @@
    "until_year": null,
    "pages": 1,
    "words": 112,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3794874",
@@ -12234,7 +15178,8 @@
    "until_year": null,
    "pages": 2,
    "words": 154,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3794876",
@@ -12254,7 +15199,8 @@
    "until_year": null,
    "pages": 1,
    "words": 152,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3794878",
@@ -12274,7 +15220,8 @@
    "until_year": null,
    "pages": 1,
    "words": 144,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3793904",
@@ -12294,7 +15241,8 @@
    "until_year": null,
    "pages": 1,
    "words": 128,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3794488",
@@ -12314,7 +15262,8 @@
    "until_year": null,
    "pages": 1,
    "words": 131,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3793532",
@@ -12333,7 +15282,8 @@
    "until_year": null,
    "pages": 1,
    "words": 124,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3805217",
@@ -12353,7 +15303,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3816958",
@@ -12373,7 +15324,8 @@
    "until_year": null,
    "pages": 1,
    "words": 127,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3829778",
@@ -12393,7 +15345,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3829779",
@@ -12411,7 +15364,8 @@
    "until_year": null,
    "pages": 1,
    "words": 147,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3846417",
@@ -12431,7 +15385,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3884902",
@@ -12451,7 +15406,8 @@
    "until_year": null,
    "pages": 1,
    "words": 143,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3885076",
@@ -12471,7 +15427,8 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3885078",
@@ -12491,7 +15448,8 @@
    "until_year": null,
    "pages": 1,
    "words": 150,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3885119",
@@ -12511,7 +15469,8 @@
    "until_year": null,
    "pages": 1,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3956102",
@@ -12531,7 +15490,8 @@
    "until_year": null,
    "pages": 1,
    "words": 136,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3165550",
@@ -12549,7 +15509,16 @@
    "until_year": null,
    "pages": 5,
    "words": 1242,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "29": null,
+    "30": null,
+    "31": null,
+    "32": null,
+    "33": null,
+    "34": null,
+    "35": null
+   }
   },
   {
    "id": "3165552",
@@ -12569,7 +15538,11 @@
    "until_year": null,
    "pages": 3,
    "words": 511,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "29": null,
+    "30": null
+   }
   },
   {
    "id": "3747140",
@@ -12587,7 +15560,15 @@
    "until_year": null,
    "pages": 3,
    "words": 78,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "51": null,
+    "52": null,
+    "53": null,
+    "54": null,
+    "55": null,
+    "56": null
+   }
   },
   {
    "id": "4228067",
@@ -12606,7 +15587,26 @@
    "until_year": null,
    "pages": 2,
    "words": 2,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": [
+     1
+    ],
+    "9": [
+     8
+    ],
+    "10": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "4627590",
@@ -12626,7 +15626,8 @@
    "until_year": null,
    "pages": 2,
    "words": 402,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4627594",
@@ -12646,7 +15647,8 @@
    "until_year": null,
    "pages": 2,
    "words": 366,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4626764",
@@ -12666,7 +15668,8 @@
    "until_year": null,
    "pages": 2,
    "words": 359,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4627247",
@@ -12686,7 +15689,8 @@
    "until_year": null,
    "pages": 2,
    "words": 245,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4627248",
@@ -12704,7 +15708,12 @@
    "until_year": null,
    "pages": 2,
    "words": 116,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "17": [
+     39
+    ]
+   }
   },
   {
    "id": "1476043",
@@ -12722,7 +15731,15 @@
    "until_year": null,
    "pages": 1,
    "words": 187,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "44": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
   },
   {
    "id": "2107213",
@@ -12740,7 +15757,8 @@
    "until_year": null,
    "pages": 2,
    "words": 48,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3525187",
@@ -12760,7 +15778,8 @@
    "until_year": null,
    "pages": 5,
    "words": 287,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3524981",
@@ -12778,7 +15797,8 @@
    "until_year": null,
    "pages": 2,
    "words": 387,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3525045",
@@ -12796,7 +15816,8 @@
    "until_year": null,
    "pages": 2,
    "words": 274,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4095642",
@@ -12814,7 +15835,8 @@
    "until_year": null,
    "pages": 3,
    "words": 17,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4096712",
@@ -12833,7 +15855,8 @@
    "until_year": null,
    "pages": 3,
    "words": 17,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4389580",
@@ -12851,7 +15874,8 @@
    "until_year": null,
    "pages": 2,
    "words": 510,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1751477",
@@ -12869,7 +15893,8 @@
    "until_year": null,
    "pages": 3,
    "words": 491,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2212088",
@@ -12887,7 +15912,8 @@
    "until_year": null,
    "pages": 7,
    "words": 55,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2212094",
@@ -12907,7 +15933,8 @@
    "until_year": null,
    "pages": 9,
    "words": 1028,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2366486",
@@ -12925,7 +15952,8 @@
    "until_year": null,
    "pages": 1,
    "words": 223,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2606091",
@@ -12943,7 +15971,8 @@
    "until_year": null,
    "pages": 2,
    "words": 282,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2254136",
@@ -12963,7 +15992,10 @@
    "until_year": null,
    "pages": 1,
    "words": 135,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null
+   }
   },
   {
    "id": "1732418",
@@ -12981,7 +16013,91 @@
    "until_year": null,
    "pages": 3,
    "words": 1280,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37
+    ],
+    "7": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37
+    ],
+    "8": null,
+    "10": [
+     1
+    ]
+   }
   },
   {
    "id": "1849457",
@@ -12999,7 +16115,275 @@
    "until_year": null,
    "pages": 2,
    "words": 11,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": null,
+    "8": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67
+    ],
+    "13": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "14": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57
+    ],
+    "15": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
   },
   {
    "id": "1849458",
@@ -13017,7 +16401,332 @@
    "until_year": null,
    "pages": 9,
    "words": 24,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67
+    ],
+    "13": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62
+    ],
+    "14": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57
+    ],
+    "15": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62
+    ],
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
   },
   {
    "id": "1850512",
@@ -13035,7 +16744,296 @@
    "until_year": null,
    "pages": 3,
    "words": 20,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": [
+     1,
+     4,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67
+    ],
+    "13": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62
+    ],
+    "14": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57
+    ],
+    "15": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
   },
   {
    "id": "1850513",
@@ -13053,7 +17051,294 @@
    "until_year": null,
    "pages": 2,
    "words": 17,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "8": [
+     1,
+     4,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67
+    ],
+    "13": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60
+    ],
+    "14": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57
+    ],
+    "15": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
   },
   {
    "id": "2642812",
@@ -13074,7 +17359,13 @@
    "until_year": null,
    "pages": 7,
    "words": 1641,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": null,
+    "19": null,
+    "20": null,
+    "21": null
+   }
   },
   {
    "id": "3165549",
@@ -13095,7 +17386,17 @@
    "until_year": null,
    "pages": 13,
    "words": 2570,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "29": null,
+    "30": null,
+    "31": null,
+    "32": null,
+    "33": null,
+    "34": null,
+    "35": null,
+    "36": []
+   }
   },
   {
    "id": "3166629",
@@ -13113,7 +17414,106 @@
    "until_year": null,
    "pages": 3,
    "words": 448,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "39": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "40": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "43": [
+     1,
+     4,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85
+    ],
+    "44": [
+     1,
+     4,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ]
+   }
   },
   {
    "id": "3165676",
@@ -13135,7 +17535,106 @@
    "until_year": null,
    "pages": 11,
    "words": 1754,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "39": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "40": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "43": [
+     1,
+     4,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85
+    ],
+    "44": [
+     1,
+     4,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ]
+   }
   },
   {
    "id": "3165677",
@@ -13153,7 +17652,74 @@
    "until_year": null,
    "pages": 3,
    "words": 666,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ],
+    "39": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "40": null,
+    "43": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
   },
   {
    "id": "3166631",
@@ -13171,7 +17737,8 @@
    "until_year": null,
    "pages": 2,
    "words": 148,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3435097",
@@ -13189,7 +17756,148 @@
    "until_year": null,
    "pages": 2,
    "words": 411,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "38": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38
+    ],
+    "47": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27
+    ],
+    "48": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "49": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
   },
   {
    "id": "3747136",
@@ -13209,7 +17917,8 @@
    "until_year": null,
    "pages": 8,
    "words": 242,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3747139",
@@ -13229,7 +17938,8 @@
    "until_year": null,
    "pages": 3,
    "words": 199,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4226963",
@@ -13247,7 +17957,25 @@
    "until_year": null,
    "pages": 1,
    "words": 432,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "10": [
+     1,
+     4,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39
+    ]
+   }
   },
   {
    "id": "4227719",
@@ -13265,7 +17993,19 @@
    "until_year": null,
    "pages": 1,
    "words": 82,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
   },
   {
    "id": "4374849",
@@ -13283,7 +18023,12 @@
    "until_year": null,
    "pages": 2,
    "words": 461,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     12
+    ]
+   }
   },
   {
    "id": "4494677",
@@ -13301,7 +18046,28 @@
    "until_year": null,
    "pages": 2,
    "words": 97,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     43
+    ],
+    "14": [
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53
+    ]
+   }
   },
   {
    "id": "4627651",
@@ -13319,7 +18085,13 @@
    "until_year": null,
    "pages": 2,
    "words": 316,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "54": [
+     19,
+     20
+    ]
+   }
   },
   {
    "id": "4757500",
@@ -13337,7 +18109,12 @@
    "until_year": null,
    "pages": 2,
    "words": 15,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     7
+    ]
+   }
   },
   {
    "id": "4758490",
@@ -13355,7 +18132,60 @@
    "until_year": null,
    "pages": 7,
    "words": 60,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "35": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "36": null,
+    "37": null,
+    "38": null,
+    "39": null,
+    "40": null,
+    "41": null,
+    "42": null,
+    "43": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   }
   },
   {
    "id": "4758859",
@@ -13373,7 +18203,12 @@
    "until_year": null,
    "pages": 2,
    "words": 344,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     48
+    ]
+   }
   },
   {
    "id": "1475138",
@@ -13391,7 +18226,10 @@
    "until_year": null,
    "pages": 1,
    "words": 415,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "2": []
+   }
   },
   {
    "id": "1812790",
@@ -13409,7 +18247,18 @@
    "until_year": null,
    "pages": 2,
    "words": 153,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   }
   },
   {
    "id": "1812792",
@@ -13427,7 +18276,8 @@
    "until_year": null,
    "pages": 1,
    "words": 222,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1811914",
@@ -13445,7 +18295,12 @@
    "until_year": null,
    "pages": 2,
    "words": 24,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     7
+    ]
+   }
   },
   {
    "id": "1811926",
@@ -13463,7 +18318,12 @@
    "until_year": null,
    "pages": 2,
    "words": 2,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "21": [
+     12
+    ]
+   }
   },
   {
    "id": "1893880",
@@ -13481,7 +18341,102 @@
    "until_year": null,
    "pages": 3,
    "words": 129,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "13": null,
+    "17": [
+     1,
+     4,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "18": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "19": [
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "20": [
+     1,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "21": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "22": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
   },
   {
    "id": "1893073",
@@ -13499,7 +18454,20 @@
    "until_year": null,
    "pages": 3,
    "words": 192,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "35": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
   },
   {
    "id": "1893362",
@@ -13517,7 +18485,8 @@
    "until_year": null,
    "pages": 3,
    "words": 432,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1925137",
@@ -13535,7 +18504,8 @@
    "until_year": null,
    "pages": 2,
    "words": 793,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1924641",
@@ -13555,7 +18525,8 @@
    "until_year": null,
    "pages": 3,
    "words": 103,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1944498",
@@ -13573,7 +18544,8 @@
    "until_year": null,
    "pages": 2,
    "words": 389,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1945026",
@@ -13593,7 +18565,8 @@
    "until_year": null,
    "pages": 2,
    "words": 612,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1943717",
@@ -13614,7 +18587,12 @@
    "until_year": null,
    "pages": 2,
    "words": 1119,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "20": [
+     17
+    ]
+   }
   },
   {
    "id": "1944493",
@@ -13634,7 +18612,10 @@
    "until_year": null,
    "pages": 4,
    "words": 670,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": null
+   }
   },
   {
    "id": "1987234",
@@ -13654,7 +18635,36 @@
    "until_year": null,
    "pages": 9,
    "words": 1067,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     1,
+     4,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "5": [
+     1
+    ],
+    "6": [
+     1,
+     2,
+     3
+    ],
+    "11": [
+     1
+    ],
+    "12": null
+   }
   },
   {
    "id": "1987239",
@@ -13672,7 +18682,8 @@
    "until_year": null,
    "pages": 2,
    "words": 23,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1987517",
@@ -13690,7 +18701,8 @@
    "until_year": null,
    "pages": 3,
    "words": 56,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1987208",
@@ -13708,7 +18720,8 @@
    "until_year": null,
    "pages": 9,
    "words": 37,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1988089",
@@ -13726,7 +18739,8 @@
    "until_year": null,
    "pages": 11,
    "words": 98,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2071489",
@@ -13744,7 +18758,8 @@
    "until_year": null,
    "pages": 1,
    "words": 15,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2068719",
@@ -13764,7 +18779,45 @@
    "until_year": null,
    "pages": 3,
    "words": 573,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "9": null,
+    "10": null,
+    "11": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ]
+   }
   },
   {
    "id": "2070201",
@@ -13782,7 +18835,8 @@
    "until_year": null,
    "pages": 1,
    "words": 118,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2107923",
@@ -13800,7 +18854,8 @@
    "until_year": null,
    "pages": 1,
    "words": 50,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2178825",
@@ -13820,7 +18875,8 @@
    "until_year": null,
    "pages": 2,
    "words": 340,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2180618",
@@ -13842,7 +18898,36 @@
    "until_year": null,
    "pages": 11,
    "words": 1849,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1
+    ],
+    "6": null,
+    "11": null,
+    "12": null,
+    "13": [
+     1,
+     35
+    ],
+    "14": null,
+    "15": [
+     1,
+     4,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "16": [
+     1
+    ],
+    "17": null,
+    "18": null,
+    "19": null,
+    "20": null
+   }
   },
   {
    "id": "2180626",
@@ -13860,7 +18945,87 @@
    "until_year": null,
    "pages": 2,
    "words": 376,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "11": [
+     55
+    ],
+    "12": [
+     1,
+     35
+    ],
+    "13": [
+     1,
+     28
+    ],
+    "14": [
+     1,
+     18
+    ],
+    "15": [
+     1
+    ],
+    "16": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "18": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "20": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
   },
   {
    "id": "2178400",
@@ -13880,7 +19045,126 @@
    "until_year": null,
    "pages": 3,
    "words": 446,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "8": null,
+    "11": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     40
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34
+    ],
+    "13": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27
+    ],
+    "14": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "15": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
   },
   {
    "id": "2304132",
@@ -13900,7 +19184,24 @@
    "until_year": null,
    "pages": 2,
    "words": 87,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": [
+     1
+    ],
+    "9": null,
+    "10": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null,
+    "16": null
+   }
   },
   {
    "id": "2423072",
@@ -13924,7 +19225,82 @@
    "until_year": null,
    "pages": 9,
    "words": 1993,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "8": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "11": [
+     1,
+     4,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48
+    ]
+   }
   },
   {
    "id": "2423077",
@@ -13942,7 +19318,10 @@
    "until_year": null,
    "pages": 2,
    "words": 170,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "11": null
+   }
   },
   {
    "id": "2656274",
@@ -13960,7 +19339,8 @@
    "until_year": null,
    "pages": 2,
    "words": 34,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2544029",
@@ -13978,7 +19358,8 @@
    "until_year": null,
    "pages": 2,
    "words": 167,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2657340",
@@ -13996,7 +19377,14 @@
    "until_year": null,
    "pages": 7,
    "words": 328,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "21": [
+     9
+    ],
+    "23": []
+   }
   },
   {
    "id": "2657385",
@@ -14014,7 +19402,8 @@
    "until_year": null,
    "pages": 1,
    "words": 132,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2765735",
@@ -14032,7 +19421,8 @@
    "until_year": null,
    "pages": 1,
    "words": 16,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2861400",
@@ -14050,7 +19440,8 @@
    "until_year": null,
    "pages": 3,
    "words": 20,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2862123",
@@ -14068,7 +19459,13 @@
    "until_year": null,
    "pages": 2,
    "words": 208,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "24": [
+     16,
+     17
+    ]
+   }
   },
   {
    "id": "2953150",
@@ -14088,7 +19485,10 @@
    "until_year": null,
    "pages": 46,
    "words": 2530,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null
+   }
   },
   {
    "id": "2953242",
@@ -14106,7 +19506,8 @@
    "until_year": null,
    "pages": 2,
    "words": 18,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2953975",
@@ -14124,7 +19525,8 @@
    "until_year": null,
    "pages": 2,
    "words": 5,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3061153",
@@ -14142,7 +19544,8 @@
    "until_year": null,
    "pages": 1,
    "words": 23,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3060175",
@@ -14160,7 +19563,8 @@
    "until_year": null,
    "pages": 2,
    "words": 75,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3060184",
@@ -14178,7 +19582,8 @@
    "until_year": null,
    "pages": 2,
    "words": 80,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3138516",
@@ -14196,7 +19601,92 @@
    "until_year": null,
    "pages": 4,
    "words": 229,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "2": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "6": [
+     1
+    ],
+    "7": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "8": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     12,
+     13,
+     14,
+     15
+    ],
+    "9": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "10": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "12": [
+     4,
+     5
+    ]
+   }
   },
   {
    "id": "3138565",
@@ -14216,7 +19706,15 @@
    "until_year": null,
    "pages": 2,
    "words": 642,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "11": [
+     21
+    ],
+    "14": [
+     21
+    ]
+   }
   },
   {
    "id": "3137659",
@@ -14234,7 +19732,33 @@
    "until_year": null,
    "pages": 2,
    "words": 536,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1
+    ],
+    "3": null,
+    "4": [
+     1
+    ],
+    "6": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
   },
   {
    "id": "3220206",
@@ -14252,7 +19776,10 @@
    "until_year": null,
    "pages": 2,
    "words": 273,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "22": null
+   }
   },
   {
    "id": "3218999",
@@ -14270,7 +19797,12 @@
    "until_year": null,
    "pages": 2,
    "words": 390,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "8": null,
+    "9": null
+   }
   },
   {
    "id": "3219821",
@@ -14288,7 +19820,12 @@
    "until_year": null,
    "pages": 3,
    "words": 244,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     8
+    ]
+   }
   },
   {
    "id": "3290818",
@@ -14306,7 +19843,8 @@
    "until_year": null,
    "pages": 2,
    "words": 41,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3359699",
@@ -14324,7 +19862,8 @@
    "until_year": null,
    "pages": 1,
    "words": 45,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4095575",
@@ -14342,7 +19881,8 @@
    "until_year": null,
    "pages": 1,
    "words": 46,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "4314816",
@@ -14362,7 +19902,12 @@
    "until_year": null,
    "pages": 4,
    "words": 792,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     2
+    ]
+   }
   },
   {
    "id": "4389035",
@@ -14380,7 +19925,8 @@
    "until_year": null,
    "pages": 1,
    "words": 1,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1389042",
@@ -14398,7 +19944,8 @@
    "until_year": null,
    "pages": 3,
    "words": 121,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1389067",
@@ -14416,7 +19963,8 @@
    "until_year": null,
    "pages": 3,
    "words": 72,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1393154",
@@ -14434,7 +19982,8 @@
    "until_year": null,
    "pages": 2,
    "words": 281,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1394559",
@@ -14454,7 +20003,12 @@
    "until_year": null,
    "pages": 2,
    "words": 727,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "54": [
+     15
+    ]
+   }
   },
   {
    "id": "1393936",
@@ -14474,7 +20028,12 @@
    "until_year": null,
    "pages": 2,
    "words": 734,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": [
+     19
+    ]
+   }
   },
   {
    "id": "1556933",
@@ -14495,7 +20054,13 @@
    "until_year": null,
    "pages": 4,
    "words": 675,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "7": [
+     7
+    ]
+   }
   },
   {
    "id": "1544370",
@@ -14515,7 +20080,12 @@
    "until_year": null,
    "pages": 3,
    "words": 830,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     9
+    ]
+   }
   },
   {
    "id": "1648542",
@@ -14535,7 +20105,8 @@
    "until_year": null,
    "pages": 3,
    "words": 164,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1734905",
@@ -14558,7 +20129,67 @@
    "until_year": null,
    "pages": 11,
    "words": 2763,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     1,
+     4,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51
+    ],
+    "7": [
+     1,
+     4,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62
+    ],
+    "8": [
+     1,
+     4,
+     5,
+     6,
+     7
+    ],
+    "9": null,
+    "11": [
+     2
+    ]
+   }
   },
   {
    "id": "1734917",
@@ -14578,7 +20209,76 @@
    "until_year": null,
    "pages": 3,
    "words": 528,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     1,
+     4,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51
+    ],
+    "7": [
+     1,
+     4,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62
+    ],
+    "8": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "9": [],
+    "11": [
+     2
+    ]
+   }
   },
   {
    "id": "1766133",
@@ -14596,7 +20296,13 @@
    "until_year": null,
    "pages": 1,
    "words": 359,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     10,
+     11
+    ]
+   }
   },
   {
    "id": "1756669",
@@ -14614,7 +20320,16 @@
    "until_year": null,
    "pages": 1,
    "words": 350,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     3,
+     4,
+     5,
+     6,
+     42
+    ]
+   }
   },
   {
    "id": "1758035",
@@ -14632,7 +20347,8 @@
    "until_year": null,
    "pages": 1,
    "words": 92,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "1814176",
@@ -14652,7 +20368,15 @@
    "until_year": null,
    "pages": 2,
    "words": 735,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "26": [
+     22
+    ],
+    "28": [
+     22
+    ]
+   }
   },
   {
    "id": "2196021",
@@ -14672,7 +20396,12 @@
    "until_year": null,
    "pages": 3,
    "words": 725,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "14": [
+     29
+    ]
+   }
   },
   {
    "id": "2210626",
@@ -14690,7 +20419,8 @@
    "until_year": null,
    "pages": 9,
    "words": 273,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2212207",
@@ -14710,7 +20440,12 @@
    "until_year": null,
    "pages": 3,
    "words": 307,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     8
+    ]
+   }
   },
   {
    "id": "2277685",
@@ -14728,7 +20463,10 @@
    "until_year": null,
    "pages": 2,
    "words": 644,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "5": null
+   }
   },
   {
    "id": "2308906",
@@ -14746,7 +20484,8 @@
    "until_year": null,
    "pages": 1,
    "words": 17,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2308288",
@@ -14764,7 +20503,8 @@
    "until_year": null,
    "pages": 1,
    "words": 304,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2327665",
@@ -14782,7 +20522,8 @@
    "until_year": null,
    "pages": 4,
    "words": 461,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2397382",
@@ -14802,7 +20543,14 @@
    "until_year": null,
    "pages": 2,
    "words": 579,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "13": null,
+    "14": [
+     7
+    ],
+    "15": null
+   }
   },
   {
    "id": "2417388",
@@ -14826,7 +20574,65 @@
    "until_year": null,
    "pages": 10,
    "words": 2828,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2
+    ],
+    "2": null,
+    "3": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "6": null,
+    "7": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "8": null,
+    "9": null,
+    "10": null,
+    "11": null,
+    "21": null,
+    "30": [
+     1
+    ]
+   }
   },
   {
    "id": "2417394",
@@ -14846,7 +20652,71 @@
    "until_year": null,
    "pages": 11,
    "words": 3186,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "3": [
+     1
+    ],
+    "4": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "5": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "6": null,
+    "7": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "10": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
   },
   {
    "id": "2416558",
@@ -14864,7 +20734,12 @@
    "until_year": null,
    "pages": 3,
    "words": 435,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "15": [
+     1
+    ]
+   }
   },
   {
    "id": "2437190",
@@ -14885,7 +20760,31 @@
    "until_year": null,
    "pages": 16,
    "words": 3797,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "3": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
   },
   {
    "id": "2454405",
@@ -14903,7 +20802,12 @@
    "until_year": null,
    "pages": 1,
    "words": 277,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     12
+    ]
+   }
   },
   {
    "id": "2466066",
@@ -14924,7 +20828,14 @@
    "until_year": null,
    "pages": 6,
    "words": 2024,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null
+   }
   },
   {
    "id": "2467564",
@@ -14944,7 +20855,12 @@
    "until_year": null,
    "pages": 2,
    "words": 377,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "36": [
+     6
+    ]
+   }
   },
   {
    "id": "2466835",
@@ -14962,7 +20878,10 @@
    "until_year": null,
    "pages": 2,
    "words": 283,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "8": null
+   }
   },
   {
    "id": "2487598",
@@ -14986,7 +20905,18 @@
    "until_year": null,
    "pages": 10,
    "words": 2417,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": null,
+    "19": [
+     1
+    ],
+    "20": [
+     1
+    ],
+    "26": null,
+    "27": null
+   }
   },
   {
    "id": "2487601",
@@ -15006,7 +20936,25 @@
    "until_year": null,
    "pages": 3,
    "words": 418,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": null,
+    "19": null,
+    "20": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "26": null
+   }
   },
   {
    "id": "2487717",
@@ -15024,7 +20972,29 @@
    "until_year": null,
    "pages": 2,
    "words": 470,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": [
+     10,
+     11,
+     12,
+     13
+    ],
+    "18": [
+     10,
+     11,
+     12,
+     13
+    ],
+    "19": [
+     11
+    ],
+    "26": [
+     1,
+     5,
+     6
+    ]
+   }
   },
   {
    "id": "2507316",
@@ -15042,7 +21012,8 @@
    "until_year": null,
    "pages": 1,
    "words": 201,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2546953",
@@ -15060,7 +21031,13 @@
    "until_year": null,
    "pages": 1,
    "words": 325,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "26": [
+     31,
+     32
+    ]
+   }
   },
   {
    "id": "2548076",
@@ -15084,7 +21061,35 @@
    "until_year": null,
    "pages": 9,
    "words": 2437,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "15": [
+     1,
+     4,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "16": [
+     1
+    ]
+   }
   },
   {
    "id": "2548926",
@@ -15102,7 +21107,35 @@
    "until_year": null,
    "pages": 2,
    "words": 452,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "15": [
+     1,
+     4,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "16": null
+   }
   },
   {
    "id": "2607303",
@@ -15125,7 +21158,21 @@
    "until_year": null,
    "pages": 10,
    "words": 2046,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null,
+    "10": null,
+    "11": null,
+    "21": null
+   }
   },
   {
    "id": "2606030",
@@ -15145,7 +21192,15 @@
    "until_year": null,
    "pages": 2,
    "words": 366,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "2": null,
+    "6": [
+     1
+    ],
+    "11": null,
+    "21": null
+   }
   },
   {
    "id": "2627131",
@@ -15163,7 +21218,10 @@
    "until_year": null,
    "pages": 2,
    "words": 587,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "26": null
+   }
   },
   {
    "id": "2626323",
@@ -15183,7 +21241,13 @@
    "until_year": null,
    "pages": 2,
    "words": 587,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "26": [
+     6,
+     7
+    ]
+   }
   },
   {
    "id": "2626366",
@@ -15203,7 +21267,12 @@
    "until_year": null,
    "pages": 2,
    "words": 540,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     56
+    ]
+   }
   },
   {
    "id": "2706807",
@@ -15221,7 +21290,10 @@
    "until_year": null,
    "pages": 2,
    "words": 573,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "8": null
+   }
   },
   {
    "id": "2707888",
@@ -15239,7 +21311,34 @@
    "until_year": null,
    "pages": 2,
    "words": 539,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     26
+    ],
+    "13": [
+     4,
+     5,
+     11,
+     12,
+     13
+    ],
+    "14": [
+     12,
+     13,
+     14,
+     19,
+     21
+    ],
+    "15": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   }
   },
   {
    "id": "2739299",
@@ -15257,7 +21356,8 @@
    "until_year": null,
    "pages": 1,
    "words": 217,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2756249",
@@ -15277,7 +21377,15 @@
    "until_year": null,
    "pages": 3,
    "words": 638,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "21": null,
+    "22": [
+     20,
+     21,
+     29
+    ]
+   }
   },
   {
    "id": "2790127",
@@ -15297,7 +21405,12 @@
    "until_year": null,
    "pages": 2,
    "words": 513,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     13
+    ]
+   }
   },
   {
    "id": "2807793",
@@ -15315,7 +21428,13 @@
    "until_year": null,
    "pages": 1,
    "words": 285,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "21": [
+     20,
+     21
+    ]
+   }
   },
   {
    "id": "2886942",
@@ -15333,7 +21452,13 @@
    "until_year": null,
    "pages": 2,
    "words": 619,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "14": [
+     1
+    ]
+   }
   },
   {
    "id": "2959290",
@@ -15356,7 +21481,33 @@
    "until_year": null,
    "pages": 12,
    "words": 2793,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "15": null,
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "18": null,
+    "165": null
+   }
   },
   {
    "id": "2960337",
@@ -15376,7 +21527,44 @@
    "until_year": null,
    "pages": 2,
    "words": 442,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": [
+     1,
+     4,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "18": null
+   }
   },
   {
    "id": "2979578",
@@ -15394,7 +21582,8 @@
    "until_year": null,
    "pages": 1,
    "words": 192,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2981626",
@@ -15412,7 +21601,8 @@
    "until_year": null,
    "pages": 2,
    "words": 74,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3132918",
@@ -15432,7 +21622,12 @@
    "until_year": null,
    "pages": 2,
    "words": 513,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "19": [
+     13
+    ]
+   }
   },
   {
    "id": "2423177",
@@ -15450,7 +21645,10 @@
    "until_year": null,
    "pages": 6,
    "words": 498,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "20": null
+   }
   },
   {
    "id": "3172015",
@@ -15468,7 +21666,10 @@
    "until_year": null,
    "pages": 3,
    "words": 458,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "23": null
+   }
   },
   {
    "id": "3222748",
@@ -15490,7 +21691,25 @@
    "until_year": null,
    "pages": 12,
    "words": 2120,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "22": null,
+    "23": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "26": null,
+    "28": null,
+    "29": null
+   }
   },
   {
    "id": "3222079",
@@ -15508,7 +21727,47 @@
    "until_year": null,
    "pages": 2,
    "words": 303,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "24": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "29": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "91": null
+   }
   },
   {
    "id": "3222929",
@@ -15526,7 +21785,11 @@
    "until_year": null,
    "pages": 2,
    "words": 259,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "23": null,
+    "26": []
+   }
   },
   {
    "id": "3240401",
@@ -15544,7 +21807,12 @@
    "until_year": null,
    "pages": 3,
    "words": 529,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "14": [
+     9
+    ]
+   }
   },
   {
    "id": "3292730",
@@ -15564,7 +21832,10 @@
    "until_year": null,
    "pages": 2,
    "words": 366,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": null
+   }
   },
   {
    "id": "3311893",
@@ -15582,7 +21853,13 @@
    "until_year": null,
    "pages": 2,
    "words": 354,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "4": [
+     25,
+     26
+    ]
+   }
   },
   {
    "id": "3311442",
@@ -15602,7 +21879,13 @@
    "until_year": null,
    "pages": 2,
    "words": 521,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "25": [
+     10
+    ]
+   }
   },
   {
    "id": "3316200",
@@ -15622,7 +21905,12 @@
    "until_year": null,
    "pages": 3,
    "words": 494,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "28": [
+     9
+    ]
+   }
   },
   {
    "id": "3441649",
@@ -15642,7 +21930,12 @@
    "until_year": null,
    "pages": 2,
    "words": 424,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "2": [
+     1
+    ]
+   }
   },
   {
    "id": "3478676",
@@ -15662,7 +21955,12 @@
    "until_year": null,
    "pages": 3,
    "words": 762,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "11": [
+     19
+    ]
+   }
   },
   {
    "id": "3750410",
@@ -15682,7 +21980,13 @@
    "until_year": null,
    "pages": 3,
    "words": 464,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "17": [
+     11
+    ]
+   }
   },
   {
    "id": "3840450",
@@ -15700,7 +22004,8 @@
    "until_year": null,
    "pages": 5,
    "words": 748,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "3880209",
@@ -15724,7 +22029,31 @@
    "until_year": null,
    "pages": 10,
    "words": 1421,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": null,
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "18": [
+     1,
+     4,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ]
+   }
   },
   {
    "id": "3879400",
@@ -15744,7 +22073,30 @@
    "until_year": null,
    "pages": 3,
    "words": 314,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "18": [
+     1,
+     4,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ]
+   }
   },
   {
    "id": "3897004",
@@ -15762,7 +22114,12 @@
    "until_year": null,
    "pages": 3,
    "words": 464,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     8
+    ]
+   }
   },
   {
    "id": "3897345",
@@ -15780,7 +22137,12 @@
    "until_year": null,
    "pages": 2,
    "words": 276,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     7
+    ]
+   }
   },
   {
    "id": "3923215",
@@ -15804,7 +22166,55 @@
    "until_year": null,
    "pages": 10,
    "words": 1753,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": [
+     1,
+     4,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
   },
   {
    "id": "3924171",
@@ -15824,7 +22234,56 @@
    "until_year": null,
    "pages": 2,
    "words": 337,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {
+    "16": [
+     1,
+     4,
+     6,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "17": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
   },
   {
    "id": "3990229",
@@ -15842,7 +22301,8 @@
    "until_year": null,
    "pages": 2,
    "words": 124,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   },
   {
    "id": "2263910",
@@ -15862,7 +22322,8 @@
    "until_year": null,
    "pages": 1,
    "words": 160,
-   "transcribed": 0
+   "transcribed": 0,
+   "blocks": {}
   }
  ]
 }

@@ -24,6 +24,9 @@
   .sw.racial { background: var(--racial); }
   .sw.expired { background: var(--expired); opacity: .8; }
   .sw.pre { border: 2px dashed var(--expired); width: 12px; height: 8px; }
+  .sw.carried { border: 2px dashed #ff6b6f; background: var(--racial); width: 12px; height: 8px; }
+  #tip .pre.carried { border-top-color: var(--racial); }
+  #tip .pre.carried h3 { color: #ff8a8d; }
   .sw.released { border: 2px solid var(--released); background: rgba(245,197,24,.12); width: 12px; height: 8px; }
   .sw.restr { background: var(--restr); opacity: .55; }
   .sw.none { background: var(--none); }
@@ -71,6 +74,7 @@
     <div><span class="sw racial"></span>Racial covenant, no release found</div>
     <div><span class="sw expired"></span>Racial covenant, expired by its own term</div>
     <div><span class="sw pre"></span>Racial covenant put on the land before it was platted</div>
+    <div><span class="sw carried"></span>Re-platted land still under a racial covenant</div>
     <div><span class="sw released"></span>Racial covenant released (Prairie Village Homes Assn., 2007)</div>
     <div><span class="sw restr"></span>Other recorded restrictions</div>
     <div><span class="sw none"></span>None found</div>
@@ -97,6 +101,9 @@ const title = s => esc(s).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
 
 function preCard(list) {
   return list.map(p => {
+    if (p.declaration) return `<div class="pre carried"><h3>Re-platted land</h3>${esc(p.from)}, now in ${esc(p.into)}. ` +
+      `${esc(p.note)}<br><span class="unrel">${p.status === "racial" ? "Racial covenant — no release on record" : "Racial covenant"}` +
+      ` (${esc(p.declaration)}, ${esc(String(p.recorded).slice(0, 4))})</span></div>`;
     const now = JSON.parse(p.now);
     return `<div class="pre"><h3>Before it was platted</h3><b>${esc(String(p.recorded).slice(0, 4))}</b> ${esc(p.book_page)}, ` +
       `by ${esc(p.by)}: ${esc(p.summary)}<br><span class="exp">Racial covenant ended ${esc(p.ended)} (${esc(p.term)})</span>` +
@@ -116,7 +123,8 @@ function card(p, extra = "") {
           `<span class="badge ${p.status}">${STATUS[p.status]}</span>`;
   if (d.declarations.length) {
     h += `<div>Recorded declarations:</div><ul>` + d.declarations.map(x => {
-      let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${esc(x.book_page)} — ${esc(x.kind)}`;
+      let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${esc(x.book_page)} — ${esc(x.kind)}` +
+               (x.blocks_label ? ` <span class="terms">· ${esc(x.blocks_label)}</span>` : "");
       if (x.features.length) li += ` <span class="terms">(${esc(x.features.join(", "))})</span>`;
       if (x.racial) li += x.released
         ? `<br><span class="rel">Racial covenant released ${esc(x.released.recorded)}, ${esc(x.released.book_page)}</span>`
@@ -126,6 +134,7 @@ function card(p, extra = "") {
       return `<li>${li}</li>`;
     }).join("") + `</ul>`;
   }
+  if (p.elsewhere) h += `<div class="terms">${p.elsewhere} more declaration${p.elsewhere > 1 ? "s" : ""} cover other blocks of this subdivision</div>`;
   if (p.note) h += `<div class="terms" style="margin:4px 0">${esc(p.note)}</div>`;
   if (d.on_plat.length)
     h += `<div>Written on the plat: ${d.on_plat.map(x => esc(x.book_page)).join(", ")}</div>`;
@@ -188,8 +197,15 @@ if (!token) {
     map.addLayer({id: "pre-line", type: "line", source: "pre",
       paint: {"line-color": "#f07fbf", "line-width": 2.2, "line-dasharray": [2, 1.5]}});
 
+    // re-platted land still under a racial covenant, where it doesn't follow the new plat's lots
+    const carried = await (await fetch("carried.geojson")).json();
+    map.addSource("carried", {type: "geojson", data: carried});
+    map.addLayer({id: "carried-fill", type: "fill", source: "carried", paint: {"fill-color": "#e5484d", "fill-opacity": 0.55}});
+    map.addLayer({id: "carried-line", type: "line", source: "carried",
+      paint: {"line-color": "#ff6b6f", "line-width": 2.2, "line-dasharray": [2, 1.5]}});
+
     const at = pt => [map.queryRenderedFeatures(pt, {layers: ["fill"]})[0],
-                      map.queryRenderedFeatures(pt, {layers: ["pre-fill"]}).map(f => f.properties)];
+                      map.queryRenderedFeatures(pt, {layers: ["carried-fill", "pre-fill"]}).map(f => f.properties)];
     map.on("mousemove", e => {
       const [f, p] = at(e.point);
       const id = f ? f.id : null;

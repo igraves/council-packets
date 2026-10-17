@@ -1,5 +1,5 @@
 {
- "_about": "Instruments filed with a plat that OCR could not classify (mostly low-resolution photostat negatives), read by eye from the image. kind overrides the OCR classification; unrelated marks papers filed the same day that concern other land.",
+ "_about": "Instruments filed with a plat that OCR could not classify (mostly low-resolution photostat negatives), read by eye from the image. kind overrides the OCR classification; unrelated marks papers filed the same day that concern other land; blocks overrides the blocks and lots read from the text (block → lots such as \"1-34\", or null for the whole block).",
  "MISC 13 248": {"kind": "affidavit", "note": "affidavit of possession, land outside the plat", "unrelated": true},
  "MISC 27 89": {"kind": "other", "note": "road vacation petition, Roesland Lane in Mission Ridge", "unrelated": true},
  "MISC 31 94": {"kind": "affidavit", "note": "heirship affidavit, land in Sec 36-14-25", "unrelated": true},
@@ -53,6 +53,9 @@
  "MISC 200 186": {"kind": "zoning order", "note": "county resolution on the Monticello Township zoning board", "unrelated": true},
  "MISC 214 6": {"kind": "other", "note": "articles of incorporation certified by the Secretary of State"},
  "MISC 43 573": {"kind": "restrictions", "note": "race-only declaration on all of Block 36, 40 years, no renewal"},
+ "MISC 50 367": {"blocks": {"18": "25-45", "19": "1-21"}, "note_blocks": "the note on its cover page"},
+ "MISC 34 250": {"blocks": {"7": "1-16", "9": null, "10": null, "11": null, "12": null, "13": null, "14": null, "15": null, "16": null}, "note_blocks": "the note on its cover page"},
+ "MISC 26 349": {"blocks": {"1": "1-34", "2": "1-34", "3": "1-34", "4": "1-34", "5": "1-16"}, "note_blocks": "as the 2007 release (OR 200711 001865) lists them"},
  "MISC 65 492": {"kind": "affidavit", "note": "1917 identity affidavit, land in Sec 25-14-22", "unrelated": true},
  "MISC 65 493": {"kind": "restriction amendment", "note": "modifies Southmoor Gardens' building lines", "unrelated": true}
 }

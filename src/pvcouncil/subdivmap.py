@@ -7,9 +7,11 @@ closing the streets between blocks. Only parcel IDs and geometry are fetched; th
 layer's owner fields are not. The raw parcels are cached in deeds/cache/gis/.
 
 Each subdivision carries what the restrictions survey found: declarations filed with
-its plats (with their terms, and whether a racial covenant was released), restrictions
-written on the plat, and how many indexed restriction instruments name it. The result,
-map/subdivisions.geojson, is drawn by map/index.html.
+its plats or found in the Miscellaneous index (with their terms, the blocks they cover,
+and whether a racial covenant was released or ended), restrictions written on the plat,
+and how many indexed restriction instruments name it. A subdivision is drawn in parts
+where its racial covenants cover different blocks. The result, map/subdivisions.geojson,
+is drawn by map/index.html.
 """
 
 import json
@@ -31,30 +33,71 @@ PAGE = 2000
 # half a street's width, merge, and shrink back so a subdivision is one shape
 CLOSE_DEG = 0.00013
 SIMPLIFY_DEG = 0.00002
-# Subdivisions whose declarations each cover only some of the county code's blocks: each part is
-# drawn as its own shape. A part without "declarations" keeps the declarations filed with the
-# plat; one with a list carries just those (read walk candidates, by book and page). The last
-# part, blocks None, takes the remaining blocks.
-SPLITS = {"5500": [
-    # Prairie Village's 1941 declaration (MISC 26 349), released in 2007, names Lots in Blocks 1-5 only
-    {"blocks": {1, 2, 3, 4, 5}, "label": "Blocks 1–5"},
-    {"blocks": {36}, "label": "Block 36", "declarations": ["MISC 43 573"]},
-    {"blocks": None, "label": "Blocks 6–35 and 37–56", "declarations": [],
-     "note": "The 1941 declaration (MISC 26 349), whose racial covenant was released in 2007, covers "
-             "Blocks 1–5 only, and Block 36 has its own 1950 declaration. The survey has not yet matched "
-             "a declaration to these blocks."},
-]}
+# Each declaration covers the blocks it names (restrictread.lots_blocks, or restriction_review.json
+# read by eye), or every block if it names none. Walk candidates (declarations found in the
+# Miscellaneous index rather than filed with a plat) are shown only where they name blocks.
+DECL_KINDS = {"restrictions", "restriction amendment", "homes association"}
 # Lots re-platted into a later subdivision: a replat does not release the original
-# declaration, so they are drawn with the subdivision they were first platted in.
+# declaration, so they are drawn with the subdivision and block they were first platted in.
 REPLATS = {
     # Prairie Fields (PLAT 17 46, 1954) re-platted Lots 1-5, Block 1 of Meadowbrook Downs as its
     # Block 22, Lots 1-5; MISC 43 168 (1949) covers all six lots and renews every ten years
-    "2350": {"code": "4200", "block": 22, "lots": {1, 2, 3, 4, 5},
+    "2350": {"code": "4200", "block": 22, "lots": {1, 2, 3, 4, 5}, "into_block": 1,
              "note": "Lots 1–5 were re-platted in 1954 as Prairie Fields Block 22, Lots 1–5 (PLAT 17 46). "
                      "The replat did not release the 1949 declaration, which renews every ten years.",
              "later_note": "Block 22, Lots 1–5 are shown with Meadowbrook Downs, the 1949 subdivision "
                            "they were re-platted from, whose declaration still covers them."},
 }
+
+
+# Re-platted land that does not line up with the new plat's lots, drawn from the plats' measurements
+# as its own overlay (map/carried.geojson). "east_of": a strip ft wide along the east side of the
+# named lots' parcels, from below_of's south line (or the lots' south line, rising) for len_ft.
+CARRIED_PATH = PROJECT_ROOT / "map" / "carried.geojson"
+FT_LAT = 1 / 364_000  # degrees of latitude per foot, near 39° N
+CARRIED = [
+    {"declaration": "MISC 32 195", "from": "Fonticello Gardens No. 2 (1946), Lot 7", "into": "Roe-69 (1983)",
+     "east_of": ("1000", None), "width_ft": 100, "len_ft": 332.44, "rising": True,
+     "note": "Lot 7, the east 100 feet of the 1946 plat, was left out of the 1959 Replat of Fonticello Gardens "
+             "No. 2 and platted into Roe-69 in 1983 (PLAT 54 7). The 1946 declaration names Lot 7 and renews "
+             "every 25 years."},
+    {"declaration": "MISC 24 273", "from": "Prairie Woods (1939), east 70 feet of Lot 27", "into": "Fonticello (1982)",
+     "east_of": ("5600", "32"), "below_of": ("5600", "26"), "width_ft": 70, "len_ft": 186.99, "rising": False,
+     "note": "The east 70 feet of Lot 27 were resubdivided into Fonticello in 1982 (PLAT 52 24). The 1939 "
+             "declaration covers every lot of Prairie Woods and renews automatically."},
+]
+
+
+def carried_overlay(parcels: dict, subs: dict) -> dict:
+    from math import cos, radians
+
+    import shapely
+    from shapely.geometry import box, shape
+    from shapely.ops import unary_union
+
+    def lots(code, lot=None):
+        return unary_union([shape(f["geometry"]) for f in parcels["features"]
+                            if (pid := (f["properties"] or {}).get("GeoPropID") or "").startswith("OP" + code)
+                            and (lot is None or pid[11:].lstrip("0").startswith(lot))])
+
+    decls = {d["book_page"]: d for s in subs.values() for d in s["declarations"]}
+    feats = []
+    for i, c in enumerate(CARRIED):
+        ref = lots(*c["east_of"])
+        x0, y0, x1, y1 = ref.bounds
+        ft_lon = FT_LAT / cos(radians(y0))
+        top = lots(*c["below_of"]).bounds[1] if c.get("below_of") else None
+        ylo, yhi = (y0, y0 + c["len_ft"] * FT_LAT) if c["rising"] else (top - c["len_ft"] * FT_LAT, top)
+        area = box(x1, ylo, x1 + c["width_ft"] * ft_lon, yhi)
+        d = decls.get(c["declaration"], {})
+        props = {k: c[k] for k in ("declaration", "from", "into", "note")}
+        props.update(recorded=d.get("recorded"), status=_status({"declarations": [d], "on_plat": [], "indexed": 0})
+                     if d else "racial")
+        feats.append({"type": "Feature", "id": i, "properties": props,
+                      "geometry": json.loads(shapely.to_geojson(area))})
+    fc = {"type": "FeatureCollection", "features": feats}
+    CARRIED_PATH.write_text(json.dumps(fc, separators=(",", ":")))
+    return fc
 
 
 def fetch_parcels(refresh: bool = False, echo=print) -> dict:
@@ -80,35 +123,47 @@ def fetch_parcels(refresh: bool = False, echo=print) -> dict:
     return data
 
 
-def outlines(parcels: dict) -> dict:
-    """Subdivision code → merged (Multi)Polygon of its platted parcels."""
+def outlines(parcels: dict, group) -> dict:
+    """Shape key (group(parcel ID)) → merged (Multi)Polygon of its platted parcels."""
     from shapely.geometry import shape
     from shapely.ops import unary_union
 
-    by_code = defaultdict(list)
+    by_key = defaultdict(list)
     for f in parcels["features"]:
         pid = (f["properties"] or {}).get("GeoPropID") or ""
         if pid.startswith("OP") and f.get("geometry"):
-            by_code[_group(pid)].append(shape(f["geometry"]).buffer(0))
+            by_key[group(pid)].append(shape(f["geometry"]).buffer(0))
     out = {}
-    for code, geoms in by_code.items():
+    for key, geoms in by_key.items():
         merged = unary_union([g.buffer(CLOSE_DEG, join_style="mitre") for g in geoms])
-        out[code] = _fill_small_holes(merged.buffer(-CLOSE_DEG, join_style="mitre")).simplify(SIMPLIFY_DEG)
+        out[key] = _fill_small_holes(merged.buffer(-CLOSE_DEG, join_style="mitre")).simplify(SIMPLIFY_DEG)
     return out
 
 
-def _group(pid: str) -> str:
-    """The shape a parcel ID (OP<code><block> <lot>) is drawn in: its code, a REPLATS original, or code+."""
+def code_block(pid: str) -> tuple[str, int | None]:
+    """A parcel ID's subdivision code and block, with REPLATS lots moved back to the subdivision and
+    block they were first platted in. A few blocks are lettered (00BS): None."""
     code = pid[2:6]
-    block = int(pid[6:10]) if pid[6:10].isdigit() else None  # a few blocks are lettered, e.g. 00BS
+    block = int(pid[6:10]) if pid[6:10].isdigit() else None
     lot = re.match(r"\d*", pid[11:]).group()
     for orig, r in REPLATS.items():
         if code == r["code"] and block == r["block"] and lot and int(lot) in r["lots"]:
-            return orig
-    for i, part in enumerate(SPLITS.get(code, [])):
-        if part["blocks"] is None or block in part["blocks"]:
-            return f"{code}#{i}"
-    return code
+            return orig, r["into_block"]
+    return code, block
+
+
+def _ranges(nums) -> str:
+    out = []
+    for n in sorted(nums):
+        if out and n == out[-1][1] + 1:
+            out[-1][1] = n
+        else:
+            out.append([n, n])
+    return ", ".join(f"{a}" if a == b else f"{a}–{b}" for a, b in out)
+
+
+def _blocks_label(blocks) -> str:
+    return f"Block{'s' if len(blocks) > 1 else ''} {_ranges(blocks)}"
 
 
 SMALL_HOLE_DEG2 = 3e-7  # about 3,000 m²: the gaps left where streets cross
@@ -149,13 +204,22 @@ def subdivision_records() -> dict[str, dict]:
         s["plats"].append(name)
         plat_code[name] = info["subdivision_code"]
 
+    filed = set()
     for e in out.get("filed_with_plat", []):
         r = reads.get(e["id"], {})
         if r.get("unrelated"):
             continue
+        filed.add(e["id"])
         d = _declaration(e, r)
         for code in {plat_code[p] for p in e["plats"] if p in plat_code}:
             subs[code]["declarations"].append(d)
+    for r in reads.values():
+        # a one-page filing is a lot's certificate or notice, not a declaration
+        if (r.get("source") == "candidate" and r["id"] not in filed and not r.get("unrelated")
+                and r["kind"] in DECL_KINDS and r["pages"] >= 2 and r.get("blocks")):
+            d = _declaration(r, r)
+            for code in {plat_code[p] for p in r["plats"] if p in plat_code}:
+                subs[code]["declarations"].append(d)
     for p, rows in on_plat.items():
         if p in plat_code:
             for x in rows:
@@ -180,7 +244,8 @@ def _declaration(e: dict, r: dict) -> dict:
             "features": [f for f in r.get("features", []) if f != "racial restriction"], "racial": racial,
             "released": restrictions.RACIAL_RELEASES.get(e["book_page"]) if racial else None,
             "expired": restrictions.RACIAL_EXPIRED.get(e["book_page"]) if racial else None,
-            "note": r.get("note"), "plats": e["plats"]}
+            "note": r.get("note"), "plats": e["plats"],
+            "blocks": sorted(int(b) for b in r["blocks"]) if r.get("blocks") else None}  # None: every block
 
 
 def _status(s: dict) -> str:
@@ -197,11 +262,45 @@ def _status(s: dict) -> str:
 def build(refresh: bool = False, echo=print) -> dict:
     import shapely
 
-    shapes = outlines(fetch_parcels(refresh, echo))
+    parcels = fetch_parcels(refresh, echo)
     subs = subdivision_records()
-    by_book_page = {}
-    if restrictread.RESULTS_PATH.exists():
-        by_book_page = {r["book_page"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
+    county_blocks = defaultdict(set)
+    for f in parcels["features"]:
+        pid = (f["properties"] or {}).get("GeoPropID") or ""
+        if pid.startswith("OP"):
+            code, block = code_block(pid)
+            if block is not None:
+                county_blocks[code].add(block)
+    # keep only blocks the county has; a filed declaration left with none covers every block
+    for code, s in subs.items():
+        kept = []
+        for d in s["declarations"]:
+            if d["blocks"] is not None:
+                named = sorted(set(d["blocks"]) & county_blocks[code])
+                if not named and d["document"] is None:
+                    continue  # a walk candidate whose blocks are not this subdivision's
+                d = dict(d, blocks=named or None)
+            kept.append(d)
+        s["declarations"] = kept
+
+    def racial_key(code, block):
+        ds = subs[code]["declarations"] if code in subs else []
+        return frozenset(d["book_page"] for d in ds
+                         if d["racial"] and (d["blocks"] is None or block in d["blocks"]))
+
+    parts = {}  # code → {racial key: part number}, numbered from the lowest block
+    for code, blocks in county_blocks.items():
+        keys = {}
+        for b in sorted(blocks):
+            keys.setdefault(racial_key(code, b), len(keys))
+        parts[code] = keys
+
+    def group(pid):
+        code, block = code_block(pid)
+        keys = parts.get(code, {})
+        return code if len(keys) <= 1 else f"{code}#{keys.get(racial_key(code, block), 0)}"
+
+    shapes = outlines(parcels, group)
     features = []
     for i, (key, geom) in enumerate(sorted(shapes.items())):
         geom = shapely.set_precision(geom, 1e-6)  # about 10 cm
@@ -211,20 +310,25 @@ def build(refresh: bool = False, echo=print) -> dict:
         s = subs.get(code) or {"code": code, "name": f"Subdivision {code}", "plats": [], "declarations": [],
                                "on_plat": [], "indexed": 0, "status": "none", "report": REPORT_URL}
         s = dict(s, note=None)
+        blocks = sorted(county_blocks[code])
+        if "#" in key:
+            n = int(key.split("#")[1])
+            blocks = [b for b in blocks if parts[code].get(racial_key(code, b)) == n]
+            s["name"] = f"{s['name']}, {_blocks_label(blocks)}"
+        here = [d for d in s["declarations"] if d["blocks"] is None or set(d["blocks"]) & set(blocks)]
+        s["elsewhere"] = len(s["declarations"]) - len(here)
+        s["declarations"] = [dict(d, blocks_label=_blocks_label(d["blocks"]) if d["blocks"] else None) for d in here]
+        s["status"] = _status(s)
+        if "#" in key and not any(d["racial"] for d in here):
+            racial = {b for d in subs[code]["declarations"] if d["racial"] for b in d["blocks"] or []}
+            s["note"] = (f"The racial covenants in this subdivision's declarations name Blocks {_ranges(racial)}; "
+                         "these blocks are not among them.")
         if code in REPLATS:
             s["note"] = REPLATS[code]["note"]
         for r in REPLATS.values():
             if code == r["code"]:
                 s["note"] = r["later_note"]
-        if "#" in key:
-            part = SPLITS[code][int(key.split("#")[1])]
-            s["name"] = f"{s['name']}, {part['label']}"
-            if "declarations" in part:
-                s["declarations"] = [_declaration(by_book_page[bp], by_book_page[bp])
-                                     for bp in part["declarations"] if bp in by_book_page]
-                s["note"] = part.get("note")
-                s["status"] = _status(s)
-        props = {k: s[k] for k in ("code", "name", "status", "report", "indexed", "note")}
+        props = {k: s[k] for k in ("code", "name", "status", "report", "indexed", "note", "elsewhere")}
         # Mapbox flattens nested properties to strings, so the details travel as JSON
         props["details"] = json.dumps({k: s[k] for k in ("plats", "declarations", "on_plat")})
         features.append({"type": "Feature", "id": i, "properties": props,
@@ -232,4 +336,5 @@ def build(refresh: bool = False, echo=print) -> dict:
     fc = {"type": "FeatureCollection", "features": features}
     MAP_DIR.mkdir(exist_ok=True)
     GEOJSON_PATH.write_text(json.dumps(fc, separators=(",", ":")))
+    carried_overlay(parcels, subs)
     return fc

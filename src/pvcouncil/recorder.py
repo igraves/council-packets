@@ -38,7 +38,8 @@ from pvcouncil.download import USER_AGENT
 BASE = "https://rtadocument.jocogov.org/TrakRecordPublicAccessSubscription"
 SEARCH_URL = f"{BASE}/api/v2Search"
 
-LEGAL_FIELDS = {"subdivision": 1, "block": 2, "lot": 3, "pin": 8}
+# the search page's legal filter ids (its ss.Filters option list)
+LEGAL_FIELDS = {"subdivision": 1, "block": 10, "lot": 2, "pin": 8, "tract": 4, "section": 5}
 PLAT_CATEGORY = 6
 PLAT_DOC_TYPES = [7, 105, 112, 115]
 OTHER_CATEGORY = 7
@@ -183,7 +184,8 @@ class Recorder:
         book is (book type, book, page), e.g. ("MISC", 22, 306); recorded is a
         (from, to) date range as MM/DD/YYYY.
         """
-        legal_param = "|".join(f"{LEGAL_FIELDS[f]}:{op}:{v}" for f, op, v in legal)
+        # joined as the search page's getLegalFilter() joins them
+        legal_param = ",".join(f"{LEGAL_FIELDS[f]}:{op}:{v}" for f, op, v in legal)
         rows, first, total, draw = [], 1, None, 1
         while total is None or first <= total:
             last = first + PAGE_SIZE - 1

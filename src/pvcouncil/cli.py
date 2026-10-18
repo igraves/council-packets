@@ -490,6 +490,29 @@ def restriction_read(workers, offline, n_candidates):
     click.echo(f"→ {restrictread.RESULTS_PATH.relative_to(plats_root())}")
 
 
+@cli.command("deed-chain")
+@click.option("--workers", default=6, show_default=True, help="Parallel OCR processes")
+@click.option("--offline", is_flag=True, help="Skip searching and downloading; OCR and read what is on disk")
+def deed_chain(workers, offline):
+    """Follow sample lots' deeds from the first sale, reading each for racial language."""
+    from pvcouncil import deedchain
+    from pvcouncil.recorder import RecorderError
+
+    if not offline:
+        try:
+            deedchain.fetch(echo=click.echo)
+            deedchain.download(deedchain.deeds(), echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(str(e))
+    deedchain.ocr(deedchain.deeds(), workers=workers, echo=click.echo)
+    rows = deedchain.build()["deeds"]
+    lots = {(r["block"], r["lot"]) for r in rows}
+    click.echo(f"{len(rows)} deeds on {len(lots)} lots, {sum(r['racial'] for r in rows)} with racial language; "
+               f"{sum(r['cites_restrictions'] for r in rows)} cite the restrictions, "
+               f"{sum(r['restates_restrictions'] for r in rows)} restate some of them")
+    click.echo(f"→ {deedchain.RESULTS_PATH.relative_to(plats_root())}")
+
+
 def plats_root():
     from pvcouncil import plats
 
@@ -584,7 +607,7 @@ def subdivision_map(refresh, port):
 
 @cli.command("deed-ocr")
 @click.option("--engine", "engine_name", help="tesseract, surya, olmocr, qwen-vl, or gemma4")
-@click.option("--key", "keys", multiple=True, help="Document key from the viewer (p:<id> or r:<id>); repeatable")
+@click.option("--key", "keys", multiple=True, help="Document key from the viewer (p:<id>, r:<id> or d:<id>); repeatable")
 @click.option("--poor", is_flag=True, help="Every document flagged poor OCR")
 @click.option("--invert", type=click.Choice(["auto", "on", "off"]), default="auto", show_default=True,
               help="Invert pages: auto inverts mostly-dark pages (photostat negatives)")
@@ -613,10 +636,18 @@ def deed_ocr(engine_name, keys, poor, invert, rot, redo):
     if not todo:
         raise click.ClickException("nothing to read: pass --key or --poor (and --redo to read again)")
     click.echo(f"Reading {len(todo)} documents ({sum(d['pages'] for d in todo)} pages) with {engine_name}")
+    failed = []
     for i, d in enumerate(todo, 1):
-        r = ocrengines.read_document(engine_name, d["key"], d["path"], int(rot), invert)
+        try:
+            r = ocrengines.read_document(engine_name, d["key"], d["path"], int(rot), invert)
+        except RuntimeError as e:  # e.g. the model looping on a page ("token repeat limit reached")
+            failed.append(d["book_page"])
+            click.echo(f"[{i}/{len(todo)}] {d['book_page']} ({d['key']}): not read: {str(e)[:120]}")
+            continue
         click.echo(f"[{i}/{len(todo)}] {d['book_page']} ({d['key']}): {r['words']} words "
                    f"(Tesseract {d['ocr_words']}) in {r['seconds']:.0f}s")
+    if failed:
+        click.echo(f"{len(failed)} not read: {', '.join(failed)}")
 
 
 @cli.command("restriction-survey")

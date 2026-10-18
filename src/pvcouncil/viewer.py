@@ -91,6 +91,22 @@ def build_index() -> dict:
                 "ocr_words": words, "ocr": "poor" if poor else "good",
                 "transcribed_terms": r.get("transcribed_terms", {}),
             }
+    from pvcouncil import deedchain
+
+    if deedchain.RESULTS_PATH.exists():
+        for r in json.loads(deedchain.RESULTS_PATH.read_text())["deeds"]:
+            path = deedchain.image_path(r)
+            if not path.exists() or f"d:{r['id']}" in docs:
+                continue
+            words = r.get("words", 0)
+            docs[f"d:{r['id']}"] = {
+                "key": f"d:{r['id']}", "kind": "deed", "book_page": r["book_page"], "recorded": r["recorded"],
+                "title": f"{r['subdivision']} Block {r['block']} Lot {r['lot']}", "code": "",
+                "subdivision": r["subdivision"], "path": str(path),
+                "features": ["racial restriction"] if r["racial"] else [], "note": None, "term": None,
+                "ocr_words": words, "ocr": "poor" if words / max(1, r["pages"]) < POOR_INSTRUMENT_WORDS_PER_PAGE else "good",
+                "transcribed_terms": {},
+            }
     for d in docs.values():
         with fitz.open(d["path"]) as pdf:
             d["pages"] = pdf.page_count
@@ -160,7 +176,9 @@ def source(doc: dict) -> dict:
 
 def tesseract_text(doc: dict) -> str:
     """The pipeline's own Tesseract OCR of a document."""
-    d = platocr.OCR_DIR if doc["key"].startswith("p:") else restrictread.OCR_DIR
+    from pvcouncil import deedchain
+
+    d = {"p": platocr.OCR_DIR, "d": deedchain.OCR_DIR}.get(doc["key"][0], restrictread.OCR_DIR)
     f = d / f"{Path(doc['path']).stem}.txt"
     return f.read_text() if f.exists() else ""
 

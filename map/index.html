@@ -54,6 +54,21 @@
   #tip .close { position: absolute; top: 6px; right: 9px; cursor: pointer; color: var(--muted);
     display: none; font-size: 16px; background: none; border: 0; }
   #tip.pinned .close { display: block; }
+  #tip a.doc { text-decoration: underline dotted; text-underline-offset: 2px; cursor: zoom-in; }
+  #peek { position: fixed; display: none; z-index: 5; width: 220px; padding: 6px; pointer-events: none; }
+  #peek img { display: block; width: 100%; min-height: 120px; border-radius: 4px; background: #fff; }
+  #peek .cap { color: var(--muted); font-size: 11px; margin-top: 4px; }
+  #modal { position: fixed; inset: 0; z-index: 10; display: none; flex-direction: column;
+    background: rgba(5, 7, 10, .88); }
+  #modal.open { display: flex; }
+  #modal header { display: flex; align-items: center; gap: 12px; padding: 10px 16px;
+    background: var(--panel); border-bottom: 1px solid var(--line); }
+  #modal header h2 { font-size: 15px; margin: 0; flex: 1; }
+  #modal header span { color: var(--muted); font-size: 12px; }
+  #modal header button { background: none; border: 0; color: var(--text); font-size: 22px; cursor: pointer; line-height: 1; }
+  #modal .pages { flex: 1; overflow: auto; padding: 16px; display: flex; flex-direction: column;
+    align-items: center; gap: 16px; }
+  #modal .pages img { width: min(100%, 1000px); background: #fff; border-radius: 4px; box-shadow: 0 4px 18px rgba(0,0,0,.5); }
   #notoken { position: absolute; inset: 0; display: none; place-items: center; text-align: center; padding: 24px; }
   #notoken code { background: #1b2028; padding: 2px 6px; border-radius: 4px; }
   @media (max-width: 600px) {
@@ -81,6 +96,11 @@
   </div>
 </div>
 <div id="tip" class="panel"><button class="close" aria-label="Close">×</button><div id="tipbody"></div></div>
+<div id="peek" class="panel"><img alt=""><div class="cap"></div></div>
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <header><h2 id="modal-title"></h2><span></span><button aria-label="Close">×</button></header>
+  <div class="pages"></div>
+</div>
 <div id="notoken"><div>
   <h2>Mapbox token needed</h2>
   <p>Put <code>window.MAPBOX_TOKEN = "pk…";</code> in <code>map/config.js</code>,
@@ -99,20 +119,36 @@ const STATUS = {
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
 const title = s => esc(s).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
 
+// Document images: only `pvc subdivision-map --serve` has them (docs/index.json lists each
+// document's page count); anywhere else the fetch fails and book/page numbers stay plain text
+let DOCS = {};
+fetch("docs/index.json").then(r => r.ok ? r.json() : {}).then(d => DOCS = d).catch(() => {});
+const slug = bp => String(bp ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const doc = bp => DOCS[slug(bp)]
+  ? `<a class="doc" href="docs/${slug(bp)}/1.jpg?size=full" data-doc="${slug(bp)}" data-title="${esc(bp)}">${esc(bp)}</a>`
+  : esc(bp);
+const pageCount = n => `${n} page${n > 1 ? "s" : ""}`;
+
 function preCard(list) {
   return list.map(p => {
     if (p.declaration) return `<div class="pre carried"><h3>Re-platted land</h3>${esc(p.from)}, now in ${esc(p.into)}. ` +
       `${esc(p.note)}<br><span class="unrel">${p.status === "racial" ? "Racial covenant — no release on record" : "Racial covenant"}` +
-      ` (${esc(p.declaration)}, ${esc(String(p.recorded).slice(0, 4))})</span></div>`;
+      ` (${doc(p.declaration)}, ${esc(String(p.recorded).slice(0, 4))})</span></div>`;
     const now = JSON.parse(p.now);
-    return `<div class="pre"><h3>Before it was platted</h3><b>${esc(String(p.recorded).slice(0, 4))}</b> ${esc(p.book_page)}, ` +
+    return `<div class="pre"><h3>Before it was platted</h3><b>${esc(String(p.recorded).slice(0, 4))}</b> ${doc(p.book_page)}, ` +
       `by ${esc(p.by)}: ${esc(p.summary)}<br><span class="exp">Racial covenant ended ${esc(p.ended)} (${esc(p.term)})</span>` +
       (now.length ? `<div class="sub" style="margin:3px 0 0">Land now in ${now.map(title).join(", ")}</div>` : "") + `</div>`;
   }).join("");
 }
 
+function hint(h) {
+  const docs = h.includes('class="doc"');
+  return h + `<div class="hint">${pinned ? (docs ? "Hover a document to preview it; click to open it" : "")
+    : docs ? "Click to keep open and view the documents" : "Click to keep open"}</div>`;
+}
+
 function content(sub, pre) {
-  if (!sub) return preCard(pre) + `<div class="hint">${pinned ? "" : "Click to keep open"}</div>`;
+  if (!sub) return hint(preCard(pre));
   return card(sub.properties, preCard(pre));
 }
 
@@ -123,11 +159,11 @@ function card(p, extra = "") {
           `<span class="badge ${p.status}">${STATUS[p.status]}</span>`;
   if (d.declarations.length) {
     h += `<div>Recorded declarations:</div><ul>` + d.declarations.map(x => {
-      let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${esc(x.book_page)} — ${esc(x.kind)}` +
+      let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${doc(x.book_page)} — ${esc(x.kind)}` +
                (x.blocks_label ? ` <span class="terms">· ${esc(x.blocks_label)}</span>` : "");
       if (x.features.length) li += ` <span class="terms">(${esc(x.features.join(", "))})</span>`;
       if (x.racial) li += x.released
-        ? `<br><span class="rel">Racial covenant released ${esc(x.released.recorded)}, ${esc(x.released.book_page)}</span>`
+        ? `<br><span class="rel">Racial covenant released ${esc(x.released.recorded)}, ${doc(x.released.book_page)}</span>`
         : x.expired
         ? `<br><span class="exp">Racial covenant expired ${esc(x.expired.expired)} (${esc(x.expired.term)})</span>`
         : `<br><span class="unrel">Racial covenant — no release on record</span>`;
@@ -137,13 +173,11 @@ function card(p, extra = "") {
   if (p.elsewhere) h += `<div class="terms">${p.elsewhere} more declaration${p.elsewhere > 1 ? "s" : ""} cover other blocks of this subdivision</div>`;
   if (p.note) h += `<div class="terms" style="margin:4px 0">${esc(p.note)}</div>`;
   if (d.on_plat.length)
-    h += `<div>Written on the plat: ${d.on_plat.map(x => esc(x.book_page)).join(", ")}</div>`;
+    h += `<div>Written on the plat: ${d.on_plat.map(x => doc(x.book_page)).join(", ")}</div>`;
   if (p.indexed) h += `<div>${p.indexed} indexed restriction instrument${p.indexed > 1 ? "s" : ""}</div>`;
   if (p.status !== "none")
     h += `<div style="margin-top:6px"><a href="${esc(p.report)}" target="_blank" rel="noopener">Documents in the restrictions report →</a></div>`;
-  h += extra;
-  h += `<div class="hint">${pinned ? "" : "Click to keep open"}</div>`;
-  return h;
+  return hint(h + extra);
 }
 
 const tip = document.getElementById("tip"), tipbody = document.getElementById("tipbody");
@@ -230,8 +264,43 @@ if (!token) {
     });
   });
 }
-function unpin() { pinned = null; tip.classList.remove("pinned"); tip.style.display = "none"; }
+function unpin() { pinned = null; tip.classList.remove("pinned"); tip.style.display = "none"; hidePeek(); }
 tip.querySelector(".close").addEventListener("click", unpin);
+
+// hovering a document in a pinned card shows its first page small; clicking opens every page
+const peek = document.getElementById("peek"), modal = document.getElementById("modal");
+function showPeek(a) {
+  const n = DOCS[a.dataset.doc];
+  peek.querySelector("img").src = `docs/${a.dataset.doc}/1.jpg?size=thumb`;
+  peek.querySelector(".cap").textContent = `${a.dataset.title} · ${pageCount(n)} · click to open`;
+  peek.style.display = "block";
+  const r = a.getBoundingClientRect(), t = tip.getBoundingClientRect(), w = peek.offsetWidth;
+  const x = t.right + 10 + w < window.innerWidth ? t.right + 10 : Math.max(8, t.left - w - 10);
+  peek.style.left = x + "px";
+  peek.style.top = Math.max(8, Math.min(r.top - 40, window.innerHeight - peek.offsetHeight - 8)) + "px";
+}
+function hidePeek() { peek.style.display = "none"; peek.querySelector("img").removeAttribute("src"); }
+function openDoc(a) {
+  const n = DOCS[a.dataset.doc];
+  hidePeek();
+  modal.querySelector("h2").textContent = a.dataset.title;
+  modal.querySelector("header span").textContent = pageCount(n);
+  modal.querySelector(".pages").innerHTML = Array.from({length: n}, (_, i) =>
+    `<img loading="lazy" alt="${esc(a.dataset.title)}, page ${i + 1}" src="docs/${a.dataset.doc}/${i + 1}.jpg?size=full">`).join("");
+  modal.classList.add("open");
+  modal.querySelector(".pages").scrollTop = 0;
+  modal.querySelector("header button").focus();
+}
+function closeDoc() { modal.classList.remove("open"); modal.querySelector(".pages").innerHTML = ""; }
+tipbody.addEventListener("mouseover", e => { const a = e.target.closest("a.doc"); if (a) showPeek(a); });
+tipbody.addEventListener("mouseout", e => { if (e.target.closest("a.doc")) hidePeek(); });
+tipbody.addEventListener("click", e => {
+  const a = e.target.closest("a.doc");
+  if (a) { e.preventDefault(); openDoc(a); }
+});
+modal.querySelector("header button").addEventListener("click", closeDoc);
+modal.addEventListener("click", e => { if (e.target === modal || e.target.classList.contains("pages")) closeDoc(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && modal.classList.contains("open")) closeDoc(); });
 </script>
 </body>
 </html>

@@ -570,7 +570,6 @@ def preplat_cmd(offline, dry_run, workers):
 @click.option("--serve", "port", type=int, default=None, help="Then serve the map on 127.0.0.1 at this port")
 def subdivision_map(refresh, port):
     """Build map/subdivisions.geojson: subdivision outlines with their restrictions."""
-    import functools
     import http.server
     import json
     import os
@@ -595,13 +594,8 @@ def subdivision_map(refresh, port):
     if not token:
         click.echo("MAPBOX_TOKEN is not set in .env; open the map with ?token=pk...")
     if port:
-        class NoCache(http.server.SimpleHTTPRequestHandler):
-            def end_headers(self):  # so a rebuilt page or data shows on reload
-                self.send_header("Cache-Control", "no-cache")
-                super().end_headers()
-
-        handler = functools.partial(NoCache, directory=str(subdivmap.MAP_DIR))
-        click.echo(f"→ http://127.0.0.1:{port}/  (Ctrl-C to stop)")
+        handler, n_docs = subdivmap.handler()
+        click.echo(f"{n_docs} document images to link → http://127.0.0.1:{port}/  (Ctrl-C to stop)")
         http.server.ThreadingHTTPServer(("127.0.0.1", port), handler).serve_forever()
 
 

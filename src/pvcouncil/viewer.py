@@ -312,7 +312,7 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(regions(self.docs[key]))
         if url.path == "/api/readings" and key in self.docs:
             return self._json(readings(self.docs[key]))
-        m = re.fullmatch(r"/page/([pr]):(\d+)/(\d+)\.jpg", url.path)
+        m = re.fullmatch(r"/page/([prd]):(\d+)/(\d+)\.jpg", url.path)
         if m:
             doc = self.docs.get(f"{m.group(1)}:{m.group(2)}")
             page = int(m.group(3))

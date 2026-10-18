@@ -19,6 +19,7 @@ import re
 import urllib.parse
 import urllib.request
 from collections import defaultdict
+from pathlib import Path
 
 from pvcouncil import platocr, plats, restrictions, restrictread
 from pvcouncil.config import PROJECT_ROOT
@@ -339,80 +340,57 @@ def build(refresh: bool = False, echo=print) -> dict:
     carried_overlay(parcels, subs)
     return fc
 
-
-# Document images for the map's links, served only by `pvc subdivision-map --serve` on this machine:
-# the images (gitignored) name the parties, so a copy of the map hosted elsewhere links nothing.
+# Document images for the map's links. They name the parties, so they are gitignored; the local
+# server links every downloaded image, a deploy bundle only those the map refers to.
 PAGE_CACHE = plats.DEEDS_DIR / "cache" / "pages" / "map"
-PAGE_SIDES = {"thumb": 360, "full": 1800}
+BUNDLE_DIR = PROJECT_ROOT / "deploy" / "bundle"
+MAP_FILES = ["index.html", "subdivisions.geojson", "preplat.geojson", "carried.geojson"]
+
+
+def map_refs() -> set[str]:
+    """The book and page of every document the built map refers to."""
+    refs = set()
+    for f in json.loads(GEOJSON_PATH.read_text())["features"]:
+        d = json.loads(f["properties"]["details"])
+        for x in d["declarations"]:
+            refs.add(x["book_page"])
+            if x.get("released"):
+                refs.add(x["released"]["book_page"])
+        refs |= {x["book_page"] for x in d["on_plat"]}
+    for name in ("preplat.geojson", "carried.geojson"):
+        for f in json.loads((MAP_DIR / name).read_text())["features"]:
+            props = f["properties"]
+            refs.add(props.get("book_page") or props.get("declaration"))
+    return {r for r in refs if r}
 
 
 def doc_images() -> dict[str, dict]:
-    """Every downloaded document image by its book and page as the map page slugs it
-    ("MISC 43 573" → "misc-43-573"), with its page count."""
-    import fitz
+    from pvcouncil import mapserve
 
-    out = {}
-    for p in sorted(plats.IMAGES_DIR.rglob("*.pdf")):
-        slug = p.stem.split("--")[0].lower()
-        if slug in out:
-            continue
-        try:
-            with fitz.open(p) as pdf:
-                out[slug] = {"path": p, "pages": pdf.page_count}
-        except fitz.FileDataError:
-            continue
-    return out
+    return mapserve.index_docs(sorted(plats.IMAGES_DIR.rglob("*.pdf")))
 
 
-def render_page(doc: dict, page: int, size: str) -> bytes:
-    out = PAGE_CACHE / doc["path"].stem / f"{page}-{size}.jpg"
-    if not out.exists():
-        import fitz
+def bundle(token: str, out=BUNDLE_DIR) -> dict:
+    """The map, its config.js (with the Mapbox token), mapserve.py, the Dockerfile and the PDFs of
+    the documents the map refers to, named by slug: the deploy image's build context. Returns the count of
+    documents and the references with no image."""
+    import shutil
 
-        out.parent.mkdir(parents=True, exist_ok=True)
-        with fitz.open(doc["path"]) as pdf:
-            p = pdf[page - 1]
-            scale = PAGE_SIDES[size] / max(p.rect.width, p.rect.height)
-            pix = p.get_pixmap(matrix=fitz.Matrix(scale, scale), colorspace=fitz.csGRAY)
-            tmp = out.with_suffix(".tmp")
-            tmp.write_bytes(pix.tobytes("jpg", jpg_quality=80))
-            tmp.replace(out)
-    return out.read_bytes()
-
-
-def handler():
-    """A request handler for the map directory that also serves docs/index.json (the documents
-    with images here, and their page counts) and docs/<slug>/<page>.jpg?size=thumb|full."""
-    import functools
-    import http.server
-
-    docs = doc_images()
-    index = json.dumps({s: d["pages"] for s, d in docs.items()}).encode()
-
-    class Handler(http.server.SimpleHTTPRequestHandler):
-        def end_headers(self):  # so a rebuilt page or data shows on reload; page images don't change
-            if not re.match(r"/docs/[a-z0-9-]+/", self.path):
-                self.send_header("Cache-Control", "no-cache")
-            super().end_headers()
-
-        def _send(self, body: bytes, ctype: str):
-            self.send_response(200)
-            self.send_header("Content-Type", ctype)
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            self.wfile.write(body)
-
-        def do_GET(self):
-            url = urllib.parse.urlparse(self.path)
-            if url.path == "/docs/index.json":
-                return self._send(index, "application/json")
-            m = re.fullmatch(r"/docs/([a-z0-9-]+)/(\d+)\.jpg", url.path)
-            if m:
-                doc, page = docs.get(m.group(1)), int(m.group(2))
-                size = urllib.parse.parse_qs(url.query).get("size", ["thumb"])[0]
-                if doc and 1 <= page <= doc["pages"] and size in PAGE_SIDES:
-                    return self._send(render_page(doc, page, size), "image/jpeg")
-                return self.send_error(404)
-            return super().do_GET()
-
-    return functools.partial(Handler, directory=str(MAP_DIR)), len(docs)
+    if out.exists():
+        shutil.rmtree(out)
+    (out / "map").mkdir(parents=True)
+    (out / "docs").mkdir()
+    for name in MAP_FILES:
+        shutil.copy2(MAP_DIR / name, out / "map" / name)
+    (out / "map" / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")
+    images = doc_images()
+    missing = []
+    for ref in sorted(map_refs()):
+        slug = plats._slug(ref)
+        if slug in images:
+            shutil.copy2(images[slug]["path"], out / "docs" / f"{slug}.pdf")
+        else:
+            missing.append(ref)
+    shutil.copy2(Path(__file__).with_name("mapserve.py"), out / "mapserve.py")
+    shutil.copy2(out.parent / "Dockerfile", out / "Dockerfile")
+    return {"docs": sum(1 for _ in (out / "docs").glob("*.pdf")), "missing": missing}

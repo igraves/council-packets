@@ -570,7 +570,6 @@ def preplat_cmd(offline, dry_run, workers):
 @click.option("--serve", "port", type=int, default=None, help="Then serve the map on 127.0.0.1 at this port")
 def subdivision_map(refresh, port):
     """Build map/subdivisions.geojson: subdivision outlines with their restrictions."""
-    import http.server
     import json
     import os
     from collections import Counter
@@ -594,9 +593,29 @@ def subdivision_map(refresh, port):
     if not token:
         click.echo("MAPBOX_TOKEN is not set in .env; open the map with ?token=pk...")
     if port:
-        handler, n_docs = subdivmap.handler()
-        click.echo(f"{n_docs} document images to link → http://127.0.0.1:{port}/  (Ctrl-C to stop)")
-        http.server.ThreadingHTTPServer(("127.0.0.1", port), handler).serve_forever()
+        from pvcouncil import mapserve
+
+        docs = subdivmap.doc_images()
+        click.echo(f"{len(docs)} document images to link → http://127.0.0.1:{port}/  (Ctrl-C to stop)")
+        mapserve.serve(subdivmap.MAP_DIR, docs, subdivmap.PAGE_CACHE, "127.0.0.1", port)
+
+
+@cli.command("map-bundle")
+def map_bundle():
+    """Collect the map and the images of the documents it refers to in deploy/bundle/, the
+    build context for deploy/Dockerfile. Run pvc subdivision-map first; MAPBOX_TOKEN comes
+    from .env and is served to browsers, so restrict it to the site's URL in Mapbox."""
+    import os
+
+    from pvcouncil import subdivmap
+
+    token = os.environ.get("MAPBOX_TOKEN", "")
+    if not token:
+        raise click.ClickException("MAPBOX_TOKEN is not set in .env")
+    r = subdivmap.bundle(token)
+    click.echo(f"{r['docs']} document images → {subdivmap.BUNDLE_DIR.relative_to(subdivmap.PROJECT_ROOT)}/")
+    if r["missing"]:
+        click.echo(f"No image for {len(r['missing'])}: {', '.join(r['missing'])}")
 
 
 @cli.command("deed-ocr")

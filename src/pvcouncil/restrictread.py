@@ -130,18 +130,20 @@ def ocr_all(entries: list[dict], workers: int = 6, echo=print) -> int:
     return done
 
 
-# what the instrument is, checked in order; the first that matches wins
+# what the instrument is: the kind named first in its heading, else the first in this order that matches
 KINDS = [
     ("homes association", r"homes?\s+association|home\s*owners'?\s+association"),
     ("restrictions", r"declaration\s+of\s+restrictions|restrictions?\s+(?:and|&)\s+covenants|"
                      r"hereby\s+restricted|(?:covenants|restrictions),?\s+(?:restrictions|covenants)\s+and\s+stipulations"),
-    ("restriction amendment", r"(?:amend|modif|extend|renew)\w*\s+(?:of\s+)?(?:the\s+)?(?:said\s+)?restrictions"),
-    ("release", r"\brelease\s+of\b|hereby\s+releases?"),
-    ("easement", r"\beasement\b"),
-    ("dedication", r"\bdedicat"),
+    ("restriction amendment", r"(?:amend|modif|extend|renew)\w*\s+(?:of\s+|to\s+)?(?:the\s+)?(?:said\s+)?restrictions|"
+                              r"modification\s+agreement"),
+    ("release", r"\brelease\s+of\b|hereby\s+releases?|easement\s+release"),
+    ("easement", r"\beasements?\b"),
+    ("dedication", r"(?<!heretofore )\bdedicat"),  # not the recital "has heretofore dedicated and platted"
     ("deed", r"warranty\s+deed|quit\s*claim|grant,?\s+bargain\s+and\s+sell"),
-    ("affidavit", r"\baffidavit\b"),
+    ("affidavit", r"\baffidavit\b|being\s+(?:first\s+)?duly\s+sworn"),
 ]
+HEADING_CHARS = 200  # "MODIFICATION OF RESTRICTIONS ..." names the instrument before its body cites the declaration
 
 FEATURES = {
     # "for other than residence purposes", "private dwelling purposes only"; not a bare "for
@@ -167,7 +169,8 @@ _UNTIL = re.compile(r"until\s+(?:the\s+)?(?:\w+\s+){0,3}(19\d\d|20\d\d)", re.I)
 
 def classify(text: str) -> dict:
     flat = re.sub(r"\s+", " ", text)
-    kind = next((k for k, pat in KINDS if re.search(pat, flat, re.I)), "other")
+    head = [(m.start(), k) for k, pat in KINDS if (m := re.search(pat, flat[:HEADING_CHARS], re.I))]
+    kind = min(head)[1] if head else next((k for k, pat in KINDS if re.search(pat, flat, re.I)), "other")
     feats = [f for f, pat in FEATURES.items() if re.search(pat, flat, re.I)]
     # a garbled heading can hide a declaration; its terms still give it away
     use_terms = set(feats) - {"homes association assessments", "minimum floor area", "renewal"}
@@ -281,6 +284,13 @@ def build(entries: list[dict]) -> dict:
         # numbers far better than Tesseract), else the report text
         olm = ocrengines.load_reading("olmocr", f"r:{e['id']}")
         c["blocks"] = lots_blocks(ocrengines.reading_text(olm) if olm else text)
+        if olm and not eng:
+            # olmOCR reads the heading Tesseract garbles, so it names the kind; its terms join the rest
+            o = classify(ocrengines.reading_text(olm) + ("\n\n" + typed if typed else ""))
+            c.update(kind=o["kind"], kind_engine=olm["label"], term=c["term"] or o["term"],
+                     until_year=c["until_year"] or o["until_year"],
+                     unadopted_terms=[f for f in o["features"] if f not in c["features"]],
+                     features=[f for f in FEATURES if f in c["features"] or f in o["features"]])
         r = review.get(e["book_page"])
         if r and "kind" in r:
             c.update(kind=r["kind"], note=r["note"], unrelated=r.get("unrelated", False), reviewed=True)

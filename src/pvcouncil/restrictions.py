@@ -410,7 +410,8 @@ def render_markdown(out: dict, manifest: dict) -> str:
         reads = {r["id"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
     filed_all = [{**e, **{k: reads[e["id"]][k] for k in ("kind", "features", "term", "note", "unrelated",
                                                          "transcribed_terms", "stale_transcriptions", "engine",
-                                                         "engine_terms", "engine_stale")
+                                                         "engine_terms", "engine_stale", "kind_engine",
+                                                         "unadopted_terms")
                           if k in reads.get(e["id"], {})}} for e in out.get("filed_with_plat", [])]
 
     def cite(term: str, e: dict) -> str:
@@ -418,6 +419,8 @@ def render_markdown(out: dict, manifest: dict) -> str:
         to the OCR engine whose adopted reading found it when Tesseract didn't."""
         where = (e.get("transcribed_terms") or {}).get(term)
         if not where:
+            if term in (e.get("unadopted_terms") or []):  # an olmOCR reading not yet adopted in the viewer
+                return f"{term} (read by {e['kind_engine']})"
             return f"{term} (read by {e['engine']})" if term in (e.get("engine_terms") or []) else term
         return f"{term} (transcribed: " + "; ".join(f"p. {w['page']}, region {w['region']}" for w in where) + ")"
 

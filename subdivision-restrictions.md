@@ -220,7 +220,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### CLARKVIEW (0400)
 
-- **Filed with plat** PLAT 11 40: 1946-03-04 MISC 31 57 (document 346361) — **deed**
+- **Filed with plat** PLAT 11 40: 1946-03-04 MISC 31 57 (document 346361) — **affidavit**
 
 ### CORINTH DOWNS (0430)
 
@@ -373,9 +373,9 @@ Some land was put under a racial covenant before it was platted, by its owners o
 ### INDIAN HILLS (1500)
 
 - **[Before it was platted](#before-it-was-platted)**: 1930-02-25 MISC 14 315, a racial covenant put on this land by owners along Porter Road and the J. C. Nichols Company (ended 1955)
-- **Filed with plat** PLAT 13 30: 1949-04-25 MISC 41 23 (document 383826) — **deed**
+- **Filed with plat** PLAT 13 30: 1949-04-25 MISC 41 23 (document 383826) — **affidavit**
 - **Filed with plat** PLAT 13 30: 1949-04-25 MISC 41 25 (document 383827) — **easement**
-- **Filed with plat** PLAT 14 45: 1950-08-25 MISC 46 503 (document 405717) — **restrictions**; building line / setback
+- **Filed with plat** PLAT 14 45: 1950-08-25 MISC 46 503 (document 405717) — **restrictions**; period of 25 years; building line / setback, minimum floor area (read by olmOCR-2 7B), renewal (read by olmOCR-2 7B)
 - 1950-04-22 Declaration of Restrictions, MISC 45 24 — Sub:INDIAN HILLS Blk:17 Lt:1
 - 1950-07-08 Declaration of Restrictions, MISC 46 150 — Sub:INDIAN HILLS Blk:D Lt:1
 - 1952-03-24 Declaration of Restrictions, MISC 53 338 — Sub:INDIAN HILLS Blk:23 Lt:1
@@ -397,7 +397,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### JUNIPER HILL (1900)
 
-- **Filed with plat** PLAT 16 41: 1953-02-07 MISC 57 591 (document 449025) — **restrictions**; minimum floor area. Declaration of Restrictions for JUNIPER HILL lots 1-18 (Frank C. Braun, Inc.)
+- **Filed with plat** PLAT 16 41: 1953-02-07 MISC 57 591 (document 449025) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area. Declaration of Restrictions for JUNIPER HILL lots 1-18 (Frank C. Braun, Inc.)
 - Candidates to read (1): MISC 77 190 (1956-02-01)
 
 ### JORDAN PLACE (2000)
@@ -475,11 +475,11 @@ Some land was put under a racial covenant before it was platted, by its owners o
 - **Filed with plat** PLAT 12 55: 1947-07-29 MISC 35 247 (document 363806) — **restriction amendment**. Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake
 - **Filed with plat** PLAT 13 55: 1950-01-07 MISC 43 323 (document 393828) — **restrictions**; period of twenty- five (25) years; building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 14 43, PLAT 14 42: 1950-08-08 MISC 46 398 (document 404687) — **restrictions**; period of five (25) years; minimum floor area
-- **Filed with plat** PLAT 15 5: 1951-05-29 MISC 50 98 (document 420695) — **restrictions**; residence only, no apartments, minimum floor area
+- **Filed with plat** PLAT 15 5: 1951-05-29 MISC 50 98 (document 420695) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area
 - **Filed with plat** PLAT 15 8: 1951-07-03 MISC 50 367 (document 422265) — **restrictions**; residence only, building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 15 17: 1951-10-05 MISC 51 321 (document 426582) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 15 62, PLAT 15 61, PLAT 15 60: 1952-04-05 MISC 53 466 (document 434616) — **restriction amendment**. Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners
-- **Filed with plat** PLAT 15 62, PLAT 15 61: 1952-04-05 MISC 53 471 (document 434618) — **restrictions**; residence only, no apartments, minimum cost, minimum floor area
+- **Filed with plat** PLAT 15 62, PLAT 15 61: 1952-04-05 MISC 53 471 (document 434618) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback (read by olmOCR-2 7B), minimum cost, minimum floor area
 - 1952-04-14 Declaration of Home Owners Association, MISC 53 548 — Sub:MEADOW LAKE Blk:19 Lt:29
 - 1952-04-14 Declaration of Home Owners Association, MISC 53 550 — Sub:MEADOW LAKE Blk:21 Lt:16
 - 1952-04-14 Declaration of Home Owners Association, MISC 53 552 — Sub:MEADOW LAKE Blk:19 Lt:3
@@ -526,7 +526,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 - **Filed with plat** PLAT 12 10: 1946-06-04 MISC 31 566 (document 350508) — **restrictions**; residence only, no apartments, minimum floor area
 - **Filed with plat** PLAT 12 10: 1946-06-04 MISC 31 569 (document 350512) — **affidavit**. marital-status affidavit
-- **Filed with plat** PLAT 15 51: 1952-03-03 MISC 53 89 (document 433043) — **restrictions**; minimum floor area. Declaration of Restrictions for MISSION VALLEY EAST lots 59-66 (Kansas City Investment Company)
+- **Filed with plat** PLAT 15 51: 1952-03-03 MISC 53 89 (document 433043) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), minimum floor area. Declaration of Restrictions for MISSION VALLEY EAST lots 59-66 (Kansas City Investment Company)
 
 ### MISSION VALLEY WEST (2900)
 
@@ -543,12 +543,12 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### NALLANDS (3300)
 
-- **Filed with plat** PLAT 17 6: 1953-09-23 MISC 61 62 (document 460144) — **restrictions**; period of twenty-five (25) years. Declaration of Restrictions for NALLANDS (Kansas City Investment Company and owners)
+- **Filed with plat** PLAT 17 6: 1953-09-23 MISC 61 62 (document 460144) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for NALLANDS (Kansas City Investment Company and owners)
 - **Filed with plat** PLAT 17 6: 1953-09-23 MISC 61 65 (document 460146) — **affidavit**
 
 ### NALL AVENUE GARDENS (3400)
 
-- **Filed with plat** PLAT 11 41: 1946-03-13 MISC 31 87 (document 346793) — **homes association**; period of twenty-five (25) years; residence only, no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area, architectural approval (read by olmOCR-2 7B), renewal (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B). Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 11 41: 1946-03-13 MISC 31 87 (document 346793) — **restrictions**; period of twenty-five (25) years; residence only, no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area, architectural approval (read by olmOCR-2 7B), renewal (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B). Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - Candidates to read (1): MISC 61 67 (1953-09-22)
 
 ### NALL SEVENTY-FIVE OFFICE CONDOMINIUMS (3460)
@@ -566,7 +566,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 ### NORMANDIE COURT (3680)
 
 - **Filed with plat** PLAT 53 4: 1983-05-02 OR 1852 216 (document 1404906) — **release**; residence only, renewal
-- **Filed with plat** PLAT 59 49: 1985-08-13 OR 2203 322 (document 1549448) — **dedication**
+- **Filed with plat** PLAT 59 49: 1985-08-13 OR 2203 322 (document 1549448) — **easement**; minimum floor area (read by olmOCR-2 7B)
 
 ### NORMANDY SQUARE (3700)
 
@@ -592,7 +592,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### PAWNEE MANOR (3900)
 
-- **Filed with plat** PLAT 18 73: 1955-08-26 MISC 73 366 (document 500545) — **restrictions**. Declaration of Restrictions for PAWNEE MANOR (Kansas City Investment Company)
+- **Filed with plat** PLAT 18 73: 1955-08-26 MISC 73 366 (document 500545) — **restrictions**; period of twenty-five years; residence only (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for PAWNEE MANOR (Kansas City Investment Company)
 
 ### PAWNEE VIEW (4000)
 
@@ -614,7 +614,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### PRAIRIE ESTATES (4100)
 
-- **Filed with plat** PLAT 20 36: 1957-10-11 MISC 90 327 (document 542132) — **restrictions**. Declaration of Restrictions for PRAIRIE ESTATES lots 1-84 (Prairie Estates Development Company)
+- **Filed with plat** PLAT 20 36: 1957-10-11 MISC 90 327 (document 542132) — **restrictions**; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B), renewal (read by olmOCR-2 7B). Declaration of Restrictions for PRAIRIE ESTATES lots 1-84 (Prairie Estates Development Company)
 
 ### PRAIRIE FIELDS (4200)
 
@@ -660,7 +660,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### PRAIRIE RIDGE (4900)
 
-- **Filed with plat** PLAT 15 7: 1951-06-18 MISC 50 218 (document 421616) — **restrictions**; building line / setback, minimum floor area
+- **Filed with plat** PLAT 15 7: 1951-06-18 MISC 50 218 (document 421616) — **restrictions**; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback, minimum floor area, renewal (read by olmOCR-2 7B)
 - **Filed with plat** PLAT 15 7: 1951-06-18 MISC 50 229 (document 421617) — **homes association**
 - **Filed with plat** PLAT 16 38: 1953-01-06 MISC 57 287 (document 447644) — **easement**. J. C. Nichols Company reserves sewer right of way, Prairie Ridge Blocks 20-21
 - 1952-10-07 Declaration of Restrictions, MISC 56 289 — Sub:PRAIRIE RIDGE Blk:18 Lt:1
@@ -673,7 +673,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### PRAIRIE RIDGE VIEW (5000)
 
-- **Filed with plat** PLAT 16 18: 1952-09-30 MISC 56 242 (document 443137) — **restrictions**. Declaration of Restrictions for PRAIRIE RIDGE VIEW
+- **Filed with plat** PLAT 16 18: 1952-09-30 MISC 56 242 (document 443137) — **restrictions**; period of 25 years; residence only (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for PRAIRIE RIDGE VIEW
 
 ### PRAIRIE VALLEY (5100)
 
@@ -681,23 +681,23 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### PRAIRIE VALLEY NORTH (5150)
 
-- **Filed with plat** PLAT 16 10: 1952-08-28 MISC 55 481 (document 441394) — **restrictions**. Declaration of Restrictions for PRAIRIE VALLEY NORTH (Kansas City Investment Company)
-- **Filed with plat** PLAT 16 11, PLAT 16 10: 1952-08-28 MISC 55 484 (document 441396) — **restrictions**. Declaration of Restrictions for PRAIRIE VALLEY NORTH ANNEX (Kansas City Investment Company)
+- **Filed with plat** PLAT 16 10: 1952-08-28 MISC 55 481 (document 441394) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for PRAIRIE VALLEY NORTH (Kansas City Investment Company)
+- **Filed with plat** PLAT 16 11, PLAT 16 10: 1952-08-28 MISC 55 484 (document 441396) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for PRAIRIE VALLEY NORTH ANNEX (Kansas City Investment Company)
 
 ### PRAIRIE VALLEY NORTH ANNEX (5200)
 
-- **Filed with plat** PLAT 16 11, PLAT 16 10: 1952-08-28 MISC 55 484 (document 441396) — **restrictions**. Declaration of Restrictions for PRAIRIE VALLEY NORTH ANNEX (Kansas City Investment Company)
+- **Filed with plat** PLAT 16 11, PLAT 16 10: 1952-08-28 MISC 55 484 (document 441396) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B). Declaration of Restrictions for PRAIRIE VALLEY NORTH ANNEX (Kansas City Investment Company)
 
 ### PRAIRIE VIEW NO. 5 (5400)
 
-- **Filed with plat** PLAT 16 31: 1952-11-25 MISC 56 588 (document 445726) — **restrictions**; period of twenty-five years; minimum floor area. Declaration of Restrictions for PRAIRIE VIEW #5 lots 1-30 (The Mission Land Company)
+- **Filed with plat** PLAT 16 31: 1952-11-25 MISC 56 588 (document 445726) — **restrictions**; period of twenty-five years; building line / setback (read by olmOCR-2 7B), minimum floor area. Declaration of Restrictions for PRAIRIE VIEW #5 lots 1-30 (The Mission Land Company)
 
 ### PRAIRIE VILLAGE (5500)
 
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 349 (document 289997) — **restrictions**; period of twenty-five years; residence only, no apartments, minimum floor area, renewal, racial restriction. Racial covenant **released** 2007-11-07 by the Prairie Village Homes Association under House Bill 2582 (2006), OR 200711 001865
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 352 (document 289998) — **restrictions**; period of twenty-five years; building line / setback, minimum cost, renewal
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 358 (document 289999) — **homes association**; period of three years
-- **Filed with plat** PLAT 13 46: 1949-10-11 MISC 42 322 (document 390176) — **deed**
+- **Filed with plat** PLAT 13 46: 1949-10-11 MISC 42 322 (document 390176) — **affidavit**
 - 1948-03-31 Declaration of Restrictions, MISC 37 453 — Sub:PRAIRIE VILLAGE Lt:1 Bl:22
 - 1957-09-10 Declaration of Restrictions, MISC 89 595 — Sub:PRAIRIE VILLAGE Blk:52 Lt:10
 - 1959-03-09 Declaration of Restrictions, MISC 101 517 — Sub:PRAIRIE VILLAGE Blk:51 Lt:9
@@ -736,7 +736,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### RIDGE VIEW HEIGHTS (6050)
 
-- **Filed with plat** PLAT 15 66: 1952-04-22 MISC 54 1 (document 435366) — **restrictions**; minimum floor area. Declaration of Restrictions for RIDGE VIEW HEIGHTS
+- **Filed with plat** PLAT 15 66: 1952-04-22 MISC 54 1 (document 435366) — **restrictions**; period of twenty five years; building line / setback (read by olmOCR-2 7B), minimum floor area. Declaration of Restrictions for RIDGE VIEW HEIGHTS
 
 ### RIDGE VIEW PLACE (6100)
 
@@ -858,7 +858,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### WEST HILL (7800)
 
-- **Filed with plat** PLAT 14 61: 1951-01-15 MISC 48 230 (document 413827) — **restrictions**
+- **Filed with plat** PLAT 14 61: 1951-01-15 MISC 48 230 (document 413827) — **restrictions**; period of Twenty-five (25) Years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B)
 
 ### WEST HILL NO. 2 (7900)
 

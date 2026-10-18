@@ -185,7 +185,9 @@
    "words": 750,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4434195",
@@ -200,7 +202,9 @@
    "words": 374,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3756192",
@@ -215,7 +219,9 @@
    "words": 515,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4051297",
@@ -230,7 +236,9 @@
    "words": 751,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "1814606",
@@ -245,7 +253,9 @@
    "words": 522,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4768826",
@@ -260,7 +270,9 @@
    "words": 383,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1492845",
@@ -275,7 +287,9 @@
    "words": 537,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1897374",
@@ -290,7 +304,9 @@
    "words": 415,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1896220",
@@ -305,7 +321,9 @@
    "words": 394,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5660921",
@@ -320,7 +338,9 @@
    "words": 406,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3756192",
@@ -335,7 +355,9 @@
    "words": 515,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4032956",
@@ -350,7 +372,9 @@
    "words": 715,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4052014",
@@ -365,7 +389,9 @@
    "words": 856,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "2143331",
@@ -380,7 +406,9 @@
    "words": 564,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2179391",
@@ -395,7 +423,9 @@
    "words": 532,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2991631",
@@ -410,7 +440,9 @@
    "words": 548,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3283246",
@@ -425,7 +457,9 @@
    "words": 493,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1944850",
@@ -440,7 +474,9 @@
    "words": 373,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2326442",
@@ -455,7 +491,9 @@
    "words": 356,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2326444",
@@ -470,7 +508,9 @@
    "words": 363,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2854865",
@@ -485,7 +525,9 @@
    "words": 416,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2964227",
@@ -500,7 +542,9 @@
    "words": 380,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4167309",
@@ -515,7 +559,9 @@
    "words": 417,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2277323",
@@ -530,7 +576,9 @@
    "words": 878,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2278486",
@@ -545,7 +593,9 @@
    "words": 590,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2439820",
@@ -560,7 +610,9 @@
    "words": 362,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2596694",
@@ -575,7 +627,9 @@
    "words": 219,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2596695",
@@ -590,7 +644,9 @@
    "words": 389,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3231225",
@@ -605,7 +661,9 @@
    "words": 424,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2748938",
@@ -620,7 +678,9 @@
    "words": 222,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2872160",
@@ -635,7 +695,9 @@
    "words": 419,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6071976",
@@ -650,7 +712,9 @@
    "words": 462,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6156918",
@@ -665,7 +729,9 @@
    "words": 285,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4062462",
@@ -680,7 +746,9 @@
    "words": 727,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4118976",
@@ -695,7 +763,9 @@
    "words": 696,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "2564266",
@@ -710,7 +780,9 @@
    "words": 590,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3599011",
@@ -725,7 +797,9 @@
    "words": 579,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3848755",
@@ -740,7 +814,9 @@
    "words": 637,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4342933",
@@ -755,7 +831,9 @@
    "words": 375,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4396840",
@@ -770,7 +848,9 @@
    "words": 484,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2035576",
@@ -785,7 +865,9 @@
    "words": 405,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1847356",
@@ -800,7 +882,9 @@
    "words": 292,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1847357",
@@ -815,7 +899,9 @@
    "words": 194,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "384779",
@@ -830,7 +916,9 @@
    "words": 437,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "461322",
@@ -845,7 +933,9 @@
    "words": 499,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "937736",
@@ -860,7 +950,9 @@
    "words": 621,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "955625",
@@ -875,7 +967,9 @@
    "words": 429,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1156680",
@@ -890,7 +984,9 @@
    "words": 346,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1156682",
@@ -905,7 +1001,9 @@
    "words": 310,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5795380",
@@ -920,7 +1018,9 @@
    "words": 313,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4062462",
@@ -935,7 +1035,9 @@
    "words": 727,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "2564266",
@@ -950,7 +1052,9 @@
    "words": 590,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3599011",
@@ -965,7 +1069,9 @@
    "words": 579,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3848755",
@@ -980,7 +1086,9 @@
    "words": 637,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4342933",
@@ -995,7 +1103,9 @@
    "words": 375,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "384779",
@@ -1010,7 +1120,9 @@
    "words": 437,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "461322",
@@ -1025,7 +1137,9 @@
    "words": 499,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "937736",
@@ -1040,7 +1154,9 @@
    "words": 621,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "955625",
@@ -1055,7 +1171,9 @@
    "words": 429,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1156682",
@@ -1070,7 +1188,9 @@
    "words": 310,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1156680",
@@ -1085,7 +1205,9 @@
    "words": 346,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5795380",
@@ -1100,7 +1222,9 @@
    "words": 313,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4101201",
@@ -1115,7 +1239,9 @@
    "words": 680,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4502808",
@@ -1130,7 +1256,9 @@
    "words": 568,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1432455",
@@ -1145,7 +1273,9 @@
    "words": 643,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1594132",
@@ -1160,7 +1290,9 @@
    "words": 577,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2411195",
@@ -1175,7 +1307,9 @@
    "words": 520,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3166686",
@@ -1190,7 +1324,9 @@
    "words": 515,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3863854",
@@ -1205,7 +1341,9 @@
    "words": 493,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2230778",
@@ -1220,7 +1358,9 @@
    "words": 176,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2042169",
@@ -1235,7 +1375,9 @@
    "words": 401,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2088849",
@@ -1250,7 +1392,9 @@
    "words": 400,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4546425",
@@ -1265,7 +1409,9 @@
    "words": 413,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "387865",
@@ -1280,7 +1426,9 @@
    "words": 479,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5390959",
@@ -1295,7 +1443,9 @@
    "words": 319,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5760848",
@@ -1310,7 +1460,9 @@
    "words": 389,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5830492",
@@ -1325,7 +1477,9 @@
    "words": 127,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5830489",
@@ -1340,7 +1494,9 @@
    "words": 221,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6009435",
@@ -1355,7 +1511,9 @@
    "words": 251,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6296190",
@@ -1370,7 +1528,9 @@
    "words": 249,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4130558",
@@ -1385,7 +1545,9 @@
    "words": 661,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4468613",
@@ -1400,7 +1562,9 @@
    "words": 381,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4708018",
@@ -1415,7 +1579,9 @@
    "words": 193,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3172191",
@@ -1430,7 +1596,9 @@
    "words": 178,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4184298",
@@ -1445,7 +1613,9 @@
    "words": 305,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "640871",
@@ -1460,7 +1630,9 @@
    "words": 287,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1231390",
@@ -1475,7 +1647,9 @@
    "words": 378,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1237574",
@@ -1490,7 +1664,9 @@
    "words": 382,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1274270",
@@ -1505,7 +1681,9 @@
    "words": 380,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4291645",
@@ -1520,7 +1698,9 @@
    "words": 284,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4360421",
@@ -1535,7 +1715,9 @@
    "words": 618,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4360928",
@@ -1550,7 +1732,9 @@
    "words": 590,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4471391",
@@ -1565,7 +1749,9 @@
    "words": 529,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2510516",
@@ -1580,7 +1766,9 @@
    "words": 699,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3086586",
@@ -1595,7 +1783,9 @@
    "words": 521,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4355620",
@@ -1610,7 +1800,9 @@
    "words": 373,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1561513",
@@ -1625,7 +1817,9 @@
    "words": 371,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2872260",
@@ -1640,7 +1834,9 @@
    "words": 252,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3055496",
@@ -1655,7 +1851,9 @@
    "words": 404,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3158274",
@@ -1670,7 +1868,9 @@
    "words": 426,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2211904",
@@ -1685,7 +1885,9 @@
    "words": 516,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2487028",
@@ -1700,7 +1902,9 @@
    "words": 425,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3069343",
@@ -1715,7 +1919,9 @@
    "words": 497,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3695985",
@@ -1730,7 +1936,9 @@
    "words": 380,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1625670",
@@ -1745,7 +1953,9 @@
    "words": 573,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2257626",
@@ -1760,7 +1970,9 @@
    "words": 412,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2966630",
@@ -1775,7 +1987,9 @@
    "words": 209,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5300493",
@@ -1790,7 +2004,9 @@
    "words": 233,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5300494",
@@ -1805,7 +2021,9 @@
    "words": 575,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5325997",
@@ -1820,7 +2038,9 @@
    "words": 381,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5774895",
@@ -1835,7 +2055,9 @@
    "words": 392,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4231397",
@@ -1850,7 +2072,9 @@
    "words": 283,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4291645",
@@ -1865,7 +2089,9 @@
    "words": 284,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4339205",
@@ -1880,7 +2106,9 @@
    "words": 320,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4360928",
@@ -1895,7 +2123,9 @@
    "words": 590,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2510516",
@@ -1910,7 +2140,9 @@
    "words": 699,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3086586",
@@ -1925,7 +2157,9 @@
    "words": 521,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4174121",
@@ -1940,7 +2174,9 @@
    "words": 386,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1946031",
@@ -1955,7 +2191,9 @@
    "words": 483,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2007588",
@@ -1970,7 +2208,9 @@
    "words": 491,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2325871",
@@ -1985,7 +2225,9 @@
    "words": 385,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2838248",
@@ -2000,7 +2242,9 @@
    "words": 468,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3695985",
@@ -2015,7 +2259,9 @@
    "words": 380,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1645713",
@@ -2030,7 +2276,9 @@
    "words": 198,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1645714",
@@ -2045,7 +2293,9 @@
    "words": 247,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2257626",
@@ -2060,7 +2310,9 @@
    "words": 412,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2632250",
@@ -2075,7 +2327,9 @@
    "words": 302,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2966630",
@@ -2090,7 +2344,9 @@
    "words": 209,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "284284",
@@ -2105,7 +2361,9 @@
    "words": 408,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "649141",
@@ -2120,7 +2378,9 @@
    "words": 520,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "772796",
@@ -2135,7 +2395,9 @@
    "words": 436,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1273041",
@@ -2150,7 +2412,9 @@
    "words": 489,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5204307",
@@ -2165,7 +2429,9 @@
    "words": 468,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5662200",
@@ -2180,7 +2446,9 @@
    "words": 166,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5774895",
@@ -2195,7 +2463,9 @@
    "words": 392,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4633352",
@@ -2210,7 +2480,9 @@
    "words": 631,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "863765",
@@ -2225,7 +2497,9 @@
    "words": 521,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5206881",
@@ -2240,7 +2514,9 @@
    "words": 204,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5248803",
@@ -2255,7 +2531,9 @@
    "words": 361,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5606929",
@@ -2270,7 +2548,9 @@
    "words": 349,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2185368",
@@ -2285,7 +2565,9 @@
    "words": 493,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2185366",
@@ -2300,7 +2582,9 @@
    "words": 591,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "3444668",
@@ -2315,7 +2599,9 @@
    "words": 510,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3748930",
@@ -2330,7 +2616,9 @@
    "words": 454,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4483944",
@@ -2345,7 +2633,9 @@
    "words": 401,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "457332",
@@ -2360,7 +2650,9 @@
    "words": 211,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1763896",
@@ -2375,7 +2667,9 @@
    "words": 586,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "1823511",
@@ -2390,7 +2684,9 @@
    "words": 54,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2215524",
@@ -2405,7 +2701,9 @@
    "words": 541,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1821574",
@@ -2420,7 +2718,9 @@
    "words": 253,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1818826",
@@ -2435,7 +2735,9 @@
    "words": 433,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4098257",
@@ -2450,7 +2752,9 @@
    "words": 419,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "594377",
@@ -2465,7 +2769,9 @@
    "words": 428,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "982199",
@@ -2480,7 +2786,9 @@
    "words": 198,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5200294",
@@ -2495,7 +2803,9 @@
    "words": 126,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5337585",
@@ -2510,7 +2820,9 @@
    "words": 359,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5881567",
@@ -2525,7 +2837,9 @@
    "words": 352,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3982569",
@@ -2540,7 +2854,9 @@
    "words": 699,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "1912807",
@@ -2555,7 +2871,9 @@
    "words": 393,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1922626",
@@ -2570,7 +2888,9 @@
    "words": 358,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2704748",
@@ -2585,7 +2905,9 @@
    "words": 422,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2597582",
@@ -2600,7 +2922,9 @@
    "words": 807,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2686901",
@@ -2615,7 +2939,9 @@
    "words": 542,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3291454",
@@ -2630,7 +2956,9 @@
    "words": 378,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2372138",
@@ -2645,7 +2973,9 @@
    "words": 228,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3599726",
@@ -2660,7 +2990,9 @@
    "words": 199,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3218908",
@@ -2675,7 +3007,9 @@
    "words": 335,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3756192",
@@ -2690,7 +3024,9 @@
    "words": 515,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3967868",
@@ -2705,7 +3041,9 @@
    "words": 740,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4162522",
@@ -2720,7 +3058,9 @@
    "words": 329,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3604609",
@@ -2735,7 +3075,9 @@
    "words": 442,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3862257",
@@ -2750,7 +3092,9 @@
    "words": 608,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "841099",
@@ -2765,7 +3109,9 @@
    "words": 721,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5167765",
@@ -2780,7 +3126,9 @@
    "words": 330,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5884956",
@@ -2795,7 +3143,9 @@
    "words": 361,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4088448",
@@ -2810,7 +3160,9 @@
    "words": 686,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4230937",
@@ -2825,7 +3177,9 @@
    "words": 410,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1931081",
@@ -2840,7 +3194,9 @@
    "words": 352,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2163384",
@@ -2855,7 +3211,9 @@
    "words": 375,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2891228",
@@ -2870,7 +3228,9 @@
    "words": 371,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3587809",
@@ -2885,7 +3245,9 @@
    "words": 195,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2325390",
@@ -2900,7 +3262,9 @@
    "words": 409,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2593309",
@@ -2915,7 +3279,9 @@
    "words": 438,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2683541",
@@ -2930,7 +3296,9 @@
    "words": 607,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2785924",
@@ -2945,7 +3313,9 @@
    "words": 396,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3162401",
@@ -2960,7 +3330,9 @@
    "words": 386,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6199110",
@@ -2975,7 +3347,9 @@
    "words": 201,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4052133",
@@ -2990,7 +3364,9 @@
    "words": 743,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 5000
   },
   {
    "id": "3016797",
@@ -3005,7 +3381,9 @@
    "words": 1624,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1550658",
@@ -3020,7 +3398,9 @@
    "words": 359,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1682136",
@@ -3035,7 +3415,9 @@
    "words": 321,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3469020",
@@ -3050,7 +3432,9 @@
    "words": 458,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5365241",
@@ -3065,7 +3449,9 @@
    "words": 478,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5365450",
@@ -3080,7 +3466,9 @@
    "words": 324,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6190999",
@@ -3095,7 +3483,9 @@
    "words": 314,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4031882",
@@ -3110,7 +3500,9 @@
    "words": 556,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4312792",
@@ -3125,7 +3517,9 @@
    "words": 498,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1901651",
@@ -3140,7 +3534,9 @@
    "words": 592,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2890390",
@@ -3155,7 +3551,9 @@
    "words": 512,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2743221",
@@ -3170,7 +3568,9 @@
    "words": 461,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1447249",
@@ -3185,7 +3585,9 @@
    "words": 489,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1798276",
@@ -3200,7 +3602,9 @@
    "words": 437,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2717261",
@@ -3215,7 +3619,9 @@
    "words": 381,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3353908",
@@ -3230,7 +3636,9 @@
    "words": 438,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3514863",
@@ -3245,7 +3653,9 @@
    "words": 205,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5428872",
@@ -3260,7 +3670,9 @@
    "words": 252,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4485401",
@@ -3275,7 +3687,9 @@
    "words": 475,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2101503",
@@ -3290,7 +3704,9 @@
    "words": 429,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5253697",
@@ -3305,7 +3721,9 @@
    "words": 407,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5277039",
@@ -3320,7 +3738,9 @@
    "words": 402,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5846903",
@@ -3335,7 +3755,9 @@
    "words": 416,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5961406",
@@ -3350,7 +3772,9 @@
    "words": 138,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6173883",
@@ -3365,7 +3789,9 @@
    "words": 449,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4020834",
@@ -3380,7 +3806,9 @@
    "words": 707,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "2814742",
@@ -3395,7 +3823,9 @@
    "words": 518,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4320742",
@@ -3410,7 +3840,9 @@
    "words": 472,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3040537",
@@ -3425,7 +3857,9 @@
    "words": 190,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "68889",
@@ -3440,7 +3874,9 @@
    "words": 523,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "226243",
@@ -3455,7 +3891,9 @@
    "words": 215,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "501607",
@@ -3470,7 +3908,9 @@
    "words": 368,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "779085",
@@ -3485,7 +3925,9 @@
    "words": 456,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5225214",
@@ -3500,7 +3942,9 @@
    "words": 377,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4223746",
@@ -3515,7 +3959,9 @@
    "words": 262,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "2972750",
@@ -3530,7 +3976,9 @@
    "words": 575,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2882039",
@@ -3545,7 +3993,9 @@
    "words": 408,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3985199",
@@ -3560,7 +4010,9 @@
    "words": 429,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1587707",
@@ -3575,7 +4027,9 @@
    "words": 450,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3361004",
@@ -3590,7 +4044,9 @@
    "words": 398,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1863945",
@@ -3605,7 +4061,9 @@
    "words": 489,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4249267",
@@ -3620,7 +4078,9 @@
    "words": 341,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4731314",
@@ -3635,7 +4095,9 @@
    "words": 566,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2014235",
@@ -3650,7 +4112,9 @@
    "words": 450,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4348793",
@@ -3665,7 +4129,9 @@
    "words": 510,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4465889",
@@ -3680,7 +4146,9 @@
    "words": 750,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1407487",
@@ -3695,7 +4163,9 @@
    "words": 300,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1664873",
@@ -3710,7 +4180,9 @@
    "words": 371,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2236293",
@@ -3725,7 +4197,9 @@
    "words": 463,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2788589",
@@ -3740,7 +4214,9 @@
    "words": 389,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3060964",
@@ -3755,7 +4231,9 @@
    "words": 474,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3164051",
@@ -3770,7 +4248,9 @@
    "words": 312,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4741839",
@@ -3785,7 +4265,9 @@
    "words": 420,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2363371",
@@ -3800,7 +4282,9 @@
    "words": 196,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3775193",
@@ -3815,7 +4299,9 @@
    "words": 156,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2272526",
@@ -3830,7 +4316,9 @@
    "words": 391,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4143104",
@@ -3845,7 +4333,9 @@
    "words": 353,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4312472",
@@ -3860,7 +4350,9 @@
    "words": 332,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4376096",
@@ -3875,7 +4367,9 @@
    "words": 400,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1974279",
@@ -3890,7 +4384,9 @@
    "words": 344,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4167320",
@@ -3905,7 +4401,9 @@
    "words": 429,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4327191",
@@ -3920,7 +4418,9 @@
    "words": 431,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3351998",
@@ -3935,7 +4435,9 @@
    "words": 403,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4461831",
@@ -3950,7 +4452,9 @@
    "words": 436,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2206308",
@@ -3965,7 +4469,9 @@
    "words": 527,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3873821",
@@ -3980,7 +4486,9 @@
    "words": 424,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4051200",
@@ -3995,7 +4503,9 @@
    "words": 686,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4143230",
@@ -4010,7 +4520,9 @@
    "words": 200,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4350598",
@@ -4025,7 +4537,9 @@
    "words": 359,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2237218",
@@ -4040,7 +4554,9 @@
    "words": 445,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2236845",
@@ -4055,7 +4571,9 @@
    "words": 482,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2325695",
@@ -4070,7 +4588,9 @@
    "words": 437,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2612540",
@@ -4085,7 +4605,9 @@
    "words": 386,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3369047",
@@ -4100,7 +4622,9 @@
    "words": 438,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3421226",
@@ -4115,7 +4639,9 @@
    "words": 457,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3714262",
@@ -4130,7 +4656,9 @@
    "words": 444,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1531581",
@@ -4145,7 +4673,9 @@
    "words": 547,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2332385",
@@ -4160,7 +4690,9 @@
    "words": 556,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4494003",
@@ -4175,7 +4707,9 @@
    "words": 177,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2665473",
@@ -4190,7 +4724,9 @@
    "words": 402,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4100362",
@@ -4205,7 +4741,9 @@
    "words": 639,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4161677",
@@ -4220,7 +4758,9 @@
    "words": 352,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1523403",
@@ -4235,7 +4775,9 @@
    "words": 537,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2842429",
@@ -4250,7 +4792,9 @@
    "words": 572,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2903665",
@@ -4265,7 +4809,9 @@
    "words": 377,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4122995",
@@ -4280,7 +4826,9 @@
    "words": 469,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4512955",
@@ -4295,7 +4843,9 @@
    "words": 381,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1947972",
@@ -4310,7 +4860,9 @@
    "words": 353,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1040038",
@@ -4325,7 +4877,9 @@
    "words": 218,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4171356",
@@ -4340,7 +4894,9 @@
    "words": 317,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4201705",
@@ -4355,7 +4911,9 @@
    "words": 369,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1763958",
@@ -4370,7 +4928,9 @@
    "words": 599,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1671421",
@@ -4385,7 +4945,9 @@
    "words": 382,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1912738",
@@ -4400,7 +4962,9 @@
    "words": 410,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "221889",
@@ -4415,7 +4979,9 @@
    "words": 206,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1016369",
@@ -4430,7 +4996,9 @@
    "words": 375,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1087270",
@@ -4445,7 +5013,9 @@
    "words": 362,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1229743",
@@ -4460,7 +5030,9 @@
    "words": 250,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5436608",
@@ -4475,7 +5047,9 @@
    "words": 310,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6051357",
@@ -4490,7 +5064,9 @@
    "words": 367,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4171356",
@@ -4505,7 +5081,9 @@
    "words": 317,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": true,
+   "minimum_cost": 6000
   },
   {
    "id": "4222840",
@@ -4520,7 +5098,9 @@
    "words": 371,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3017882",
@@ -4535,7 +5115,9 @@
    "words": 563,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3849129",
@@ -4550,7 +5132,9 @@
    "words": 530,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1579694",
@@ -4565,7 +5149,9 @@
    "words": 358,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1927940",
@@ -4580,7 +5166,9 @@
    "words": 379,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4789726",
@@ -4595,7 +5183,9 @@
    "words": 188,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "577744",
@@ -4610,7 +5200,9 @@
    "words": 466,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5087137",
@@ -4625,7 +5217,9 @@
    "words": 386,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5499052",
@@ -4640,7 +5234,9 @@
    "words": 394,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4189364",
@@ -4655,7 +5251,9 @@
    "words": 260,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "3809363",
@@ -4670,7 +5268,9 @@
    "words": 313,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2518045",
@@ -4685,7 +5285,9 @@
    "words": 415,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3792919",
@@ -4700,7 +5302,9 @@
    "words": 427,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2742088",
@@ -4715,7 +5319,9 @@
    "words": 189,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2779552",
@@ -4730,7 +5336,9 @@
    "words": 304,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4307214",
@@ -4745,7 +5353,9 @@
    "words": 198,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4307215",
@@ -4760,7 +5370,9 @@
    "words": 184,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6167879",
@@ -4775,7 +5387,9 @@
    "words": 332,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6346712",
@@ -4790,7 +5404,9 @@
    "words": 409,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4201664",
@@ -4805,7 +5421,9 @@
    "words": 284,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "1990367",
@@ -4820,7 +5438,9 @@
    "words": 71,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2207880",
@@ -4835,7 +5455,9 @@
    "words": 451,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3389512",
@@ -4850,7 +5472,9 @@
    "words": 307,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "431873",
@@ -4865,7 +5489,9 @@
    "words": 204,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "895749",
@@ -4880,7 +5506,9 @@
    "words": 436,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1129046",
@@ -4895,7 +5523,9 @@
    "words": 184,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1295209",
@@ -4910,7 +5540,9 @@
    "words": 400,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5399915",
@@ -4925,7 +5557,9 @@
    "words": 178,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5404217",
@@ -4940,7 +5574,9 @@
    "words": 287,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4279302",
@@ -4955,7 +5591,9 @@
    "words": 293,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4743068",
@@ -4970,7 +5608,9 @@
    "words": 584,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1633968",
@@ -4985,7 +5625,9 @@
    "words": 699,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1646967",
@@ -5000,7 +5642,9 @@
    "words": 664,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "1815164",
@@ -5015,7 +5659,9 @@
    "words": 4051,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2973048",
@@ -5030,7 +5676,9 @@
    "words": 553,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3025404",
@@ -5045,7 +5693,9 @@
    "words": 570,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3039290",
@@ -5060,7 +5710,9 @@
    "words": 606,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2556119",
@@ -5075,7 +5727,9 @@
    "words": 468,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4745605",
@@ -5090,7 +5744,9 @@
    "words": 308,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2778846",
@@ -5105,7 +5761,9 @@
    "words": 455,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2826942",
@@ -5120,7 +5778,9 @@
    "words": 510,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3353183",
@@ -5135,7 +5795,9 @@
    "words": 460,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3353845",
@@ -5150,7 +5812,9 @@
    "words": 365,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3353239",
@@ -5165,7 +5829,9 @@
    "words": 495,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4078752",
@@ -5180,7 +5846,9 @@
    "words": 444,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2662599",
@@ -5195,7 +5863,9 @@
    "words": 503,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3534271",
@@ -5210,7 +5880,9 @@
    "words": 211,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1410569",
@@ -5225,7 +5897,9 @@
    "words": 205,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3851872",
@@ -5240,7 +5914,9 @@
    "words": 336,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4736552",
@@ -5255,7 +5931,9 @@
    "words": 359,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4757055",
@@ -5270,7 +5948,9 @@
    "words": 201,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "634847",
@@ -5285,7 +5965,9 @@
    "words": 255,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5437960",
@@ -5300,7 +5982,9 @@
    "words": 326,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "6180434",
@@ -5315,7 +5999,9 @@
    "words": 304,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4229962",
@@ -5330,7 +6016,9 @@
    "words": 356,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "2735516",
@@ -5345,7 +6033,9 @@
    "words": 237,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "223219",
@@ -5360,7 +6050,9 @@
    "words": 222,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "223425",
@@ -5375,7 +6067,9 @@
    "words": 219,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "631501",
@@ -5390,7 +6084,9 @@
    "words": 98,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1253106",
@@ -5405,7 +6101,9 @@
    "words": 497,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4202081",
@@ -5420,7 +6118,9 @@
    "words": 298,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4200778",
@@ -5435,7 +6135,9 @@
    "words": 299,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "2539661",
@@ -5450,7 +6152,9 @@
    "words": 600,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1994429",
@@ -5465,7 +6169,9 @@
    "words": 484,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2341840",
@@ -5480,7 +6186,9 @@
    "words": 165,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2412378",
@@ -5495,7 +6203,9 @@
    "words": 564,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2514433",
@@ -5510,7 +6220,9 @@
    "words": 460,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3058113",
@@ -5525,7 +6237,9 @@
    "words": 373,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4087531",
@@ -5540,7 +6254,9 @@
    "words": 187,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4449413",
@@ -5555,7 +6271,9 @@
    "words": 463,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2221098",
@@ -5570,7 +6288,9 @@
    "words": 187,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2909123",
@@ -5585,7 +6305,9 @@
    "words": 344,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3238871",
@@ -5600,7 +6322,9 @@
    "words": 358,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3420458",
@@ -5615,7 +6339,9 @@
    "words": 1054,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3489889",
@@ -5630,7 +6356,9 @@
    "words": 524,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3765667",
@@ -5645,7 +6373,9 @@
    "words": 400,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3829459",
@@ -5660,7 +6390,9 @@
    "words": 486,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1462924",
@@ -5675,7 +6407,9 @@
    "words": 485,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "726070",
@@ -5690,7 +6424,9 @@
    "words": 294,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5978515",
@@ -5705,7 +6441,9 @@
    "words": 405,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4190474",
@@ -5720,7 +6458,9 @@
    "words": 261,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "4230313",
@@ -5735,7 +6475,9 @@
    "words": 335,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4350663",
@@ -5750,7 +6492,9 @@
    "words": 304,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1594424",
@@ -5765,7 +6509,9 @@
    "words": 578,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3405354",
@@ -5780,7 +6526,9 @@
    "words": 622,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2554900",
@@ -5795,7 +6543,9 @@
    "words": 164,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2361890",
@@ -5810,7 +6560,9 @@
    "words": 149,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4045596",
@@ -5825,7 +6577,9 @@
    "words": 135,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4455687",
@@ -5840,7 +6594,9 @@
    "words": 491,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4454552",
@@ -5855,7 +6611,9 @@
    "words": 526,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5439681",
@@ -5870,7 +6628,9 @@
    "words": 221,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4189337",
@@ -5885,7 +6645,9 @@
    "words": 263,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "3974133",
@@ -5900,7 +6662,9 @@
    "words": 440,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2418475",
@@ -5915,7 +6679,9 @@
    "words": 419,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4181355",
@@ -5930,7 +6696,9 @@
    "words": 275,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4181356",
@@ -5945,7 +6713,9 @@
    "words": 206,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4600912",
@@ -5960,7 +6730,9 @@
    "words": 335,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2542916",
@@ -5975,7 +6747,9 @@
    "words": 163,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1839955",
@@ -5990,7 +6764,9 @@
    "words": 400,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4520240",
@@ -6005,7 +6781,9 @@
    "words": 607,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "1448598",
@@ -6020,7 +6798,9 @@
    "words": 501,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1995659",
@@ -6035,7 +6815,9 @@
    "words": 328,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1687017",
@@ -6050,7 +6832,9 @@
    "words": 364,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2298671",
@@ -6065,7 +6849,9 @@
    "words": 402,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3092272",
@@ -6080,7 +6866,9 @@
    "words": 395,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3609338",
@@ -6095,7 +6883,9 @@
    "words": 440,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2703255",
@@ -6110,7 +6900,9 @@
    "words": 383,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1753742",
@@ -6125,7 +6917,9 @@
    "words": 223,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "340925",
@@ -6140,7 +6934,9 @@
    "words": 208,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "5135320",
@@ -6155,7 +6951,9 @@
    "words": 448,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": true
+   "restates_restrictions": true,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "4490388",
@@ -6170,7 +6968,9 @@
    "words": 775,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "1793241",
@@ -6185,7 +6985,9 @@
    "words": 516,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "2749146",
@@ -6200,7 +7002,9 @@
    "words": 1001,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": true,
+   "minimum_cost": null
   },
   {
    "id": "2818802",
@@ -6215,7 +7019,9 @@
    "words": 527,
    "racial": false,
    "cites_restrictions": false,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   },
   {
    "id": "3940754",
@@ -6230,7 +7036,9 @@
    "words": 332,
    "racial": false,
    "cites_restrictions": true,
-   "restates_restrictions": false
+   "restates_restrictions": false,
+   "approval_clause": false,
+   "minimum_cost": null
   }
  ]
 }

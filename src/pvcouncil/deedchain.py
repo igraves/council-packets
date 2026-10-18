@@ -54,6 +54,9 @@ CITES = re.compile(r"(?:subject\s+to|except)[^.;]{0,80}?(?:restrictions|covenant
                    r"restrictions?[^.;]{0,40}of\s+record", re.I)
 RESTATES = re.compile(restrictread.FEATURES["building line / setback"] + "|" +
                       restrictread.FEATURES["minimum cost"], re.I)
+# the developer's own additions in its first deeds: forty years' approval of plans, and a minimum cost
+APPROVAL = re.compile(r"no\s+residence\s+or\s+out\s*-?\s*buildings?|plans?,?\s+elevations?,?\s+location", re.I)
+MIN_COST = re.compile(r"cost\s+not\s+less\s+than[^$]{0,40}\$\s?([\d,]+)", re.I)
 
 
 def _slug(s: str) -> str:
@@ -157,10 +160,13 @@ def build(lots=SAMPLE) -> dict:
             with fitz.open(image_path(d)) as pdf:
                 pages = pdf.page_count
         m = RACIAL.search(flat)
+        cost = MIN_COST.search(flat)
         rows.append({**d, "pages": pages, "read_by": engine or None,
                      "words": len(re.findall(r"[A-Za-z]{3,}", flat)),
                      "racial": bool(m), "cites_restrictions": bool(CITES.search(flat)),
-                     "restates_restrictions": bool(RESTATES.search(flat))})
+                     "restates_restrictions": bool(RESTATES.search(flat)),
+                     "approval_clause": bool(APPROVAL.search(flat)),
+                     "minimum_cost": int(cost.group(1).replace(",", "")) if cost else None})
         if m:
             excerpts += [f"## {d['subdivision']} Block {d['block']} Lot {d['lot'] or 'all'}: {d['book_page']} ({d['recorded']})",
                          "", f"> …{flat[max(0, m.start() - 300):m.end() + 300]}…", ""]

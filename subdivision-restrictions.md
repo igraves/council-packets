@@ -25,6 +25,26 @@ Some land was put under a racial covenant before it was platted, by its owners o
 - **1950-02-03 MISC 43 532**, by the J. C. Nichols Company: A declaration whose only restriction is racial, the same form as Prairie Village Block 36's, filed four months before the Prairie Hills plat. Ended 1990 (40 years). Land now in Prairie Hills.
 - **1950-02-04 MISC 43 553**, by the J. C. Nichols Company: A declaration whose only restriction is racial, on the northeast quarter of the section except three small tracts, a day after the Prairie Hills one and 20 months before the Indian Fields plat. Ended 1990 (40 years). Land now in Indian Fields.
 
+## Deeds on individual lots
+
+Racial language is sometimes said to have been written into the deeds of individual houses, not only into a subdivision's recorded declaration. `pvc deed-chain` tests this on sample lots by following each one's recorded history (the recorder's search by subdivision, block and lot) from the developer's first sale to today, and reading every deed in it: **34** lots in 11 blocks, **404** deeds from 1946 to 2026. Every deed was read with Tesseract, and the 109 recorded before 1960 also with olmOCR-2 7B (except DEED 317 438, which it could not read). **0** of them contain racial language.
+
+The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the covenants, restrictions, reservations and easements now of record", that is, the subdivision's recorded declarations, and add only their own printed terms: for forty years no house or outbuilding may be built until the J. C. Nichols Company approves its plans, and in 19 of them a minimum cost ($6,000 or $5,000). The other deeds, nearly all resales, cite the restrictions of record (268 of 365) or say nothing of them. In this sample a racial covenant reached a lot only through the declaration its deeds cite.
+
+| Subdivision | Block | Lots | Deeds | First sale | With approval clause | Minimum cost |
+|---|---|---|---|---|---|---|
+| Prairie Village | 14 | 29, 30 | 18 | 1946 | 2 | $6,000 |
+| Prairie Village | 15 | 1, 24 | 27 | 1948 | 1 | $6,000 |
+| Prairie Village | 17 | 1, 7, 11 | 33 | 1946 | 4 | $6,000 |
+| Prairie Village | 18 | 4, 5 | 20 | 1948 | 2 | $5,000, $6,000 |
+| Prairie Village | 19 | 23, 24, 25, 37 | 56 | 1948 | 5 | $6,000 |
+| Prairie Village | 20 | 1, 3, 26, 30, 35, 37, 38 | 76 | 1948 | 7 | $6,000 |
+| Prairie Village | 21 | 1, 2, 4, 15, 33, 39, 40 | 90 | 1949 | 9 | — |
+| Prairie Village | 36 | whole block | 5 | 1950 | 1 | — |
+| Prairie Village | 39 | 2, 3, 16 | 51 | 1949 | 5 | — |
+| Prairie Village | 43 | 85 | 11 | 1950 | 1 | — |
+| Prairie Village | 51 | 2, 3 | 17 | 1953 | 2 | — |
+
 ## Summary
 
 | Code | Subdivision | First plat | Filed with plat | On plat | Indexed restrictions | Candidates |
@@ -694,6 +714,7 @@ Some land was put under a racial covenant before it was platted, by its owners o
 
 ### PRAIRIE VILLAGE (5500)
 
+- **[Deeds on individual lots](#deeds-on-individual-lots)**: sample lots' deeds followed from the first sale to today
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 349 (document 289997) — **restrictions**; period of twenty-five years; residence only, no apartments, minimum floor area, renewal, racial restriction. Racial covenant **released** 2007-11-07 by the Prairie Village Homes Association under House Bill 2582 (2006), OR 200711 001865
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 352 (document 289998) — **restrictions**; period of twenty-five years; building line / setback, minimum cost, renewal
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 358 (document 289999) — **homes association**; period of three years

@@ -381,6 +381,59 @@ def _preplat_section() -> tuple[list[str], dict[str, list[dict]]]:
     return lines, by_sub
 
 
+def _deed_chain_section() -> tuple[list[str], set[str]]:
+    """Report lines for the sample lots whose deeds pvc deed-chain followed, and the subdivisions
+    they are in. Empty until pvc deed-chain has run."""
+    from pvcouncil import deedchain
+
+    if not deedchain.RESULTS_PATH.exists():
+        return [], set()
+    found = json.loads(deedchain.RESULTS_PATH.read_text())
+    rows, lots = found["deeds"], found["lots"]
+    dev = [r for r in rows if r["approval_clause"]]
+    costs = sorted({r["minimum_cost"] for r in dev if r["minimum_cost"]}, reverse=True)
+    olm = sum(r["read_by"] == "olmOCR-2" for r in rows)
+    early = [r for r in rows if r["recorded"] < "1960" and r["read_by"] != "olmOCR-2"]
+    by_block = defaultdict(list)
+    for r in rows:
+        by_block[(r["subdivision"], r["block"])].append(r)
+    lines = [
+        "## Deeds on individual lots",
+        "",
+        "Racial language is sometimes said to have been written into the deeds of individual houses, not "
+        "only into a subdivision's recorded declaration. `pvc deed-chain` tests this on sample lots by "
+        "following each one's recorded history (the recorder's search by subdivision, block and lot) from "
+        "the developer's first sale to today, and reading every deed in it: "
+        f"**{len(lots)}** lots in {len(by_block)} blocks, **{len(rows)}** deeds from "
+        f"{min(r['recorded'] for r in rows)[:4]} to {max(r['recorded'] for r in rows)[:4]}. Every deed was "
+        f"read with Tesseract, and the {olm} recorded before 1960 also with olmOCR-2 7B"
+        + (f" (except {', '.join(r['book_page'] for r in early)}, which it could not read)" if early else "")
+        + f". **{sum(r['racial'] for r in rows)}** of them contain racial language.",
+        "",
+        f"The developer's deeds ({len(dev)}, from {min(r['recorded'] for r in dev)[:4]} to "
+        f"{max(r['recorded'] for r in dev)[:4]}) convey the lot \"subject to the covenants, restrictions, "
+        "reservations and easements now of record\", that is, the subdivision's recorded declarations, and "
+        "add only their own printed terms: for forty years no house or outbuilding may be built until the "
+        "J. C. Nichols Company approves its plans, and in "
+        f"{sum(bool(r['minimum_cost']) for r in dev)} of them a minimum cost "
+        f"({' or '.join(f'${c:,}' for c in costs)}). The other deeds, nearly all resales, cite the restrictions of record "
+        f"({sum(r['cites_restrictions'] for r in rows if not r['approval_clause'])} of "
+        f"{len(rows) - len(dev)}) or say nothing of them. In this sample a racial covenant reached a lot "
+        "only through the declaration its deeds cite.",
+        "",
+        "| Subdivision | Block | Lots | Deeds | First sale | With approval clause | Minimum cost |",
+        "|---|---|---|---|---|---|---|",
+    ]
+    for (sub, block), rs in sorted(by_block.items(), key=lambda kv: (kv[0][0], int(kv[0][1]))):
+        lts = sorted({r["lot"] for r in rs}, key=lambda x: int(x or 0))
+        cs = sorted({r["minimum_cost"] for r in rs if r["approval_clause"] and r["minimum_cost"]})
+        lines.append(f"| {sub.title()} | {block} | {', '.join(lts) if any(lts) else 'whole block'} | {len(rs)} | "
+                     f"{min(r['recorded'] for r in rs)[:4]} | {sum(r['approval_clause'] for r in rs)} | "
+                     f"{', '.join(f'${c:,}' for c in cs) or '—'} |")
+    lines.append("")
+    return lines, {r["subdivision"] for r in rows}
+
+
 def render_markdown(out: dict, manifest: dict) -> str:
     """Per-subdivision report: restrictions filed with the plat, written on the plat, typed
     restriction instruments, and Miscellaneous candidates still to read."""
@@ -463,6 +516,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
     n_eng_terms = sum(len(e.get("engine_terms") or []) for e in eng_rows)
     covered = [k for k, pl in subs.items() if any(filed[p] or on_plat.get(p) or typed[p] for p in pl)]
     preplat_lines, preplat_by_sub = _preplat_section()
+    chain_lines, chain_subs = _deed_chain_section()
     lines = [
         "# Prairie Village subdivision restrictions",
         "",
@@ -509,6 +563,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "the images settle it.",
         "",
         *preplat_lines,
+        *chain_lines,
         "## Summary",
         "",
         "| Code | Subdivision | First plat | Filed with plat | On plat | Indexed restrictions | Candidates |",
@@ -532,6 +587,9 @@ def render_markdown(out: dict, manifest: dict) -> str:
         if not (f_ or o_ or t_ or c_ or pre):
             continue
         lines += [f"### {sub} ({code})", ""]
+        if sub.upper() in chain_subs:
+            lines.append("- **[Deeds on individual lots](#deeds-on-individual-lots)**: sample lots' deeds "
+                         "followed from the first sale to today")
         for p in pre:
             lines.append(f"- **[Before it was platted](#before-it-was-platted)**: {p['recorded']} {p['book_page']}, "
                          f"a racial covenant put on this land by {p['by']} (ended {p['ended']})")

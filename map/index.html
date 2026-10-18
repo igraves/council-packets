@@ -143,7 +143,7 @@ fetch("docs/index.json").then(r => r.ok ? r.json() : {}).then(d => DOCS = d).cat
 fetch("highlights.json").then(r => r.ok ? r.json() : {}).then(d => HL = d).catch(() => {});
 const slug = bp => String(bp ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const doc = bp => DOCS[slug(bp)]
-  ? `<a class="doc" href="docs/${slug(bp)}/1.jpg?size=full" data-doc="${slug(bp)}" data-title="${esc(bp)}">${esc(bp)}</a>`
+  ? `<a class="doc" href="docs/${slug(bp)}/1-full.avif" data-doc="${slug(bp)}" data-title="${esc(bp)}">${esc(bp)}</a>`
   : esc(bp);
 const pageCount = n => `${n} page${n > 1 ? "s" : ""}`;
 
@@ -295,7 +295,7 @@ function pageHTML(s, n, size, alt) {
   const boxes = (HL[s]?.pages[n] || []).map(([x0, y0, x1, y1]) =>
     `<div class="hl" style="left:${x0 * 100}%;top:${y0 * 100}%;width:${(x1 - x0) * 100}%;height:${(y1 - y0) * 100}%"></div>`).join("");
   return `<div class="page" data-page="${n}" style="aspect-ratio:${w}/${h}">` +
-    `<img loading="lazy" alt="${esc(alt)}" src="docs/${s}/${n}.jpg?size=${size}">${boxes}</div>`;
+    `<img loading="lazy" alt="${esc(alt)}" src="docs/${s}/${n}-${size}.avif">${boxes}</div>`;
 }
 
 // hovering a document in a pinned card shows a page small (the racial covenant's, outlined, when

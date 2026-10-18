@@ -342,7 +342,7 @@ def build(refresh: bool = False, echo=print) -> dict:
 
 # Document images for the map's links. They name the parties, so they are gitignored; the local
 # server links every downloaded image, a deploy bundle only those the map refers to.
-PAGE_CACHE = plats.DEEDS_DIR / "cache" / "pages" / "map"
+PAGE_CACHE = plats.DEEDS_DIR / "cache" / "pages" / "map-avif"
 BUNDLE_DIR = PROJECT_ROOT / "deploy" / "bundle"
 MAP_FILES = ["index.html", "subdivisions.geojson", "preplat.geojson", "carried.geojson", "highlights.json"]
 
@@ -370,11 +370,15 @@ def doc_images() -> dict[str, dict]:
     return mapserve.index_docs(sorted(plats.IMAGES_DIR.rglob("*.pdf")))
 
 
-def bundle(token: str, out=BUNDLE_DIR) -> dict:
-    """The map, its config.js (with the Mapbox token), mapserve.py, the Dockerfile and the PDFs of
-    the documents the map refers to, named by slug: the deploy image's build context. Returns the count of
-    documents and the references with no image."""
+def bundle(token: str, out=BUNDLE_DIR, workers: int = 6, echo=print) -> dict:
+    """The deploy image's build context: the map, its config.js (with the Mapbox token), mapserve.py,
+    the Dockerfile, and every page of the documents the map refers to as AVIF at both sizes, with
+    docs/index.json. Pages are rendered into the local page cache first, so a rebuild reuses them.
+    Returns the counts of documents and pages and the references with no image."""
     import shutil
+    from concurrent.futures import ProcessPoolExecutor
+
+    from pvcouncil import mapserve
 
     if out.exists():
         shutil.rmtree(out)
@@ -384,13 +388,22 @@ def bundle(token: str, out=BUNDLE_DIR) -> dict:
         shutil.copy2(MAP_DIR / name, out / "map" / name)
     (out / "map" / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")
     images = doc_images()
-    missing = []
-    for ref in sorted(map_refs()):
-        slug = plats._slug(ref)
-        if slug in images:
-            shutil.copy2(images[slug]["path"], out / "docs" / f"{slug}.pdf")
-        else:
-            missing.append(ref)
+    refs = sorted(map_refs())
+    missing = [r for r in refs if plats._slug(r) not in images]
+    docs = {plats._slug(r): images[plats._slug(r)] for r in refs if r not in missing}
+    jobs = [(d["path"], PAGE_CACHE, s, n, size) for s, d in docs.items()
+            for n in range(1, len(d["sizes"]) + 1) for size in mapserve.SIDES]
+    todo = [j for j in jobs if not mapserve.page_path(*j[1:]).exists()]
+    echo(f"{len(docs)} documents, {len(jobs) // len(mapserve.SIDES)} pages; rendering {len(todo)} page images")
+    with ProcessPoolExecutor(workers) as pool:
+        for i, _ in enumerate(pool.map(mapserve.write_page, *zip(*todo)) if todo else [], 1):
+            if i % 200 == 0:
+                echo(f"  {i}/{len(todo)}")
+    for _, cache, s, n, size in jobs:
+        dest = mapserve.page_path(out / "docs", s, n, size)
+        dest.parent.mkdir(exist_ok=True)
+        shutil.copy2(mapserve.page_path(cache, s, n, size), dest)
+    (out / "docs" / "index.json").write_text(json.dumps({s: d["sizes"] for s, d in docs.items()}, separators=(",", ":")))
     shutil.copy2(Path(__file__).with_name("mapserve.py"), out / "mapserve.py")
     shutil.copy2(out.parent / "Dockerfile", out / "Dockerfile")
-    return {"docs": sum(1 for _ in (out / "docs").glob("*.pdf")), "missing": missing}
+    return {"docs": len(docs), "pages": len(jobs) // len(mapserve.SIDES), "missing": missing}

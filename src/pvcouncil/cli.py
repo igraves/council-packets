@@ -625,8 +625,8 @@ def map_bundle():
     token = os.environ.get("MAPBOX_TOKEN", "")
     if not token:
         raise click.ClickException("MAPBOX_TOKEN is not set in .env")
-    r = subdivmap.bundle(token)
-    click.echo(f"{r['docs']} document images → {subdivmap.BUNDLE_DIR.relative_to(subdivmap.PROJECT_ROOT)}/")
+    r = subdivmap.bundle(token, echo=click.echo)
+    click.echo(f"{r['docs']} documents, {r['pages']} pages → {subdivmap.BUNDLE_DIR.relative_to(subdivmap.PROJECT_ROOT)}/")
     if r["missing"]:
         click.echo(f"No image for {len(r['missing'])}: {', '.join(r['missing'])}")
 

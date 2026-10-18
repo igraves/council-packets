@@ -35,6 +35,17 @@ SAMPLE = [
     ("PRAIRIE VILLAGE", "14", "29"), ("PRAIRIE VILLAGE", "14", "30"),
     ("PRAIRIE VILLAGE", "18", "4"), ("PRAIRIE VILLAGE", "18", "5"),
     ("PRAIRIE VILLAGE", "15", "1"), ("PRAIRIE VILLAGE", "15", "24"),
+    # where Tomahawk Road meets 72nd Terrace: Block 20 north of 72nd Terrace, Block 21 between it and
+    # Tomahawk, Block 43 across Roe, and all of Block 36 (7401 Roe, its house lots since combined),
+    # under the 1950 race-only declaration; an empty lot follows the whole block
+    ("PRAIRIE VILLAGE", "20", "1"), ("PRAIRIE VILLAGE", "20", "3"), ("PRAIRIE VILLAGE", "20", "26"),
+    ("PRAIRIE VILLAGE", "20", "30"), ("PRAIRIE VILLAGE", "20", "35"), ("PRAIRIE VILLAGE", "20", "37"),
+    ("PRAIRIE VILLAGE", "20", "38"),
+    ("PRAIRIE VILLAGE", "21", "1"), ("PRAIRIE VILLAGE", "21", "2"), ("PRAIRIE VILLAGE", "21", "4"),
+    ("PRAIRIE VILLAGE", "21", "15"), ("PRAIRIE VILLAGE", "21", "33"), ("PRAIRIE VILLAGE", "21", "39"),
+    ("PRAIRIE VILLAGE", "21", "40"),
+    ("PRAIRIE VILLAGE", "43", "85"),
+    ("PRAIRIE VILLAGE", "36", ""),
 ]
 
 RACIAL = re.compile(restrictread.FEATURES["racial restriction"] + r"|person\s+of\s+color|\bmongolian|"
@@ -50,7 +61,7 @@ def _slug(s: str) -> str:
 
 
 def lot_path(sub: str, block: str, lot: str):
-    return CACHE_DIR / f"{_slug(sub)}-{block}-{lot}.json"
+    return CACHE_DIR / f"{_slug(sub)}-{block}-{lot or 'all'}.json"
 
 
 def image_path(d: dict):
@@ -69,9 +80,10 @@ def fetch(lots=SAMPLE, echo=print) -> None:
         return
     rec = Recorder().login()
     for i, (sub, block, lot) in enumerate(todo, 1):
-        rows = rec.search(legal=[("subdivision", "IS", sub), ("block", "IS", block), ("lot", "IS", lot)])
+        legal = [("subdivision", "IS", sub), ("block", "IS", block)] + ([("lot", "IS", lot)] if lot else [])
+        rows = rec.search(legal=legal)
         lot_path(sub, block, lot).write_text(json.dumps(rows))
-        echo(f"[{i}/{len(todo)}] {sub} Block {block} Lot {lot}: "
+        echo(f"[{i}/{len(todo)}] {sub} Block {block} Lot {lot or 'all'}: "
              f"{len({r['instrumentReference_id'] for r in rows})} instruments")
 
 
@@ -150,7 +162,7 @@ def build(lots=SAMPLE) -> dict:
                      "racial": bool(m), "cites_restrictions": bool(CITES.search(flat)),
                      "restates_restrictions": bool(RESTATES.search(flat))})
         if m:
-            excerpts += [f"## {d['subdivision']} Block {d['block']} Lot {d['lot']}: {d['book_page']} ({d['recorded']})",
+            excerpts += [f"## {d['subdivision']} Block {d['block']} Lot {d['lot'] or 'all'}: {d['book_page']} ({d['recorded']})",
                          "", f"> …{flat[max(0, m.start() - 300):m.end() + 300]}…", ""]
     out = {"lots": [{"subdivision": s, "block": b, "lot": lt} for s, b, lt in lots], "deeds": rows}
     RESULTS_PATH.write_text(json.dumps(out, indent=1) + "\n")

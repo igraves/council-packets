@@ -101,7 +101,7 @@ def build_index() -> dict:
             words = r.get("words", 0)
             docs[f"d:{r['id']}"] = {
                 "key": f"d:{r['id']}", "kind": "deed", "book_page": r["book_page"], "recorded": r["recorded"],
-                "title": f"{r['subdivision']} Block {r['block']} Lot {r['lot']}", "code": "",
+                "title": f"{r['subdivision']} Block {r['block']}" + (f" Lot {r['lot']}" if r['lot'] else ""), "code": "",
                 "subdivision": r["subdivision"], "path": str(path),
                 "features": ["racial restriction"] if r["racial"] else [], "note": None, "term": None,
                 "ocr_words": words, "ocr": "poor" if words / max(1, r["pages"]) < POOR_INSTRUMENT_WORDS_PER_PAGE else "good",

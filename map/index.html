@@ -56,7 +56,8 @@
   #tip.pinned .close { display: block; }
   #tip a.doc { text-decoration: underline dotted; text-underline-offset: 2px; cursor: zoom-in; }
   #peek { position: fixed; display: none; z-index: 5; width: 220px; padding: 6px; pointer-events: none; }
-  #peek img { display: block; width: 100%; min-height: 120px; border-radius: 4px; background: #fff; }
+  #peek .page { border-radius: 4px; overflow: hidden; }
+  #peek img { display: block; width: 100%; height: 100%; background: #fff; }
   #peek .cap { color: var(--muted); font-size: 11px; margin-top: 4px; }
   #modal { position: fixed; inset: 0; z-index: 10; display: none; flex-direction: column;
     background: rgba(5, 7, 10, .88); }
@@ -64,11 +65,23 @@
   #modal header { display: flex; align-items: center; gap: 12px; padding: 10px 16px;
     background: var(--panel); border-bottom: 1px solid var(--line); }
   #modal header h2 { font-size: 15px; margin: 0; flex: 1; }
-  #modal header span { color: var(--muted); font-size: 12px; }
-  #modal header button { background: none; border: 0; color: var(--text); font-size: 22px; cursor: pointer; line-height: 1; }
+  #modal header .count { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  #modal header .x { background: none; border: 0; color: var(--text); font-size: 22px; cursor: pointer; line-height: 1; }
+  #modal header .hltoggle { display: none; align-items: center; gap: 6px; font: inherit; font-size: 12.5px;
+    color: var(--text); background: #1b2028; border: 1px solid var(--line); border-radius: 999px;
+    padding: 4px 11px; cursor: pointer; }
+  #modal.has-hl header .hltoggle { display: inline-flex; }
+  #modal header .hltoggle .dot { width: 12px; height: 12px; border-radius: 3px;
+    background: rgba(229, 72, 77, .25); border: 1.5px solid var(--racial); }
+  #modal header .hltoggle[aria-pressed="false"] .dot { background: none; border-color: var(--muted); }
   #modal .pages { flex: 1; overflow: auto; padding: 16px; display: flex; flex-direction: column;
     align-items: center; gap: 16px; }
-  #modal .pages img { width: min(100%, 1000px); background: #fff; border-radius: 4px; box-shadow: 0 4px 18px rgba(0,0,0,.5); }
+  #modal .pages .page { width: min(100%, 1000px); flex: none; border-radius: 4px; box-shadow: 0 4px 18px rgba(0,0,0,.5); }
+  .page { position: relative; background: #fff; }
+  .page img { display: block; width: 100%; height: 100%; }
+  .hl { position: absolute; background: rgba(229, 72, 77, .25); outline: 2px solid rgba(229, 72, 77, .85);
+    border-radius: 2px; pointer-events: none; }
+  #modal.hl-off .hl { display: none; }
   #notoken { position: absolute; inset: 0; display: none; place-items: center; text-align: center; padding: 24px; }
   #notoken code { background: #1b2028; padding: 2px 6px; border-radius: 4px; }
   @media (max-width: 600px) {
@@ -96,9 +109,12 @@
   </div>
 </div>
 <div id="tip" class="panel"><button class="close" aria-label="Close">×</button><div id="tipbody"></div></div>
-<div id="peek" class="panel"><img alt=""><div class="cap"></div></div>
+<div id="peek" class="panel"><div class="page"></div><div class="cap"></div></div>
 <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-  <header><h2 id="modal-title"></h2><span></span><button aria-label="Close">×</button></header>
+  <header><h2 id="modal-title"></h2>
+    <button class="hltoggle" aria-pressed="true" title="Outline the racial covenant in red">
+      <span class="dot"></span>Highlight racial language</button>
+    <span class="count"></span><button class="x" aria-label="Close">×</button></header>
   <div class="pages"></div>
 </div>
 <div id="notoken"><div>
@@ -121,8 +137,10 @@ const title = s => esc(s).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
 
 // Document images: only `pvc subdivision-map --serve` has them (docs/index.json lists each
 // document's page count); anywhere else the fetch fails and book/page numbers stay plain text
-let DOCS = {};
+let DOCS = {}, HL = {};
 fetch("docs/index.json").then(r => r.ok ? r.json() : {}).then(d => DOCS = d).catch(() => {});
+// where each racial covenant is on its page (boxes as fractions of the page; see highlights.py)
+fetch("highlights.json").then(r => r.ok ? r.json() : {}).then(d => HL = d).catch(() => {});
 const slug = bp => String(bp ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const doc = bp => DOCS[slug(bp)]
   ? `<a class="doc" href="docs/${slug(bp)}/1.jpg?size=full" data-doc="${slug(bp)}" data-title="${esc(bp)}">${esc(bp)}</a>`
@@ -267,38 +285,70 @@ if (!token) {
 function unpin() { pinned = null; tip.classList.remove("pinned"); tip.style.display = "none"; hidePeek(); }
 tip.querySelector(".close").addEventListener("click", unpin);
 
-// hovering a document in a pinned card shows its first page small; clicking opens every page
+// Racial-language outlines: on unless this viewer turned them off (remembered in this browser only)
+let showHL = true;
+try { showHL = localStorage.getItem("pv-map-highlight") !== "off"; } catch (e) {}
+const hlPages = s => Object.keys(HL[s]?.pages || {}).map(Number).sort((a, b) => a - b);
+// one page, sized from its dimensions so the modal can scroll to it before its image loads
+function pageHTML(s, n, size, alt) {
+  const [w, h] = DOCS[s][n - 1];
+  const boxes = (HL[s]?.pages[n] || []).map(([x0, y0, x1, y1]) =>
+    `<div class="hl" style="left:${x0 * 100}%;top:${y0 * 100}%;width:${(x1 - x0) * 100}%;height:${(y1 - y0) * 100}%"></div>`).join("");
+  return `<div class="page" data-page="${n}" style="aspect-ratio:${w}/${h}">` +
+    `<img loading="lazy" alt="${esc(alt)}" src="docs/${s}/${n}.jpg?size=${size}">${boxes}</div>`;
+}
+
+// hovering a document in a pinned card shows a page small (the racial covenant's, outlined, when
+// highlighting is on); clicking opens every page
 const peek = document.getElementById("peek"), modal = document.getElementById("modal");
+const hlButton = modal.querySelector(".hltoggle");
 function showPeek(a) {
-  const n = DOCS[a.dataset.doc];
-  peek.querySelector("img").src = `docs/${a.dataset.doc}/1.jpg?size=thumb`;
-  peek.querySelector(".cap").textContent = `${a.dataset.title} · ${pageCount(n)} · click to open`;
+  const s = a.dataset.doc, n = DOCS[s].length, hp = showHL ? hlPages(s)[0] : undefined;
+  const pg = peek.querySelector(".page");
+  pg.outerHTML = pageHTML(s, hp || 1, "thumb", "");
+  if (!showHL) peek.querySelectorAll(".hl").forEach(b => b.remove());
+  peek.querySelector(".cap").textContent = `${a.dataset.title} · ${pageCount(n)}` +
+    (hp ? ` · racial covenant on page ${hp}` : "") + " · click to open";
   peek.style.display = "block";
   const r = a.getBoundingClientRect(), t = tip.getBoundingClientRect(), w = peek.offsetWidth;
   const x = t.right + 10 + w < window.innerWidth ? t.right + 10 : Math.max(8, t.left - w - 10);
   peek.style.left = x + "px";
   peek.style.top = Math.max(8, Math.min(r.top - 40, window.innerHeight - peek.offsetHeight - 8)) + "px";
 }
-function hidePeek() { peek.style.display = "none"; peek.querySelector("img").removeAttribute("src"); }
+function hidePeek() { peek.style.display = "none"; peek.querySelector(".page").innerHTML = ""; }
+function setHL(on) {
+  showHL = on;
+  try { localStorage.setItem("pv-map-highlight", on ? "on" : "off"); } catch (e) {}
+  hlButton.setAttribute("aria-pressed", String(on));
+  modal.classList.toggle("hl-off", !on);
+}
 function openDoc(a) {
-  const n = DOCS[a.dataset.doc];
+  const s = a.dataset.doc, n = DOCS[s].length, hp = hlPages(s);
   hidePeek();
   modal.querySelector("h2").textContent = a.dataset.title;
-  modal.querySelector("header span").textContent = pageCount(n);
-  modal.querySelector(".pages").innerHTML = Array.from({length: n}, (_, i) =>
-    `<img loading="lazy" alt="${esc(a.dataset.title)}, page ${i + 1}" src="docs/${a.dataset.doc}/${i + 1}.jpg?size=full">`).join("");
+  modal.querySelector("header .count").textContent = pageCount(n);
+  modal.classList.toggle("has-hl", hp.length > 0);
+  setHL(showHL);
+  const pages = modal.querySelector(".pages");
+  pages.innerHTML = Array.from({length: n}, (_, i) => pageHTML(s, i + 1, "full", `${a.dataset.title}, page ${i + 1}`)).join("");
   modal.classList.add("open");
-  modal.querySelector(".pages").scrollTop = 0;
-  modal.querySelector("header button").focus();
+  pages.scrollTop = 0;
+  // open at the racial covenant when highlighting is on
+  if (showHL && hp.length) {
+    const hl = pages.querySelector(`.page[data-page="${hp[0]}"] .hl`);
+    if (hl) pages.scrollTop = Math.max(0, hl.getBoundingClientRect().top - pages.getBoundingClientRect().top - 80);
+  }
+  modal.querySelector("header .x").focus();
 }
 function closeDoc() { modal.classList.remove("open"); modal.querySelector(".pages").innerHTML = ""; }
+hlButton.addEventListener("click", () => setHL(!showHL));
 tipbody.addEventListener("mouseover", e => { const a = e.target.closest("a.doc"); if (a) showPeek(a); });
 tipbody.addEventListener("mouseout", e => { if (e.target.closest("a.doc")) hidePeek(); });
 tipbody.addEventListener("click", e => {
   const a = e.target.closest("a.doc");
   if (a) { e.preventDefault(); openDoc(a); }
 });
-modal.querySelector("header button").addEventListener("click", closeDoc);
+modal.querySelector("header .x").addEventListener("click", closeDoc);
 modal.addEventListener("click", e => { if (e.target === modal || e.target.classList.contains("pages")) closeDoc(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && modal.classList.contains("open")) closeDoc(); });
 </script>

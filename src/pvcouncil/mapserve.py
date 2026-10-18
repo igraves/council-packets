@@ -1,7 +1,7 @@
 """Serve the subdivision map and the images of the documents it links.
 
-Besides the map directory's files, it serves docs/index.json (each linked document's page count,
-keyed by its book and page as the map page slugs it: "MISC 43 573" → "misc-43-573") and
+Besides the map directory's files, it serves docs/index.json (each linked document's page sizes in
+points, keyed by its book and page as the map page slugs it: "MISC 43 573" → "misc-43-573") and
 docs/<slug>/<page>.jpg?size=thumb|full, rendered from the document's PDF on first request and
 cached. Without documents, the index is empty and the map shows book and page numbers as text.
 
@@ -25,8 +25,8 @@ PAGE_SIDES = {"thumb": 360, "full": 1800}
 
 
 def index_docs(paths) -> dict[str, dict]:
-    """Document PDFs by slug, with page counts; a PDF named <slug>--<id>.pdf or <slug>.pdf.
-    The first of several with one slug wins, and unreadable files are skipped."""
+    """Document PDFs by slug, with page counts and sizes; a PDF named <slug>--<id>.pdf or
+    <slug>.pdf. The first of several with one slug wins, and unreadable files are skipped."""
     out = {}
     for p in paths:
         slug = p.stem.split("--")[0].lower()
@@ -34,7 +34,8 @@ def index_docs(paths) -> dict[str, dict]:
             continue
         try:
             with fitz.open(p) as pdf:
-                out[slug] = {"path": p, "pages": pdf.page_count}
+                out[slug] = {"path": p, "pages": pdf.page_count,
+                             "sizes": [[round(pg.rect.width), round(pg.rect.height)] for pg in pdf]}
         except fitz.FileDataError:
             continue
     return out
@@ -55,7 +56,7 @@ def render_page(doc: dict, page: int, size: str, cache_dir: Path) -> bytes:
 
 
 def handler(map_dir: Path, docs: dict[str, dict], cache_dir: Path):
-    index = json.dumps({s: d["pages"] for s, d in docs.items()}).encode()
+    index = json.dumps({s: d["sizes"] for s, d in docs.items()}, separators=(",", ":")).encode()
 
     class Handler(http.server.SimpleHTTPRequestHandler):
         def end_headers(self):  # so a rebuilt page or data shows on reload; page images don't change

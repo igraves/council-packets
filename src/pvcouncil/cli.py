@@ -600,6 +600,19 @@ def subdivision_map(refresh, port):
         mapserve.serve(subdivmap.MAP_DIR, docs, subdivmap.PAGE_CACHE, "127.0.0.1", port)
 
 
+@cli.command("highlights")
+def highlights_cmd():
+    """Find the racial covenant on the pages of the documents the map links → map/highlights.json.
+
+    Tesseract finds the pages and places each line; Claude reads those pages (sending their images
+    and OCR lines to the Anthropic API) and names the covenant's lines. Answers are cached."""
+    from pvcouncil import highlights
+
+    out = highlights.build(echo=click.echo)
+    click.echo(f"{len(out)} documents, {sum(len(b) for d in out.values() for b in d['pages'].values())} boxes "
+               f"→ {highlights.RESULTS_PATH.relative_to(highlights.subdivmap.PROJECT_ROOT)}")
+
+
 @cli.command("map-bundle")
 def map_bundle():
     """Collect the map and the images of the documents it refers to in deploy/bundle/, the

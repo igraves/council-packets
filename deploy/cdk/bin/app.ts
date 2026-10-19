@@ -9,11 +9,11 @@ const need = (key: string): string => {
   return v;
 };
 
+// us-east-1: CloudFront only uses certificates from there.
 new MapStack(app, "PvSubdivisionMap", {
   zoneName: need("zoneName"),
   zoneId: need("zoneId"),
   subdomain: need("subdomain"),
-  vpcId: app.node.tryGetContext("vpcId"),
-  env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
+  env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: "us-east-1" },
   description: "Prairie Village subdivision restrictions map (council-packets)",
 });

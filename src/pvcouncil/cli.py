@@ -615,8 +615,8 @@ def highlights_cmd():
 
 @cli.command("map-bundle")
 def map_bundle():
-    """Collect the map and the images of the documents it refers to in deploy/bundle/, the
-    build context for deploy/Dockerfile. Run pvc subdivision-map first; MAPBOX_TOKEN comes
+    """Collect the map and the images of the documents it refers to in deploy/bundle/site/, the
+    site deploy/cdk uploads to S3. Run pvc subdivision-map first; MAPBOX_TOKEN comes
     from .env and is served to browsers, so restrict it to the site's URL in Mapbox."""
     import os
 

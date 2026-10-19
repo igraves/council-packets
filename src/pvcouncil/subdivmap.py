@@ -371,10 +371,12 @@ def doc_images() -> dict[str, dict]:
 
 
 def bundle(token: str, out=BUNDLE_DIR, workers: int = 6, echo=print) -> dict:
-    """The deploy image's build context: the map, its config.js (with the Mapbox token), mapserve.py,
-    the Dockerfile, and every page of the documents the map refers to as AVIF at both sizes, with
-    docs/index.json. Pages are rendered into the local page cache first, so a rebuild reuses them.
-    Returns the counts of documents and pages and the references with no image."""
+    """The site to deploy, in out/site/ laid out as it is served: the map, its config.js (with the
+    Mapbox token), and under docs/ every page of the documents the map refers to as AVIF at both
+    sizes, with docs/index.json. The CDK stack uploads site/ to S3; mapserve.py and the Dockerfile
+    are copied alongside to run the same files in a container. Pages are rendered into the local
+    page cache first, so a rebuild reuses them. Returns the counts of documents and pages and the
+    references with no image."""
     import shutil
     from concurrent.futures import ProcessPoolExecutor
 
@@ -382,11 +384,11 @@ def bundle(token: str, out=BUNDLE_DIR, workers: int = 6, echo=print) -> dict:
 
     if out.exists():
         shutil.rmtree(out)
-    (out / "map").mkdir(parents=True)
-    (out / "docs").mkdir()
+    site = out / "site"
+    (site / "docs").mkdir(parents=True)
     for name in MAP_FILES:
-        shutil.copy2(MAP_DIR / name, out / "map" / name)
-    (out / "map" / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")
+        shutil.copy2(MAP_DIR / name, site / name)
+    (site / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")
     images = doc_images()
     refs = sorted(map_refs())
     missing = [r for r in refs if plats._slug(r) not in images]
@@ -400,10 +402,10 @@ def bundle(token: str, out=BUNDLE_DIR, workers: int = 6, echo=print) -> dict:
             if i % 200 == 0:
                 echo(f"  {i}/{len(todo)}")
     for _, cache, s, n, size in jobs:
-        dest = mapserve.page_path(out / "docs", s, n, size)
+        dest = mapserve.page_path(site / "docs", s, n, size)
         dest.parent.mkdir(exist_ok=True)
         shutil.copy2(mapserve.page_path(cache, s, n, size), dest)
-    (out / "docs" / "index.json").write_text(json.dumps({s: d["sizes"] for s, d in docs.items()}, separators=(",", ":")))
+    (site / "docs" / "index.json").write_text(json.dumps({s: d["sizes"] for s, d in docs.items()}, separators=(",", ":")))
     shutil.copy2(Path(__file__).with_name("mapserve.py"), out / "mapserve.py")
     shutil.copy2(out.parent / "Dockerfile", out / "Dockerfile")
     return {"docs": len(docs), "pages": len(jobs) // len(mapserve.SIDES), "missing": missing}

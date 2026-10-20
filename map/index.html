@@ -294,7 +294,6 @@ function parcelCard(p) {
     ["Use", esc(p.use || p.class || "")],
     ["Lot", p.acres ? `${p.acres} acre${p.acres === 1 ? "" : "s"}` : ""],
     ["Zoning", esc(p.zoning || "")],
-    ["Grade", [p.grade && esc(p.grade), p.condition && `condition ${esc(p.condition)}`].filter(Boolean).join("; ")],
     ["Ward", esc(p.ward || "")],
     ["Legal", esc(p.legal || "")],
   ].filter(([, v]) => v);

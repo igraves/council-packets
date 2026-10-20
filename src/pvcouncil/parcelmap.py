@@ -32,9 +32,6 @@ DETAILS = {
     "year": "YearBuilt",
     "style": "ResStylDsc",
     "units": "DwellUnits",
-    "grade": "GradeDesc",
-    "cdu": "CDUDesc",
-    "condition": "CondDesc",
     "zoning": "Zoning",
     "class": "GenClass",
     "use": "LBCSFunDsc",
@@ -126,7 +123,7 @@ def build(refresh: bool = False, echo=print) -> dict:
         if not g or pid not in details:
             continue
         g = mapping(shape(g).simplify(SIMPLIFY_DEG, preserve_topology=True))
-        features.append({"type": "Feature", "properties": _clean(details[pid]),
+        features.append({"type": "Feature", "properties": _clean({k: details[pid].get(k) for k in DETAILS}),
                          "geometry": {"type": g["type"], "coordinates": _round(g["coordinates"])}})
     fc = {"type": "FeatureCollection", "features": features}
     GEOJSON_PATH.write_text(json.dumps(fc, separators=(",", ":")))

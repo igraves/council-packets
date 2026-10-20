@@ -46,6 +46,8 @@ A declaration can put a racial covenant on land without stating it, by making th
 | Prairie Village | MISC 40 546 (restrictions) | 1949-04-01 | Blocks 39–40, 43–44 | MISC 26 349 (1941) |
 | Prairie Village | MISC 42 52 (restrictions) | 1949-08-31 | Blocks 38, 45–49 | MISC 26 349 (1941) |
 | Prairie Village | MISC 42 54 (restrictions) | 1949-08-31 | Blocks 38, 45–49 | MISC 26 349 (1941) |
+| Prairie Village | MISC 42 393 (restrictions) | 1949-10-20 | Blocks 41–45 | MISC 26 349 (1941) |
+| Prairie Village | MISC 42 396 (restrictions) | 1949-10-20 | Blocks 41–45 | MISC 26 349 (1941) |
 | Prairie Village | MISC 44 47 (restrictions) | 1950-02-14 | Blocks 51–56 | MISC 26 349 (1941) |
 | Prairie Village | MISC 44 50 (restrictions) | 1950-02-14 | Blocks 51–56 | MISC 26 349 (1941) |
 | Prairie Village | MISC 55 356 (restriction amendment) | 1952-08-13 | Block 21 | MISC 26 349 (1941) |

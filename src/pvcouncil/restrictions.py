@@ -349,6 +349,9 @@ FOUND_BY_REFERENCE = [
     {"id": "3166519", "book_page": "MISC 40 212", "recorded": "1949-01-03", "docid": "380622"},
     {"id": "3433753", "book_page": "MISC 42 52", "recorded": "1949-08-31", "docid": "388424"},
     {"id": "3433759", "book_page": "MISC 42 54", "recorded": "1949-08-31", "docid": "388425"},
+    {"id": "3433698", "book_page": "MISC 42 393", "recorded": "1949-10-20", "docid": "390585"},
+    {"id": "3433699", "book_page": "MISC 42 396", "recorded": "1949-10-20", "docid": "390586"},
+    {"id": "3433701", "book_page": "MISC 42 405", "recorded": "1949-10-20", "docid": "390587"},
 ]
 for _e in FOUND_BY_REFERENCE:
     _e.update(plats=["PRAIRIE VILLAGE"], plat_book_pages=[], source="reference")

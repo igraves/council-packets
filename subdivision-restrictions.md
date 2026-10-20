@@ -34,6 +34,7 @@ A declaration can put a racial covenant on land without stating it, by making th
 | Prairie Forest | MISC 44 68 (restrictions) | 1950-02-14 | all | MISC 26 349 (1941) |
 | Prairie Forest | MISC 44 197 (restrictions) | 1950-02-21 | all | MISC 26 349 (1941) |
 | Prairie Village | MISC 31 44 (restrictions) | 1946-03-04 | Blocks 6–10 | MISC 26 349 (1941) |
+| Prairie Village | MISC 31 46 (restrictions) | 1946-03-04 | Blocks 6–10 | MISC 26 349 (1941) |
 | Prairie Village | MISC 32 533 (restrictions) | 1946-10-11 | Blocks 5, 8, 11–17 | MISC 26 349 (1941) |
 | Prairie Village | MISC 32 535 (restrictions) | 1946-10-11 | Blocks 5, 11–17 | MISC 26 349 (1941) |
 | Prairie Village | MISC 36 260 (restrictions) | 1947-11-10 | Blocks 18–21 | MISC 26 349 (1941) |

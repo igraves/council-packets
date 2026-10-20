@@ -393,7 +393,8 @@ def build(refresh: bool = False, echo=print) -> dict:
 PAGE_CACHE = plats.DEEDS_DIR / "cache" / "pages" / "map-avif"
 BUNDLE_DIR = PROJECT_ROOT / "deploy" / "bundle"
 MAP_FILES = ["index.html", "subdivisions.geojson", "preplat.geojson", "carried.geojson", "parcels.geojson",
-             "highlights.json", "og-image.jpg"]  # og-image.jpg: the link-preview image, 1200x628
+             "highlights.json", "og-image.jpg",  # the link-preview image, 1200x628
+             "favicon.ico", "favicon-32.png", "apple-touch-icon.png"]
 
 
 def map_refs() -> set[str]:

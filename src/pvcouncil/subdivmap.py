@@ -344,7 +344,8 @@ def build(refresh: bool = False, echo=print) -> dict:
 # server links every downloaded image, a deploy bundle only those the map refers to.
 PAGE_CACHE = plats.DEEDS_DIR / "cache" / "pages" / "map-avif"
 BUNDLE_DIR = PROJECT_ROOT / "deploy" / "bundle"
-MAP_FILES = ["index.html", "subdivisions.geojson", "preplat.geojson", "carried.geojson", "highlights.json"]
+MAP_FILES = ["index.html", "subdivisions.geojson", "preplat.geojson", "carried.geojson", "parcels.geojson",
+             "highlights.json"]
 
 
 def map_refs() -> set[str]:

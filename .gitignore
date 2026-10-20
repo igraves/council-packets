@@ -19,3 +19,6 @@ deploy/bundle/
 deploy/cdk/node_modules/
 deploy/cdk/cdk.out/
 deploy/cdk/cdk.context.json
+
+# parcel layer, rebuilt from the county service by pvc subdivision-map (6 MB)
+map/parcels.geojson

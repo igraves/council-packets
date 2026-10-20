@@ -587,6 +587,10 @@ def subdivision_map(refresh, port):
     pre = json.loads(preplat.RESULTS_PATH.read_text())["instruments"] if preplat.RESULTS_PATH.exists() else []
     click.echo(f"{len(preplat.overlay(pre)['features'])} pre-plat covenants "
                f"→ {preplat.OVERLAY_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
+    from pvcouncil import parcelmap
+
+    pc = parcelmap.build(refresh, echo=click.echo)
+    click.echo(f"{len(pc['features'])} parcels → {parcelmap.GEOJSON_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
     # the Mapbox token stays out of git: map/config.js is gitignored
     token = os.environ.get("MAPBOX_TOKEN", "")
     (subdivmap.MAP_DIR / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")

@@ -54,6 +54,12 @@
   #tip .close { position: absolute; top: 6px; right: 9px; cursor: pointer; color: var(--muted);
     display: none; font-size: 16px; background: none; border: 0; }
   #tip.pinned .close { display: block; }
+  #tip .parcel { margin-bottom: 8px; }
+  #tip .parcel + .subcard { border-top: 1px solid var(--line); padding-top: 8px; }
+  #tip .parcel + .subcard h2 { font-size: 13.5px; }
+  #tip dl { display: grid; grid-template-columns: auto 1fr; gap: 1px 10px; margin: 4px 0 0; font-size: 12.5px; }
+  #tip dt { color: var(--muted); }
+  #tip dd { margin: 0; }
   #tip a.doc { text-decoration: underline dotted; text-underline-offset: 2px; cursor: zoom-in; }
   #peek { position: fixed; display: none; z-index: 5; width: 220px; padding: 6px; pointer-events: none; }
   #peek .page { border-radius: 4px; overflow: hidden; }
@@ -97,7 +103,8 @@
   <h1>Prairie Village deed restrictions</h1>
   <p>Each subdivision's recorded restrictions, read from the Johnson County Recorder of Deeds.
     Racial covenants have been unenforceable since <i>Shelley v. Kraemer</i> (1948), but most were
-    never formally released. Hover a subdivision for details; click to keep its card open.</p>
+    never formally released. Hover a subdivision for details; click to keep its card open.
+    Zoom in to see each parcel.</p>
   <div class="legend">
     <div><span class="sw racial"></span>Racial covenant, no release found</div>
     <div><span class="sw expired"></span>Racial covenant, expired by its own term</div>
@@ -165,14 +172,34 @@ function hint(h) {
     : docs ? "Click to keep open and view the documents" : "Click to keep open"}</div>`;
 }
 
-function content(sub, pre) {
-  if (!sub) return hint(preCard(pre));
-  return card(sub.properties, preCard(pre));
+function content(sub, pre, parcel) {
+  return hint((parcel ? parcelCard(parcel.properties) : "") +
+    (sub ? card(sub.properties, preCard(pre)) : preCard(pre)));
+}
+
+// a parcel's details from the county's parcel layer (see parcelmap.py)
+const plain = s => title(s).replace(/\b(Sfr|Pvc|Llc)\b/g, w => w.toUpperCase());
+const countyURL = id => "https://maps.jocogov.org/ims/identifypropfeature.aspx?id=" +
+  encodeURIComponent(id).replace(/%20/g, "+") + "&db=jocopub&lyr=property_pl&fld=taxpropid&src=aims2&scr=elv";
+function parcelCard(p) {
+  const plat = [p.block && `Block ${esc(p.block)}`, p.lot && `Lot ${esc(p.lot)}`].filter(Boolean).join(", ");
+  const facts = [
+    ["Built", [p.year, p.style && esc(p.style), p.units > 1 && `${p.units} units`].filter(Boolean).join(" · ")],
+    ["Use", esc(p.use || p.class || "")],
+    ["Lot", p.acres ? `${p.acres} acre${p.acres === 1 ? "" : "s"}` : ""],
+    ["Zoning", esc(p.zoning || "")],
+    ["Grade", [p.grade && esc(p.grade), p.condition && `condition ${esc(p.condition)}`].filter(Boolean).join("; ")],
+    ["Ward", esc(p.ward || "")],
+    ["Legal", esc(p.legal || "")],
+  ].filter(([, v]) => v);
+  return `<div class="parcel"><h2>${p.address ? plain(p.address) : "Parcel"}</h2>` +
+    `<div class="sub">${plat ? plat + " · " : ""}<a href="${countyURL(p.id)}" target="_blank" rel="noopener">${esc(p.id)}</a></div>` +
+    `<dl>${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl></div>`;
 }
 
 function card(p, extra = "") {
   const d = JSON.parse(p.details);
-  let h = `<h2>${title(p.name)}</h2><div class="sub">Subdivision ${esc(p.code)}` +
+  let h = `<div class="subcard"><h2>${title(p.name)}</h2><div class="sub">Subdivision ${esc(p.code)}` +
           (d.plats.length > 1 ? ` · ${d.plats.length} plats` : "") + `</div>` +
           `<span class="badge ${p.status}">${STATUS[p.status]}</span>`;
   if (d.declarations.length) {
@@ -195,7 +222,7 @@ function card(p, extra = "") {
   if (p.indexed) h += `<div>${p.indexed} indexed restriction instrument${p.indexed > 1 ? "s" : ""}</div>`;
   if (p.status !== "none")
     h += `<div style="margin-top:6px"><a href="${esc(p.report)}" target="_blank" rel="noopener">Documents in the restrictions report →</a></div>`;
-  return hint(h + extra);
+  return h + extra + `</div>`;
 }
 
 const tip = document.getElementById("tip"), tipbody = document.getElementById("tipbody");
@@ -256,27 +283,49 @@ if (!token) {
     map.addLayer({id: "carried-line", type: "line", source: "carried",
       paint: {"line-color": "#ff6b6f", "line-width": 2.2, "line-dasharray": [2, 1.5]}});
 
+    // parcels, loaded the first time the map is zoomed in far enough to show them
+    const PARCEL_ZOOM = 15;
+    let parcelsLoading = false;
+    function loadParcels() {
+      if (parcelsLoading || map.getZoom() < PARCEL_ZOOM - 0.5) return;
+      parcelsLoading = true;
+      fetch("parcels.geojson").then(r => r.json()).then(data => {
+        map.addSource("parcels", {type: "geojson", data, generateId: true});
+        const ph = ["boolean", ["feature-state", "hover"], false];
+        map.addLayer({id: "parcel-fill", type: "fill", source: "parcels", minzoom: PARCEL_ZOOM,
+          paint: {"fill-color": "#ffffff", "fill-opacity": ["case", ph, 0.12, 0]}}, "line");
+        map.addLayer({id: "parcel-line", type: "line", source: "parcels", minzoom: PARCEL_ZOOM,
+          paint: {"line-color": ["case", ph, "#ffffff", "rgba(230,232,235,.35)"], "line-width": ["case", ph, 1.6, 0.6]}}, "line");
+      }).catch(() => { parcelsLoading = false; });
+    }
+    map.on("zoomend", loadParcels);
+    loadParcels();
+
     const at = pt => [map.queryRenderedFeatures(pt, {layers: ["fill"]})[0],
-                      map.queryRenderedFeatures(pt, {layers: ["carried-fill", "pre-fill"]}).map(f => f.properties)];
+                      map.queryRenderedFeatures(pt, {layers: ["carried-fill", "pre-fill"]}).map(f => f.properties),
+                      map.getLayer("parcel-fill") ? map.queryRenderedFeatures(pt, {layers: ["parcel-fill"]})[0] : undefined];
+    let hoveredParcel = null;
+    function hover(source, id, prev) {
+      if (prev === id) return id;
+      if (prev !== null) map.setFeatureState({source, id: prev}, {hover: false});
+      if (id !== null) map.setFeatureState({source, id}, {hover: true});
+      return id;
+    }
     map.on("mousemove", e => {
-      const [f, p] = at(e.point);
-      const id = f ? f.id : null;
-      if (hovered !== id) {
-        if (hovered !== null) map.setFeatureState({source: "subs", id: hovered}, {hover: false});
-        hovered = id;
-        if (id !== null) map.setFeatureState({source: "subs", id}, {hover: true});
-      }
-      map.getCanvas().style.cursor = f || p.length ? "pointer" : "";
+      const [f, p, q] = at(e.point);
+      hovered = hover("subs", f ? f.id : null, hovered);
+      if (map.getSource("parcels")) hoveredParcel = hover("parcels", q ? q.id : null, hoveredParcel);
+      map.getCanvas().style.cursor = f || p.length || q ? "pointer" : "";
       if (pinned) return;
-      if (!f && !p.length) { tip.style.display = "none"; return; }
-      tipbody.innerHTML = content(f, p); tip.style.display = "block"; place(e.point);
+      if (!f && !p.length && !q) { tip.style.display = "none"; return; }
+      tipbody.innerHTML = content(f, p, q); tip.style.display = "block"; place(e.point);
     });
     map.on("click", e => {
-      const [f, p] = at(e.point);
-      if (!f && !p.length) { unpin(); return; }
+      const [f, p, q] = at(e.point);
+      if (!f && !p.length && !q) { unpin(); return; }
       pinned = true;
       tip.classList.add("pinned");
-      tipbody.innerHTML = content(f, p);
+      tipbody.innerHTML = content(f, p, q);
       tip.style.display = "block";
       place(e.point);
     });

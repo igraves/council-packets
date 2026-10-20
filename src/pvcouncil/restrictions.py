@@ -352,6 +352,8 @@ FOUND_BY_REFERENCE = [
     {"id": "3433698", "book_page": "MISC 42 393", "recorded": "1949-10-20", "docid": "390585"},
     {"id": "3433699", "book_page": "MISC 42 396", "recorded": "1949-10-20", "docid": "390586"},
     {"id": "3433701", "book_page": "MISC 42 405", "recorded": "1949-10-20", "docid": "390587"},
+    # cited in the margin of MISC 42 54 ("Modif. of Restr. #746475, Bk 161 Pg 172")
+    {"id": "3239007", "book_page": "MISC 161 172", "recorded": "1966-01-12", "docid": "746475"},
 ]
 for _e in FOUND_BY_REFERENCE:
     _e.update(plats=["PRAIRIE VILLAGE"], plat_book_pages=[], source="reference")

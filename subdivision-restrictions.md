@@ -54,6 +54,7 @@ A declaration can put a racial covenant on land without stating it, by making th
 | Prairie Village | MISC 55 356 (restriction amendment) | 1952-08-13 | Block 21 | MISC 26 349 (1941) |
 | Prairie Village | MISC 93 541 (restriction amendment) | 1958-03-18 | Block 54 | MISC 26 349 (1941) |
 | Prairie Village | MISC 96 326 (restriction amendment) | 1958-07-07 | Block 43 | MISC 26 349 (1941) |
+| Prairie Village | MISC 161 172 (restriction amendment) | 1966-01-12 | Block 38 | MISC 26 349 (1941) |
 
 MISC 26 349's racial covenant was released 2007-11-07 by the Prairie Village Homes Association under House Bill 2582 (2006) (OR 200711 001865). The release repeals the section for "all properties subject to the declaration", but its recitals list only the lots that declaration first covered, so whether it reaches land added by reference is unclear. The map shows that land as *by reference*.
 
@@ -388,7 +389,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### REPLAT OF FONTICELLO GARDENS NO. 2 (1000)
 
-- **Filed with plat** PLAT 12 21: 1946-08-09 MISC 32 195 (document 352568) — **homes association**; building line / setback, minimum cost, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 12 21: 1946-08-09 MISC 32 195 (document 352568) — **restrictions**; period of twenty-five years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback, minimum cost, minimum floor area (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 
 ### GRANTHURST (1100)
 
@@ -470,7 +471,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### MEADOWBROOK DOWNS (2350)
 
-- **Filed with plat** PLAT 13 49: 1949-12-13 MISC 43 168 (document 392856) — **restrictions**; period of 25 years; building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 13 49: 1949-12-13 MISC 43 168 (document 392856) — **restrictions**; period of 25 years; residence only (read by olmOCR-2 7B), building line / setback, minimum floor area, renewal (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 
 ### MEADOWBROOK EXECUTIVE (2371)
 
@@ -523,12 +524,12 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 ### MEADOW LAKE (2500)
 
 - **[Before it was platted](#before-it-was-platted)**: 1927-09-06 MISC 15 305, a racial covenant put on this land by neighboring owners (ended 1952)
-- **Filed with plat** PLAT 12 42: 1947-04-02 MISC 34 250 (document 359847) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 12 42: 1947-04-02 MISC 34 250 (document 359847) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 12 55: 1947-07-29 MISC 35 247 (document 363806) — **restriction amendment**. Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake
-- **Filed with plat** PLAT 13 55: 1950-01-07 MISC 43 323 (document 393828) — **restrictions**; period of twenty- five (25) years; building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 13 55: 1950-01-07 MISC 43 323 (document 393828) — **restrictions**; period of twenty- five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 14 43, PLAT 14 42: 1950-08-08 MISC 46 398 (document 404687) — **restrictions**; period of five (25) years; minimum floor area
 - **Filed with plat** PLAT 15 5: 1951-05-29 MISC 50 98 (document 420695) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area
-- **Filed with plat** PLAT 15 8: 1951-07-03 MISC 50 367 (document 422265) — **restrictions**; residence only, building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 15 8: 1951-07-03 MISC 50 367 (document 422265) — **restrictions**; period of twenty-five (25) years; residence only, no apartments (read by olmOCR-2 7B), building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 15 17: 1951-10-05 MISC 51 321 (document 426582) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - **Filed with plat** PLAT 15 62, PLAT 15 61, PLAT 15 60: 1952-04-05 MISC 53 466 (document 434616) — **restriction amendment**. Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners
 - **Filed with plat** PLAT 15 62, PLAT 15 61: 1952-04-05 MISC 53 471 (document 434618) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback (read by olmOCR-2 7B), minimum cost, minimum floor area

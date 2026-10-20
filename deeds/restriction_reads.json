@@ -48,7 +48,9 @@
    "words": 1142,
    "transcribed": 0,
    "blocks": {},
-   "subject_to": []
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": []
   },
   {
    "id": "4442333",
@@ -880,19 +882,28 @@
    "plat_book_pages": [
     "PLAT 12 21"
    ],
-   "kind": "homes association",
+   "kind": "restrictions",
    "features": [
+    "residence only",
+    "no apartments",
     "building line / setback",
     "minimum cost",
+    "minimum floor area",
     "racial restriction"
    ],
-   "term": null,
+   "term": "period of twenty-five years",
    "until_year": null,
    "pages": 6,
    "words": 1186,
    "transcribed": 0,
    "blocks": {},
-   "subject_to": []
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": [
+    "residence only",
+    "no apartments",
+    "minimum floor area"
+   ]
   },
   {
    "id": "2370256",
@@ -910,6 +921,7 @@
     "residence only",
     "no apartments",
     "building line / setback",
+    "minimum cost",
     "minimum floor area",
     "racial restriction"
    ],
@@ -946,7 +958,11 @@
     "15": null,
     "16": null
    },
-   "subject_to": []
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": [
+    "minimum cost"
+   ]
   },
   {
    "id": "2509043",
@@ -1102,6 +1118,10 @@
    "transcribed": 0,
    "blocks": {
     "1": [
+     1,
+     2,
+     3,
+     4,
      5,
      6,
      7,
@@ -1119,7 +1139,9 @@
     "3": null,
     "4": null
    },
-   "subject_to": []
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": []
   },
   {
    "id": "3563607",
@@ -1134,8 +1156,10 @@
    ],
    "kind": "restrictions",
    "features": [
+    "residence only",
     "building line / setback",
     "minimum floor area",
+    "renewal",
     "racial restriction"
    ],
    "term": "period of 25 years",
@@ -1144,9 +1168,21 @@
    "words": 829,
    "transcribed": 0,
    "blocks": {
-    "1": null
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
    },
-   "subject_to": []
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": [
+    "residence only",
+    "renewal"
+   ]
   },
   {
    "id": "3573529",
@@ -1161,7 +1197,10 @@
    ],
    "kind": "restrictions",
    "features": [
+    "residence only",
+    "no apartments",
     "building line / setback",
+    "minimum cost",
     "minimum floor area",
     "racial restriction"
    ],
@@ -1172,10 +1211,21 @@
    "transcribed": 0,
    "blocks": {
     "1": null,
-    "2": null,
-    "3": null
+    "2": [
+     13
+    ],
+    "3": [
+     6,
+     12
+    ]
    },
-   "subject_to": []
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": [
+    "residence only",
+    "no apartments",
+    "minimum cost"
+   ]
   },
   {
    "id": "3573623",
@@ -1483,11 +1533,13 @@
    "kind": "restrictions",
    "features": [
     "residence only",
+    "no apartments",
     "building line / setback",
+    "minimum cost",
     "minimum floor area",
     "racial restriction"
    ],
-   "term": null,
+   "term": "period of twenty-five (25) years",
    "until_year": null,
    "pages": 9,
    "words": 1361,
@@ -1540,7 +1592,12 @@
      21
     ]
    },
-   "subject_to": []
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": [
+    "no apartments",
+    "minimum cost"
+   ]
   },
   {
    "id": "4758450",
@@ -5895,6 +5952,39 @@
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "J. C. Nichols Company adds these lots to the Prairie Village Homes Association district (MISC 26 358)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3239007",
+   "book_page": "MISC 161 172",
+   "recorded": "1966-01-12",
+   "docid": "746475",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 583,
+   "transcribed": 0,
+   "blocks": {
+    "38": [
+     21
+    ]
+   },
+   "subject_to": [
+    "MISC 42 54"
+   ],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": [],
+   "note": "J. C. Nichols Company moves one lot's front building line from 35 to 33 feet under Section 6(a) of MISC 42 54",
    "unrelated": false,
    "reviewed": true
   },

@@ -69,5 +69,6 @@
  "MISC 42 393": {"blocks": {"41": "1-25", "42": "1-36", "43": "14-41, 44-70", "44": "14-39, 43-65", "45": "13-35"}, "subject_to": ["MISC 26 349"], "note_blocks": "read from the image: annexes these lots (plats 13 45-46) to MISC 26 349"},
  "MISC 42 396": {"blocks": {"41": "1-25", "42": "1-36", "43": "14-41, 44-70", "44": "14-39, 43-65", "45": "13-35"}, "subject_to": ["MISC 42 393"], "note_blocks": "read from the image: additional restrictions on the lots MISC 42 393 annexed"},
  "MISC 42 405": {"kind": "homes association", "note": "J. C. Nichols Company adds these lots to the Prairie Village Homes Association district (MISC 26 358)", "blocks": {"41": "1-25", "42": "1-36", "43": "14-41, 44-70", "44": "14-39, 43-65", "45": "13-35"}, "note_blocks": "read from the image, as MISC 42 393"},
- "MISC 31 44": {"blocks": {"6": null, "7": null, "8": null, "9": null, "10": null}, "note_blocks": "read from the image: annexes Blocks 6-10 to MISC 26 349"}
+ "MISC 31 44": {"blocks": {"6": null, "7": null, "8": null, "9": null, "10": null}, "note_blocks": "read from the image: annexes Blocks 6-10 to MISC 26 349"},
+ "MISC 161 172": {"kind": "restriction amendment", "note": "J. C. Nichols Company moves one lot's front building line from 35 to 33 feet under Section 6(a) of MISC 42 54", "blocks": {"38": "21"}, "subject_to": ["MISC 42 54"], "note_blocks": "the recorder's index (Block 38, Lot 21); cited in the margin of MISC 42 54"}
 }

@@ -19,6 +19,7 @@
    "words": 518,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "affidavit of possession, land outside the plat",
    "unrelated": true,
    "reviewed": true
@@ -46,7 +47,8 @@
    "pages": 3,
    "words": 1142,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4442333",
@@ -235,7 +237,8 @@
      15,
      16
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4443151",
@@ -410,7 +413,8 @@
      15,
      16
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4443152",
@@ -432,7 +436,8 @@
    "pages": 7,
    "words": 3299,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4591418",
@@ -458,7 +463,8 @@
    "pages": 5,
    "words": 2183,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4590868",
@@ -481,6 +487,7 @@
    "blocks": {
     "3": null
    },
+   "subject_to": [],
    "note": "road vacation petition, Roesland Lane in Mission Ridge",
    "unrelated": true,
    "reviewed": true
@@ -503,7 +510,8 @@
    "pages": 1,
    "words": 148,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1733572",
@@ -544,7 +552,8 @@
     "renewal"
    ],
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1732633",
@@ -565,6 +574,7 @@
    "words": 102,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "heirship affidavit, land in Sec 36-14-25",
    "unrelated": true,
    "reviewed": true
@@ -635,6 +645,7 @@
    },
    "stale_transcriptions": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "Declaration of Restrictions for CEDARVALE (Kansas City Investment Company and lot owners)",
@@ -660,6 +671,7 @@
    "words": 59,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "heirship affidavit, land in Sec 18-13-24",
    "unrelated": true,
    "reviewed": true
@@ -682,7 +694,8 @@
    "pages": 1,
    "words": 284,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1732379",
@@ -704,7 +717,8 @@
    "pages": 2,
    "words": 702,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1733502",
@@ -725,6 +739,7 @@
    "words": 236,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "road right-of-way release to Johnson County",
    "unrelated": true,
    "reviewed": true
@@ -749,7 +764,8 @@
    "pages": 2,
    "words": 522,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1733539",
@@ -773,7 +789,8 @@
    "pages": 3,
    "words": 1080,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1733540",
@@ -794,6 +811,7 @@
    "words": 17,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "marital-status affidavit",
@@ -828,6 +846,7 @@
    ],
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "Declaration of Restrictions for MISSION VALLEY WEST (all lot owners)",
    "unrelated": false,
    "reviewed": true
@@ -854,7 +873,8 @@
    "pages": 6,
    "words": 1186,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "2370256",
@@ -907,7 +927,8 @@
     "14": null,
     "15": null,
     "16": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2509043",
@@ -942,6 +963,7 @@
     "15": null,
     "16": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake",
@@ -966,7 +988,8 @@
    "pages": 2,
    "words": 441,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3294928",
@@ -1005,7 +1028,8 @@
      15,
      16
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3433676",
@@ -1027,7 +1051,8 @@
    "transcribed": 0,
    "blocks": {
     "40": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3433690",
@@ -1071,7 +1096,8 @@
     "2": null,
     "3": null,
     "4": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3563607",
@@ -1097,7 +1123,8 @@
    "transcribed": 0,
    "blocks": {
     "1": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3573529",
@@ -1125,7 +1152,8 @@
     "1": null,
     "2": null,
     "3": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3573623",
@@ -1153,6 +1181,7 @@
    ],
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest)",
    "unrelated": false,
    "reviewed": true
@@ -1175,7 +1204,8 @@
    "pages": 3,
    "words": 586,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4094190",
@@ -1204,7 +1234,8 @@
     "18": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4093668",
@@ -1227,6 +1258,7 @@
    "words": 137,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "death certificate",
    "unrelated": true,
    "reviewed": true
@@ -1257,6 +1289,7 @@
     "20": null,
     "21": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area",
@@ -1287,6 +1320,7 @@
    "words": 472,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -1321,6 +1355,7 @@
    "words": 847,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback",
@@ -1381,6 +1416,7 @@
     "8": null,
     "9": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -1408,7 +1444,8 @@
    "pages": 10,
    "words": 1376,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4626802",
@@ -1480,7 +1517,8 @@
      20,
      21
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4758450",
@@ -1582,7 +1620,8 @@
      15,
      16
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4757908",
@@ -1604,6 +1643,7 @@
    "words": 6,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "heirship affidavit, Southridge",
    "unrelated": true,
    "reviewed": true
@@ -1631,6 +1671,7 @@
    "words": 580,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -1661,7 +1702,8 @@
    "pages": 3,
    "words": 1380,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1580250",
@@ -1684,6 +1726,7 @@
    "words": 580,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners",
@@ -1774,6 +1817,7 @@
      25
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -1801,6 +1845,7 @@
    "words": 432,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -1828,6 +1873,7 @@
    "words": 53,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "septic-tank covenant with the county health board, Antioch Acres",
    "unrelated": true,
    "reviewed": true
@@ -1853,7 +1899,8 @@
    "pages": 3,
    "words": 603,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1812918",
@@ -1879,6 +1926,7 @@
    "words": 13,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -1916,6 +1964,7 @@
    "words": 5,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -1949,6 +1998,7 @@
    "words": 105,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -1979,7 +2029,8 @@
    "pages": 3,
    "words": 1116,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1893636",
@@ -2003,6 +2054,7 @@
    "words": 806,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -2051,6 +2103,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "J. C. Nichols Company reserves sewer right of way, Prairie Ridge Blocks 20-21",
@@ -2076,6 +2129,7 @@
    "words": 303,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "prenuptial contract",
    "unrelated": true,
    "reviewed": true
@@ -2104,6 +2158,7 @@
    "words": 336,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -2139,7 +2194,8 @@
     "4": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2070233",
@@ -2188,6 +2244,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -2220,6 +2277,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -2248,7 +2306,8 @@
    "blocks": {
     "3": null,
     "4": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2303188",
@@ -2274,6 +2333,7 @@
      3
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "ratification of dedication, Prairie Manor",
@@ -2299,6 +2359,7 @@
    "words": 43,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "federal tax lien discharge",
    "unrelated": true,
    "reviewed": true
@@ -2322,6 +2383,7 @@
    "words": 98,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "1917 identity affidavit, land in Sec 25-14-22",
@@ -2349,6 +2411,7 @@
    "words": 358,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "modifies Southmoor Gardens' building lines",
    "unrelated": true,
    "reviewed": true
@@ -2372,6 +2435,7 @@
    "words": 16,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "affidavit concerning Bradley Hills Addition",
    "unrelated": true,
    "reviewed": true
@@ -2395,6 +2459,7 @@
    "words": 16,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "surveyor's affidavit for Ferndale",
    "unrelated": true,
    "reviewed": true
@@ -2427,6 +2492,7 @@
    ],
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "Declaration of Restrictions for SOMERSET HILLS (Kansas City Investment Company)",
    "unrelated": false,
    "reviewed": true
@@ -2459,6 +2525,7 @@
    ],
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "Declaration of Restrictions for JORDAN PLACE",
    "unrelated": false,
    "reviewed": true
@@ -2485,6 +2552,7 @@
    "words": 698,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -2521,6 +2589,7 @@
     "3": null,
     "4": null
    },
+   "subject_to": [],
    "note": "sewer connection contract, Leawood Hills",
    "unrelated": true,
    "reviewed": true
@@ -2555,6 +2624,7 @@
      1
     ]
    },
+   "subject_to": [],
    "note": "sewer connection contract, Leawood Hills",
    "unrelated": true,
    "reviewed": true
@@ -2577,7 +2647,8 @@
    "pages": 2,
    "words": 474,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3360475",
@@ -2598,6 +2669,9 @@
    "words": 225,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [
+    "MISC 72 287"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "Homes Association Declaration by Town and Country Estates, Inc., under the declaration at MISC 72/287",
@@ -2625,6 +2699,7 @@
    "words": 1093,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "option agreement for land in Sec 6",
    "unrelated": true,
    "reviewed": true
@@ -2648,6 +2723,7 @@
    "words": 600,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "articles of incorporation of a church",
    "unrelated": true,
    "reviewed": true
@@ -2689,6 +2765,7 @@
      13
     ]
    },
+   "subject_to": [],
    "note": "county commission minutes, 77th Street benefit district 147",
    "unrelated": false,
    "reviewed": true
@@ -2724,6 +2801,7 @@
      5
     ]
    },
+   "subject_to": [],
    "note": "county commission minutes, Pawnee Street benefit district 148",
    "unrelated": false,
    "reviewed": true
@@ -2749,6 +2827,7 @@
    "words": 300,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "county order classifying platted lots into minimum ground floor area districts",
@@ -2790,6 +2869,7 @@
      6
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "county order classifying platted lots into minimum ground floor area districts",
@@ -2826,7 +2906,8 @@
      35,
      36
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4096810",
@@ -2847,6 +2928,7 @@
    "words": 139,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "federal tax lien",
    "unrelated": true,
    "reviewed": true
@@ -2872,7 +2954,8 @@
    "pages": 5,
    "words": 1108,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4166926",
@@ -2895,6 +2978,9 @@
    "words": 89,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [
+    "MISC 72 287"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -2927,7 +3013,8 @@
      2
     ],
     "7": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4166065",
@@ -2948,6 +3035,7 @@
    "words": 12,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "fence viewers' order, Sec 5-13-23",
    "unrelated": true,
    "reviewed": true
@@ -2975,7 +3063,8 @@
    "pages": 3,
    "words": 588,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4504850",
@@ -3001,7 +3090,8 @@
    "pages": 5,
    "words": 1902,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4504851",
@@ -3023,7 +3113,10 @@
    "pages": 2,
    "words": 419,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": [
+    "MISC 72 287"
+   ]
   },
   {
    "id": "4606248",
@@ -3050,6 +3143,7 @@
    "words": 95,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -3082,7 +3176,8 @@
    "transcribed": 0,
    "blocks": {
     "9": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2627147",
@@ -3103,6 +3198,7 @@
    "words": 230,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "inheritance tax order",
    "unrelated": true,
    "reviewed": true
@@ -3131,7 +3227,8 @@
    "pages": 10,
    "words": 2004,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3082563",
@@ -3152,6 +3249,7 @@
    "words": 46,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "title affidavit, Sec 35-14-24",
    "unrelated": true,
    "reviewed": true
@@ -3175,6 +3273,7 @@
    "words": 7,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "title affidavit, Sec 35-14-24",
    "unrelated": true,
    "reviewed": true
@@ -3198,6 +3297,7 @@
    "words": 190,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "oil company lease, Roeland Park",
    "unrelated": true,
    "reviewed": true
@@ -3221,6 +3321,7 @@
    "words": 234,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "sheriff's certificate of purchase",
    "unrelated": true,
    "reviewed": true
@@ -3244,6 +3345,7 @@
    "words": 224,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "heirship affidavit",
    "unrelated": true,
    "reviewed": true
@@ -3267,6 +3369,7 @@
    "words": 263,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "note": "county resolution on the Monticello Township zoning board",
    "unrelated": true,
    "reviewed": true
@@ -3292,6 +3395,7 @@
    "words": 1317,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [],
    "note": "articles of incorporation certified by the Secretary of State",
@@ -3320,7 +3424,8 @@
    "pages": 5,
    "words": 1021,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "2558643",
@@ -3342,7 +3447,8 @@
    "pages": 11,
    "words": 2702,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3121879",
@@ -3366,7 +3472,8 @@
    "pages": 36,
    "words": 7455,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3270980",
@@ -3390,7 +3497,8 @@
    "pages": 4,
    "words": 911,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3270981",
@@ -3412,7 +3520,8 @@
    "pages": 2,
    "words": 439,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3382741",
@@ -3435,7 +3544,8 @@
    "pages": 14,
    "words": 14250,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3384377",
@@ -3459,7 +3569,8 @@
    "transcribed": 0,
    "blocks": {
     "11": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3384379",
@@ -3490,7 +3601,8 @@
      5,
      6
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3383245",
@@ -3521,7 +3633,8 @@
      5,
      6
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3482539",
@@ -3550,7 +3663,8 @@
      3,
      4
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3482540",
@@ -3579,7 +3693,8 @@
      3,
      4
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3482541",
@@ -3608,7 +3723,8 @@
      3,
      4
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3589642",
@@ -3632,7 +3748,8 @@
    "pages": 46,
    "words": 15259,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3696632",
@@ -3656,7 +3773,8 @@
    "pages": 201,
    "words": 43042,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3800239",
@@ -3678,7 +3796,8 @@
    "pages": 6,
    "words": 1428,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4003648",
@@ -3701,7 +3820,8 @@
    "pages": 22,
    "words": 5157,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "4003650",
@@ -3725,7 +3845,8 @@
    "pages": 43,
    "words": 8340,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3715367",
@@ -3748,7 +3869,8 @@
    "pages": 35,
    "words": 13254,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3859075",
@@ -3772,9 +3894,891 @@
    "words": 4348,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area"
+   ]
+  },
+  {
+   "id": "1732415",
+   "book_page": "MISC 31 53",
+   "recorded": "1946-03-04",
+   "docid": "346348",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 522,
+   "transcribed": 0,
+   "blocks": {
+    "7": null,
+    "10": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   "subject_to": []
+  },
+  {
+   "id": "2641720",
+   "book_page": "MISC 36 260",
+   "recorded": "1947-11-10",
+   "docid": "367460",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 513,
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43
+    ],
+    "20": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38
+    ],
+    "21": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ]
+   },
+   "subject_to": [
+    "MISC 26 349"
+   ]
+  },
+  {
+   "id": "2642813",
+   "book_page": "MISC 36 269",
+   "recorded": "1947-11-10",
+   "docid": "367462",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 1187,
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43
+    ],
+    "21": null
+   },
+   "subject_to": []
+  },
+  {
+   "id": "2642814",
+   "book_page": "MISC 36 272",
+   "recorded": "1947-11-10",
+   "docid": "367463",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 267,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": []
+  },
+  {
+   "id": "2781189",
+   "book_page": "MISC 37 453",
+   "recorded": "1948-03-31",
+   "docid": "371726",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 108,
+   "transcribed": 0,
+   "blocks": {
+    "22": null,
+    "23": null,
+    "24": null,
+    "25": null,
+    "26": null,
+    "27": null,
+    "28": null
+   },
+   "subject_to": [
+    "MISC 26 349"
+   ],
+   "note": "J. C. Nichols Company subjects Blocks 22-28 to the 1941 Prairie Village declaration (MISC 26 349)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2781190",
+   "book_page": "MISC 37 456",
+   "recorded": "1948-03-31",
+   "docid": "371727",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum cost",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 12,
+   "words": 1050,
+   "transcribed": 0,
+   "blocks": {
+    "22": null,
+    "23": null,
+    "24": null,
+    "25": null,
+    "26": null,
+    "27": null,
+    "28": null
+   },
+   "subject_to": [
+    "MISC 37 453"
+   ]
+  },
+  {
+   "id": "2781194",
+   "book_page": "MISC 37 473",
+   "recorded": "1948-03-31",
+   "docid": "371729",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 183,
+   "transcribed": 0,
+   "blocks": {
+    "22": null,
+    "23": null,
+    "24": null,
+    "25": null,
+    "26": null,
+    "27": null,
+    "28": null
+   },
+   "subject_to": [],
+   "note": "J. C. Nichols Company adds Blocks 22-28 to the Prairie Village Homes Association district (MISC 26 358)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3166519",
+   "book_page": "MISC 40 212",
+   "recorded": "1949-01-03",
+   "docid": "380622",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 241,
+   "transcribed": 0,
+   "blocks": {
+    "29": null,
+    "30": null,
+    "31": null,
+    "32": null,
+    "33": null,
+    "34": null,
+    "35": null
+   },
+   "subject_to": [
+    "MISC 26 349"
+   ]
+  },
+  {
+   "id": "3433753",
+   "book_page": "MISC 42 52",
+   "recorded": "1949-08-31",
+   "docid": "388424",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "restrictions",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 125,
+   "transcribed": 0,
+   "blocks": {
+    "38": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38
+    ],
+    "45": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65
+    ],
+    "46": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "47": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27
+    ],
+    "48": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "49": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   "subject_to": [
+    "MISC 26 349"
+   ]
+  },
+  {
+   "id": "3433759",
+   "book_page": "MISC 42 54",
+   "recorded": "1949-08-31",
+   "docid": "388425",
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "reference",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "renewal"
+   ],
+   "term": "period of twenty-five years",
+   "until_year": null,
+   "pages": 9,
+   "words": 1516,
+   "transcribed": 0,
+   "blocks": {
+    "38": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38
+    ],
+    "45": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65
+    ],
+    "46": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "47": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27
+    ],
+    "48": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "49": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   "subject_to": [
+    "MISC 26 349"
    ]
   },
   {
@@ -3819,6 +4823,7 @@
      21
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -3842,6 +4847,7 @@
    "words": 401,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -3910,6 +4916,7 @@
      21
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -3933,6 +4940,7 @@
    "words": 616,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -3954,6 +4962,9 @@
    "words": 476,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [
+    "MISC 72 287"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -3975,6 +4986,7 @@
    "words": 9,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4002,6 +5014,7 @@
    "words": 249,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -4031,6 +5044,9 @@
    "words": 164,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [
+    "MISC 72 287"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4056,6 +5072,7 @@
    "words": 372,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4079,6 +5096,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4106,6 +5124,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4131,6 +5150,7 @@
    "words": 130,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4156,6 +5176,7 @@
    "words": 141,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4179,6 +5200,7 @@
    "words": 118,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4204,6 +5226,7 @@
    "words": 58,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4229,6 +5252,7 @@
    "words": 139,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4254,6 +5278,7 @@
    "words": 139,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4283,6 +5308,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4308,6 +5334,7 @@
    "words": 91,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4333,6 +5360,7 @@
    "words": 62,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4358,6 +5386,7 @@
    "words": 114,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4381,6 +5410,7 @@
    "words": 145,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4408,6 +5438,7 @@
    "words": 127,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -4440,7 +5471,8 @@
    "pages": 9,
    "words": 3506,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3574747",
@@ -4464,6 +5496,7 @@
    "blocks": {
     "36": null
    },
+   "subject_to": [],
    "note": "race-only declaration on all of Block 36, 40 years, no renewal",
    "unrelated": false,
    "reviewed": true
@@ -4493,6 +5526,9 @@
     "55": null,
     "56": null
    },
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4520,6 +5556,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -4557,6 +5594,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4625,6 +5663,7 @@
      21
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4648,6 +5687,7 @@
    "words": 58,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4691,7 +5731,8 @@
      14,
      15
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3359781",
@@ -4713,6 +5754,7 @@
    "words": 65,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -4738,6 +5780,7 @@
    "words": 91,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -4763,6 +5806,7 @@
    "words": 3,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -4788,6 +5832,7 @@
    "words": 24,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -4813,6 +5858,7 @@
    "words": 464,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4850,6 +5896,7 @@
      42
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -4877,6 +5924,7 @@
    "blocks": {
     "24": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4904,6 +5952,7 @@
      23
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4931,6 +5980,7 @@
      10
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4958,6 +6008,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -4985,6 +6036,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5012,6 +6064,7 @@
      27
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5037,6 +6090,7 @@
    "words": 78,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5063,6 +6117,7 @@
    "words": 142,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5091,6 +6146,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5118,6 +6174,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5143,6 +6200,7 @@
    "words": 133,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5166,6 +6224,7 @@
    "words": 7,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5191,6 +6250,7 @@
    "words": 126,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5216,6 +6276,7 @@
    "words": 141,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5239,6 +6300,7 @@
    "words": 148,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5262,6 +6324,7 @@
    "words": 120,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5287,6 +6350,7 @@
    "words": 83,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5312,6 +6376,7 @@
    "words": 14,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5337,6 +6402,7 @@
    "words": 75,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5366,6 +6432,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5389,6 +6456,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5416,6 +6484,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5445,6 +6514,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5474,6 +6544,7 @@
      20
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5503,6 +6574,7 @@
      17
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5532,6 +6604,7 @@
      5
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5561,6 +6634,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5588,6 +6662,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5611,6 +6686,7 @@
    "words": 146,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5634,6 +6710,7 @@
    "words": 145,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5659,6 +6736,7 @@
    "words": 105,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5682,6 +6760,7 @@
    "words": 141,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5705,6 +6784,7 @@
    "words": 143,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5730,6 +6810,7 @@
    "words": 129,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5755,6 +6836,7 @@
    "words": 152,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5778,6 +6860,7 @@
    "words": 108,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5803,6 +6886,7 @@
    "words": 79,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5826,6 +6910,7 @@
    "words": 105,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5851,6 +6936,7 @@
    "words": 24,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5876,6 +6962,7 @@
    "words": 160,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5899,6 +6986,7 @@
    "words": 58,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5924,6 +7012,7 @@
    "words": 147,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -5949,6 +7038,7 @@
    "words": 147,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -5976,6 +7066,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6005,6 +7096,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6032,6 +7124,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6055,6 +7148,7 @@
    "words": 136,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6078,6 +7172,7 @@
    "words": 138,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6101,6 +7196,7 @@
    "words": 128,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6126,6 +7222,7 @@
    "words": 148,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6153,6 +7250,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6178,6 +7276,7 @@
    "words": 13,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6207,6 +7306,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6234,6 +7334,7 @@
      25
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6261,6 +7362,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6284,6 +7386,7 @@
    "words": 145,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6311,6 +7414,7 @@
      34
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6336,6 +7440,7 @@
    "words": 84,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6359,6 +7464,7 @@
    "words": 94,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6382,6 +7488,7 @@
    "words": 63,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6411,6 +7518,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6434,6 +7542,7 @@
    "words": 52,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6457,6 +7566,7 @@
    "words": 143,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6480,6 +7590,7 @@
    "words": 118,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6503,6 +7614,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6526,6 +7638,7 @@
    "words": 62,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6551,6 +7664,7 @@
    "words": 136,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6574,6 +7688,7 @@
    "words": 154,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6597,6 +7712,7 @@
    "words": 159,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6624,6 +7740,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6651,6 +7768,7 @@
      31
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6678,6 +7796,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6701,6 +7820,7 @@
    "words": 84,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6730,6 +7850,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6757,6 +7878,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6784,6 +7906,7 @@
      33
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6807,6 +7930,7 @@
    "words": 137,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6834,6 +7958,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6862,6 +7987,7 @@
      27
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6885,6 +8011,7 @@
    "words": 110,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6910,6 +8037,7 @@
    "words": 103,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6937,6 +8065,7 @@
      16
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -6966,6 +8095,7 @@
      38
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -6993,6 +8123,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -7018,6 +8149,7 @@
    "words": 15,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -7047,6 +8179,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7074,6 +8207,7 @@
      10
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -7103,6 +8237,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -7130,6 +8265,7 @@
    "blocks": {
     "6": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7153,6 +8289,7 @@
    "words": 129,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7180,6 +8317,7 @@
      10
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7203,6 +8341,7 @@
    "words": 104,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7226,6 +8365,7 @@
    "words": 141,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7249,6 +8389,7 @@
    "words": 113,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7272,6 +8413,7 @@
    "words": 156,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7295,6 +8437,7 @@
    "words": 140,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7318,6 +8461,7 @@
    "words": 133,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7341,6 +8485,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7364,6 +8509,7 @@
    "words": 138,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7389,6 +8535,7 @@
    "blocks": {
     "45": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7416,6 +8563,7 @@
      16
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7439,6 +8587,7 @@
    "words": 126,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7466,6 +8615,7 @@
      25
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7489,6 +8639,7 @@
    "words": 127,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7516,6 +8667,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7539,6 +8691,7 @@
    "words": 111,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7562,6 +8715,7 @@
    "words": 148,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7585,6 +8739,7 @@
    "words": 119,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7608,6 +8763,7 @@
    "words": 142,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7631,6 +8787,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7654,6 +8811,7 @@
    "words": 136,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7677,6 +8835,7 @@
    "words": 129,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7704,6 +8863,7 @@
      20
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7727,6 +8887,7 @@
    "words": 152,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7750,6 +8911,7 @@
    "words": 133,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7777,6 +8939,7 @@
      20
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7800,6 +8963,7 @@
    "words": 130,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -7825,6 +8989,7 @@
    "words": 124,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7848,6 +9013,7 @@
    "words": 143,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7871,6 +9037,7 @@
    "words": 111,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7894,6 +9061,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7917,6 +9085,7 @@
    "words": 141,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7940,6 +9109,7 @@
    "words": 132,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7963,6 +9133,7 @@
    "words": 146,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -7986,6 +9157,7 @@
    "words": 141,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8009,6 +9181,7 @@
    "words": 145,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8032,6 +9205,7 @@
    "words": 138,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8055,6 +9229,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8078,6 +9253,7 @@
    "words": 118,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8101,6 +9277,7 @@
    "words": 139,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8124,6 +9301,7 @@
    "words": 152,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8147,6 +9325,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -8174,6 +9353,7 @@
    "blocks": {
     "7": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8197,6 +9377,7 @@
    "words": 128,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8224,6 +9405,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8251,6 +9433,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8274,6 +9457,7 @@
    "words": 163,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8297,6 +9481,7 @@
    "words": 136,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8320,6 +9505,7 @@
    "words": 156,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8343,6 +9529,7 @@
    "words": 120,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8366,6 +9553,7 @@
    "words": 142,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8389,6 +9577,7 @@
    "words": 141,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8412,6 +9601,7 @@
    "words": 138,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8439,6 +9629,7 @@
      31
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -8464,6 +9655,7 @@
    "words": 143,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8487,6 +9679,7 @@
    "words": 142,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8514,6 +9707,7 @@
      27
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8539,6 +9733,7 @@
    "blocks": {
     "27": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8566,6 +9761,7 @@
      112
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8593,6 +9789,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8616,6 +9813,7 @@
    "words": 131,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -8641,6 +9839,7 @@
    "words": 143,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8668,6 +9867,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8694,7 +9894,10 @@
     "8": null,
     "9": null,
     "10": null
-   }
+   },
+   "subject_to": [
+    "MISC 26 349"
+   ]
   },
   {
    "id": "1732383",
@@ -8719,7 +9922,8 @@
    "transcribed": 0,
    "blocks": {
     "9": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2371429",
@@ -8740,7 +9944,8 @@
    "pages": 7,
    "words": 2598,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3747601",
@@ -8800,6 +10005,9 @@
     ],
     "56": null
    },
+   "subject_to": [
+    "MISC 26 319"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum cost"
@@ -8823,6 +10031,9 @@
    "words": 420,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -8894,6 +10105,7 @@
     "15": null,
     "16": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -8976,6 +10188,9 @@
     "15": null,
     "16": null
    },
+   "subject_to": [
+    "MISC 46 158"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -9055,6 +10270,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -9133,6 +10349,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -9174,6 +10391,7 @@
     "15": null,
     "16": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area"
@@ -9260,6 +10478,7 @@
     "15": null,
     "16": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -9344,6 +10563,7 @@
     "15": null,
     "16": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -9376,6 +10596,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -9484,6 +10705,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "no apartments"
@@ -9528,6 +10750,7 @@
      10
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -9570,6 +10793,9 @@
      10
     ]
    },
+   "subject_to": [
+    "MISC 50 218"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -9595,6 +10821,7 @@
      6
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -9653,6 +10880,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -9706,6 +10934,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -9729,6 +10958,7 @@
    "words": 28,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -9819,6 +11049,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -9928,6 +11159,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -10006,6 +11238,7 @@
      34
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -10312,6 +11545,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -10658,6 +11892,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "no apartments",
@@ -10747,6 +11982,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -10775,6 +12011,7 @@
      14
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -10834,6 +12071,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -10884,6 +12122,7 @@
      31
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area"
@@ -10920,6 +12159,7 @@
      31
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -10980,7 +12220,8 @@
     ],
     "22": null,
     "23": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2423885",
@@ -11091,6 +12332,7 @@
      26
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11117,6 +12359,7 @@
      55
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11173,6 +12416,7 @@
      16
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback",
@@ -11198,6 +12442,7 @@
    "words": 201,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11252,6 +12497,7 @@
      16
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11325,6 +12571,7 @@
     "27": null,
     "28": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -11397,6 +12644,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -11438,6 +12686,7 @@
      21
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11467,6 +12716,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11488,6 +12738,7 @@
    "words": 675,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11509,6 +12760,7 @@
    "words": 55,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11625,6 +12877,7 @@
      14
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -11735,6 +12988,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -11798,7 +13052,8 @@
     "6": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3220214",
@@ -11823,6 +13078,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -11848,7 +13104,8 @@
     "6": [
      17
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1465494",
@@ -11876,7 +13133,8 @@
    "blocks": {
     "6": null,
     "8": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1466458",
@@ -11901,7 +13159,8 @@
     "8": [
      47
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1814327",
@@ -11955,6 +13214,7 @@
      16
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12081,6 +13341,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12203,6 +13464,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12227,7 +13489,8 @@
     "7": [
      44
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2194984",
@@ -12262,6 +13525,7 @@
      3
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12343,6 +13607,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "no apartments",
@@ -12423,6 +13688,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12501,7 +13767,8 @@
      1
     ],
     "10": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2453963",
@@ -12616,6 +13883,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12646,7 +13914,8 @@
     "14": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2777655",
@@ -12781,6 +14050,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12872,7 +14142,8 @@
      23,
      24
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2849294",
@@ -12894,6 +14165,7 @@
    "words": 145,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12917,6 +14189,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12940,6 +14213,7 @@
    "words": 148,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12967,6 +14241,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -12994,6 +14269,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13021,6 +14297,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13044,6 +14321,7 @@
    "words": 25,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13073,6 +14351,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13104,6 +14383,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13132,6 +14412,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13160,6 +14441,7 @@
      34
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13183,6 +14465,7 @@
    "words": 125,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13210,6 +14493,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13242,6 +14526,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13269,6 +14554,7 @@
      5
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13294,6 +14580,7 @@
    "words": 100,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13319,6 +14606,7 @@
    "words": 14,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13344,6 +14632,7 @@
    "words": 88,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13369,6 +14658,7 @@
    "words": 13,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13394,6 +14684,7 @@
    "words": 159,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13417,6 +14708,7 @@
    "words": 64,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13442,6 +14734,7 @@
    "words": 62,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13467,6 +14760,7 @@
    "words": 13,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13492,6 +14786,7 @@
    "words": 24,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13517,6 +14812,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13542,6 +14838,7 @@
    "words": 51,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13567,6 +14864,7 @@
    "words": 19,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13592,6 +14890,7 @@
    "words": 21,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13617,6 +14916,7 @@
    "words": 92,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13642,6 +14942,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13665,6 +14966,7 @@
    "words": 92,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13694,6 +14996,7 @@
      32
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13718,6 +15021,7 @@
    "words": 104,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13743,6 +15047,7 @@
    "words": 151,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13768,6 +15073,7 @@
    "words": 143,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13791,6 +15097,7 @@
    "words": 150,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13814,6 +15121,7 @@
    "words": 133,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13837,6 +15145,7 @@
    "words": 123,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13860,6 +15169,7 @@
    "words": 113,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13887,6 +15197,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -13916,6 +15227,7 @@
      3
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13939,6 +15251,7 @@
    "words": 117,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13962,6 +15275,7 @@
    "words": 138,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -13985,6 +15299,7 @@
    "words": 140,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14010,6 +15325,7 @@
    "words": 142,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14035,6 +15351,7 @@
    "words": 118,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14059,6 +15376,7 @@
    "words": 112,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14085,6 +15403,7 @@
    "words": 115,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14108,6 +15427,7 @@
    "words": 136,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14131,6 +15451,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14156,6 +15477,7 @@
    "words": 140,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14179,6 +15501,7 @@
    "words": 138,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14202,6 +15525,7 @@
    "words": 146,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14227,6 +15551,7 @@
    "words": 105,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14250,6 +15575,7 @@
    "words": 111,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14273,6 +15599,7 @@
    "words": 150,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14298,6 +15625,7 @@
    "words": 110,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14321,6 +15649,7 @@
    "words": 75,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14346,6 +15675,7 @@
    "words": 110,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14371,6 +15701,7 @@
    "words": 65,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14396,6 +15727,7 @@
    "words": 114,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14419,6 +15751,7 @@
    "words": 87,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14444,6 +15777,7 @@
    "words": 54,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14469,6 +15803,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14493,6 +15828,7 @@
    "words": 84,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14518,6 +15854,7 @@
    "words": 132,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14544,6 +15881,7 @@
    "words": 118,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14567,6 +15905,7 @@
    "words": 124,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14592,6 +15931,7 @@
    "words": 140,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14616,6 +15956,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments",
@@ -14642,6 +15983,7 @@
    "words": 92,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14667,6 +16009,7 @@
    "words": 64,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14692,6 +16035,7 @@
    "words": 80,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14717,6 +16061,7 @@
    "words": 77,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14742,6 +16087,7 @@
    "words": 60,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14771,6 +16117,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14796,6 +16143,7 @@
    "words": 111,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14819,6 +16167,7 @@
    "words": 38,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14848,6 +16197,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14875,6 +16225,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14898,6 +16249,7 @@
    "words": 80,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -14923,6 +16275,7 @@
    "words": 136,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14946,6 +16299,7 @@
    "words": 132,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -14973,6 +16327,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15002,6 +16357,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15031,6 +16387,7 @@
      40
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15058,6 +16415,7 @@
      17
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15081,6 +16439,7 @@
    "words": 115,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15108,6 +16467,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15133,6 +16493,7 @@
    "words": 22,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15160,6 +16521,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15187,6 +16549,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15214,6 +16577,7 @@
    "blocks": {
     "3": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15239,6 +16603,7 @@
    "blocks": {
     "9": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15268,6 +16633,7 @@
      23
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15297,6 +16663,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15320,6 +16687,7 @@
    "words": 130,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15347,6 +16715,7 @@
      21
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15374,6 +16743,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15397,6 +16767,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15420,6 +16791,7 @@
    "words": 146,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15443,6 +16815,7 @@
    "words": 150,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15466,6 +16839,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15489,6 +16863,7 @@
    "words": 156,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15516,6 +16891,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15539,6 +16915,7 @@
    "words": 129,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15562,6 +16939,7 @@
    "words": 10,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15587,6 +16965,7 @@
    "words": 112,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15610,6 +16989,7 @@
    "words": 152,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15633,6 +17013,7 @@
    "words": 93,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15662,6 +17043,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15685,6 +17067,7 @@
    "words": 125,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15708,6 +17091,7 @@
    "words": 89,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15733,6 +17117,7 @@
    "words": 87,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15763,6 +17148,7 @@
      26
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15789,6 +17175,7 @@
    "words": 71,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15818,6 +17205,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15843,6 +17231,7 @@
    "words": 47,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15872,6 +17261,7 @@
      79
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15897,6 +17287,7 @@
    "words": 79,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15926,6 +17317,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15949,6 +17341,7 @@
    "words": 114,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -15974,6 +17367,7 @@
    "words": 133,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -15999,6 +17393,7 @@
    "blocks": {
     "2": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16026,6 +17421,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16055,6 +17451,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16078,6 +17475,7 @@
    "words": 148,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16105,6 +17503,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16130,6 +17529,7 @@
    "words": 70,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16157,6 +17557,7 @@
      25
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16184,6 +17585,7 @@
      25
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16209,6 +17611,7 @@
    "words": 132,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16233,6 +17636,7 @@
    "words": 107,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16260,6 +17664,7 @@
      5
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16285,6 +17690,7 @@
    "words": 150,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16312,6 +17718,7 @@
    "blocks": {
     "2": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16335,6 +17742,7 @@
    "words": 69,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16362,6 +17770,7 @@
      23
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16385,6 +17794,7 @@
    "words": 116,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16410,6 +17820,7 @@
    "words": 125,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16433,6 +17844,7 @@
    "words": 105,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16458,6 +17870,7 @@
    "words": 118,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16481,6 +17894,7 @@
    "words": 128,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16504,6 +17918,7 @@
    "words": 153,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16531,6 +17946,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16560,6 +17976,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16587,6 +18004,7 @@
      29
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16614,6 +18032,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16641,6 +18060,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16664,6 +18084,7 @@
    "words": 147,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16687,6 +18108,7 @@
    "words": 105,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16710,6 +18132,7 @@
    "words": 129,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16737,6 +18160,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16764,6 +18188,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16787,6 +18212,7 @@
    "words": 151,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16810,6 +18236,7 @@
    "words": 150,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16838,6 +18265,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16865,6 +18293,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16892,6 +18321,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -16917,6 +18347,7 @@
    "words": 124,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16944,6 +18375,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16971,6 +18403,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -16994,6 +18427,7 @@
    "words": 123,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17021,6 +18455,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17044,6 +18479,7 @@
    "words": 111,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17073,6 +18509,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17096,6 +18533,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17119,6 +18557,7 @@
    "words": 92,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17144,6 +18583,7 @@
    "words": 98,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17169,6 +18609,7 @@
    "words": 16,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17198,6 +18639,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17231,7 +18673,8 @@
      5,
      6
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3790593",
@@ -17257,6 +18700,7 @@
      23
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17286,6 +18730,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17314,6 +18759,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17337,6 +18783,7 @@
    "words": 145,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17360,6 +18807,7 @@
    "words": 157,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17383,6 +18831,7 @@
    "words": 140,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17410,6 +18859,7 @@
      10
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17433,6 +18883,7 @@
    "words": 139,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17456,6 +18907,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17481,6 +18933,7 @@
    "blocks": {
     "10": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17506,6 +18959,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17535,6 +18989,7 @@
      14
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17562,6 +19017,7 @@
      10
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17589,6 +19045,7 @@
      28
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17614,6 +19071,7 @@
    "blocks": {
     "6": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17637,6 +19095,7 @@
    "words": 109,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -17666,6 +19125,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17689,6 +19149,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17712,6 +19173,7 @@
    "words": 132,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17735,6 +19197,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17762,6 +19225,7 @@
      23
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17789,6 +19253,7 @@
      6
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17812,6 +19277,7 @@
    "words": 140,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17832,7 +19298,8 @@
    "pages": 1,
    "words": 359,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "3950360",
@@ -17858,6 +19325,7 @@
      21
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17881,6 +19349,7 @@
    "words": 116,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17904,6 +19373,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17927,6 +19397,7 @@
    "words": 102,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -17953,6 +19424,7 @@
    "words": 748,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -18029,6 +19501,7 @@
     ],
     "18": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18052,6 +19525,7 @@
    "words": 127,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18075,6 +19549,7 @@
    "words": 130,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18098,6 +19573,7 @@
    "words": 145,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18121,6 +19597,7 @@
    "words": 140,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18144,6 +19621,7 @@
    "words": 153,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18167,6 +19645,7 @@
    "words": 147,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18190,6 +19669,7 @@
    "words": 139,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18213,6 +19693,7 @@
    "words": 121,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18236,6 +19717,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18259,6 +19741,7 @@
    "words": 123,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18282,6 +19765,7 @@
    "words": 116,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18305,6 +19789,7 @@
    "words": 134,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18328,6 +19813,7 @@
    "words": 142,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18351,6 +19837,7 @@
    "words": 157,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18374,6 +19861,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18401,6 +19889,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18424,6 +19913,7 @@
    "words": 115,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18451,6 +19941,7 @@
      36
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18478,6 +19969,7 @@
      34
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -18507,6 +19999,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18530,6 +20023,7 @@
    "words": 133,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18553,6 +20047,7 @@
    "words": 117,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18580,6 +20075,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18603,6 +20099,7 @@
    "words": 150,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18626,6 +20123,7 @@
    "words": 19,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -18651,6 +20149,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18674,6 +20173,7 @@
    "words": 110,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18697,6 +20197,7 @@
    "words": 133,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18724,6 +20225,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18747,6 +20249,7 @@
    "words": 129,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18795,6 +20298,7 @@
     "10": null,
     "11": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18818,6 +20322,7 @@
    "words": 163,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18841,6 +20346,7 @@
    "words": 128,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18865,6 +20371,7 @@
    "words": 139,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18888,6 +20395,7 @@
    "words": 124,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -18917,6 +20425,7 @@
      34
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18940,6 +20449,7 @@
    "words": 112,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -18963,6 +20473,7 @@
    "words": 154,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -18988,6 +20499,7 @@
    "words": 152,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19011,6 +20523,7 @@
    "words": 144,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19034,6 +20547,7 @@
    "words": 128,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19057,6 +20571,7 @@
    "words": 131,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19083,6 +20598,7 @@
    "blocks": {
     "12": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -19112,6 +20628,7 @@
      24
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19139,6 +20656,7 @@
      75
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19166,6 +20684,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19189,6 +20708,7 @@
    "words": 147,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -19218,6 +20738,7 @@
      27
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19241,6 +20762,7 @@
    "words": 143,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19268,6 +20790,7 @@
      3
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19291,6 +20814,7 @@
    "words": 150,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19314,6 +20838,7 @@
    "words": 129,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19341,6 +20866,7 @@
      28
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19370,6 +20896,7 @@
     "34": null,
     "35": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19401,6 +20928,7 @@
     "34": null,
     "35": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19431,6 +20959,7 @@
     "55": null,
     "56": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -19475,6 +21004,9 @@
     "15": null,
     "16": null
    },
+   "subject_to": [
+    "MISC 3 250"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -19500,6 +21032,7 @@
    "words": 402,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19523,6 +21056,7 @@
    "words": 366,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19546,6 +21080,7 @@
    "words": 359,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19569,6 +21104,7 @@
    "words": 245,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19596,6 +21132,7 @@
      39
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -19626,6 +21163,7 @@
      4
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19674,6 +21212,7 @@
     "15": null,
     "16": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19697,6 +21236,7 @@
    "words": 287,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19718,6 +21258,7 @@
    "words": 387,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19739,6 +21280,7 @@
    "words": 274,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19792,6 +21334,7 @@
     "45": null,
     "46": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area"
@@ -19849,6 +21392,7 @@
     "45": null,
     "46": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area"
@@ -19871,7 +21415,8 @@
    "pages": 2,
    "words": 510,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1751477",
@@ -19891,6 +21436,7 @@
    "words": 491,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19918,6 +21464,7 @@
    "words": 55,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -19947,6 +21494,7 @@
    "words": 1028,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19968,6 +21516,7 @@
    "words": 223,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -19989,6 +21538,7 @@
    "words": 282,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -20012,6 +21562,7 @@
    "words": 135,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -20115,7 +21666,8 @@
     "10": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1849457",
@@ -20402,6 +21954,9 @@
      12
     ]
    },
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -20751,6 +22306,9 @@
      12
     ]
    },
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback",
@@ -21064,6 +22622,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -21373,6 +22932,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -21404,6 +22964,9 @@
     "20": null,
     "21": null
    },
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -21435,9 +22998,11 @@
     "32": null,
     "33": null,
     "34": null,
-    "35": null,
-    "36": []
+    "35": null
    },
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum cost"
@@ -21559,6 +23124,9 @@
      78
     ]
    },
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -21682,6 +23250,9 @@
      78
     ]
    },
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -21801,6 +23372,7 @@
      78
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -21922,6 +23494,7 @@
      78
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -22122,6 +23695,9 @@
      12
     ]
    },
+   "subject_to": [
+    "MISC 42 64"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -22149,6 +23725,9 @@
    "words": 242,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [
+    "MISC 26 349"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum cost",
@@ -22175,6 +23754,7 @@
    "words": 199,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22212,7 +23792,8 @@
      38,
      39
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "4227719",
@@ -22243,6 +23824,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22268,6 +23850,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22309,6 +23892,7 @@
      53
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22335,6 +23919,7 @@
      20
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22360,6 +23945,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22435,6 +24021,7 @@
      18
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -22464,6 +24051,7 @@
      48
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -22488,7 +24076,8 @@
    "transcribed": 0,
    "blocks": {
     "2": []
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1812790",
@@ -22518,6 +24107,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22539,6 +24129,7 @@
    "words": 222,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22564,6 +24155,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22591,6 +24183,9 @@
      12
     ]
    },
+   "subject_to": [
+    "MISC 36 262"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -22710,6 +24305,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -22745,6 +24341,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22766,6 +24363,7 @@
    "words": 432,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22786,7 +24384,8 @@
    "pages": 2,
    "words": 793,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1924641",
@@ -22808,6 +24407,7 @@
    "words": 103,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22834,6 +24434,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -22856,7 +24457,8 @@
    "pages": 2,
    "words": 612,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "1943717",
@@ -22882,7 +24484,8 @@
     "20": [
      17
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1944493",
@@ -22906,6 +24509,9 @@
    "blocks": {
     "16": null
    },
+   "subject_to": [
+    "MISC 37 479"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -23037,6 +24643,7 @@
      36
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -23169,6 +24776,7 @@
      36
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -23198,6 +24806,9 @@
      6
     ]
    },
+   "subject_to": [
+    "MISC 37 479"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -23257,6 +24868,7 @@
     "6": null,
     "7": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -23316,6 +24928,7 @@
     "6": null,
     "7": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -23339,6 +24952,7 @@
    "words": 15,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -23438,6 +25052,7 @@
      34
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -23459,6 +25074,7 @@
    "words": 118,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -23480,6 +25096,7 @@
    "words": 50,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -23503,6 +25120,7 @@
    "words": 340,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -23620,6 +25238,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "no apartments",
@@ -23725,6 +25344,7 @@
      12
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -23887,6 +25507,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -23928,6 +25549,7 @@
     "15": null,
     "16": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24029,6 +25651,7 @@
      48
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24126,6 +25749,7 @@
      48
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -24155,6 +25779,9 @@
      1
     ]
    },
+   "subject_to": [
+    "MISC 51 303"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area"
@@ -24183,6 +25810,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24258,6 +25886,7 @@
      16
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24285,6 +25914,7 @@
      28
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -24314,6 +25944,7 @@
      33
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -24358,6 +25989,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback",
@@ -24397,6 +26029,7 @@
      17
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24429,6 +26062,7 @@
     ],
     "3": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24456,6 +26090,9 @@
      23
     ]
    },
+   "subject_to": [
+    "MISC 1 323"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -24485,6 +26122,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -24513,6 +26151,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24540,6 +26179,9 @@
      23
     ]
    },
+   "subject_to": [
+    "MISC 62 470"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -24569,6 +26211,9 @@
      9
     ]
    },
+   "subject_to": [
+    "MISC 62 470"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -24650,6 +26295,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "minimum floor area"
@@ -24681,7 +26327,8 @@
     "14": [
      21
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3137659",
@@ -24725,7 +26372,8 @@
      14,
      15
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3220206",
@@ -24753,6 +26401,7 @@
      5
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24777,6 +26426,7 @@
     "8": null,
     "9": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24804,6 +26454,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -24837,6 +26488,10 @@
      5
     ]
    },
+   "subject_to": [
+    "MISC 15 302",
+    "MISC 15 382"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -24860,6 +26515,7 @@
    "words": 45,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24881,6 +26537,7 @@
    "words": 46,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24910,6 +26567,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -24949,6 +26607,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -24985,6 +26644,9 @@
      12
     ]
    },
+   "subject_to": [
+    "MISC 70 460"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25012,6 +26674,9 @@
      33
     ]
    },
+   "subject_to": [
+    "MISC 05 586"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "building line / setback"
@@ -25041,6 +26706,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -25069,7 +26735,10 @@
     "54": [
      15
     ]
-   }
+   },
+   "subject_to": [
+    "MISC 44 50"
+   ]
   },
   {
    "id": "1393936",
@@ -25094,7 +26763,8 @@
     "5": [
      19
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1556933",
@@ -25122,6 +26792,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25148,7 +26819,8 @@
     "4": [
      9
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1648542",
@@ -25174,6 +26846,9 @@
      84
     ]
    },
+   "subject_to": [
+    "MISC 40 546"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25258,7 +26933,8 @@
     "11": [
      2
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1734917",
@@ -25339,6 +27015,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25364,7 +27041,8 @@
      10,
      11
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1756669",
@@ -25391,7 +27069,8 @@
      6,
      42
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "1758035",
@@ -25411,6 +27090,7 @@
    "words": 92,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25440,7 +27120,8 @@
     "28": [
      22
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2196021",
@@ -25466,6 +27147,9 @@
      29
     ]
    },
+   "subject_to": [
+    "MISC 53 129"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25493,6 +27177,7 @@
    "words": 273,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -25526,6 +27211,7 @@
      8
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25548,7 +27234,8 @@
    "transcribed": 0,
    "blocks": {
     "5": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2308906",
@@ -25568,6 +27255,7 @@
    "words": 17,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25588,7 +27276,8 @@
    "pages": 1,
    "words": 304,
    "transcribed": 0,
-   "blocks": {}
+   "blocks": {},
+   "subject_to": []
   },
   {
    "id": "2327665",
@@ -25608,6 +27297,7 @@
    "words": 461,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25636,7 +27326,10 @@
      7
     ],
     "15": null
-   }
+   },
+   "subject_to": [
+    "MISC 108 615"
+   ]
   },
   {
    "id": "2417388",
@@ -25718,7 +27411,8 @@
     "30": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2417394",
@@ -25802,7 +27496,8 @@
      12,
      13
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2416558",
@@ -25826,6 +27521,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25902,6 +27598,7 @@
      13
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -25926,7 +27623,8 @@
     "4": [
      12
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2466066",
@@ -25954,7 +27652,8 @@
     "4": null,
     "5": null,
     "6": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2467564",
@@ -25980,6 +27679,7 @@
      6
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26003,6 +27703,7 @@
    "blocks": {
     "8": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26076,6 +27777,7 @@
     ],
     "27": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26144,6 +27846,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26180,6 +27883,7 @@
      6
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26201,6 +27905,7 @@
    "words": 201,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26226,7 +27931,8 @@
      31,
      32
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2548076",
@@ -26278,7 +27984,8 @@
     "16": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2548926",
@@ -26344,6 +28051,7 @@
      18
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -26482,6 +28190,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "renewal"
@@ -26606,6 +28315,7 @@
      11
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26628,7 +28338,8 @@
    "transcribed": 0,
    "blocks": {
     "26": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2626323",
@@ -26654,7 +28365,8 @@
      6,
      7
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2626366",
@@ -26679,7 +28391,8 @@
     "12": [
      56
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2706807",
@@ -26700,7 +28413,8 @@
    "transcribed": 0,
    "blocks": {
     "8": null
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2707888",
@@ -26745,7 +28459,8 @@
      5,
      6
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2739299",
@@ -26769,6 +28484,7 @@
      26
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26800,6 +28516,10 @@
     ],
     "27": null
    },
+   "subject_to": [
+    "MISC 65 556",
+    "MISC 65 586"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -26826,7 +28546,10 @@
     "18": [
      13
     ]
-   }
+   },
+   "subject_to": [
+    "MISC 63 86"
+   ]
   },
   {
    "id": "2807793",
@@ -26850,7 +28573,8 @@
      20,
      21
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2886942",
@@ -26874,7 +28598,8 @@
     "14": [
      1
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2959290",
@@ -26959,6 +28684,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "no apartments"
@@ -27043,6 +28769,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27071,6 +28798,7 @@
      10
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27096,6 +28824,7 @@
      2
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27122,7 +28851,8 @@
     "19": [
      13
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "2423177",
@@ -27164,6 +28894,7 @@
      9
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27187,6 +28918,7 @@
    "blocks": {
     "23": null
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27359,6 +29091,7 @@
      14
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "residence only",
@@ -27485,6 +29218,7 @@
      14
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": [
     "homes association assessments"
@@ -27518,6 +29252,7 @@
      19
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27543,6 +29278,9 @@
      9
     ]
    },
+   "subject_to": [
+    "MISC 135 565"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27570,6 +29308,7 @@
      6
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27596,6 +29335,7 @@
      26
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27623,7 +29363,8 @@
     "25": [
      10
     ]
-   }
+   },
+   "subject_to": []
   },
   {
    "id": "3316200",
@@ -27649,6 +29390,9 @@
      9
     ]
    },
+   "subject_to": [
+    "MISC 158 133"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27676,6 +29420,7 @@
      1
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27702,7 +29447,10 @@
     "11": [
      19
     ]
-   }
+   },
+   "subject_to": [
+    "MISC 61 93"
+   ]
   },
   {
    "id": "3750410",
@@ -27728,6 +29476,9 @@
      11
     ]
    },
+   "subject_to": [
+    "MISC 128 555"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27749,6 +29500,7 @@
    "words": 748,
    "transcribed": 0,
    "blocks": {},
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27798,6 +29550,7 @@
      25
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27843,6 +29596,7 @@
      25
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27875,6 +29629,9 @@
      8
     ]
    },
+   "subject_to": [
+    "MISC 120 482"
+   ],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27901,6 +29658,7 @@
      7
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -27975,6 +29733,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -28045,6 +29804,7 @@
      22
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -28089,6 +29849,7 @@
      36
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   },
@@ -28116,6 +29877,7 @@
      15
     ]
    },
+   "subject_to": [],
    "kind_engine": "olmOCR-2 7B",
    "unadopted_terms": []
   }

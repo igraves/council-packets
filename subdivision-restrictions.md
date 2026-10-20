@@ -25,6 +25,35 @@ Some land was put under a racial covenant before it was platted, by its owners o
 - **1950-02-03 MISC 43 532**, by the J. C. Nichols Company: A declaration whose only restriction is racial, the same form as Prairie Village Block 36's, filed four months before the Prairie Hills plat. Ended 1990 (40 years). Land now in Prairie Hills.
 - **1950-02-04 MISC 43 553**, by the J. C. Nichols Company: A declaration whose only restriction is racial, on the northeast quarter of the section except three small tracts, a day after the Prairie Hills one and 20 months before the Indian Fields plat. Ended 1990 (40 years). Land now in Indian Fields.
 
+## Racial covenants carried by reference
+
+A declaration can put a racial covenant on land without stating it, by making the land subject to all the terms of an earlier declaration that has one. The 1941 Prairie Village declaration (MISC 26 349, Blocks 1–5) reserved in its Section Four the right to add land to it. J. C. Nichols Company used that right section by section: each later plat got a short declaration making its lots subject to MISC 26 349 "as though said lots … had been described in said original Declaration", and a longer one with additional restrictions that cites it. Several of these short declarations are indexed with no legal description and were found from the serial numbers the longer ones cite.
+
+| Subdivision | Declaration | Recorded | Blocks | Covenant carried from |
+|---|---|---|---|---|
+| Prairie Forest | MISC 44 68 (restrictions) | 1950-02-14 | all | MISC 26 349 (1941) |
+| Prairie Forest | MISC 44 197 (restrictions) | 1950-02-21 | all | MISC 26 349 (1941) |
+| Prairie Village | MISC 31 44 (restrictions) | 1946-03-04 | Blocks 6–10 | MISC 26 349 (1941) |
+| Prairie Village | MISC 32 533 (restrictions) | 1946-10-11 | Blocks 5, 8, 11–17 | MISC 26 349 (1941) |
+| Prairie Village | MISC 32 535 (restrictions) | 1946-10-11 | Blocks 5, 11–17 | MISC 26 349 (1941) |
+| Prairie Village | MISC 36 260 (restrictions) | 1947-11-10 | Blocks 18–21 | MISC 26 349 (1941) |
+| Prairie Village | MISC 36 262 (restrictions) | 1947-11-10 | Blocks 18–21 | MISC 26 349 (1941) |
+| Prairie Village | MISC 37 453 (restrictions) | 1948-03-31 | Blocks 22–28 | MISC 26 349 (1941) |
+| Prairie Village | MISC 37 456 (restrictions) | 1948-03-31 | Blocks 22–28 | MISC 26 349 (1941) |
+| Prairie Village | MISC 40 212 (restrictions) | 1949-01-03 | Blocks 29–35 | MISC 26 349 (1941) |
+| Prairie Village | MISC 40 215 (restrictions) | 1949-01-03 | Blocks 29–35 | MISC 26 349 (1941) |
+| Prairie Village | MISC 40 543 (restrictions) | 1949-04-01 | Blocks 39–40, 43–44 | MISC 26 349 (1941) |
+| Prairie Village | MISC 40 546 (restrictions) | 1949-04-01 | Blocks 39–40, 43–44 | MISC 26 349 (1941) |
+| Prairie Village | MISC 42 52 (restrictions) | 1949-08-31 | Blocks 38, 45–49 | MISC 26 349 (1941) |
+| Prairie Village | MISC 42 54 (restrictions) | 1949-08-31 | Blocks 38, 45–49 | MISC 26 349 (1941) |
+| Prairie Village | MISC 44 47 (restrictions) | 1950-02-14 | Blocks 51–56 | MISC 26 349 (1941) |
+| Prairie Village | MISC 44 50 (restrictions) | 1950-02-14 | Blocks 51–56 | MISC 26 349 (1941) |
+| Prairie Village | MISC 55 356 (restriction amendment) | 1952-08-13 | Block 21 | MISC 26 349 (1941) |
+| Prairie Village | MISC 93 541 (restriction amendment) | 1958-03-18 | Block 54 | MISC 26 349 (1941) |
+| Prairie Village | MISC 96 326 (restriction amendment) | 1958-07-07 | Block 43 | MISC 26 349 (1941) |
+
+MISC 26 349's racial covenant was released 2007-11-07 by the Prairie Village Homes Association under House Bill 2582 (2006) (OR 200711 001865). The release repeals the section for "all properties subject to the declaration", but its recitals list only the lots that declaration first covered, so whether it reaches land added by reference is unclear. The map shows that land as *by reference*.
+
 ## Deeds on individual lots
 
 Racial language is sometimes said to have been written into the deeds of individual houses, not only into a subdivision's recorded declaration. `pvc deed-chain` tests this on sample lots by following each one's recorded history (the recorder's search by subdivision, block and lot) from the developer's first sale to today, and reading every deed in it: **34** lots in 11 blocks, **404** deeds from 1946 to 2026. Every deed was read with Tesseract, and the 109 recorded before 1960 also with olmOCR-2 7B (except DEED 317 438, which it could not read). **0** of them contain racial language.
@@ -646,6 +675,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### PRAIRIE FOREST (4300)
 
+- **[Racial covenants carried by reference](#racial-covenants-carried-by-reference)**: declarations that put lots here under an earlier declaration's racial covenant
 - **Filed with plat** PLAT 13 64: 1950-02-10 MISC 43 629 (document 395278) — **restrictions**; period of twenty-five years; racial restriction (read by olmOCR-2 7B). Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest). Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
 - Candidates to read (4): MISC 154 512 (1965-05-12); MISC 44 68 (1950-02-14); MISC 44 197 (1950-02-21); MISC 44 205 (1950-02-21)
 
@@ -714,6 +744,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### PRAIRIE VILLAGE (5500)
 
+- **[Racial covenants carried by reference](#racial-covenants-carried-by-reference)**: declarations that put lots here under an earlier declaration's racial covenant
 - **[Deeds on individual lots](#deeds-on-individual-lots)**: sample lots' deeds followed from the first sale to today
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 349 (document 289997) — **restrictions**; period of twenty-five years; residence only, no apartments, minimum floor area, renewal, racial restriction. Racial covenant **released** 2007-11-07 by the Prairie Village Homes Association under House Bill 2582 (2006), OR 200711 001865
 - **Filed with plat** PLAT 10 47: 1941-05-05 MISC 26 352 (document 289998) — **restrictions**; period of twenty-five years; building line / setback, minimum cost, renewal

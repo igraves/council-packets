@@ -333,6 +333,33 @@ RACIAL_EXPIRED = {
 }
 
 
+# Declarations found through the references in other declarations rather than by the survey: the
+# Miscellaneous index gives them no legal description, or one lot, so they were found by recording
+# date and read. Prairie Village was built in sections; for each, J. C. Nichols Company recorded a
+# short declaration subjecting the new lots to the 1941 declaration (MISC 26 349) under its Section
+# Four, and the later declarations cite these by serial number. docid is that serial.
+FOUND_BY_REFERENCE = [
+    {"id": "1732415", "book_page": "MISC 31 53", "recorded": "1946-03-04", "docid": "346348"},
+    {"id": "2641720", "book_page": "MISC 36 260", "recorded": "1947-11-10", "docid": "367460"},
+    {"id": "2642813", "book_page": "MISC 36 269", "recorded": "1947-11-10", "docid": "367462"},
+    {"id": "2642814", "book_page": "MISC 36 272", "recorded": "1947-11-10", "docid": "367463"},
+    {"id": "2781189", "book_page": "MISC 37 453", "recorded": "1948-03-31", "docid": "371726"},
+    {"id": "2781190", "book_page": "MISC 37 456", "recorded": "1948-03-31", "docid": "371727"},
+    {"id": "2781194", "book_page": "MISC 37 473", "recorded": "1948-03-31", "docid": "371729"},
+    {"id": "3166519", "book_page": "MISC 40 212", "recorded": "1949-01-03", "docid": "380622"},
+    {"id": "3433753", "book_page": "MISC 42 52", "recorded": "1949-08-31", "docid": "388424"},
+    {"id": "3433759", "book_page": "MISC 42 54", "recorded": "1949-08-31", "docid": "388425"},
+]
+for _e in FOUND_BY_REFERENCE:
+    _e.update(plats=["PRAIRIE VILLAGE"], plat_book_pages=[], source="reference")
+
+
+def filed_entries(out: dict) -> list[dict]:
+    """The instruments read as declarations: those filed with a plat, and FOUND_BY_REFERENCE."""
+    have = {e["id"] for e in out.get("filed_with_plat", [])}
+    return out.get("filed_with_plat", []) + [e for e in FOUND_BY_REFERENCE if e["id"] not in have]
+
+
 _NICHOLS = re.compile(r"\bJ\.?\s?C\.?\s+NICHOLS\b|\bNICHOLS\s+(?:INVESTMENT\s+)?CO", re.I)
 
 
@@ -342,6 +369,47 @@ def _days_between(a: str, b: str) -> int:
 
 def _months_between(a: str, b: str) -> int:
     return (int(b[:4]) - int(a[:4])) * 12 + int(b[5:7]) - int(a[5:7])
+
+
+def _reference_section() -> tuple[list[str], set[str]]:
+    """Report lines for racial covenants carried to land by a declaration that makes it subject to
+    an earlier one (subdivmap's racial_ref), and the subdivisions they are in."""
+    from pvcouncil import subdivmap
+
+    subs = subdivmap.subdivision_records()
+    rows = [(s["name"], d) for s in subs.values() for d in s["declarations"] if d.get("racial_ref")]
+    if not rows:
+        return [], set()
+    bases = sorted({d["racial_ref"]["declaration"] for _, d in rows})
+    lines = [
+        "## Racial covenants carried by reference",
+        "",
+        "A declaration can put a racial covenant on land without stating it, by making the land "
+        "subject to all the terms of an earlier declaration that has one. The 1941 Prairie Village "
+        "declaration (MISC 26 349, Blocks 1–5) reserved in its Section Four the right to add land "
+        "to it. J. C. Nichols Company used that right section by section: each later plat got a "
+        "short declaration making its lots subject to MISC 26 349 \"as though said lots … had been "
+        "described in said original Declaration\", and a longer one with additional restrictions "
+        "that cites it. Several of these short declarations are indexed with no legal description "
+        "and were found from the serial numbers the longer ones cite.",
+        "",
+        "| Subdivision | Declaration | Recorded | Blocks | Covenant carried from |",
+        "|---|---|---|---|---|",
+    ]
+    for name, d in sorted(rows, key=lambda r: (r[0], r[1]["recorded"])):
+        blocks = subdivmap._blocks_label(d["blocks"]) if d["blocks"] else "all"
+        lines.append(f"| {name.title()} | {d['book_page']} ({d['kind']}) | {d['recorded'][:10]} | {blocks} "
+                     f"| {d['racial_ref']['declaration']} ({d['racial_ref']['recorded'][:4]}) |")
+    lines.append("")
+    for b in bases:
+        r = RACIAL_RELEASES.get(b)
+        if r:
+            lines += [f"{b}'s racial covenant was released {r['recorded']} by {r['by']} under {r['law']} "
+                      f"({r['book_page']}). The release repeals the section for \"all properties subject to the "
+                      "declaration\", but its recitals list only the lots that declaration first covered, so "
+                      "whether it reaches land added by reference is unclear. The map shows that land as "
+                      "*by reference*.", ""]
+    return lines, {name.split(",")[0].upper() for name, _ in rows}
 
 
 def _preplat_section() -> tuple[list[str], dict[str, list[dict]]]:
@@ -517,6 +585,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
     covered = [k for k, pl in subs.items() if any(filed[p] or on_plat.get(p) or typed[p] for p in pl)]
     preplat_lines, preplat_by_sub = _preplat_section()
     chain_lines, chain_subs = _deed_chain_section()
+    ref_lines, ref_subs = _reference_section()
     lines = [
         "# Prairie Village subdivision restrictions",
         "",
@@ -563,6 +632,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "the images settle it.",
         "",
         *preplat_lines,
+        *ref_lines,
         *chain_lines,
         "## Summary",
         "",
@@ -587,6 +657,9 @@ def render_markdown(out: dict, manifest: dict) -> str:
         if not (f_ or o_ or t_ or c_ or pre):
             continue
         lines += [f"### {sub} ({code})", ""]
+        if sub.upper() in ref_subs:
+            lines.append("- **[Racial covenants carried by reference](#racial-covenants-carried-by-reference)**: "
+                         "declarations that put lots here under an earlier declaration's racial covenant")
         if sub.upper() in chain_subs:
             lines.append("- **[Deeds on individual lots](#deeds-on-individual-lots)**: sample lots' deeds "
                          "followed from the first sale to today")

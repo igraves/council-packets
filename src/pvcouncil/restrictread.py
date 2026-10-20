@@ -244,6 +244,20 @@ def lots_blocks(text: str) -> dict[str, list[int] | None]:
     return {str(b): sorted(v) if v is not None else None for b, v in sorted(out.items()) if 0 < b < 200}
 
 
+# "... subjected all of the above lots to the terms and provisions of that certain Declaration of
+# Restrictions, which is recorded ... in Book 26 of Miscellaneous at Page 349": the earlier
+# declaration whose terms, all of them, this one puts on its lots
+_SUBJECT = re.compile(
+    r"subject(?:ed)?\b(?:(?!subject)[\s\S]){0,400}?terms\s+and\s+provisions\s+of(?:(?!subject)[\s\S]){0,300}?"
+    r"book\s*(\d+)\D{0,40}?page\s*[,.]?\s*(\d+)", re.I)
+
+
+def subject_to(text: str) -> list[str]:
+    """The Miscellaneous book and page of each earlier declaration this one makes its lots subject
+    to, as read (OCR can misread a digit; subdivmap matches them to the declarations it has)."""
+    return sorted({f"MISC {m.group(1)} {m.group(2)}" for m in _SUBJECT.finditer(re.sub(r"\s+", " ", text))})
+
+
 def _excerpt(text: str, pat: str, width: int = 300) -> list[str]:
     flat = re.sub(r"\s+", " ", text)
     return [flat[max(0, m.start() - width // 2): m.end() + width // 2] for m in re.finditer(pat, flat, re.I)][:3]
@@ -284,6 +298,7 @@ def build(entries: list[dict]) -> dict:
         # numbers far better than Tesseract), else the report text
         olm = ocrengines.load_reading("olmocr", f"r:{e['id']}")
         c["blocks"] = lots_blocks(ocrengines.reading_text(olm) if olm else text)
+        c["subject_to"] = sorted(set(subject_to(text)) | set(subject_to(ocrengines.reading_text(olm)) if olm else set()))
         if olm and not eng:
             # olmOCR reads the heading Tesseract garbles, so it names the kind; its terms join the rest
             o = classify(ocrengines.reading_text(olm) + ("\n\n" + typed if typed else ""))
@@ -296,6 +311,8 @@ def build(entries: list[dict]) -> dict:
             c.update(kind=r["kind"], note=r["note"], unrelated=r.get("unrelated", False), reviewed=True)
         if r and "blocks" in r:  # read by eye: {"1": "1-34", "6": null, ...}
             c["blocks"] = {b: sorted(_numbers(v)) if v else None for b, v in r["blocks"].items()}
+        if r and "subject_to" in r:  # read by eye: ["MISC 26 349"]
+            c["subject_to"] = r["subject_to"]
         rows.append({"id": e["id"], "book_page": e["book_page"], "recorded": e["recorded"],
                      "docid": e["docid"], "plats": e["plats"], "plat_book_pages": e["plat_book_pages"],
                      **({"source": e["source"]} if e.get("source") else {}), **c})

@@ -1,5 +1,5 @@
 {
- "_about": "Instruments filed with a plat that OCR could not classify (mostly low-resolution photostat negatives), read by eye from the image. kind overrides the OCR classification; unrelated marks papers filed the same day that concern other land; blocks overrides the blocks and lots read from the text (block → lots such as \"1-34\", or null for the whole block).",
+ "_about": "Instruments filed with a plat that OCR could not classify (mostly low-resolution photostat negatives), read by eye from the image. kind overrides the OCR classification; unrelated marks papers filed the same day that concern other land; blocks overrides the blocks and lots read from the text (block → lots such as \"1-34\", or null for the whole block). subject_to overrides the earlier declarations the instrument puts its lots under (restrictread.subject_to), where OCR garbles the clause.",
  "MISC 13 248": {"kind": "affidavit", "note": "affidavit of possession, land outside the plat", "unrelated": true},
  "MISC 27 89": {"kind": "other", "note": "road vacation petition, Roesland Lane in Mission Ridge", "unrelated": true},
  "MISC 31 94": {"kind": "affidavit", "note": "heirship affidavit, land in Sec 36-14-25", "unrelated": true},
@@ -57,5 +57,13 @@
  "MISC 34 250": {"blocks": {"7": "1-16", "9": null, "10": null, "11": null, "12": null, "13": null, "14": null, "15": null, "16": null}, "note_blocks": "the note on its cover page"},
  "MISC 26 349": {"blocks": {"1": "1-34", "2": "1-34", "3": "1-34", "4": "1-34", "5": "1-16"}, "note_blocks": "as the 2007 release (OR 200711 001865) lists them"},
  "MISC 65 492": {"kind": "affidavit", "note": "1917 identity affidavit, land in Sec 25-14-22", "unrelated": true},
- "MISC 65 493": {"kind": "restriction amendment", "note": "modifies Southmoor Gardens' building lines", "unrelated": true}
+ "MISC 65 493": {"kind": "restriction amendment", "note": "modifies Southmoor Gardens' building lines", "unrelated": true},
+ "MISC 36 260": {"blocks": {"18": "1-26", "19": "1-43", "20": "1-38", "21": "1-40"}, "subject_to": ["MISC 26 349"], "note_blocks": "read from the image: annexes Blocks 18-21 to MISC 26 349 under its Section Four"},
+ "MISC 40 212": {"blocks": {"29": null, "30": null, "31": null, "32": null, "33": null, "34": null, "35": null}, "subject_to": ["MISC 26 349"], "note_blocks": "read from the image: annexes all lots in Blocks 29-35 (not 36) to MISC 26 349"},
+ "MISC 40 215": {"blocks": {"29": null, "30": null, "31": null, "32": null, "33": null, "34": null, "35": null}, "note_blocks": "read from the image: its plat includes Block 36, but these restrictions cover Blocks 29-35"},
+ "MISC 42 52": {"blocks": {"38": "1-38", "45": "1-12, 36-65", "46": "1-32", "47": "1-27", "48": "1-20", "49": "1-12"}, "subject_to": ["MISC 26 349"], "note_blocks": "read from the image: annexes these lots (plat 13 40-41) to MISC 26 349"},
+ "MISC 42 54": {"blocks": {"38": "1-38", "45": "1-12, 36-65", "46": "1-32", "47": "1-27", "48": "1-20", "49": "1-12"}, "subject_to": ["MISC 26 349"], "note_blocks": "read from the image: additional restrictions on the lots MISC 42 52 annexed"},
+ "MISC 37 453": {"blocks": {"22": null, "23": null, "24": null, "25": null, "26": null, "27": null, "28": null}, "subject_to": ["MISC 26 349"], "note_blocks": "read from the image: annexes all lots in Blocks 22-28 (plat 12 71) to MISC 26 349", "kind": "restrictions", "note": "J. C. Nichols Company subjects Blocks 22-28 to the 1941 Prairie Village declaration (MISC 26 349)"},
+ "MISC 37 456": {"blocks": {"22": null, "23": null, "24": null, "25": null, "26": null, "27": null, "28": null}, "subject_to": ["MISC 37 453"], "note_blocks": "read from the image: additional restrictions on Blocks 22-28; its recital cites the annexation, MISC 37 453"},
+ "MISC 37 473": {"blocks": {"22": null, "23": null, "24": null, "25": null, "26": null, "27": null, "28": null}, "note_blocks": "read from the image: adds Blocks 22-28 to the Prairie Village Homes Association (MISC 26 358)", "kind": "homes association", "note": "J. C. Nichols Company adds Blocks 22-28 to the Prairie Village Homes Association district (MISC 26 358)"}
 }

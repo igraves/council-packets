@@ -206,7 +206,7 @@ def subdivision_records() -> dict[str, dict]:
         plat_code[name] = info["subdivision_code"]
 
     filed = set()
-    for e in out.get("filed_with_plat", []):
+    for e in restrictions.filed_entries(out):
         r = reads.get(e["id"], {})
         if r.get("unrelated"):
             continue
@@ -214,10 +214,13 @@ def subdivision_records() -> dict[str, dict]:
         d = _declaration(e, r)
         for code in {plat_code[p] for p in e["plats"] if p in plat_code}:
             subs[code]["declarations"].append(d)
+    racial_filed = [d["book_page"] for s in subs.values() for d in s["declarations"] if d["racial"]]
     for r in reads.values():
-        # a one-page filing is a lot's certificate or notice, not a declaration
+        # a one-page filing is a lot's certificate or notice, not a declaration; one that names no
+        # blocks is kept only when it puts its lots under a racial declaration
+        carries = any(_same_page(ref, bp) for ref in r.get("subject_to") or [] for bp in racial_filed)
         if (r.get("source") == "candidate" and r["id"] not in filed and not r.get("unrelated")
-                and r["kind"] in DECL_KINDS and r["pages"] >= 2 and r.get("blocks")):
+                and r["kind"] in DECL_KINDS and r["pages"] >= 2 and (r.get("blocks") or carries)):
             d = _declaration(r, r)
             for code in {plat_code[p] for p in r["plats"] if p in plat_code}:
                 subs[code]["declarations"].append(d)
@@ -230,6 +233,9 @@ def subdivision_records() -> dict[str, dict]:
         for code in {plat_code[p] for p in e.get("plats") or [] if p in plat_code}:
             subs[code]["indexed"] += 1
 
+    every = [d for s in subs.values() for d in s["declarations"]]
+    for _ in range(3):  # a reference to an annexation carries what the annexation carries
+        _carry_by_reference(every, every)
     for s in subs.values():
         s["declarations"].sort(key=lambda d: d["recorded"])
         s["status"] = _status(s)
@@ -245,15 +251,52 @@ def _declaration(e: dict, r: dict) -> dict:
             "features": [f for f in r.get("features", []) if f != "racial restriction"], "racial": racial,
             "released": restrictions.RACIAL_RELEASES.get(e["book_page"]) if racial else None,
             "expired": restrictions.RACIAL_EXPIRED.get(e["book_page"]) if racial else None,
-            "note": r.get("note"), "plats": e["plats"],
+            "note": r.get("note"), "plats": e["plats"], "subject_to": r.get("subject_to") or [],
             "blocks": sorted(int(b) for b in r["blocks"]) if r.get("blocks") else None}  # None: every block
+
+
+def _same_page(read: str, actual: str) -> bool:
+    """A book and page as OCR read it, against one we have: equal, or one digit misread."""
+    a, b = read.split(), actual.split()
+    if a == b:
+        return True
+    return (a[:2] == b[:2] and len(a) == len(b) == 3 and len(a[2]) == len(b[2])
+            and sum(x != y for x, y in zip(a[2], b[2])) == 1)
+
+
+def _carry_by_reference(decls: list[dict], known: list[dict]) -> None:
+    """A declaration that makes its lots subject to all the terms of an earlier one with a racial
+    covenant carries that covenant to them: racial_ref names the declaration the covenant is in and
+    its release. J. C. Nichols Company put later sections of Prairie Village, and other subdivisions
+    such as Prairie Forest, under the 1941 Prairie Village declaration this way, and the sections'
+    additional restrictions cite those annexations. References are matched to the declarations of
+    every subdivision exactly, or one digit off to a declaration with the racial clause itself."""
+    for d in decls:
+        if d["racial"] or d.get("racial_ref"):
+            continue
+        for ref in d.get("subject_to") or []:
+            hit = next((b for b in known if b["book_page"] == ref), None) or \
+                next((b for b in known if b["racial"] and _same_page(ref, b["book_page"])), None)
+            if not hit or hit is d:
+                continue
+            if hit["racial"]:
+                d["racial_ref"] = {"declaration": hit["book_page"], "recorded": hit["recorded"],
+                                   "released": hit["released"], "expired": hit["expired"]}
+            elif hit.get("racial_ref"):
+                d["racial_ref"] = hit["racial_ref"]
 
 
 def _status(s: dict) -> str:
     racial = [d for d in s["declarations"] if d["racial"]]
-    if any(not d["released"] and not d["expired"] for d in racial):
+    # a covenant in the land's own declaration decides; one carried by reference only where there is none
+    refs = [] if racial else [d["racial_ref"] for d in s["declarations"] if d.get("racial_ref")]
+    if any(not d["released"] and not d["expired"] for d in racial + refs):
         return "racial"
-    if any(d["expired"] for d in racial):
+    # carried by reference from a declaration whose release names only its own lots: whether the
+    # release reaches these is unclear
+    if any(r["released"] for r in refs):
+        return "reference"
+    if any(d["expired"] for d in racial + refs):
         return "expired"
     if racial:
         return "released"
@@ -285,9 +328,13 @@ def build(refresh: bool = False, echo=print) -> dict:
         s["declarations"] = kept
 
     def racial_key(code, block):
-        ds = subs[code]["declarations"] if code in subs else []
-        return frozenset(d["book_page"] for d in ds
-                         if d["racial"] and (d["blocks"] is None or block in d["blocks"]))
+        """The racial covenants on a block: those in its own declarations, else those carried to it
+        by reference (keyed by the declaration they are in), so blocks under the same covenant by
+        way of different annexations are drawn together."""
+        ds = [d for d in (subs[code]["declarations"] if code in subs else [])
+              if d["blocks"] is None or block in d["blocks"]]
+        own = frozenset(d["book_page"] for d in ds if d["racial"])
+        return own or frozenset(("by reference", d["racial_ref"]["declaration"]) for d in ds if d.get("racial_ref"))
 
     parts = {}  # code → {racial key: part number}, numbered from the lowest block
     for code, blocks in county_blocks.items():
@@ -320,8 +367,9 @@ def build(refresh: bool = False, echo=print) -> dict:
         s["elsewhere"] = len(s["declarations"]) - len(here)
         s["declarations"] = [dict(d, blocks_label=_blocks_label(d["blocks"]) if d["blocks"] else None) for d in here]
         s["status"] = _status(s)
-        if "#" in key and not any(d["racial"] for d in here):
-            racial = {b for d in subs[code]["declarations"] if d["racial"] for b in d["blocks"] or []}
+        if "#" in key and not any(d["racial"] or d.get("racial_ref") for d in here):
+            racial = {b for d in subs[code]["declarations"] if d["racial"] or d.get("racial_ref")
+                      for b in d["blocks"] or []}
             s["note"] = (f"The racial covenants in this subdivision's declarations name Blocks {_ranges(racial)}; "
                          "these blocks are not among them.")
         if code in REPLATS:

@@ -4,6 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prairie Village Deed Restrictions</title>
+<meta name="description" content="A map of the racially restrictive covenants recorded on Prairie Village, Kansas subdivisions, from the Johnson County Register of Deeds, so they can be found and released.">
+<!-- link previews (Facebook, LinkedIn, iMessage, X/Twitter, Slack ...) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prairie Village Racial Covenants">
+<meta property="og:title" content="Prairie Village Racial Covenants: Mapping a legacy of exclusion">
+<meta property="og:description" content="The racially restrictive covenants recorded on Prairie Village subdivisions, read from the county's deed records and mapped lot by lot, so they can be found and released.">
+<meta property="og:url" content="https://pvcovenants.graveissues.com/">
+<meta property="og:image" content="https://pvcovenants.graveissues.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:image:alt" content="Prairie Village Racial Covenants: a map of the city's subdivisions colored by their racial covenants">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prairie Village Racial Covenants: Mapping a legacy of exclusion">
+<meta name="twitter:description" content="The racially restrictive covenants recorded on Prairie Village subdivisions, mapped lot by lot so they can be found and released.">
+<meta name="twitter:image" content="https://pvcovenants.graveissues.com/og-image.jpg">
+<meta name="twitter:image:alt" content="Prairie Village Racial Covenants: a map of the city's subdivisions colored by their racial covenants">
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js"></script>
 <style>
@@ -93,6 +109,25 @@
   #modal.hl-off .hl { display: none; }
   #notoken { position: absolute; inset: 0; display: none; place-items: center; text-align: center; padding: 24px; }
   #notoken code { background: #1b2028; padding: 2px 6px; border-radius: 4px; }
+  #intro .aboutbtn { margin-top: 8px; font: inherit; font-size: 12.5px; color: #8ab4ff; background: #1b2028;
+    border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+  #about { max-width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 48px); padding: 0;
+    color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.6); }
+  #about[open] { display: flex; flex-direction: column; }
+  #about::backdrop { background: rgba(5, 7, 10, .7); }
+  #about .body { padding: 18px 22px 6px; overflow-y: auto; }
+  #about h2 { font-size: 18px; margin: 0 0 10px; }
+  #about h3 { font-size: 13px; margin: 16px 0 4px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  #about p, #about li { font-size: 13.5px; margin: 0 0 8px; }
+  #about ul { padding-left: 18px; margin: 0 0 8px; }
+  #about a { color: #8ab4ff; }
+  #about .note { border-left: 3px solid var(--reference); padding: 8px 12px; background: rgba(255, 159, 67, .08);
+    border-radius: 4px; }
+  #about .warn { border-left: 3px solid var(--muted); padding: 8px 12px; background: #1b2028; border-radius: 4px; }
+  #about footer { display: flex; justify-content: flex-end; padding: 10px 22px 16px; }
+  #about footer button { font: inherit; color: var(--text); background: #2b3f66; border: 0; border-radius: 6px;
+    padding: 7px 16px; cursor: pointer; }
   @media (max-width: 600px) {
     #intro { left: 8px; right: 8px; max-width: none; padding: 10px 12px; }
     #intro p { display: none; }
@@ -118,7 +153,60 @@
     <div><span class="sw restr"></span>Other recorded restrictions</div>
     <div><span class="sw none"></span>None found</div>
   </div>
+  <button class="aboutbtn" type="button">About this map</button>
 </div>
+<dialog id="about" aria-labelledby="about-title">
+  <div class="body">
+    <h2 id="about-title">About this map</h2>
+    <p>This map shows the deed restrictions recorded on Prairie Village's subdivisions, and in
+      particular the racially restrictive covenants that developers wrote into many of them in the
+      1940s and 1950s, barring Black people from owning or living in the homes.</p>
+    <p class="note"><b>These covenants are not enforceable.</b> The U.S. Supreme Court held in
+      <i>Shelley v. Kraemer</i> (1948) that courts cannot enforce them, and the Fair Housing Act (1968)
+      and Kansas law (K.S.A. 44-1016 and 44-1017) make housing discrimination unlawful. But the
+      language stays in the public record until it is formally released, and most of it never has
+      been. The purpose of this map is to find it, so that homeowners, homes associations and the
+      city can release all of it under Kansas law: since 2006 a homes association's board can amend
+      a racial covenant out of its declaration, and a 2024 law lets an owner or the city record a
+      certificate releasing one.</p>
+
+    <h3>Where the documents come from</h3>
+    <ul>
+      <li><b>Johnson County Register of Deeds</b>: subdivision plats, declarations of restrictions,
+        homes association declarations, amendments, releases, and deeds for a sample of lots. Each
+        document on the map links to the recorded page images.</li>
+      <li><b>Johnson County AIMS</b>: the county's public parcel layer, for parcel and subdivision
+        outlines, addresses, and building and land-use details. Owners' names are not shown.</li>
+    </ul>
+
+    <h3>How they are tied to the land</h3>
+    <ul>
+      <li>Each subdivision is drawn from the county parcels whose IDs carry its subdivision code,
+        so its outline follows the plat's lots and blocks.</li>
+      <li>Restriction instruments were found by searching the recorder's index county-wide by
+        document type and subdivision name, by taking the papers recorded with each plat, and by
+        reading the Miscellaneous filings recorded around each plat's date, many of which were
+        indexed with no legal description.</li>
+      <li>The page images were read with OCR (Tesseract and olmOCR), and the hardest pages by eye.
+        From each declaration we take the blocks and lots it covers, its terms, and any racial
+        language, which is outlined in red on the page images.</li>
+      <li>Some declarations add land to an earlier one rather than repeating its terms: most of
+        Prairie Village was made subject to the 1941 declaration for Blocks 1–5 this way. The map
+        follows those references and carries the covenant to the land they name.</li>
+      <li>Releases were searched for under the homes associations' names and among the
+        certificates of release filed since 2024.</li>
+    </ul>
+
+    <h3>Please note</h3>
+    <p class="warn">This is a work in progress and is for informational purposes only. It is not
+      legal advice or a title search, and it may contain errors: OCR misreads, documents not yet
+      found, or a declaration tied to the wrong blocks. Check the recorded documents themselves, and
+      a title professional or attorney, before relying on it for any property.</p>
+    <p>The full list of documents is in the <a href="https://github.com/igraves/council-packets/blob/main/subdivision-restrictions.md"
+      target="_blank" rel="noopener">restrictions report</a>.</p>
+  </div>
+  <footer><button type="button" class="ok">Close</button></footer>
+</dialog>
 <div id="tip" class="panel"><button class="close" aria-label="Close">×</button><div id="tipbody"></div></div>
 <div id="peek" class="panel"><div class="page"></div><div class="cap"></div></div>
 <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -412,6 +500,18 @@ tipbody.addEventListener("click", e => {
   if (a) { e.preventDefault(); openDoc(a); }
 });
 modal.querySelector("header .x").addEventListener("click", closeDoc);
+
+// About: opened from the intro panel, and once on a viewer's first visit (remembered in this browser)
+const about = document.getElementById("about");
+document.querySelector("#intro .aboutbtn").addEventListener("click", () => about.showModal());
+about.querySelector(".ok").addEventListener("click", () => about.close());
+about.addEventListener("click", e => { if (e.target === about) about.close(); });
+let seenAbout = false;
+try { seenAbout = localStorage.getItem("pv-map-about") === "seen"; } catch (e) {}
+if (!seenAbout) {
+  about.showModal();
+  try { localStorage.setItem("pv-map-about", "seen"); } catch (e) {}
+}
 modal.addEventListener("click", e => { if (e.target === modal || e.target.classList.contains("pages")) closeDoc(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && modal.classList.contains("open")) closeDoc(); });
 </script>

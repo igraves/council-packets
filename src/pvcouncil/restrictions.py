@@ -317,13 +317,15 @@ def walk_candidates(names: dict[str, dict], devs: set[str], plat_manifest: dict)
 # 2582 (2006) let a homes association's board amend such a clause out of its declaration; the
 # recorder indexes those as a Declaration of Restrictions under the association's name only, so they
 # were found by searching association names (all document types) and reading every association-filed
-# declaration of 2006-09. The 2024 law's Certificates of Release of Prohibitive Covenants (filed by an
-# owner or a city) were also checked.
+# declaration of 2006-09, and those of 2010 on not indexed to land outside Prairie Village. The
+# association names come from each racial subdivision's own instruments and every index row on its
+# lots. The 2024 law's Certificates of Release of Prohibitive Covenants (filed by an owner or a city)
+# were also checked.
 RACIAL_RELEASES = {
     "MISC 26 349": {"recorded": "2007-11-07", "book_page": "OR 200711 001865",
                     "by": "the Prairie Village Homes Association", "law": "House Bill 2582 (2006)"},
 }
-RELEASES_SEARCHED = "2026-10-16"
+RELEASES_SEARCHED = "2026-10-20"
 
 # Racial covenants that ended on their own: a fixed term with no renewal clause, read by hand
 # (the classifier's "renewal" pattern misses wordings like "automatically shall be continued").
@@ -613,6 +615,8 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "Kansas House Bill 2582 (2006) let a homes association's board amend the clause out, and a 2024 "
         "law lets an owner or the city file a certificate of release, but a search of the recorder from "
         f"2006 to {RELEASES_SEARCHED} found no release for the others (see each declaration below). "
+        "That search covered every filing under the subdivisions' homes association names and every "
+        "association-filed declaration that could concern Prairie Village land. "
         "This count comes from OCR and covers only the "
         "declarations it could read; about 20 Kansas City Investment Company declarations from "
         "1952–57 are low-resolution photostat negatives and were classified by eye from their "

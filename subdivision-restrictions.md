@@ -4,7 +4,7 @@ Recorded deed restrictions and covenants for each subdivision, from the Johnson 
 
 - **103** of **140** subdivisions have at least one restriction instrument found or restrictions written on a plat
 - **117** instruments were filed with a plat: recorded the same day with one of the next few document numbers. The 1941 Prairie Village plat is document 289996 and the J.C. Nichols Declaration of Restrictions is 289997. Read from their images, **68** are restriction or homes association declarations covering **46** plats; 27 concern other land and are left out below.
-- **13** of those declarations contain a racially restrictive covenant (CEDARVALE, CORRECTED PLAT OF MEADOW LAKE, MEADOW LAKE, MEADOWBROOK DOWNS, MISSION VALLEY WEST, MOHAWK HILLS, NALL AVENUE GARDENS, PRAIRIE FOREST, PRAIRIE VILLAGE, PRAIRIE WOODS, REPLAT OF FONTICELLO GARDENS NO. 2). Such covenants have been unenforceable since Shelley v. Kraemer (1948). **1** of them has been formally released of record: Kansas House Bill 2582 (2006) let a homes association's board amend the clause out, and a 2024 law lets an owner or the city file a certificate of release, but a search of the recorder from 2006 to 2026-10-16 found no release for the others (see each declaration below). This count comes from OCR and covers only the declarations it could read; about 20 Kansas City Investment Company declarations from 1952–57 are low-resolution photostat negatives and were classified by eye from their headings only.
+- **13** of those declarations contain a racially restrictive covenant (CEDARVALE, CORRECTED PLAT OF MEADOW LAKE, MEADOW LAKE, MEADOWBROOK DOWNS, MISSION VALLEY WEST, MOHAWK HILLS, NALL AVENUE GARDENS, PRAIRIE FOREST, PRAIRIE VILLAGE, PRAIRIE WOODS, REPLAT OF FONTICELLO GARDENS NO. 2). Such covenants have been unenforceable since Shelley v. Kraemer (1948). **1** of them has been formally released of record: Kansas House Bill 2582 (2006) let a homes association's board amend the clause out, and a 2024 law lets an owner or the city file a certificate of release, but a search of the recorder from 2006 to 2026-10-20 found no release for the others (see each declaration below). That search covered every filing under the subdivisions' homes association names and every association-filed declaration that could concern Prairie Village land. This count comes from OCR and covers only the declarations it could read; about 20 Kansas City Investment Company declarations from 1952–57 are low-resolution photostat negatives and were classified by eye from their headings only.
 - **3** documents have hand-checked transcriptions of regions OCR couldn't read (made in `pvc deed-viewer`); **9** terms below were found only in a transcription and are cited to its page and region.
 - **8** documents are read with an OCR engine other than Tesseract (olmOCR-2 7B), adopted in `pvc deed-viewer` after checking against the image; **21** terms below were found only in that reading and say which engine read them.
 - **47** plats state restrictions or covenants on their face (found by OCR of the plat images)
@@ -262,7 +262,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### CEDARVALE (0300)
 
-- **Filed with plat** PLAT 11 50: 1946-04-16 MISC 31 547 (document 348401) — **restrictions**; period of Twenty-five (25) years; residence only (transcribed: p. 1, region 463e0d633f), no apartments (transcribed: p. 1, region 463e0d633f), minimum cost (transcribed: p. 2, region 37524ff402), minimum floor area (transcribed: p. 1, region 463e0d633f; p. 2, region 37524ff402; p. 2, region 7f6465f557), racial restriction (transcribed: p. 3, region ca6762536d). Declaration of Restrictions for CEDARVALE (Kansas City Investment Company and lot owners). Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 11 50: 1946-04-16 MISC 31 547 (document 348401) — **restrictions**; period of Twenty-five (25) years; residence only (transcribed: p. 1, region 463e0d633f), no apartments (transcribed: p. 1, region 463e0d633f), minimum cost (transcribed: p. 2, region 37524ff402), minimum floor area (transcribed: p. 1, region 463e0d633f; p. 2, region 37524ff402; p. 2, region 7f6465f557), racial restriction (transcribed: p. 3, region ca6762536d). Declaration of Restrictions for CEDARVALE (Kansas City Investment Company and lot owners). Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - **Filed with plat** PLAT 11 50: 1946-04-16 MISC 31 355 (document 348403) — **deed**
 
 ### CHADWICK COURT (0380)
@@ -389,7 +389,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### REPLAT OF FONTICELLO GARDENS NO. 2 (1000)
 
-- **Filed with plat** PLAT 12 21: 1946-08-09 MISC 32 195 (document 352568) — **restrictions**; period of twenty-five years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback, minimum cost, minimum floor area (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 12 21: 1946-08-09 MISC 32 195 (document 352568) — **restrictions**; period of twenty-five years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback, minimum cost, minimum floor area (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 
 ### GRANTHURST (1100)
 
@@ -471,7 +471,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### MEADOWBROOK DOWNS (2350)
 
-- **Filed with plat** PLAT 13 49: 1949-12-13 MISC 43 168 (document 392856) — **restrictions**; period of 25 years; residence only (read by olmOCR-2 7B), building line / setback, minimum floor area, renewal (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 13 49: 1949-12-13 MISC 43 168 (document 392856) — **restrictions**; period of 25 years; residence only (read by olmOCR-2 7B), building line / setback, minimum floor area, renewal (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 
 ### MEADOWBROOK EXECUTIVE (2371)
 
@@ -524,13 +524,13 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 ### MEADOW LAKE (2500)
 
 - **[Before it was platted](#before-it-was-platted)**: 1927-09-06 MISC 15 305, a racial covenant put on this land by neighboring owners (ended 1952)
-- **Filed with plat** PLAT 12 42: 1947-04-02 MISC 34 250 (document 359847) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 12 42: 1947-04-02 MISC 34 250 (document 359847) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - **Filed with plat** PLAT 12 55: 1947-07-29 MISC 35 247 (document 363806) — **restriction amendment**. Meadow Lake Corporation corrects and ratifies its restrictions at MISC 34/250 and agreement at MISC 34/327 for the corrected plat of Meadow Lake
-- **Filed with plat** PLAT 13 55: 1950-01-07 MISC 43 323 (document 393828) — **restrictions**; period of twenty- five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 13 55: 1950-01-07 MISC 43 323 (document 393828) — **restrictions**; period of twenty- five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - **Filed with plat** PLAT 14 43, PLAT 14 42: 1950-08-08 MISC 46 398 (document 404687) — **restrictions**; period of five (25) years; minimum floor area
 - **Filed with plat** PLAT 15 5: 1951-05-29 MISC 50 98 (document 420695) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area
-- **Filed with plat** PLAT 15 8: 1951-07-03 MISC 50 367 (document 422265) — **restrictions**; period of twenty-five (25) years; residence only, no apartments (read by olmOCR-2 7B), building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
-- **Filed with plat** PLAT 15 17: 1951-10-05 MISC 51 321 (document 426582) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 15 8: 1951-07-03 MISC 50 367 (document 422265) — **restrictions**; period of twenty-five (25) years; residence only, no apartments (read by olmOCR-2 7B), building line / setback, minimum cost (read by olmOCR-2 7B), minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
+- **Filed with plat** PLAT 15 17: 1951-10-05 MISC 51 321 (document 426582) — **restrictions**; period of twenty-five (25) years; residence only (read by olmOCR-2 7B), no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area (read by olmOCR-2 7B), racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - **Filed with plat** PLAT 15 62, PLAT 15 61, PLAT 15 60: 1952-04-05 MISC 53 466 (document 434616) — **restriction amendment**. Amendment to the Mission Village Block 2 restrictions (MISC 46/55) by Mission Development Company and lot owners
 - **Filed with plat** PLAT 15 62, PLAT 15 61: 1952-04-05 MISC 53 471 (document 434618) — **restrictions**; period of twenty-five (25) years; residence only, no apartments, building line / setback (read by olmOCR-2 7B), minimum cost, minimum floor area
 - 1952-04-14 Declaration of Home Owners Association, MISC 53 548 — Sub:MEADOW LAKE Blk:19 Lt:29
@@ -583,7 +583,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### MISSION VALLEY WEST (2900)
 
-- **Filed with plat** PLAT 12 14: 1946-06-25 MISC 32 5 (document 351167) — **restrictions**; period of twenty-five (25) years; minimum floor area (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B). Declaration of Restrictions for MISSION VALLEY WEST (all lot owners). Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 12 14: 1946-06-25 MISC 32 5 (document 351167) — **restrictions**; period of twenty-five (25) years; minimum floor area (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B). Declaration of Restrictions for MISSION VALLEY WEST (all lot owners). Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 
 ### MISSION VILLAGE (3000)
 
@@ -591,7 +591,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### MOHAWK HILLS (3100)
 
-- **Filed with plat** PLAT 13 47: 1949-10-14 MISC 42 362 (document 390381) — **restrictions**; period of twenty-five years; residence only, building line / setback, minimum floor area, renewal, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 13 47: 1949-10-14 MISC 42 362 (document 390381) — **restrictions**; period of twenty-five years; residence only, building line / setback, minimum floor area, renewal, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - 1952-05-17 Declaration of Restrictions, MISC 54 277 — Sub:MOHAWK HILLS Lt:9 Bl:1
 
 ### NALLANDS (3300)
@@ -601,7 +601,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### NALL AVENUE GARDENS (3400)
 
-- **Filed with plat** PLAT 11 41: 1946-03-13 MISC 31 87 (document 346793) — **restrictions**; period of twenty-five (25) years; residence only, no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area, architectural approval (read by olmOCR-2 7B), renewal (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B). Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 11 41: 1946-03-13 MISC 31 87 (document 346793) — **restrictions**; period of twenty-five (25) years; residence only, no apartments (read by olmOCR-2 7B), building line / setback (read by olmOCR-2 7B), minimum cost (read by olmOCR-2 7B), minimum floor area, architectural approval (read by olmOCR-2 7B), renewal (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B). Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - Candidates to read (1): MISC 61 67 (1953-09-22)
 
 ### NALL SEVENTY-FIVE OFFICE CONDOMINIUMS (3460)
@@ -680,7 +680,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 ### PRAIRIE FOREST (4300)
 
 - **[Racial covenants carried by reference](#racial-covenants-carried-by-reference)**: declarations that put lots here under an earlier declaration's racial covenant
-- **Filed with plat** PLAT 13 64: 1950-02-10 MISC 43 629 (document 395278) — **restrictions**; period of twenty-five years; racial restriction (read by olmOCR-2 7B). Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest). Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 13 64: 1950-02-10 MISC 43 629 (document 395278) — **restrictions**; period of twenty-five years; racial restriction (read by olmOCR-2 7B). Declaration of Restrictions by Meadow Lake Corporation, land in Sec 22-12-25 (Prairie Forest). Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - Candidates to read (4): MISC 154 512 (1965-05-12); MISC 44 68 (1950-02-14); MISC 44 197 (1950-02-21); MISC 44 205 (1950-02-21)
 
 ### PRAIRIE HEIGHTS (4400)
@@ -774,7 +774,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### PRAIRIE WOODS (5600)
 
-- **Filed with plat** PLAT 9 43: 1939-07-14 MISC 24 273 (document 262643) — **restrictions**; period of Twenty-five (25) years; residence only, building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-16)
+- **Filed with plat** PLAT 9 43: 1939-07-14 MISC 24 273 (document 262643) — **restrictions**; period of Twenty-five (25) years; residence only, building line / setback, minimum floor area, racial restriction. Racial covenant: no release found (recorder searched 2006 to 2026-10-20)
 - 1976-11-22 Declaration of Restrictions, OR 1166 490 — Sub:PRAIRIE WOODS Lt:27
 
 ### RIDGE VIEW (5900)

@@ -429,8 +429,62 @@ streets between blocks. Only parcel IDs and geometry are fetched (cached in
 public token: set `MAPBOX_TOKEN` in `.env` (it is written to the gitignored
 `map/config.js`), or open the page with `?token=pk…`.
 
-An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
-`budget`, `list_documents`, and `stats` as tools for MCP clients. Search, ask and list_documents accept `doc_type="archive"` for the city reports.
+### MCP server (Claude Desktop, Claude Code, claude.ai)
+
+`pvc mcp` runs an MCP server that gives a Claude client everything above, and
+returns page images Claude can read:
+
+- **Council:** `search`, `ask`, `list_documents`, `votes`, `budget`, `stats`,
+  and `council_page_image` for the page a search result cites. Search, ask, and
+  list_documents accept `doc_type="archive"` for the city reports.
+- **Property:** `parcels` looks up one parcel, lists parcels, or summarizes
+  them, with the same filters as `pvc parcels`. `subdivisions` lists
+  subdivisions with their restriction status.
+- **Covenants:** `subdivision` brings together one subdivision's plats,
+  declarations, releases, restrictions on the plat, indexed instruments,
+  unread candidates, deed chains, and parcel totals. `restriction_documents`,
+  `preplat_covenants`, and `deed_chain` list instruments across the city.
+- **Recorded documents**, cited by book and page (`MISC 26 349`):
+  `document_info` shows what each dataset records about a document.
+  `document_text` returns its OCR text: the adopted vision-OCR reading if
+  there is one, plus any hand transcriptions. `document_page_image` returns a
+  page as JPEG, about 1568 px on its long side. A `region` zooms into a
+  plat sheet, and `rotate` and `invert` handle sideways plats and
+  photostat negatives. Racial-covenant language located by `pvc highlights`
+  is outlined in red.
+- **Map:** `subdivision_map` draws the subdivisions colored by restriction
+  status as PNG, or zooms to one subdivision and draws its parcels.
+
+The checked-in reports and `map/subdivisions.geojson` are also listed as
+resources, and `pv://documents/<slug>/<page>` serves a page image
+(`pv://documents/misc-26-349/2`).
+
+For Claude Desktop, add the server to `claude_desktop_config.json` (Settings →
+Developer → Edit Config):
+
+```json
+{
+  "mcpServers": {
+    "prairie-village": {
+      "command": "uv",
+      "args": ["--directory", "/path/to/council-packets", "run", "pvc", "mcp"]
+    }
+  }
+}
+```
+
+For Claude Code: `claude mcp add prairie-village -- uv --directory /path/to/council-packets run pvc mcp`.
+
+`pvc mcp --http` serves streamable HTTP at `http://127.0.0.1:8000/mcp` for
+clients that connect by URL. claude.ai can only reach a server over public
+HTTPS. That means putting a tunnel or a deploy in front of the server, with
+authentication, since the page images name signers and owners.
+
+The server reads the same local data as the CLI: `chroma_db/`,
+`pv_council_docs/`, `votes.json`, `budgets.json`, and `deeds/images/` and
+`deeds/ocr/`. It never returns owner names or mailing addresses unless it
+runs with `PVC_MCP_OWNERS=1` and the local `parcels/<year>-owners.csv`
+exists. The corporate and out-of-state ownership flags are always available.
 
 ## Data
 

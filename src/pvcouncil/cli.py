@@ -528,6 +528,20 @@ def deed_viewer(port):
     viewer.serve(port=port, echo=click.echo)
 
 
+@cli.command("mcp")
+@click.option("--http", is_flag=True, help="Serve streamable HTTP at http://HOST:PORT/mcp instead of stdio")
+@click.option("--host", default="127.0.0.1", show_default=True, help="With --http: address to bind")
+@click.option("--port", default=8000, show_default=True, help="With --http: port")
+def mcp_cmd(http, host, port):
+    """Run the MCP server (stdio for Claude Desktop / Claude Code; --http for a URL)."""
+    from pvcouncil import mcp_server
+
+    if http:
+        # stdout is the protocol channel in stdio mode, so only say this over HTTP
+        click.echo(f"MCP server at http://{host}:{port}/mcp  (owners {'on' if mcp_server.OWNERS else 'off'})", err=True)
+    mcp_server.run(http=http, host=host, port=port)
+
+
 @cli.command("preplat")
 @click.option("--offline", is_flag=True, help="Use cached index months and images only")
 @click.option("--dry-run", is_flag=True, help="List the sections and months to fetch, and stop")

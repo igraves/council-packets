@@ -252,7 +252,8 @@ const STATUS = {
   none: "No restrictions found",
 };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
-const title = s => esc(s).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+// escaped after casing, or "&amp;" becomes "&Amp;"; no capital after an apostrophe ("Elizabeth's")
+const title = s => esc(String(s ?? "").toLowerCase().replace(/(?<!['’])\b\w/g, c => c.toUpperCase()));
 
 // Document images: only `pvc subdivision-map --serve` has them (docs/index.json lists each
 // document's page count); anywhere else the fetch fails and book/page numbers stay plain text

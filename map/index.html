@@ -75,7 +75,9 @@
   #tip ul { margin: 4px 0 6px; padding-left: 16px; }
   #tip li { margin: 3px 0; font-size: 12.5px; }
   #tip .terms { color: var(--muted); }
-  #tip details.other { margin: 4px 0 6px; border-top: 1px solid var(--line); padding-top: 4px; }
+  #tip .reaff { margin: 0 0 8px; padding: 6px 8px; border-left: 3px solid var(--racial);
+    background: rgba(229, 72, 77, .12); border-radius: 0 6px 6px 0; font-size: 13px; }
+  #tip details.other {margin: 4px 0 6px; border-top: 1px solid var(--line); padding-top: 4px; }
   #tip details.other summary { cursor: pointer; color: var(--muted); font-size: 12.5px; }
   #tip details.other li { font-size: 12.5px; }
   #tip .rel { color: var(--released); }
@@ -319,6 +321,12 @@ function card(p, extra = "") {
       ? `. Its ${esc(r.released.recorded.slice(0, 4))} release (${doc(r.released.book_page)}) repeals that section for ` +
         `all land subject to the declaration, but names only the lots it first covered.`
       : r.expired ? `, expired ${esc(r.expired.expired)}.` : `, with no release on record.`) + `</div>`).join("");
+  // racial covenants owners declared still in force after Shelley v. Kraemer (1948)
+  h += d.declarations.filter(x => x.reaffirmed).map(x =>
+    `<div class="reaff"><b>Reaffirmed in ${esc(x.reaffirmed.recorded.slice(0, 4))}.</b> ` +
+    `${esc(x.reaffirmed.by[0].toUpperCase() + x.reaffirmed.by.slice(1))} ${esc(x.reaffirmed.note)}, ` +
+    `${Number(x.reaffirmed.recorded.slice(0, 4)) - 1948} years after <i>Shelley v. Kraemer</i>: ` +
+    `${doc(x.reaffirmed.book_page)}, amending ${doc(x.book_page)}.</div>`).join("");
   if (d.declarations.length) {
     h += `<div>Recorded declarations:</div><ul>` + d.declarations.map(x => {
       let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${doc(x.book_page)} — ${esc(x.kind)}` +
@@ -331,7 +339,8 @@ function card(p, extra = "") {
         : x.expired
         ? `<br><span class="exp">Racial covenant expired ${esc(x.expired.expired)} (${esc(x.expired.term)})</span>`
         : `<br><span class="unrel">Racial covenant — no release on record</span>`;
-      if (x.racial_ref) li += `<br><span class="refc">Racial covenant of ${doc(x.racial_ref.declaration)} by reference</span>`;
+      if (x.reaffirmed) li += `<br><span class="unrel">Reaffirmed by the lot owners in ${esc(x.reaffirmed.recorded.slice(0, 4))}, ${doc(x.reaffirmed.book_page)}</span>`;
+      if (x.racial_ref) li +=`<br><span class="refc">Racial covenant of ${doc(x.racial_ref.declaration)} by reference</span>`;
       return `<li>${li}</li>`;
     }).join("") + `</ul>`;
   }

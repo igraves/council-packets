@@ -327,6 +327,17 @@ RACIAL_RELEASES = {
 }
 RELEASES_SEARCHED = "2026-10-20"
 
+# Racial covenants that lot owners declared still in force after Shelley v. Kraemer (1948), keyed by
+# the declaration: an amendment that changed another section and confirmed the rest.
+REAFFIRMED = {
+    "MISC 43 323": {"recorded": "1960-02-03", "book_page": "MISC 109 106",
+                    "also": ["MISC 109 107", "MISC 109 108", "MISC 109 109"],
+                    "by": "the lot owners of Meadow Lake Blocks 1-3",
+                    "note": "amended Section V to allow offices on five lots of Block 1 and declared the rest of "
+                            "the restrictions, the racial covenant among them, to \"remain in full force and "
+                            "effect\""},
+}
+
 # Racial covenants that ended on their own: a fixed term with no renewal clause, read by hand
 # (the classifier's "renewal" pattern misses wordings like "automatically shall be continued").
 RACIAL_EXPIRED = {
@@ -613,8 +624,11 @@ def render_markdown(out: dict, manifest: dict) -> str:
         if a:
             return f". **Annulled** {a['recorded']} by {a['by']}: {a['note']}"
         r = RACIAL_RELEASES.get(e["book_page"])
+        a = REAFFIRMED.get(e["book_page"])
+        reaff = (f". **Racial covenant reaffirmed** {a['recorded']} by {a['by']}, {a['book_page']} "
+                 f"(signature sheets {', '.join(a['also'])}), which {a['note']}" if a else "")
         if not r:
-            return f". Racial covenant: no release found (recorder searched 2006 to {RELEASES_SEARCHED})"
+            return f"{reaff}. Racial covenant: no release found (recorder searched 2006 to {RELEASES_SEARCHED})"
         return f". Racial covenant **released** {r['recorded']} by {r['by']} under {r['law']}, {r['book_page']}"
     filed = by_plat(filed_rel)
     typed = by_plat(out.get("instruments", []))
@@ -669,6 +683,10 @@ def render_markdown(out: dict, manifest: dict) -> str:
         + "".join(f"{e['book_page']} ({', '.join(p.title() for p in e['plats'])}, {e['recorded'][:4]}) is not "
                   f"counted: {ANNULLED[e['book_page']]['by']} annulled it in {ANNULLED[e['book_page']]['recorded'][:4]} "
                   "and repeated its racial covenant. " for e in annulled)
+        + "".join(f"{e['book_page']} ({', '.join(p.title() for p in e['plats'])}) was reaffirmed after Shelley: in "
+                  f"{REAFFIRMED[e['book_page']]['recorded'][:4]} {REAFFIRMED[e['book_page']]['by']} "
+                  f"{REAFFIRMED[e['book_page']]['note']} ({REAFFIRMED[e['book_page']]['book_page']}). "
+                  for e in racial if e["book_page"] in REAFFIRMED)
         + "This count comes from OCR and covers only the "
         "declarations it could read; about 20 Kansas City Investment Company declarations from "
         "1952–57 are low-resolution photostat negatives and were classified by eye from their "

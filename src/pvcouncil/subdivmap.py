@@ -224,10 +224,12 @@ def subdivision_records() -> dict[str, dict]:
             d = _declaration(r, r)
             for code in {plat_code[p] for p in r["plats"] if p in plat_code}:
                 subs[code]["declarations"].append(d)
+    # (a reaffirmation of a racial covenant is shown with the covenant instead)
+    reaffirming = {b for a in restrictions.REAFFIRMED.values() for b in [a["book_page"], *a["also"]]}
     # the developers' later declarations, owners' amendments and one-lot modifications, listed apart;
     # a racial one would be a declaration of the land, and homes association papers are left out
     for r in reads.values():
-        if r.get("source") != "supplemental" or r.get("unrelated"):
+        if r.get("source") != "supplemental" or r.get("unrelated") or r["book_page"] in reaffirming:
             continue
         racial = "racial restriction" in r.get("features", [])
         if not racial and r["kind"] not in ("restrictions", "restriction amendment"):
@@ -264,6 +266,7 @@ def _declaration(e: dict, r: dict) -> dict:
             "released": restrictions.RACIAL_RELEASES.get(e["book_page"]) if racial else None,
             "expired": restrictions.RACIAL_EXPIRED.get(e["book_page"]) if racial else None,
             "annulled": restrictions.ANNULLED.get(e["book_page"]),
+            "reaffirmed": restrictions.REAFFIRMED.get(e["book_page"]) if racial else None,
             "note": r.get("note"), "plats": e["plats"], "subject_to": r.get("subject_to") or [],
             "blocks": sorted(int(b) for b in r["blocks"]) if r.get("blocks") else None,  # None: every block
             "lots_label": _lots_label(r.get("blocks"))}
@@ -432,6 +435,8 @@ def map_refs() -> set[str]:
             refs.add(x["book_page"])
             if x.get("released"):
                 refs.add(x["released"]["book_page"])
+            if x.get("reaffirmed"):
+                refs.add(x["reaffirmed"]["book_page"])
         refs |= {x["book_page"] for x in d["on_plat"] + d.get("other", [])}
     for name in ("preplat.geojson", "carried.geojson"):
         for f in json.loads((MAP_DIR / name).read_text())["features"]:

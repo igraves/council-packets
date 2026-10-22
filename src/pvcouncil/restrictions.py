@@ -360,11 +360,23 @@ FOUND_BY_REFERENCE = [
 for _e in FOUND_BY_REFERENCE:
     _e.update(plats=["PRAIRIE VILLAGE"], plat_book_pages=[], source="reference")
 
+# Declarations the typed search matched to a subdivision but that weren't filed with its plat, so
+# they're read only when listed here.
+TYPED_EXTRA = [
+    # J. C. Nichols Company's restrictions for Prairie Hills Blocks 1-12, eight days after the plat
+    # (PLAT 14 33); indexed only to Block 12 Lot 1
+    {"id": "4093235", "book_page": "MISC 46 137", "recorded": "1950-07-08", "docid": "402618",
+     "doc_type": "Declaration of Restrictions", "plats": ["PRAIRIE HILLS"]},
+]
+for _e in TYPED_EXTRA:
+    _e.update(plat_book_pages=[], source="typed")
+
 
 def filed_entries(out: dict) -> list[dict]:
-    """The instruments read as declarations: those filed with a plat, and FOUND_BY_REFERENCE."""
+    """The instruments read as declarations: those filed with a plat, FOUND_BY_REFERENCE and
+    TYPED_EXTRA."""
     have = {e["id"] for e in out.get("filed_with_plat", [])}
-    return out.get("filed_with_plat", []) + [e for e in FOUND_BY_REFERENCE if e["id"] not in have]
+    return out.get("filed_with_plat", []) + [e for e in FOUND_BY_REFERENCE + TYPED_EXTRA if e["id"] not in have]
 
 
 _NICHOLS = re.compile(r"\bJ\.?\s?C\.?\s+NICHOLS\b|\bNICHOLS\s+(?:INVESTMENT\s+)?CO", re.I)
@@ -540,7 +552,9 @@ def render_markdown(out: dict, manifest: dict) -> str:
                                                          "transcribed_terms", "stale_transcriptions", "engine",
                                                          "engine_terms", "engine_stale", "kind_engine",
                                                          "unadopted_terms")
-                          if k in reads.get(e["id"], {})}} for e in out.get("filed_with_plat", [])]
+                          if k in reads.get(e["id"], {})}}
+                 for e in out.get("filed_with_plat", []) + [e for e in TYPED_EXTRA
+                                                            if e["id"] not in {f["id"] for f in out.get("filed_with_plat", [])}]]
 
     def cite(term: str, e: dict) -> str:
         """A term, cited to the transcribed page and region when only a transcription found it, or
@@ -559,6 +573,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
         if e.get("engine_stale"):
             out += f" ⚠ the {e['engine']} reading is of an earlier image of this document; read it again"
         return out
+    n_with_plat = sum(e.get("source") != "typed" for e in filed_all)
     filed_rel = [e for e in filed_all if not e.get("unrelated")]
     decl_kinds = ("restrictions", "homes association", "restriction amendment")
     racial = [e for e in filed_rel if "racial restriction" in e.get("features", [])]
@@ -602,9 +617,13 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "",
         f"- **{len(covered)}** of **{len(subs)}** subdivisions have at least one restriction "
         "instrument found or restrictions written on a plat",
-        f"- **{len(filed_all)}** instruments were filed with a plat: recorded the same day with one "
+        f"- **{n_with_plat}** instruments were filed with a plat: recorded the same day with one "
         "of the next few document numbers. The 1941 Prairie Village plat is document 289996 and the "
-        "J.C. Nichols Declaration of Restrictions is 289997. Read from their images, "
+        "J.C. Nichols Declaration of Restrictions is 289997. "
+        + (f"{len(filed_all) - n_with_plat} more, recorded later and found in the recorder's index, "
+           f"{'was' if len(filed_all) - n_with_plat == 1 else 'were'} read the same way. "
+           if len(filed_all) > n_with_plat else "")
+        + "Read from their images, "
         f"**{sum(e.get('kind') in decl_kinds for e in filed_rel)}** are restriction or homes "
         f"association declarations covering **{len({p for e in filed_rel if e.get('kind') in decl_kinds for p in e['plats']})}** "
         f"plats; {len(filed_all) - len(filed_rel)} concern other land and are left out below.",
@@ -649,7 +668,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "|---|---|---|---:|---:|---:|---:|",
     ]
     for (code, sub), pl in sorted(subs.items()):
-        f_ = {e["id"] for p in pl for e in filed[p]}
+        f_ = {e["id"] for p in pl for e in filed[p] if e.get("source") != "typed"}
         o_ = {e["book_page"] for p in pl for e in on_plat.get(p, [])}
         t_ = {e["id"] for p in pl for e in typed[p]}
         c_ = {e["id"] for p in pl for e in cands[p]}
@@ -679,7 +698,9 @@ def render_markdown(out: dict, manifest: dict) -> str:
             what = e.get("kind", e["doc_type"])
             detail = [cite(f, e) for f in e.get("features", []) if f != "homes association assessments"]
             extra = (f"; {e['term']}" if e.get("term") else "") + (f"; {', '.join(detail)}" if detail else "")
-            lines.append(f"- **Filed with plat** {', '.join(e['plat_book_pages'])}: {e['recorded']} "
+            label = ("**Declaration** (from the recorder's index)" if e.get("source") == "typed"
+                     else f"**Filed with plat** {', '.join(e['plat_book_pages'])}")
+            lines.append(f"- {label}: {e['recorded']} "
                          f"{e['book_page']} (document {e['docid']}) — **{what}**{extra}"
                          + (f". {e['note']}" if e.get("note") else "") + release_note(e) + stale_note(e))
         for e in o_:

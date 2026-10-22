@@ -1,0 +1,4530 @@
+{
+ "years_before": 10,
+ "sections": 10,
+ "instruments": [
+  {
+   "id": "4604791",
+   "book_page": "MISC 9 67",
+   "recorded": "1920-02-23",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      21,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1941-05-05",
+   "later_plat": "PRAIRIE VILLAGE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 224,
+   "racial": false
+  },
+  {
+   "id": "4604794",
+   "book_page": "MISC 9 69",
+   "recorded": "1920-02-23",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      21,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1941-05-05",
+   "later_plat": "PRAIRIE VILLAGE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 153,
+   "racial": false
+  },
+  {
+   "id": "4605536",
+   "book_page": "MISC 9 337",
+   "recorded": "1920-08-19",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 260,
+   "racial": false
+  },
+  {
+   "id": "4604707",
+   "book_page": "MISC 9 413",
+   "recorded": "1920-10-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 253,
+   "racial": false
+  },
+  {
+   "id": "2308801",
+   "book_page": "MISC 11 47",
+   "recorded": "1921-11-18",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      9,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1946-06-04",
+   "later_plat": "MISSION VALLEY EAST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 512,
+   "racial": false
+  },
+  {
+   "id": "2307774",
+   "book_page": "MISC 11 347",
+   "recorded": "1922-10-10",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 189,
+   "racial": false
+  },
+  {
+   "id": "2307775",
+   "book_page": "MISC 11 348",
+   "recorded": "1922-10-10",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 154,
+   "racial": false
+  },
+  {
+   "id": "2307776",
+   "book_page": "MISC 11 349",
+   "recorded": "1922-10-10",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 111,
+   "racial": false
+  },
+  {
+   "id": "2308578",
+   "book_page": "MISC 11 350",
+   "recorded": "1922-10-10",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 124,
+   "racial": false
+  },
+  {
+   "id": "2307782",
+   "book_page": "MISC 11 356",
+   "recorded": "1922-10-16",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 155,
+   "racial": false
+  },
+  {
+   "id": "2307802",
+   "book_page": "MISC 11 397",
+   "recorded": "1922-11-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1951-01-02",
+   "later_plat": "COUNTRYSIDE-EAST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 276,
+   "racial": false
+  },
+  {
+   "id": "2307801",
+   "book_page": "MISC 11 393",
+   "recorded": "1922-11-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1947-07-17",
+   "later_plat": "BREEZY HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 216,
+   "racial": false
+  },
+  {
+   "id": "2307803",
+   "book_page": "MISC 11 398",
+   "recorded": "1922-11-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1951-10-01",
+   "later_plat": "INDIAN FIELDS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 184,
+   "racial": false
+  },
+  {
+   "id": "2487282",
+   "book_page": "MISC 12 162",
+   "recorded": "1924-02-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 391,
+   "racial": false
+  },
+  {
+   "id": "2487283",
+   "book_page": "MISC 12 162",
+   "recorded": "1924-02-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 391,
+   "racial": false
+  },
+  {
+   "id": "2486397",
+   "book_page": "MISC 12 188",
+   "recorded": "1924-03-26",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1925-04-17",
+   "later_plat": "INDIAN HILLS",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 2,
+   "words": 1514,
+   "racial": false
+  },
+  {
+   "id": "2487303",
+   "book_page": "MISC 12 199",
+   "recorded": "1924-04-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1925-04-17",
+   "later_plat": "INDIAN HILLS",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 2,
+   "words": 1430,
+   "racial": false
+  },
+  {
+   "id": "2486615",
+   "book_page": "MISC 12 253",
+   "recorded": "1924-06-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      20,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NE"
+    }
+   ],
+   "first_plat": "1953-06-11",
+   "later_plat": "PRAIRIE FIELDS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 396,
+   "racial": false
+  },
+  {
+   "id": "2308545",
+   "book_page": "MISC 11 293",
+   "recorded": "1924-12-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1946-03-04",
+   "later_plat": "CLARKVIEW",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 421,
+   "racial": false
+  },
+  {
+   "id": "2678021",
+   "book_page": "MISC 13 251",
+   "recorded": "1925-05-05",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1947-07-17",
+   "later_plat": "BREEZY HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 304,
+   "racial": false
+  },
+  {
+   "id": "2677308",
+   "book_page": "MISC 13 255",
+   "recorded": "1925-05-18",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1952-03-17",
+   "later_plat": "PRAIRIE VALLEY",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 309,
+   "racial": false
+  },
+  {
+   "id": "2678026",
+   "book_page": "MISC 13 256",
+   "recorded": "1925-05-18",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1952-03-17",
+   "later_plat": "PRAIRIE VALLEY",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 303,
+   "racial": false
+  },
+  {
+   "id": "2677316",
+   "book_page": "MISC 13 274",
+   "recorded": "1925-05-28",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      9,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1946-06-04",
+   "later_plat": "MISSION VALLEY EAST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 373,
+   "racial": false
+  },
+  {
+   "id": "2678034",
+   "book_page": "MISC 13 274",
+   "recorded": "1925-05-28",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      9,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1946-06-04",
+   "later_plat": "MISSION VALLEY EAST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 373,
+   "racial": false
+  },
+  {
+   "id": "2678025",
+   "book_page": "MISC 13 255",
+   "recorded": "1925-06-11",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1952-03-17",
+   "later_plat": "PRAIRIE VALLEY",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 309,
+   "racial": false
+  },
+  {
+   "id": "2678091",
+   "book_page": "MISC 13 360",
+   "recorded": "1925-08-12",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 304,
+   "racial": false
+  },
+  {
+   "id": "2678328",
+   "book_page": "MISC 13 464",
+   "recorded": "1925-12-30",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1954-08-12",
+   "later_plat": "SOMERSET GARDENS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 1,
+   "words": 301,
+   "racial": false
+  },
+  {
+   "id": "2865591",
+   "book_page": "MISC 14 112",
+   "recorded": "1926-04-16",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1952-03-17",
+   "later_plat": "PRAIRIE VALLEY",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 360,
+   "racial": false
+  },
+  {
+   "id": "2865674",
+   "book_page": "MISC 14 317",
+   "recorded": "1926-08-12",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      9,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1946-06-04",
+   "later_plat": "MISSION VALLEY EAST",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "racial restriction"
+   ],
+   "term": "period of twenty-five years",
+   "pages": 3,
+   "words": 1262,
+   "racial": true
+  },
+  {
+   "id": "2865744",
+   "book_page": "MISC 14 424",
+   "recorded": "1926-10-26",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SE"
+    }
+   ],
+   "first_plat": "1951-01-02",
+   "later_plat": "COUNTRYSIDE-EAST",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "release",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 5,
+   "words": 2105,
+   "racial": false
+  },
+  {
+   "id": "2865745",
+   "book_page": "MISC 14 429",
+   "recorded": "1926-10-26",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SE"
+    }
+   ],
+   "first_plat": "1951-01-02",
+   "later_plat": "COUNTRYSIDE-EAST",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "release",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 4,
+   "words": 1774,
+   "racial": false
+  },
+  {
+   "id": "3048534",
+   "book_page": "MISC 15 177",
+   "recorded": "1927-06-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1941-05-05",
+   "later_plat": "PRAIRIE VILLAGE",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "release",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 3,
+   "words": 1512,
+   "racial": false
+  },
+  {
+   "id": "3049512",
+   "book_page": "MISC 15 181",
+   "recorded": "1927-06-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": "SE"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "release",
+   "features": [
+    "minimum cost",
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 6,
+   "words": 2959,
+   "racial": false
+  },
+  {
+   "id": "3048553",
+   "book_page": "MISC 15 219",
+   "recorded": "1927-06-25",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 309,
+   "racial": false
+  },
+  {
+   "id": "3048567",
+   "book_page": "MISC 15 241",
+   "recorded": "1927-07-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 178,
+   "racial": false
+  },
+  {
+   "id": "3049744",
+   "book_page": "MISC 15 305",
+   "recorded": "1927-09-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SE"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "minimum cost",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": null,
+   "pages": 2,
+   "words": 649,
+   "racial": true
+  },
+  {
+   "id": "3048660",
+   "book_page": "MISC 15 417",
+   "recorded": "1928-01-05",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 202,
+   "racial": false
+  },
+  {
+   "id": "3048661",
+   "book_page": "MISC 15 418",
+   "recorded": "1928-01-05",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 208,
+   "racial": false
+  },
+  {
+   "id": "3048662",
+   "book_page": "MISC 15 419",
+   "recorded": "1928-01-05",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 129,
+   "racial": false
+  },
+  {
+   "id": "3049831",
+   "book_page": "MISC 15 478",
+   "recorded": "1928-03-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      21,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1941-05-05",
+   "later_plat": "PRAIRIE VILLAGE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 326,
+   "racial": false
+  },
+  {
+   "id": "3222367",
+   "book_page": "MISC 16 320",
+   "recorded": "1928-12-17",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SE"
+    }
+   ],
+   "first_plat": "1955-06-02",
+   "later_plat": "CORINTH HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 142,
+   "racial": false
+  },
+  {
+   "id": "3392097",
+   "book_page": "MISC 17 195",
+   "recorded": "1929-02-08",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 603,
+   "racial": false
+  },
+  {
+   "id": "3222453",
+   "book_page": "MISC 16 490",
+   "recorded": "1929-05-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1956-02-28",
+   "later_plat": "CORINTH ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "minimum cost",
+    "racial restriction"
+   ],
+   "term": null,
+   "pages": 2,
+   "words": 491,
+   "racial": true
+  },
+  {
+   "id": "3222455",
+   "book_page": "MISC 16 496",
+   "recorded": "1929-05-31",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1955-05-24",
+   "later_plat": "TOWN & COUNTRY ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [
+    "racial restriction"
+   ],
+   "term": "period of twenty-five (25) years",
+   "pages": 2,
+   "words": 666,
+   "racial": true
+  },
+  {
+   "id": "3223397",
+   "book_page": "MISC 16 521",
+   "recorded": "1929-06-18",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1956-02-28",
+   "later_plat": "CORINTH ESTATES",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "minimum cost",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": null,
+   "pages": 1,
+   "words": 318,
+   "racial": true
+  },
+  {
+   "id": "3392098",
+   "book_page": "MISC 17 197",
+   "recorded": "1930-02-08",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": "period of ten (10) years",
+   "pages": 2,
+   "words": 632,
+   "racial": false
+  },
+  {
+   "id": "3392099",
+   "book_page": "MISC 17 199",
+   "recorded": "1930-02-08",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 547,
+   "racial": false
+  },
+  {
+   "id": "2865673",
+   "book_page": "MISC 14 315",
+   "recorded": "1930-02-25",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1951-10-01",
+   "later_plat": "INDIAN FIELDS",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "minimum cost",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of twenty-five years",
+   "pages": 2,
+   "words": 838,
+   "racial": true
+  },
+  {
+   "id": "3392211",
+   "book_page": "MISC 17 533",
+   "recorded": "1930-10-24",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      20,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-06-11",
+   "later_plat": "PRAIRIE FIELDS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 433,
+   "racial": false
+  },
+  {
+   "id": "3579577",
+   "book_page": "MISC 18 22",
+   "recorded": "1930-12-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1954-07-07",
+   "later_plat": "SOMERSET ACRES WEST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 714,
+   "racial": false
+  },
+  {
+   "id": "3579097",
+   "book_page": "MISC 18 84",
+   "recorded": "1930-12-16",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SE"
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 998,
+   "racial": false
+  },
+  {
+   "id": "3789047",
+   "book_page": "MISC 19 388",
+   "recorded": "1932-09-16",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 724,
+   "racial": false
+  },
+  {
+   "id": "3789049",
+   "book_page": "MISC 19 390",
+   "recorded": "1932-09-16",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 441,
+   "racial": false
+  },
+  {
+   "id": "3789054",
+   "book_page": "MISC 19 402",
+   "recorded": "1932-10-01",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1956-02-28",
+   "later_plat": "CORINTH ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 553,
+   "racial": false
+  },
+  {
+   "id": "3789095",
+   "book_page": "MISC 19 478",
+   "recorded": "1933-02-27",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      9,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1946-06-04",
+   "later_plat": "MISSION VALLEY EAST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 346,
+   "racial": false
+  },
+  {
+   "id": "3790060",
+   "book_page": "MISC 19 487",
+   "recorded": "1933-03-11",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 251,
+   "racial": false
+  },
+  {
+   "id": "3789128",
+   "book_page": "MISC 19 555",
+   "recorded": "1933-04-29",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1946-03-04",
+   "later_plat": "CLARKVIEW",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "deed",
+   "features": [],
+   "term": "period of fifteen(15) years",
+   "pages": 1,
+   "words": 428,
+   "racial": false
+  },
+  {
+   "id": "3790099",
+   "book_page": "MISC 19 556",
+   "recorded": "1933-05-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1954-07-07",
+   "later_plat": "SOMERSET ACRES WEST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 415,
+   "racial": false
+  },
+  {
+   "id": "4018193",
+   "book_page": "MISC 20 161",
+   "recorded": "1934-03-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1946-03-04",
+   "later_plat": "CLARKVIEW",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 578,
+   "racial": false
+  },
+  {
+   "id": "4017324",
+   "book_page": "MISC 20 163",
+   "recorded": "1934-03-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1946-03-04",
+   "later_plat": "CLARKVIEW",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 639,
+   "racial": false
+  },
+  {
+   "id": "4018258",
+   "book_page": "MISC 20 291",
+   "recorded": "1934-06-14",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1947-04-02",
+   "later_plat": "MEADOW LAKE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 411,
+   "racial": false
+  },
+  {
+   "id": "3574711",
+   "book_page": "MISC 43 487",
+   "recorded": "1950-01-27",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 30,
+   "racial": false
+  },
+  {
+   "id": "3574726",
+   "book_page": "MISC 43 532",
+   "recorded": "1950-02-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "restrictions",
+   "features": [
+    "racial restriction"
+   ],
+   "term": "period of forty (40) years",
+   "pages": 2,
+   "words": 480,
+   "racial": true
+  },
+  {
+   "id": "3573602",
+   "book_page": "MISC 43 553",
+   "recorded": "1950-02-04",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1951-10-01",
+   "later_plat": "INDIAN FIELDS",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "restrictions",
+   "features": [
+    "racial restriction"
+   ],
+   "term": "period of forty (0) years",
+   "pages": 3,
+   "words": 755,
+   "racial": true
+  },
+  {
+   "id": "3574756",
+   "book_page": "MISC 43 620",
+   "recorded": "1950-02-09",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NE"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": "period of forty (40) years",
+   "pages": 2,
+   "words": 328,
+   "racial": false
+  },
+  {
+   "id": "3747124",
+   "book_page": "MISC 44 17",
+   "recorded": "1950-02-14",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SE"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 149,
+   "racial": false
+  },
+  {
+   "id": "3747232",
+   "book_page": "MISC 44 417",
+   "recorded": "1950-03-24",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1950-06-06",
+   "later_plat": "PRAIRIE HILLS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 300,
+   "racial": false
+  },
+  {
+   "id": "3747595",
+   "book_page": "MISC 44 480",
+   "recorded": "1950-04-01",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NE"
+    }
+   ],
+   "first_plat": "1955-04-25",
+   "later_plat": "SOMERSET HILLS",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 1083,
+   "racial": false
+  },
+  {
+   "id": "3748193",
+   "book_page": "MISC 44 605",
+   "recorded": "1950-04-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1961-09-21",
+   "later_plat": "JACKSON HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 169,
+   "racial": false
+  },
+  {
+   "id": "3748197",
+   "book_page": "MISC 44 612",
+   "recorded": "1950-04-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 147,
+   "racial": false
+  },
+  {
+   "id": "3747645",
+   "book_page": "MISC 44 617",
+   "recorded": "1950-04-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "2016-10-18",
+   "later_plat": "MEADOWBROOK PARK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 63,
+   "racial": false
+  },
+  {
+   "id": "3748200",
+   "book_page": "MISC 44 618",
+   "recorded": "1950-04-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 102,
+   "racial": false
+  },
+  {
+   "id": "4093658",
+   "book_page": "MISC 46 376",
+   "recorded": "1950-08-04",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1954-07-07",
+   "later_plat": "SOMERSET ACRES WEST",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "affidavit",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 101,
+   "racial": false
+  },
+  {
+   "id": "4093718",
+   "book_page": "MISC 46 549",
+   "recorded": "1950-08-31",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1953-06-11",
+   "later_plat": "PRAIRIE FIELDS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 159,
+   "racial": false
+  },
+  {
+   "id": "4226960",
+   "book_page": "MISC 47 114",
+   "recorded": "1950-09-27",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1956-02-28",
+   "later_plat": "CORINTH ESTATES",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 27,
+   "racial": false
+  },
+  {
+   "id": "4227726",
+   "book_page": "MISC 47 144",
+   "recorded": "1950-10-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-05-24",
+   "later_plat": "TOWN & COUNTRY ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 191,
+   "racial": false
+  },
+  {
+   "id": "4374855",
+   "book_page": "MISC 48 589",
+   "recorded": "1951-02-09",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-03-12",
+   "later_plat": "PRAIRIE HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 353,
+   "racial": false
+  },
+  {
+   "id": "4626778",
+   "book_page": "MISC 50 305",
+   "recorded": "1951-06-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      16,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1951-10-01",
+   "later_plat": "INDIAN FIELDS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 6,
+   "words": 237,
+   "racial": false
+  },
+  {
+   "id": "4626834",
+   "book_page": "MISC 50 483",
+   "recorded": "1951-07-24",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1954-07-07",
+   "later_plat": "SOMERSET ACRES WEST",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 22,
+   "racial": false
+  },
+  {
+   "id": "4758396",
+   "book_page": "MISC 51 18",
+   "recorded": "1951-08-13",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1954-07-07",
+   "later_plat": "SOMERSET ACRES WEST",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 20,
+   "racial": false
+  },
+  {
+   "id": "4758504",
+   "book_page": "MISC 51 466",
+   "recorded": "1951-11-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 34,
+   "racial": false
+  },
+  {
+   "id": "4758882",
+   "book_page": "MISC 51 604",
+   "recorded": "1951-11-19",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-03-12",
+   "later_plat": "PRAIRIE HEIGHTS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 216,
+   "racial": false
+  },
+  {
+   "id": "4757956",
+   "book_page": "MISC 51 605",
+   "recorded": "1951-11-19",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-03-12",
+   "later_plat": "PRAIRIE HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 175,
+   "racial": false
+  },
+  {
+   "id": "1475136",
+   "book_page": "MISC 52 312",
+   "recorded": "1952-01-10",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-03-12",
+   "later_plat": "PRAIRIE HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 174,
+   "racial": false
+  },
+  {
+   "id": "1475217",
+   "book_page": "MISC 52 472",
+   "recorded": "1952-01-25",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      21,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-12-23",
+   "later_plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 184,
+   "racial": false
+  },
+  {
+   "id": "1475221",
+   "book_page": "MISC 52 488",
+   "recorded": "1952-01-29",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-03-12",
+   "later_plat": "PRAIRIE HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 113,
+   "racial": false
+  },
+  {
+   "id": "1475249",
+   "book_page": "MISC 52 549",
+   "recorded": "1952-02-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      21,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-12-23",
+   "later_plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 5,
+   "words": 415,
+   "racial": false
+  },
+  {
+   "id": "1476140",
+   "book_page": "MISC 52 621",
+   "recorded": "1952-02-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 5,
+   "racial": false
+  },
+  {
+   "id": "1580134",
+   "book_page": "MISC 53 103",
+   "recorded": "1952-03-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      20,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-06-11",
+   "later_plat": "PRAIRIE FIELDS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 17,
+   "racial": false
+  },
+  {
+   "id": "1578905",
+   "book_page": "MISC 53 104",
+   "recorded": "1952-03-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      20,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-06-11",
+   "later_plat": "PRAIRIE FIELDS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 36,
+   "racial": false
+  },
+  {
+   "id": "1811965",
+   "book_page": "MISC 55 406",
+   "recorded": "1952-08-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-04-08",
+   "later_plat": "RIDGEWOOD",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 14,
+   "racial": false
+  },
+  {
+   "id": "1811966",
+   "book_page": "MISC 55 408",
+   "recorded": "1952-08-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-04-08",
+   "later_plat": "RIDGEWOOD",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 1,
+   "racial": false
+  },
+  {
+   "id": "1893905",
+   "book_page": "MISC 56 156",
+   "recorded": "1952-09-27",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      21,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-12-23",
+   "later_plat": "SHAWNEE MISSION SOUTH HIGH SCHOOL",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 6,
+   "words": 276,
+   "racial": false
+  },
+  {
+   "id": "1924285",
+   "book_page": "MISC 57 245",
+   "recorded": "1953-01-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      20,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-06-11",
+   "later_plat": "PRAIRIE FIELDS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 353,
+   "racial": false
+  },
+  {
+   "id": "1925132",
+   "book_page": "MISC 57 270",
+   "recorded": "1953-01-05",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-03-12",
+   "later_plat": "PRAIRIE HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 6,
+   "words": 1087,
+   "racial": false
+  },
+  {
+   "id": "1925476",
+   "book_page": "MISC 57 536",
+   "recorded": "1953-01-31",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1953-03-12",
+   "later_plat": "PRAIRIE HEIGHTS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 140,
+   "racial": false
+  },
+  {
+   "id": "1945214",
+   "book_page": "MISC 58 360",
+   "recorded": "1953-04-09",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      20,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1953-06-11",
+   "later_plat": "PRAIRIE FIELDS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 135,
+   "racial": false
+  },
+  {
+   "id": "2070273",
+   "book_page": "MISC 61 91",
+   "recorded": "1953-09-26",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "pages": 2,
+   "words": 385,
+   "racial": false
+  },
+  {
+   "id": "2068742",
+   "book_page": "MISC 61 144",
+   "recorded": "1953-10-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 608,
+   "racial": false
+  },
+  {
+   "id": "2068773",
+   "book_page": "MISC 61 192",
+   "recorded": "1953-10-12",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      22,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-04-08",
+   "later_plat": "RIDGEWOOD",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 257,
+   "racial": false
+  },
+  {
+   "id": "2179597",
+   "book_page": "MISC 63 523",
+   "recorded": "1954-04-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 237,
+   "racial": false
+  },
+  {
+   "id": "2180528",
+   "book_page": "MISC 63 524",
+   "recorded": "1954-04-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 250,
+   "racial": false
+  },
+  {
+   "id": "2303837",
+   "book_page": "MISC 64 260",
+   "recorded": "1954-05-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-01-07",
+   "later_plat": "CORINTH MEADOWS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 173,
+   "racial": false
+  },
+  {
+   "id": "2424368",
+   "book_page": "MISC 65 323",
+   "recorded": "1954-07-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 478,
+   "racial": false
+  },
+  {
+   "id": "2424615",
+   "book_page": "MISC 65 441",
+   "recorded": "1954-07-16",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 331,
+   "racial": false
+  },
+  {
+   "id": "2656836",
+   "book_page": "MISC 67 305",
+   "recorded": "1954-10-28",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1957-10-11",
+   "later_plat": "PRAIRIE ESTATES",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 105,
+   "racial": false
+  },
+  {
+   "id": "2656228",
+   "book_page": "MISC 67 594",
+   "recorded": "1954-11-30",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 183,
+   "racial": false
+  },
+  {
+   "id": "2765396",
+   "book_page": "MISC 68 164",
+   "recorded": "1954-12-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 4,
+   "words": 445,
+   "racial": false
+  },
+  {
+   "id": "2764624",
+   "book_page": "MISC 68 329",
+   "recorded": "1954-12-29",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 3,
+   "words": 1392,
+   "racial": false
+  },
+  {
+   "id": "2861661",
+   "book_page": "MISC 69 498",
+   "recorded": "1955-03-11",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1957-10-11",
+   "later_plat": "PRAIRIE ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 443,
+   "racial": false
+  },
+  {
+   "id": "2954006",
+   "book_page": "MISC 70 602",
+   "recorded": "1955-05-04",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-06-02",
+   "later_plat": "CORINTH HILLS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 53,
+   "racial": false
+  },
+  {
+   "id": "2954984",
+   "book_page": "MISC 70 603",
+   "recorded": "1955-05-04",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-06-02",
+   "later_plat": "CORINTH HILLS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "deed",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 169,
+   "racial": false
+  },
+  {
+   "id": "2954009",
+   "book_page": "MISC 70 604",
+   "recorded": "1955-05-04",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1955-06-02",
+   "later_plat": "CORINTH HILLS",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 193,
+   "racial": false
+  },
+  {
+   "id": "3060194",
+   "book_page": "MISC 71 466",
+   "recorded": "1955-05-26",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [
+    "minimum floor area"
+   ],
+   "term": null,
+   "pages": 8,
+   "words": 127,
+   "racial": false
+  },
+  {
+   "id": "3042552",
+   "book_page": "MISC 71 623",
+   "recorded": "1955-06-07",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 404,
+   "racial": false
+  },
+  {
+   "id": "3138633",
+   "book_page": "MISC 72 601",
+   "recorded": "1955-07-20",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1956-02-28",
+   "later_plat": "CORINTH ESTATES",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 4,
+   "words": 972,
+   "racial": false
+  },
+  {
+   "id": "3428202",
+   "book_page": "MISC 76 620",
+   "recorded": "1956-01-12",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 209,
+   "racial": false
+  },
+  {
+   "id": "3526042",
+   "book_page": "MISC 77 489",
+   "recorded": "1956-02-17",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1972-02-02",
+   "later_plat": "CORINTH DOWNS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": "period of two (2) years",
+   "pages": 1,
+   "words": 219,
+   "racial": false
+  },
+  {
+   "id": "3639037",
+   "book_page": "MISC 78 449",
+   "recorded": "1956-03-23",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1957-10-11",
+   "later_plat": "PRAIRIE ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 3,
+   "words": 454,
+   "racial": false
+  },
+  {
+   "id": "3743771",
+   "book_page": "MISC 79 96",
+   "recorded": "1956-04-11",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1957-10-11",
+   "later_plat": "PRAIRIE ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 198,
+   "racial": false
+  },
+  {
+   "id": "3743455",
+   "book_page": "MISC 79 145",
+   "recorded": "1956-04-13",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 331,
+   "racial": false
+  },
+  {
+   "id": "4026008",
+   "book_page": "MISC 82 292",
+   "recorded": "1956-08-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 380,
+   "racial": false
+  },
+  {
+   "id": "4026062",
+   "book_page": "MISC 82 368",
+   "recorded": "1956-08-27",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1957-10-11",
+   "later_plat": "PRAIRIE ESTATES",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 152,
+   "racial": false
+  },
+  {
+   "id": "4027273",
+   "book_page": "MISC 82 501",
+   "recorded": "1956-09-01",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "pages": 4,
+   "words": 1071,
+   "racial": false
+  },
+  {
+   "id": "4096442",
+   "book_page": "MISC 83 114",
+   "recorded": "1956-09-26",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1957-10-11",
+   "later_plat": "PRAIRIE ESTATES",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 24,
+   "racial": false
+  },
+  {
+   "id": "4095555",
+   "book_page": "MISC 83 130",
+   "recorded": "1956-09-28",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      29,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1957-10-11",
+   "later_plat": "PRAIRIE ESTATES",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 30,
+   "racial": false
+  },
+  {
+   "id": "4096786",
+   "book_page": "MISC 83 323",
+   "recorded": "1956-10-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1960-11-08",
+   "later_plat": "KENILWORTH",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 386,
+   "racial": false
+  },
+  {
+   "id": "4166891",
+   "book_page": "MISC 84 30",
+   "recorded": "1956-11-16",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "renewal"
+   ],
+   "term": "period of twenty-five (25) years",
+   "pages": 5,
+   "words": 1108,
+   "racial": false
+  },
+  {
+   "id": "4388469",
+   "book_page": "MISC 87 318",
+   "recorded": "1957-05-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1961-09-21",
+   "later_plat": "JACKSON HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 239,
+   "racial": false
+  },
+  {
+   "id": "4606308",
+   "book_page": "MISC 90 408",
+   "recorded": "1957-10-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 3,
+   "words": 455,
+   "racial": false
+  },
+  {
+   "id": "4605434",
+   "book_page": "MISC 90 413",
+   "recorded": "1957-10-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 5,
+   "words": 38,
+   "racial": false
+  },
+  {
+   "id": "1392887",
+   "book_page": "MISC 93 306",
+   "recorded": "1958-03-06",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "1961-09-21",
+   "later_plat": "JACKSON HEIGHTS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 325,
+   "racial": false
+  },
+  {
+   "id": "1545800",
+   "book_page": "MISC 95 173",
+   "recorded": "1958-05-14",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 4,
+   "words": 1044,
+   "racial": false
+  },
+  {
+   "id": "1546590",
+   "book_page": "MISC 95 230",
+   "recorded": "1958-05-19",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "dedication",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 915,
+   "racial": false
+  },
+  {
+   "id": "1647645",
+   "book_page": "MISC 96 248",
+   "recorded": "1958-06-26",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": "NE"
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 615,
+   "racial": false
+  },
+  {
+   "id": "1647311",
+   "book_page": "MISC 96 294",
+   "recorded": "1958-07-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "release",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 209,
+   "racial": false
+  },
+  {
+   "id": "1648942",
+   "book_page": "MISC 96 374",
+   "recorded": "1958-07-11",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": "NE"
+    }
+   ],
+   "first_plat": "1972-02-02",
+   "later_plat": "CORINTH DOWNS",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 309,
+   "racial": false
+  },
+  {
+   "id": "1756709",
+   "book_page": "MISC 98 381",
+   "recorded": "1958-10-04",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      27,
+      12,
+      25
+     ],
+     "qtr": "NW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1988-04-19",
+   "later_plat": "CORINTH PLACE VILLAS",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 371,
+   "racial": false
+  },
+  {
+   "id": "2245026",
+   "book_page": "MISC 106 114",
+   "recorded": "1959-09-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 259,
+   "racial": false
+  },
+  {
+   "id": "2246180",
+   "book_page": "MISC 106 277",
+   "recorded": "1959-09-17",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "NW"
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 711,
+   "racial": false
+  },
+  {
+   "id": "2276596",
+   "book_page": "MISC 108 204",
+   "recorded": "1959-12-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 301,
+   "racial": false
+  },
+  {
+   "id": "2396687",
+   "book_page": "MISC 115 114",
+   "recorded": "1960-11-25",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": "period of twenty (20) years",
+   "pages": 3,
+   "words": 871,
+   "racial": false
+  },
+  {
+   "id": "2417573",
+   "book_page": "MISC 116 383",
+   "recorded": "1961-01-19",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 369,
+   "racial": false
+  },
+  {
+   "id": "2466406",
+   "book_page": "MISC 119 51",
+   "recorded": "1961-05-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1961-05-04",
+   "later_plat": "NORMANDY SQUARE",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 110,
+   "racial": false
+  },
+  {
+   "id": "2488194",
+   "book_page": "MISC 120 422",
+   "recorded": "1961-07-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 1,
+   "words": 291,
+   "racial": false
+  },
+  {
+   "id": "2507912",
+   "book_page": "MISC 121 616",
+   "recorded": "1961-09-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 333,
+   "racial": false
+  },
+  {
+   "id": "2586721",
+   "book_page": "MISC 125 702",
+   "recorded": "1962-04-18",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": "NE"
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 417,
+   "racial": false
+  },
+  {
+   "id": "2607376",
+   "book_page": "MISC 126 384",
+   "recorded": "1962-05-14",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "NE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1972-02-02",
+   "later_plat": "CORINTH DOWNS",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 412,
+   "racial": false
+  },
+  {
+   "id": "2706841",
+   "book_page": "MISC 131 703",
+   "recorded": "1963-01-15",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 521,
+   "racial": false
+  },
+  {
+   "id": "2756062",
+   "book_page": "MISC 134 140",
+   "recorded": "1963-04-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 623,
+   "racial": false
+  },
+  {
+   "id": "2756826",
+   "book_page": "MISC 134 532",
+   "recorded": "1963-05-02",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 490,
+   "racial": false
+  },
+  {
+   "id": "2776646",
+   "book_page": "MISC 135 553",
+   "recorded": "1963-06-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 1053,
+   "racial": false
+  },
+  {
+   "id": "2777644",
+   "book_page": "MISC 135 556",
+   "recorded": "1963-06-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 473,
+   "racial": false
+  },
+  {
+   "id": "2959407",
+   "book_page": "MISC 145 17",
+   "recorded": "1964-05-22",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "pages": 3,
+   "words": 394,
+   "racial": false
+  },
+  {
+   "id": "2959279",
+   "book_page": "MISC 145 503",
+   "recorded": "1964-06-23",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 617,
+   "racial": false
+  },
+  {
+   "id": "3016368",
+   "book_page": "MISC 148 707",
+   "recorded": "1964-10-30",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 524,
+   "racial": false
+  },
+  {
+   "id": "3016369",
+   "book_page": "MISC 148 712",
+   "recorded": "1964-10-30",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1965-09-17",
+   "later_plat": "RED FOX",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 460,
+   "racial": false
+  },
+  {
+   "id": "3091272",
+   "book_page": "MISC 152 492",
+   "recorded": "1965-02-23",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": "SW"
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "release",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 783,
+   "racial": false
+  },
+  {
+   "id": "3224156",
+   "book_page": "MISC 160 691",
+   "recorded": "1965-12-30",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "easement",
+   "features": [],
+   "term": null,
+   "pages": 4,
+   "words": 1025,
+   "racial": false
+  },
+  {
+   "id": "3239998",
+   "book_page": "MISC 161 190",
+   "recorded": "1966-01-13",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": "NE"
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 713,
+   "racial": false
+  },
+  {
+   "id": "3751644",
+   "book_page": "MISC 188 494",
+   "recorded": "1968-08-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 517,
+   "racial": false
+  },
+  {
+   "id": "3750632",
+   "book_page": "MISC 188 496",
+   "recorded": "1968-08-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": true,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 252,
+   "racial": false
+  },
+  {
+   "id": "3750634",
+   "book_page": "MISC 188 498",
+   "recorded": "1968-08-21",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      15,
+      12,
+      25
+     ],
+     "qtr": "SW",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2011-05-09",
+   "later_plat": "UMB PRAIRIE VILLAGE BRANCH BANK",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 2,
+   "words": 310,
+   "racial": false
+  },
+  {
+   "id": "3755652",
+   "book_page": "MISC 215 395",
+   "recorded": "1971-02-04",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      28,
+      12,
+      25
+     ],
+     "qtr": "SE",
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "1975-09-05",
+   "later_plat": "SOMERSET PLACE",
+   "nichols": false,
+   "unknown_party": false,
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "architectural approval",
+    "homes association assessments"
+   ],
+   "term": null,
+   "pages": 2,
+   "words": 569,
+   "racial": false
+  },
+  {
+   "id": "3950267",
+   "book_page": "OR 2215 303",
+   "recorded": "1985-09-03",
+   "doc_type": "Miscellaneous",
+   "legals": [
+    {
+     "section": [
+      33,
+      12,
+      25
+     ],
+     "qtr": null,
+     "qtrqtr": null
+    }
+   ],
+   "first_plat": "2016-10-18",
+   "later_plat": "MEADOWBROOK PARK",
+   "nichols": false,
+   "unknown_party": true,
+   "kind": "other",
+   "features": [],
+   "term": null,
+   "pages": 3,
+   "words": 267,
+   "racial": false
+  }
+ ]
+}

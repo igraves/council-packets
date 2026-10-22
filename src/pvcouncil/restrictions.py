@@ -313,6 +313,109 @@ def walk_candidates(names: dict[str, dict], devs: set[str], plat_manifest: dict)
     return sorted(out, key=lambda c: (-c["score"], c["recorded"]))
 
 
+# Releases of racial covenants, keyed by the released declaration's book and page. Kansas House Bill
+# 2582 (2006) let a homes association's board amend such a clause out of its declaration; the
+# recorder indexes those as a Declaration of Restrictions under the association's name only, so they
+# were found by searching association names (all document types) and reading every association-filed
+# declaration of 2006-09, and those of 2010 on not indexed to land outside Prairie Village. The
+# association names come from each racial subdivision's own instruments and every index row on its
+# lots. The 2024 law's Certificates of Release of Prohibitive Covenants (filed by an owner or a city)
+# were also checked.
+RACIAL_RELEASES = {
+    "MISC 26 349": {"recorded": "2007-11-07", "book_page": "OR 200711 001865",
+                    "by": "the Prairie Village Homes Association", "law": "House Bill 2582 (2006)"},
+}
+RELEASES_SEARCHED = "2026-10-20"
+
+# Racial covenants that lot owners declared still in force after Shelley v. Kraemer (1948), keyed by
+# the declaration: an amendment that changed another section and confirmed the rest.
+REAFFIRMED = {
+    "MISC 43 323": {"recorded": "1960-02-03", "book_page": "MISC 109 106",
+                    "also": ["MISC 109 107", "MISC 109 108", "MISC 109 109"],
+                    "by": "the lot owners of Meadow Lake Blocks 1-3",
+                    "note": "amended Section V to allow offices on five lots of Block 1 and declared the rest of "
+                            "the restrictions, the racial covenant among them, to \"remain in full force and "
+                            "effect\""},
+}
+
+# Racial covenants that ended on their own: a fixed term with no renewal clause, read by hand
+# (the classifier's "renewal" pattern misses wordings like "automatically shall be continued").
+RACIAL_EXPIRED = {
+    # J. C. Nichols Company's race-only declaration on Prairie Village Block 36, 1950
+    "MISC 43 573": {"expired": "1990-02", "term": "40 years, no renewal"},
+}
+
+
+# Declarations found through the references in other declarations rather than by the survey: the
+# Miscellaneous index gives them no legal description, or one lot, so they were found by recording
+# date and read. Prairie Village was built in sections; for each, J. C. Nichols Company recorded a
+# short declaration subjecting the new lots to the 1941 declaration (MISC 26 349) under its Section
+# Four, and the later declarations cite these by serial number. docid is that serial.
+FOUND_BY_REFERENCE = [
+    {"id": "1732415", "book_page": "MISC 31 53", "recorded": "1946-03-04", "docid": "346348"},
+    {"id": "2641720", "book_page": "MISC 36 260", "recorded": "1947-11-10", "docid": "367460"},
+    {"id": "2642813", "book_page": "MISC 36 269", "recorded": "1947-11-10", "docid": "367462"},
+    {"id": "2642814", "book_page": "MISC 36 272", "recorded": "1947-11-10", "docid": "367463"},
+    {"id": "2781189", "book_page": "MISC 37 453", "recorded": "1948-03-31", "docid": "371726"},
+    {"id": "2781190", "book_page": "MISC 37 456", "recorded": "1948-03-31", "docid": "371727"},
+    {"id": "2781194", "book_page": "MISC 37 473", "recorded": "1948-03-31", "docid": "371729"},
+    {"id": "3166519", "book_page": "MISC 40 212", "recorded": "1949-01-03", "docid": "380622"},
+    {"id": "3433753", "book_page": "MISC 42 52", "recorded": "1949-08-31", "docid": "388424"},
+    {"id": "3433759", "book_page": "MISC 42 54", "recorded": "1949-08-31", "docid": "388425"},
+    {"id": "3433698", "book_page": "MISC 42 393", "recorded": "1949-10-20", "docid": "390585"},
+    {"id": "3433699", "book_page": "MISC 42 396", "recorded": "1949-10-20", "docid": "390586"},
+    {"id": "3433701", "book_page": "MISC 42 405", "recorded": "1949-10-20", "docid": "390587"},
+    # cited in the margin of MISC 42 54 ("Modif. of Restr. #746475, Bk 161 Pg 172")
+    {"id": "3239007", "book_page": "MISC 161 172", "recorded": "1966-01-12", "docid": "746475"},
+]
+for _e in FOUND_BY_REFERENCE:
+    _e.update(plats=["PRAIRIE VILLAGE"], plat_book_pages=[], source="reference")
+
+# Declarations the typed search matched to a subdivision but that weren't filed with its plat, so
+# they're read only when listed here.
+TYPED_EXTRA = [
+    # J. C. Nichols Company's restrictions for Prairie Hills Blocks 1-12, eight days after the plat
+    # (PLAT 14 33); indexed only to Block 12 Lot 1
+    {"id": "4093235", "book_page": "MISC 46 137", "recorded": "1950-07-08", "docid": "402618",
+     "doc_type": "Declaration of Restrictions", "plats": ["PRAIRIE HILLS"]},
+    # the owners' Restriction Agreement for Prairie Woods Lots 1-8 and 14-31, which annulled MISC 24 273;
+    # indexed as Miscellaneous with no legal, found under the developer's name
+    {"id": "4591212", "book_page": "MISC 27 187", "recorded": "1941-10-06", "docid": "297222",
+     "doc_type": "Restriction Agreement", "plats": ["PRAIRIE WOODS"]},
+]
+
+# Declarations annulled by a later instrument, keyed by book and page: the later one replaces them.
+ANNULLED = {
+    "MISC 24 273": {"by": "MISC 27 187", "recorded": "1941-10-06",
+                    "note": "the 1941 Restriction Agreement annulled it \"as though said Declaration of Restrictions "
+                            "had never been executed\" and put new restrictions, the racial covenant among them, on "
+                            "Lots 1-8 and 14-31"},
+}
+for _e in TYPED_EXTRA:
+    _e.update(plat_book_pages=[], source="typed")
+
+
+def filed_entries(out: dict) -> list[dict]:
+    """The instruments read as declarations: those filed with a plat, FOUND_BY_REFERENCE and
+    TYPED_EXTRA."""
+    have = {e["id"] for e in out.get("filed_with_plat", [])}
+    return out.get("filed_with_plat", []) + [e for e in FOUND_BY_REFERENCE + TYPED_EXTRA if e["id"] not in have]
+
+
+# The typed search's other instruments of the developers' era: declarations for later sections,
+# owners' amendments and one-lot building-line modifications. They're read too, and the map lists
+# the non-racial ones apart from the subdivision's own declarations.
+SUPPLEMENTAL_BEFORE = "1971"
+
+
+def supplemental_entries(out: dict) -> list[dict]:
+    """Typed instruments recorded before SUPPLEMENTAL_BEFORE that filed_entries doesn't cover."""
+    have = {e["id"] for e in filed_entries(out)}
+    return [{"id": e["id"], "book_page": e["book_page"], "recorded": e["recorded"], "docid": None,
+             "doc_type": e["doc_type"], "plats": e["plats"], "plat_book_pages": [], "source": "supplemental"}
+            for e in out.get("instruments", []) if e["recorded"] < SUPPLEMENTAL_BEFORE and e["id"] not in have]
+
+
 _NICHOLS = re.compile(r"\bJ\.?\s?C\.?\s+NICHOLS\b|\bNICHOLS\s+(?:INVESTMENT\s+)?CO", re.I)
 
 
@@ -322,6 +425,137 @@ def _days_between(a: str, b: str) -> int:
 
 def _months_between(a: str, b: str) -> int:
     return (int(b[:4]) - int(a[:4])) * 12 + int(b[5:7]) - int(a[5:7])
+
+
+def _reference_section() -> tuple[list[str], set[str]]:
+    """Report lines for racial covenants carried to land by a declaration that makes it subject to
+    an earlier one (subdivmap's racial_ref), and the subdivisions they are in."""
+    from pvcouncil import subdivmap
+
+    subs = subdivmap.subdivision_records()
+    rows = [(s["name"], d) for s in subs.values() for d in s["declarations"] if d.get("racial_ref")]
+    if not rows:
+        return [], set()
+    bases = sorted({d["racial_ref"]["declaration"] for _, d in rows})
+    lines = [
+        "## Racial covenants carried by reference",
+        "",
+        "A declaration can put a racial covenant on land without stating it, by making the land "
+        "subject to all the terms of an earlier declaration that has one. The 1941 Prairie Village "
+        "declaration (MISC 26 349, Blocks 1–5) reserved in its Section Four the right to add land "
+        "to it. J. C. Nichols Company used that right section by section: each later plat got a "
+        "short declaration making its lots subject to MISC 26 349 \"as though said lots … had been "
+        "described in said original Declaration\", and a longer one with additional restrictions "
+        "that cites it. Several of these short declarations are indexed with no legal description "
+        "and were found from the serial numbers the longer ones cite.",
+        "",
+        "| Subdivision | Declaration | Recorded | Blocks | Covenant carried from |",
+        "|---|---|---|---|---|",
+    ]
+    for name, d in sorted(rows, key=lambda r: (r[0], r[1]["recorded"])):
+        blocks = subdivmap._blocks_label(d["blocks"]) if d["blocks"] else "all"
+        lines.append(f"| {name.title()} | {d['book_page']} ({d['kind']}) | {d['recorded'][:10]} | {blocks} "
+                     f"| {d['racial_ref']['declaration']} ({d['racial_ref']['recorded'][:4]}) |")
+    lines.append("")
+    for b in bases:
+        r = RACIAL_RELEASES.get(b)
+        if r:
+            lines += [f"{b}'s racial covenant was released {r['recorded']} by {r['by']} under {r['law']} "
+                      f"({r['book_page']}). The release repeals the section for \"all properties subject to the "
+                      "declaration\", but its recitals list only the lots that declaration first covered, so "
+                      "whether it reaches land added by reference is unclear. The map shows that land as "
+                      "*by reference*.", ""]
+    return lines, {name.split(",")[0].upper() for name, _ in rows}
+
+
+def _preplat_section() -> tuple[list[str], dict[str, list[dict]]]:
+    """Report lines for covenants put on acreage before it was platted (pvc preplat), and those
+    covenants by the subdivision name now on their land. Empty until pvc preplat has run."""
+    from pvcouncil import preplat
+
+    if not (preplat.RESULTS_PATH.exists() and preplat.OVERLAY_PATH.exists()):
+        return [], {}
+    found = json.loads(preplat.RESULTS_PATH.read_text())
+    insts = found["instruments"]
+    covs = [f["properties"] for f in json.loads(preplat.OVERLAY_PATH.read_text())["features"]]
+    by_sub = defaultdict(list)
+    lines = [
+        "## Before it was platted",
+        "",
+        "Some land was put under a racial covenant before it was platted, by its owners or by the "
+        "developer who was buying it. Such instruments are indexed to the bare land (section, township "
+        "and range) rather than to a subdivision, so the search by subdivision name above cannot find "
+        "them. `pvc preplat` dates each 40-acre tract our subdivisions occupy by its first plat and "
+        "reads every Miscellaneous instrument indexed to bare land in that tract in the "
+        f"{found['years_before']} years before: **{len(insts)}** instruments, "
+        f"**{sum(bool(e.get('racial')) for e in insts)}** of them with a racial covenant. Each was read "
+        "from its image and its land placed from the description it gives (the index's quarter-section "
+        "is often wrong). All ran for a fixed term with no renewal clause, so all have ended; the land "
+        "they covered is shown on the map as dashed outlines.",
+        "",
+    ]
+    for p in sorted(covs, key=lambda p: p["recorded"]):
+        now = [n.split(",")[0] for n in json.loads(p["now"])]
+        for n in dict.fromkeys(now):
+            by_sub[n].append(p)
+        where = (f"Land now in {', '.join(dict.fromkeys(n.title() for n in now))}." if now else "")
+        lines.append(f"- **{p['recorded']} {p['book_page']}**, by {p['by']}: {p['summary']} "
+                     f"Ended {p['ended']} ({p['term']}). {where}".rstrip())
+    lines.append("")
+    return lines, by_sub
+
+
+def _deed_chain_section() -> tuple[list[str], set[str]]:
+    """Report lines for the sample lots whose deeds pvc deed-chain followed, and the subdivisions
+    they are in. Empty until pvc deed-chain has run."""
+    from pvcouncil import deedchain
+
+    if not deedchain.RESULTS_PATH.exists():
+        return [], set()
+    found = json.loads(deedchain.RESULTS_PATH.read_text())
+    rows, lots = found["deeds"], found["lots"]
+    dev = [r for r in rows if r["approval_clause"]]
+    costs = sorted({r["minimum_cost"] for r in dev if r["minimum_cost"]}, reverse=True)
+    olm = sum(r["read_by"] == "olmOCR-2" for r in rows)
+    early = [r for r in rows if r["recorded"] < "1960" and r["read_by"] != "olmOCR-2"]
+    by_block = defaultdict(list)
+    for r in rows:
+        by_block[(r["subdivision"], r["block"])].append(r)
+    lines = [
+        "## Deeds on individual lots",
+        "",
+        "Racial language is sometimes said to have been written into the deeds of individual houses, not "
+        "only into a subdivision's recorded declaration. `pvc deed-chain` tests this on sample lots by "
+        "following each one's recorded history (the recorder's search by subdivision, block and lot) from "
+        "the developer's first sale to today, and reading every deed in it: "
+        f"**{len(lots)}** lots in {len(by_block)} blocks, **{len(rows)}** deeds from "
+        f"{min(r['recorded'] for r in rows)[:4]} to {max(r['recorded'] for r in rows)[:4]}. Every deed was "
+        f"read with Tesseract, and the {olm} recorded before 1960 also with olmOCR-2 7B"
+        + (f" (except {', '.join(r['book_page'] for r in early)}, which it could not read)" if early else "")
+        + f". **{sum(r['racial'] for r in rows)}** of them contain racial language.",
+        "",
+        f"The developer's deeds ({len(dev)}, from {min(r['recorded'] for r in dev)[:4]} to "
+        f"{max(r['recorded'] for r in dev)[:4]}) convey the lot \"subject to the covenants, restrictions, "
+        "reservations and easements now of record\", that is, the subdivision's recorded declarations, and "
+        "add only their own printed terms: for forty years no house or outbuilding may be built until the "
+        "J. C. Nichols Company approves its plans, and in "
+        f"{sum(bool(r['minimum_cost']) for r in dev)} of them a minimum cost "
+        f"({' or '.join(f'${c:,}' for c in costs)}). The other deeds, nearly all resales, cite the restrictions of record "
+        f"({sum(r['cites_restrictions'] for r in rows if not r['approval_clause'])} of "
+        f"{len(rows) - len(dev)}) or say nothing of them. In this sample a racial covenant reached a lot "
+        "only through the declaration its deeds cite.",
+        "",
+        "| Subdivision | Block | Lots | Deeds | First sale | With approval clause | Minimum cost |",
+        "|---|---|---|---|---|---|---|",
+    ]
+    for (sub, block), rs in sorted(by_block.items(), key=lambda kv: (kv[0][0], int(kv[0][1]))):
+        lts = sorted({r["lot"] for r in rs}, key=lambda x: int(x or 0))
+        cs = sorted({r["minimum_cost"] for r in rs if r["approval_clause"] and r["minimum_cost"]})
+        lines.append(f"| {sub.title()} | {block} | {', '.join(lts) if any(lts) else 'whole block'} | {len(rs)} | "
+                     f"{min(r['recorded'] for r in rs)[:4]} | {sum(r['approval_clause'] for r in rs)} | "
+                     f"{', '.join(f'${c:,}' for c in cs) or '—'} |")
+    lines.append("")
+    return lines, {r["subdivision"] for r in rows}
 
 
 def render_markdown(out: dict, manifest: dict) -> str:
@@ -351,11 +585,51 @@ def render_markdown(out: dict, manifest: dict) -> str:
     reads = {}
     if restrictread.RESULTS_PATH.exists():
         reads = {r["id"]: r for r in json.loads(restrictread.RESULTS_PATH.read_text())["read"]}
-    filed_all = [{**e, **{k: reads[e["id"]][k] for k in ("kind", "features", "term", "note", "unrelated")
-                          if k in reads.get(e["id"], {})}} for e in out.get("filed_with_plat", [])]
+    filed_all = [{**e, **{k: reads[e["id"]][k] for k in ("kind", "features", "term", "note", "unrelated",
+                                                         "transcribed_terms", "stale_transcriptions", "engine",
+                                                         "engine_terms", "engine_stale", "kind_engine",
+                                                         "unadopted_terms")
+                          if k in reads.get(e["id"], {})}}
+                 for e in out.get("filed_with_plat", []) + [e for e in TYPED_EXTRA
+                                                            if e["id"] not in {f["id"] for f in out.get("filed_with_plat", [])}]]
+
+    def cite(term: str, e: dict) -> str:
+        """A term, cited to the transcribed page and region when only a transcription found it, or
+        to the OCR engine whose adopted reading found it when Tesseract didn't."""
+        where = (e.get("transcribed_terms") or {}).get(term)
+        if not where:
+            if term in (e.get("unadopted_terms") or []):  # an olmOCR reading not yet adopted in the viewer
+                return f"{term} (read by {e['kind_engine']})"
+            return f"{term} (read by {e['engine']})" if term in (e.get("engine_terms") or []) else term
+        return f"{term} (transcribed: " + "; ".join(f"p. {w['page']}, region {w['region']}" for w in where) + ")"
+
+    def stale_note(e: dict) -> str:
+        n = e.get("stale_transcriptions") or 0
+        out = (f" ⚠ {n} transcription{'s' if n > 1 else ''} drawn on an earlier image of this document; "
+               "check in the viewer") if n else ""
+        if e.get("engine_stale"):
+            out += f" ⚠ the {e['engine']} reading is of an earlier image of this document; read it again"
+        return out
+    n_with_plat = sum(e.get("source") != "typed" for e in filed_all)
     filed_rel = [e for e in filed_all if not e.get("unrelated")]
     decl_kinds = ("restrictions", "homes association", "restriction amendment")
-    racial = [e for e in filed_rel if "racial restriction" in e.get("features", [])]
+    racial = [e for e in filed_rel if "racial restriction" in e.get("features", []) and e["book_page"] not in ANNULLED]
+    n_released = sum(e["book_page"] in RACIAL_RELEASES for e in racial)
+    annulled = [e for e in filed_rel if "racial restriction" in e.get("features", []) and e["book_page"] in ANNULLED]
+
+    def release_note(e: dict) -> str:
+        if "racial restriction" not in e.get("features", []):
+            return ""
+        a = ANNULLED.get(e["book_page"])
+        if a:
+            return f". **Annulled** {a['recorded']} by {a['by']}: {a['note']}"
+        r = RACIAL_RELEASES.get(e["book_page"])
+        a = REAFFIRMED.get(e["book_page"])
+        reaff = (f". **Racial covenant reaffirmed** {a['recorded']} by {a['by']}, {a['book_page']} "
+                 f"(signature sheets {', '.join(a['also'])}), which {a['note']}" if a else "")
+        if not r:
+            return f"{reaff}. Racial covenant: no release found (recorder searched 2006 to {RELEASES_SEARCHED})"
+        return f". Racial covenant **released** {r['recorded']} by {r['by']} under {r['law']}, {r['book_page']}"
     filed = by_plat(filed_rel)
     typed = by_plat(out.get("instruments", []))
     cands = by_plat([c for c in out.get("misc_candidates", []) if c["plats"]])
@@ -366,7 +640,18 @@ def render_markdown(out: dict, manifest: dict) -> str:
                 if p not in first_plat or e["recorded"] < first_plat[p]:
                     first_plat[p] = e["recorded"]
 
+    plat_rows = (json.loads(platocr.RESULTS_PATH.read_text())["plats"] if platocr.RESULTS_PATH.exists() else [])
+    tr_rows = [e for e in filed_rel if e.get("transcribed_terms") is not None] + \
+              [r for r in plat_rows if r.get("transcribed")]
+    n_tr = len([e for e in filed_rel if reads.get(e["id"], {}).get("transcribed")]) + len(
+        [r for r in plat_rows if r.get("transcribed")])
+    n_tr_terms = sum(len(e.get("transcribed_terms") or {}) for e in tr_rows)
+    eng_rows = [e for e in filed_rel if e.get("engine")] + [r for r in plat_rows if r.get("engine")]
+    n_eng_terms = sum(len(e.get("engine_terms") or []) for e in eng_rows)
     covered = [k for k, pl in subs.items() if any(filed[p] or on_plat.get(p) or typed[p] for p in pl)]
+    preplat_lines, preplat_by_sub = _preplat_section()
+    chain_lines, chain_subs = _deed_chain_section()
+    ref_lines, ref_subs = _reference_section()
     lines = [
         "# Prairie Village subdivision restrictions",
         "",
@@ -376,18 +661,44 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "",
         f"- **{len(covered)}** of **{len(subs)}** subdivisions have at least one restriction "
         "instrument found or restrictions written on a plat",
-        f"- **{len(filed_all)}** instruments were filed with a plat: recorded the same day with one "
+        f"- **{n_with_plat}** instruments were filed with a plat: recorded the same day with one "
         "of the next few document numbers. The 1941 Prairie Village plat is document 289996 and the "
-        "J.C. Nichols Declaration of Restrictions is 289997. Read from their images, "
+        "J.C. Nichols Declaration of Restrictions is 289997. "
+        + (f"{len(filed_all) - n_with_plat} more, recorded later and found in the recorder's index, "
+           f"{'was' if len(filed_all) - n_with_plat == 1 else 'were'} read the same way. "
+           if len(filed_all) > n_with_plat else "")
+        + "Read from their images, "
         f"**{sum(e.get('kind') in decl_kinds for e in filed_rel)}** are restriction or homes "
         f"association declarations covering **{len({p for e in filed_rel if e.get('kind') in decl_kinds for p in e['plats']})}** "
         f"plats; {len(filed_all) - len(filed_rel)} concern other land and are left out below.",
         f"- **{len(racial)}** of those declarations contain a racially restrictive covenant "
         f"({', '.join(sorted({p for e in racial for p in e['plats']}))}). Such covenants have been "
-        "unenforceable since Shelley v. Kraemer (1948). This count comes from OCR and covers only the "
+        "unenforceable since Shelley v. Kraemer (1948). "
+        f"**{n_released}** of them {'has' if n_released == 1 else 'have'} been formally released of record: "
+        "Kansas House Bill 2582 (2006) let a homes association's board amend the clause out, and a 2024 "
+        "law lets an owner or the city file a certificate of release, but a search of the recorder from "
+        f"2006 to {RELEASES_SEARCHED} found no release for the others (see each declaration below). "
+        "That search covered every filing under the subdivisions' homes association names and every "
+        "association-filed declaration that could concern Prairie Village land. "
+        + "".join(f"{e['book_page']} ({', '.join(p.title() for p in e['plats'])}, {e['recorded'][:4]}) is not "
+                  f"counted: {ANNULLED[e['book_page']]['by']} annulled it in {ANNULLED[e['book_page']]['recorded'][:4]} "
+                  "and repeated its racial covenant. " for e in annulled)
+        + "".join(f"{e['book_page']} ({', '.join(p.title() for p in e['plats'])}) was reaffirmed after Shelley: in "
+                  f"{REAFFIRMED[e['book_page']]['recorded'][:4]} {REAFFIRMED[e['book_page']]['by']} "
+                  f"{REAFFIRMED[e['book_page']]['note']} ({REAFFIRMED[e['book_page']]['book_page']}). "
+                  for e in racial if e["book_page"] in REAFFIRMED)
+        + "This count comes from OCR and covers only the "
         "declarations it could read; about 20 Kansas City Investment Company declarations from "
         "1952–57 are low-resolution photostat negatives and were classified by eye from their "
         "headings only.",
+        *([f"- **{n_tr}** document{'s have' if n_tr != 1 else ' has'} hand-checked transcriptions of regions OCR couldn't read "
+           f"(made in `pvc deed-viewer`); **{n_tr_terms}** terms below were found only in a "
+           "transcription and are cited to its page and region."] if n_tr else []),
+        *([f"- **{len(eng_rows)}** document{'s are' if len(eng_rows) != 1 else ' is'} read with an OCR engine "
+           f"other than Tesseract ({', '.join(sorted({e['engine'] for e in eng_rows}))}), adopted in "
+           "`pvc deed-viewer` after checking against the image; "
+           f"**{n_eng_terms}** term{'s' if n_eng_terms != 1 else ''} below {'were' if n_eng_terms != 1 else 'was'} "
+           "found only in that reading and say which engine read them."] if eng_rows else []),
         f"- **{sum(len(v) for v in on_plat.values())}** plats state restrictions or covenants on "
         "their face (found by OCR of the plat images)",
         f"- **{len(out.get('instruments', []))}** instruments indexed as a Declaration of "
@@ -399,13 +710,16 @@ def render_markdown(out: dict, manifest: dict) -> str:
         "restrictions as \"Miscellaneous\", so the label alone doesn't say what an instrument is; "
         "the images settle it.",
         "",
+        *preplat_lines,
+        *ref_lines,
+        *chain_lines,
         "## Summary",
         "",
         "| Code | Subdivision | First plat | Filed with plat | On plat | Indexed restrictions | Candidates |",
         "|---|---|---|---:|---:|---:|---:|",
     ]
     for (code, sub), pl in sorted(subs.items()):
-        f_ = {e["id"] for p in pl for e in filed[p]}
+        f_ = {e["id"] for p in pl for e in filed[p] if e.get("source") != "typed"}
         o_ = {e["book_page"] for p in pl for e in on_plat.get(p, [])}
         t_ = {e["id"] for p in pl for e in typed[p]}
         c_ = {e["id"] for p in pl for e in cands[p]}
@@ -418,20 +732,33 @@ def render_markdown(out: dict, manifest: dict) -> str:
         o_ = sorted({e["book_page"]: e for p in pl for e in on_plat.get(p, [])}.values(), key=lambda e: e["recorded"])
         t_ = sorted({e["id"]: e for p in pl for e in typed[p]}.values(), key=lambda e: e["recorded"])
         c_ = sorted({e["id"]: e for p in pl for e in cands[p]}.values(), key=lambda e: -e["score"])
-        if not (f_ or o_ or t_ or c_):
+        pre = preplat_by_sub.get(sub.upper(), [])
+        if not (f_ or o_ or t_ or c_ or pre):
             continue
         lines += [f"### {sub} ({code})", ""]
+        if sub.upper() in ref_subs:
+            lines.append("- **[Racial covenants carried by reference](#racial-covenants-carried-by-reference)**: "
+                         "declarations that put lots here under an earlier declaration's racial covenant")
+        if sub.upper() in chain_subs:
+            lines.append("- **[Deeds on individual lots](#deeds-on-individual-lots)**: sample lots' deeds "
+                         "followed from the first sale to today")
+        for p in pre:
+            lines.append(f"- **[Before it was platted](#before-it-was-platted)**: {p['recorded']} {p['book_page']}, "
+                         f"a racial covenant put on this land by {p['by']} (ended {p['ended']})")
         for e in f_:
             what = e.get("kind", e["doc_type"])
-            detail = [f for f in e.get("features", []) if f != "homes association assessments"]
+            detail = [cite(f, e) for f in e.get("features", []) if f != "homes association assessments"]
             extra = (f"; {e['term']}" if e.get("term") else "") + (f"; {', '.join(detail)}" if detail else "")
-            lines.append(f"- **Filed with plat** {', '.join(e['plat_book_pages'])}: {e['recorded']} "
+            label = ("**Declaration** (from the recorder's index)" if e.get("source") == "typed"
+                     else f"**Filed with plat** {', '.join(e['plat_book_pages'])}")
+            lines.append(f"- {label}: {e['recorded']} "
                          f"{e['book_page']} (document {e['docid']}) — **{what}**{extra}"
-                         + (f". {e['note']}" if e.get("note") else ""))
+                         + (f". {e['note']}" if e.get("note") else "") + release_note(e) + stale_note(e))
         for e in o_:
             cites = ", ".join(f"MISC {c['book']}/{c['page'] or '?'}" for c in e["citations"])
             lines.append(f"- **On the plat** {e['book_page']} ({e['recorded']}): "
-                         f"{', '.join(e['terms'])}" + (f"; cites {cites}" if cites else ""))
+                         f"{', '.join(cite(t, e) for t in e['terms'])}" + (f"; cites {cites}" if cites else "")
+                         + stale_note(e))
         shown = {e["id"] for e in f_}
         t_rest = [e for e in t_ if e["id"] not in shown]
         for e in t_rest[:12]:

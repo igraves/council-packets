@@ -326,11 +326,108 @@ resolution the zoom needs and are cached in `deeds/cache/pages/`. The server
 listens on localhost only. Links like `#r:4442333/2` (instrument
 `r:<record id>` or plat `p:<record id>`, then page) open a document directly.
 
+Documents that OCR read poorly are badged and can be filtered. A plat counts
+as poor under 150 words. An instrument counts as poor under 120 words a page,
+or when it was classified by eye. To transcribe one:
+
+1. Turn on **Select text** (`s`, or hold ⇧) and drag a box around the text.
+2. The server renders just that region at a chosen OCR zoom (200–600 dpi) and
+   cleans it up: invert for negatives, a contrast stretch, and an optional
+   black-and-white threshold. It then runs Tesseract with a chosen layout.
+3. The panel shows the image Tesseract read and its text. Correct the text and
+   save it.
+
+Saved regions stay highlighted on the page and go to `transcripts.json`. It
+quotes signature and notary blocks, so it never goes in this public
+repository. Set `PVC_TRANSCRIPTS_DIR` in `.env` to a directory outside the
+checkout that holds a private git repository. The viewer then commits each
+save and delete there, with commit messages that give only the record key and
+region id. If that repository has a remote (keep it private), each commit is
+also pushed there in the background. Without `PVC_TRANSCRIPTS_DIR`, transcriptions are written to the
+gitignored `deeds/ocr/manual/`. Each region is keyed by
+the recorder's record ID (`r:<id>` or `p:<id>`). It records:
+
+- the page
+- the box, as fractions of the unrotated page
+- the OCR settings
+- its source: book and page, recording date, page count, and a SHA-256
+  fingerprint of the image file it was drawn on
+
+If that image is later replaced, the region is flagged stale: dashed red on
+the page and "⚠ stale" in the list and the report. Check it, then save again.
+A link like `#r:3138218/1/<region id>` opens a saved region. The document is
+re-classified on the spot. `pvc plat-ocr` and `pvc restriction-read` add the
+transcriptions to the OCR text, so a transcribed covenant or term reaches the
+report on the next `pvc restriction-survey --offline`. A term found only in a
+transcription is cited there to its page and region, for example "residence
+only (transcribed: p. 1, region 0fc919e2b9)".
+
+**OCR engines.** Tesseract can't read most of the 1950s photostat negatives,
+so the viewer and `pvc deed-ocr` can switch to other engines. All of them run
+on this machine:
+
+| Engine | What it is | Setup |
+|---|---|---|
+| `tesseract` | Tesseract 5, the pipeline's engine | `brew install tesseract` |
+| `surya` | Surya 2 (Datalab), a document OCR model served through llama.cpp | `uv tool install surya-ocr`, `brew install llama.cpp` |
+| `olmocr` | olmOCR-2 7B (Allen AI), a Qwen2.5-VL fine-tune for scanned pages | `ollama pull hf.co/lmstudio-community/olmOCR-2-7B-1025-GGUF:Q4_K_M` |
+| `qwen-vl` | Qwen2.5-VL 7B | `ollama pull qwen2.5vl:7b` |
+| `gemma4` | Gemma 4 26B | `ollama pull gemma4:26b` |
+
+The Ollama engines need `ollama serve` running; `pvc deed-ocr` with no
+arguments lists what's ready. In the viewer, the region panel has an engine
+picker. A saved region records the engine that read it. Under **Whole-document
+readings**, **Read document** queues every page of the open document. Jobs
+run one at a time in the background, at the viewer's rotation, inverting
+mostly-dark pages. You can then view each reading page by page beside the
+image. From the command line,
+`pvc deed-ocr --engine olmocr --poor` reads every poor-OCR document, and
+`--key r:<id>` reads one.
+
+Readings go to `deeds/ocr/engines/<engine>/` (local). They don't change the
+report until you press **Use for report** on one. That choice is saved in
+`adopted.json`, which lives next to the transcriptions in the
+`PVC_TRANSCRIPTS_DIR` repository and is committed there. That reading then stands
+in for Tesseract's text in `pvc plat-ocr` and `pvc restriction-read`. In
+`subdivision-restrictions.md`, a term only that reading found is cited, for
+example "minimum floor area (read by olmOCR-2 7B)". A reading of an image
+that has since been replaced is flagged.
+
+Every engine except Tesseract is a vision-language model. Each read the
+Jordan Place negative (MISC 72/310) almost perfectly where Tesseract read 2
+words. But they can also write what a declaration usually says rather than
+what the page says. Surya invented the last line of a paragraph cut off by
+the box, and Gemma 4 can loop on "[illegible]" (the loop is trimmed). Check a
+reading against the image before you adopt it, especially any racial
+covenant it reports.
+
 Raw rows are cached in `deeds/cache/restrictions/` because they carry party
 names. The checked-in `deeds/restrictions.json` and
 [subdivision-restrictions.md](subdivision-restrictions.md) list instruments
 by date, book and page, and record ID, with no party names. Pass `--offline`
 to rebuild from the cache.
+
+### Subdivision map
+
+```bash
+uv run pvc subdivision-map --serve 8766   # build map/subdivisions.geojson, serve map/ on 127.0.0.1
+```
+
+`map/index.html` draws every subdivision on a dark Mapbox map: red where a
+declaration filed with the plat carries a racial covenant with no release on
+record, a yellow outline where the covenant was released (the original
+Prairie Village plat, by the Prairie Village Homes Association in 2007), blue
+for other recorded restrictions. Hovering shows the subdivision's declarations
+and terms; clicking keeps the card open with a link to its section of
+[subdivision-restrictions.md](subdivision-restrictions.md).
+
+Outlines come from the county's public Prairie Village parcel layer
+(`maps.jocogov.org`, `PrairieVillage/Parcels`): a platted parcel ID reads
+`OP<subdivision code>…`, so each code's parcels are merged, closing the
+streets between blocks. Only parcel IDs and geometry are fetched (cached in
+`deeds/cache/gis/`; `--refresh` fetches again). The page needs a Mapbox
+public token: set `MAPBOX_TOKEN` in `.env` (it is written to the gitignored
+`map/config.js`), or open the page with `?token=pk…`.
 
 An MCP server (`pvcouncil.mcp_server`) exposes `search`, `ask`, `votes`,
 `budget`, `list_documents`, and `stats` as tools for MCP clients. Search, ask and list_documents accept `doc_type="archive"` for the city reports.

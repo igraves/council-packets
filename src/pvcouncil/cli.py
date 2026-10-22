@@ -459,8 +459,10 @@ def plat_ocr(workers):
 @cli.command("restriction-read")
 @click.option("--workers", default=6, show_default=True, help="Parallel OCR processes")
 @click.option("--offline", is_flag=True, help="Skip downloading; OCR and classify what is on disk")
-def restriction_read(workers, offline):
-    """Download, OCR, and classify the instruments filed with a plat."""
+@click.option("--candidates", "n_candidates", default=0, show_default=True,
+              help="Also read this many more unread Miscellaneous candidates, highest score first")
+def restriction_read(workers, offline, n_candidates):
+    """Download, OCR, and classify the instruments filed with a plat (and walk candidates)."""
     from collections import Counter
 
     import json
@@ -468,7 +470,12 @@ def restriction_read(workers, offline):
     from pvcouncil import restrictions, restrictread
     from pvcouncil.recorder import RecorderError
 
-    entries = json.loads(restrictions.RESULTS_PATH.read_text())["filed_with_plat"]
+    out = json.loads(restrictions.RESULTS_PATH.read_text())
+    entries = restrictions.filed_entries(out) + restrictions.supplemental_entries(out)
+    cands = restrictread.candidate_entries(out, {e["id"] for e in entries}, n_candidates)
+    if n_candidates:
+        click.echo(f"{len(cands)} walk candidates ({n_candidates} new)")
+    entries = entries + cands
     if not offline:
         try:
             s = restrictread.download(entries, echo=click.echo)
@@ -481,6 +488,29 @@ def restriction_read(workers, offline):
     feats = Counter(f for r in rows for f in r["features"])
     click.echo("  " + ", ".join(f"{f} {n}" for f, n in feats.most_common()))
     click.echo(f"→ {restrictread.RESULTS_PATH.relative_to(plats_root())}")
+
+
+@cli.command("deed-chain")
+@click.option("--workers", default=6, show_default=True, help="Parallel OCR processes")
+@click.option("--offline", is_flag=True, help="Skip searching and downloading; OCR and read what is on disk")
+def deed_chain(workers, offline):
+    """Follow sample lots' deeds from the first sale, reading each for racial language."""
+    from pvcouncil import deedchain
+    from pvcouncil.recorder import RecorderError
+
+    if not offline:
+        try:
+            deedchain.fetch(echo=click.echo)
+            deedchain.download(deedchain.deeds(), echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(str(e))
+    deedchain.ocr(deedchain.deeds(), workers=workers, echo=click.echo)
+    rows = deedchain.build()["deeds"]
+    lots = {(r["block"], r["lot"]) for r in rows}
+    click.echo(f"{len(rows)} deeds on {len(lots)} lots, {sum(r['racial'] for r in rows)} with racial language; "
+               f"{sum(r['cites_restrictions'] for r in rows)} cite the restrictions, "
+               f"{sum(r['restates_restrictions'] for r in rows)} restate some of them")
+    click.echo(f"→ {deedchain.RESULTS_PATH.relative_to(plats_root())}")
 
 
 def plats_root():
@@ -496,6 +526,158 @@ def deed_viewer(port):
     from pvcouncil import viewer
 
     viewer.serve(port=port, echo=click.echo)
+
+
+@cli.command("preplat")
+@click.option("--offline", is_flag=True, help="Use cached index months and images only")
+@click.option("--dry-run", is_flag=True, help="List the sections and months to fetch, and stop")
+@click.option("--workers", default=4, show_default=True, help="Parallel OCR processes")
+def preplat_cmd(offline, dry_run, workers):
+    """Find covenants put on acreage before it was platted (indexed to Sec/Twp/Rng, not a subdivision)."""
+    from pvcouncil import preplat, restrictions
+    from pvcouncil.recorder import RecorderError
+
+    firsts = preplat.first_plats()
+    todo = [m for m in preplat.months(firsts) if not restrictions._month_file(*m).exists()]
+    click.echo(f"{len(firsts)} quarter-quarter sections in {len({k[:3] for k in firsts})} sections; "
+               f"{len(preplat.months(firsts))} pre-plat months, {len(todo)} not cached")
+    if dry_run:
+        return
+    if not offline:
+        try:
+            preplat.fetch(echo=click.echo)
+        except RecorderError as e:
+            raise click.ClickException(str(e))
+    entries = preplat.find(firsts)
+    click.echo(f"{len(entries)} instruments on bare land before the first plat "
+               f"({sum(e['nichols'] for e in entries)} with a Nichols party)")
+    try:
+        preplat.read(entries, workers=workers, echo=click.echo, offline=offline)
+    except RecorderError as e:
+        raise click.ClickException(str(e))
+    out = preplat.build(entries)
+    racial = [e for e in out["instruments"] if e.get("racial")]
+    click.echo(f"{len(racial)} with a racial restriction:")
+    for e in racial:
+        x = e["legals"][0]
+        click.echo(f"  {e['recorded']} {e['book_page']} Sec {'-'.join(map(str, x['section']))} "
+                   f"{x['qtr'] or ''} {x['qtrqtr'] or ''} ({e.get('term')}); first plat {e['first_plat']} {e['later_plat']}")
+    click.echo(f"→ {preplat.RESULTS_PATH.relative_to(plats_root())}")
+
+
+@cli.command("subdivision-map")
+@click.option("--refresh", is_flag=True, help="Fetch the county's parcel polygons again")
+@click.option("--serve", "port", type=int, default=None, help="Then serve the map on 127.0.0.1 at this port")
+def subdivision_map(refresh, port):
+    """Build map/subdivisions.geojson: subdivision outlines with their restrictions."""
+    import json
+    import os
+    from collections import Counter
+
+    from pvcouncil import subdivmap
+
+    fc = subdivmap.build(refresh, echo=click.echo)
+    n = Counter(f["properties"]["status"] for f in fc["features"])
+    click.echo(f"{len(fc['features'])} subdivisions: {n['racial']} with an unreleased racial covenant, "
+               f"{n['expired']} expired, {n['released']} released, {n['restrictions']} other restrictions, "
+               f"{n['none']} none found "
+               f"→ {subdivmap.GEOJSON_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
+    from pvcouncil import preplat
+
+    pre = json.loads(preplat.RESULTS_PATH.read_text())["instruments"] if preplat.RESULTS_PATH.exists() else []
+    click.echo(f"{len(preplat.overlay(pre)['features'])} pre-plat covenants "
+               f"→ {preplat.OVERLAY_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
+    from pvcouncil import parcelmap
+
+    pc = parcelmap.build(refresh, echo=click.echo)
+    click.echo(f"{len(pc['features'])} parcels → {parcelmap.GEOJSON_PATH.relative_to(subdivmap.PROJECT_ROOT)}")
+    # the Mapbox token stays out of git: map/config.js is gitignored
+    token = os.environ.get("MAPBOX_TOKEN", "")
+    (subdivmap.MAP_DIR / "config.js").write_text(f"window.MAPBOX_TOKEN = {json.dumps(token)};\n")
+    if not token:
+        click.echo("MAPBOX_TOKEN is not set in .env; open the map with ?token=pk...")
+    if port:
+        from pvcouncil import mapserve
+
+        docs = subdivmap.doc_images()
+        click.echo(f"{len(docs)} document images to link → http://127.0.0.1:{port}/  (Ctrl-C to stop)")
+        mapserve.serve(subdivmap.MAP_DIR, docs, subdivmap.PAGE_CACHE, "127.0.0.1", port)
+
+
+@cli.command("highlights")
+def highlights_cmd():
+    """Find the racial covenant on the pages of the documents the map links → map/highlights.json.
+
+    Tesseract finds the pages and places each line; Claude reads those pages (sending their images
+    and OCR lines to the Anthropic API) and names the covenant's lines. Answers are cached."""
+    from pvcouncil import highlights
+
+    out = highlights.build(echo=click.echo)
+    click.echo(f"{len(out)} documents, {sum(len(b) for d in out.values() for b in d['pages'].values())} boxes "
+               f"→ {highlights.RESULTS_PATH.relative_to(highlights.subdivmap.PROJECT_ROOT)}")
+
+
+@cli.command("map-bundle")
+def map_bundle():
+    """Collect the map and the images of the documents it refers to in deploy/bundle/site/, the
+    site deploy/cdk uploads to S3. Run pvc subdivision-map first; MAPBOX_TOKEN comes
+    from .env and is served to browsers, so restrict it to the site's URL in Mapbox."""
+    import os
+
+    from pvcouncil import subdivmap
+
+    token = os.environ.get("MAPBOX_TOKEN", "")
+    if not token:
+        raise click.ClickException("MAPBOX_TOKEN is not set in .env")
+    r = subdivmap.bundle(token, echo=click.echo)
+    click.echo(f"{r['docs']} documents, {r['pages']} pages → {subdivmap.BUNDLE_DIR.relative_to(subdivmap.PROJECT_ROOT)}/")
+    if r["missing"]:
+        click.echo(f"No image for {len(r['missing'])}: {', '.join(r['missing'])}")
+
+
+@cli.command("deed-ocr")
+@click.option("--engine", "engine_name", help="tesseract, surya, olmocr, qwen-vl, or gemma4")
+@click.option("--key", "keys", multiple=True, help="Document key from the viewer (p:<id>, r:<id> or d:<id>); repeatable")
+@click.option("--poor", is_flag=True, help="Every document flagged poor OCR")
+@click.option("--invert", type=click.Choice(["auto", "on", "off"]), default="auto", show_default=True,
+              help="Invert pages: auto inverts mostly-dark pages (photostat negatives)")
+@click.option("--rot", type=click.Choice(["0", "90", "180", "270"]), default="0", show_default=True)
+@click.option("--redo", is_flag=True, help="Read again documents this engine has already read")
+def deed_ocr(engine_name, keys, poor, invert, rot, redo):
+    """Read whole documents with an OCR engine; with no --engine, list the engines.
+
+    Readings are saved locally and compared in `pvc deed-viewer`, where one can be
+    adopted as a document's report text after checking it against the image."""
+    from pvcouncil import ocrengines, viewer
+
+    engines = ocrengines.available(refresh=True)
+    if not engine_name:
+        for name, e in engines.items():
+            click.echo(f"{name:10} {e['label']:16} {'ready' if e['ok'] else 'not set up: ' + e['setup']}")
+        return
+    ocrengines.get(engine_name)
+    if not engines[engine_name]["ok"]:
+        raise click.ClickException(f"{engine_name} isn't set up: {engines[engine_name]['setup']}")
+    docs = viewer.build_index()
+    todo = [docs[k] for k in keys if k in docs] + [d for d in docs.values() if poor and d["ocr"] == "poor"]
+    todo = sorted({d["key"]: d for d in todo}.values(), key=lambda d: d["pages"])  # short documents first
+    if not redo:
+        todo = [d for d in todo if not ocrengines.reading_path(engine_name, d["key"]).exists()]
+    if not todo:
+        raise click.ClickException("nothing to read: pass --key or --poor (and --redo to read again)")
+    click.echo(f"Reading {len(todo)} documents ({sum(d['pages'] for d in todo)} pages) with {engine_name}")
+    failed = []
+    for i, d in enumerate(todo, 1):
+        try:
+            r = ocrengines.read_document(engine_name, d["key"], d["path"], int(rot), invert)
+        except RuntimeError as e:  # e.g. the model looping on a page ("token repeat limit reached")
+            failed.append(d["book_page"])
+            click.echo(f"[{i}/{len(todo)}] {d['book_page']} ({d['key']}): not read: {str(e)[:120]}")
+            continue
+        click.echo(f"[{i}/{len(todo)}] {d['book_page']} ({d['key']}): {r['words']} words "
+                   f"(Tesseract {d['ocr_words']}) in {r['seconds']:.0f}s")
+    if failed:
+        click.echo(f"{len(failed)} not read: {', '.join(failed)}")
 
 
 @cli.command("restriction-survey")

@@ -143,6 +143,9 @@ EXCERPTS_PATH = OCR_DIR / "excerpts.md"  # local only: excerpts can carry signer
 def build(manifest: dict) -> dict:
     """Scan the OCR text of every Prairie Village plat; write the checked-in results (terms and
     citations only) and a local excerpts file for reading."""
+    from pvcouncil import ocrengines, transcripts
+
+    manual, chosen = transcripts.load(), ocrengines.adopted()
     results, excerpts = [], ["# Restriction excerpts from plat OCR (local, not checked in)", ""]
     for e in manifest["instruments"]:
         if e["match"] not in ("exact", "variant"):
@@ -150,7 +153,23 @@ def build(manifest: dict) -> dict:
         txt = OCR_DIR / f"{plats.image_path(e).stem}.txt"
         if not txt.exists():
             continue
-        r = find_restrictions(txt.read_text())
+        tess = txt.read_text()
+        # a reading from another engine, adopted in the viewer, stands in for Tesseract's
+        ocr_text, eng = ocrengines.base_text(f"p:{e['id']}", tess, plats.image_path(e), chosen)
+        r = find_restrictions(ocr_text + "\n\n" + transcripts.text_for(f"p:{e['id']}", manual))
+        r["words"] = len(_flatten(tess).split())  # what Tesseract alone read
+        if eng:
+            base_terms = set(find_restrictions(tess)["terms"])
+            r.update(engine=eng["label"], engine_stale=eng["stale"],
+                     engine_terms=sorted(set(find_restrictions(ocr_text)["terms"]) - base_terms))
+        items = manual.get(f"p:{e['id']}", [])
+        r["transcribed"] = len(items)
+        if items:
+            # terms only a transcription found, cited to its page and region
+            base = set(find_restrictions(ocr_text)["terms"])
+            r["transcribed_terms"] = transcripts.attribute(items, base, lambda t: find_restrictions(t)["terms"])
+            fp = transcripts.fingerprint(plats.image_path(e))
+            r["stale_transcriptions"] = sum(transcripts.is_stale(x, fp) is True for x in items)
         excerpt = r.pop("excerpt")
         for c in r["citations"]:
             c.pop("text", None)

@@ -10890,6 +10890,42 @@
    "legal": "Sub:PRAIRIE VILLAGE Blk:9 Lt:15"
   },
   {
+   "id": "3109568",
+   "recorded": "1979-12-14",
+   "doc_type": "Miscellaneous",
+   "book_page": "OR 1533 998",
+   "score": 8,
+   "why": [
+    "party named for the subdivision",
+    "subdivision legal",
+    "developer party",
+    "UNKNOWN/PUBLIC party"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "nearby_plats": [],
+   "legal": "Sub:PRAIRIE VILLAGE Blk:16 Lt:10"
+  },
+  {
+   "id": "3898055",
+   "recorded": "1985-09-24",
+   "doc_type": "Miscellaneous",
+   "book_page": "OR 2226 599",
+   "score": 8,
+   "why": [
+    "party named for the subdivision",
+    "subdivision legal",
+    "developer party",
+    "UNKNOWN/PUBLIC party"
+   ],
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "nearby_plats": [],
+   "legal": "Sub:PRAIRIE VILLAGE Blk:39 Lt:26"
+  },
+  {
    "id": "1733499",
    "recorded": "1946-03-04",
    "doc_type": "Miscellaneous",
@@ -16603,6 +16639,23 @@
    "legal": "Sec:15 Twshp:12 Range:25 Qtr:NW QtrQtr:NW"
   },
   {
+   "id": "3789072",
+   "recorded": "1932-11-21",
+   "doc_type": "Miscellaneous",
+   "book_page": "MISC 19 434",
+   "score": 6,
+   "why": [
+    "party named for the subdivision",
+    "subdivision legal",
+    "developer party"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "nearby_plats": [],
+   "legal": "Sub:INDIAN HILLS Blk:1 Lt:2"
+  },
+  {
    "id": "3846038",
    "recorded": "1937-04-05",
    "doc_type": "Miscellaneous",
@@ -16960,6 +17013,23 @@
    "nearby_plats": [
     "SOMERSIDE"
    ],
+   "legal": null
+  },
+  {
+   "id": "1451058",
+   "recorded": "1945-10-23",
+   "doc_type": "Miscellaneous",
+   "book_page": "MISC 29 602",
+   "score": 6,
+   "why": [
+    "party named for the subdivision",
+    "UNKNOWN/PUBLIC party",
+    "no lot in legal"
+   ],
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "nearby_plats": [],
    "legal": null
   },
   {
@@ -17807,6 +17877,23 @@
    "legal": "Sec:13 Twshp:12 Range:24 Qtr:NW QtrQtr:SW"
   },
   {
+   "id": "2247729",
+   "recorded": "1975-03-18",
+   "doc_type": "Miscellaneous",
+   "book_page": "OR 1062 117",
+   "score": 6,
+   "why": [
+    "party named for the subdivision",
+    "subdivision legal",
+    "developer party"
+   ],
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "nearby_plats": [],
+   "legal": "Sub:PRAIRIE HILLS Blk:2 Lt:27"
+  },
+  {
    "id": "2254136",
    "recorded": "1975-10-13",
    "doc_type": "Miscellaneous",
@@ -17822,6 +17909,23 @@
    ],
    "nearby_plats": [],
    "legal": "Sub:PRAIRIE VILLAGE Blk:53 Lt:1"
+  },
+  {
+   "id": "1451048",
+   "recorded": "1945-09-18",
+   "doc_type": "Miscellaneous",
+   "book_page": "MISC 29 569",
+   "score": 5,
+   "why": [
+    "party named for the subdivision",
+    "developer party",
+    "no lot in legal"
+   ],
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "nearby_plats": [],
+   "legal": null
   },
   {
    "id": "1732418",

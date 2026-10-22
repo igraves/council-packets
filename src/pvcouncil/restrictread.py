@@ -23,7 +23,7 @@ from pathlib import Path
 
 import fitz
 
-from pvcouncil import plats
+from pvcouncil import ocrengines, plats, transcripts
 from pvcouncil.recorder import Recorder
 
 IMAGES_DIR = plats.IMAGES_DIR / "restrictions"
@@ -35,6 +35,30 @@ DPI = 250
 
 def image_path(e: dict) -> Path:
     return IMAGES_DIR / f"{plats._slug(e['book_page'])}--{e['id']}.pdf"
+
+
+CANDIDATE_MIN_SCORE = 5
+
+
+def candidate_entries(out: dict, skip: set[str], n_new: int) -> list[dict]:
+    """Walk candidates (restrictions.walk_candidates) tied to one of our plats: the ones already
+    OCR'd, plus the next n_new by score (then date). They carry source "candidate"."""
+    cands = sorted((c for c in out.get("misc_candidates", [])
+                    if c["score"] >= CANDIDATE_MIN_SCORE and c["plats"] and c["id"] not in skip),
+                   key=lambda c: (-c["score"], c["recorded"]))
+    picked, seen = [], set()
+    for c in cands:
+        if c["id"] in seen:
+            continue
+        seen.add(c["id"])
+        e = {"id": c["id"], "book_page": c["book_page"], "recorded": c["recorded"][:10], "docid": None,
+             "plats": c["plats"], "plat_book_pages": [], "source": "candidate"}
+        if (OCR_DIR / f"{image_path(e).stem}.txt").exists():
+            picked.append(e)
+        elif n_new > 0:
+            picked.append(e)
+            n_new -= 1
+    return picked
 
 
 def download(entries: list[dict], echo=print) -> dict:
@@ -106,21 +130,27 @@ def ocr_all(entries: list[dict], workers: int = 6, echo=print) -> int:
     return done
 
 
-# what the instrument is, checked in order; the first that matches wins
+# what the instrument is: the kind named first in its heading, else the first in this order that matches
 KINDS = [
     ("homes association", r"homes?\s+association|home\s*owners'?\s+association"),
     ("restrictions", r"declaration\s+of\s+restrictions|restrictions?\s+(?:and|&)\s+covenants|"
                      r"hereby\s+restricted|(?:covenants|restrictions),?\s+(?:restrictions|covenants)\s+and\s+stipulations"),
-    ("restriction amendment", r"(?:amend|modif|extend|renew)\w*\s+(?:of\s+)?(?:the\s+)?(?:said\s+)?restrictions"),
-    ("release", r"\brelease\s+of\b|hereby\s+releases?"),
-    ("easement", r"\beasement\b"),
-    ("dedication", r"\bdedicat"),
+    ("restriction amendment", r"(?:amend|modif|extend|renew)\w*\s+(?:of\s+|to\s+)?(?:the\s+)?(?:said\s+)?restrictions|"
+                              r"modification\s+agreement"),
+    ("release", r"\brelease\s+of\b|hereby\s+releases?|easement\s+release"),
+    ("easement", r"\beasements?\b"),
+    ("dedication", r"(?<!heretofore )\bdedicat"),  # not the recital "has heretofore dedicated and platted"
     ("deed", r"warranty\s+deed|quit\s*claim|grant,?\s+bargain\s+and\s+sell"),
-    ("affidavit", r"\baffidavit\b"),
+    ("affidavit", r"\baffidavit\b|being\s+(?:first\s+)?duly\s+sworn"),
 ]
+HEADING_CHARS = 200  # "MODIFICATION OF RESTRICTIONS ..." names the instrument before its body cites the declaration
 
 FEATURES = {
-    "residence only": r"private\s+residence|residence\s+purposes\s+only|single[\s-]+family",
+    # "for other than residence purposes", "private dwelling purposes only"; not a bare "for
+    # residential purposes", which also reads "shall not be used for residential purposes"
+    "residence only": r"private\s+residence|single[\s-]+family|"
+                      r"other\s+than\s+(?:private\s+)?(?:residen(?:ce|tial)|dwelling)\s+purposes|"
+                      r"(?:residen(?:ce|tial)|dwelling)\s+purposes\s+only",
     "no apartments": r"flat\s+or\s+apartment|apartment\s+house",
     "building line / setback": r"building\s+line|set\s*back|feet\s+(?:back\s+)?from\s+the\s+(?:front|street)",
     "minimum cost": r"(?:cost|value)\s+(?:of\s+)?(?:not\s+)?less\s+than|minimum\s+cost",
@@ -139,7 +169,8 @@ _UNTIL = re.compile(r"until\s+(?:the\s+)?(?:\w+\s+){0,3}(19\d\d|20\d\d)", re.I)
 
 def classify(text: str) -> dict:
     flat = re.sub(r"\s+", " ", text)
-    kind = next((k for k, pat in KINDS if re.search(pat, flat, re.I)), "other")
+    head = [(m.start(), k) for k, pat in KINDS if (m := re.search(pat, flat[:HEADING_CHARS], re.I))]
+    kind = min(head)[1] if head else next((k for k, pat in KINDS if re.search(pat, flat, re.I)), "other")
     feats = [f for f, pat in FEATURES.items() if re.search(pat, flat, re.I)]
     # a garbled heading can hide a declaration; its terms still give it away
     use_terms = set(feats) - {"homes association assessments", "minimum floor area", "renewal"}
@@ -157,6 +188,76 @@ def classify(text: str) -> dict:
     }
 
 
+_NUM_WORDS = ("one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|"
+              "seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred")
+_WORDED = re.compile(rf"\b(?:(?:{_NUM_WORDS})[\s-]*)+\(\s*([\dlIO]{{1,3}})\s*\)", re.I)  # "Thirty-six (36)"
+_NUM = r"[\dlIOh|]{1,3}"
+_ITEM = rf"{_NUM}(?:-?[A-Z]\b)?"  # lettered blocks (1A, 2-A) are read past, not counted
+_LIST = rf"{_ITEM}(?:(?:\s*(?:,|&|and|to|through|thru|-|–)\s*)+(?:both\s+inclusive,?\s*)?{_ITEM})*"
+_LOTS_IN_BLOCK = re.compile(rf"\bLots?\s+({_LIST})[^.;]{{0,40}}?\bBlock\s+({_NUM})\b", re.I)
+_BLOCKS = re.compile(rf"\bBlocks?\s+({_LIST})", re.I)
+
+
+def _n(tok: str) -> int | None:
+    tok = tok.translate(str.maketrans("lIOh|", "11041"))
+    return int(tok) if tok.isdigit() else None
+
+
+def _numbers(s: str) -> set[int]:
+    out, prev, rng = set(), None, False
+    for tok in re.findall(rf"{_NUM}(?:-?[A-Z]\b)?|to|through|thru|-|–", s, re.I):
+        if tok.lower() in ("to", "through", "thru", "-", "–"):
+            rng = prev is not None
+            continue
+        n = _n(tok)
+        if n is None:
+            continue
+        if rng and prev is not None and 0 < n - prev < 200:
+            out |= set(range(prev, n + 1))
+        out.add(n)
+        prev, rng = n, False
+    return out
+
+
+LAND_CHARS = 2500  # the land a declaration covers is described before its restrictions begin
+
+
+def lots_blocks(text: str) -> dict[str, list[int] | None]:
+    """Blocks a declaration covers, each with the lots named in it (None: the whole block, or lots not
+    given). Keys are block numbers as strings, for JSON. OCR slips in numbers (l, I, O, h, |) are mended.
+
+    Only the opening is read: the restrictions themselves name lots and blocks too (frontages, floor
+    areas), and a declaration with no blocks in its opening covers the whole subdivision."""
+    flat = re.sub(r"\s+", " ", text.replace("_", " "))[:LAND_CHARS]
+    flat = _WORDED.sub(lambda m: m.group(1), flat)
+    out: dict[int, set[int] | None] = {}
+    for m in _LOTS_IN_BLOCK.finditer(flat):
+        b = _n(m.group(2))
+        if b:
+            lots = _numbers(m.group(1))
+            if out.get(b, set()) is not None:
+                out[b] = (out.get(b) or set()) | lots
+    for m in _BLOCKS.finditer(flat):
+        for b in _numbers(m.group(1)):
+            if b and b not in out:
+                out[b] = None
+    return {str(b): sorted(v) if v is not None else None for b, v in sorted(out.items()) if 0 < b < 200}
+
+
+# "... subjected all of the above lots to the terms and provisions of that certain Declaration of
+# Restrictions, which is recorded ... in Book 26 of Miscellaneous at Page 349": the earlier
+# declaration whose terms, all of them, this one puts on its lots
+_SUBJECT = re.compile(
+    r"subject(?:ed)?\b(?:(?!subject)[\s\S]){0,400}?terms\s+and\s+provisions\s+of(?:(?!subject)[\s\S]){0,300}?"
+    r"book\s*(\d+)\D{0,40}?page\s*[,.]?\s*(\d+)", re.I)
+
+
+def subject_to(text: str) -> list[str]:
+    """The Miscellaneous book and page of each earlier declaration this one makes its lots subject
+    to, as read (OCR can misread a digit; subdivmap matches them to the declarations it has)."""
+    return sorted({f"MISC {m.group(1)} {m.group(2)}" for m in _SUBJECT.finditer(re.sub(r"\s+", " ", text))})
+
+
 def _excerpt(text: str, pat: str, width: int = 300) -> list[str]:
     flat = re.sub(r"\s+", " ", text)
     return [flat[max(0, m.start() - width // 2): m.end() + width // 2] for m in re.finditer(pat, flat, re.I)][:3]
@@ -167,18 +268,54 @@ REVIEW_PATH = plats.DEEDS_DIR / "restriction_review.json"
 
 def build(entries: list[dict]) -> dict:
     review = json.loads(REVIEW_PATH.read_text()) if REVIEW_PATH.exists() else {}
+    manual, chosen = transcripts.load(), ocrengines.adopted()
     rows, excerpts = [], ["# Restriction instrument excerpts (local only)", ""]
     for e in entries:
         txt = OCR_DIR / f"{image_path(e).stem}.txt"
         if not txt.exists():
             continue
-        text = txt.read_text()
+        tess = txt.read_text()
+        # a reading from another engine, adopted in the viewer, stands in for Tesseract's
+        text, eng = ocrengines.base_text(f"r:{e['id']}", tess, image_path(e), chosen)
+        base = classify(text)
+        typed = transcripts.text_for(f"r:{e['id']}", manual)
+        if typed:
+            text += "\n\n" + typed
         c = classify(text)
+        c["words"] = classify(tess)["words"]  # what Tesseract alone read
+        if eng:
+            c.update(engine=eng["label"], engine_stale=eng["stale"],
+                     engine_terms=sorted(set(base["features"]) - set(classify(tess)["features"])))
+        items = manual.get(f"r:{e['id']}", [])
+        c["transcribed"] = len(items)
+        if items:
+            # terms only a transcription found, cited to its page and region
+            c["transcribed_terms"] = transcripts.attribute(items, set(base["features"]),
+                                                           lambda t: classify(t)["features"])
+            fp = transcripts.fingerprint(image_path(e))
+            c["stale_transcriptions"] = sum(transcripts.is_stale(x, fp) is True for x in items)
+        # the blocks and lots it names, from olmOCR's reading when there is one (it reads lot and block
+        # numbers far better than Tesseract), else the report text
+        olm = ocrengines.load_reading("olmocr", f"r:{e['id']}")
+        c["blocks"] = lots_blocks(ocrengines.reading_text(olm) if olm else text)
+        c["subject_to"] = sorted(set(subject_to(text)) | set(subject_to(ocrengines.reading_text(olm)) if olm else set()))
+        if olm and not eng:
+            # olmOCR reads the heading Tesseract garbles, so it names the kind; its terms join the rest
+            o = classify(ocrengines.reading_text(olm) + ("\n\n" + typed if typed else ""))
+            c.update(kind=o["kind"], kind_engine=olm["label"], term=c["term"] or o["term"],
+                     until_year=c["until_year"] or o["until_year"],
+                     unadopted_terms=[f for f in o["features"] if f not in c["features"]],
+                     features=[f for f in FEATURES if f in c["features"] or f in o["features"]])
         r = review.get(e["book_page"])
-        if r:
+        if r and "kind" in r:
             c.update(kind=r["kind"], note=r["note"], unrelated=r.get("unrelated", False), reviewed=True)
+        if r and "blocks" in r:  # read by eye: {"1": "1-34", "6": null, ...}
+            c["blocks"] = {b: sorted(_numbers(v)) if v else None for b, v in r["blocks"].items()}
+        if r and "subject_to" in r:  # read by eye: ["MISC 26 349"]
+            c["subject_to"] = r["subject_to"]
         rows.append({"id": e["id"], "book_page": e["book_page"], "recorded": e["recorded"],
-                     "docid": e["docid"], "plats": e["plats"], "plat_book_pages": e["plat_book_pages"], **c})
+                     "docid": e["docid"], "plats": e["plats"], "plat_book_pages": e["plat_book_pages"],
+                     **({"source": e["source"]} if e.get("source") else {}), **c})
         if "racial restriction" in c["features"]:
             excerpts += [f"## {e['book_page']} ({e['recorded']}) {', '.join(e['plats'])}", ""]
             excerpts += [f"> {x}" for x in _excerpt(text, FEATURES["racial restriction"])] + [""]

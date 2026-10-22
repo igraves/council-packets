@@ -471,7 +471,7 @@ def restriction_read(workers, offline, n_candidates):
     from pvcouncil.recorder import RecorderError
 
     out = json.loads(restrictions.RESULTS_PATH.read_text())
-    entries = restrictions.filed_entries(out)
+    entries = restrictions.filed_entries(out) + restrictions.supplemental_entries(out)
     cands = restrictread.candidate_entries(out, {e["id"] for e in entries}, n_candidates)
     if n_candidates:
         click.echo(f"{len(cands)} walk candidates ({n_candidates} new)")

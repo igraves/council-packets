@@ -75,6 +75,9 @@
   #tip ul { margin: 4px 0 6px; padding-left: 16px; }
   #tip li { margin: 3px 0; font-size: 12.5px; }
   #tip .terms { color: var(--muted); }
+  #tip details.other { margin: 4px 0 6px; border-top: 1px solid var(--line); padding-top: 4px; }
+  #tip details.other summary { cursor: pointer; color: var(--muted); font-size: 12.5px; }
+  #tip details.other li { font-size: 12.5px; }
   #tip .rel { color: var(--released); }
   #tip .unrel { color: #ff8a8d; }
   #tip .exp { color: var(--expired); }
@@ -332,7 +335,13 @@ function card(p, extra = "") {
       return `<li>${li}</li>`;
     }).join("") + `</ul>`;
   }
-  if (p.elsewhere) h += `<div class="terms">${p.elsewhere} more declaration${p.elsewhere > 1 ? "s" : ""} cover other blocks of this subdivision</div>`;
+  // the developers' later declarations, owners' amendments and one-lot modifications, folded away
+  if (d.other && d.other.length)
+    h += `<details class="other"><summary>Other recorded restrictions (${d.other.length})</summary><ul>` +
+      d.other.map(x => `<li><b>${esc(x.recorded.slice(0, 4))}</b> ${doc(x.book_page)} — ${esc(x.kind)}` +
+        ((x.lots_label || x.blocks_label) ? ` <span class="terms">· ${esc(x.lots_label || x.blocks_label)}</span>` : "") +
+        (x.note ? `<br><span class="terms">${esc(x.note)}</span>` : "") + `</li>`).join("") + `</ul></details>`;
+  if (p.elsewhere) h +=`<div class="terms">${p.elsewhere} more declaration${p.elsewhere > 1 ? "s" : ""} cover other blocks of this subdivision</div>`;
   if (p.note) h += `<div class="terms" style="margin:4px 0">${esc(p.note)}</div>`;
   if (d.on_plat.length)
     h += `<div>Written on the plat: ${d.on_plat.map(x => doc(x.book_page)).join(", ")}</div>`;

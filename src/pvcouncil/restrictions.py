@@ -391,6 +391,20 @@ def filed_entries(out: dict) -> list[dict]:
     return out.get("filed_with_plat", []) + [e for e in FOUND_BY_REFERENCE + TYPED_EXTRA if e["id"] not in have]
 
 
+# The typed search's other instruments of the developers' era: declarations for later sections,
+# owners' amendments and one-lot building-line modifications. They're read too, and the map lists
+# the non-racial ones apart from the subdivision's own declarations.
+SUPPLEMENTAL_BEFORE = "1971"
+
+
+def supplemental_entries(out: dict) -> list[dict]:
+    """Typed instruments recorded before SUPPLEMENTAL_BEFORE that filed_entries doesn't cover."""
+    have = {e["id"] for e in filed_entries(out)}
+    return [{"id": e["id"], "book_page": e["book_page"], "recorded": e["recorded"], "docid": None,
+             "doc_type": e["doc_type"], "plats": e["plats"], "plat_book_pages": [], "source": "supplemental"}
+            for e in out.get("instruments", []) if e["recorded"] < SUPPLEMENTAL_BEFORE and e["id"] not in have]
+
+
 _NICHOLS = re.compile(r"\bJ\.?\s?C\.?\s+NICHOLS\b|\bNICHOLS\s+(?:INVESTMENT\s+)?CO", re.I)
 
 

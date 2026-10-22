@@ -6201,6 +6201,1373 @@
    "reviewed": true
   },
   {
+   "id": "3942879",
+   "book_page": "MISC 45 24",
+   "recorded": "1950-04-22",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restrictions",
+   "features": [
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 2005,
+   "transcribed": 0,
+   "blocks": {
+    "12": null,
+    "17": null
+   },
+   "subject_to": [],
+   "note": "J. C. Nichols Company's restrictions for Indian Hills Block 12 and the replatted lots of Block 17 (Mission Hills; Prairie Village has only Indian Hills Blocks 7 and 8)",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4094092",
+   "book_page": "MISC 46 150",
+   "recorded": "1950-07-08",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 8,
+   "words": 1358,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": [],
+   "note": "J. C. Nichols Company's restrictions for Indian Hills Block D, Lots 1-9 (Mission Hills; Prairie Village has only Indian Hills Blocks 7 and 8)",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4093237",
+   "book_page": "MISC 46 158",
+   "recorded": "1950-07-08",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": "period of five years",
+   "until_year": null,
+   "pages": 11,
+   "words": 3214,
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "6": [
+     30
+    ],
+    "10": [
+     21
+    ]
+   },
+   "subject_to": []
+  },
+  {
+   "id": "1579497",
+   "book_page": "MISC 53 338",
+   "recorded": "1952-03-24",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 2277,
+   "transcribed": 0,
+   "blocks": {
+    "23": null
+   },
+   "subject_to": [],
+   "note": "J. C. Nichols Company's restrictions for Indian Hills Block 23, Lot A and Lots 1-5 (Mission Hills; Prairie Village has only Indian Hills Blocks 7 and 8)",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1579521",
+   "book_page": "MISC 53 426",
+   "recorded": "1952-04-01",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 2,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": [],
+   "note": "J. C. Nichols Company adds Indian Hills Block 23 to the Indian Hills Homes Association district (Mission Hills; Prairie Village has only Indian Hills Blocks 7 and 8)",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "1579555",
+   "book_page": "MISC 53 548",
+   "recorded": "1952-04-14",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 560,
+   "transcribed": 0,
+   "blocks": {
+    "19": [
+     22
+    ]
+   },
+   "subject_to": []
+  },
+  {
+   "id": "1580279",
+   "book_page": "MISC 53 550",
+   "recorded": "1952-04-14",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 453,
+   "transcribed": 0,
+   "blocks": {
+    "21": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ]
+   },
+   "subject_to": []
+  },
+  {
+   "id": "1579557",
+   "book_page": "MISC 53 552",
+   "recorded": "1952-04-14",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 806,
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "18": null,
+    "19": null
+   },
+   "subject_to": []
+  },
+  {
+   "id": "1579563",
+   "book_page": "MISC 53 568",
+   "recorded": "1952-04-17",
+   "docid": null,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 280,
+   "transcribed": 0,
+   "blocks": {
+    "2": [
+     2
+    ]
+   },
+   "subject_to": [],
+   "note": "modifies the 1950 Countryside-East declaration for one lot of Block 2",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1703781",
+   "book_page": "MISC 54 277",
+   "recorded": "1952-05-17",
+   "docid": null,
+   "plats": [
+    "MOHAWK HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 28,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": [],
+   "note": "lot owners' agreement changing the building setback for lots of Mohawk Hills",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "1893254",
+   "book_page": "MISC 56 289",
+   "recorded": "1952-10-07",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 1081,
+   "transcribed": 0,
+   "blocks": {
+    "17": [
+     2,
+     3,
+     4
+    ],
+    "18": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "19": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "subject_to": [],
+   "note": "J. C. Nichols Company's restrictions for Prairie Ridge Block 17 Lots 2-4, Block 18 Lots 1-16 and Block 19 Lots 1-8",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4466386",
+   "book_page": "MISC 88 86",
+   "recorded": "1957-06-01",
+   "docid": null,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 239,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": [],
+   "note": "moves the 75-foot building line of Lot 64 five feet",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4502970",
+   "book_page": "MISC 88 559",
+   "recorded": "1957-07-15",
+   "docid": null,
+   "plats": [
+    "INDIAN HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 30,
+   "transcribed": 0,
+   "blocks": {
+    "12": [
+     12
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot under Section 6 of MISC 45 24 (Mission Hills; Prairie Village has only Indian Hills Blocks 7 and 8)",
+   "unrelated": true,
+   "reviewed": true
+  },
+  {
+   "id": "4532827",
+   "book_page": "MISC 89 214",
+   "recorded": "1957-08-08",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 634,
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     5,
+     6
+    ]
+   },
+   "subject_to": [
+    "MISC 72 473"
+   ],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4533437",
+   "book_page": "MISC 89 578",
+   "recorded": "1957-09-09",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 293,
+   "transcribed": 0,
+   "blocks": {
+    "21": [
+     9
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4534429",
+   "book_page": "MISC 89 595",
+   "recorded": "1957-09-10",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 486,
+   "transcribed": 0,
+   "blocks": {
+    "52": [
+     10
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4606560",
+   "book_page": "MISC 90 48",
+   "recorded": "1957-09-18",
+   "docid": null,
+   "plats": [
+    "SOMERSIDE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 5,
+   "words": 895,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": [],
+   "note": "owners' modification of the Somerside declarations (MISC 27 54 and 27 82) for one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "4605856",
+   "book_page": "MISC 90 80",
+   "recorded": "1957-09-21",
+   "docid": null,
+   "plats": [
+    "SOMERSET HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 323,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": []
+  },
+  {
+   "id": "2139218",
+   "book_page": "MISC 100 453",
+   "recorded": "1959-01-15",
+   "docid": null,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 239,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": []
+  },
+  {
+   "id": "2139411",
+   "book_page": "MISC 100 496",
+   "recorded": "1959-01-30",
+   "docid": null,
+   "plats": [
+    "CORINTH MEADOWS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 82,
+   "transcribed": 0,
+   "blocks": {
+    "2": [
+     8
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the building setback line of one lot 10% closer to the street",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2163565",
+   "book_page": "MISC 101 95",
+   "recorded": "1959-02-10",
+   "docid": null,
+   "plats": [
+    "CORINTH MEADOWS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 377,
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     14
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the building setback line of one lot closer to the street",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2164272",
+   "book_page": "MISC 101 517",
+   "recorded": "1959-03-09",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 664,
+   "transcribed": 0,
+   "blocks": {
+    "51": [
+     9
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2223919",
+   "book_page": "MISC 105 515",
+   "recorded": "1959-08-14",
+   "docid": null,
+   "plats": [
+    "TOWN & COUNTRY ESTATES"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 617,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": [],
+   "note": "modifies the 1955 Town & Country Estates declaration (MISC 71 466)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2246019",
+   "book_page": "MISC 106 70",
+   "recorded": "1959-08-31",
+   "docid": null,
+   "plats": [
+    "RIDGEWOOD"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 192,
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     1
+    ]
+   },
+   "subject_to": [],
+   "note": "modifies the side-line setback (Section 6) for one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2255720",
+   "book_page": "MISC 107 212",
+   "recorded": "1959-10-30",
+   "docid": null,
+   "plats": [
+    "SOMERSET ACRES WEST"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 609,
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     6
+    ]
+   },
+   "subject_to": [],
+   "note": "amends the 1954 Somerset Acres West declaration (MISC 65 524) for one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2256997",
+   "book_page": "MISC 107 477",
+   "recorded": "1959-11-16",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 715,
+   "transcribed": 0,
+   "blocks": {
+    "6": [
+     34
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2264004",
+   "book_page": "MISC 107 640",
+   "recorded": "1959-11-25",
+   "docid": null,
+   "plats": [
+    "COUNTRYSIDE-EAST"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 616,
+   "transcribed": 0,
+   "blocks": {
+    "7": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "8": [
+     1,
+     16
+    ]
+   },
+   "subject_to": []
+  },
+  {
+   "id": "2277206",
+   "book_page": "MISC 108 615",
+   "recorded": "1960-01-20",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 9,
+   "words": 2524,
+   "transcribed": 0,
+   "blocks": {
+    "13": null,
+    "14": null,
+    "15": null
+   },
+   "subject_to": [],
+   "note": "J. C. Nichols Company's restrictions for parts of Corinth Hills Blocks 13-15 (plat 22 7)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2277213",
+   "book_page": "MISC 108 624",
+   "recorded": "1960-01-20",
+   "docid": null,
+   "plats": [
+    "CORINTH HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [
+    "homes association assessments"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 469,
+   "transcribed": 0,
+   "blocks": {
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "13": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "14": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "15": [
+     1,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   "subject_to": []
+  },
+  {
+   "id": "2286609",
+   "book_page": "MISC 109 106",
+   "recorded": "1960-02-03",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "residence only"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 331,
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null
+   },
+   "subject_to": [],
+   "note": "lot owners amend Section V of MISC 43 323 to allow offices on Block 1 Lots 1, 2 and 21-23, and declare the rest of those restrictions, the racial covenant among them, in full force",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2286610",
+   "book_page": "MISC 109 107",
+   "recorded": "1960-02-03",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "residence only"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 344,
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null
+   },
+   "subject_to": [],
+   "note": "signature sheet of the 1960 amendment of MISC 43 323 (see MISC 109 106)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2286611",
+   "book_page": "MISC 109 108",
+   "recorded": "1960-02-03",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "residence only"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 340,
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null
+   },
+   "subject_to": [],
+   "note": "signature sheet of the 1960 amendment of MISC 43 323 (see MISC 109 106)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2286613",
+   "book_page": "MISC 109 109",
+   "recorded": "1960-02-03",
+   "docid": null,
+   "plats": [
+    "MEADOW LAKE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "residence only"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 1,
+   "words": 336,
+   "transcribed": 0,
+   "blocks": {
+    "1": null,
+    "2": null,
+    "3": null
+   },
+   "subject_to": [],
+   "note": "signature sheet of the 1960 amendment of MISC 43 323 (see MISC 109 106)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2287152",
+   "book_page": "MISC 109 381",
+   "recorded": "1960-02-17",
+   "docid": null,
+   "plats": [
+    "PRAIRIE VILLAGE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 2,
+   "transcribed": 0,
+   "blocks": {
+    "14": [
+     45,
+     46
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of parts of Lots 45 and 46",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2647590",
+   "book_page": "MISC 128 555",
+   "recorded": "1962-08-08",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "no apartments",
+    "building line / setback",
+    "minimum floor area",
+    "renewal"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 10,
+   "words": 2679,
+   "transcribed": 0,
+   "blocks": {
+    "17": null,
+    "18": null,
+    "19": null,
+    "20": null,
+    "21": null,
+    "22": null,
+    "23": null,
+    "24": null,
+    "25": null,
+    "26": null
+   },
+   "subject_to": [],
+   "note": "J. C. Nichols Company's restrictions for Prairie Hills Blocks 21-25 and parts of Blocks 17-20 and 26 (1962 plat)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2647597",
+   "book_page": "MISC 128 565",
+   "recorded": "1962-08-08",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "homes association",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 449,
+   "transcribed": 0,
+   "blocks": {
+    "14": null,
+    "17": [
+     1,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "18": [
+     1
+    ],
+    "19": [
+     1,
+     4,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "20": [
+     2,
+     3
+    ],
+    "21": [
+     2,
+     3
+    ],
+    "22": [
+     1,
+     2
+    ],
+    "23": null,
+    "24": null,
+    "25": null,
+    "26": null
+   },
+   "subject_to": []
+  },
+  {
+   "id": "2686974",
+   "book_page": "MISC 130 60",
+   "recorded": "1962-10-04",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 464,
+   "transcribed": 0,
+   "blocks": {
+    "23": [
+     13
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2706795",
+   "book_page": "MISC 131 62",
+   "recorded": "1962-11-23",
+   "docid": null,
+   "plats": [
+    "PRAIRIE RIDGE"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 468,
+   "transcribed": 0,
+   "blocks": {
+    "8": [
+     24
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2706816",
+   "book_page": "MISC 131 65",
+   "recorded": "1962-11-23",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 481,
+   "transcribed": 0,
+   "blocks": {
+    "1": [
+     9
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2700341",
+   "book_page": "MISC 131 311",
+   "recorded": "1962-12-12",
+   "docid": null,
+   "plats": [
+    "PRAIRIE HILLS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 615,
+   "transcribed": 0,
+   "blocks": {
+    "26": [
+     5,
+     6
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of parts of Lots 5 and 6",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "2699545",
+   "book_page": "MISC 131 391",
+   "recorded": "1962-12-21",
+   "docid": null,
+   "plats": [
+    "PRAIRIE FIELDS"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 506,
+   "transcribed": 0,
+   "blocks": {
+    "20": [
+     6
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3202008",
+   "book_page": "MISC 159 221",
+   "recorded": "1965-11-04",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [
+    "building line / setback"
+   ],
+   "term": null,
+   "until_year": null,
+   "pages": 3,
+   "words": 528,
+   "transcribed": 0,
+   "blocks": {
+    "16": [
+     10
+    ]
+   },
+   "subject_to": [
+    "MISC 15 522"
+   ],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
+   "id": "3203495",
+   "book_page": "MISC 159 547",
+   "recorded": "1965-11-22",
+   "docid": null,
+   "plats": [
+    "KENILWORTH"
+   ],
+   "plat_book_pages": [],
+   "source": "supplemental",
+   "kind": "restriction amendment",
+   "features": [],
+   "term": null,
+   "until_year": null,
+   "pages": 2,
+   "words": 511,
+   "transcribed": 0,
+   "blocks": {
+    "18": [
+     16
+    ]
+   },
+   "subject_to": [],
+   "note": "moves the front building line of one lot",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
    "id": "4757862",
    "book_page": "MISC 51 337",
    "recorded": "1951-10-08",

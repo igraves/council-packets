@@ -201,7 +201,7 @@ def subdivision_records() -> dict[str, dict]:
     for name, info in manifest["plats"].items():
         s = subs.setdefault(info["subdivision_code"], {
             "code": info["subdivision_code"], "name": info["subdivision"], "plats": [],
-            "declarations": [], "on_plat": [], "indexed": 0})
+            "declarations": [], "other": [], "on_plat": [], "indexed": 0})
         s["plats"].append(name)
         plat_code[name] = info["subdivision_code"]
 
@@ -224,6 +224,17 @@ def subdivision_records() -> dict[str, dict]:
             d = _declaration(r, r)
             for code in {plat_code[p] for p in r["plats"] if p in plat_code}:
                 subs[code]["declarations"].append(d)
+    # the developers' later declarations, owners' amendments and one-lot modifications, listed apart;
+    # a racial one would be a declaration of the land, and homes association papers are left out
+    for r in reads.values():
+        if r.get("source") != "supplemental" or r.get("unrelated"):
+            continue
+        racial = "racial restriction" in r.get("features", [])
+        if not racial and r["kind"] not in ("restrictions", "restriction amendment"):
+            continue
+        d = _declaration(r, r)
+        for code in {plat_code[p] for p in r["plats"] if p in plat_code}:
+            subs[code]["declarations" if racial else "other"].append(d)
     for p, rows in on_plat.items():
         if p in plat_code:
             for x in rows:
@@ -238,6 +249,7 @@ def subdivision_records() -> dict[str, dict]:
         _carry_by_reference(every, every)
     for s in subs.values():
         s["declarations"].sort(key=lambda d: d["recorded"])
+        s["other"].sort(key=lambda d: d["recorded"])
         s["status"] = _status(s)
         s["report"] = REPORT_URL + anchor(s["name"], s["code"]) if s["status"] != "none" else REPORT_URL
     return subs
@@ -253,7 +265,16 @@ def _declaration(e: dict, r: dict) -> dict:
             "expired": restrictions.RACIAL_EXPIRED.get(e["book_page"]) if racial else None,
             "annulled": restrictions.ANNULLED.get(e["book_page"]),
             "note": r.get("note"), "plats": e["plats"], "subject_to": r.get("subject_to") or [],
-            "blocks": sorted(int(b) for b in r["blocks"]) if r.get("blocks") else None}  # None: every block
+            "blocks": sorted(int(b) for b in r["blocks"]) if r.get("blocks") else None,  # None: every block
+            "lots_label": _lots_label(r.get("blocks"))}
+
+
+def _lots_label(blocks) -> str | None:
+    """'Block 21, Lot 9' for an instrument naming lots in a single block (one-lot modifications)."""
+    if not blocks or len(blocks) != 1:
+        return None
+    (b, lots), = blocks.items()
+    return f"Block {b}, Lot{'s' if len(lots) > 1 else ''} {_ranges(lots)}" if lots else None
 
 
 def _same_page(read: str, actual: str) -> bool:
@@ -327,6 +348,8 @@ def build(refresh: bool = False, echo=print) -> dict:
                 d = dict(d, blocks=named or None)
             kept.append(d)
         s["declarations"] = kept
+        s["other"] = [dict(d, blocks=sorted(set(d["blocks"]) & county_blocks[code]) or None) if d["blocks"] else d
+                      for d in s["other"] if d["blocks"] is None or set(d["blocks"]) & county_blocks[code]]
 
     def racial_key(code, block):
         """The racial covenants on a block: those in its own declarations, else those carried to it
@@ -357,7 +380,7 @@ def build(refresh: bool = False, echo=print) -> dict:
             continue
         code = key[:4]
         s = subs.get(code) or {"code": code, "name": f"Subdivision {code}", "plats": [], "declarations": [],
-                               "on_plat": [], "indexed": 0, "status": "none", "report": REPORT_URL}
+                               "other": [], "on_plat": [], "indexed": 0, "status": "none", "report": REPORT_URL}
         s = dict(s, note=None)
         blocks = sorted(county_blocks[code])
         if "#" in key:
@@ -367,6 +390,8 @@ def build(refresh: bool = False, echo=print) -> dict:
         here = [d for d in s["declarations"] if d["blocks"] is None or set(d["blocks"]) & set(blocks)]
         s["elsewhere"] = len(s["declarations"]) - len(here)
         s["declarations"] = [dict(d, blocks_label=_blocks_label(d["blocks"]) if d["blocks"] else None) for d in here]
+        s["other"] = [dict(d, blocks_label=_blocks_label(d["blocks"]) if d["blocks"] else None) for d in s["other"]
+                      if d["blocks"] is None or set(d["blocks"]) & set(blocks)]
         s["status"] = _status(s)
         if "#" in key and not any(d["racial"] or d.get("racial_ref") for d in here):
             racial = {b for d in subs[code]["declarations"] if d["racial"] or d.get("racial_ref")
@@ -380,7 +405,7 @@ def build(refresh: bool = False, echo=print) -> dict:
                 s["note"] = r["later_note"]
         props = {k: s[k] for k in ("code", "name", "status", "report", "indexed", "note", "elsewhere")}
         # Mapbox flattens nested properties to strings, so the details travel as JSON
-        props["details"] = json.dumps({k: s[k] for k in ("plats", "declarations", "on_plat")})
+        props["details"] = json.dumps({k: s[k] for k in ("plats", "declarations", "other", "on_plat")})
         features.append({"type": "Feature", "id": i, "properties": props,
                          "geometry": json.loads(shapely.to_geojson(geom))})
     fc = {"type": "FeatureCollection", "features": features}
@@ -407,7 +432,7 @@ def map_refs() -> set[str]:
             refs.add(x["book_page"])
             if x.get("released"):
                 refs.add(x["released"]["book_page"])
-        refs |= {x["book_page"] for x in d["on_plat"]}
+        refs |= {x["book_page"] for x in d["on_plat"] + d.get("other", [])}
     for name in ("preplat.geojson", "carried.geojson"):
         for f in json.loads((MAP_DIR / name).read_text())["features"]:
             props = f["properties"]

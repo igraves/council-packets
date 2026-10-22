@@ -6171,6 +6171,36 @@
    "reviewed": true
   },
   {
+   "id": "4591212",
+   "book_page": "MISC 27 187",
+   "recorded": "1941-10-06",
+   "docid": "297222",
+   "plats": [
+    "PRAIRIE WOODS"
+   ],
+   "plat_book_pages": [],
+   "source": "typed",
+   "kind": "restrictions",
+   "features": [
+    "residence only",
+    "building line / setback",
+    "minimum floor area",
+    "racial restriction"
+   ],
+   "term": "period of 25 years",
+   "until_year": null,
+   "pages": 5,
+   "words": 2101,
+   "transcribed": 0,
+   "blocks": {},
+   "subject_to": [],
+   "kind_engine": "olmOCR-2 7B",
+   "unadopted_terms": [],
+   "note": "Restriction Agreement of Williams and Harvey Nurseries Company and the Lot 4 owners for Prairie Woods Lots 1-8 and 14-31 (plats 9 43 and 11 4): annuls MISC 24 273 and imposes new restrictions, among them paragraph (7), no person of any race other than the Caucasian race to own, use or occupy any lot; 25 years from June 1, 1939, renewing for 25-year periods (now to 2039); the 1991 owners' release OR 3306 861 struck only paragraph (4)",
+   "unrelated": false,
+   "reviewed": true
+  },
+  {
    "id": "4757862",
    "book_page": "MISC 51 337",
    "recorded": "1951-10-08",

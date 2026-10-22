@@ -62,10 +62,10 @@ CARRIED = [
      "note": "Lot 7, the east 100 feet of the 1946 plat, was left out of the 1959 Replat of Fonticello Gardens "
              "No. 2 and platted into Roe-69 in 1983 (PLAT 54 7). The 1946 declaration names Lot 7 and renews "
              "every 25 years."},
-    {"declaration": "MISC 24 273", "from": "Prairie Woods (1939), east 70 feet of Lot 27", "into": "Fonticello (1982)",
+    {"declaration": "MISC 27 187", "from": "Prairie Woods (1941), east 70 feet of Lot 27", "into": "Fonticello (1982)",
      "east_of": ("5600", "32"), "below_of": ("5600", "26"), "width_ft": 70, "len_ft": 186.99, "rising": False,
-     "note": "The east 70 feet of Lot 27 were resubdivided into Fonticello in 1982 (PLAT 52 24). The 1939 "
-             "declaration covers every lot of Prairie Woods and renews automatically."},
+     "note": "The east 70 feet of Lot 27 were resubdivided into Fonticello in 1982 (PLAT 52 24). The 1941 "
+             "Restriction Agreement names Lots 1-8 and 14-31, Lot 27 among them, and renews every 25 years."},
 ]
 
 
@@ -251,6 +251,7 @@ def _declaration(e: dict, r: dict) -> dict:
             "features": [f for f in r.get("features", []) if f != "racial restriction"], "racial": racial,
             "released": restrictions.RACIAL_RELEASES.get(e["book_page"]) if racial else None,
             "expired": restrictions.RACIAL_EXPIRED.get(e["book_page"]) if racial else None,
+            "annulled": restrictions.ANNULLED.get(e["book_page"]),
             "note": r.get("note"), "plats": e["plats"], "subject_to": r.get("subject_to") or [],
             "blocks": sorted(int(b) for b in r["blocks"]) if r.get("blocks") else None}  # None: every block
 
@@ -287,7 +288,7 @@ def _carry_by_reference(decls: list[dict], known: list[dict]) -> None:
 
 
 def _status(s: dict) -> str:
-    racial = [d for d in s["declarations"] if d["racial"]]
+    racial = [d for d in s["declarations"] if d["racial"] and not d.get("annulled")]
     # a covenant in the land's own declaration decides; one carried by reference only where there is none
     refs = [] if racial else [d["racial_ref"] for d in s["declarations"] if d.get("racial_ref")]
     if any(not d["released"] and not d["expired"] for d in racial + refs):

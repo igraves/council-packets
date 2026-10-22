@@ -321,7 +321,9 @@ function card(p, extra = "") {
       let li = `<b>${esc(x.recorded.slice(0, 4))}</b> ${doc(x.book_page)} — ${esc(x.kind)}` +
                (x.blocks_label ? ` <span class="terms">· ${esc(x.blocks_label)}</span>` : "");
       if (x.features.length) li += ` <span class="terms">(${esc(x.features.join(", "))})</span>`;
-      if (x.racial) li += x.released
+      if (x.annulled) li += `<br><span class="terms">Annulled ${esc(x.annulled.recorded.slice(0, 4))} by ${doc(x.annulled.by)}, ` +
+        `which replaced its restrictions` + (x.racial ? `, the racial covenant among them` : ``) + `</span>`;
+      else if (x.racial) li += x.released
         ? `<br><span class="rel">Racial covenant released ${esc(x.released.recorded)}, ${doc(x.released.book_page)}</span>`
         : x.expired
         ? `<br><span class="exp">Racial covenant expired ${esc(x.expired.expired)} (${esc(x.expired.term)})</span>`

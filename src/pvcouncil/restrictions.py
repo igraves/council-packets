@@ -367,7 +367,19 @@ TYPED_EXTRA = [
     # (PLAT 14 33); indexed only to Block 12 Lot 1
     {"id": "4093235", "book_page": "MISC 46 137", "recorded": "1950-07-08", "docid": "402618",
      "doc_type": "Declaration of Restrictions", "plats": ["PRAIRIE HILLS"]},
+    # the owners' Restriction Agreement for Prairie Woods Lots 1-8 and 14-31, which annulled MISC 24 273;
+    # indexed as Miscellaneous with no legal, found under the developer's name
+    {"id": "4591212", "book_page": "MISC 27 187", "recorded": "1941-10-06", "docid": "297222",
+     "doc_type": "Restriction Agreement", "plats": ["PRAIRIE WOODS"]},
 ]
+
+# Declarations annulled by a later instrument, keyed by book and page: the later one replaces them.
+ANNULLED = {
+    "MISC 24 273": {"by": "MISC 27 187", "recorded": "1941-10-06",
+                    "note": "the 1941 Restriction Agreement annulled it \"as though said Declaration of Restrictions "
+                            "had never been executed\" and put new restrictions, the racial covenant among them, on "
+                            "Lots 1-8 and 14-31"},
+}
 for _e in TYPED_EXTRA:
     _e.update(plat_book_pages=[], source="typed")
 
@@ -576,12 +588,16 @@ def render_markdown(out: dict, manifest: dict) -> str:
     n_with_plat = sum(e.get("source") != "typed" for e in filed_all)
     filed_rel = [e for e in filed_all if not e.get("unrelated")]
     decl_kinds = ("restrictions", "homes association", "restriction amendment")
-    racial = [e for e in filed_rel if "racial restriction" in e.get("features", [])]
+    racial = [e for e in filed_rel if "racial restriction" in e.get("features", []) and e["book_page"] not in ANNULLED]
     n_released = sum(e["book_page"] in RACIAL_RELEASES for e in racial)
+    annulled = [e for e in filed_rel if "racial restriction" in e.get("features", []) and e["book_page"] in ANNULLED]
 
     def release_note(e: dict) -> str:
         if "racial restriction" not in e.get("features", []):
             return ""
+        a = ANNULLED.get(e["book_page"])
+        if a:
+            return f". **Annulled** {a['recorded']} by {a['by']}: {a['note']}"
         r = RACIAL_RELEASES.get(e["book_page"])
         if not r:
             return f". Racial covenant: no release found (recorder searched 2006 to {RELEASES_SEARCHED})"
@@ -636,7 +652,10 @@ def render_markdown(out: dict, manifest: dict) -> str:
         f"2006 to {RELEASES_SEARCHED} found no release for the others (see each declaration below). "
         "That search covered every filing under the subdivisions' homes association names and every "
         "association-filed declaration that could concern Prairie Village land. "
-        "This count comes from OCR and covers only the "
+        + "".join(f"{e['book_page']} ({', '.join(p.title() for p in e['plats'])}, {e['recorded'][:4]}) is not "
+                  f"counted: {ANNULLED[e['book_page']]['by']} annulled it in {ANNULLED[e['book_page']]['recorded'][:4]} "
+                  "and repeated its racial covenant. " for e in annulled)
+        + "This count comes from OCR and covers only the "
         "declarations it could read; about 20 Kansas City Investment Company declarations from "
         "1952–57 are low-resolution photostat negatives and were classified by eye from their "
         "headings only.",

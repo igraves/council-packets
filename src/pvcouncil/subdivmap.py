@@ -240,6 +240,13 @@ def subdivision_records() -> dict[str, dict]:
     for p, rows in on_plat.items():
         if p in plat_code:
             for x in rows:
+                if "racial restriction" in x["terms"]:
+                    # a racial covenant written on the plat binds its lots as a declaration would
+                    d = _declaration({**x, "plats": [p]},
+                                     {"kind": "restrictions written on the plat", "features": x["terms"]})
+                    d["features"] = [f for f in d["features"] if f not in ("restrictions", "covenants")]
+                    subs[plat_code[p]]["declarations"].append(d)
+                    continue
                 subs[plat_code[p]]["on_plat"].append({"book_page": x["book_page"], "recorded": x["recorded"],
                                                       "terms": x["terms"]})
     for e in out.get("instruments", []):

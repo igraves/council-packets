@@ -56,11 +56,15 @@
    "subdivision_code": "6000",
    "terms": [
     "covenants",
+    "racial restriction",
     "restrictions"
    ],
    "citations": [],
    "misc_mentions": 0,
    "words": 591,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [],
    "transcribed": 0
   },
   {
@@ -70,11 +74,25 @@
    "plat": "GRANTHURST",
    "subdivision_code": "1100",
    "terms": [
-    "covenants"
+    "building line",
+    "covenants",
+    "outbuildings",
+    "racial restriction",
+    "residential use",
+    "restrictions"
    ],
    "citations": [],
    "misc_mentions": 0,
    "words": 211,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [
+    "building line",
+    "outbuildings",
+    "racial restriction",
+    "residential use",
+    "restrictions"
+   ],
    "transcribed": 0
   },
   {
@@ -182,12 +200,16 @@
    "terms": [
     "building line",
     "covenants",
+    "racial restriction",
     "residential use",
     "restrictions"
    ],
    "citations": [],
    "misc_mentions": 0,
    "words": 852,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [],
    "transcribed": 0
   },
   {
@@ -1889,6 +1911,9 @@
    "citations": [],
    "misc_mentions": 0,
    "words": 699,
+   "engine": "olmOCR-2 7B",
+   "engine_stale": false,
+   "engine_terms": [],
    "transcribed": 0
   },
   {

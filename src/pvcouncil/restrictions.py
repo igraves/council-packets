@@ -343,6 +343,10 @@ REAFFIRMED = {
 RACIAL_EXPIRED = {
     # J. C. Nichols Company's race-only declaration on Prairie Village Block 36, 1950
     "MISC 43 573": {"expired": "1990-02", "term": "40 years, no renewal"},
+    # covenants written on the plat itself (clauses read from the sheets)
+    "PLAT 6 15": {"expired": "1943-07", "term": "20 years from July 1, 1923, no renewal"},  # Ridge View lots 15-16 resurvey
+    "PLAT 8 35": {"expired": "1962-03", "term": "25 years from March 29, 1937, no renewal"},  # Sunset Heights View
+    # Granthurst, PLAT 6 28, renews itself every 25 years from April 1, 1924
 }
 
 
@@ -615,6 +619,8 @@ def render_markdown(out: dict, manifest: dict) -> str:
     decl_kinds = ("restrictions", "homes association", "restriction amendment")
     racial = [e for e in filed_rel if "racial restriction" in e.get("features", []) and e["book_page"] not in ANNULLED]
     n_released = sum(e["book_page"] in RACIAL_RELEASES for e in racial)
+    racial_plats = sorted((p for rows in on_plat.values() for p in rows if "racial restriction" in p["terms"]),
+                          key=lambda p: p["recorded"])
     annulled = [e for e in filed_rel if "racial restriction" in e.get("features", []) and e["book_page"] in ANNULLED]
 
     def release_note(e: dict) -> str:
@@ -630,6 +636,15 @@ def render_markdown(out: dict, manifest: dict) -> str:
         if not r:
             return f"{reaff}. Racial covenant: no release found (recorder searched 2006 to {RELEASES_SEARCHED})"
         return f". Racial covenant **released** {r['recorded']} by {r['by']} under {r['law']}, {r['book_page']}"
+
+    def plat_racial_note(e: dict) -> str:
+        """For a plat with a racial covenant written on it: expired by its own term, else as a declaration."""
+        if "racial restriction" not in e["terms"]:
+            return ""
+        x = RACIAL_EXPIRED.get(e["book_page"])
+        if x:
+            return f". **Racial covenant on the plat**, expired {x['expired']} ({x['term']})"
+        return release_note({**e, "features": e["terms"]}).replace("Racial covenant:", "**Racial covenant on the plat**:")
     filed = by_plat(filed_rel)
     typed = by_plat(out.get("instruments", []))
     cands = by_plat([c for c in out.get("misc_candidates", []) if c["plats"]])
@@ -700,7 +715,12 @@ def render_markdown(out: dict, manifest: dict) -> str:
            f"**{n_eng_terms}** term{'s' if n_eng_terms != 1 else ''} below {'were' if n_eng_terms != 1 else 'was'} "
            "found only in that reading and say which engine read them."] if eng_rows else []),
         f"- **{sum(len(v) for v in on_plat.values())}** plats state restrictions or covenants on "
-        "their face (found by OCR of the plat images)",
+        "their face (found by OCR of the plat images)"
+        + (f"; **{len(racial_plats)}** of them write a racial covenant into the plat itself ("
+           + "; ".join(f"{p['plat'].title()}, {p['book_page']}, {p['recorded'][:4]}"
+                       + (f", expired {RACIAL_EXPIRED[p['book_page']]['expired'][:4]}"
+                          if p["book_page"] in RACIAL_EXPIRED else ", no release found")
+                       for p in racial_plats) + ")" if racial_plats else ""),
         f"- **{len(out.get('instruments', []))}** instruments indexed as a Declaration of "
         "Restrictions or homes association declaration name one of our subdivisions",
         "",
@@ -758,7 +778,7 @@ def render_markdown(out: dict, manifest: dict) -> str:
             cites = ", ".join(f"MISC {c['book']}/{c['page'] or '?'}" for c in e["citations"])
             lines.append(f"- **On the plat** {e['book_page']} ({e['recorded']}): "
                          f"{', '.join(cite(t, e) for t in e['terms'])}" + (f"; cites {cites}" if cites else "")
-                         + stale_note(e))
+                         + plat_racial_note(e) + stale_note(e))
         shown = {e["id"] for e in f_}
         t_rest = [e for e in t_ if e["id"] not in shown]
         for e in t_rest[:12]:

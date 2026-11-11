@@ -160,7 +160,9 @@ FEATURES = {
     "renewal": r"renew(?:ed|able|al)|automatically\s+(?:extended|continue)",
     "racial restriction": r"\bnegro|african\s+descent|colou?red\s+(?:race|person)|"
                           r"persons?\s+(?:of|having)\s+any\s+(?:negro|african)|"
-                          r"(?:race|racial)\s+other\s+than|\bcaucasian|white\s+race",
+                          r"(?:race|racial)\s+other\s+than|\bcaucasian|white\s+race|"
+                          # the 1920s plats' wording: "conveyance … to other than white persons"
+                          r"other\s+than\s+(?:the\s+)?white|white\s+persons?",
 }
 
 _YEARS = re.compile(r"period\s+of\s+([a-z-]+(?:\s+[a-z-]+)?|\d+)\s*(?:\(\d+\)\s*)?years", re.I)

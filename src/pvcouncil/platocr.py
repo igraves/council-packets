@@ -41,6 +41,22 @@ RESTRICTION_TERMS = {
     "outbuildings": r"\boutbuilding\w*",
     "declaration": r"\bdeclaration\b",
 }
+
+
+def _racial_term() -> str:
+    from pvcouncil import restrictread  # imported late: restrictread loads the OCR engines
+
+    return restrictread.FEATURES["racial restriction"]
+
+
+# OCR of a drawn sheet throws up stray words ("negro" in a line of noise), so a racial term counts
+# only beside the language of a covenant
+_CLAUSE_CONTEXT = re.compile(r"convey|lease|sold|sale|owned|occup|tenant|persons|race", re.I)
+
+
+def _racial_clause(flat: str) -> bool:
+    return any(_CLAUSE_CONTEXT.search(flat[max(0, m.start() - 100):m.end() + 100])
+               for m in re.finditer(_racial_term(), flat, re.I))
 # "Book 22 of Miscellaneous Records, page 306" / "Misc. Book 22, page 306" / "Book 22 Misc., Page 306"
 _NUM = r"(\d{1,3})"
 CITATION_PATTERNS = [
@@ -110,6 +126,8 @@ def _flatten(text: str) -> str:
 def find_restrictions(text: str) -> dict:
     flat = _flatten(text)
     terms = sorted(k for k, pat in RESTRICTION_TERMS.items() if re.search(pat, flat, re.I))
+    if _racial_clause(flat):
+        terms = sorted(terms + ["racial restriction"])
     citations = []
     for pat in CITATION_PATTERNS:
         for m in re.finditer(pat, flat, re.I):

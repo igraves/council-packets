@@ -6,8 +6,8 @@ Recorded deed restrictions and covenants for each subdivision, from the Johnson 
 - **117** instruments were filed with a plat: recorded the same day with one of the next few document numbers. The 1941 Prairie Village plat is document 289996 and the J.C. Nichols Declaration of Restrictions is 289997. 2 more, recorded later and found in the recorder's index, were read the same way. Read from their images, **70** are restriction or homes association declarations covering **47** plats; 27 concern other land and are left out below.
 - **13** of those declarations contain a racially restrictive covenant (CEDARVALE, CORRECTED PLAT OF MEADOW LAKE, MEADOW LAKE, MEADOWBROOK DOWNS, MISSION VALLEY WEST, MOHAWK HILLS, NALL AVENUE GARDENS, PRAIRIE FOREST, PRAIRIE VILLAGE, PRAIRIE WOODS, REPLAT OF FONTICELLO GARDENS NO. 2). Such covenants have been unenforceable since Shelley v. Kraemer (1948). **1** of them has been formally released of record: Kansas House Bill 2582 (2006) let a homes association's board amend the clause out, and a 2024 law lets an owner or the city file a certificate of release, but a search of the recorder from 2006 to 2026-10-20 found no release for the others (see each declaration below). That search covered every filing under the subdivisions' homes association names and every association-filed declaration that could concern Prairie Village land. MISC 24 273 (Prairie Woods, 1939) is not counted: MISC 27 187 annulled it in 1941 and repeated its racial covenant. MISC 43 323 (Meadow Lake) was reaffirmed after Shelley: in 1960 the lot owners of Meadow Lake Blocks 1-3 amended Section V to allow offices on five lots of Block 1 and declared the rest of the restrictions, the racial covenant among them, to "remain in full force and effect" (MISC 109 106). This count comes from OCR and covers only the declarations it could read; about 20 Kansas City Investment Company declarations from 1952–57 are low-resolution photostat negatives and were classified by eye from their headings only.
 - **3** documents have hand-checked transcriptions of regions OCR couldn't read (made in `pvc deed-viewer`); **9** terms below were found only in a transcription and are cited to its page and region.
-- **8** documents are read with an OCR engine other than Tesseract (olmOCR-2 7B), adopted in `pvc deed-viewer` after checking against the image; **21** terms below were found only in that reading and say which engine read them.
-- **47** plats state restrictions or covenants on their face (found by OCR of the plat images)
+- **12** documents are read with an OCR engine other than Tesseract (olmOCR-2 7B), adopted in `pvc deed-viewer` after checking against the image; **26** terms below were found only in that reading and say which engine read them.
+- **47** plats state restrictions or covenants on their face (found by OCR of the plat images); **3** of them write a racial covenant into the plat itself (Resurvey Of Lots 15 And 16 Ridge View, PLAT 6 15, 1923, expired 1943; Granthurst, PLAT 6 28, 1924, no release found; Sunset Heights View, PLAT 8 35, 1937, expired 1962)
 - **297** instruments indexed as a Declaration of Restrictions or homes association declaration name one of our subdivisions
 
 How to read it: *filed with the plat* is the strongest evidence that an instrument is the subdivision's original restrictions, though some may be other papers filed the same day (easements to utilities are left out). Before about 1976 the recorder indexed most restrictions as "Miscellaneous", so the label alone doesn't say what an instrument is; the images settle it.
@@ -60,12 +60,14 @@ MISC 26 349's racial covenant was released 2007-11-07 by the Prairie Village Hom
 
 ## Deeds on individual lots
 
-Racial language is sometimes said to have been written into the deeds of individual houses, not only into a subdivision's recorded declaration. `pvc deed-chain` tests this on sample lots by following each one's recorded history (the recorder's search by subdivision, block and lot) from the developer's first sale to today, and reading every deed in it: **34** lots in 11 blocks, **404** deeds from 1946 to 2026. Every deed was read with Tesseract, and the 109 recorded before 1960 also with olmOCR-2 7B (except DEED 317 438, which it could not read). **0** of them contain racial language.
+Racial language is sometimes said to have been written into the deeds of individual houses, not only into a subdivision's recorded declaration. `pvc deed-chain` tests this on sample lots by following each one's recorded history (the recorder's search by subdivision, block and lot) from the developer's first sale to today, and reading every deed in it: **36** lots in 13 blocks, **420** deeds from 1946 to 2026. Every deed was read with Tesseract, and the 112 recorded before 1960 also with olmOCR-2 7B (except DEED 317 438, which it could not read). **0** of them contain racial language.
 
-The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the covenants, restrictions, reservations and easements now of record", that is, the subdivision's recorded declarations, and add only their own printed terms: for forty years no house or outbuilding may be built until the J. C. Nichols Company approves its plans, and in 19 of them a minimum cost ($6,000 or $5,000). The other deeds, nearly all resales, cite the restrictions of record (268 of 365) or say nothing of them. In this sample a racial covenant reached a lot only through the declaration its deeds cite.
+The developer's deeds (41, from 1947 to 1955) convey the lot "subject to the covenants, restrictions, reservations and easements now of record", that is, the subdivision's recorded declarations, and add only their own printed terms: for forty years no house or outbuilding may be built until the J. C. Nichols Company approves its plans, and in 19 of them a minimum cost ($6,000 or $5,000). The other deeds, nearly all resales, cite the restrictions of record (275 of 379) or say nothing of them. In this sample a racial covenant reached a lot only through the declaration its deeds cite.
 
 | Subdivision | Block | Lots | Deeds | First sale | With approval clause | Minimum cost |
 |---|---|---|---|---|---|---|
+| Prairie Fields | 24 | 25 | 10 | 1955 | 1 | — |
+| Prairie Hills | 16 | 4 | 6 | 1952 | 1 | — |
 | Prairie Village | 14 | 29, 30 | 18 | 1946 | 2 | $6,000 |
 | Prairie Village | 15 | 1, 24 | 27 | 1948 | 1 | $6,000 |
 | Prairie Village | 17 | 1, 7, 11 | 33 | 1946 | 4 | $6,000 |
@@ -393,7 +395,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### GRANTHURST (1100)
 
-- **On the plat** PLAT 6 28 (1924-04-17): covenants
+- **On the plat** PLAT 6 28 (1924-04-17): building line (read by olmOCR-2 7B), covenants, outbuildings (read by olmOCR-2 7B), racial restriction (read by olmOCR-2 7B), residential use (read by olmOCR-2 7B), restrictions (read by olmOCR-2 7B). **Racial covenant on the plat**: no release found (recorder searched 2006 to 2026-10-20)
 
 ### HOME PLACE (1180)
 
@@ -671,6 +673,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### PRAIRIE FIELDS (4200)
 
+- **[Deeds on individual lots](#deeds-on-individual-lots)**: sample lots' deeds followed from the first sale to today
 - **Filed with plat** PLAT 19 40: 1956-04-02 MISC 78 592 (document 513477) — **restrictions**; minimum floor area
 - 1957-09-09 Declaration of Restrictions, MISC 89 578 — Sub:PRAIRIE FIELDS Blk:21 Lt:9
 - 1962-10-04 Declaration of Restrictions, MISC 130 60 — Sub:PRAIRIE FIELDS Blk:23 Lt:13
@@ -689,6 +692,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### PRAIRIE HILLS (4500)
 
+- **[Deeds on individual lots](#deeds-on-individual-lots)**: sample lots' deeds followed from the first sale to today
 - **[Before it was platted](#before-it-was-platted)**: 1950-02-03 MISC 43 532, a racial covenant put on this land by the J. C. Nichols Company (ended 1990)
 - **Declaration** (from the recorder's index): 1950-07-08 MISC 46 137 (document 402618) — **restrictions**; residence only, no apartments, building line / setback, minimum floor area, renewal. J. C. Nichols Company's restrictions for Prairie Hills Blocks 1-12 (plat 14 33): single-family residences of at most 1-1/2 stories, minimum floor areas, frontage, building lines and free space; to 1975, renewing for 25-year periods; no racial clause
 - 1950-07-08 Declaration of Home Owners Association, MISC 46 158 — Sub:PRAIRIE HILLS Blk:6 Lt:30
@@ -789,7 +793,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### RESURVEY OF LOTS 15 AND 16 RIDGE VIEW (6000)
 
-- **On the plat** PLAT 6 15 (1923-09-26): covenants, restrictions
+- **On the plat** PLAT 6 15 (1923-09-26): covenants, racial restriction, restrictions. **Racial covenant on the plat**, expired 1943-07 (20 years from July 1, 1923, no renewal)
 
 ### RIDGE VIEW HEIGHTS (6050)
 
@@ -871,7 +875,7 @@ The developer's deeds (39, from 1947 to 1955) convey the lot "subject to the cov
 
 ### SUNSET HEIGHTS VIEW (7200)
 
-- **On the plat** PLAT 8 35 (1937-03-29): building line, covenants, residential use, restrictions
+- **On the plat** PLAT 8 35 (1937-03-29): building line, covenants, racial restriction, residential use, restrictions. **Racial covenant on the plat**, expired 1962-03 (25 years from March 29, 1937, no renewal)
 - **On the plat** PLAT 10 42 (1941-03-29): restrictions
 - 1979-01-18 Declaration of Restrictions, OR 1424 303 — Sub:SUNSET HEIGHTS VIEW Lt:1
 

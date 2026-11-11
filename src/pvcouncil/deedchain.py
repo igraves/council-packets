@@ -46,6 +46,13 @@ SAMPLE = [
     ("PRAIRIE VILLAGE", "21", "40"),
     ("PRAIRIE VILLAGE", "43", "85"),
     ("PRAIRIE VILLAGE", "36", ""),
+    # lots whose abstracts the Johnson County Museum's REDLINED exhibit audit gives a racial date
+    # that matches no declaration we hold: one filed as Countryside East Block 24 Lot 25 (1949-01-25,
+    # "before Nichols", prior developer Meadowbrook Downs), though Countryside East has no Block 24
+    # and its dates are Prairie Fields' (plat 1954-07-12, declaration 1954-07-30), and Prairie Hills
+    # (1950-10-16)
+    ("PRAIRIE FIELDS", "24", "25"),
+    ("PRAIRIE HILLS", "16", "4"),
 ]
 
 RACIAL = re.compile(restrictread.FEATURES["racial restriction"] + r"|person\s+of\s+color|\bmongolian|"

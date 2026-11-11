@@ -299,11 +299,30 @@ def reading_text(r: dict) -> str:
     return "\n\n".join(f"[page {p['page']}]\n{p['text']}" for p in r["pages"])
 
 
+TILE_OVERLAP = 0.12  # of a tile's width/height, so a line cut by one tile's edge is whole in the next
+
+
+def _tile_clips(rect: fitz.Rect, rows: int, cols: int) -> list[fitz.Rect]:
+    w, h = rect.width / cols, rect.height / rows
+    return [fitz.Rect(max(0, (j - TILE_OVERLAP) * w), max(0, (i - TILE_OVERLAP) * h),
+                      min(rect.width, (j + 1 + TILE_OVERLAP) * w), min(rect.height, (i + 1 + TILE_OVERLAP) * h))
+            for i in range(rows) for j in range(cols)]
+
+
 def read_document(name: str, key: str, pdf_path: str | Path, rot: int = 0, invert: str = "auto",
-                  progress=None) -> dict:
+                  progress=None, tiles: tuple[int, int] | None = None) -> dict:
     """Read every page of a document with one engine and save the reading. invert is "auto"
-    (invert a page that's mostly dark), "on", or "off". progress(done, total) is called per page."""
+    (invert a page that's mostly dark), "on", or "off". progress(done, total) is called per page.
+
+    tiles=(rows, cols) reads each page as that grid of overlapping crops, each sent at the model's
+    full input size, and joins their text. A plat sheet squeezed whole into a VLM's input is too
+    small to read: the model loops on the first legible paragraph and never reaches the
+    dedication's covenants."""
     e = get(name)
+    if tiles:
+        if not e.model:
+            raise ValueError("tiled reading is for the Ollama engines")
+        return _read_tiled(e, key, pdf_path, rot, invert, progress, tiles)
     pages, started = [], time.time()
     with fitz.open(pdf_path) as pdf:
         n = pdf.page_count
@@ -327,14 +346,43 @@ def read_document(name: str, key: str, pdf_path: str | Path, rot: int = 0, inver
             pages.append({"page": i + 1, "text": text, "inverted": inverted[i], "seconds": round(time.time() - t0, 1)})
             if progress:
                 progress(i + 1, n)
+    return _save_reading(e, key, pdf_path, started, {"rot": rot, "invert": invert}, pages)
+
+
+def _read_tiled(e: Engine, key: str, pdf_path: str | Path, rot: int, invert: str, progress,
+                tiles: tuple[int, int]) -> dict:
+    rows, cols = tiles
+    pages, started = [], time.time()
+    with fitz.open(pdf_path) as pdf:
+        n = pdf.page_count * rows * cols
+        done = 0
+        for pno, pg in enumerate(pdf):
+            # clips are in the unrotated page; rotate the rendered crop after cutting it
+            texts, t0 = [], time.time()
+            for t, clip in enumerate(_tile_clips(pg.rect, rows, cols)):
+                dpi = max(150, e.max_side * 72 / max(clip.width, clip.height))
+                pix = pg.get_pixmap(matrix=fitz.Matrix(dpi / 72, dpi / 72).prerotate(rot), clip=clip,
+                                    colorspace=fitz.csGRAY)
+                inv = invert == "on" or (invert == "auto" and is_negative(pix))
+                text = read(e.name, [prepare(pix, inv, False)], region=True)[0]
+                texts.append(f"[tile {t // cols + 1},{t % cols + 1}]\n{text}")
+                done += 1
+                if progress:
+                    progress(done, n)
+            pages.append({"page": pno + 1, "text": "\n\n".join(texts), "tiles": f"{rows}x{cols}",
+                          "seconds": round(time.time() - t0, 1)})
+    return _save_reading(e, key, pdf_path, started, {"rot": rot, "invert": invert, "tiles": f"{rows}x{cols}"}, pages)
+
+
+def _save_reading(e: Engine, key: str, pdf_path: str | Path, started: float, settings: dict, pages: list) -> dict:
     out = {
-        "engine": name, "label": e.label, "model": e.model, "key": key,
+        "engine": e.name, "label": e.label, "model": e.model, "key": key,
         "ran": time.strftime("%Y-%m-%d %H:%M"), "seconds": round(time.time() - started, 1),
-        "settings": {"rot": rot, "invert": invert},
+        "settings": settings,
         "fingerprint": transcripts.fingerprint(pdf_path),
         "words": sum(words(p["text"]) for p in pages), "pages": pages,
     }
-    p = reading_path(name, key)
+    p = reading_path(e.name, key)
     p.parent.mkdir(parents=True, exist_ok=True)
     tmp = p.with_suffix(".tmp")
     tmp.write_text(json.dumps(out, indent=1) + "\n")

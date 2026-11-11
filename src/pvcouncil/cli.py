@@ -643,12 +643,26 @@ def map_bundle():
               help="Invert pages: auto inverts mostly-dark pages (photostat negatives)")
 @click.option("--rot", type=click.Choice(["0", "90", "180", "270"]), default="0", show_default=True)
 @click.option("--redo", is_flag=True, help="Read again documents this engine has already read")
-def deed_ocr(engine_name, keys, poor, invert, rot, redo):
+@click.option("--tiles", help="Read each page as ROWSxCOLS overlapping crops (e.g. 2x2): for plat sheets")
+@click.option("--unfound-plats", is_flag=True,
+              help="Every plat in a subdivision the map doesn't show with a racial covenant, oldest first")
+@click.option("--before", type=int, help="With --unfound-plats: only plats recorded before this year")
+def deed_ocr(engine_name, keys, poor, invert, rot, redo, tiles, unfound_plats, before):
     """Read whole documents with an OCR engine; with no --engine, list the engines.
 
     Readings are saved locally and compared in `pvc deed-viewer`, where one can be
     adopted as a document's report text after checking it against the image."""
-    from pvcouncil import ocrengines, viewer
+    import json
+
+    from pvcouncil import ocrengines, subdivmap, viewer
+
+    grid = None
+    if tiles:
+        try:
+            grid = tuple(int(n) for n in tiles.lower().split("x"))
+            assert len(grid) == 2 and min(grid) >= 1
+        except (ValueError, AssertionError):
+            raise click.BadParameter("give the grid as ROWSxCOLS, e.g. 2x2", param_hint="--tiles")
 
     engines = ocrengines.available(refresh=True)
     if not engine_name:
@@ -661,15 +675,27 @@ def deed_ocr(engine_name, keys, poor, invert, rot, redo):
     docs = viewer.build_index()
     todo = [docs[k] for k in keys if k in docs] + [d for d in docs.values() if poor and d["ocr"] == "poor"]
     todo = sorted({d["key"]: d for d in todo}.values(), key=lambda d: d["pages"])  # short documents first
+    if unfound_plats:
+        # racial, released, expired, or carried by reference: the map already shows a racial covenant
+        status = {f["properties"]["code"]: f["properties"]["status"]
+                  for f in json.loads(subdivmap.GEOJSON_PATH.read_text())["features"]}
+        found = {"racial", "released", "expired", "reference"}
+        todo += sorted((d for d in docs.values() if d["kind"] == "plat" and status.get(d["code"]) not in found
+                        and (not before or int(d["recorded"][:4]) < before)
+                        and d["key"] not in {t["key"] for t in todo}),
+                       key=lambda d: d["recorded"])
     if not redo:
-        todo = [d for d in todo if not ocrengines.reading_path(engine_name, d["key"]).exists()]
+        def done(d):  # with --tiles, a whole-page reading of a plat sheet doesn't count
+            r = ocrengines.load_reading(engine_name, d["key"])
+            return bool(r) and (not grid or r["settings"].get("tiles") == tiles.lower())
+        todo = [d for d in todo if not done(d)]
     if not todo:
-        raise click.ClickException("nothing to read: pass --key or --poor (and --redo to read again)")
+        raise click.ClickException("nothing to read: pass --key, --poor or --unfound-plats (and --redo to read again)")
     click.echo(f"Reading {len(todo)} documents ({sum(d['pages'] for d in todo)} pages) with {engine_name}")
     failed = []
     for i, d in enumerate(todo, 1):
         try:
-            r = ocrengines.read_document(engine_name, d["key"], d["path"], int(rot), invert)
+            r = ocrengines.read_document(engine_name, d["key"], d["path"], int(rot), invert, tiles=grid)
         except RuntimeError as e:  # e.g. the model looping on a page ("token repeat limit reached")
             failed.append(d["book_page"])
             click.echo(f"[{i}/{len(todo)}] {d['book_page']} ({d['key']}): not read: {str(e)[:120]}")
